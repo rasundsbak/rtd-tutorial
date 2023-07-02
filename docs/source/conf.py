@@ -34,8 +34,10 @@ templates_path = ['_templates']
 # html_theme = "default"
 
 html_theme = "pyramid"
+    headtextcolor: "DarkOrange"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
 # changing layout: https://sphinx-rtd-trial.readthedocs.io/en/1.1.3/theming.html
+# css colours: https://www.w3schools.com/cssref/css_colors.php

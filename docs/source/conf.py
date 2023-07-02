@@ -29,11 +29,22 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
+
 html_theme = 'default'
 # this not working
-# sidebarbgcolor = 'DarkOrange'
+sidebarbgcolor = 'DarkOrange'
 
 # html_theme = 'sphinx_rtd_theme'
 
+# default works, but not to change colour
+# html_theme = 'default'
+# sidebarbgcolor = '#FF8C00'
+# sidebarbgcolor = 'DarkOrange'
+
+# html_theme = "pyramid"
+
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# changing layout: https://sphinx-rtd-trial.readthedocs.io/en/1.1.3/theming.html
+# css colours: https://www.w3schools.com/cssref/css_colors.php

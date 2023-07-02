@@ -34,6 +34,7 @@ templates_path = ['_templates']
 # default works, but not to change colour
 # html_theme = 'default'
 # sidebarbgcolor = '#FF8C00'
+# sidebarbgcolor = 'DarkOrange'
 
 html_theme = "pyramid"
 

@@ -31,10 +31,11 @@ templates_path = ['_templates']
 
 # html_theme = 'sphinx_rtd_theme'
 
-html_theme = 'default'
-sidebarbgcolor = '#FF8C00'
+# default works, but not to change colour
+# html_theme = 'default'
+# sidebarbgcolor = '#FF8C00'
 
-# html_theme = "pyramid"
+html_theme = "pyramid"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'

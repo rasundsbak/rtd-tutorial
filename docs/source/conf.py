@@ -30,7 +30,8 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'default'
-    sidebarbgcolor = 'DarkOrange'
+# this not working
+# sidebarbgcolor = 'DarkOrange'
 
 # html_theme = 'sphinx_rtd_theme'
 

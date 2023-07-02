@@ -34,7 +34,7 @@ templates_path = ['_templates']
 # html_theme = "default"
 
 html_theme = "pyramid"
-    headtextcolor: "DarkOrange"
+    headtextcolor = "DarkOrange"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'

@@ -16,6 +16,12 @@ how to :ref:`installation` the project.
 
    This project is under active development.
 
+$project
+========
+
+$project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
 Lorem Ipsum
 ============
 "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."

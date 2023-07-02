@@ -39,3 +39,5 @@ html_theme_options = {
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# changing layout: https://sphinx-rtd-trial.readthedocs.io/en/1.1.3/theming.html

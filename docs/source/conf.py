@@ -29,6 +29,9 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
+# this is for making the content of the "static" folder work
+# from: https://stackoverflow.com/questions/44793811/change-the-colors-of-the-sphinx-read-the-docs-theme 
+html_static_path = ['_static']
 
 # html_theme = 'default'
 # this not working

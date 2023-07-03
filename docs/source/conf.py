@@ -39,7 +39,7 @@ def setup(app):
 
 # html_theme = 'default'
 # this not working
-sidebarbgcolor = 'DarkOrange'
+# sidebarbgcolor = 'DarkOrange'
 
 # html_theme = 'sphinx_rtd_theme'
 
@@ -48,7 +48,7 @@ sidebarbgcolor = 'DarkOrange'
 # sidebarbgcolor = '#FF8C00'
 # sidebarbgcolor = 'DarkOrange'
 
-# html_theme = "pyramid"
+html_theme = "pyramid"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'

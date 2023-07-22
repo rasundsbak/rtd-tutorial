@@ -1,7 +1,7 @@
 01 Welcome to the pilot course on how to use ComtradR
 ======================================
 This project has its documentation hosted on Read the Docs
-RestructuredText: https://docutils.sourceforge.io/rst.html
+RestructuredText: https://docutils.sourceforge.io/rst.html and: https://readthedocs.org/
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.

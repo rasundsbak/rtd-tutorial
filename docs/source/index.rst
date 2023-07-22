@@ -25,6 +25,11 @@ by providing a basic explanation of how to do it easily.
 
 03 Lorem Ipsum
 ==============
+03.01 Etiam tincidunt
+---------------------
+03.02 Etiam tincidunt
+---------------------
+
 "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
 
@@ -73,6 +78,8 @@ Contents
    01 Welcome to Lumache's documentation!
    02 Project
    03 Lorem Ipsum
+      03.01 Etiam tincidunt
+      03.02 Etiam tincidunt
    04 Lorem ipsum dolor sit amet
       01 Suspendisse consequat sagittis leo at accumsan
       02 Suspendisse consequat sagittis leo at accumsan

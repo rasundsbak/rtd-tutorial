@@ -4,6 +4,7 @@
 
 sphinx-copybutton
 pip install sphinx-copybutton
+conda install -c conda-forge sphinx-copybutton
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.

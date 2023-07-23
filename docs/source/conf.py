@@ -13,7 +13,7 @@ version = '0.1.0'
 
 
 extensions = [
-    'sphinx_copybutton'
+    'sphinx_copybutton',
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',

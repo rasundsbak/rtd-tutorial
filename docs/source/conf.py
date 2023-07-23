@@ -11,6 +11,10 @@ version = '0.1.0'
 
 # -- General configuration
 
+# Install
+pip install sphinx-copybutton
+# Declare it in the conf.py
+
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',

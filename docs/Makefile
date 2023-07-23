@@ -1,5 +1,6 @@
 # Minimal makefile for Sphinx documentation
-#
+# Read tutorial of not working
+# https://makepp.sourceforge.net/1.19/makepp_tutorial.html
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.

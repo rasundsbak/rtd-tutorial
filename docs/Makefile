@@ -6,8 +6,6 @@ conda install -c conda-forge sphinx-copybutton
 
 pip install -e .[docs]
 
-make docs
-
 # You can set these variables from the command line, and also
 # from the environment for the first two.
 SPHINXOPTS    ?=

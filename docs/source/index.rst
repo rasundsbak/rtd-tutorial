@@ -81,6 +81,16 @@ conflicts_prefer(dplyr::lag)
 conflict_scout()
 
 
+
+.. {r example_code}
+
+x <- 1+1
+rnorm(5)
+
+.. ..
+
+
+
 >>> import lumache
 >>> lumache.get_random_ingredients()
 ['shells', 'gorgonzola', 'parsley']

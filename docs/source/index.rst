@@ -82,11 +82,9 @@ conflict_scout()
 
 
 
-´´´ {r example_code}
-x <- 1+1
-rnorm(5)
-
-´´´
+```{knitr}
+x = [1, 2, 3]
+```
 
 
 

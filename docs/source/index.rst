@@ -24,6 +24,17 @@ by providing a basic explanation of how to do it easily.
 ==============
 03.01 Etiam tincidunt
 ---------------------
+This is an ordinary paragraph.
+
+>>> print 'this is a Doctest block'
+this is a Doctest block
+
+The following is a literal block::
+
+    >>> This is not recognized as a doctest block by
+    reStructuredText.  It *will* be recognized by the doctest
+    module, though!
+
 03.02 Etiam tincidunt
 ---------------------
 

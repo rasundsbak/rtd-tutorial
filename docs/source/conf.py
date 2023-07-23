@@ -48,6 +48,8 @@ html_static_path = ['_static']
 #     app.add_javascript("custom.js")
 #   app.add_javascript("https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js")
 
+# The name of the Pygments (syntax highlighting) style to use.
+pygments_style = "sphinx"
 
 # from: https://stackoverflow.com/questions/44793811/change-the-colors-of-the-sphinx-read-the-docs-theme
 # def setup(app):

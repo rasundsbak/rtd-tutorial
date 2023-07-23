@@ -2,13 +2,7 @@
 # Read tutorial of not working
 # https://makepp.sourceforge.net/1.19/makepp_tutorial.html
 
-make stop
-make clean
-docker system prune -a
-make build-run
-
-pip install -e .[docs]
-make docs
+conda install -c conda-forge sphinx-copybutton
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.

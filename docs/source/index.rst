@@ -24,11 +24,11 @@ OPEC countries, their oil export and democracy development. The statistics shown
 =======================
 We are going to look at data from the two institutions of Comtrade and World bank.
 
-:Q1 How does the distribution of Export of Crude oil from the OPEC countries look like for the years from 1995 until today?
+**Q1 How does the distribution of Export of Crude oil from the OPEC countries look like for the years from 1995 until today?**
 
-: Q2 How does the available corruption index of the OPEC countries look like?
+**Q2 How does the available corruption index of the OPEC countries look like?**
 
-:: Q3 Is there a tendency for the OPEC countries that higher income from oil export leads to higher levels of corruption?
+**Q3 Is there a tendency for the OPEC countries that higher income from oil export leads to higher levels of corruption?**
 
 In order to answer these questions, data will be taken from two sources. Firstly, numbers on trade is taken from the Comtrade database. Secondly, indicators on democracy and corruption levels are taken from the Worldwide Governance Indicators.
 

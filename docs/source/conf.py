@@ -33,9 +33,17 @@ templates_path = ['_templates']
 # from: https://stackoverflow.com/questions/44793811/change-the-colors-of-the-sphinx-read-the-docs-theme 
 html_static_path = ['_static']
 
-# from: https://stackoverflow.com/questions/44793811/change-the-colors-of-the-sphinx-read-the-docs-theme 
-def setup(app):
-    app.add_css_file('custom.css')
+# earlier:
+# def setup(app):
+#    app.add_css_file('custom.css')
+
+
+# from: https://stackoverflow.com/questions/44793811/change-the-colors-of-the-sphinx-read-the-docs-theme
+    def setup(app):
+     app.add_stylesheet('custom.css')
+     app.add_javascript("custom.js")
+     app.add_javascript("https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js")
+
 
 # html_theme = 'default'
 # this not working

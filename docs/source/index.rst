@@ -57,14 +57,14 @@ In order to follow the process in this script, we need the following pagkages. N
 
 This chunk is for the activation of already downloaded packages:
 
->>> library(comtradr)
->>> library(here)
->>> library(rjson)
->>> library(ggplot2)
->>> library(dplyr)
->>> library(plotly)
->>> library(conflicted)
->>> library(janitor)
+   library(comtradr) 
+   library(here)
+   library(rjson)
+   library(ggplot2)
+   library(dplyr)
+   library(plotly)
+   library(conflicted)
+   library(janitor)
 
 Then I need to rule out the conflicts between the packages that are in use
 

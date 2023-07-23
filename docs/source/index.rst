@@ -9,12 +9,30 @@ how to :ref:`installation` the project.
 .. note::
 
    This project is under active development.
+---
 
-02 Project
-==========
 
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+01 Introduction
+===============
+This is a report after following a bachelor course of STV 2020 Spring term 2023, University of Oslo. This text may be used as a tutorial for using Comtrade. In the following, it will be outlined how data from the United Nations' Comtrade database [@CRANPackageComtradr] can be used to point out structural problems related to oil industry. This will be the academic example used to demonstrate both the process of data collection, as well as the processing and division of data into relevant units. While working on this project, the United Nations API delivery was modernized and changed from being facilitated for R and RStudio into Python. The ComtradR is still being maintained under the GitHib initiative of OpenSci[@muir2023; @ROpenSciOpenTools]. This project will be developed according to the progress of the technical development of the official Comtrade database. A repository on how to generate data with Python, for import to RStudio may come at a later time.
+
+02 The research question
+========================
+OPEC countries, their oil export and democracy development. The statistics shown will be from the OPEC countries. Data are on Trade value in Crude oil will be collected from Comtrade legacy database [@muir2023]. "Trade value" was chosen because it is the variable in this category that includes the most data. If choosing another category, the number of missing values would be larger. The development of the values of Trade value will be shown from the period 1995-2004. Then then the results of the Opec countries on a corruption index from the World Bank governance Indicators will be introduced [@kaufmann2023]. Finally, a regression analysis with corruption level as the dependent variable will be shown. The unit of analysis will be land- years. The process of restructuring the data will be shown.
+
+03 The academic problem
+=======================
+We are going to look at data from the two institutions of Comtrade and World bank.
+
+Q1 How does the distribution of Export of Crude oil from the OPEC countries look like for the years from 1995 until today?
+
+Q2 How does the available corruption index of the OPEC countries look like?
+
+Q3 Is there a tendency for the OPEC countries that higher income from oil export leads to higher levels of corruption?
+
+In order to answer these questions, data will be taken from two sources. Firstly, numbers on trade is taken from the Comtrade database. Secondly, indicators on democracy and corruption levels are taken from the Worldwide Governance Indicators.
+
+This project should be seen as a pedagogical example on how to extract and analyze data for political and social science, rather than real social science. The main focus here is on the technical processes, rather than the scientific value of the findings.
 
 >>> import lumache
 >>> lumache.get_random_ingredients()
@@ -91,14 +109,12 @@ Contents
 .. toctree::
 
    01 Welcome to Lumache's documentation!
-   02 Project
-   03 Lorem Ipsum
-      03.01 Etiam tincidunt
-      03.02 Etiam tincidunt
-   04 Lorem ipsum dolor sit amet
-      01 Suspendisse consequat sagittis leo at accumsan
-      02 Suspendisse consequat sagittis leo at accumsan
-   05 Quisque at finibus orci
+   01 Introduction
+   02 The research question
+   03 The academic problem
+   04  
+   05 
+   04 Quisque at finibus orci
       Suspendisse consequat sagittis leo at accumsan
       Etiam tincidunt
       Suspendisse vulputate est vitae nunc porta

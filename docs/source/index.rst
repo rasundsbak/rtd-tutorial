@@ -82,12 +82,11 @@ conflict_scout()
 
 
 
-.. {r example_code}
-
+´´´ {r example_code}
 x <- 1+1
 rnorm(5)
 
-.. ..
+´´´
 
 
 

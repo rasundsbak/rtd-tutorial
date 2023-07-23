@@ -19,6 +19,6 @@ help:
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-conda install -c conda-forge sphinx-copybutton
+# conda install -c conda-forge sphinx-copybutton
 pip install -e .[docs]
 make docs

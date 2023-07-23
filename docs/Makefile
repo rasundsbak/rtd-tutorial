@@ -3,6 +3,7 @@
 # https://makepp.sourceforge.net/1.19/makepp_tutorial.html
 
 sphinx-copybutton
+pip install sphinx-copybutton
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.

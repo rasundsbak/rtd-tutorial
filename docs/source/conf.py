@@ -17,7 +17,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-     'sphinx_copybutton',
+    'sphinx_copybutton',
     
 ]
 
@@ -42,8 +42,6 @@ def setup(app):
 # html_theme = 'default'
 # this not working
 # sidebarbgcolor = 'DarkOrange'
-
-pygments_style = "sphinx"
 
 # html_theme = 'sphinx_rtd_theme'
 

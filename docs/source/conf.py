@@ -13,6 +13,8 @@ version = '0.1.0'
 
 # Install
 pip install sphinx-copybutton
+pip install sphinx-rtd-theme
+
 # Declare it in the conf.py
 
 extensions = [

@@ -2,9 +2,8 @@
 # Read tutorial of not working
 # https://makepp.sourceforge.net/1.19/makepp_tutorial.html
 
-sphinx-copybutton
-pip install sphinx-copybutton
-conda install -c conda-forge sphinx-copybutton
+pip install -e .[docs]
+make docs
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.

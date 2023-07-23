@@ -68,10 +68,9 @@ This chunk is for the activation of already downloaded packages:
 
 Then I need to rule out the conflicts between the packages that are in use
 
-{r, 03-conflicts, echo=FALSE}
-conflict_scout()
+>>> conflict_scout()
 
-conflicts_prefer(stats::chisq.test) 
+>>> conflicts_prefer(stats::chisq.test) 
 conflicts_prefer(stats::fisher.test) 
 conflicts_prefer(dplyr::filter)
 conflicts_prefer(plotly::layout)

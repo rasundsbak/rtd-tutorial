@@ -43,19 +43,19 @@ This project should be seen as a pedagogical example on how to extract and analy
 A good way to start up an R script
 ==================================
 
-In the .R file, at the very begining:
+In the .R file, at the very begining::
 
    getwd
    setwd("/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew")
 
 I always start with the setwd. This is a very useful command, it is a good idea to combine it with opening the library(here)
 
-In order to follow the process in this script, we need the following pagkages. Note that if you do not have them installed, you must use the command "install.packages("package name")
+In order to follow the process in this script, we need the following pagkages. Note that if you do not have them installed, you must use the command "install.packages("package name")::
 
    install.packages("comtradr")
    install.packages("rjson")
 
-This chunk is for the activation of already downloaded packages:
+This chunk is for the activation of already downloaded packages::
 
    library(comtradr) 
    library(here)
@@ -66,19 +66,15 @@ This chunk is for the activation of already downloaded packages:
    library(conflicted)
    library(janitor)
 
-Then I need to rule out the conflicts between the packages that are in use
+Then I need to rule out the conflicts between the packages that are in use::
 
->>> conflict_scout()
+   conflict_scout()
 
->>> conflicts_prefer(stats::chisq.test) 
-conflicts_prefer(stats::fisher.test) 
-conflicts_prefer(dplyr::filter)
-conflicts_prefer(plotly::layout)
-conflicts_prefer(dplyr::lag)
-
-{r, 04-conflicts, echo=FALSE}
-
-conflict_scout()
+   conflicts_prefer(stats::chisq.test) 
+   conflicts_prefer(stats::fisher.test) 
+   conflicts_prefer(dplyr::filter)
+   conflicts_prefer(plotly::layout)
+   conflicts_prefer(dplyr::lag)
 
 
 This is a normal text paragraph. The next paragraph is a code sample::
@@ -92,8 +88,8 @@ This is a normal text paragraph again.
 
 
 
->>> import lumache
->>> lumache.get_random_ingredients()
+ import lumache
+ lumache.get_random_ingredients()
 ['shells', 'gorgonzola', 'parsley']
 
 03 Lorem Ipsum
@@ -102,12 +98,12 @@ This is a normal text paragraph again.
 ---------------------
 This is an ordinary paragraph.
 
->>> print 'this is a Doctest block'
+ print 'this is a Doctest block'
 this is a Doctest block
 
 The following is a literal block::
 
-    >>> This is not recognized as a doctest block by
+     This is not recognized as a doctest block by
     reStructuredText.  It *will* be recognized by the doctest
     module, though!
 

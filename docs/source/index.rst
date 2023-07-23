@@ -52,8 +52,8 @@ I always start with the setwd. This is a very useful command, it is a good idea 
 
 In order to follow the process in this script, we need the following pagkages. Note that if you do not have them installed, you must use the command "install.packages("package name")
 
->>> install.packages("comtradr")
->>> install.packages("rjson")
+   install.packages("comtradr")
+   install.packages("rjson")
 
 This chunk is for the activation of already downloaded packages:
 

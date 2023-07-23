@@ -12,8 +12,9 @@ version = '0.1.0'
 # -- General configuration
 
 # Install
-pip install sphinx-copybutton
-pip install sphinx-rtd-theme
+#pip install sphinx-copybutton
+#pip install sphinx-rtd-theme
+conda install -c conda-forge sphinx-copybutton
 
 # Declare it in the conf.py
 

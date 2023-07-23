@@ -39,6 +39,49 @@ In order to answer these questions, data will be taken from two sources. Firstly
 
 This project should be seen as a pedagogical example on how to extract and analyze data for political and social science, rather than real social science. The main focus here is on the technical processes, rather than the scientific value of the findings.
 
+
+A good way to start up an R script
+==================================
+
+In the .R file, at the very begining:
+
+>>> getwd
+>>> setwd("/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew")
+
+I always start with the setwd. This is a very useful command, it is a good idea to combine it with opening the library(here)
+
+In order to follow the process in this script, we need the following pagkages. Note that if you do not have them installed, you must use the command "install.packages("package name")
+
+>>> install.packages("comtradr")
+>>> install.packages("rjson")
+
+This chunk is for the activation of already downloaded packages:
+
+>>> library(comtradr)
+>>> library(here)
+>>> library(rjson)
+>>> library(ggplot2)
+>>> library(dplyr)
+>>> library(plotly)
+>>> library(conflicted)
+>>> library(janitor)
+
+Then I need to rule out the conflicts between the packages that are in use
+
+{r, 03-conflicts, echo=FALSE}
+conflict_scout()
+
+conflicts_prefer(stats::chisq.test) 
+conflicts_prefer(stats::fisher.test) 
+conflicts_prefer(dplyr::filter)
+conflicts_prefer(plotly::layout)
+conflicts_prefer(dplyr::lag)
+
+{r, 04-conflicts, echo=FALSE}
+
+conflict_scout()
+
+
 >>> import lumache
 >>> lumache.get_random_ingredients()
 ['shells', 'gorgonzola', 'parsley']
@@ -69,6 +112,7 @@ This is an ordinary paragraph, introducing a block quote.
     "It is my business to know things.  That is my trade."
 
     -- Sherlock Holmes
+
 
 
 04 Lorem ipsum dolor sit amet

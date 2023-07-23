@@ -16,6 +16,10 @@ how to :ref:`installation` the project.
 $project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
 
+>>> import lumache
+>>> lumache.get_random_ingredients()
+['shells', 'gorgonzola', 'parsley']
+
 03 Lorem Ipsum
 ==============
 03.01 Etiam tincidunt

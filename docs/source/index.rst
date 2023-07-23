@@ -45,8 +45,8 @@ A good way to start up an R script
 
 In the .R file, at the very begining:
 
->>> getwd
->>> setwd("/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew")
+   getwd
+   setwd("/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew")
 
 I always start with the setwd. This is a very useful command, it is a good idea to combine it with opening the library(here)
 

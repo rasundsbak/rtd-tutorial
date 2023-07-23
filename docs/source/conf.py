@@ -65,7 +65,7 @@ def setup(app):
 sidebarbgcolor = 'DarkOrange'
 
 # html_theme = 'sphinx_rtd_theme'
-html_theme = "sphinx_book_theme"
+# html_theme = "sphinx_book_theme"
 # default works, but not to change colour
 # html_theme = 'default'
 # sidebarbgcolor = '#FF8C00'
@@ -74,13 +74,6 @@ html_theme = "sphinx_book_theme"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
-
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ["_static"]
-html_logo = "../sphinx_copybutton/_static/copy-button.svg"
-html_title = "Sphinx Copybutton"
 
 # changing layout: https://sphinx-rtd-trial.readthedocs.io/en/1.1.3/theming.html
 # css colours: https://www.w3schools.com/cssref/css_colors.php

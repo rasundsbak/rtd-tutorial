@@ -20,9 +20,6 @@ build:
 python:
   install:
     - requirements: docs/requirements.txt
-    conda install -c conda-forge sphinx-copybutton
-    pip install -e .[docs]
-    make docs
     
     
 # We recommend specifying your dependencies to enable reproducible builds:

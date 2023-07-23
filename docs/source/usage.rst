@@ -1,24 +1,11 @@
 Usage
 =====
-
-Lorem Ipsum
-============
-
-
-Lorem ipsum dolor sit amet
-===========================
-
-
 .. _installation:
 
 Installation
 ------------
 Suspendisse consequat sagittis leo at accumsan
 ----------------------------------------------
-Etiam tincidunt
----------------
-Suspendisse vulputate est vitae nunc porta
-------------------------------------------
 
 To use Lumache, first install it using pip:
 

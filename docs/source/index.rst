@@ -1,14 +1,7 @@
-01 Welcome to Lumache's documentation!
+01 Welcome to the pilot course on how to use ComtradR
 ======================================
-Lumache has its documentation hosted on Read the Docs
-Lumache has its documentation hosted on Read the Docs.
-RestructuredText: https://docutils.sourceforge.io/rst.html
-
-
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+This project has its documentation hosted on Read the Docs: https://readthedocs.org/
+This project has a GitHub repository: https://github.com/rasundsbak/rtd-tutorial/tree/3.0.y
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
@@ -23,10 +16,37 @@ how to :ref:`installation` the project.
 $project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
 
+>>> import lumache
+>>> lumache.get_random_ingredients()
+['shells', 'gorgonzola', 'parsley']
+
 03 Lorem Ipsum
 ==============
+03.01 Etiam tincidunt
+---------------------
+This is an ordinary paragraph.
+
+>>> print 'this is a Doctest block'
+this is a Doctest block
+
+The following is a literal block::
+
+    >>> This is not recognized as a doctest block by
+    reStructuredText.  It *will* be recognized by the doctest
+    module, though!
+
+03.02 Etiam tincidunt
+---------------------
+
 "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+
+This is an ordinary paragraph, introducing a block quote.
+
+    "It is my business to know things.  That is my trade."
+
+    -- Sherlock Holmes
+
 
 04 Lorem ipsum dolor sit amet
 =============================
@@ -73,6 +93,8 @@ Contents
    01 Welcome to Lumache's documentation!
    02 Project
    03 Lorem Ipsum
+      03.01 Etiam tincidunt
+      03.02 Etiam tincidunt
    04 Lorem ipsum dolor sit amet
       01 Suspendisse consequat sagittis leo at accumsan
       02 Suspendisse consequat sagittis leo at accumsan

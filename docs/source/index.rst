@@ -1,14 +1,7 @@
-01 Welcome to Lumache's documentation!
+01 Welcome to the pilot course on how to use ComtradR
 ======================================
-Lumache has its documentation hosted on Read the Docs
-Lumache has its documentation hosted on Read the Docs.
-RestructuredText: https://docutils.sourceforge.io/rst.html
-
-
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+This project has its documentation hosted on Read the Docs: https://readthedocs.org/
+This project has a GitHub repository: https://github.com/rasundsbak/rtd-tutorial/tree/3.0.y
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
@@ -23,14 +16,47 @@ how to :ref:`installation` the project.
 $project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
 
+>>> import lumache
+>>> lumache.get_random_ingredients()
+['shells', 'gorgonzola', 'parsley']
+
 03 Lorem Ipsum
 ==============
+03.01 Etiam tincidunt
+---------------------
+This is an ordinary paragraph.
+
+>>> print 'this is a Doctest block'
+this is a Doctest block
+
+The following is a literal block::
+
+    >>> This is not recognized as a doctest block by
+    reStructuredText.  It *will* be recognized by the doctest
+    module, though!
+
+03.02 Etiam tincidunt
+---------------------
+
 "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+
+This is an ordinary paragraph, introducing a block quote.
+
+    "It is my business to know things.  That is my trade."
+
+    -- Sherlock Holmes
+
 
 04 Lorem ipsum dolor sit amet
 =============================
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut eleifend augue, et pretium turpis. Fusce in tortor a tellus luctus tristique a at metus. Pellentesque in suscipit ipsum. Ut bibendum elit orci, eget efficitur mauris fringilla eget. Aliquam vitae risus lectus. Nam quis ante magna. Nunc hendrerit tellus at tortor dapibus, ut porttitor enim tincidunt. Etiam nisl purus, fermentum sit amet justo ac, lobortis congue ipsum. Cras nisl nisi, vehicula ac suscipit vitae, consectetur at ligula. Morbi faucibus dignissim dictum. Phasellus bibendum iaculis tellus, sed vehicula est luctus imperdiet. Pellentesque dictum enim est, at condimentum mauris iaculis et. Nulla posuere congue luctus. Aliquam nec sem pretium massa mollis ornare. Proin vel nulla eu dolor consequat fermentum nec et velit. Ut quis sapien non lacus pretium elementum.
+
+01 Suspendisse consequat sagittis leo at accumsan
+----------------------------------------------
+
+02 Suspendisse consequat sagittis leo at accumsan
+----------------------------------------------
 
 
 05 Quisque at finibus orci
@@ -67,7 +93,11 @@ Contents
    01 Welcome to Lumache's documentation!
    02 Project
    03 Lorem Ipsum
+      03.01 Etiam tincidunt
+      03.02 Etiam tincidunt
    04 Lorem ipsum dolor sit amet
+      01 Suspendisse consequat sagittis leo at accumsan
+      02 Suspendisse consequat sagittis leo at accumsan
    05 Quisque at finibus orci
       Suspendisse consequat sagittis leo at accumsan
       Etiam tincidunt
@@ -75,4 +105,3 @@ Contents
       
    
    
-

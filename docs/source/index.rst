@@ -81,10 +81,14 @@ conflicts_prefer(dplyr::lag)
 conflict_scout()
 
 
+This is a normal text paragraph. The next paragraph is a code sample::
 
-```{knitr}
-x = [1, 2, 3]
-```
+   It is not processed in any way, except
+   that the indentation is removed.
+
+   It can span multiple lines.
+
+This is a normal text paragraph again.
 
 
 

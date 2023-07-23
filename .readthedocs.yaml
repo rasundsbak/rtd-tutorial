@@ -16,10 +16,14 @@ build:
  # configuration: docs/conf.py
 
 # Explicitly set the version of Python and its requirements
+# from  https://github.com/astronomer/astronomer-providers/issues/664
 python:
   install:
     - requirements: docs/requirements.txt
-    - conda install -c conda-forge sphinx-copybutton
+    conda install -c conda-forge sphinx-copybutton
+    pip install -e .[docs]
+    make docs
+    
     
 # We recommend specifying your dependencies to enable reproducible builds:
 # https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html

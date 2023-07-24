@@ -83,7 +83,7 @@ And the process of getting data may start.
 The function defined in this example, get.Comtrade(), extracts data from 
 UN Comtrade using either the csv or the json format.
 
-   >>>get.Comtrade <- function(url="http://comtrade.un.org/api/get?"
+   >>> get.Comtrade <- function(url="http://comtrade.un.org/api/get?"
                          ,maxrec=50000
                          ,type="C"
                          ,freq="A"

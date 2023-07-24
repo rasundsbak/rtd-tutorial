@@ -171,7 +171,7 @@ Example of a process like this::
    write.csv(RS2$validation, "/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew/Validation00_04Opec.csv")
    ```
 furthermore::
-   ```
+
    #Take out the data to work further
    RS1 <- as_tibble(RS1$data)
    RS2 <- as_tibble(RS2$data)

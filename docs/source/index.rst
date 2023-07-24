@@ -44,6 +44,8 @@ This is a paragraph that contains .. _https://www.nrk.no/.
 
 .. _https://www.nrk.no/
 
+`Les nyheter her <https://www.nrk.no/>`_
+
 03.02 Etiam tincidunt
 ---------------------
 

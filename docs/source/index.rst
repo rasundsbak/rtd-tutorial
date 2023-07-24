@@ -56,9 +56,11 @@ This is an ordinary paragraph, introducing a block quote.
 
     -- Sherlock Holmes
 
-This is a paragraph that contains `https://www.nrk.no/`_.
 
-.. _a link: https://www.nrk.no/
+
+Use `Link text <https://domain.invalid/>`
+
+Test 24. juli 2023: `Les nyheter her <https://www.nrk.no/>`
 
 
 04 Lorem ipsum dolor sit amet

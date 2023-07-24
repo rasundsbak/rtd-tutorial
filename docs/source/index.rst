@@ -45,7 +45,8 @@ A good way to start up an R script
 
 In the .R file, at the very begining::
 
-<pre><code class="language-css">.some-box {
+<pre><code class="language-css">.some-box
+
 	width: 20px;
 	height: 20px;
 	background: black;

@@ -80,8 +80,8 @@ Then I need to rule out the conflicts between the packages that are in use::
 
 And the process of getting data may start.
 
-   # The function defined in this example, get.Comtrade(), extracts data from 
-   # UN Comtrade using either the csv or the json format.
+The function defined in this example, get.Comtrade(), extracts data from 
+UN Comtrade using either the csv or the json format.
 
    get.Comtrade <- function(url="http://comtrade.un.org/api/get?"
                          ,maxrec=50000
@@ -109,7 +109,6 @@ And the process of getting data may start.
                  ,"fmt=",fmt        #Format
                  ,sep = ""
   )
-  
      if(fmt == "csv") {
        raw.data<- read.csv(string,header=TRUE)
        return(list(validation=NULL, data=raw.data))
@@ -131,10 +130,9 @@ And the process of getting data may start.
         colnames(ndata)<- var.names
       }
       return(list(validation=validation,data =ndata))
-    }
-  }
-}
-
+         }
+      }
+   }
 Then I am making a chunk where I define excactly what is is that I want to get from the Comtrade database. First I run the ct_commodity_lookup. The text will show what is the content of the data we are going to look at
 
 ```{r, 06-retrieving-commodity-info, echo=FALSE}

@@ -26,6 +26,9 @@ by providing a basic explanation of how to do it easily.
 ---------------------
 This is an ordinary paragraph.
 
+.. image:: gnu.png
+   (options)
+
 >>> print 'this is a Doctest block'
 this is a Doctest block
 

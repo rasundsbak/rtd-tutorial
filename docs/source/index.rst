@@ -25,10 +25,10 @@ by providing a basic explanation of how to do it easily.
 03.01 Etiam tincidunt
 ---------------------
 This is an ordinary paragraph.
+Gnu Photo by Dim Hou on Unsplash "https://unsplash.com/"
 
 
    .. image:: gnu.jpg
-   (align: "middle")
 
 
 >>> print 'this is a Doctest block'

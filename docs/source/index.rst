@@ -78,6 +78,69 @@ Then I need to rule out the conflicts between the packages that are in use::
    conflicts_prefer(plotly::layout)
    conflicts_prefer(dplyr::lag)
 
+And the process of getting data may start.
+
+   # The function defined in this example, get.Comtrade(), extracts data from 
+   # UN Comtrade using either the csv or the json format.
+
+   get.Comtrade <- function(url="http://comtrade.un.org/api/get?"
+                         ,maxrec=50000
+                         ,type="C"
+                         ,freq="A"
+                         ,px="HS"
+                         ,ps="now"
+                         ,r
+                         ,p
+                         ,rg="all"
+                         ,cc="TOTAL"
+                         ,fmt="json"
+   )
+   {
+     string<- paste(url
+                 ,"max=",maxrec,"&" #maximum no. of records returned
+                 ,"type=",type,"&" #type of trade (c=commodities)
+                 ,"freq=",freq,"&" #frequency
+                 ,"px=",px,"&" #classification
+                 ,"ps=",ps,"&" #time period
+                 ,"r=",r,"&" #reporting area
+                 ,"p=",p,"&" #partner country
+                 ,"rg=",rg,"&" #trade flow
+                 ,"cc=",cc,"&" #classification code
+                 ,"fmt=",fmt        #Format
+                 ,sep = ""
+  )
+  
+     if(fmt == "csv") {
+       raw.data<- read.csv(string,header=TRUE)
+       return(list(validation=NULL, data=raw.data))
+     } else {
+    if(fmt == "json" ) {
+      raw.data<- fromJSON(file=string)
+      data<- raw.data$dataset
+      validation<- unlist(raw.data$validation, recursive=TRUE)
+      ndata<- NULL
+      if(length(data)> 0) {
+        var.names<- names(data[[1]])
+        data<- as.data.frame(t( sapply(data,rbind)))
+        ndata<- NULL
+        for(i in 1:ncol(data)){
+          data[sapply(data[,i],is.null),i]<- NA
+          ndata<- cbind(ndata, unlist(data[,i]))
+        }
+        ndata<- as.data.frame(ndata)
+        colnames(ndata)<- var.names
+      }
+      return(list(validation=validation,data =ndata))
+    }
+  }
+}
+
+Then I am making a chunk where I define excactly what is is that I want to get from the Comtrade database. First I run the ct_commodity_lookup. The text will show what is the content of the data we are going to look at
+
+```{r, 06-retrieving-commodity-info, echo=FALSE}
+ct_commodity_lookup("2709")
+```
+
 
 This is a normal text paragraph. The next paragraph is a code sample::
 
@@ -88,11 +151,11 @@ This is a normal text paragraph. The next paragraph is a code sample::
 
 This is a normal text paragraph again.
 
-
-
  import lumache
  lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+   ['shells', 'gorgonzola', 'parsley']
+
+
 
 03 Lorem Ipsum
 ==============

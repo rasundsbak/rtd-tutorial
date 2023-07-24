@@ -8,3 +8,21 @@ exports.createPages = async function ({ actions, graphql }) {
         })
     })
 }
+
+function generateAlternativeHtml(html) {
+    const dom = new JSDOM(html);
+    const { document } = dom.window;
+    const codeSnippets = document.querySelectorAll('.gatsby-highlight');
+
+    codeSnippets.forEach((codeSnippet) => {
+        const wrapper = document.createElement('div');
+        wrapper.classList.add('copy-code-block');
+
+        // add your own css styles here, css classes, etc.
+        const copyButton = document.createElement('button');
+        copyButton.innerHTML = 'Copy';
+        codeSnippet.insertAdjacentHTML(`afterend`, copyButton);
+    });
+
+    return document.body.innerHTML;
+}

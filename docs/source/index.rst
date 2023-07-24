@@ -137,12 +137,90 @@ Then I am making a chunk where I define specifically what I want from the Comtra
    [1] "2709 - Petroleum oils and oils obtained from bituminous minerals; crude"        
    [2] "270900 - Oils; petroleum oils and oils obtained from bituminous minerals, crude"
 
+The answer gives us the numerical code that we need for out next chunk::
+
+   ```{r, 07-data-retrieval, echo=FALSE}
+   RS1 <- get.Comtrade(ps= "1995,1996,1997,1998,1999", 
+                    c="2709", 
+                    r="12,24,178,226,266,364,368,414,434,566,682,784,862",
+                    p="0",
+                    rg="2")
+
+   RS2 <- get.Comtrade(ps= "2000,2001,2002,2003,2004",
+                    c="2709",
+                    r="12,24,178,226,266,364,368,414,434,566,682,784,862",
+                    p="0",
+                    rg="2")
+   ```
+
+The result is two tibbles, that must be bound together. The reason why we do this twice, is that Comtrade only wants to give five years of data each time. I have not tried to take more than five years, but suspect that it might result in NULL output in the data file.
+
+Storing the data is useful, in case the database has down time. It also allows you to gradially make your iwn little databank for reuse in your project.
+
+Example of a process like this::
+
+   # store the data in case the database is down in future
+
+   ```{r, 10-storing-data-locally, echo=FALSE}
+   write.csv(RS1$data, "/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew/95_99Opec.csv")
+
+   write.csv(RS1$validation, "/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew/Validation95_99Opec.csv")
+
+   write.csv(RS2$data, "/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew/00_04Opec.csv")
+
+   write.csv(RS2$validation, "/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew/Validation00_04Opec.csv")
+   ```
+furthermore::
+   ```
+   #Take out the data to work further
+   RS1 <- as_tibble(RS1$data)
+   RS2 <- as_tibble(RS2$data)
 
 
+   #Check it out
+   View(RS1)
+   View(RS2)
+   ```
 
+The process starts getting interesting::
 
+   ```{r, 12-binding-rows, echo=FALSE}
+   RS3 <- bind_rows(RS1, RS2)
 
+   View(RS3)
+   ```
 
+And then::
+
+   ```{r, 13-preparing-visualization, echo=FALSE}
+
+   Year <- c(RS3$yr)
+   Value <- c(RS3$TradeValue)
+   Land <- c(RS3$rtTitle)
+   ```
+text::
+
+   ```{r, 14-convert-to-numeric, echo=FALSE}
+   # Denne er essensiell for aa lykkes med grafikk
+   Year <- as.numeric(as.character(RS3$yr)) # Convert factor to numeric Year
+
+   Value <- as.numeric(as.character(RS3$TradeValue)) # Convert factor to numeric Vekt
+   
+   class(RS3$rtTitle)
+   ```
+
+and...::
+
+   ```{r, 15-ggplot-visualization, echo=FALSE}
+   # This seems to work:
+   FirstVisualisation <- ggplot(RS3, aes(x=Year , y = (log(Value)), group = Land, colour = Land)) + 
+   geom_line(size=1)
+
+   FirstVisualisation <- FirstVisualisation +
+     geom_point(size=2)
+
+   FirstVisualisation
+```
 
 
 

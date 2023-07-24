@@ -26,8 +26,10 @@ by providing a basic explanation of how to do it easily.
 ---------------------
 This is an ordinary paragraph.
 
-.. image:: gnu.jpg
-   (options)
+
+   .. image:: gnu.jpg
+   (align: "middle")
+
 
 >>> print 'this is a Doctest block'
 this is a Doctest block

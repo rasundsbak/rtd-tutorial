@@ -130,11 +130,20 @@ UN Comtrade using either the csv or the json format::
       }
    }
 
-Then I am making a chunk where I define excactly what is is that I want to get from the Comtrade database. First I run the ct_commodity_lookup. The text will show what is the content of the data we are going to look at
+Then I am making a chunk where I define specifically what I want from the Comtrade database. I run the ct_commodity_lookup. The response from RStudio console will show what is the content of the data we are going to look at::
 
-```{r, 06-retrieving-commodity-info, echo=FALSE}
-ct_commodity_lookup("2709")
-```
+   ct_commodity_lookup("2709")
+   $`2709`
+   [1] "2709 - Petroleum oils and oils obtained from bituminous minerals; crude"        
+   [2] "270900 - Oils; petroleum oils and oils obtained from bituminous minerals, crude"
+
+
+
+
+
+
+
+
 
 
 This is a normal text paragraph. The next paragraph is a code sample::

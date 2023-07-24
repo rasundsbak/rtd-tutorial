@@ -40,9 +40,9 @@ The following is a literal block::
     reStructuredText.  It *will* be recognized by the doctest
     module, though!
 
-This is a paragraph that contains `https://www.nrk.no/`.
+This is a paragraph that contains .. _https://www.nrk.no/.
 
-.. link: _https://www.nrk.no/
+.. _https://www.nrk.no/
 
 03.02 Etiam tincidunt
 ---------------------
@@ -58,7 +58,7 @@ This is an ordinary paragraph, introducing a block quote.
 
 
 
-Use `Link text <https://domain.invalid/>`
+Use Link text: <https://domain.invalid/>
 
 Test 24. juli 2023: `Les nyheter her <https://www.nrk.no/>`
 

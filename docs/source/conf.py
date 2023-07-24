@@ -17,6 +17,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinx_rtd_theme',
 ]
 
 intersphinx_mapping = {
@@ -51,6 +52,7 @@ def setup(app):
 sidebarbgcolor = 'DarkOrange'
 
 # html_theme = 'sphinx_rtd_theme'
+html_theme = "sphinx_rtd_theme"
 
 # default works, but not to change colour
 # html_theme = 'default'

@@ -26,3 +26,27 @@ function generateAlternativeHtml(html) {
 
     return document.body.innerHTML;
 }
+
+import copy from 'clipboard-copy';
+
+const BlogPostTemplate = ({ data, pageContext }) => {
+    const { alternativeHtml } = pageContext;
+
+    useEffect(() => {
+        const codeSnippets = document.querySelectorAll('.copy-code-block button');
+        codeSnippets.forEach((elementWrapper) => {
+            codeSnippet.addEventListener('click', () => {
+                const codeSnippet = elementWrapper.parentElement.querySelector('.gatsby-highlight');
+                const code = codeSnippet.innerHTML;
+                copy(code);
+            });
+        });
+    }, []);
+
+    return (
+        <section>
+            <h1>{data.markdownRemark.frontmatter.title}</h1>
+            <div dangerouslySetInnerHTML={{ __html: alternativeHtml }} />
+        </section>
+    );
+};

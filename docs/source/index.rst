@@ -93,10 +93,8 @@ UN Comtrade using either the csv or the json format.
                          ,p
                          ,rg="all"
                          ,cc="TOTAL"
-                         ,fmt="json"
-   )
-   {
-     string<- paste(url
+                         ,fmt="json")
+   {string<- paste(url
                  ,"max=",maxrec,"&" #maximum no. of records returned
                  ,"type=",type,"&" #type of trade (c=commodities)
                  ,"freq=",freq,"&" #frequency
@@ -107,12 +105,11 @@ UN Comtrade using either the csv or the json format.
                  ,"rg=",rg,"&" #trade flow
                  ,"cc=",cc,"&" #classification code
                  ,"fmt=",fmt        #Format
-                 ,sep = ""
-  )
-     if(fmt == "csv") {
+                 ,sep = "")
+   if(fmt == "csv") {
        raw.data<- read.csv(string,header=TRUE)
        return(list(validation=NULL, data=raw.data))
-     } else {
+   } else {
     if(fmt == "json" ) {
       raw.data<- fromJSON(file=string)
       data<- raw.data$dataset
@@ -125,14 +122,14 @@ UN Comtrade using either the csv or the json format.
         for(i in 1:ncol(data)){
           data[sapply(data[,i],is.null),i]<- NA
           ndata<- cbind(ndata, unlist(data[,i]))
-        }
+   }
         ndata<- as.data.frame(ndata)
-        colnames(ndata)<- var.names
-      }
+        colnames(ndata)<- var.names}
       return(list(validation=validation,data =ndata))
          }
       }
    }
+
 Then I am making a chunk where I define excactly what is is that I want to get from the Comtrade database. First I run the ct_commodity_lookup. The text will show what is the content of the data we are going to look at
 
 ```{r, 06-retrieving-commodity-info, echo=FALSE}

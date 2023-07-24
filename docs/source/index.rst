@@ -52,6 +52,10 @@ This is an ordinary paragraph, introducing a block quote.
 
     -- Sherlock Holmes
 
+This is a paragraph that contains `https://www.nrk.no/`_.
+
+.. _a link: https://www.nrk.no/
+
 
 04 Lorem ipsum dolor sit amet
 =============================

@@ -40,6 +40,10 @@ The following is a literal block::
     reStructuredText.  It *will* be recognized by the doctest
     module, though!
 
+This is a paragraph that contains `https://www.nrk.no/`_.
+
+.. _a link: https://www.nrk.no/
+
 03.02 Etiam tincidunt
 ---------------------
 

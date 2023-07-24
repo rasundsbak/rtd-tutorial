@@ -45,6 +45,14 @@ A good way to start up an R script
 
 In the .R file, at the very begining::
 
+<pre><code class="language-css">.some-box {
+	width: 20px;
+	height: 20px;
+	background: black;
+	margin-bottom: 1.5rem;
+}
+</code></pre>
+
    getwd
    setwd("/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew")
 

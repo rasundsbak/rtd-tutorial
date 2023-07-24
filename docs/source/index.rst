@@ -40,11 +40,13 @@ The following is a literal block::
     reStructuredText.  It *will* be recognized by the doctest
     module, though!
 
-This is a paragraph that contains .. _https://www.nrk.no/.
-
-.. _https://www.nrk.no/
+This is a paragraph that contains https://www.nrk.no/
 
 `Les nyheter her <https://www.nrk.no/>`_
+
+Get the latest news at `CNN`_.
+
+.. _CNN: http://cnn.com/
 
 03.02 Etiam tincidunt
 ---------------------

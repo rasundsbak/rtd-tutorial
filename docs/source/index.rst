@@ -48,7 +48,7 @@ Get the latest news at `CNN`_.
 
 .. _CNN: http://cnn.com/
 
-I'd rather see an image of a `young female gnu <younggnu.rst>`_
+I'd rather see an image of a `young female gnu </younggnu.rst>`_
 
 03.02 Etiam tincidunt
 ---------------------

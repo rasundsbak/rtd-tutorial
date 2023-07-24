@@ -45,13 +45,6 @@ A good way to start up an R script
 
 In the .R file, at the very begining::
 
-const btn_copy = document.getElementById('copy')
-const txt_data = document.getElementById('data')copy.onclick = () => {
-  const value = txt_data.value
-  navigator.clipboard.writeText(value)
-}
-
-
    getwd
    setwd("/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew")
 

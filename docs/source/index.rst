@@ -226,20 +226,9 @@ Resulting in this table:
    .. image:: rplot.png
 
 
-03 Lorem Ipsum
-==============
-03.01 Etiam tincidunt
----------------------
-This is an ordinary paragraph.
-
- print 'this is a Doctest block'
-this is a Doctest block
-
-The following is a literal block::
-
-     This is not recognized as a doctest block by
-    reStructuredText.  It *will* be recognized by the doctest
-    module, though!
+03.01 Not the most sophisticated plot, but we have to move on
+-------------------------------------------------------------
+Many things can be said about the formatting of this image, and some of them mught even be unfavourable. However, there are other sites on the web that may learn you how to make beautiful and very sophisticated outputs with RStudio. In this lesson, we are going to focus on breaking down data into a meaninhful regression analysis.
 
 03.02 Etiam tincidunt
 ---------------------

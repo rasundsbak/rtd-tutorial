@@ -4,6 +4,7 @@ Young female Gnu
 Young female Gnu Drinking from River
 ------------------------------------
 
+Photo by _Fabrizio Frigeni: https://unsplash.com/@ffrige on _Unsplash: https://unsplash.com/
 
 .. image:: younggnu.jpg
 

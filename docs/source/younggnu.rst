@@ -1,5 +1,9 @@
+Young female Gnu
+================
+
 Young female Gnu Drinking from River
-====================================
+------------------------------------
+
 
 .. image:: younggnu.jpg
 
@@ -10,8 +14,8 @@ Installation
 
 .. image: younggnu.jpg
 
-Suspendisse consequat sagittis leo at accumsan
-----------------------------------------------
+Water is central for all life on earth
+--------------------------------------
 
 To use Lumache, first install it using pip:
 
@@ -19,8 +23,8 @@ To use Lumache, first install it using pip:
 
    (.venv) $ pip install lumache
 
-Creating recipes
-----------------
+See how she enjoys it
+---------------------
 
 To retrieve a list of random ingredients,
 you can use the ``lumache.get_random_ingredients()`` function:

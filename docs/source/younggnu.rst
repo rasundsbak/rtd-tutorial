@@ -5,9 +5,7 @@ Young female Gnu Drinking from River
 ------------------------------------
 Photo by `Fabrizio Frigeni`_
 
-.. _Fabrizio Frigeni: https://unsplash.com/@ffrige 
-
-on `Unsplash: <https://unsplash.com/>`_
+.. _Fabrizio Frigeni: https://unsplash.com/@ffrige on `Unsplash: <https://unsplash.com/>`_
 
 Photo by 
 

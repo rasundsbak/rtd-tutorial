@@ -221,22 +221,9 @@ and...::
 
    FirstVisualisation
    ```
+Resulting in this table:
 
-
-
-This is a normal text paragraph. The next paragraph is a code sample::
-
-   It is not processed in any way, except
-   that the indentation is removed.
-
-   It can span multiple lines.
-
-This is a normal text paragraph again.
-
- import lumache
- lumache.get_random_ingredients()
-   ['shells', 'gorgonzola', 'parsley']
-
+.. image:: rplot.png
 
 
 03 Lorem Ipsum

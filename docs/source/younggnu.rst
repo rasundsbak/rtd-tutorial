@@ -6,13 +6,13 @@ Young female Gnu Drinking from River
 
 Photo by 'Fabrizio Frigeni: <https://unsplash.com/@ffrige>' on 'Unsplash: <https://unsplash.com/>'
 
-Photo by `Fabizio Frigeni`_.
+Photo by 'Fabizio Frigeni'_.
 .. _Fabrizio Frigeni: https://unsplash.com/@ffrige 
 
 on _Unsplash: https://unsplash.com/
 
 
-Get the latest news at `CNN`_.
+Get the latest news at 'CNN'_.
 
 .. _CNN: http://cnn.com/
 

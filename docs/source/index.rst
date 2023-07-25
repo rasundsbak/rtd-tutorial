@@ -50,8 +50,6 @@ Get the latest news at `CNN`_.
 
 I'd rather see an image of a :doc:`younggnu`
 
-`young female gnu`_
-
 03.02 Etiam tincidunt
 ---------------------
 

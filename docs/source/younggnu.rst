@@ -1,11 +1,15 @@
-   .. image:: younggnu.jpg
+Young female Gnu Drinking from River
+====================================
 
-Usage
-=====
+.. image:: younggnu.jpg
+
 .. _installation:
 
 Installation
 ------------
+
+.. image: younggnu.jpg
+
 Suspendisse consequat sagittis leo at accumsan
 ----------------------------------------------
 

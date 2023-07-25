@@ -48,7 +48,9 @@ Get the latest news at `CNN`_.
 
 .. _CNN: http://cnn.com/
 
-I'd rather see an image of a `young female gnu <https://github.com/rasundsbak/rtd-tutorial/blob/3.0.x/docs/source/younggnu.rst>`_
+I'd rather see an image of a :doc:`younggnu`
+
+`young female gnu`_
 
 03.02 Etiam tincidunt
 ---------------------

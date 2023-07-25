@@ -223,7 +223,7 @@ and...::
    ```
 Resulting in this table:
 
-.. image:: Rplot.png
+.. image:: rplot.png
 
 
 03 Lorem Ipsum

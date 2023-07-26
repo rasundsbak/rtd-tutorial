@@ -50,23 +50,32 @@ If you do not know your directory, use the command "getwd". Then, copy the direc
 
 I always start with the setwd. It is a good idea to combine it with opening the library(here). Many people prefer to use projects in RStudio. The reason why I no not, is that i feel the setwd command and "here" package gives me both better knowledge and control over my system.
 
-In order to follow the process in this script, we need the following pagkages. Note that if you do not have them installed, you must use the command "install.packages("package name")::
+In order to follow the process in this script, we need the following pagkages. Note that if you do not have them installed, you must first use the command install.packages("package name"). Since this is to be done only once, I often use the # tag to make the coding turn into a comment that will not be executed.
+
+Installation example::
 
    install.packages("comtradr")
    install.packages("rjson")
 
-This chunk is for the activation of already downloaded packages::
+   after installation, change to:
+   #install.packages("comtradr")
+   #install.packages("rjson")
 
-   library(comtradr) 
+Then::
+
    library(here)
+   library(comtradr)
    library(rjson)
    library(ggplot2)
    library(dplyr)
    library(plotly)
    library(conflicted)
    library(janitor)
+   library(tidyverse)
+   library(scales)
 
-Then I need to rule out the conflicts between the packages that are in use::
+
+It is also necesary to rule out the conflicts between the packages that are in use::
 
    conflict_scout()
 

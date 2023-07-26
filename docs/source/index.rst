@@ -16,6 +16,11 @@ how to :ref:`installation` the project.
    This project has incomplete references. References will be added at a later stage.
 ---
 
+
+Thanks to `ropensci/comtradr <https://github.com/ropensci/comtradr/tree/main>` for making   the package available again.
+
+
+
 01 Introduction
 ===============
 This is a report after following a bachelor course of STV 2020 Spring term 2023, University of Oslo. This text may be used as a tutorial for using Comtrade. In the following, it will be outlined how data from the United Nations' Comtrade database [@CRANPackageComtradr] can be used to point out structural problems related to oil industry. This will be the academic example used to demonstrate both the process of data collection, as well as the processing and division of data into relevant units. While working on this project, the United Nations API delivery was modernized and changed from being facilitated for R and RStudio into Python. The ComtradR is still being maintained under the GitHib initiative of OpenSci[@muir2023; @ROpenSciOpenTools]. This project will be developed according to the progress of the technical development of the official Comtrade database. A repository on how to generate data with Python, for import to RStudio may come at a later time.

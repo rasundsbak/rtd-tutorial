@@ -55,7 +55,7 @@ I always start with the setwd. It is a good idea to combine it with opening the 
 
 In order to follow the process in this script, we need the following pagkages. Note that if you do not have them installed, you must first use the command install.packages("package name"). Since this is to be done only once, I often use the # tag to make the coding turn into a comment that will not be executed.
 
-Installation example::
+1 Installation example::
 
    install.packages("comtradr")
    install.packages("rjson")
@@ -64,7 +64,7 @@ Installation example::
    #install.packages("comtradr")
    #install.packages("rjson")
 
-Then::
+2::
 
    library(here)
    library(comtradr)
@@ -77,13 +77,24 @@ Then::
    library(tidyverse)
    library(scales)
 
+   Selected output console:
 
-It is also necesary to rule out the conflicts between the packages that are in use
-1::
+   > library(conflicted)
+   > library(janitor)
+   > library(tidyverse)
+   ── Attaching core tidyverse packages ─────────── tidyverse 2.0.0 ──
+   ✔ forcats   1.0.0     ✔ stringr   1.5.0
+   ✔ lubridate 1.9.2     ✔ tibble    3.2.1
+   ✔ purrr     1.0.1     ✔ tidyr     1.3.0
+   ✔ readr     2.1.4   
+
+
+It is also necesary to rule out the conflicts between the packages that are in use 
+3::
 
    conflict_scout()
 
-2::
+4::
 
    conflicts_prefer(stats::chisq.test) 
    conflicts_prefer(scales::col_factor)
@@ -96,7 +107,9 @@ It is also necesary to rule out the conflicts between the packages that are in u
 We are ready to start the process of getting data.
 
 The function defined in this example, get.Comtrade(), extracts data from 
-UN Comtrade using either the csv or the json format::
+UN Comtrade using either the csv or the json format.
+
+5::
 
    get.Comtrade <- function(url="http://comtrade.un.org/api/get?"
                          ,maxrec=50000

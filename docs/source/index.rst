@@ -13,7 +13,7 @@ how to :ref:`installation` the project.
 
 .. note::
 
-   This project has no references yet. References will be added at a later stage. Thanks to `ropensci/comtradr <https://github.com/ropensci/comtradr/tree/main>` for making the package available again.
+   This project has no references yet. References will be added at a later stage. Thanks to `ropensci/comtradr <https://github.com/ropensci/comtradr/tree/main>` for making    the package available again.
 
 ---
 

@@ -43,14 +43,12 @@ This project should be seen as a pedagogical example on how to extract and analy
 A good way to start up an R script
 ==================================
 
-In the .R file, at the very begining::
-
-[copy text="Click Me" content="This is the content that will be copied"]
+If you do not know your directory, use the command "getwd". Then, copy the directory from the answer you got, and adjust it to fit the path that suits you. In the .R file, at the very begining::
 
    getwd
    setwd("/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew")
 
-I always start with the setwd. This is a very useful command, it is a good idea to combine it with opening the library(here)
+I always start with the setwd. It is a good idea to combine it with opening the library(here). Many people prefer to use projects in RStudio. The reason why I no not, is that i feel the setwd command and "here" package gives me both better knowledge and control over my system.
 
 In order to follow the process in this script, we need the following pagkages. Note that if you do not have them installed, you must use the command "install.packages("package name")::
 

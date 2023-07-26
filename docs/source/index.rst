@@ -78,18 +78,20 @@ Then::
    library(scales)
 
 
-It is also necesary to rule out the conflicts between the packages that are in use::
+It is also necesary to rule out the conflicts between the packages that are in use
+1::
 
    conflict_scout()
 
-   conflicts_prefer(stats::fisher.test) 
-   conflicts_prefer(dplyr::filter)
-   conflicts_prefer(plotly::layout)
-   conflicts_prefer(dplyr::lag)
-   conflicts_prefer(fi::stats) 
+2::
+
    conflicts_prefer(stats::chisq.test) 
    conflicts_prefer(scales::col_factor)
    conflicts_prefer(scales::discard)
+   conflicts_prefer(stats::filter)
+   conflicts_prefer(stats::fisher.test) 
+   conflicts_prefer(stats::lag)
+   conflicts_prefer(plotly::layout)
 
 We are ready to start the process of getting data.
 

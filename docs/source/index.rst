@@ -104,6 +104,21 @@ It is also necesary to rule out the conflicts between the packages that are in u
    conflicts_prefer(stats::lag)
    conflicts_prefer(plotly::layout)
 
+   Selected output:
+
+   > conflicts_prefer(scales::discard)
+   [conflicted] Will prefer scales::discard over any other package.
+   > conflicts_prefer(stats::filter)
+   [conflicted] Will prefer stats::filter over any other package.
+   > conflicts_prefer(stats::fisher.test) 
+   [conflicted] Will prefer stats::fisher.test over any other
+   package.
+   > conflicts_prefer(stats::lag)
+   [conflicted] Will prefer stats::lag over any other package.
+   > conflicts_prefer(plotly::layout)
+   [conflicted] Will prefer plotly::layout over any other package.
+   > 
+
 We are ready to start the process of getting data.
 
 The function defined in this example, get.Comtrade(), extracts data from 

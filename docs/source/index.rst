@@ -13,7 +13,7 @@ how to :ref:`installation` the project.
 
 .. note::
 
-   This is a test
+   This project has no references yet. References will be added at a later stage. Thanks to ropensci/comtradr for making the package available again.
 
 ---
 
@@ -79,13 +79,16 @@ It is also necesary to rule out the conflicts between the packages that are in u
 
    conflict_scout()
 
-   conflicts_prefer(stats::chisq.test) 
    conflicts_prefer(stats::fisher.test) 
    conflicts_prefer(dplyr::filter)
    conflicts_prefer(plotly::layout)
    conflicts_prefer(dplyr::lag)
+   conflicts_prefer(fi::stats) 
+   conflicts_prefer(stats::chisq.test) 
+   conflicts_prefer(scales::col_factor)
+   conflicts_prefer(scales::discard)
 
-And the process of getting data may start.
+We are ready to start the process of getting data.
 
 The function defined in this example, get.Comtrade(), extracts data from 
 UN Comtrade using either the csv or the json format::

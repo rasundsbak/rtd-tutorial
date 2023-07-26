@@ -18,7 +18,7 @@ Thanks to `ropensci/comtradr <https://github.com/ropensci/comtradr/tree/main>`_ 
 .. note::
 
    This text has incomplete references. References will be added at a later stage.
-Thanks to `ropensci/comtradr <https://github.com/ropensci/comtradr/tree/main>`_ for making the package available again.
+   Thanks to `ropensci/comtradr <https://github.com/ropensci/comtradr/tree/main>`_ for making the package available again.
 ---
 
 

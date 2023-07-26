@@ -11,12 +11,8 @@ how to :ref:`installation` the project.
    This project is under active development.
 ---
 
-.. note::
 
-   This project has incomplete references. References will be added at a later stage.
----
-
-
+This text has incomplete references. References will be added at a later stage.
 Thanks to `ropensci/comtradr <https://github.com/ropensci/comtradr/tree/main>` for making   the package available again.
 
 

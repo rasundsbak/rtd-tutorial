@@ -1,10 +1,8 @@
 Template for the Read the Docs tutorial
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This GitHub template includes a work process from RStudio
 
-Read the tutorial here:
+Procedures including downloading of files with Python will be included at a later stage.
 
-https://docs.readthedocs.io/en/stable/tutorial/
-Sphinx documentation: https://sphinx-rtd-trial.readthedocs.io/en/1.1.3/contents.html
+This work process is adequate for people who have UN comtrade institutional access.

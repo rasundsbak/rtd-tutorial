@@ -121,12 +121,16 @@ It is also necesary to rule out the conflicts between the packages that are in u
 
 We are ready to start the process of getting data.
 
-We need to log into the Comtrade system. Read the New Comtrade User Guide and especially under the section "Developer portal". Decide the correct user level or "Product" as they are called.
+04 Getting the data
+===================
+The Comtrade database has different subscription levels. If you are fortunate enough to belong to an academic institution that has a subscription, you may use the Premium Pro API solution. If not, there is a possibility of using the free API solution. You may get more information in the FAQ for first time users: https://unstats.un.org/wiki/pages/viewpage.action?pageId=125141443
+
+In order to get access to the API through RStudio We need to log into the Comtrade system. Read the New Comtrade User Guide and especially under the section "Developer portal". Decide the correct user level or "Product" as they are called.
 
 url: https://unstats.un.org/wiki/display/comtrade/New+Comtrade+User+Guide#NewComtradeUserGuide-DeveloperPortal
 
 Use this path in order to navigate to the page of the promary key of your subscription:
-https://comtradeplus.un.org/ --> login --> My comtrade premium --> My API portal --> Sign in --> Profile and then you are there.
+https://comtradeplus.un.org/ --> login --> My comtrade premium --> My API portal --> Sign in --> Profile and then you are there. As you can see, you must first log on to the Comtrade, and then log in again to the API solution on the small button named "Azure Active Directory B2C".
 
 5::
    #From the logon page uio user 
@@ -344,7 +348,7 @@ Contents
    01 Introduction
    02 The research question
    03 The academic problem
-   04  
+   04 Getting the data
    05 
    04 Quisque at finibus orci
       Suspendisse consequat sagittis leo at accumsan

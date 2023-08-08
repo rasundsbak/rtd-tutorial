@@ -121,10 +121,21 @@ It is also necesary to rule out the conflicts between the packages that are in u
 
 We are ready to start the process of getting data.
 
-The function defined in this example, get.Comtrade(), extracts data from 
-UN Comtrade using either the csv or the json format.
+We need to log into the Comtrade system. Read the New Comtrade User Guide and especially under the section "Developer portal". Decide the correct user level or "Product" as they are called.
+
+url: https://unstats.un.org/wiki/display/comtrade/New+Comtrade+User+Guide#NewComtradeUserGuide-DeveloperPortal
+
+Use this path in order to navigate to the page of the promary key of your subscription:
+https://comtradeplus.un.org/ --> login --> My comtrade premium --> My API portal --> Sign in --> Profile and then you are there.
 
 5::
+   #From the logon page uio user 
+   set_primary_comtrade_key()
+
+
+The function defined in this example, get.Comtrade(), extracts data from 
+UN Comtrade using either the csv or the json format.
+6::
 
    get.Comtrade <- function(url="http://comtrade.un.org/api/get?"
                          ,maxrec=50000

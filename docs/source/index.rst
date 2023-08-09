@@ -248,7 +248,10 @@ The process starts getting interesting::
    View(RS3)
    ```
 
-And then::
+04.01 Preparing the visualization
+---------------------------------
+
+4.01::
 
    ```{r, 13-preparing-visualization, echo=FALSE}
 
@@ -256,7 +259,7 @@ And then::
    Value <- c(RS3$TradeValue)
    Land <- c(RS3$rtTitle)
    ```
-text::
+further preparations::
 
    ```{r, 14-convert-to-numeric, echo=FALSE}
    # Denne er essensiell for aa lykkes med grafikk
@@ -282,6 +285,14 @@ and...::
 Resulting in this table:
 
    .. image:: rplot.png
+
+
+
+04.02 Making real values on the y- axis
+---------------------------------------
+
+04.02::
+
 
 
 03.01 Not the most sophisticated plot, but we have to move on

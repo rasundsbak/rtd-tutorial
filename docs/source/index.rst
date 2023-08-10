@@ -26,7 +26,7 @@ This is a report after following a bachelor course of STV 2020 Spring term 2023,
 
 02 The research question
 ========================
-OPEC countries, their oil export and democracy development. The statistics shown will be from the OPEC countries. Data on Trade value in Crude oil will be collected from Comtrade legacy database [@muir2023]. "Trade value" was chosen because it is the variable in this category that includes the most data. If choosing another category, the number of missing values would be larger. The development of the values of Trade value will be shown from the period 1995-2004. Then then the results of the Opec countries on a corruption index from the World Bank governance Indicators will be introduced [@kaufmann2023]. Finally, a regression analysis with corruption level as the dependent variable will be shown. The unit of analysis will be land- years. The process of restructuring the data will be shown.
+OPEC countries, their oil export and democracy development. The statistics shown will be from the OPEC countries. Data on Trade value in Crude oil will be collected from Comtrade legacy database [@muir2023]. "Trade value" was chosen because it is the variable in this category that includes the most data. If choosing another category, the number of missing values would be larger. The development of the values of Trade value will be shown from the period 1995-2014. The results of the Opec countries on a corruption index from the World Bank Governance Indicators will be introduced [@kaufmann2023]. Finally, a regression analysis with corruption level as the dependent variable will be shown. The unit of analysis will be land- years. The process of restructuring the data will be shown.
 
 03 The academic problem
 =======================
@@ -213,7 +213,7 @@ The answer gives us the numerical code that we need for out next chunk::
 
 The result is two tibbles, that must be bound together. The reason why we do this twice, is that Comtrade only wants to give five years of data each time. I have not tried to take more than five years, but suspect that it might result in NULL output in the data file.
 
-Storing the data is useful, in case the database has down time. It also allows you to gradially make your iwn little databank for reuse in your project.
+Storing the data is useful, in case the database has down time. It also allows you to gradially make your own little databank for reuse in your project.
 
 Example of a process like this::
 
@@ -240,13 +240,22 @@ furthermore::
    View(RS2)
    ```
 
-The process starts getting interesting::
+The process starts getting interesting. Here, I have planned for my readers to make their own files and store them. You may put the mane that you want on your data. I call it RS1 to 5 because those are my initials. The reader may use any naming that fits. But be sure to invent systematic approaches that fits for you::
 
-   ```{r, 12-binding-rows, echo=FALSE}
-   RS3 <- bind_rows(RS1, RS2)
+   # Reading the files stored from the process above
+   RS2 <- read_csv(file = "Data/95_99Opec.csv")
 
-   View(RS3)
-   ```
+   RS3 <- read_csv(file = "Data/00_04Opec.csv")
+
+   RS4 <- read_csv(file = "Data/05_09Opec.csv")
+
+   RS5 <- read_csv(file = "Data/10_14Opec.csv")
+
+Binding the rows onto one unit::
+
+   RS6 <- bind_rows(RS2, RS3, RS4, RS5)
+      
+   View(RS6)
 
 04.01 Preparing the visualization
 ---------------------------------

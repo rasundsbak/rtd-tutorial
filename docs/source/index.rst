@@ -1,4 +1,4 @@
-01 Welcome to the pilot course on how to use ComtradR
+D01 Welcome to the pilot course on how to use ComtradR
 ======================================
 This project has its documentation hosted on Read the Docs: https://readthedocs.org/
 This project has a GitHub repository: https://github.com/rasundsbak/rtd-tutorial/tree/3.0.y
@@ -272,19 +272,13 @@ In this file, there are some data that we do not need. For instance, several of 
 
    ```{r, 13-preparing-visualization, echo=FALSE}
 
-   Year <- c(RS3$yr)
-   Value <- c(RS3$TradeValue)
-   Land <- c(RS3$rtTitle)
-   ```
-further preparations::
-
-   ```{r, 14-convert-to-numeric, echo=FALSE}
-   # Denne er essensiell for aa lykkes med grafikk
-   Year <- as.numeric(as.character(RS3$yr)) # Convert factor to numeric Year
-
-   Value <- as.numeric(as.character(RS3$TradeValue)) # Convert factor to numeric Vekt
+   # This is important in order to make it possible to make graphics
    
-   class(RS3$rtTitle)
+Year <- as.numeric(as.character(RS6$yr)) # Convert factor to numeric Year
+
+   Value <- as.numeric(as.character(RS6$TradeValue)) # Convert factor to numeric Vekt
+
+   class(Land)
    ```
 
 and...::

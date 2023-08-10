@@ -187,7 +187,7 @@ UN Comtrade using either the csv or the json format.
          }
       }
    }
-It is important to define specifically what is wanted from the Comtrade database. In order to get this info, run the ct_commodity_lookup. The response from RStudio console will show what is the content of the data we are going to look at. I have been checking the commodities and their numbers, both in the online database, and in R, and have an idea of what I want. [@unitednationsComtrade] ::
+It is important to define specifically what is wanted from the Comtrade database. In order to get this info, run the ct_commodity_lookup. The response from RStudio console will show what is the content of the data we are going to look at. I have been checking the commodities and their numbers, both in the online database, and in R, and have an idea of what I want. [@unitednationsComtrade]. It is also possible to use the reference tables [@ComtradeReferenceTables]::
 
    ct_commodity_lookup("2709")
    $`2709`

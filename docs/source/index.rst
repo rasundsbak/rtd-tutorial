@@ -257,6 +257,14 @@ Binding the rows onto one unit::
       
    View(RS6)
 
+In this file, there are some data that we do not need. For instance, several of the rows are just a repetition of the same data, year. The solution is that we make a list of only the columns that we need::
+
+RSClean <- RS6 %>%
+  select(yr, rt3ISO, rtTitle, TradeValue)
+
+View(RSClean)
+
+
 04.01 Preparing the visualization
 ---------------------------------
 

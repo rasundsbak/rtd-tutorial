@@ -300,7 +300,7 @@ and...::
    ```
 Resulting in this table:
 
-   .. image:: docs/source/allofopec.png
+   .. image:: allofopec.png
 
 
 

@@ -302,6 +302,9 @@ Resulting in this table:
 
    .. image:: allofopec.png
 
+As we can see, some countries has not had oil export for the whole period. We may want to remove some of them, in order to make the table look cleaner. After seeing the table, we want to remove Libya, Iraq and Angola::
+
+
 
 
 04.02 Making real values on the y- axis

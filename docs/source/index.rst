@@ -300,7 +300,7 @@ and...::
    ```
 Resulting in this table:
 
-   .. image:: docs/source/2023-08-10AllOfOpec.png
+   .. image:: docs/source/01allofopec.png
 
 
 

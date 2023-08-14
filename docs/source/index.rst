@@ -256,14 +256,18 @@ Binding the rows onto one unit::
       
    View(RS6)
 
-In this file, there are some data that we do not need. For instance, several of the rows are just a repetition of the same data, year. The solution is that we make a list of only the columns that we need::
+In this file, there are some data that we do not need. For instance, several of the rows are just a repetition of the same data, year. The solution is that we make a list of only the columns that we need. We will make a new file, with only the columns that we need::
    
-   # Tror denne er viktig...
-   Year <- c(RS6$yr)
-   Value <- c(RS6$TradeValue)
-   Land <- c(RS6$rtTitle)
+   RSClean <- RS6 %>% select(yr, rt3ISO, rtTitle, TradeValue)
+   View(RSClean)
+   typeof(RSClean)
 
-   view(RS6)
+Preparing the data for making graphics::
+
+   # Making the columns into vectors
+   Year <- c(RSClean$yr) 
+   Value <- c(RSClean$TradeValue) 
+   Land <- c(RSClean$rtTitle)
 
 04.01 Preparing the visualization
 ---------------------------------
@@ -272,13 +276,14 @@ In this file, there are some data that we do not need. For instance, several of 
 
    ```{r, 13-preparing-visualization, echo=FALSE}
 
-   # This is important in order to make it possible to make graphics
+   # This is important in order to make it possible to make graphics from the vectors. The vector "Land" does not need to be    converted, but we want to check it out.
    
-Year <- as.numeric(as.character(RS6$yr)) # Convert factor to numeric Year
+   Year <- as.numeric(as.character(RSClean$yr)) # Convert factor to numeric Year
 
-   Value <- as.numeric(as.character(RS6$TradeValue)) # Convert factor to numeric Vekt
+   Value <- as.numeric(as.character(RSClean$TradeValue)) # Convert factor to numeric Vekt
 
    class(Land)
+
    ```
 
 and...::

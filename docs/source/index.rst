@@ -298,9 +298,9 @@ and...::
 
    FirstVisualisation
    ```
-Resulting in this table::
+Resulting in this table:
 
-   .. image:: docs/source/01allofopec.png
+.. image:: docs/source/01allofopec.png
 
 
 

@@ -352,7 +352,7 @@ Here, Saudi Arabia is is also taken away in order to be able to better see the d
 
 I want the numbers on the y axis to look more normal::
 
-# this is how we do it...
+   # this is how we do it...
 
    FirstVisualisation + # Modify formatting of axis scale_y_continuous(labels = comma)
 

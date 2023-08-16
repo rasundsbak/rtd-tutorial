@@ -133,6 +133,7 @@ Use this path in order to navigate to the page of the promary key of your subscr
 https://comtradeplus.un.org/ --> login --> My comtrade premium --> My API portal --> Sign in --> Profile and then you are there. As you can see, you must first log on to the Comtrade, and then log in again to the API solution on the small button named "Azure Active Directory B2C".
 
 5::
+
    #From the logon page uio user 
    set_primary_comtrade_key()
 
@@ -319,6 +320,7 @@ Testing new heading here:
 -------------------------
 
 Text::
+
       # Visualisation w NoNoise dataframe
       # Making the columns into vectors
 
@@ -328,6 +330,7 @@ Text::
 
 
 number 9::
+
       # Converting factors to numerical, and checking the last class, which does not need to be converted
 
       Year <- as.numeric(as.character(RSCleanNoNoise$yr)) # Convert factor to numeric Year

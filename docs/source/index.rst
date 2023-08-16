@@ -308,38 +308,42 @@ As we can see, some countries has not had oil export for the whole period. We ma
 ------------------------------------
 
 7::
-   # Subset with different set of countries
-   # Removing Libya, Iraq and Angola because of lacking data
+      # Subset with different set of countries
+      # Removing Libya, Iraq and Angola because of lacking data
 
-   RSCleanNoNoise <- subset(RSClean, subset = rtTitle == "Algeria" | rtTitle == "Congo" | rtTitle == "Gabon" | rtTitle == "Iran" | rtTitle == "Kuwait"    | rtTitle == "Nigeria" | rtTitle == "United Arab Emirates" | rtTitle == "Venezuela")
+      RSCleanNoNoise <- subset(RSClean, subset = rtTitle == "Algeria" | rtTitle == "Congo" | rtTitle == "Gabon" | rtTitle == "Iran" | rtTitle == "Kuwait"    | rtTitle == "Nigeria" | rtTitle == "United Arab Emirates" | rtTitle == "Venezuela")
 
-   View(RSCleanNoNoise)
+      View(RSCleanNoNoise)
 
 8::
-   # Visualisation w NoNoise dataframe
-   # Making the columns into vectors
+      # Visualisation w NoNoise dataframe
+      # Making the columns into vectors
 
-   Year <- c(RSCleanNoNoise$yr) 
-   Value <- c(RSCleanNoNoise$TradeValue) 
-   Land <- c(RSCleanNoNoise$rtTitle)
+      Year <- c(RSCleanNoNoise$yr) 
+      Value <- c(RSCleanNoNoise$TradeValue) 
+      Land <- c(RSCleanNoNoise$rtTitle)
 
 
 9::
-   # Converting factors to numerical, and checking the last class, which does not need to be converted
+      # Converting factors to numerical, and checking the last class, which does not need to be converted
 
-   Year <- as.numeric(as.character(RSCleanNoNoise$yr)) # Convert factor to numeric Year
-   Value <- as.numeric(as.character(RSCleanNoNoise$TradeValue)) # Convert factor to numeric Vekt
-   class(Land)
+      Year <- as.numeric(as.character(RSCleanNoNoise$yr)) # Convert factor to numeric Year
+      Value <- as.numeric(as.character(RSCleanNoNoise$TradeValue)) # Convert factor to numeric Vekt
+      class(Land)
 
 And again, the visualisation.
 Here, Saudi Arabia is is also taken away in order to be able to better see the distribution between the other countries:
 10::
 
-   FirstVisualisation <- ggplot(RSCleanNoNoise, aes(x = Year , y = Value, group = Land, colour = Land)) + geom_line(linewidth=1)
+      FirstVisualisation <- ggplot(RSCleanNoNoise, aes(x = Year , y = Value, group = Land, colour = Land)) + 
+         geom_line(linewidth=1)
 
-   FirstVisualisation <- FirstVisualisation + geom_point(size=2)+ scale_y_continuous(limits = c(936260544, 92855795003), name = "Trade value")+          ggtitle(label = "Petroleum oils and oils obtained from bituminous minerals; crude")
+      FirstVisualisation <- FirstVisualisation + geom_point(size=2)+ 
+         scale_y_continuous(limits = c(936260544, 92855795003), 
+                              name = "Trade value")+
+         ggtitle(label = "Petroleum oils and oils obtained from bituminous minerals; crude")
 
-   FirstVisualisation
+      FirstVisualisation
 
 11:
 

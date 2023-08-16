@@ -318,7 +318,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut eleifend augue, 
 Testing new heading here:
 -------------------------
 
-Text 8::
+Text::
       # Visualisation w NoNoise dataframe
       # Making the columns into vectors
 

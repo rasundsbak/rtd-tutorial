@@ -350,7 +350,21 @@ Here, Saudi Arabia is is also taken away in order to be able to better see the d
 04.03 Making real values on the y- axis
 ---------------------------------------
 
+I want the numbers on the y axis to look more normal::
+
+# this is how we do it...
+
+   FirstVisualisation + # Modify formatting of axis scale_y_continuous(labels = comma)
+
+   FirstVisualisation + # Modify formatting of axis scale_y_continuous(labels = dollar_format())
+   Now, the y axis is with dollarsigns
+
+With the result:
+
+   .. image:: normalaxis.png
+
 04.02::
+
 
 
 

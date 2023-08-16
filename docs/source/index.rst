@@ -306,8 +306,8 @@ As we can see, some countries has not had oil export for the whole period. We ma
 
 04.02 Making a table with less noise
 ------------------------------------
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut eleifend augue, et pretium turpis. Fusce in tortor a tellus luctus tristique a at metus. Pellentesque in suscipit ipsum. Ut bibendum elit orci, eget efficitur mauris fringilla eget. Aliquam vitae risus lectus. Nam quis ante magna. Nunc hendrerit tellus at tortor dapibus, ut porttitor enim tincidunt. Etiam nisl purus, fermentum sit amet justo ac, lobortis congue ipsum::
 
-7::
       # Subset with different set of countries
       # Removing Libya, Iraq and Angola because of lacking data
 

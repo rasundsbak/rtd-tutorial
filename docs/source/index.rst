@@ -315,7 +315,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut eleifend augue, 
 
       View(RSCleanNoNoise)
 
-8::
+Testing new heading here:
+-------------------------
+
+Text 8::
       # Visualisation w NoNoise dataframe
       # Making the columns into vectors
 
@@ -324,7 +327,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut eleifend augue, 
       Land <- c(RSCleanNoNoise$rtTitle)
 
 
-9::
+number 9::
       # Converting factors to numerical, and checking the last class, which does not need to be converted
 
       Year <- as.numeric(as.character(RSCleanNoNoise$yr)) # Convert factor to numeric Year

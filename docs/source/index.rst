@@ -311,7 +311,7 @@ As we can see, some countries has not had oil export for the whole period. We ma
       # Subset with different set of countries
       # Removing Libya, Iraq and Angola because of lacking data
 
-      RSCleanNoNoise <- subset(RSClean, subset = rtTitle == "Algeria" | rtTitle == "Congo" | rtTitle == "Gabon" | rtTitle == "Iran" | rtTitle == "Kuwait"    | rtTitle == "Nigeria" | rtTitle == "United Arab Emirates" | rtTitle == "Venezuela")
+      RSCleanNoNoise <- subset(RSClean, subset = rtTitle == "Algeria" | rtTitle == "Congo" | rtTitle == "Gabon" | rtTitle == "Iran" |             rtTitle == "Kuwait"    | rtTitle == "Nigeria" | rtTitle == "United Arab Emirates" | rtTitle == "Venezuela")
 
       View(RSCleanNoNoise)
 

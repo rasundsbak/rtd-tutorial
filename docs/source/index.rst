@@ -341,7 +341,9 @@ Here, Saudi Arabia is is also taken away in order to be able to better see the d
 
    FirstVisualisation
 
+11::
 
+   .. image:: 8opec_countries.png
 
 
 

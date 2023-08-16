@@ -367,7 +367,7 @@ I want the numbers on the y axis to look more normal::
    FirstVisualisation + # Modify formatting of axis scale_y_continuous(labels = comma)
 
    FirstVisualisation + # Modify formatting of axis scale_y_continuous(labels = dollar_format())
-   Now, the y axis is with dollarsigns
+   # Now, the y axis is with dollarsigns
 
 With the result:
 

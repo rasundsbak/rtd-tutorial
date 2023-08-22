@@ -1,5 +1,5 @@
-D01 Welcome to the pilot course on how to use ComtradR
-======================================
+ComtradR unofficial tutorial
+============================
 This project has its documentation hosted on Read the Docs: https://readthedocs.org/
 This project has a GitHub repository: https://github.com/rasundsbak/rtd-tutorial/tree/3.0.y
 
@@ -22,7 +22,7 @@ how to :ref:`installation` the project.
 
 01 Introduction
 ===============
-This is a report after following a bachelor course of STV 2020 Spring term 2023, University of Oslo. The text may be used as a tutorial for learning how to use Comtrade data and processing them in RStudio. It will be outlined how data from the United Nations' Comtrade database [@CRANPackageComtradr] can be used to point out structural problems related to oil industry. This will be the academic example used to demonstrate both the process of data collection, as well as the processing and facilitation of data into relevant units. While working on this project, the United Nations API delivery was modernized and changed from being facilitated for R and RStudio into Python. The ComtradR is still being maintained under the GitHib initiative of OpenSci[@muir2023; @ROpenSciOpenTools]. This project will later be developed according to the progress of the technical development of the official Comtrade database. A repository on how to generate data with Python, for import to RStudio may come at a later time.
+This text may be used as a tutorial for learning how to use Comtrade data and processing them in RStudio. It will be outlined how data from the United Nations' Comtrade database [@CRANPackageComtradr] can be used to point out structural problems related to oil industry. This will be the academic example used to demonstrate both the process of data collection, as well as the processing and facilitation of data into relevant units. While working on this project, the United Nations API delivery was modernized and changed from being facilitated for R and RStudio into Python. The ComtradR is still being maintained under the GitHib initiative of OpenSci[@muir2023; @ROpenSciOpenTools]. This project will later be developed according to the progress of the technical development of the official Comtrade database. A repository on how to generate data with Python, for import to RStudio may come at a later time.
 
 02 The research question
 ========================

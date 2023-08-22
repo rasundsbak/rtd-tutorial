@@ -30,7 +30,7 @@ OPEC countries, their oil export and democracy development. The statistics shown
 
 03 The academic problem
 =======================
-We are going to look at data from the two institutions of Comtrade and World bank.
+We are going to look at data from the Comtrade database published by the World bank.
 
 **Q1 What does the distribution of Export of Crude oil from the OPEC countries look like for the years from 1995 until today?**
 

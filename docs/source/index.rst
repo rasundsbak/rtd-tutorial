@@ -43,8 +43,8 @@ In order to answer these questions, data will be taken from two sources. Firstly
 This project should be seen as a pedagogical example on how to extract and analyze data for political and social science, rather than real social science. The main focus here is more on the technical processes, less on the scientific value of the findings.
 
 
-A good way to start up an R script
-==================================
+04 A good way to start up an R script
+=====================================
 
 If you do not know your directory, use the command "getwd". Then, copy the directory from the answer you got, and adjust it to fit the path that suits you. In the .R file, at the very begining::
 

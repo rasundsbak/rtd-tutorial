@@ -26,7 +26,7 @@ by providing a basic explanation of how to do it easily.
 ---------------------
 This is an ordinary paragraph.
 
-Gnu Photo by Dim Hou on _Unsplash: https://unsplash.com/
+Gnu Photo by Dim Hou on `Unsplash`: https://unsplash.com/
 
 
    .. image:: gnu.jpg
@@ -77,10 +77,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut eleifend augue, 
 Aliquam vitae risus lectus. Nam quis ante magna. Nunc hendrerit tellus at tortor dapibus, ut porttitor enim tincidunt. Etiam nisl purus, fermentum sit amet justo ac, lobortis congue ipsum. Cras nisl nisi, vehicula ac suscipit vitae, consectetur at ligula. Morbi faucibus dignissim dictum. Phasellus bibendum iaculis tellus, sed vehicula est luctus imperdiet. Pellentesque dictum enim est, at condimentum mauris iaculis et. Nulla posuere congue luctus. Aliquam nec sem pretium massa mollis ornare. Proin vel nulla eu dolor consequat fermentum nec et velit. Ut quis sapien non lacus pretium elementum.
 
 01 Suspendisse consequat sagittis leo at accumsan
-----------------------------------------------
+-------------------------------------------------
 
 02 Suspendisse consequat sagittis leo at accumsan
-----------------------------------------------
+-------------------------------------------------
 
 
 05 Quisque at finibus orci

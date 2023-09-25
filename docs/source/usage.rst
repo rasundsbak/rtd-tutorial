@@ -4,31 +4,31 @@ The first time you install to R:
 --------------------------------
 
 .. code-block:: console
-install.packages("scales") 
-install.packages("comtradr") 
-install.packages("here") 
-install.packages("rjson") 
-install.packages("ggplot2") 
-install.packages("dplyr") 
-install.packages("plotly") 
-install.packages("conflicted") 
-install.packages("janitor") 
-install.packages("tidyverse")
+   install.packages("scales") 
+   install.packages("comtradr") 
+   install.packages("here") 
+   install.packages("rjson") 
+   install.packages("ggplot2") 
+   install.packages("dplyr") 
+   install.packages("plotly") 
+   install.packages("conflicted") 
+   install.packages("janitor") 
+   install.packages("tidyverse")
 
 After the first installation
 ----------------------------
 
 .. code-block:: console
-library(scales) 
-library(comtradr) 
-library(here) 
-library(rjson) 
-library(ggplot2) 
-library(dplyr) 
-library(plotly) 
-library(conflicted) 
-library(janitor) 
-library(tidyverse)
+   library(scales) 
+   library(comtradr) 
+   library(here) 
+   library(rjson) 
+   library(ggplot2) 
+   library(dplyr) 
+   library(plotly) 
+   library(conflicted) 
+   library(janitor) 
+   library(tidyverse)
 
 
 

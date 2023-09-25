@@ -40,3 +40,5 @@ To use ComtradR, first install it::
 
 You can read more on the package here: https://github.com/ropensci/comtradr/blob/main/README.md
 
+The repository in GitHub: https://github.com/ropensci/comtradr
+

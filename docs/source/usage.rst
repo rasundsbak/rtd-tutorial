@@ -36,10 +36,12 @@ After the first installation::
 
 Installation
 ------------
-Suspendisse consequat sagittis leo at accumsan
-----------------------------------------------
 
-To use Lumache, first install it using pip:
+To use ComtradR, first install it::
+
+   # install.packages("devtools")
+   devtools::install_github("ropensci/comtradr@main")
+
 
 .. code-block:: console
 

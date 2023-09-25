@@ -42,7 +42,7 @@ To use ComtradR, first install it::
    # install.packages("devtools")
    devtools::install_github("ropensci/comtradr@main")
 
-You can read more on this package here
+You can read more on this package here: https://github.com/ropensci/comtradr/blob/main/README.md
 
 To retrieve a list of random ingredients,
 you can use the ``lumache.get_random_ingredients()`` function:

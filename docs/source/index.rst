@@ -24,12 +24,12 @@ how to :ref:`installation` the project.
 ===========================
 This text may be used as a tutorial for learning how to download Comtrade data and processing them in RStudio. It will be shown how data from the United Nations' Comtrade database [@CRANPackageComtradr] can be used to point out variations in the export of crude oil from OPEC countries. This will be the example used to demonstrate both the process of data collection, as well as the parsing, processing and facilitation of data into relevant units. While working on this project, the United Nations API delivery was modernized and changed from being facilitated for R and RStudio into Python. The ComtradR is now maintained under the GitHub initiative of OpenSci[@muir2023; @ROpenSciOpenTools]. This project will be developed according to the progress of the technical development of the official Comtrade database. A repository on how to generate data with Python, for import to RStudio may come at a later time.
 
-02 The constructed research question
-====================================
-This tutorial will not bring us into rocket science. Problems of discussion will be kept simple. We will look at the OPEC countries and their oil export in crude oil. Data on Trade value in Crude oil will be collected from Comtrade legacy database [@muir2023]. "Trade value" was chosen because it is the variable in this category that includes the most data. If choosing another category, the number of missing values would have been larger. The development of the values of Trade value will be shown from the period 1995-2014. The steps from collecting to breaking down the data will be shown in a sequence that will be possible for a beginner to reconstruct.
+02 The problem of discussion
+============================
+The tutorial will not bring you into rocket science. However, it may be used by people who need an example at how to download data. Problems of discussion will be kept simple. We will look at the OPEC countries and their oil export in crude oil. The time period we are going to analyze is 1995-2024. Data on Trade value in Crude oil will be collected from Comtrade legacy database [@muir2023]. "Trade value" was chosen because it is the variable in this category that includes the most data. If choosing another category, the number of missing values would have been larger. The development of the values of Trade value will be shown from the period 1995-2014. The steps from collecting to breaking down the data will be shown in a sequence that will be possible for a beginner to reconstruct.
 
-03 The academic problem
-=======================
+03 Hypotheses
+=============
 We are going to look at data from the Comtrade database published by the World bank.
 
 **Q1 What does the distribution of Export of Crude oil from the OPEC countries look like for the years from 1995 until today?**
@@ -47,7 +47,7 @@ If you do not know your directory, use the command "getwd". Then, copy the direc
    getwd
    setwd("/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew")
 
-I always start with the setwd. It is a good idea to combine it with opening the library(here). Many people prefer to use projects in RStudio. The reason why I no not, is that i feel the setwd command and "here" package gives me both better knowledge and control over my system.
+It is always start with the setwd. It is a good idea to combine it with opening the library(here). Many people prefer to use projects in RStudio. The reason why I no not, is that i feel the setwd command and "here" package gives me both better knowledge and control over my system.
 
 In order to follow the process in this script, we need the following pagkages. Note that if you do not have them installed, you must first use the command install.packages("package name"). Since this is to be done only once, I often use the # tag to make the coding turn into a comment that will not be executed.
 

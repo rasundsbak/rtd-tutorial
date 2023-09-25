@@ -1,6 +1,6 @@
 R packages required for the prosess
 ===================================
-The first time you install to R:
+The first time you install to R::
 --------------------------------
 
 .. code-block:: console
@@ -15,7 +15,7 @@ The first time you install to R:
    install.packages("janitor") 
    install.packages("tidyverse")
 
-After the first installation
+After the first installation::
 ----------------------------
 
 .. code-block:: console

@@ -28,7 +28,11 @@ After the first installation::
    library(tidyverse)
 
 
+For example:
 
+>>> import lumache
+>>> lumache.get_random_ingredients()
+['shells', 'gorgonzola', 'parsley']
 
 
 

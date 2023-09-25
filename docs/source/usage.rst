@@ -3,10 +3,11 @@ R packages required for the prosess
 The first time you install to R:
 --------------------------------
 
+.. code-block:: console
 install.packages("scales") 
-install.packages("comtradr")
+install.packages("comtradr") 
 install.packages("here") 
-install.packages("rjson")
+install.packages("rjson") 
 install.packages("ggplot2") 
 install.packages("dplyr") 
 install.packages("plotly") 
@@ -17,6 +18,7 @@ install.packages("tidyverse")
 After the first installation
 ----------------------------
 
+.. code-block:: console
 library(scales) 
 library(comtradr) 
 library(here) 
@@ -27,10 +29,6 @@ library(plotly)
 library(conflicted) 
 library(janitor) 
 library(tidyverse)
-
-
-
-
 
 
 

@@ -22,11 +22,11 @@ how to :ref:`installation` the project.
 
 01 Introduction
 ===============
-This text may be used as a tutorial for learning how to use Comtrade data and processing them in RStudio. It will be shown how data from the United Nations' Comtrade database [@CRANPackageComtradr] can be used to point out structural problems related to oil industry. This will be the academic example used to demonstrate both the process of data collection, as well as the parsing, processing and facilitation of data into relevant units. While working on this project, the United Nations API delivery was modernized and changed from being facilitated for R and RStudio into Python. The ComtradR is still being maintained under the GitHib initiative of OpenSci[@muir2023; @ROpenSciOpenTools]. This project will later be developed according to the progress of the technical development of the official Comtrade database. A repository on how to generate data with Python, for import to RStudio may come at a later time.
+This text may be used as a tutorial for learning how to use Comtrade data and processing them in RStudio. It will be shown how data from the United Nations' Comtrade database [@CRANPackageComtradr] can be used to point out structural problems related to oil industry. This will be the academic example used to demonstrate both the process of data collection, as well as the parsing, processing and facilitation of data into relevant units. While working on this project, the United Nations API delivery was modernized and changed from being facilitated for R and RStudio into Python. The ComtradR is still being maintained under the GitHib initiative of OpenSci[@muir2023; @ROpenSciOpenTools]. This project will therefore be developed according to the progress of the technical development of the official Comtrade database. A repository on how to generate data with Python, for import to RStudio may come at a later time.
 
 02 The constructed research question
 ====================================
-This tutorial will not bring us into rocket science, but knowing the technical subtleties may lead us on the right path over time. We will look at OPEC countries, their oil export and democracy development. Data on Trade value in Crude oil will be collected from Comtrade legacy database [@muir2023]. "Trade value" was chosen because it is the variable in this category that includes the most data. If choosing another category, the number of missing values would be larger. The development of the values of Trade value will be shown from the period 1995-2014. The results of the Opec countries on a corruption index from the World Bank Governance Indicators will then be introduced [@kaufmann2023]. Finally, a regression analysis with corruption level as the dependent variable will be shown. The unit of analysis will be land- years. All the steps from collecting to breaking down the data will be shown in a sequence that will be possible for a beginner to reconstruct.
+This tutorial will not bring us into rocket science. Problems of discussion will be kept simple. We will look at the OPEC countries and their oil export in crude oil. Data on Trade value in Crude oil will be collected from Comtrade legacy database [@muir2023]. "Trade value" was chosen because it is the variable in this category that includes the most data. If choosing another category, the number of missing values would have been larger. The development of the values of Trade value will be shown from the period 1995-2014. The steps from collecting to breaking down the data will be shown in a sequence that will be possible for a beginner to reconstruct.
 
 03 The academic problem
 =======================
@@ -37,10 +37,6 @@ We are going to look at data from the Comtrade database published by the World b
 **Q2 What does the available corruption index of the OPEC countries look like?**
 
 **Q3 Is there a tendency for the OPEC countries that higher income from oil exports leads to higher levels of corruption?**
-
-In order to answer these questions, data will be taken from two sources. Firstly, numbers on trade is taken from the Comtrade database. Secondly, indicators on democracy and corruption levels are taken from the Worldwide Governance Indicators.
-
-This project should be seen as a pedagogical example on how to extract and analyze data for political and social science, rather than real social science. The main focus here is more on the technical processes, less on the scientific value of the findings.
 
 
 04 A good way to start up an R script

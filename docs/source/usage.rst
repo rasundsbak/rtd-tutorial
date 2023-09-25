@@ -38,5 +38,5 @@ To use ComtradR, first install it::
    # install.packages("devtools")
    devtools::install_github("ropensci/comtradr@main")
 
-You can read more on this package here: https://github.com/ropensci/comtradr/blob/main/README.md
+You can read more on the package here: https://github.com/ropensci/comtradr/blob/main/README.md
 

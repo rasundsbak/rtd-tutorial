@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Continue to download data with R'
+project = 'Download data with R'
 copyright = '2023, Ragnhild'
 author = 'Ragnhild'
 

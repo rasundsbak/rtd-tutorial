@@ -30,8 +30,8 @@ After the first installation::
 
 .. _installation:
 
-Installation
-------------
+Install
+-------
 
 To use ComtradR, first install it::
 

@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Unofficial ComtradR tutorial, download data with R'
+project = 'Continue to download data with R'
 copyright = '2023, Ragnhild'
 author = 'Ragnhild'
 

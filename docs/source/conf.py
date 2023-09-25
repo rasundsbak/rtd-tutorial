@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Comtrade unofficial tutorial'
+copyright = '2023, Ragnhild'
+author = 'Ragnhild'
 
 release = '0.1'
 version = '0.1.0'

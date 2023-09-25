@@ -1,9 +1,8 @@
 R packages required for the prosess
 ===================================
-The first time you install to R::
---------------------------------
 
-.. code-block:: console
+The first time you install to R::
+
    install.packages("scales") 
    install.packages("comtradr") 
    install.packages("here") 
@@ -16,9 +15,7 @@ The first time you install to R::
    install.packages("tidyverse")
 
 After the first installation::
-----------------------------
 
-.. code-block:: console
    library(scales) 
    library(comtradr) 
    library(here) 

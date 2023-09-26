@@ -1,29 +1,19 @@
 ComtradR unofficial tutorial
 ============================
-This project has its documentation hosted on Read the Docs: https://readthedocs.org/
-The project has a GitHub repository: https://github.com/rasundsbak/rtd-tutorial/tree/3.0.y
+The `UN Comtrade <https://comtradeplus.un.org/>`_ is a central provider of data for governments, academia, research institutes, and enterprises. This tutorial is for students and researchers who need to get started downloading data from the UN Comtrade database, with the intention of using R and RStudio for data processing. Note that the UN Comtrade also has its own Statistics wiki with an `FAQ for first time users <https://unstats.un.org/wiki/pages/viewpage.action?pageId=125141443>`_
 
-Check out the :doc:`usage` section for further information, including
-
-how to do the :ref:`installation` of the project.
-
-.. note::
-
-   This project is under active development.
----
-
-
+Check out the :doc:`usage` section for further information, including how to do the :ref:`installation` of the project. `I, the author <https://github.com/rasundsbak/>`_ is a librarian and political scientist with many years of experience guiding and teaching in library use for students and researchers of political science. I am making this tutorial as part of my own effort in becoming a more digitally updated employee for my organization.-.-
 
 .. note::
 
    This text has incomplete references. References will be added at a later stage.
-   Thanks to `ropensci/comtradr <https://github.com/ropensci/comtradr/tree/main>`_ for making the package available again. Thanks      to `Zotero.org <https://www.zotero.org/>`_ for providing the LaTeX format
+   Thanks to `ropensci/comtradr <https://github.com/ropensci/comtradr/tree/main>`_ for making the package available again. Thanks to `Zotero.org          <https://www.zotero.org/>`_ for providing the LaTeX format
 ---
 
 
-01 From Comtrade to RStudio
-===========================
-This text may be used as a tutorial for learning how to download Comtrade data and processing them in RStudio. It will be shown how data from the United Nations' Comtrade database [@CRANPackageComtradr] can be used to point out variations in the export of crude oil from OPEC countries. This will be the example used to demonstrate both the process of data collection, as well as the parsing, processing and facilitation of data into relevant units. While working on this project, the United Nations API delivery was modernized and changed from being facilitated for R and RStudio into Python. The ComtradR is now maintained under the GitHub initiative of OpenSci[@muir2023; @ROpenSciOpenTools]. This project will be developed according to the progress of the technical development of the official Comtrade database. A repository on how to generate data with Python, for import to RStudio may come at a later time.
+01 Data from Comtrade to RStudio
+================================
+This is a tutorial for learning how to download Comtrade data and processing them in RStudio. It will be shown how data from the United Nations' Comtrade database [@CRANPackageComtradr] can be used to point out variations in the export of crude oil from OPEC countries. This will be the example used to demonstrate both the process of data collection, as well as the parsing, processing and facilitation of data into relevant units. While working on this project, the United Nations API delivery was modernized and changed from being facilitated for R and RStudio into Python. The ComtradR is now maintained under the GitHub initiative of OpenSci[@muir2023; @ROpenSciOpenTools]. This project will be developed according to the progress of the technical development of the official Comtrade database. A repository on how to generate data with Python, for import to RStudio may come at a later time.
 
 02 The problem of discussion
 ============================
@@ -430,6 +420,11 @@ ex ac viverra semper, diam eros laoreet felis, vel maximus purus nunc a augue. C
 Suspendisse vulputate est vitae nunc porta
 ------------------------------------------
 Suspendisse vulputate est vitae nunc porta, in tempor sem convallis. Vivamus turpis turpis, imperdiet et viverra et, sodales nec ligula. Nullam ultrices diam sed nisl imperdiet sollicitudin. Quisque id nulla dapibus, tincidunt odio vitae, euismod erat. In in aliquet libero, sed pharetra nisi. Maecenas vel erat pretium, aliquet sapien vitae, ornare neque. Aliquam facilisis, diam vel porttitor tincidunt, tortor eros molestie arcu, nec vulputate enim justo eget nulla. Nam gravida interdum ligula id convallis. Aenean suscipit auctor blandit. Maecenas iaculis lectus in neque mattis, ut hendrerit nunc imperdiet. Sed sed sem sed turpis egestas fringilla. Quisque nec est quis lacus consectetur faucibus tempor vel ex. Integer lobortis augue ac orci vestibulum egestas non blandit diam. Nulla vel lacus nec ex tempus luctus nec eget tortor.
+
+Restetorget
+-----------
+This project has its documentation hosted on Read the Docs: https://readthedocs.org/
+The project has a GitHub repository: https://github.com/rasundsbak/rtd-tutorial/tree/3.0.y
 
 .. toctree::
 

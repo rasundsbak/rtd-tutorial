@@ -32,13 +32,7 @@ After the first installation::
 
 Technical preparations
 ----------------------
-You need R and RStudio, the free version. The software can be found at the homepages of Posit.
-https://posit.co/downloads/
-
-R and RStudio
--------------
-Downliad from the pages of Posit: https://posit.co/downloads/
-You need R and RStudio for desktop. The free version. 
+Download from the pages of `Posit <https://posit.co/downloads/>`_. You need R and RStudio for desktop. The free version. 
 
 The package ComtradR
 --------------------
@@ -47,7 +41,6 @@ Install the package::
    # install.packages("devtools")
    devtools::install_github("ropensci/comtradr@main")
 
-You can read more on the package here: https://github.com/ropensci/comtradr/blob/main/README.md
-
-The repository in GitHub: https://github.com/ropensci/comtradr
+You can read more on the package from `GitHub <https://github.com/ropensci/comtradr/blob/main/README.md>`_ or you may study the 
+`repository <https://github.com/ropensci/comtradr>`_.
 

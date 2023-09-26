@@ -1,18 +1,10 @@
 ComtradR unofficial tutorial
 ============================
-This project has its documentation hosted on Read the Docs: https://readthedocs.org/
-The project has a GitHub repository: https://github.com/rasundsbak/rtd-tutorial/tree/3.0.y
+The UN comtrade is a central provider of data for governments, academia, research institutes, and enterprises.
 
 Check out the :doc:`usage` section for further information, including
 
 how to do the :ref:`installation` of the project.
-
-.. note::
-
-   This project is under active development.
----
-
-
 
 .. note::
 
@@ -430,6 +422,11 @@ ex ac viverra semper, diam eros laoreet felis, vel maximus purus nunc a augue. C
 Suspendisse vulputate est vitae nunc porta
 ------------------------------------------
 Suspendisse vulputate est vitae nunc porta, in tempor sem convallis. Vivamus turpis turpis, imperdiet et viverra et, sodales nec ligula. Nullam ultrices diam sed nisl imperdiet sollicitudin. Quisque id nulla dapibus, tincidunt odio vitae, euismod erat. In in aliquet libero, sed pharetra nisi. Maecenas vel erat pretium, aliquet sapien vitae, ornare neque. Aliquam facilisis, diam vel porttitor tincidunt, tortor eros molestie arcu, nec vulputate enim justo eget nulla. Nam gravida interdum ligula id convallis. Aenean suscipit auctor blandit. Maecenas iaculis lectus in neque mattis, ut hendrerit nunc imperdiet. Sed sed sem sed turpis egestas fringilla. Quisque nec est quis lacus consectetur faucibus tempor vel ex. Integer lobortis augue ac orci vestibulum egestas non blandit diam. Nulla vel lacus nec ex tempus luctus nec eget tortor.
+
+Restetorget
+-----------
+This project has its documentation hosted on Read the Docs: https://readthedocs.org/
+The project has a GitHub repository: https://github.com/rasundsbak/rtd-tutorial/tree/3.0.y
 
 .. toctree::
 

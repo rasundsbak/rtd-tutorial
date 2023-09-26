@@ -43,5 +43,5 @@ Install the package::
    devtools::install_github("ropensci/comtradr@main")
 
 You can read more on the package from `GitHub <https://github.com/ropensci/comtradr/blob/main/README.md>`_ or you may study the 
-`repository <https://github.com/ropensci/comtradr>`_
+`repository <https://github.com/ropensci/comtradr>`_.
 

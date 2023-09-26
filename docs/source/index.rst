@@ -2,7 +2,7 @@ ComtradR unofficial tutorial
 ============================
 The `UN Comtrade <https://comtradeplus.un.org/>`_ is a central provider of data for governments, academia, research institutes, and enterprises. This tutorial is for students and researchers who need to get started downloading data from the UN Comtrade database, with the intention of using R and RStudio for data processing. Note that the UN Comtrade also has its own Statistics wiki with an `FAQ for first time users <https://unstats.un.org/wiki/pages/viewpage.action?pageId=125141443>`_
 
-Check out the :doc:`usage` section for further information, including how to do the :ref:`installation` of the project. `I, the author <https://github.com/rasundsbak>`_ is a librarian and political scientist with many years of experience guiding and teaching in library use for students and researchers of political science. I have made this tutorial as part of my own effort in becoming a more digitally updated employee for my organization.
+Check out the :doc:`usage` section for further information, including how to do the :ref:`installation` of the project. `I the author <https://github.com/rasundsbak/>`_ is a librarian and political scientist with many years of experience guiding and teaching in library use for students and researchers of political science. I have made this tutorial as part of my own effort in becoming a more digitally updated employee for my organization.
 
 .. note::
 

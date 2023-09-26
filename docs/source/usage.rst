@@ -30,7 +30,7 @@ After the first installation::
 
 .. _installation:
 
-Tachnical preparations
+Technical preparations
 ----------------------
 
 To use ComtradR, first install it::

@@ -1,9 +1,10 @@
 ComtradR unofficial tutorial
 ============================
 This project has its documentation hosted on Read the Docs: https://readthedocs.org/
-This project has a GitHub repository: https://github.com/rasundsbak/rtd-tutorial/tree/3.0.y
+The project has a GitHub repository: https://github.com/rasundsbak/rtd-tutorial/tree/3.0.y
 
 Check out the :doc:`usage` section for further information, including
+
 how to do the :ref:`installation` of the project.
 
 .. note::

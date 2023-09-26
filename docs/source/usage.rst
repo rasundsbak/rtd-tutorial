@@ -35,6 +35,9 @@ Technical preparations
 You need R and RStudio, the free version. This van be bound at the homepages of Posit.
 https://posit.co/downloads/
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed consectetur arcu. Suspendisse interdum pellentesque ex vel malesuada. Cras lacinia nisi bibendum leo suscipit, non tincidunt eros vulputate. Donec ac ex sem. Donec aliquam erat nec posuere fermentum. Fusce gravida faucibus lectus sed sodales. Proin vel elit ut ante vulputate blandit et non ex. Cras ultricies magna ut urna fringilla, quis pulvinar orci posuere. Donec eleifend tempus est varius vulputate. Pellentesque venenatis nisl magna, quis laoreet leo commodo varius. Mauris vestibulum efficitur dui. Nunc condimentum odio lorem, id varius nisi interdum at. Suspendisse nunc ligula, faucibus non sagittis dictum, fermentum eu velit. Sed ullamcorper ligula a nisi pretium venenatis. Proin et iaculis massa. Suspendisse pharetra iaculis arcu, quis porta augue imperdiet sit amet. 
+
+
 To use ComtradR, first install it::
 
    # install.packages("devtools")

@@ -2,14 +2,12 @@ ComtradR unofficial tutorial
 ============================
 The `UN Comtrade <https://comtradeplus.un.org/>`_ is a central provider of data for governments, academia, research institutes, and enterprises. This tutorial is for students and researchers who need to get started downloading data from the UN Comtrade database, with the intention of using R, RStudio og Python for data processing. Note that the UN Comtrade also has its own Statistics wiki with an `FAQ for first time users <https://unstats.un.org/wiki/pages/viewpage.action?pageId=125141443>`_
 
-Check out the :doc:`usage` section for further information, including
-
-how to do the :ref:`installation` of the project.
+Check out the :doc:`usage` section for further information, including how to do the :ref:`installation` of the project.
 
 .. note::
 
    This text has incomplete references. References will be added at a later stage.
-   Thanks to `ropensci/comtradr <https://github.com/ropensci/comtradr/tree/main>`_ for making the package available again. Thanks      to `Zotero.org <https://www.zotero.org/>`_ for providing the LaTeX format
+   Thanks to `ropensci/comtradr <https://github.com/ropensci/comtradr/tree/main>`_ for making the package available again. Thanks to `Zotero.org          <https://www.zotero.org/>`_ for providing the LaTeX format
 ---
 
 

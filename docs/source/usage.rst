@@ -30,10 +30,17 @@ After the first installation::
 
 .. _installation:
 
-Install
--------
+Technical requirements
+======================
 
-To use ComtradR, first install it::
+R and RStudio
+-------------
+Downliad from the pages of Posit: https://posit.co/downloads/
+You need R and RStudio for desktop. The free version.
+
+The package ComtradR
+--------------------
+Install the package::
 
    # install.packages("devtools")
    devtools::install_github("ropensci/comtradr@main")

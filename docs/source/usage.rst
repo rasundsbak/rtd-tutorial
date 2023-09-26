@@ -36,7 +36,7 @@ Technical requirements
 R and RStudio
 -------------
 Downliad from the pages of Posit: https://posit.co/downloads/
-You need R and RStudio for desktop. The free version.
+You need R and RStudio for desktop. The free version. 
 
 The package ComtradR
 --------------------

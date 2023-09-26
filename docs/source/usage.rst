@@ -30,8 +30,10 @@ After the first installation::
 
 .. _installation:
 
-Technical requirements
-======================
+Technical preparations
+----------------------
+You need R and RStudio, the free version. The software can be found at the homepages of Posit.
+https://posit.co/downloads/
 
 R and RStudio
 -------------

@@ -32,12 +32,7 @@ After the first installation::
 
 Technical preparations
 ----------------------
-You need R and RStudio, the free version. The software can be found at the homepages of Posit.
-https://posit.co/downloads/
-
-R and RStudio
--------------
-Download from the pages of Posit: https://posit.co/downloads/
+Download from the pages of `Posit https://posit.co/downloads/`_
 You need R and RStudio for desktop. The free version. 
 
 The package ComtradR

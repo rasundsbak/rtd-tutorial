@@ -32,6 +32,8 @@ After the first installation::
 
 Technical preparations
 ----------------------
+You need R and RStudio, the free version. This van be bound at the homepages of Posit.
+https://posit.co/downloads/
 
 To use ComtradR, first install it::
 

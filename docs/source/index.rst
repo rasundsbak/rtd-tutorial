@@ -21,19 +21,19 @@ by providing a basic explanation of how to do it easily.
 ['shells', 'gorgonzola', 'parsley']
 
 # fra UiO sin Chat GPT
-.. code-block:: python :caption: Eksempelkode for å legge til en copy button :emphasize-lines: 3,9
 
-import requests
+   .. code-block:: python :caption: Eksempelkode for å legge til en copy button :emphasize-lines: 3,9
 
-url = 'https://www.example.com' response = requests.get(url) print(response.text)
+   import requests
 
-.. raw:: html
+   url = 'https://www.example.com' response = requests.get(url) print(response.text)
 
-  <button class="btn" data-clipboard-target="#python-code">Copy!</button>
+   .. raw:: html
+   <button class="btn" data-clipboard-target="#python-code">Copy!</button>
 
-.. code-block:: python :linenos: :emphasize-lines: 3,9
+   .. code-block:: python :linenos: :emphasize-lines: 3,9
 
-  # Her kan du legge til mer kode
+# Her kan du legge til mer kode
 
 
 

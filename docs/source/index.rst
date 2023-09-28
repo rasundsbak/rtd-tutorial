@@ -50,6 +50,33 @@ If you do not know your directory, use the command "getwd". Then, copy the direc
 
 It is always start with the setwd. It is a good idea to combine it with opening the library(here). Many people prefer to use projects in RStudio. The reason why I no not, is that i feel the setwd command and "here" package gives me both better knowledge and control over my system.
 
+
+
+If you do not know your directory, use the command "getwd". Then, copy the directory from the answer you got, and adjust it to fit the path that suits you. In the .R file, at the very begining::
+
+   getwd
+   setwd("/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew")
+
+It is always start with the setwd. It is a good idea to combine it with opening the library(here). Many people prefer to use projects in RStudio. The reason why I no not, is that i feel the setwd command and "here" package gives me both better knowledge and control over my system.
+
+# fra UiO sin Chat GPT
+.. code-block:: python :caption: Eksempelkode for å legge til en copy button :emphasize-lines: 3,9
+
+import requests
+
+url = 'https://www.example.com' response = requests.get(url) print(response.text)
+
+.. raw:: html
+
+  <button class="btn" data-clipboard-target="#python-code">Copy!</button>
+
+.. code-block:: python :linenos: :emphasize-lines: 3,9
+
+  # Her kan du legge til mer kode
+
+
+
+
 In order to follow the process in this script, we need the following pagkages. Note that if you do not have them installed, you must first use the command install.packages("package name"). Since this is to be done only once, I often use the # tag to make the coding turn into a comment that will not be executed.
 
 1 Installation example::

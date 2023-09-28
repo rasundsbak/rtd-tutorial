@@ -18,7 +18,16 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinx_copybutton',
 ]
+
+# Innstillingene for copybutton
+# Fra UiO GPT
+
+copybutton_prompt_text = ">>> " 
+copybutton_prompt_is_regexp = True 
+copybutton_selector = "div:not(.no-copy)>div.highlight pre"
+
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),

@@ -1,8 +1,8 @@
 """
-Lumache - Python library for cooks and food lovers.
+Ragnhild - Comtrade for R and RStudio.
 """
 
-__version__ = "0.1.0"
+__version__ = "3.0.x"
 
 
 class InvalidKindError(Exception):

@@ -41,6 +41,7 @@ If you do not know your directory, use the command "getwd". Then, copy the direc
    .. code-block:: 
    getwd
    setwd("/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew")
+   ..
 
 It is always start with the setwd. It is a good idea to combine it with opening the library(here). Many people prefer to use projects in RStudio. The reason why I no not, is that i feel the setwd command and "here" package gives me both better knowledge and control over my system.
 

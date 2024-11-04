@@ -17,7 +17,7 @@ how to do the :ref:`installation` of the project.
 .. note::
 
    This text has incomplete references. References will be added at a later stage.
-   Thanks to `ropensci/comtradr <https://github.com/ropensci/comtradr/tree/main>`_ for making the package available again. Thanks      to `Zotero.org <https://www.zotero.org/>`_ for providing the LaTeX format
+   Thanks to `UiO it department for making this project possible <https://www.uio.no/english/services/it/research/hpc/fox/>`_ for making the package available again. Thanks      to `Zotero.org <https://www.zotero.org/>`_ for providing the LaTeX format
 ---
 
 

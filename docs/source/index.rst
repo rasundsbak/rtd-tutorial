@@ -38,6 +38,7 @@ We are going to look at data from the Comtrade database published by the World b
 
 If you do not know your directory, use the command "getwd". Then, copy the directory from the answer you got, and adjust it to fit the path that suits you. In the .R file, at the very begining::
 
+   .. code-block:: 
    getwd
    setwd("/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew")
 

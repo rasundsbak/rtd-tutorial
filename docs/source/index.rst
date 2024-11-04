@@ -67,6 +67,11 @@ Terminal view 3::
 =============================================
 In this course, we speak a strange language, where we mention words like Cluster, HPC, Transformers and .ggufs like they where regular items from the grocery store. Write a list over concepts that you do not understand. Go in pairs, and discuss the concepts you want to elaborate on. Use google og UiO GPT or an encyclopedia from the library. Do not worry. A few months ago, the teachers of this course did not know what a Nvivia A100 Tensor Core GPU was, and we did not care. Now, we are used to it and interact with the A100 almost every day. When you start working with the AI, you will soon learn the most important concepts.
 
+06 Log on to Jupyter lab on demand
+==================================
+When you are logged on to the Fox, move like this: frol the left menu, go to Jupyter lab --> ec-[your group number] Choose one of the Nvidia GPUs from the drop down menu --> Rumtime. 1h --> Jupyter variant, Jupyter lab --> (You need not choose jupyter modile, as the last version is pre selected) -->  Launch. You are now in the line to get into the Jupyter lab on UiO Fox. You can get tea or coffee, and have a chat with your cilleague, while you wait.
+
+
 
 Aliquam erat volutpat. Nullam id augue rhoncus, ultrices leo non, cursus ex. Maecenas arcu tortor, gravida eu faucibus vel, eleifend varius ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
    getwd

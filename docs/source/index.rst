@@ -42,8 +42,8 @@ Terminal view 1::
 Terminal view 2::
    
    Last login: Sat Nov  2 10:51:34 on console
-   (base) ragnhildsundsbak@eduroam-193-157-163-121 ~ % ssh ec-ragnhsu@fox.educloud.no
-   (ec-ragnhsu@fox.educloud.no) One-Time_Code: 
+   (base) navnesen@eduroam-193-157-163-121 ~ % ssh ec-navnesen@fox.educloud.no
+   (ec-navnesen@fox.educloud.no) One-Time_Code: 
 
 
 

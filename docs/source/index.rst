@@ -18,26 +18,49 @@ In this tutorial, you will learn how to set up your own virtual environment at t
 ========================================
 Here, you will find the `First time setup of Educloud Research <https://www.uio.no/english/services/it/research/platforms/edu-research/help/getting-started-with-educloud.html>`_ When you have your setup ready, you may try it on `Educloud on demand. <https://oidc.fp.educloud.no/>`_
 
-01 Get an overview
+02 Get an overview
 ==================
 At the Fox server, you have your own storage space. There is also a common space for the group on the server. This is where the AIs are located, and where the AI will be temporarily cached when you download it from Huggingface. In order to get the AI work in jupyter lab, it is essential that you set up the paths in the right way. Take a look around, and see if you can think of a good way to organize your project. 
 
-01 What is Huggingface
+03 What is Huggingface
 ======================
 Visit `Huggingface <https://huggingface.co/>`_ and search for googgle/Pegasus. What do you see? Switch the search to meta-llama/Llama-3.1-8B-Instruct and read. Is this a model that you can find at Fox? What format is it in? Find the format of the Llama AI at Fox, and google it, in order to find out more about this dataformat.
 
 
-01 Log in to Educloud through SSH, in Bash/ Terminal
+04 Log in to Educloud through SSH, in Bash/ Terminal
 ====================================================
 
 Open the Command prompt (PC) or Terminal. Log in to Fox using ssh. You may find more information on the USIT page `Fox Account Creation and Login (SSH) <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/account-login.md>`_
 
-In the Terminal::
+Terminal view 1::
    
-   Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-   Mauris tincidunt dui id vulputate ultrices. N
-   ullam aliquam nisi ac justo egestas, vel lobortis nulla placerat. 
-   Fusce sodales ligula sit amet varius tristique. 
+   Last login: Sat Nov  2 10:51:34 on console
+   (base) navnesenmaskin@eduroam-193-157-163-121 ~ %
+
+
+
+Terminal view 2::
+   
+   Last login: Sat Nov  2 10:51:34 on console
+   (base) ragnhildsundsbak@eduroam-193-157-163-121 ~ % ssh ec-ragnhsu@fox.educloud.no
+   (ec-ragnhsu@fox.educloud.no) One-Time_Code: 
+
+
+
+Terminal view 3::
+
+   Welcome to FOX
+
+      "'~-.       .-~'"
+      |   .'"""""'.   |
+      \`_"         "_'/
+       )             (
+       /   0     0   \
+      <               >
+    .< __.-'. _ .'-.__ >.
+      "-.._  (#)  _..-"
+           `-:_:-'
+   The HPC Cluster in Educloud
 
 
 01 What is a Cluster?

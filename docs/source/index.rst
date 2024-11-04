@@ -14,23 +14,17 @@ how to do the :ref:`installation` of the project.
 
 In this tutorial, you will learn how to set up your own virtual environment at the UiO Nvidia Cluster. This repo is a part of the course held as a part of `Digital Scholarship Days 2025 <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/00-mainpage.html/>`_
 
-01 Getting your User ID in Educloud and Fox
-===========================================
-This text may be used as a tutorial for learning how to download Comtrade data and processing them in RStudio. It will be shown how data from the United Nations' Comtrade database [@CRANPackageComtradr] can be used to point out variations in the export of crude oil from OPEC countries. This will be the example used to demonstrate both the process of data collection, as well as the parsing, processing and facilitation of data into relevant units. While working on this project, the United Nations API delivery was modernized and changed from being facilitated for R and RStudio into Python. The ComtradR is now maintained under the GitHub initiative of OpenSci[@muir2023; @ROpenSciOpenTools]. This project will be developed according to the progress of the technical development of the official Comtrade database. A repository on how to generate data with Python, for import to RStudio may come at a later time.
+01 First time setup of Educloud Research
+========================================
+Here, you will find the `First time setup of Educloud Research <https://www.uio.no/english/services/it/research/platforms/edu-research/help/getting-started-with-educloud.html>`_ When you have your setup ready, you may try it on `Educloud on demand. <https://oidc.fp.educloud.no/>`_
 
-02 The problem of discussion
-============================
-The tutorial will not bring you into rocket science. However, it may be used by people who need an example at how to download data. Problems of discussion will be kept simple. We will look at the OPEC countries and their oil export in crude oil. The time period we are going to analyze is 1995-2024. Data on Trade value in Crude oil will be collected from Comtrade legacy database [@muir2023]. "Trade value" was chosen because it is the variable in this category that includes the most data. If choosing another category, the number of missing values would have been larger. The development of the values of Trade value will be shown from the period 1995-2014. The steps from collecting to breaking down the data will be shown in a sequence that will be possible for a beginner to reconstruct.
+02 Get an overview
+==================
+At the Fox server, you have your own storage space. There is also a common space for the group on the server. This is where the AIs are located, and where the AI will be temporarily cached when you download it from Huggingface. In order to get the AI work in jupyter lab, it is essential that you set up the paths in the right way. Take a look around, and see if you can think of a good way to organize your project. 
 
-03 Hypotheses
-=============
-We are going to look at data from the Comtrade database published by the World bank.
-
-**Q1 What does the distribution of Export of Crude oil from the OPEC countries look like for the years from 1995 until today?**
-
-**Q2 What does the available corruption index of the OPEC countries look like?**
-
-**Q3 Is there a tendency for the OPEC countries that higher income from oil exports leads to higher levels of corruption?**
+03 What is Huggingface
+======================
+Visit `Huggingface <https://huggingface.co/>`_ and search for googgle/Pegasus. What do you see? Switch the search to meta-llama/Llama-3.1-8B-Instruct and read. Is this a model that you can find at Fox? What format is it in? Find the format of the Llama AI at Fox, and google it, in order to find out more about this dataformat.
 
 
 04 A good way to start up an R script

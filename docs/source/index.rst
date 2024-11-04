@@ -18,16 +18,16 @@ In this tutorial, you will learn how to set up your own virtual environment at t
 ========================================
 Here, you will find the `First time setup of Educloud Research <https://www.uio.no/english/services/it/research/platforms/edu-research/help/getting-started-with-educloud.html>`_ When you have your setup ready, you may try it on `Educloud on demand. <https://oidc.fp.educloud.no/>`_
 
-02 Get an overview
+01 Get an overview
 ==================
 At the Fox server, you have your own storage space. There is also a common space for the group on the server. This is where the AIs are located, and where the AI will be temporarily cached when you download it from Huggingface. In order to get the AI work in jupyter lab, it is essential that you set up the paths in the right way. Take a look around, and see if you can think of a good way to organize your project. 
 
-03 What is Huggingface
+01 What is Huggingface
 ======================
 Visit `Huggingface <https://huggingface.co/>`_ and search for googgle/Pegasus. What do you see? Switch the search to meta-llama/Llama-3.1-8B-Instruct and read. Is this a model that you can find at Fox? What format is it in? Find the format of the Llama AI at Fox, and google it, in order to find out more about this dataformat.
 
 
-04 Log in to Educloud through SSH, in Bash/ Terminal
+01 Log in to Educloud through SSH, in Bash/ Terminal
 ====================================================
 
 Open the Command prompt (PC) or Terminal. Log in to Fox using ssh. You may find more information on the USIT page `Fox Account Creation and Login (SSH) <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/account-login.md>`_
@@ -38,6 +38,11 @@ In the Terminal::
    Mauris tincidunt dui id vulputate ultrices. N
    ullam aliquam nisi ac justo egestas, vel lobortis nulla placerat. 
    Fusce sodales ligula sit amet varius tristique. 
+
+
+01 What is a Cluster?
+=====================
+In this course, we speak a strange language, where we mention words like Cluster, HPC, Transformers and .ggufs like they where regular items from the grocery store. Write a list over concepts that you do not understand. Go in pairs, and discuss the concepts you want to elaborate on. Use google og UiO GPT or an encyclopedia from the library.
 
 
 Aliquam erat volutpat. Nullam id augue rhoncus, ultrices leo non, cursus ex. Maecenas arcu tortor, gravida eu faucibus vel, eleifend varius ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 

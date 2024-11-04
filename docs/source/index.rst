@@ -1,5 +1,5 @@
-Start an AI from Huggingface at UiOs HPC Cluster
-================================================
+Run large language models through Educloud UiO 
+==============================================
 This project has its documentation hosted on Read the Docs: https://readthedocs.org/
 The project has a GitHub repository: https://github.com/rasundsbak/rtd-tutorial/tree/4.0.AI
 
@@ -12,14 +12,7 @@ how to do the :ref:`installation` of the project.
    This project is under active development.
 ---
 
-
-
-.. note::
-
-   This text has incomplete references. References will be added at a later stage.
-   Thanks to `UiO it department for making this project possible <https://www.uio.no/english/services/it/research/hpc/fox/>`_ for making the package available again. Thanks      to `Zotero.org <https://www.zotero.org/>`_ for providing the LaTeX format
----
-
+In this tutorial, you will learn how to set up your own virtual environment at the UiO Nvidia Cluster. This repo is a part of the course held by 
 
 01 Getting your User ID in Educloud and Fox
 ===========================================

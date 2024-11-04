@@ -1,8 +1,10 @@
-Template for the Read the Docs tutorial
-=======================================
+AI from Huggingface, Cached at a cluster at UiO
+================================================
 
-This GitHub template includes a work process from RStudio
+This GitHub template includes a work process from in Jupyter Lab
 
-Procedures including downloading of files with Python will be included at a later stage.
+The AI from Huggingface is cached at UiOs Nvidia Cluster
 
-This work process is adequate for people who have UN comtrade institutional access.
+The course will be held on January 6th and 7th 2025
+
+Here, you will be able to find the course preparations.

@@ -27,12 +27,20 @@ At the Fox server, you have your own storage space. There is also a common space
 Visit `Huggingface <https://huggingface.co/>`_ and search for googgle/Pegasus. What do you see? Switch the search to meta-llama/Llama-3.1-8B-Instruct and read. Is this a model that you can find at Fox? What format is it in? Find the format of the Llama AI at Fox, and google it, in order to find out more about this dataformat.
 
 
-04 A good way to start up an R script
-=====================================
+04 Log in to Educloud through SSH, in Bash/ Terminal
+====================================================
 
-If you do not know your directory, use the command "getwd". Then, copy the directory from the answer you got, and adjust it to fit the path that suits you. In the .R file, at the very begining
+Open the Command prompt (PC) or Terminal. Log in to Fox using ssh. You may find more information on the USIT page `Fox Account Creation and Login (SSH) <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/account-login.md>`_
 
-   .. code-block:: 
+In the Terminal::
+   
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+   Mauris tincidunt dui id vulputate ultrices. N
+   ullam aliquam nisi ac justo egestas, vel lobortis nulla placerat. 
+   Fusce sodales ligula sit amet varius tristique. 
+
+
+Aliquam erat volutpat. Nullam id augue rhoncus, ultrices leo non, cursus ex. Maecenas arcu tortor, gravida eu faucibus vel, eleifend varius ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
    getwd
    setwd("/Users/ragnhildsundsbak/Documents/LearningR2023/ComtradeProjectNew")
    ..

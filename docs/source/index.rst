@@ -63,7 +63,7 @@ Terminal view 3::
    The HPC Cluster in Educloud
 
 
-01 What is a Cluster?
+05 What is a Cluster?
 =====================
 In this course, we speak a strange language, where we mention words like Cluster, HPC, Transformers and .ggufs like they where regular items from the grocery store. Write a list over concepts that you do not understand. Go in pairs, and discuss the concepts you want to elaborate on. Use google og UiO GPT or an encyclopedia from the library.
 

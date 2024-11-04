@@ -3,8 +3,8 @@
 # -- Project information
 
 project = 'AI on Cluster'
-copyright = '2024, Ragnhild and Pål'
-author = 'Ragnhild Sundsbak, Pål Lykkja'
+copyright = '2024, Pål and Ragnhild'
+author = 'Pål Lykkja, Ragnhild Sundsbak'
 
 release = '0.2'
 version = '0.2.AI'

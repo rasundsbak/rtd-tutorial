@@ -2,12 +2,12 @@
 
 # -- Project information
 
-project = 'Download data with R'
-copyright = '2023, Ragnhild'
-author = 'Ragnhild'
+project = 'Learn how to run AI from Huggingface on UiO Cluster'
+copyright = '2024, Ragnhild and Pål'
+author = 'Ragnhild Sundsbak, Pål Lykkja'
 
-release = '0.1'
-version = '0.1.0'
+release = '0.2'
+version = '0.2.AI'
 
 # -- General configuration
 

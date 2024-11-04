@@ -55,13 +55,11 @@ It is always start with the setwd. It is a good idea to combine it with opening 
 In order to follow the process in this script, we need the following pagkages. Note that if you do not have them installed, you must first use the command install.packages("package name"). Since this is to be done only once, I often use the # tag to make the coding turn into a comment that will not be executed.
 
 1 Installation example::
+   
 
-   install.packages("comtradr")
-   install.packages("rjson")
-
-   after installation, change to:
-   #install.packages("comtradr")
-   #install.packages("rjson")
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+   Vestibulum quis auctor mi, vel elementum arcu. 
+   Donec fermentum luctus rhoncus.
 
 2::
 

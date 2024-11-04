@@ -1,7 +1,7 @@
-ComtradR unofficial tutorial
-============================
+Start an AI from Huggingface at UiOs HPC Cluster
+================================================
 This project has its documentation hosted on Read the Docs: https://readthedocs.org/
-The project has a GitHub repository: https://github.com/rasundsbak/rtd-tutorial/tree/3.0.y
+The project has a GitHub repository: https://github.com/rasundsbak/rtd-tutorial/tree/4.0.AI
 
 Check out the :doc:`usage` section for further information, including
 
@@ -21,8 +21,8 @@ how to do the :ref:`installation` of the project.
 ---
 
 
-01 From Comtrade to RStudio
-===========================
+01 Getting your User ID in Educloud and Fox
+===========================================
 This text may be used as a tutorial for learning how to download Comtrade data and processing them in RStudio. It will be shown how data from the United Nations' Comtrade database [@CRANPackageComtradr] can be used to point out variations in the export of crude oil from OPEC countries. This will be the example used to demonstrate both the process of data collection, as well as the parsing, processing and facilitation of data into relevant units. While working on this project, the United Nations API delivery was modernized and changed from being facilitated for R and RStudio into Python. The ComtradR is now maintained under the GitHub initiative of OpenSci[@muir2023; @ROpenSciOpenTools]. This project will be developed according to the progress of the technical development of the official Comtrade database. A repository on how to generate data with Python, for import to RStudio may come at a later time.
 
 02 The problem of discussion

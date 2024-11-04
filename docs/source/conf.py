@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Learn how to run AI from Huggingface on UiO Cluster'
+project = 'AI on Cluster'
 copyright = '2024, Ragnhild and Pål'
 author = 'Ragnhild Sundsbak, Pål Lykkja'
 

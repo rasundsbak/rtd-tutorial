@@ -17,7 +17,7 @@ Here, you will learn how to set up your own virtual environment at the UiO Nvidi
 .. note::
 
    This project is under active development.
----
+
 
 In this tutorial, you will learn how to set up your own virtual environment at the UiO Nvidia Cluster. This repo is a part of the course held as a part of `Digital Scholarship Days 2025 <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/00-mainpage.html/>`_
 

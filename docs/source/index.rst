@@ -41,7 +41,12 @@ At the Fox server, you have your own storage space. There is also a common space
 
 03 What is Huggingface
 ======================
-Visit `Huggingface <https://huggingface.co/>`_ and search for googgle/Pegasus. What do you see? Switch the search to meta-llama/Llama-3.1-8B-Instruct and read. Is this a model that you can find at Fox? What format is it in? Find the format of the Llama AI at Fox, and google it, in order to find out more about this dataformat.
+
+
+.. note::
+
+   First task: Visit Huggingface and search for googgle/Pegasus. What do you see? Switch the search to meta-llama/Llama-3.1-8B-Instruct and read. Is this a model that you can find at Fox? What format is it in? Find the format of the Llama AI at Fox, and google it, in order to find out more about this dataformat. 
+
 
 
 04 Log in to Educloud through SSH, in Bash/ Terminal

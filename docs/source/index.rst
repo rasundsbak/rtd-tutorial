@@ -18,7 +18,7 @@ In this tutorial, you will learn how to set up your own virtual environment at t
 ========================================
 Here, you will find the `First time setup of Educloud Research <https://www.uio.no/english/services/it/research/platforms/edu-research/help/getting-started-with-educloud.html>`_ When you have your setup ready, you may try it on `Educloud on demand. <https://oidc.fp.educloud.no/>`_
 
-You can compare lots of models from `Hugging Face <https://https://huggingface.co/>`_ and you can read about them before you go to `Educloud on demand. <https://oidc.fp.educloud.no/>`_
+You can compare lots of models from `Hugging Face <https://huggingface.co/>`_ and you can read about them before you go to `Educloud on demand. <https://oidc.fp.educloud.no/>`_
 
 02 Get an overview
 ==================

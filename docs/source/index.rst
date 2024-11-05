@@ -5,7 +5,8 @@ Run large language models through Educloud UiO¶
 
 Here, you will learn how to set up your own virtual environment at the UiO Nvidia Cluster. This repo is a part of a course held as a part of Digital Scholarship Days 2025. The course is for employees at the University of Oslo. `You may sign up here <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_
 
-# 00 Preparations
+00 Preparations
+===============
 * Sign up for the course.
 * When you get the confirmation e-mail from the instructors, you are ready for the next step.
 * Log in to Educloud with your to factor authenticator

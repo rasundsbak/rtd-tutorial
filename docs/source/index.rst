@@ -1,6 +1,6 @@
 In this project, We use Sphinx to formulate our ideas: https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 
-Run large language models through Educloud UiO¶
+Run large language models through Educloud UiO
 ===============================================
 
 Here, you will learn how to set up your own virtual environment at the UiO Nvidia Cluster. This repo is a part of a course held as a part of Digital Scholarship Days 2025. The course is for employees at the University of Oslo. If you are in our interest group, `you may sign up here <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_
@@ -27,13 +27,13 @@ We are testing our code with Gnus. See how it jumps!
 
 .. image:: bausenhart.jpg
 
-01 Hugging face and the AIs
+02 Hugging face and the AIs
 ============================
 "Hugging Face is a machine learning (ML) and data science platform and community that helps users build, deploy and train machine learning models." Ben Lutkevich on `Tech Target <https://www.techtarget.com/whatis/definition/Hugging-Face>`_
 
 `Hugging face <https://huggingface.co/>`_ is a good place to start, when you want to familiarize yourself with the LLMs. However, in this course you do not need to download them, because we, the instructors have already done some of the work for you. If you want to learn, keep reading!
 
-02 Get an overview
+03 Get an overview
 ==================
 At the Fox server, you have your own storage space. There is also a common space for the group on the server. This is where the AIs are located, and where the AI will be temporarily cached when you download it from Huggingface. In order to get the AI work in jupyter lab, it is essential that you set up the paths in the right way. Take a look around, and see if you can think of a good way to organize your project. 
 
@@ -179,10 +179,10 @@ Sed pulvinar pellentesque arcu, sit amet iaculis augue luctus eget. Integer ut e
 
 .. toctree::
 
-   01 Welcome to Lumache's documentation!
-   01 Introduction
-   02 The research question
-   03 The academic problem
+   00 Preparations
+   01 This is a test
+   02 Hugging face and the AIs
+   03 Get an overview
    04 Getting the data
    05 
    04 Quisque at finibus orci

@@ -14,3 +14,6 @@ https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 
 Etherpad for cooperation in class:
 https://hackmd.okfn.de/
+
+Current collaboration here:
+https://hackmd.okfn.de/g1yXOHdmRIuxnVydrq0vIA?both

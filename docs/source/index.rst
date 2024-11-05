@@ -7,7 +7,7 @@ Here, you will learn how to set up your own virtual environment at the UiO Nvidi
 
 00 Preparations
 ===============
-* Sign up for the course.
+* `Sign up <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_ for the course.
 * When you get the confirmation e-mail from the instructors, you are ready for the next step.
 * Log in to Educloud with your to factor authenticator
 * Download Microsoft Authenticator on your phone. It may be downloaded from App Store(iPhone) or Google Play (Android)

@@ -20,7 +20,7 @@ Here, you will find the `First time setup of Educloud Research <https://www.uio.
 
 You can compare lots of models from `Hugging Face <https://huggingface.co/>`_ and you can read about them before you go to `Educloud on demand. <https://ood.educloud.no/>`_
 
- .. image:: .jpg
+ .. image:: bausenhart.jpg
 
 02 Get an overview
 ==================

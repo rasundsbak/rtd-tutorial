@@ -21,11 +21,9 @@ Here, you will learn how to set up your own virtual environment at the UiO Nvidi
 
 In this tutorial, you will learn how to set up your own virtual environment at the UiO Nvidia Cluster. This repo is a part of the course held as a part of `Digital Scholarship Days 2025 <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/00-mainpage.html/>`_
 
-01 First time setup of Educloud Research
-========================================
-Here, you will find the `First time setup of Educloud Research <https://www.uio.no/english/services/it/research/platforms/edu-research/help/getting-started-with-educloud.html>`_ When you have your setup ready, you may try it on `Educloud on demand. <https://ood.educloud.no>`_
-
-You can compare lots of models from `Hugging Face <https://huggingface.co/>`_ and you can read about them before you go to `Educloud on demand. <https://ood.educloud.no/>`_
+01 This is a test
+=================
+We are testing our code with Gnus. See how it jumps!
 
  .. image:: bausenhart.jpg
 

@@ -25,7 +25,7 @@ In this tutorial, you will learn how to set up your own virtual environment at t
 =================
 We are testing our code with Gnus. See how it jumps!
 
- .. image:: bausenhart.jpg
+.. image:: bausenhart.jpg
 
 02 Get an overview
 ==================

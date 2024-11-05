@@ -13,4 +13,4 @@ We use Sphinx to formulate our ideas:
 https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 
 Etherpad for cooperation in class:
-https://etherpad.org/
+https://hackmd.okfn.de/

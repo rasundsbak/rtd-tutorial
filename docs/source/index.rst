@@ -5,7 +5,7 @@ In this project, We use Sphinx to formulate our ideas: https://www.sphinx-doc.or
 Run large language models through Educloud UiO¶
 ===============================================
 
-Here, you will learn how to set up your own virtual environment at the UiO Nvidia Cluster. This repo is a part of a course held as a part of Digital Scholarship Days 2025. The course is for employees at the University of Oslo. `You may sign up here <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_
+Here, you will learn how to set up your own virtual environment at the UiO Nvidia Cluster. This repo is a part of a course held as a part of Digital Scholarship Days 2025. The course is for employees at the University of Oslo. If you are in our interest group, `you may sign up here <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_
 
 .. note::
 

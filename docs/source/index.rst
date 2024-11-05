@@ -29,6 +29,15 @@ We are testing our code with Gnus. See how it jumps!
 
 .. image:: bausenhart.jpg
 
+01 Hugging face and the AIs
+============================
+"Hugging Face is a machine learning (ML) and data science platform and community that helps users build, deploy and train machine learning models." Ben Lutkevich on `Tech Target <https://www.techtarget.com/whatis/definition/Hugging-Face>`_
+
+`Hugging face <https://huggingface.co/>`_ is a good place to start, when you want to familiarize yourself with the LLMs. However, in this course you do not need to downliad them, because we have already done some of the work for you. If you want to learn, keep reading!
+
+
+
+
 02 Get an overview
 ==================
 At the Fox server, you have your own storage space. There is also a common space for the group on the server. This is where the AIs are located, and where the AI will be temporarily cached when you download it from Huggingface. In order to get the AI work in jupyter lab, it is essential that you set up the paths in the right way. Take a look around, and see if you can think of a good way to organize your project. 

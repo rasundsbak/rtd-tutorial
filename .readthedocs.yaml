@@ -20,6 +20,13 @@ build:
 python:
   install:
     - requirements: docs/requirements.txt
+
+versions:
+  only:
+    - stable
+    - latest
+    - 4.1.AI
+  regex: ^(stable|latest|4\.1\.AI)$
     
     
 # We recommend specifying your dependencies to enable reproducible builds:

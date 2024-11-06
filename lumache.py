@@ -1,5 +1,5 @@
 """
-Ragnhild - Comtrade for R and RStudio.
+Run large language models through Educloud UiO
 """
 
 __version__ = "4.1.AI"

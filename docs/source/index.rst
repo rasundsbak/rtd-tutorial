@@ -5,6 +5,8 @@ Contents
 Welcome to Your Project Name's documentation!
 ==============================================
 
+.. image:: fox.jpg
+
 .. toctree::
    :maxdepth: 2
 

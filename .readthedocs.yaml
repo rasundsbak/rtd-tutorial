@@ -15,3 +15,5 @@ build:
 python:
   install:
     - requirements: docs/requirements.txt
+
+# Korrigert 7. nov 2024 RS

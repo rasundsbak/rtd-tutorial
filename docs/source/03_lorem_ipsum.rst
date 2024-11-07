@@ -6,7 +6,7 @@ Content of Lorem Ipsum.
 .. toctree::
    :maxdepth: 2
 
-   03.01_etiám_tincidunt  # Filnavnet justert for konsistens med kapitlene
+   03_01_etiám_tincidunt  # Filnavnet justert for konsistens med kapitlene
 
 .. _03_lorem_ipsum:
 

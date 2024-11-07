@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 01 Suspendisse consequat sagittis leo at accumsan
 -------------------------------------------------
 
@@ -42,6 +36,7 @@ Contents
 --------
 
 .. toctree::
+   :maxdepth: 2
 
    01 Welcome to the pilot course on how to use ComtradR
    02 Project

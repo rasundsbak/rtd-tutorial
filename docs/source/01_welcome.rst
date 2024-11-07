@@ -1,3 +1,4 @@
+.. _01 Welcome to the pilot course on how to use ComtradR:
 01 Welcome to the pilot course on how to use ComtradR
 ======================================
 This project has its documentation hosted on Read the Docs: https://readthedocs.org/

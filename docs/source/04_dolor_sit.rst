@@ -1,3 +1,4 @@
+.. _04 Dolor sit amet:
 04 Dolor sit amet
 =================
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut eleifend augue, et pretium turpis. Fusce in tortor a tellus luctus tristique a at metus. Pellentesque in suscipit ipsum. Ut bibendum elit orci, eget efficitur mauris fringilla eget. 

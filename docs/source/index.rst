@@ -34,7 +34,6 @@ by providing a basic explanation of how to do it easily.
 
 
 
-
 03 Lorem Ipsum
 ==============
 03.01 Etiam tincidunt
@@ -65,6 +64,7 @@ Get the latest news at `CNN`_.
 .. _CNN: http://cnn.com/
 
 I'd rather see an image of a :doc:`younggnu`
+
 
 03.02 Etiam tincidunt
 ---------------------
@@ -129,18 +129,10 @@ Contents
 
 .. toctree::
 
-   01 Welcome to Lumache's documentation!
+   01 Welcome to the pilot course on how to use ComtradR
    02 Project
    03 Lorem Ipsum
-      03.01 Etiam tincidunt
       03.02 Etiam tincidunt
-   04 Lorem ipsum dolor sit amet
-      01 Suspendisse consequat sagittis leo at accumsan
-      02 Suspendisse consequat sagittis leo at accumsan
-   05 Quisque at finibus orci
-      Suspendisse consequat sagittis leo at accumsan
-      Etiam tincidunt
-      Suspendisse vulputate est vitae nunc porta
       
    
    

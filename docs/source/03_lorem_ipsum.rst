@@ -1,3 +1,4 @@
+.. _03 Lorem Ipsum:
 03 Lorem Ipsum
 ==============
 03.01 Etiam tincidunt

@@ -12,5 +12,6 @@ Welcome to Your Project Name's documentation!
    02_project
    03_lorem_ipsum
    04_dolor_sit
-   05_quisque/06_suspendisse
+   05_quisque
+   06_suspendisse_consequat
 

@@ -2,9 +2,9 @@
 07 Disk quota exceeded problem
 ===================
 
-This guide helps you address the "disk quota exceeded" problem by detailing steps to clean up your home directory, delete cache files, and check available disk space.
+This guide helps you address the "disk quota exceeded" problem by detailing steps to clean up your home directory, delete cache files, and check available disk space. 
 
-### Step 1: List contents in the home directory
+Step 1: List contents in the home directory
 
 Listing the contents in your home directory can help identify large files or folders that can be deleted or moved.
 
@@ -16,7 +16,7 @@ Terminal view 1::
 
 This command will display a list of all files and folders in your directory along with their sizes.
 
-### Step 2: Delete unnecessary cache files
+Step 2: Delete unnecessary cache files
 
 Cache files can often take up significant space. We recommend identifying and deleting them.
 

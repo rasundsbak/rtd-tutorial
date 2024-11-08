@@ -5,6 +5,11 @@ Contents
 Welcome to Your Project Name's documentation!
 ==============================================
 
+
+.. note::
+
+   This project is under active development.
+
 .. image:: fox.png
 
 .. toctree::

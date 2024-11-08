@@ -50,6 +50,7 @@ Welcome to Your Project Name's documentation!
 
 In this tutorial, you will learn how to set up your own virtual environment at the UiO Nvidia Cluster. This repo is a part of the course held as a part of `Digital Scholarship Days 2025 <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/00-mainpage.html/>`_
 
+
 01 This is a test
 =================
 We are testing our code with Gnus. See how it jumps!
@@ -106,6 +107,28 @@ Terminal view 3::
       "-.._  (#)  _..-"
            `-:_:-'
    The HPC Cluster in Educloud
+
+
+# Lag en mappe for pip-arbeidsfiler, for eksempel pip_cache
+mkdir -p /fp/projects01/ec367/ragnhsu/pip_cache
+
+
+# Sett opp miljøvariabler i din shell init fil (f.eks. .bashrc eller .bash_profile)
+echo 'export PATH=/fp/projects01/ec367/ragnhsu/pip_cache/bin:$PATH' >> ~/.bashrc
+echo 'export PIP_CACHE_DIR=/fp/projects01/ec367/ragnhsu/pip_cache' >> ~/.bashrc
+echo 'export PIP_TARGET=/fp/projects01/ec367/ragnhsu/pip_cache' >> ~/.bashrc
+
+# Bruk de nåværende variablene i sesjonen din
+source ~/.bashrc
+
+# Aktivér ditt venv
+source /fp/projects01/ec367/ragnhsu/venv_transformers/bin/activate
+
+# Installer transformers og torch i venv
+pip install transformers
+pip install torch
+
+
 
 
 05 What is a Cluster and what about the rest?

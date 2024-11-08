@@ -3,104 +3,69 @@
 ===================
 
 This guide helps you address the "disk quota exceeded" problem by detailing steps to clean up your home directory, delete cache files, and check available disk space. 
+# Summary for Cleaning Up Temporary Data
 
-Step 1: List contents in the home directory
+This guide provides steps to clean up temporary data generated during the usage of 
+Hugging Face RAG models to avoid "disk quota exceeded" issues.
 
-Listing the contents in your home directory can help identify large files or folders that can be deleted or moved.
+### Step 1: Remove Temporary Data from Cache Directory
 
-Terminal view 1::
+First, check and remove temporary files from the cache directory.
 
-   ```
-   $ ls -lh /fp/homes01/u01/username
-   ```
+1. **List contents of the cache directory**:
+    ```sh
+    ls -lh /fp/projects01/projectname/huggingface/cache/RAG_Sequence_NQ
+    ```
 
-This command will display a list of all files and folders in your directory along with their sizes.
+2. **Remove all files and subdirectories in the cache directory**:
+    ```sh
+    rm -rf /fp/projects01/projectname/huggingface/cache/RAG_Sequence_NQ/*
+    ```
 
-Step 2: Delete unnecessary cache files
+### Step 2: Remove Temporary Data from Dataset Directory
 
-Cache files can often take up significant space. We recommend identifying and deleting them.
+Next, check and remove temporary data from the dataset directory.
 
-#### Find cache files:
-Terminal view 2::
+1. **List contents of the dataset directory**:
+    ```sh
+    ls -lh /fp/projects01/projectname/rag_datasets
+    ```
 
-   ```
-   $ find /fp/homes01/u01/username -type f -name "*.cache"
-   ```
+2. **Remove all dataset files**:
+    ```sh
+    rm -rf /fp/projects01/projectname/rag_datasets/*
+    ```
 
-#### Delete cache files:
-Terminal view 3::
+### Step 3: Check and Remove Temporary Data from Home Directory
 
-   ```
-   $ find /fp/homes01/u01/username -type f -name "*.cache" -exec rm {} \;
-   ```
+Temporary data might also be stored in your home directory, especially in `.cache` or `.local` folders.
 
-### Step 3: Check available disk space
+1. **Check contents of the .cache folder**:
+    ```sh
+    ls -lh /fp/homes01/u01/username/.cache
+    ```
 
-After deleting unnecessary files, check the available disk space to ensure the problem is resolved.
+2. **Remove cache files from the .cache directory**:
+    ```sh
+    rm -rf /fp/homes01/u01/username/.cache/*
+    ```
 
-Terminal view 4::
+3. **Check contents of the .local folder**:
+    ```sh
+    ls -lh /fp/homes01/u01/username/.local
+    ```
 
-   ```
-   $ df -h /fp/homes01/u01/username
-   ```
+4. **Remove unnecessary files from the .local directory**:
+    ```sh
+    rm -rf /fp/homes01/u01/username/.local/*
+    ```
 
-This will display information about the disk space usage, including the total size of the filesystem, used space, available space, and percentage used.
+### Explanation:
+- **Cache Directory**: /fp/projects01/projectname/huggingface/cache/RAG_Sequence_NQ
+- **Dataset Directory**: /fp/projects01/projectname/rag_datasets
+- **Home Directory**: Used for storing user-specific temporary data.
 
-### Example Workflow:
+Following these steps will help you free up disk space and avoid exceeding your disk quota while working with Hugging Face RAG models.
 
-#### 1. List contents
-
-Terminal view 5::
-
-   ```
-   $ ls -lh /fp/homes01/u01/username
-   ```
-
-Example output:
-
-```
-total 4.0K
-drwxr-xr-x 2 user group 4.0K Jun  1 12:34 old_data
--rw-r--r-- 1 user group 2.0G Jun  1 12:34 large_file.txt
-```
-
-#### 2. Delete cache files
-
-Find cache files:
-Terminal view 6::
-
-   ```
-   $ find /fp/homes01/u01/username -type f -name "*.cache"
-   ```
-
-Delete cache files:
-Terminal view 7::
-
-   ```
-   $ find /fp/homes01/u01/username -type f -name "*.cache" -exec rm {} \;
-   ```
-
-#### 3. Check available disk space
-
-Terminal view 8::
-
-   ```
-   $ df -h /fp/homes01/u01/username
-   ```
-
-Example output:
-
-```
-Filesystem      Size  Used Avail Use% Mounted on
-fp-homes01       30T   10T   20T  34% /fp/homes01
-```
-
-This procedure helps you free up disk space by identifying and deleting unnecessary files, providing a simple process to maintain optimal disk management. Be cautious when deleting files to avoid removing important data.
-
-### Final Notes:
-
-- Use `ls -lh` to identify large files or folders.
-- Use `find` to locate and delete cache files.
-- Use `df -h` to check available disk space after cleanup.
 
 If you have further questions or need additional assistance, contact the system administrator.

@@ -104,7 +104,3 @@ This procedure helps you free up disk space by identifying and deleting unnecess
 - Use `df -h` to check available disk space after cleanup.
 
 If you have further questions or need additional assistance, contact the system administrator.
-
----
-
-You can use this summary directly in your RTD documentation to provide users with clear instructions on handling "disk quota exceeded" issues efficiently. If you need further adjustments or have more questions, feel free to ask. Good luck!

@@ -9,6 +9,35 @@ Here, you will learn how to set up your own virtual environment at the new UiO N
 
    This project is under active development.
 
+
+Contents
+--------
+
+Welcome to Your Project Name's documentation!
+==============================================
+
+
+.. note::
+
+   This project is under active development.
+
+.. image:: fox.png
+
+.. toctree::
+   :maxdepth: 2
+
+   00 Preparations: Before you come
+   01 This is a test
+   02 Hugging face and the AIs
+   03 Get an overview
+   04 Log in to Educloud through SSH, in Bash/ Terminal
+   05 What is a Cluster and what about the rest?
+   06 Log on to Jupyter lab on demand
+   07 Disk quota exceeded problem
+   
+
+
+
 00 Preparations: Before you come
 ===============
 * `Sign up <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_ for the course.
@@ -153,7 +182,7 @@ It is also necesary to rule out the conflicts between the packages that are in u
 
 We are ready to start the process of getting data.
 
-04 Getting the data
+07 Disk quota exceeded problem
 ===================
 05 Lorem ipsum dolor sit amet
 
@@ -176,19 +205,6 @@ ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal ablallabbal ba
 06 And even more babbelbla balubala
 =============================
 Sed pulvinar pellentesque arcu, sit amet iaculis augue luctus eget. Integer ut elit volutpat, mattis eros in, auctor lorem. Ut arcu nisi, condimentum vestibulum nibh nec, tincidunt aliquam odio. 
-
-.. toctree::
-
-   00 Preparations
-   01 This is a test
-   02 Hugging face and the AIs
-   03 Get an overview
-   04 Getting the data
-   05 
-   04 Quisque at finibus orci
-      Suspendisse consequat sagittis leo at accumsan
-      Etiam tincidunt
-      Suspendisse vulputate est vitae nunc porta
       
    
    

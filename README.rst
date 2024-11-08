@@ -17,3 +17,11 @@ https://hackmd.okfn.de/
 
 Current collaboration here:
 https://hackmd.okfn.de/g1yXOHdmRIuxnVydrq0vIA?both
+
+Format
+=======
+RST, Restructured Text, is a file format created by the Python community to write documentation. It is part of Docutils. RST is a markup language like HTML but is much more lightweight and easier to read.
+
+The Toctree
+===========
+Read more here: https://sphinx-doc-zh.readthedocs.io/en/latest/markup/toctree.html

@@ -1,15 +1,44 @@
 In this project, We use Sphinx to formulate our ideas: https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 
-Run large language models through Educloud UiO
+Run large language models through Educloud On Demand
 ===============================================
 
-Here, you will learn how to set up your own virtual environment at the UiO Nvidia Cluster. This repo is a part of a course held as a part of Digital Scholarship Days 2025. The course is for employees at the University of Oslo. If you are in our interest group, `you may sign up here <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_. AIs from Huggingface run on a Transformer architecture. The method we are going to use, Jupyter Lab is an effective way of showing what goes on behind the interface of the AI. You will learn how the language model is built, how the parameters are set, and what the output is like. We hope this will give you insight into how the AI of our times work.
+Here, you will learn how to set up your own virtual environment at the new UiO Nvidia Cluster. This blog belongs to a course held as a part of Digital Scholarship Days 2025. The course is for employees at the University of Oslo. If you are in our interest group, `you may sign up here <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_. AIs from Huggingface run on a Transformer architecture. The method we are going to use, Jupyter Lab is an effective way of showing what goes on behind the interface of the AI. You will learn how the language model is built, how the parameters are set, and what the output is like. We hope this will give you insight into how the AI of our times work.
 
 .. note::
 
    This project is under active development.
 
-00 Preparations
+
+Contents
+--------
+
+Welcome to Your Project Name's documentation!
+==============================================
+
+
+.. note::
+
+   This project is under active development.
+
+.. image:: fox.png
+
+.. toctree::
+   :maxdepth: 2
+
+   00 Preparations: Before you come
+   01 This is a test
+   02 Hugging face and the AIs
+   03 Get an overview
+   04 Log in to Educloud through SSH, in Bash/ Terminal
+   05 What is a Cluster and what about the rest?
+   06 Log on to Jupyter lab on demand
+   07 Disk quota exceeded problem
+   
+
+
+
+00 Preparations: Before you come
 ===============
 * `Sign up <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_ for the course.
 * When you get the confirmation e-mail from the instructors, you are ready for the next step.
@@ -153,7 +182,7 @@ It is also necesary to rule out the conflicts between the packages that are in u
 
 We are ready to start the process of getting data.
 
-04 Getting the data
+07 Disk quota exceeded problem
 ===================
 05 Lorem ipsum dolor sit amet
 
@@ -176,19 +205,6 @@ ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal ablallabbal ba
 06 And even more babbelbla balubala
 =============================
 Sed pulvinar pellentesque arcu, sit amet iaculis augue luctus eget. Integer ut elit volutpat, mattis eros in, auctor lorem. Ut arcu nisi, condimentum vestibulum nibh nec, tincidunt aliquam odio. 
-
-.. toctree::
-
-   00 Preparations
-   01 This is a test
-   02 Hugging face and the AIs
-   03 Get an overview
-   04 Getting the data
-   05 
-   04 Quisque at finibus orci
-      Suspendisse consequat sagittis leo at accumsan
-      Etiam tincidunt
-      Suspendisse vulputate est vitae nunc porta
       
    
    

@@ -36,20 +36,6 @@ Welcome to Your Project Name's documentation!
    07 Disk quota exceeded problem
    
 
-
-
-00 Preparations: Before you come
-===============
-* `Sign up <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_ for the course.
-* When you get the confirmation e-mail from the instructors, you are ready for the next step.
-* Log in to Educloud with your two factor authenticator
-* Download Microsoft Authenticator on your phone. It may be downloaded from App Store (iPhone) or Google Play (Android)
-*  `Follow the instructions <https://www.uio.no/english/services/it/research/platforms/edu-research/help/getting-started-with-educloud.html#with-idporten>`_ for first time setup of Educloud Research.
-*  Try your setup on `Educloud on demand <https://ood.educloud.no>`_
-
-
-In this tutorial, you will learn how to set up your own virtual environment at the UiO Nvidia Cluster. This repo is a part of the course held as a part of `Digital Scholarship Days 2025 <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/00-mainpage.html/>`_
-
 01 This is a test
 =================
 We are testing our code with Gnus. See how it jumps!
@@ -106,6 +92,28 @@ Terminal view 3::
       "-.._  (#)  _..-"
            `-:_:-'
    The HPC Cluster in Educloud
+
+
+# Lag en mappe for pip-arbeidsfiler, for eksempel pip_cache
+mkdir -p /fp/projects01/ec367/ragnhsu/pip_cache
+
+
+# Sett opp miljøvariabler i din shell init fil (f.eks. .bashrc eller .bash_profile)
+echo 'export PATH=/fp/projects01/ec367/ragnhsu/pip_cache/bin:$PATH' >> ~/.bashrc
+echo 'export PIP_CACHE_DIR=/fp/projects01/ec367/ragnhsu/pip_cache' >> ~/.bashrc
+echo 'export PIP_TARGET=/fp/projects01/ec367/ragnhsu/pip_cache' >> ~/.bashrc
+
+# Bruk de nåværende variablene i sesjonen din
+source ~/.bashrc
+
+# Aktivér ditt venv
+source /fp/projects01/ec367/ragnhsu/venv_transformers/bin/activate
+
+# Installer transformers og torch i venv
+pip install transformers
+pip install torch
+
+
 
 
 05 What is a Cluster and what about the rest?
@@ -182,22 +190,7 @@ It is also necesary to rule out the conflicts between the packages that are in u
 
 We are ready to start the process of getting data.
 
-07 Disk quota exceeded problem
-===================
-05 Lorem ipsum dolor sit amet
 
-Consectetur adipiscing elit. Vivamus leo libero, eleifend ac risus vitae, ultrices interdum sem. In quis placerat neque. Curabitur auctor quam in purus efficitur facilisis. Aliquam ac enim molestie, venenatis turpis ut, maximus nibh. Vivamus et lorem semper, pharetra nunc id, dignissim risus. Proin ante massa, vestibulum et justo at, congue placerat erat. Praesent et tristique metus. Nullam aliquet ex et nisi scelerisque, ac vestibulum augue malesuada. Aliquam sit amet eros ligula. Sed porta hendrerit libero ut sagittis. Morbi sed tellus eu lectus euismod maximus nec at velit. Pellentesque in metus orci. Duis ornare mi id lorem convallis dapibus. Mauris quis sollicitudin arcu, eu feugiat risus. Ut in leo tortor.
-
-In order to get access to the API through RStudio We need to log into the Comtrade system. Read the New Comtrade User Guide and especially under the section "Developer portal". Decide the correct user level or "Product" as they are called.
-
-url: ablallabbalbalralbal
-
-ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal 
-
-5::
-   
-   ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal 
-   ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal 
 
 
 
@@ -206,6 +199,3 @@ ablallabbal balralbal ablallabbal balralbal ablallabbal balralbal ablallabbal ba
 =============================
 Sed pulvinar pellentesque arcu, sit amet iaculis augue luctus eget. Integer ut elit volutpat, mattis eros in, auctor lorem. Ut arcu nisi, condimentum vestibulum nibh nec, tincidunt aliquam odio. 
       
-   
-   
-

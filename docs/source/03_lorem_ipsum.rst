@@ -1,3 +1,4 @@
+.. _03 lorem ipsum:
 03 Lorem Ipsum
 ==============
 

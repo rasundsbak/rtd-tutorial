@@ -15,7 +15,7 @@ Welcome to Your Project Name's documentation!
 .. toctree::
    :maxdepth: 2
 
-   01_welcome
+   _01 Welcome to the pilot course on how to use ComtradR
    02_project
    03_lorem_ipsum
    04_dolor_sit

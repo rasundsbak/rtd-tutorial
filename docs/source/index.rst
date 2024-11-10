@@ -23,7 +23,7 @@ Contents
    03_get_overview
    04_log_in_to
    05_what_is_a_cluster
-   06 log on to
-   07 disk quota
+   06_log_on_to
+   07_disk_quota
 =======
       

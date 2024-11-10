@@ -2,6 +2,8 @@
 03 Lorem Ipsum
 ==============
 
+.. index:: lorem, ipsum
+
 Content of Lorem Ipsum.
 
 .. toctree::

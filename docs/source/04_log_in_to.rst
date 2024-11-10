@@ -1,4 +1,4 @@
-.. _04 Log in to Educloud:
+.. _04 log in to:
 04 Log in to Educloud through SSH, in Bash/ Terminal
 ====================================================
 
@@ -53,3 +53,4 @@ source /fp/projects01/ec367/ragnhsu/venv_transformers/bin/activate
 # Installer transformers og torch i venv
 pip install transformers
 pip install torch
+

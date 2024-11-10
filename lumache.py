@@ -1,8 +1,8 @@
 """
-Lumache - Python library for cooks and food lovers.
+Run large language models through Educloud UiO
 """
 
-__version__ = "0.1.0"
+__version__ = "4.1.AI"
 
 
 class InvalidKindError(Exception):

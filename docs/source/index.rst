@@ -26,15 +26,16 @@ Welcome to Your Project Name's documentation!
 .. toctree::
    :maxdepth: 2
 
-   00 preparations
+=======
+   00 Preparations: Before you come
    01 This is a test
    02 Hugging face and the AIs
    03 Get an overview
    04 Log in to Educloud through SSH, in Bash/ Terminal
    05 What is a Cluster and what about the rest?
    06 Log on to Jupyter lab on demand
-   07 Disk quota
-   
+   07 Disk quota exceeded problem
+=======
 
 01 This is a test
 =================
@@ -199,6 +200,3 @@ We are ready to start the process of getting data.
 =============================
 Sed pulvinar pellentesque arcu, sit amet iaculis augue luctus eget. Integer ut elit volutpat, mattis eros in, auctor lorem. Ut arcu nisi, condimentum vestibulum nibh nec, tincidunt aliquam odio. 
       
-   
-   
-

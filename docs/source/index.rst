@@ -1,6 +1,9 @@
 
 In this project, We use Sphinx to formulate `our ideas: <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_.
 
+Run large language models through Educloud UiO
+===========================================
+
 .. image:: fox.png
 
 .. note::

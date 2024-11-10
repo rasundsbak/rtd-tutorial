@@ -1,7 +1,7 @@
-API
-===
+API Documentation
+=================
 
-.. autosummary::
-   :toctree: generated
-
-   ragnhild
+.. automodule:: mypackage.mymodule
+    :members:
+    :undoc-members:
+    :show-inheritance:

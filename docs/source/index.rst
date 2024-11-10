@@ -16,12 +16,12 @@ Contents
    :maxdepth: 2
 
 =======
-   00 preparations
-   01 this is a test
-   02 hugging face and the AI
-   03 get an overview
-   04 log in to
-   05 what is a Cluster
+   00_preparations
+   01_this_is_a-test
+   02_hugging_face
+   03_get_overview
+   04_log_in_to
+   05_what_is_a_Cluster
    06 log on to
    07 disk quota
 =======

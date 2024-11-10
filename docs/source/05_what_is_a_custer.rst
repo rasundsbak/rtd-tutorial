@@ -1,8 +1,4 @@
-.. _Log in to Educloud through SSH:
-04 Log in to Educloud through SSH, in Bash/ Terminal
-=================
-
-
+.. _05 what is a Cluster:
 
 05 What is a Cluster and what about the rest?
 =============================================

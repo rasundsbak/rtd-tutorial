@@ -19,13 +19,13 @@ Contents
    :maxdepth: 2
 
 =======
-   00 Preparations: Before you come
-   01 This is a test
-   02 Hugging face and the AIs
-   03 Get an overview
-   04 Log in to Educloud through SSH, in Bash/ Terminal
-   05 What is a Cluster and what about the rest?
-   06 Log on to Jupyter lab on demand
-   07 Disk quota exceeded problem
+   00 preparations
+   01 this is a test
+   02 hugging face and the AI
+   03 get an overview
+   04 log in to
+   05 what is a Cluster
+   06 log on to
+   07 disk quota
 =======
       

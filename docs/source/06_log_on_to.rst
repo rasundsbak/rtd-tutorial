@@ -68,12 +68,3 @@ It is also necesary to rule out the conflicts between the packages that are in u
    > 
 
 We are ready to start the process of getting data.
-
-
-
-
-
-
-07 And even more babbelbla balubala
-=============================
-Sed pulvinar pellentesque arcu, sit amet iaculis augue luctus eget. Integer ut elit volutpat, mattis eros in, auctor lorem. Ut arcu nisi, condimentum vestibulum nibh nec, tincidunt aliquam odio. 

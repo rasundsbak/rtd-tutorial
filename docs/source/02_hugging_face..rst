@@ -1,5 +1,5 @@
-.. _03 hugging face and the AIs:
-03 Hugging face and the AIs
+.. _02 hugging face and the AIs:
+02 Hugging face and the AIs
 ============================
 "Hugging Face is a machine learning (ML) and data science platform and community that helps users build, deploy and train machine learning models." Ben Lutkevich on `Tech Target <https://www.techtarget.com/whatis/definition/Hugging-Face>`_
 

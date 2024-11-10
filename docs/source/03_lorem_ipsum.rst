@@ -23,7 +23,7 @@ This is an ordinary paragraph.
 
 Gnu Photo by Dim Hou on `Unsplash`_: 
 
-   .. image:: gnu.jpg
+.. image:: gnu.jpg
 
 >>> print 'this is a Doctest block'
 this is a Doctest block

@@ -1,7 +1,9 @@
 .. _01 Welcome to the pilot course on how to use ComtradR:
+
 01 Welcome to the pilot course on how to use ComtradR
 ======================================
 
+.. index:: welcome, introduction
 
 Lorem ipsum dolor sit amet
 ==========================

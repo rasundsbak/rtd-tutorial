@@ -11,7 +11,6 @@ In this documentation, you will learn how to set up your an AI process at the Ui
 Contents
 --------
 .. toctree::
-   :maxdepth: 2
 
    00 preparations
    01 this_is_a_test

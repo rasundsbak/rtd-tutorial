@@ -26,9 +26,19 @@ In this project, we aim to provide thorough and detailed documentation on variou
    api
    younggnu
 
+
 Indices and tables
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+Module Index
+============
+The following is a list of all modules, classes, functions, and other components included in this package. You can use this index to quickly navigate to the documentation for each component.
+
+.. toctree::
+   :maxdepth: 2
+
+   api

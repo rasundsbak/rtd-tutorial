@@ -26,19 +26,7 @@ Contents
    05_what_is_a_cluster
    06_log_on_to
    07_disk_quota
-
-Images:
-=======
-
-   * 8opec_countries.png
-   * allofopec.png
-   * bausenhart.jpg
-   * fox.png
-   * fox_hpc.png
-   * fox_pandemisk.png
-   * grobelska.jpg
-   * normalaxis.png
-   * rplot.png
+   08_images
 
 Indices and tables
 ==================

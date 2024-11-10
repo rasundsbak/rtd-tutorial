@@ -8,11 +8,10 @@ In this documentation, you will learn how to set up your an AI process at the Ui
    This project is under active development.
 
 
-Contents
---------
-
 .. image:: fox.png
 
+Contents
+--------
 .. toctree::
    :maxdepth: 2
 

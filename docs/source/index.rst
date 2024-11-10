@@ -13,7 +13,7 @@ Welcome to Your Project Name's documentation!
 .. image:: fox.png
 
 .. toctree::
-   :maxdepth: 2
+:maxdepth: 2
 
 01_welcome
 02_project

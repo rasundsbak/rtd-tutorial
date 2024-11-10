@@ -2,7 +2,7 @@
 In this project, We use Sphinx to formulate `our ideas: <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_.
 
 Run large language models through Educloud UiO
-
+====================================
 .. image:: fox.png
 
 .. note::
@@ -18,30 +18,15 @@ Contents
 .. toctree::
    :maxdepth: 2
 
-   00 preparations
-   01 this_is_a_test
-   02 hugging_face
-   03 get_overview
-   04 log_in_to
-   05 what_is_a_cluster
-   06 log_on_to
-   07 disk_quota
-
-.. include:: toc.rst
-
-Images:
-=======
-.. note:: Images used in the documentation are:
-
-   * 8opec_countries.png
-   * allofopec.png
-   * bausenhart.jpg
-   * fox.png
-   * fox_hpc.png
-   * fox_pandemisk.png
-   * grobelska.jpg
-   * normalaxis.png
-   * rplot.png
+   00_preparations
+   01_this_is_a_test
+   02_hugging_face
+   03_get_overview
+   04_log_in_to
+   05_what_is_a_cluster
+   06_log_on_to
+   07_disk_quota
+   08_images
 
 Indices and tables
 ==================

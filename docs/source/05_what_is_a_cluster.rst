@@ -1,4 +1,4 @@
-.. _05 what is a Cluster:
+.. _What is a Cluster and what about the rest?:
 
 05 What is a Cluster and what about the rest?
 =============================================

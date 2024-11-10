@@ -1,4 +1,4 @@
-Welcome to Your Project Name's documentation!
+Run large language models through Educloud UiO
 ==============================================
 
 Contents
@@ -7,14 +7,14 @@ Contents
 .. toctree::
    :maxdepth: 2
 
-   00 preparations
-   01 this_is_a_test
-   02 hugging_face
-   03 get_overview
-   04 log_in_to
-   05 what_is_a_cluster
-   06 log_on_to
-   07 disk_quota
+   00_preparations
+   01_this_is_a_test
+   02_hugging_face
+   03_get_overview
+   04_log_in_to
+   05_what_is_a_cluster
+   06_log_on_to
+   07_disk_quota
 
 
 In this project, We use Sphinx to formulate `our ideas: <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_.

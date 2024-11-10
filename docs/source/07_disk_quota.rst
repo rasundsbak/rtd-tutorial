@@ -1,4 +1,4 @@
-.. _07 Disk quota:
+.. _07 disk quota:
 07 Disk quota exceeded problem
 ===================
 

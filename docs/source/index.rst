@@ -18,11 +18,11 @@ Contents
 
 =======
    00_preparations
-   01_this_is_a-test
+   01_this_is_a_test
    02_hugging_face
    03_get_overview
    04_log_in_to
-   05_what_is_a_Cluster
+   05_what_is_a_cluster
    06 log on to
    07 disk quota
 =======

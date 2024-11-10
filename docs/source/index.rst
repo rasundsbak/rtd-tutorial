@@ -26,6 +26,7 @@ Welcome to Your Project Name's documentation!
 .. toctree::
    :maxdepth: 2
 
+=======
    00 Preparations: Before you come
    01 This is a test
    02 Hugging face and the AIs
@@ -34,7 +35,7 @@ Welcome to Your Project Name's documentation!
    05 What is a Cluster and what about the rest?
    06 Log on to Jupyter lab on demand
    07 Disk quota exceeded problem
-   
+=======
 
 01 This is a test
 =================

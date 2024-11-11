@@ -1,3 +1,7 @@
-.. _01 this is a test:
-01 This is a test
+.. _01_ai_board:
+01 AI on the blackboars
 =================
+
+.. index:: artificial, intelligence, blackboard
+
+.. image:: ki_tavle.jpg

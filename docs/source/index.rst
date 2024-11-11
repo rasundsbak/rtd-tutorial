@@ -1,5 +1,5 @@
 
-In this project, We use Sphinx to formulate `our ideas: <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_.
+In this project, We use `Sphinx <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ to formulate `our ideas.
 
 Run large language models through Educloud UiO
 ====================================

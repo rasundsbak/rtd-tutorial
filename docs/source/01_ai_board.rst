@@ -4,4 +4,4 @@
 
 .. index:: artificial, intelligence, blackboard
 
-.. image:: ki_tavle.jpg
+.. image:: ai_board.jpg

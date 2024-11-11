@@ -19,7 +19,7 @@ Contents
    :maxdepth: 2
 
    00_preparations
-   01_this_is_a_test
+   01_ai_board
    02_hugging_face
    03_get_overview
    04_log_in_to

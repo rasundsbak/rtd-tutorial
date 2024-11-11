@@ -27,7 +27,35 @@ In in ligula pharetra, posuere massa vitae, dignissim dui. Morbi ultrices ipsum 
 
 In hac habitasse platea dictumst
 ______________________________
-Nunc eleifend aliquet metus eu dapibus. Nulla vitae enim tortor. Donec nunc magna, egestas eget velit vitae, maximus placerat mi. Duis elementum nisi eget sapien euismod, aliquet tincidunt justo pretium. Cras pellentesque vel orci vitae condimentum. Morbi tellus nulla, convallis id tellus non, tincidunt gravida justo. Vestibulum vel lobortis purus. Duis consectetur mauris quis eleifend aliquet. Sed sed odio et dolor sodales venenatis vel sed mauris. Fusce malesuada aliquet dui, a gravida augue aliquet et. Nullam eu scelerisque magna. Nunc nisl ex, commodo sed venenatis sit amet, tempus vitae eros. Integer congue malesuada velit, vel pharetra nisl condimentum id. Quisque imperdiet quam et tellus pharetra molestie.
+Example clean Requirements
+This code fetch information from the file requirement and clean up the old file paths
+Jupyter lab 3::
+
+  # renser requirements.txt for navnet på gamle filstier:
+
+  import re
+
+  def clean_requirements_file(input_file, output_file):
+      with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
+          for line in infile:
+              # Fjern linjen hvis den inneholder @ file:/// eller @ /path/
+              if not re.search(r'(@ file:///|@ /|@file:///|@/)', line):
+                  outfile.write(line)
+              else:
+                  # Finn og hent pakkenavn og versjon hvis de finnes på spesifik formatt
+                  match = re.match(r'([^@]+)@ .+', line)
+                  if match:
+                      package_name = match.group(1)
+                      outfile.write(f'{package_name}\n')
+                  else:
+                      # Hvis match ikke finnes, behold linjen som den er
+                      outfile.write(line)
+
+  input_file = 'requirements.txt'
+  output_file = 'cleaned_requirements.txt'
+  clean_requirements_file(input_file, output_file)
+  print(f"Cleaned requirements written to {output_file}")
+
 This project has its documentation hosted on Read the Docs: https://readthedocs.org/
 This project has a GitHub repository: https://github.com/rasundsbak/rtd-tutorial/tree/3.0.y
 

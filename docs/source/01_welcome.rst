@@ -1,8 +1,10 @@
+
 .. _01 Welcome to the test suite of thid documentation:
 01 Welcome to the test suite
 ============================
 You can play with your code here, and test it. When ypu get the code to work, put the functionality into 4.2.AI.
 
+.. index:: welcome, introduction
 
 Squash and merge - Hva betyr det?
 =========================
@@ -18,7 +20,6 @@ Hvorfor bruke "Squash and Merge"?
 Ren historie: Ved å komprimere flere små og ofte urelaterte committer til en enkel commit, blir historikken til prosjektet renere og lettere å lese.
 Opprettholder sammenheng: Sikrer at all endring fra funksjonsgrenen opprettholder sammenheng som en helhet når de legges inn i hovedgrenen.
 Forhindrer rotete logg: Reduserer mengden unødvendige detaljer og bugfikser som gjør loggen rotete og vanskelig å følge.
-
 
 Donec nec quam sit amet quam elementum porta.
 _________________________________

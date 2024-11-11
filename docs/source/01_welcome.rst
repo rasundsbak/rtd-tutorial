@@ -1,18 +1,25 @@
-.. _01 Welcome to the pilot course on how to use ComtradR:
 
-01 Welcome to the pilot course on how to use ComtradR
-======================================
+.. _01 Welcome to the test suite of thid documentation:
+01 Welcome to the test suite
+============================
+You can play with your code here, and test it. When ypu get the code to work, put the functionality into 4.2.AI.
 
 .. index:: welcome, introduction
 
-Lorem ipsum dolor sit amet
-==========================
-consectetur adipiscing elit. Nulla tempor ut nunc id imperdiet. Sed a felis erat. Etiam eleifend, diam at consequat varius, velit diam volutpat ante, in fringilla mi augue et ex. Proin id ligula sagittis ligula efficitur luctus. Fusce vel massa eu erat cursus imperdiet. Praesent tortor risus, ullamcorper eu volutpat a, molestie ut diam. Etiam vitae nisi eu est pretium gravida quis in purus. Vestibulum in urna orci. Integer id aliquam elit. Suspendisse sed blandit odio, interdum vulputate purus.
-
-Mauris eu tincidunt augue
+Squash and merge - Hva betyr det?
 =========================
 
-Vestibulum eu elit sit amet ligula lacinia rhoncus. Aenean ac tortor dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin sed lacinia lacus. Duis dictum gravida consectetur. Nullam velit nibh, rutrum non lorem in, consectetur fringilla dolor. Nulla quis convallis ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras pretium et tellus eu consequat. Phasellus fringilla lacus at erat sollicitudin, vel consectetur est tincidunt. Morbi pellentesque maximus ultricies. Etiam ut eros est. Nam vehicula leo a nulla suscipit pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam venenatis pulvinar molestie.
+"Squash and merge" er en metode som brukes i versjonskontrollsystemer, som for eksempel Git, når man slår sammen ("merger") en gren inn i hovedgrenen (eller en annen gren). Den er spesielt populær i samarbeidende utviklingsprosjekter som hostes på plattformer som GitHub, GitLab, og Bitbucket.
+
+Hva betyr "Squash and Merge"?
+Når du bruker "Squash and Merge", gjøres følgende:
+Squash: Alle committer fra en gren komprimeres (eller "squashes") til en enkelt commit.
+Merge: Den singulære nye committen blir deretter slått sammen (merged) inn i målgrenen.
+
+Hvorfor bruke "Squash and Merge"?
+Ren historie: Ved å komprimere flere små og ofte urelaterte committer til en enkel commit, blir historikken til prosjektet renere og lettere å lese.
+Opprettholder sammenheng: Sikrer at all endring fra funksjonsgrenen opprettholder sammenheng som en helhet når de legges inn i hovedgrenen.
+Forhindrer rotete logg: Reduserer mengden unødvendige detaljer og bugfikser som gjør loggen rotete og vanskelig å følge.
 
 Donec nec quam sit amet quam elementum porta.
 _________________________________

@@ -2,6 +2,8 @@
 04 Log in to Educloud through SSH, in Bash or Terminal
 ====================================================
 
+.. index:: login, ssh
+
 Open the Command prompt (PC) or Terminal. Log in to Fox using ssh. You may find more information on the USIT page `Fox Account Creation and Login (SSH) <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/account-login.md>`_
 
 Terminal view 1::

@@ -1,6 +1,8 @@
 .. _00 Preparations: Before you come:
 00 Preparations: Before you come
 ===============
+.. index:: signup, educloud
+
 * `Sign up <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_ for the course.
 * When you get the confirmation e-mail from the instructors, you are ready for the next step.
 * Log in to Educloud with your two factor authenticator

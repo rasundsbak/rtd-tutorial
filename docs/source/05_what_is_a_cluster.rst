@@ -1,5 +1,0 @@
-.. _What is a Cluster and what about the rest?:
-
-05 What is a Cluster and what about the rest?
-=============================================
-In this course, we speak a strange language, where we mention words like Cluster, HPC, Transformers and .ggufs like they where regular items from the grocery store. Write a list over concepts that you do not understand. Go in pairs, and discuss the concepts you want to elaborate on. Use google og UiO GPT or an encyclopedia from the library. Do not worry. A few months ago, the teachers of this course did not know what a Nvivia A100 Tensor Core GPU was, and we did not care. Now, we are used to it and interact with the A100 almost every day. When you start working with the AI, you will soon learn the most important concepts.

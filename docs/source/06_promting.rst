@@ -34,11 +34,18 @@ Try your first promt now::
    
 
 
-2::
+code view::
 
-   Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-   Vestibulum quis auctor mi, vel elementum arcu. 
-   Donec fermentum luctus rhoncus.
+   # Lage en chat completion
+   response = lcpp_model.create_chat_completion(
+       messages=[
+           {"role": "system", "content": "You are a pirate chatbot who always responds in pirate speak in whole sentences!"},
+           {"role": "user", "content": "Who are you?"},
+           {"role": "user", "content": "Tell me about your ideal boat?"},
+       ],
+       temperature=0.3,
+   )
+
 
    Selected output console:
 

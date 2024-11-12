@@ -3,20 +3,26 @@
 =====================
 .. index:: Fox, server, cuda, A100, GPU, hardware
 
-The Foc is a `High performance computing cluster for Educloud research users <https://www.uio.no/english/services/it/research/hpc/fox/>`_. `Here <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/system-overview.md>`_, you may read more about the technical specifications on Fox. Most important from this page, is that Fox has a GPU accelerated part of the system, with four NVIDIA A100 cards each, as well as three nodes with four NVIDIA RTX 3090 cards from IFI. These systems of hardware are fit for running AI on.
+`Here <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/system-overview.md>`_, you may read more about the technical specifications on Fox. Most important from this page, is that Fox has a GPU accelerated part of the system, with four NVIDIA A100 cards each, as well as three nodes with four NVIDIA RTX 3090 cards from IFI. These systems of hardware are fit for running AI on.
+
+Log in to Fox and Educloud in the browser
+-----------------------------------------
+When you are logged on to the Fox, move like this: frol the left menu, go to Jupyter lab --> ec-[your group number] Choose one of the Nvidia GPUs from the drop down menu --> Rumtime. 1h --> Jupyter variant, Jupyter lab --> (You need not choose jupyter modile, as the last version is pre selected) -->  Launch. You are now in the line to get into the Jupyter lab on UiO Fox. You can get tea or coffee, and have a chat with your cilleague, while you wait.
 
 
 At the Fox server, you have your own storage space. There is also a common space for the group on the server. This is where the AIs are located, and where the AI will be temporarily cached when you download it from Huggingface. In order to get the AI to work in Jupyter lab, it is essential that you set up the paths in the right way. Take a look around, and see if you can think of a good way to organize your project. 
 
 .. note::
 
-   First task: Visit Huggingface and search for google/Pegasus. What do you see? Switch the search to meta-llama/Llama-3.1-8B-Instruct and read. Is this a model that you can find at Fox? What format is it in? Find the format of the Llama AI at Fox, and google it, in order to find out more about this dataformat. 
+   First task: Visit Huggingface and search for google/Pegasus. What do you see? Switch the search to meta-llama/Llama-3.1-8B-Instruct and read. Is this a model that you can find at Fox? What format is it in? Find the format of the Llama AI at Fox, and google it, in order to find out more about this dataformat.
 
 
-Log in to Educloud through SSH, in Bash or Terminal
+
+Log in to Fox and Educloud through SSH, in Bash or Terminal
 -------------------------------------------------
 
 .. index:: login, ssh, bash, terminal
+
 
 Open the Command prompt (PC) or Terminal. Log in to Fox using ssh. You may find more information on the USIT page `Fox Account Creation and Login (SSH) <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/account-login.md>`_
 

@@ -1,7 +1,7 @@
 .. _03 entering Fox:
 02 Entering the Fox server
 ==================
-.. index:: Fox, server, cuda, A100
+.. index:: Fox, server, cuda, A100, GPU, hardware
 
 The Foc is a `High performance computing cluster for Educloud research users <https://www.uio.no/english/services/it/research/hpc/fox/>`_. `Here <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/system-overview.md>`_, you may read more about the technical specifications on Fox. Most important from this page, is that Fox has a GPU accelerated part of the system, with four NVIDIA A100 cards each, as well as three nodes with four NVIDIA RTX 3090 cards from IFI. These systems of hardware are fit for running AI on.
 

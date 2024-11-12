@@ -22,8 +22,8 @@ Contents
    02_parameters
    03_login
    04_pasting code
-   05_noko
-   06_etwas
+   05_first step
+   06_promting
    07_jotain
    08_something
    21_elastic_search

@@ -18,6 +18,9 @@ https://hackmd.okfn.de/
 Current collaboration here:
 https://hackmd.okfn.de/g1yXOHdmRIuxnVydrq0vIA?both
 
+More on syntax:
+https://www.cometvisu.org/CometVisu/en/0.11/manual/colab/doc/rst.html
+
 Format
 =======
 RST, Restructured Text, is a file format created by the Python community to write documentation. It is part of Docutils. RST is a markup language like HTML but is much more lightweight and easier to read.

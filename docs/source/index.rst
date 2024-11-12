@@ -8,7 +8,7 @@ Run large language models through Educloud UiO
 
    This project is under active development.
 
-In this documentation, you will learn how to set up your an AI process at the UiO Nvidia Cluster. The documentation belongs to a course held as a part of Digital Scholarship Days 2025. The course is for employees at the University of Oslo. If you are in our interest group, you may `sign up here <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_. AIs from Huggingface run on a Transformer architecture. The method we are going to use, Jupyter Lab is an effective way of showing what goes on behind the interface of the AI. You will learn how the language model is built, how the parameters are set, and what the output is like. We hope this will give you insight into how the AI of our times work.
+In this documentation, you will learn how to set up an AI process at the UiO Nvidia Cluster. The documentation belongs to a course held as a part of Digital Scholarship Days 2025. The course is for employees at the University of Oslo. If you are in the interest group, you may `sign up here <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_. AIs from Huggingface run on a Transformer architecture. The interactive development environment we are going to use, Jupyter Lab is an effective way of showing what goes on behind the interface of the AI. You will learn how the functionality of the various language models are put together. You will learn to set parameters, and how it affcts the output. This will give some insight into how the AI of our times work.
 
 
 Contents

@@ -26,6 +26,8 @@ Contents
    06_promting
    07_jotain
    08_something
+   09_algo
+   10_alami
    21_elastic_search
    22_disk_quota
 

@@ -2,7 +2,7 @@
 
 06 Promting
 =======
-.. index:: etwas
+.. index:: promting, temperature, role
 
 Try your first promt now::
 

@@ -30,6 +30,19 @@ Wether you like it or not, AI may be your new colleague. When i talk about aspec
 
 **llama_cpp** is a C++ library that allows us to run quantized models. The cpp format also developed by developed by @ggerganov interprets the GGML and GGUF formats.
 
+Parameters
+----------
+In these lessons, i try to let the cell in Jupyter lab be tagges with #-signs so that the user after some time, will learn how to vary the parameters. Below, you may see an example og parameters set with Pegasus XSum
+
+Code view::
+
+
+
+
+
+
+
+
 
 
   ..note:

@@ -10,7 +10,6 @@ We are testing our code with Gnus. See how it jumps!
 
 .. image:: bausenhart.jpg
 
-   ..
 
 It is always start with the setwd. It is a good idea to combine it with opening the library(here). Many people prefer to use projects in RStudio. The reason why I no not, is that i feel the setwd command and "here" package gives me both better knowledge and control over my system.
 

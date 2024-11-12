@@ -1,5 +1,5 @@
-.. _07 Disk quota exceeded problem:
-07 Disk quota exceeded problem
+.. _08 Disk quota exceeded problem:
+08 Disk quota exceeded problem
 ===================
 
 This guide helps you address the "disk quota exceeded" problem by detailing steps to clean up your home directory, delete cache files, and check available disk space. 

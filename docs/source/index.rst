@@ -20,13 +20,14 @@ Contents
 
    00_preparations
    01_ai_board
-   02_hugging_face
-   03_get_overview
-   04_log_in_to
-   05_what_is_a_cluster
-   06_log_on_to
-   07_disk_quota
-   08_images
+   02_login
+   03_pasting code
+   04_something
+   05_noko
+   06_etwas
+   07_jotain
+   08_disk_quota
+   09_elastic_search
 
 Indices and tables
 ==================

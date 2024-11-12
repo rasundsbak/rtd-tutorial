@@ -48,3 +48,30 @@ code view::
   clean_requirements_file(input_file, output_file)
   print(f"Cleaned requirements written to {output_file}")
 
+
+code view::
+
+  import sys
+  import os
+  
+  # Sti til ditt virtuelle miljøs site-packages
+  #venv_path = '/fp/projects01/ec367/palml1/venv_transformers/lib/python3.9/site-packages'
+  venv_path = '/fp/projects01/ec367/palml1/myenv'
+  
+  # Legg til stien til sys.path
+  if venv_path not in sys.path:
+      sys.path.append(venv_path)
+  
+  # Prøv å importere llama_cpp etter å ha lagt til stien
+  try:
+      import llama_cpp
+      print('llama_cpp import successful')
+  except ModuleNotFoundError as e:
+      print(f"Failed to import llama_cpp: {e}")
+  
+  # Importere andre nødvendige pakker som transformers
+  try:
+      from transformers import AutoTokenizer, AutoModelForCausalLM, GenerationConfig
+      print('transformers import successful')
+  except ModuleNotFoundError as e:
+      print(f"Failed to import transformers modules: {e}")

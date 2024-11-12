@@ -2,7 +2,7 @@
 01 Getting overview with AI on the blackboard
 =================
 
-.. index:: artificial, intelligence, blackboard
+.. index:: artificial, intelligence, cluster, HPC, Transformers, CUDA, .gguf, llama_cpp
 
 .. image:: AI_board.JPG
 
@@ -13,13 +13,28 @@ ___________________________
 `Hugging face <https://huggingface.co/>`_ is a good place to start, when you want to familiarize yourself with the LLMs. However, in this course you do not need to download them, because we, the instructors have already done some of the work for you. If you want to learn, keep reading!
 
 
-Fox, Cuda and cluster
+Fox, Cuda and Cluster
 ---------------------
-When you know someone, other than is normal to have many names on it. Wether you like it or not, AI may be your new colleague. When i talk about aspects om the setup on Fox, i say Cuda, Fox or Cluster.
+Wether you like it or not, AI may be your new colleague. When i talk about aspects of the setup on Fox, i say Cuda, Fox or Cluster.
 
 **CUDA** means Compute Unified Device Architecture. According to Wikipedia is a proprietary parallel computing platform and interface, that allows software to use certain types of graphics processing units (GPUs) (Wikipedia Nov. 12th 2024). 
 
-**Cluster**, HPC, Transformers and .ggufs like they where regular items from the grocery store. Write a list over concepts that you do not understand. Go in pairs, and discuss the concepts you want to elaborate on. Use google og UiO GPT or an encyclopedia from the library. Do not worry. A few months ago, the teachers of this course did not know what a Nvivia A100 Tensor Core GPU was, and we did not care. Now, we are used to it and interact with the A100 almost every day. When you start working with the AI, you will soon learn the most important concepts.
+**Cluster**, The Fox is a `High performance computing cluster for Educloud research users <https://www.uio.no/english/services/it/research/hpc/fox/>`_. A Computing Cluster is a set of connected computers that work together so closely that in many respects they function as a single computer.
+
+**HPC**, A High Performance Computing cluster
+
+**Transformers** A transformer is a learning architecture developed by researchers at Google and based on the multi-head attention mechanism, proposed in the 2017 paper "Attention Is All You Need".
+
+
+**The .gguf format** developed by @ggerganov is a quantified AI file format that that stores both tensors and metadata in a single file.
+
+**llama_cpp** is a C++ library that allows us to run quantized models. The cpp format also developed by developed by @ggerganov interprets the GGML and GGUF formats.
+
+
+
+.. note::
+
+Task: Write a list over concepts that you do not understand. Go in pairs, and discuss the concepts you want to elaborate on. Use google, UiO GPT or an encyclopedia from the library.
 
 
 

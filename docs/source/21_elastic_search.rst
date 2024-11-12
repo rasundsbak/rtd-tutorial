@@ -1,5 +1,5 @@
-.. _09 elastic search
-09 Install and unpack elasticsearch
+.. _21 elastic search
+21 Install and unpack elasticsearch
 =================================
 
 .. index:: terminal, elasticsearch

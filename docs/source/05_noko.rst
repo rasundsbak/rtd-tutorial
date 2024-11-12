@@ -2,4 +2,4 @@
 
 05 Noko
 =======
-index:: noko
+..index:: noko

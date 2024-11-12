@@ -8,7 +8,7 @@ In these lessons, i try to let the cell in Jupyter lab be tagges with #-signs so
 
 **Max_length** the total number of tokens the AI is allowed to generate in that output.
 
-**Num_beams** This is related to `beam search <https://en.wikipedia.org/wiki/Beam_search>`_, and has to do with how many alternatives the model has, when choosing the best alternative for an output. More beams will require more machine power and time.
+**Num_beams** This is related to `beam search <https://en.wikipedia.org/wiki/Beam_search>`_, and has to do with how many alternatives the model has, when choosing the best alternative for an output. More beams requires more machine power and time.
 
 Code view::
 

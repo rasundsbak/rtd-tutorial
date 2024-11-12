@@ -4,7 +4,11 @@ Parameters
 
 .. index:: parameters, num_beams, max_length, tokens, n_grams, early_stoppings, length_penalty
 
-In these lessons, i try to let the cell in Jupyter lab be tagges with #-signs so that the user after some time, will learn how to vary the parameters. Below, you may see an example og parameters set with Pegasus XSum
+In these lessons, i try to let the cell in Jupyter lab be tagges with #-signs so that the user after some time, will learn how to vary the parameters. Below, you may see an example og parameters set with Pegasus XSum. Instead of ecplaining the parameters, we are going to experiment with them. Different AI models may use slightly differend parameters. The documentation for every AI model, is where you find how to use parameters. If you find definitions of parameters on this page, that is not set in the code below, it is because it is not relevant for the example, Pegasus XSum.
+
+**Max_length** the total number of tokens the AI is allowed to generate in that output.
+
+**Num_beams** This is related to `beam search <https://en.wikipedia.org/wiki/Beam_search>`_, and has to do with how many alternatives the model has, when choosing the best alternative for an output. More beams will require more machine power and time.
 
 Code view::
 

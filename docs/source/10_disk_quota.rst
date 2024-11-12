@@ -1,4 +1,4 @@
-.. _08 Disk quota exceeded problem:
+.. _10 Disk quota exceeded problem:
 08 Disk quota exceeded problem
 ===================
 

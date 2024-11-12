@@ -1,15 +1,12 @@
-.. _06 etwas:
+.. _06 promting:
 
-06 Etwas
+06 Promting
 =======
 .. index:: etwas
 
-1 Installation example::
+Try your first promt now::
    
 
-   Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-   Vestibulum quis auctor mi, vel elementum arcu. 
-   Donec fermentum luctus rhoncus.
 
 2::
 

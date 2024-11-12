@@ -1,5 +1,5 @@
-.. _03 starting kernel:
+.. _04 something:
 Starting the kernel with Jupyter lab
 ===================================
 
-.. index:: ipynb, Jupyter lab, scripting
+.. index:: something

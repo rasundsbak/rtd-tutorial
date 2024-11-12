@@ -3,7 +3,7 @@ Copying and pasting your code into Jupyter lab
 =============================================
 
 
-In this vourse, we have tried to make it easy for you, through making the code available. However, it may be useful for you to be told something about copying, pasting anv running the code in the cells of Jupyter lab. 
+In this course, we have tried to make it easy for you, through making the code available. We still have to spend some time familiarizing outselves with copying, pasting and running the code in the cells of Jupyter lab. 
 
 
   ..note:

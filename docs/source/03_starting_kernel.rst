@@ -2,4 +2,4 @@
 Starting the kernel with Jupyter lab
 ===================================
 
-terms/ index
+.. index:: ipynb, Jupyter lab, scripting

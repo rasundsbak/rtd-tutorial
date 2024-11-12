@@ -1,7 +1,7 @@
 .. _02 login:
 02 Login to browser and Terminal
 =====================
-.. index:: Fox, server, cuda, A100, GPU, hardware
+.. index:: Fox, server, CUDA, A100, GPU, hardware
 
 `Here <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/system-overview.md>`_, you may read more about the technical specifications on Fox. Most important from this page, is that Fox has a GPU accelerated part of the system, with four NVIDIA A100 cards each, as well as three nodes with four NVIDIA RTX 3090 cards from IFI. These systems of hardware are fit for running AI on.
 

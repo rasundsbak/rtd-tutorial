@@ -2,11 +2,9 @@
 05 Pirate example with .gguf format
 ==============
 
-###### kopierer fra Pirate #####
-
 Code view::
 
-  #1
+  # 1
   !export HF_HOME=/fp/projects01/ec367/huggingface/cache
 
 Code view::

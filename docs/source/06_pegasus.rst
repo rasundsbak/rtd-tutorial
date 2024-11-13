@@ -1,7 +1,6 @@
 .. _06 pegasus:
-
-05 First step
-=======
+06 Pegasus XSum with simple summarization and setup for multiple summarizations
+=================================
 .. index:: noko
 
 code view::

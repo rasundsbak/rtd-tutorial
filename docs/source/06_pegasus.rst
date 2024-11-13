@@ -1,4 +1,4 @@
-.. _06 pegasus:
+.. _06_pegasus:
 06 Pegasus XSum simple and more advanced summarization
 =================================
 .. index:: noko

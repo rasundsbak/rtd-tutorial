@@ -1,7 +1,7 @@
 .. _06 pegasus:
 
-05 First step
-=======
+05 Pegasus example with summarization function on pipeline
+=============================
 .. index:: noko
 
 code view::

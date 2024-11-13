@@ -1,4 +1,6 @@
 .. _05 pirat:
+Pirate example
+==============
 
 ###### kopierer fra Pirate #####
 

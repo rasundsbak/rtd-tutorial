@@ -1,5 +1,5 @@
 .. _05 pirat:
-Pirate example with .gguf format
+05 Pirate example with .gguf format
 ==============
 
 ###### kopierer fra Pirate #####

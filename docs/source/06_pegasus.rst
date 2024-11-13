@@ -1,7 +1,7 @@
 .. _06 pegasus:
 
-05 Pegasus example with summarization function on pipeline
-=============================
+05 First step
+=======
 .. index:: noko
 
 code view::
@@ -222,3 +222,4 @@ Code view::
   # summary_pipeline = summarizer(input_text)
   # print("Generated Summary with Pipeline:\n", summary_pipeline[0]['summary_text'])
   
+

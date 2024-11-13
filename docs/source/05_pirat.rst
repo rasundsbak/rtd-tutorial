@@ -146,5 +146,3 @@ Code view::
   
   # Installer pakkene fra requirements.txt med --user flagget
   !pip install --user -r /fp/homes01/u01/ec-ragnhsu/requirements.txt
-
-###### slutt av kopiering fra Naomi_Pirate  #########

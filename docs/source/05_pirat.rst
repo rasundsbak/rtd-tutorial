@@ -1,4 +1,4 @@
-.. _05 pirat:
+.. _05_pirat:
 05 Pirate example with .gguf format
 ==============
 

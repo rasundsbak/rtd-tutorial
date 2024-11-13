@@ -1,5 +1,5 @@
 .. _06 pegasus:
-06 Pegasus XSum with simple summarization and setup for multiple summarizations
+06 Pegasus XSum simple and more advanced summarization
 =================================
 .. index:: noko
 

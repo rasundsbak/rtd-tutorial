@@ -1,6 +1,7 @@
-.. _06_pegasus:
+.. _06 pegasus:
+
 06 Pegasus XSum simple and more advanced summarization
-=================================
+=============================================
 .. index:: noko
 
 code view::
@@ -220,5 +221,15 @@ Code view::
   # Alternativt, generer sammendrag ved hjelp av pipelinen
   # summary_pipeline = summarizer(input_text)
   # print("Generated Summary with Pipeline:\n", summary_pipeline[0]['summary_text'])
+
+
+
+
+
+
+
+
+
+
   
 

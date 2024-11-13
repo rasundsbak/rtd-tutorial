@@ -1,4 +1,4 @@
-.. _06 promting:
+.. _05 pirat:
 
 ###### kopierer fra Pirate #####
 

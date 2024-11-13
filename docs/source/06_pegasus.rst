@@ -1,4 +1,4 @@
-.. _05 first_step:
+.. _06 pegasus:
 
 05 First step
 =======

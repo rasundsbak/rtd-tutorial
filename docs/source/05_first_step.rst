@@ -6,11 +6,14 @@
 
 code view::
 
+  #1
+  # Endre arbeidskatalogen til prosjektmappen
+  
   !export HF_HOME=/fp/projects01/ec367/huggingface/cache
-
-code view::
-
-  ! ls -lh /fp/projects01/ec367/huggingface/cache/Llama/Meta-Llama-3-8B-Instruct.Q5_K_M.gguf
+  
+  code view::
+  
+    ! ls -lh /fp/projects01/ec367/huggingface/cache/Llama/Meta-Llama-3-8B-Instruct.Q5_K_M.gguf
 
 
 code view::

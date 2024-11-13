@@ -49,4 +49,36 @@ code view::
    os.chdir("/fp/projects01/ec367/ragnhsu")
    print(f"Nåværende arbeidskatalog: {os.getcwd()}")
 
-#5
+   #5
+   # Celle 1: Import necessary packages and set up the environment
+   import sys
+   import os
+   
+   # Sti til ditt virtuelle miljøs site-packages
+   venv_path = '/fp/projects01/ec367/ragnhsu/venv_transformers/lib/python3.9/site-packages'
+   
+   # Legg til stien til sys.path hvis den ikke allerede er der
+   if venv_path not in sys.path:
+       sys.path.append(venv_path)
+   
+   # Prøv å importere nødvendige pakker
+   try:
+       import llama_cpp
+       print('llama_cpp import successful')
+   except ModuleNotFoundError as e:
+       print(f"Failed to import llama_cpp: {e}")
+   
+   try:
+       import transformers
+       from transformers import AutoTokenizer, AutoModelForCausalLM, GenerationConfig
+       print('transformers import successful')
+   except ModuleNotFoundError as e:
+       print(f"Failed to import transformers: {e}")
+   
+   try:
+       import torch
+       print('torch import successful')
+   except ModuleNotFoundError as e:
+       print(f"Failed to import torch: {e}")
+       
+       

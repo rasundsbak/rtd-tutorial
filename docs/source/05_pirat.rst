@@ -10,7 +10,7 @@ Code view::
 Code view::
 
   #2
-  ! ls -lh /fp/projects01/ec367/huggingface/cache/Llama/Meta-Llama-3-8B-Instruct.Q5_K_M.ggufa
+  ! ls -lh /fp/projects01/ec367/huggingface/cache/Llama/Meta-Llama-3-8B-Instruct.Q5_K_M.gguf
 
 Code view::
 

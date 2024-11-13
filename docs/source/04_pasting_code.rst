@@ -1,4 +1,4 @@
-.. _04 pasting code:
+.. _04_pasting_code:
 Copying and pasting your code into Jupyter lab
 =============================================
 

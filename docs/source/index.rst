@@ -22,8 +22,8 @@ Contents
    02_parameters
    03_login
    04_pasting code
-   05_first step
-   06_promting
+   05_pirat
+   06_pegasus
    07_jotain
    08_something
    09_algo

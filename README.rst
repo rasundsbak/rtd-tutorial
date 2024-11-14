@@ -28,3 +28,8 @@ RST, Restructured Text, is a file format created by the Python community to writ
 The Toctree
 ===========
 Read more here: https://sphinx-doc-zh.readthedocs.io/en/latest/markup/toctree.html
+
+Recommended courses
+==================
+https://www.sigma2.no/training-and-events
+https://www.sigma2.no/nb/node/193

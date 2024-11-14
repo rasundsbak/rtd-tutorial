@@ -4,7 +4,7 @@
 
 .. index:: parameters, num_beams, max_length, tokens, n_grams, early_stoppings, length_penalty
 
-We will see how to control the creativity of the model. If it is creative to the extent that it shows a pattern nobody have thought about before, it can be useful. However, too much creativity may lead to hallucinations.
+We will see how to control the creativity of the model. If it is creative to the extent that it shows a pattern nobody have thought of, the creativity may be beneficial for your project. However, too much creativity may lead to hallucinations.
 
 In these lessons, the cell in Jupyter lab will be marked with comments, so that the user after some time, will learn how to vary the parameters. Below, you may see an example of parameters set with Pegasus XSum. Instead of explaining the parameters, we are going to experiment with them. Different AI models may use slightly differend parameters. The documentation for every AI model, is where you find how to use parameters. If you find definitions of parameters on this page, that is not set in the code below, it is because it is not relevant for the example, Pegasus XSum.
 

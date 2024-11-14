@@ -1,6 +1,6 @@
-.. _07 jotain:
+.. _06 jotain:
 
-07 Jotain
+06 Jotain
 =======
 .. index:: jotain
 

@@ -3,7 +3,7 @@
 =====================
 .. index:: Fox, server, CUDA, A100, GPU, hardware
 
-`Here <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/system-overview.md>`_, you may read more about the technical specifications on Fox. Most important from this page, is that Fox has a GPU accelerated part of the system, with four NVIDIA A100 cards each, as well as three nodes with four NVIDIA RTX 3090 cards from IFI. These systems of hardware are fit for running AI on.
+Fox has a GPU accelerated part of the system, with four NVIDIA A100 cards each, as well as three nodes with four NVIDIA RTX 3090 cards from IFI. These systems of hardware are fit for running AI on.
 
 Log in to Fox and Educloud in the browser
 -----------------------------------------
@@ -76,6 +76,8 @@ source /fp/projects01/ec367/ragnhsu/venv_transformers/bin/activate
 pip install transformers
 pip install torch
 
-
+Further reading
+--------------
+If you wish, you may read more about the `technical specifications <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/system-overview.md>`_ on Fox.
 
 

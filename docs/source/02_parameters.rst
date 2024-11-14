@@ -4,11 +4,31 @@
 
 .. index:: parameters, num_beams, max_length, tokens, n_grams, early_stoppings, length_penalty
 
+Here we will show you how you can try to control how creative you want the model to be. If it is so creative that it show a pattern that nobody have thought about before, then it can be very useful, if it is true. Maybe it can help to take a look at this three dimensional presentation of a model `Project Tensorflow <https://projector.tensorflow.org/>`_  
+
 In these lessons, i try to let the cell in Jupyter lab be tagges with #-signs so that the user after some time, will learn how to vary the parameters. Below, you may see an example og parameters set with Pegasus XSum. Instead of ecplaining the parameters, we are going to experiment with them. Different AI models may use slightly differend parameters. The documentation for every AI model, is where you find how to use parameters. If you find definitions of parameters on this page, that is not set in the code below, it is because it is not relevant for the example, Pegasus XSum.
 
-**Max_length** the total number of tokens the AI is allowed to generate in that output.
+**Max_length** the total number of tokens the AI is allowed to generate in that output. For example if it is set to 10 tokens, it can produce: "The weather today is nice and sunny." But with no constraints it might be long like this: "The weather today is quite pleasant with clear skies and warm temperatures. It is a perfect day for outdoor activities such as hiking, biking, or simply taking a walk in the park. The forecast predicts that the good weather will continue throughout the day, making it an excellent opportunity to enjoy the great outdoors with family and friends."
 
-**Num_beams** This is related to `beam search <https://en.wikipedia.org/wiki/Beam_search>`_, and has to do with how many alternatives the model has, when choosing the best alternative for an output. More beams requires more machine power and time.
+**Num_beams** This is related to `beam search <https://en.wikipedia.org/wiki/Beam_search>`_, num_beams: Exploring Paths with Beam Search. Increasing num_beams lets the model explore multiple potential paths or 'beams' for the next word. Consequences: More beams mean the model can generate higher quality and varied text, but at the cost of computational resources and time. For example with low tokens you just get: "The weather today is sunny and warm." because that is the most probable "next" words. But with hight beam, it can result in: "The weather today is sunny and warm, making it a perfect day for a picnic. However, there is a slight chance of light rain in the evening."
+
+
+**length_penalty** With hight penalty you get "The weather today is sunny and warm." while with low penalty you can get something like: "The weather today is quite pleasant with clear skies and a gentle breeze."
+
+**min_length** Without min_length you can get an output like: "The weather today is nice." and with min_length on 10 tokens, you can get "The weather today is expected to be sunny with a high of 75 degrees Fahrenheit and a light breeze in the afternoon."
+
+**no_repeat_ngram_size** Without it you can get: "The weather today is nice and sunny. The weather today is warm and pleasant. The weather today is perfect for a picnic." but with the size to 3 you can get: "The weather today is nice and sunny with a gentle breeze. It's a perfect day for a picnic or a walk in the park." 
+
+**top_k** means that you limit what the model should consider as the next word. top_k=3 would only consider the three most probable words for the next step, so it can result in " The weather today is sunny and warm.", but with top_k=50, it consider so much other probable words, like: "The weather today is pleasantly warm with a chance of mild breezes and partly cloudy skies, making it an ideal day for outdoor activities."
+
+**top_p** means top_p=0.9 can give: "The weather today is sunny and warm, perfect for a day at the beach." while top_p=0.5 can give "The weather today is sunny and warm." If top_p is set to 0.5, the model will be even more selective, considering only the few tokens with the highest probabilities that together cover 50% of the cumulative distribution.
+
+
+
+
+
+
+
 
 Code view::
 

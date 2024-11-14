@@ -22,10 +22,10 @@ Contents
    02_parameters
    03_login
    04_pasting code
-   05_pirat
-   06_pegasus
-   07_jotain
-   08_something
+   05_something
+   06_jotain
+   07_pirat
+   08_pegasus
    09_algo
    10_alami
    21_elastic_search

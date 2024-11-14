@@ -1,5 +1,5 @@
 .. _05 something:
-Starting the kernel with Jupyter lab
+05 Something
 ===================================
 
 .. index:: something

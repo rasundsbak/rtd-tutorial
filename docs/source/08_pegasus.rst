@@ -1,4 +1,4 @@
-.. _06 pegasus:
+.. _08 pegasus:
 
 06 Pegasus XSum simple and more advanced summarization
 =============================================

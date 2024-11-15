@@ -24,13 +24,7 @@ extensions = [
     'sphinx.ext.todo',
 ]
 
-# Innstillingene for copybutton
-# Fra UiO GPT
-
-copybutton_prompt_text = ">>> "
-copybutton_prompt_is_regexp = True
-copybutton_selector = "div:not(.no-copy)>div.highlight pre"
-
+# Innstillinger for Intersphinx
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),

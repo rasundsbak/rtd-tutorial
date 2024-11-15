@@ -39,15 +39,21 @@ html_static_path = ['_static']
 # Bruk pyramid-tema
 html_theme = "pyramid"
 
-# -- Options for TODO extension --
-# Bruk denne linjen for å INKLUDERE todo-innhold
-todo_include_todos = True
-
-# Bruk denne linjen for å EKSKLUDERE todo-innhold
-#todo_include_todos = False
-
 # -- Options for EPUB output --
 epub_show_urls = 'footnote'
+
+# -- Options for TODO extension --
+todo_include_todos = True
+# todo_include_todos = False
+
+# Tilpasse sidebar innhold for alle sider
+html_sidebars = {
+    '**': [
+        'globaltoc.html',  # Global table of contents
+        'relations.html',  # Previous/next navigation
+        'searchbox.html',  # Search box
+    ]
+}
 
 # Ekstra oppsett for tilpasninger
 def setup(app):

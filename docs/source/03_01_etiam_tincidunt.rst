@@ -14,3 +14,5 @@ Use Link text: <https://domain.invalid/>
 
 Test 24. juli 2023: `Les nyheter her <https://www.nrk.no/>`_
 
+.. toctree::
+   :maxdepth: 1

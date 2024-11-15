@@ -25,7 +25,7 @@ Log in to Fox and Educloud through SSH, in Bash or Terminal
 .. index:: login, ssh, bash, terminal
 
 
-Open the Command prompt (PC) or Terminal. Log in to Fox using ssh. You may find more information on the USIT page `Fox Account Creation and Login (SSH) <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/account-login.md>`_
+Open the Command prompt (PC) or Terminal. Log in to Fox using ssh. You will need to read the information on the USIT page `Fox Account Creation and Login (SSH) <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/account-login.md>`_
 
 Terminal view 1::
    
@@ -57,18 +57,20 @@ Terminal view 3::
            `-:_:-'
    The HPC Cluster in Educloud
 
+Remember to fill in the right details where it says [your username at uio]
 
-# Lag en mappe for pip-arbeidsfiler, for eksempel pip_cache
-mkdir -p /fp/projects01/ec367/ragnhsu/pip_cache
+Terminal view 4::
+   # change into the right subdirectory
+   cd /fp/projects01/ec443
 
+   # make a directory at ec443, where you plan to have your working files
+   mkdir [your username at uio]
 
-# Sett opp miljøvariabler i din shell init fil (f.eks. .bashrc eller .bash_profile)
-echo 'export PATH=/fp/projects01/ec367/ragnhsu/pip_cache/bin:$PATH' >> ~/.bashrc
-echo 'export PIP_CACHE_DIR=/fp/projects01/ec367/ragnhsu/pip_cache' >> ~/.bashrc
-echo 'export PIP_TARGET=/fp/projects01/ec367/ragnhsu/pip_cache' >> ~/.bashrc
-
-# Bruk de nåværende variablene i sesjonen din
-source ~/.bashrc
+Terminal view 5::
+   # making a virtual env for python packages
+   python -m venv /fp/projects01/ec443/my_venv/[your username at uio]
+   
+Terminal view 6::
 
 # Aktivér ditt venv
 source /fp/projects01/ec367/ragnhsu/venv_transformers/bin/activate

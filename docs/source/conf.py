@@ -18,6 +18,8 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'sphinx_copybutton',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.todo',
 ]
 
 intersphinx_mapping = {

@@ -1,0 +1,12 @@
+/* Eksempel: Tilpasset CSS */
+.wy-nav-content {
+    background-color: #f4f4f4;
+}
+
+.wy-menu-vertical .current ul {
+    display: block !important;  /* Sørg for at innholdet vises */
+}
+
+.wy-menu-vertical ul {
+    list-style-type: none;
+}

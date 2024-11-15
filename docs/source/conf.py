@@ -1,6 +1,6 @@
 # Configuration file for the Sphinx documentation builder.
 
-import os  # For using environment variables (optional)
+import os  # Importer os for å kunne bruke miljøvariabler (valgfritt)
 
 # -- Project information --
 
@@ -38,7 +38,11 @@ exclude_patterns = []
 html_theme = "pyramid"
 
 # -- Options for TODO extension --
-todo_include_todos = os.getenv('SPHINX_TODO_INCLUDE_TODOS', 'False') == 'True'
+# Bruke denne linjen for å INKLUDERE todo-innhold
+todo_include_todos = True
+
+# Bruke denne linjen for å EKSKLUDERE todo-innhold
+#todo_include_todos = False
 
 # -- Options for EPUB output --
 epub_show_urls = 'footnote'

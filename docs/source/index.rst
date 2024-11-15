@@ -18,11 +18,10 @@ In this project, we aim to provide thorough and detailed documentation on variou
 
    01_welcome
    02_project
-   03_lorem_ipsum
    03_01_etiam_tincidunt
    04_dolor_sit
-   05_quisque
-   06_suspendisse_consequat
+   05_lorem_ipsum
+   06_quisque
    usage
    api
    younggnu

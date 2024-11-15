@@ -15,4 +15,4 @@ Code cell 1::
 
   print('Hello, world.')
 
-You may look `into this tutorial <http://justinbois.github.io/bootcamp/2020_fsri/lessons/l01_welcome.html>`_, in order to become more confident in Jupyter lab.
+You may look `into this tutorial <http://justinbois.github.io/bootcamp/2020_fsri/lessons/l01_welcome.html>`_, in order to become more confident in Jupyter lab. It is advisable that everybody do lesson number 2 "Hello world".

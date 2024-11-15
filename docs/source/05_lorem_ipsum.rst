@@ -1,5 +1,5 @@
-.. _04 lorem ipsum:
-04 Lorem Ipsum
+.. _05 lorem ipsum:
+05 Lorem Ipsum
 ==============
 
 .. index:: lorem, ipsum

@@ -1,17 +1,17 @@
 # Configuration file for the Sphinx documentation builder.
 
-import os  # Importer os for å kunne bruke miljøvariabler
+import os  # For using environment variables (optional)
 
-# -- Project information
+# -- Project information --
 
 project = 'AI on Cluster'
-copyright = '2024, Pål and Ragnhild'
-author = 'Pål Lykkja, Ragnhild Sundsbak'
+copyright = '2024'
+author = 'Documentation Team'
 
 release = '4.2'
 version = '4.2.AI'
 
-# -- General configuration
+# -- General configuration --
 
 extensions = [
     'sphinx.ext.duration',
@@ -33,23 +33,14 @@ intersphinx_disabled_domains = ['std']
 templates_path = ['_templates']
 exclude_patterns = []
 
-# -- Options for HTML output
-
-# this is for making the content of the "static" folder work
-# from: https://stackoverflow.com/questions/44793811/change-the-colors-of-the-sphinx-read-the-docs-theme 
-html_static_path = ['_static']
-
-# from: https://stackoverflow.com/questions/44793811/change-the-colors-of-the-sphinx-read-the-docs-theme 
-def setup(app):
-    app.add_css_file('custom.css')
+# -- Options for HTML output --
 
 html_theme = "pyramid"
 
-# -- Options for TODO extension
-# Bruke miljøvariabler for å inkludere/exkludere todo-innhold (default False)
+# -- Options for TODO extension --
 todo_include_todos = os.getenv('SPHINX_TODO_INCLUDE_TODOS', 'False') == 'True'
 
-# -- Options for EPUB output
+# -- Options for EPUB output --
 epub_show_urls = 'footnote'
 
 # changing layout: https://sphinx-rtd-trial.readthedocs.io/en/1.1.3/theming.html

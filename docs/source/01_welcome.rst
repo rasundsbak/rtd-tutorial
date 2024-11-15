@@ -1,13 +1,14 @@
+.. _01_welcome:
 
-.. _01 Welcome to the test suite of thid documentation:
 01 Welcome to the test suite
 ============================
-You can play with your code here, and test it. When ypu get the code to work, put the functionality into 4.2.AI.
+
+You can play with your code here, and test it. When you get the code to work, put the functionality into 4.2.AI.
 
 .. index:: welcome, introduction
 
 Squash and merge - Hva betyr det?
-=========================
+=================================
 
 "Squash and merge" er en metode som brukes i versjonskontrollsystemer, som for eksempel Git, når man slår sammen ("merger") en gren inn i hovedgrenen (eller en annen gren). Den er spesielt populær i samarbeidende utviklingsprosjekter som hostes på plattformer som GitHub, GitLab, og Bitbucket.
 
@@ -22,12 +23,15 @@ Opprettholder sammenheng: Sikrer at all endring fra funksjonsgrenen opprettholde
 Forhindrer rotete logg: Reduserer mengden unødvendige detaljer og bugfikser som gjør loggen rotete og vanskelig å følge.
 
 Donec nec quam sit amet quam elementum porta.
-_________________________________
+--------------------------------------------
+
 In in ligula pharetra, posuere massa vitae, dignissim dui. Morbi ultrices ipsum nec velit lacinia lacinia. Pellentesque pharetra leo et nisl efficitur ornare. Proin hendrerit maximus sem et facilisis. Pellentesque faucibus volutpat mauris, sit amet fermentum leo ullamcorper et. Donec ac velit vehicula, facilisis velit non, pellentesque diam. Quisque in consequat libero. Integer sagittis lacinia mollis. Praesent varius ex rutrum turpis laoreet, vitae vulputate justo euismod. Donec congue aliquam erat, at sollicitudin erat finibus a. Sed arcu metus, semper in tempor rhoncus, posuere vitae augue. Quisque dapibus turpis placerat arcu ullamcorper, id faucibus nisi iaculis.
 
 In hac habitasse platea dictumst
-______________________________
+------------------------------
+
 Example clean Requirements
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 This code fetch information from the file requirement and clean up the old file paths
 Jupyter lab 3::
 
@@ -61,3 +65,9 @@ This project has a GitHub repository: https://github.com/rasundsbak/rtd-tutorial
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
+
+.. toctree::
+   :maxdepth: 1
+
+   02_project
+   03_lorem_ipsum

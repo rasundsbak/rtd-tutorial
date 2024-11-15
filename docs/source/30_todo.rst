@@ -1,4 +1,4 @@
-.. _todo:
+.. _30_todo:
 
 Todo List
 =========

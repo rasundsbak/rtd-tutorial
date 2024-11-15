@@ -14,6 +14,7 @@ In this project, we aim to provide thorough and detailed documentation on variou
 
 .. toctree::
    :maxdepth: 2
+   :caption: Table of Contents
 
    01_welcome
    02_project
@@ -26,7 +27,6 @@ In this project, we aim to provide thorough and detailed documentation on variou
    api
    younggnu
 
-
 Indices and tables
 ==================
 
@@ -36,7 +36,7 @@ Indices and tables
 
 Module Index
 ============
-The following is a list of all modules, classes, functions, and other components included in this package. You can use this index to quickly navigate to the documentation for each component.
+The following is a list of all modules, classes functions, and other components included in this package. You can use this index to quickly navigate to the documentation for each component.
 
 .. toctree::
    :maxdepth: 2

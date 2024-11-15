@@ -1,7 +1,7 @@
 .. _00 Preparations: Before you come:
 00 Preparations: Before you come
 ===============
-* Only for those who want to come in January 2025: `Sign up <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_ for the course.
+* Only for those who plan to attend Digital Scholarship Days in January 2025: `Sign up <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_ for the course.
 * When you get the confirmation e-mail from the instructors, you are ready for the next step.
 * Log in to Educloud with your two factor authenticator
 * Download Microsoft Authenticator on your phone. It may be downloaded from App Store (iPhone) or Google Play (Android)

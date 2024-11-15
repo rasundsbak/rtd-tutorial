@@ -16,6 +16,7 @@ Contents
 
 .. toctree::
    :maxdepth: 2
+   :caption: Table of Contents
 
    00_preparations
    01_ai_board

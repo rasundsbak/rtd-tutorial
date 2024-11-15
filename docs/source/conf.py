@@ -1,16 +1,17 @@
 # Configuration file for the Sphinx documentation builder.
 
+import os
 
-# -- Project information
+# -- Project information --
 
 project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+copyright = '2021'
+author = 'Ragnhild'
 
 release = '0.1'
 version = '0.1.0'
 
-# -- General configuration
+# -- General configuration --
 
 extensions = [
     'sphinx.ext.duration',
@@ -20,17 +21,15 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx_copybutton',
     'sphinx.ext.viewcode',
-    'sphinx.ext.todo'
-
+    'sphinx.ext.todo',
 ]
 
 # Innstillingene for copybutton
 # Fra UiO GPT
 
-copybutton_prompt_text = ">>> " 
-copybutton_prompt_is_regexp = True 
+copybutton_prompt_text = ">>> "
+copybutton_prompt_is_regexp = True
 copybutton_selector = "div:not(.no-copy)>div.highlight pre"
-
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
@@ -40,31 +39,23 @@ intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
 
-# -- Options for HTML output
-
-# this is for making the content of the "static" folder work
-# from: https://stackoverflow.com/questions/44793811/change-the-colors-of-the-sphinx-read-the-docs-theme 
+# -- Options for HTML output --
 html_static_path = ['_static']
 
-# from: https://stackoverflow.com/questions/44793811/change-the-colors-of-the-sphinx-read-the-docs-theme 
-def setup(app):
-    app.add_css_file('custom.css')
-
-# html_theme = 'default'
-# this not working
-# sidebarbgcolor = 'DarkOrange'
-
-# html_theme = 'sphinx_rtd_theme'
-
-# default works, but not to change colour
-# html_theme = 'default'
-# sidebarbgcolor = '#FF8C00'
-# sidebarbgcolor = 'DarkOrange'
-
+# Bruk pyramid-tema
 html_theme = "pyramid"
 
-# -- Options for EPUB output
+# -- Options for TODO extension --
+# Bruk denne linjen for å INKLUDERE todo-innhold
+todo_include_todos = True
+
+# Bruk denne linjen for å EKSKLUDERE todo-innhold
+#todo_include_todos = False
+
+# -- Options for EPUB output --
 epub_show_urls = 'footnote'
 
-# changing layout: https://sphinx-rtd-trial.readthedocs.io/en/1.1.3/theming.html
-# css colours: https://www.w3schools.com/cssref/css_colors.php
+# Ekstra oppsett for tilpasninger
+def setup(app):
+    app.add_css_file('custom.css')
+    app.add_js_file('custom.js')

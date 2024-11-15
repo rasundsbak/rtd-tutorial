@@ -1,5 +1,7 @@
 # Configuration file for the Sphinx documentation builder.
 
+import os  # Importer os for å kunne bruke miljøvariabler
+
 # -- Project information
 
 project = 'AI on Cluster'
@@ -41,18 +43,11 @@ html_static_path = ['_static']
 def setup(app):
     app.add_css_file('custom.css')
 
-# html_theme = 'default'
-# this not working
-# sidebarbgcolor = 'DarkOrange'
-
-# html_theme = 'sphinx_rtd_theme'
-
-# default works, but not to change colour
-# html_theme = 'default'
-# sidebarbgcolor = '#FF8C00'
-# sidebarbgcolor = 'DarkOrange'
-
 html_theme = "pyramid"
+
+# -- Options for TODO extension
+# Bruke miljøvariabler for å inkludere/exkludere todo-innhold (default False)
+todo_include_todos = os.getenv('SPHINX_TODO_INCLUDE_TODOS', 'False') == 'True'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'

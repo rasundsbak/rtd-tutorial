@@ -60,9 +60,10 @@ Terminal view 3::
 Remember to fill in the right details where it says [your username at uio]
 
 Terminal view 4::
+
    # change into the right subdirectory
    cd /fp/projects01/ec443
-
+   
    # make a directory at ec443, where you plan to have your working files
    mkdir **[your username at uio]**
 
@@ -72,8 +73,8 @@ Terminal view 4::
    python -m venv /fp/projects01/ec443/**[your username at uio]**/my_venv
    
 Terminal view 6::
-# Aktivér ditt venv
-source /fp/projects01/ec443/**[your username at uio)**/my_venv/bin/activate
+   # Aktivér ditt venv
+   source /fp/projects01/ec443/**[your username at uio)**/my_venv/bin/activate
 
 # Installer transformers og torch i venv
 pip install transformers

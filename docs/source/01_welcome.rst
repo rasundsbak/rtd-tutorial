@@ -67,7 +67,8 @@ Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
 .. toctree::
-   :maxdepth: 1
+  :maxdepth: 1
 
-   02_project
-   03_lorem_ipsum
+  02_project
+  03_lorem_ipsum
+  04_dolor_sit

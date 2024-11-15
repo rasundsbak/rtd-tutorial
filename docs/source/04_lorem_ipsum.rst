@@ -1,5 +1,5 @@
-.. _03 lorem ipsum:
-03 Lorem Ipsum
+.. _04 lorem ipsum:
+04 Lorem Ipsum
 ==============
 
 .. index:: lorem, ipsum
@@ -61,3 +61,6 @@ This is an ordinary paragraph, introducing a block quote.
 Use Link text: <https://domain.invalid/>
 
 Test 24. juli 2023: `Les nyheter her <https://www.nrk.no/>`_
+
+.. toctree::
+   :maxdepth: 1

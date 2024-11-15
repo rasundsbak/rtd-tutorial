@@ -35,7 +35,8 @@ exclude_patterns = []
 
 # -- Options for HTML output --
 
-html_theme = "pyramid"
+html_theme = 'sphinx_rtd_theme'
+#html_theme = "pyramid"
 
 # -- Options for TODO extension --
 # Bruke denne linjen for å INKLUDERE todo-innhold

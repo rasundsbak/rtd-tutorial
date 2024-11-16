@@ -67,7 +67,8 @@ Terminal view 4::
    # make a directory at ec443, where you plan to have your working files
    mkdir **[your username at uio]**
 
-**Read the details before you copy and paste!**
+**Be sure to read the details and put in your username before you copy and paste!**
+
 Terminal view 5::
 
    # making a virtual env for python packages

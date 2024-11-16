@@ -33,4 +33,7 @@ Wether you like it or not, AI may be your new colleague. When i talk about aspec
   Task: Write a list over concepts that you do not understand. Go in pairs, and discuss the concepts you want to elaborate on. Use google, UiO GPT or an encyclopedia from the library.
 
 
+.. todo::
+
+Todo 1.1: Vi må legge inn oppgaver, i hvert eneste kapittel.
 

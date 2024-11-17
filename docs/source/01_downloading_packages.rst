@@ -61,4 +61,25 @@ Terminal view 2::
 .. todo:: 
    todo 5.1: Hver bruker må installere de rette pakkene i sitt miljø som heter `my_env`. Pakkene ligger definert i `cleaned_requirements_2.txt` filen som befinner seg her: `/fp/projects01/ec443/clean_env`.
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Table of Contents
+   :titlesonly:
+
+   00_preparations
+   01_downloading_packages
+   02_ai_board
+   03_parameters
+   04_hello_world
+   05_login
+   06_jotain
+   07_pirat
+   08_pegasus
+   09_algo
+   10_alami
+   11_juoga
+   21_elastic_search
+   22_disk_quota
+   30_todo
+
 

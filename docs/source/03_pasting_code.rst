@@ -1,5 +1,5 @@
-.. _04_pasting_code:
-04 Copying and pasting your code into Jupyter lab
+.. _03_pasting_code:
+03 Copying and pasting your code into Jupyter lab
 =============================================
 
 .. index:: introduction, hello world

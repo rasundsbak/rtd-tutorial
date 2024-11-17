@@ -59,8 +59,8 @@ is a method to balance randomness and predictability. Top_p=0.9 can give: "The w
 
 Referneces and further reading
 --------------
-Google Brain team (2025): `Project Tensorflow <https://projector.tensorflow.org/>`_ 
+Google Brain team (2024): `Project Tensorflow <https://projector.tensorflow.org/>`_ 
 
-Num_beams is related to `beam search <https://en.wikipedia.org/wiki/Beam_search>`_,
+Wikipedia (2024): `Beam search <https://en.wikipedia.org/wiki/Beam_search>`_,
 
 Santos, O (2023): `Understanding Key AI Language Model Parameters: top_p, Temperature, num_beams, and do_sample <https://becomingahacker.org/understanding-key-ai-language-model-parameters-top-p-temperature-num-beams-and-do-sample-9874bf3c89ae>`_

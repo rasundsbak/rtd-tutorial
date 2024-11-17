@@ -79,9 +79,6 @@ Terminal view 6::
    # Aktivér ditt venv
    source /fp/projects01/ec443/**[your username at uio)**/my_venv/bin/activate
 
-   # Installer transformers og torch i venv
-   pip install transformers
-   pip install torch
 
 Further reading
 --------------

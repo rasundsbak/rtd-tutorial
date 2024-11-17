@@ -57,9 +57,10 @@ means that you limit what the model should consider as the next word (Santos 202
 **top_p** 
 is a method to balance randomness and predictability. Top_p=0.9 can give: "The weather today is sunny and warm, perfect for a day at the beach." while top_p=0.5 can give "The weather today is sunny and warm." If top_p is set to 0.5, the model will be even more selective, considering only the few tokens with the highest probabilities that together cover 50% of the cumulative distribution.
 
-Further reading
+Referneces and further reading
 --------------
-When it comes to creaticity, Where does the machine take its suggestions from? In order to understand, it can help to take a look at this three dimensional presentation of a model `Project Tensorflow <https://projector.tensorflow.org/>`_  
+Google Brain team (2025): `Project Tensorflow <https://projector.tensorflow.org/>`_ 
+
 Num_beams is related to `beam search <https://en.wikipedia.org/wiki/Beam_search>`_,
 
 Santos, O (2023): `Understanding Key AI Language Model Parameters: top_p, Temperature, num_beams, and do_sample <https://becomingahacker.org/understanding-key-ai-language-model-parameters-top-p-temperature-num-beams-and-do-sample-9874bf3c89ae>`_

@@ -1,5 +1,5 @@
 .. _04_login:
-04 Login to browser and Terminal
+04 Login to browser and overview
 =====================
 .. index:: Fox, server, CUDA, A100, GPU, hardware
 
@@ -16,68 +16,6 @@ At the Fox server, you have your own storage space. There is also a common space
 .. note::
 
    First task: Visit Huggingface and search for google/Pegasus. What do you see? Switch the search to meta-llama/Llama-3.1-8B-Instruct and read. Is this a model that you can find at Fox? What format is it in? Find the format of the Llama AI at Fox, and google it, in order to find out more about this dataformat.
-
-
-
-Log in to through SSH, in Bash or Terminal and making your own virtual environment on ec443
--------------------------------------------------
-
-.. index:: login, ssh, bash, terminal
-
-
-Open the Command prompt (PC) or Terminal. Log in to Fox using ssh. You will need to read the information on the USIT page `Fox Account Creation and Login (SSH) <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/account-login.md>`_
-
-Terminal view 1::
-   
-   Last login: Sat Nov  2 10:51:34 on console
-   (base) navnesenmaskin@eduroam-193-157-163-121 ~ %
-
-
-
-Terminal view 2::
-   
-   Last login: Sat Nov  2 10:51:34 on console
-   (base) navnesen@eduroam-193-157-163-121 ~ % ssh ec-navnesen@fox.educloud.no
-   (ec-navnesen@fox.educloud.no) One-Time_Code: 
-
-
-
-Terminal view 3::
-
-   Welcome to FOX
-
-      "'~-.       .-~'"
-      |   .'"""""'.   |
-      \`_"         "_'/
-       )             (
-       /   0     0   \
-      <               >
-    .< __.-'. _ .'-.__ >.
-      "-.._  (#)  _..-"
-           `-:_:-'
-   The HPC Cluster in Educloud
-
-Remember to fill in the right details where it says [your username at uio]
-
-Terminal view 4::
-
-   # change into the right subdirectory
-   cd /fp/projects01/ec443
-   
-   # make a directory at ec443, where you plan to have your working files
-   mkdir **[your username at uio]**
-
-**Be sure to read the details and put in your username before you copy and paste!**
-
-Terminal view 5::
-
-   # making a virtual env for python packages
-   python -m venv /fp/projects01/ec443/**[your username at uio]**/my_venv
-   
-Terminal view 6::
-
-   # Aktivér ditt venv
-   source /fp/projects01/ec443/**[your username at uio)**/my_venv/bin/activate
 
 
 Further reading

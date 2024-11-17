@@ -12,7 +12,7 @@ In these lessons, the cell in Jupyter lab will be marked with comments, so that 
 
 
 .. todo:: 
-   Todo 2.1: Endre været til mørkere hav, i tråd med det kommende pirateksempelet.
+   Todo 2.1: **RS gjør i julen:** Endre været til mørkere hav, i tråd med det kommende pirateksempelet.
 
 **Num_beams** Increasing num_beams lets the model explore multiple potential paths or 'beams' for the next word. Consequences: More beams mean the model can generate higher quality and varied text, but at the cost of computational resources and time. For example with low tokens you just get: "The weather today is sunny and warm." because that is the most probable "next" words. But with hight beam, it can result in: "The weather today is sunny and warm, making it a perfect day for a picnic. However, there is a slight chance of light rain in the evening."
 

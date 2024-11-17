@@ -27,11 +27,11 @@ Contents
    :titlesonly:
 
    00_preparations
-   01_ai_board
-   02_parameters
-   03_pasting_code
-   04_login
-   05_downloading_packages
+   01_downloading_packages
+   02_ai_board
+   03_parameters
+   04_hello_world
+   05_login
    06_jotain
    07_pirat
    08_pegasus

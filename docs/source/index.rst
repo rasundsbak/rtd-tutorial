@@ -15,6 +15,9 @@ In this documentation, you will learn how to set up an AI process at the UiO Nvi
    Todo 0.1: Vi må legge inn læringsmål, slik at alle vet hva de vil lære etter dette kurset.
 
 
+.. todo:: 
+   Todo 0.2: Legg emneord på alle kapitlene der det mangler.
+
 Contents
 --------
 
@@ -26,8 +29,8 @@ Contents
    00_preparations
    01_ai_board
    02_parameters
-   03_login
-   04_pasting_code
+   03_pasting_code
+   04_login
    05_something
    06_jotain
    07_pirat

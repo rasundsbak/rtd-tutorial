@@ -19,7 +19,7 @@ At the Fox server, you have your own storage space. There is also a common space
 
 
 
-Log in to Fox and Educloud through SSH, in Bash or Terminal
+Log in to through SSH, in Bash or Terminal and making your own virtual environment on ec443
 -------------------------------------------------
 
 .. index:: login, ssh, bash, terminal

@@ -1,5 +1,5 @@
-.. _04_login:
-04 Login to browser and overview
+.. _05_login:
+05 Login to browser and overview
 =====================
 .. index:: Fox, server, CUDA, A100, GPU, hardware
 

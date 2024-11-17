@@ -1,5 +1,5 @@
-.. _03_pasting_code:
-03 Copying and pasting your code into Jupyter lab
+.. _04_hello_world: how to run cells and change from code to markdown
+04 Hello world and how to run cells in Jupyter lab
 =============================================
 
 .. index:: introduction, hello world

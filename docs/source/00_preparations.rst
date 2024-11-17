@@ -74,3 +74,7 @@ Terminal view 6::
 
    # Aktivér ditt venv
    source /fp/projects01/ec443/**[your username at uio)**/my_venv/bin/activate
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Table of Contents

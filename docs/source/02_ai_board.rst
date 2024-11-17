@@ -35,24 +35,3 @@ Wether you like it or not, AI may be your new colleague. When i talk about aspec
 
 .. todo:: 
   Todo 2.1: Vi må legge inn oppgaver, i hvert eneste kapittel.
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Table of Contents
-   :titlesonly:
-
-   00_preparations
-   01_downloading_packages
-   02_ai_board
-   03_parameters
-   04_hello_world
-   05_login
-   06_jotain
-   07_pirat
-   08_pegasus
-   09_algo
-   10_alami
-   11_juoga
-   21_elastic_search
-   22_disk_quota
-   30_todo

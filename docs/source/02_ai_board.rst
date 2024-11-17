@@ -34,5 +34,5 @@ Wether you like it or not, AI may be your new colleague. When i talk about aspec
 
 
 .. todo:: 
-  Todo 1.1: Vi må legge inn oppgaver, i hvert eneste kapittel.
+  Todo 2.1: Vi må legge inn oppgaver, i hvert eneste kapittel.
 

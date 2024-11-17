@@ -1,5 +1,5 @@
-.. _03_login:
-03 Login to browser and Terminal
+.. _04_login:
+04 Login to browser and Terminal
 =====================
 .. index:: Fox, server, CUDA, A100, GPU, hardware
 

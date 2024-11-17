@@ -1,0 +1,1269 @@
+              International Journal of
+              Geo-Information
+
+Article
+Predicting Terrorism in Europe with Remote Sensing, Spatial
+Statistics, and Machine Learning
+Caleb Buffa 1,2,3, * , Vasit Sagan 1,2 , Gregory Brunner 1,3 and Zachary Phillips 1,2
+
+                                          1   Geospatial Institute, Saint Louis University, St. Louis, MO 63108, USA; vasit.sagan@slu.edu (V.S.);
+                                              gbrunner@esri.com (G.B.); zachary.phillips@slu.edu (Z.P.)
+                                          2   Department of Earth and Atmospheric Sciences, Saint Louis University, St. Louis, MO 63108, USA
+                                          3   Environmental Systems Research Institute, 380 New York Street, Redlands, CA 92373, USA
+                                          *   Correspondence: cbuffa@esri.com
+
+
+                                          Abstract: This study predicts the presence or absence of terrorism in Europe on a previously unex-
+                                          plored spatial scale. Dependent variables consist of satellite imagery and socio-environmental data.
+                                          Five machine learning models were evaluated over the following binary classification problem: the
+                                          presence or absence of historical attacks within hexagonal-grid cells of 25 square kilometers. Four
+                                          spatial statistics were conducted to assess the validity of the results and improve our inferential
+                                          understanding of spatial processes among terror attacks. This analysis resulted in a Random Forest
+                                          model that achieves 0.99 accuracy in predicting the presence or absence of terrorism at a spatial
+                                          resolution of approximately 5 km. The results were validated by robust F1 and average precision
+                                          scores of 0.96 and 0.97, respectively. Additionally, statistical analysis revealed spatial differences
+                                          between separatists and all other terrorist types. This work concludes that remote sensing, machine
+                                          learning, and spatial techniques are important and valuable methods for providing insight into
+                                          terrorist activity and behavior.
+         
+         
+                                          Keywords: machine-learning; remote sensing; spatial statistics; terrorism
+Citation: Buffa, C.; Sagan, V.;
+Brunner, G.; Phillips, Z. Predicting
+Terrorism in Europe with Remote
+Sensing, Spatial Statistics, and
+                                          1. Introduction
+Machine Learning. ISPRS Int. J.
+Geo-Inf. 2022, 11, 211. https://                A precise definition of what terrorism is and what it is not the subject of debate dating
+doi.org/10.3390/ijgi11040211              back to the first use of the word in 1789, resulting in more than 109 legal definitions currently
+                                          in use [1–3]. Due to the lack of clarity, this research has opted for a broad description of
+Academic Editor: Wolfgang Kainz
+                                          terrorism that can be understood as non-state actors’ use of violence against noncombatants
+Received: 23 January 2022                 with a primary goal of political coercion [4]. This classification steers away from other
+Accepted: 12 March 2022                   definitions that may include state actors or threats of violence, as such definitions that may
+Published: 22 March 2022                  introduce ambiguity in data screening and the discussion that follows.
+                                                Bahgat and Medina, in a 2013 meta-analysis of counter terrorism studies, noted a
+Publisher’s Note: MDPI stays neutral
+                                          fixation on political and sociological perspectives to the determent of geographic ones,
+with regard to jurisdictional claims in
+published maps and institutional affil-
+                                          primarily due to a lack of high-quality geo-referenced data sets and untapped applications
+iations.
+                                          of Geographic Information Systems [5]. However, terrorism exhibits an important spatial
+                                          dimension. It stands to reason that if governmental policies are designated within a defined
+                                          territory, terrorism can, in some part, be understood as an attempt to influence control over
+                                          political boundaries [6]. Similarly, strong links between a lack of territorial security, and
+Copyright: © 2022 by the authors.         the presence of terrorism have been found [7–9], as a lack of governmental control allows
+Licensee MDPI, Basel, Switzerland.        terrorists to view the environment as permissive to their acquisition of an autonomous
+This article is an open access article    zone [10].
+distributed under the terms and                 Furthermore, high-population areas and those of governmental importance are both
+conditions of the Creative Commons        strategically attractive and cost-effective targets, and cities with high global and regional
+Attribution (CC BY) license (https://     regard increase their attractiveness to terrorist target selection [11]. Terrorists’ specific
+creativecommons.org/licenses/by/          motivations also have a geographic component, exemplified by religious groups targeting
+4.0/).
+
+
+
+
+ISPRS Int. J. Geo-Inf. 2022, 11, 211. https://doi.org/10.3390/ijgi11040211                                          https://www.mdpi.com/journal/ijgi
+
+ISPRS Int. J. Geo-Inf. 2022, 11, 211                                                                                            2 of 12
+
+
+
+
+                                       civilians seen as practicing immoral behavior and places of worship [12]; right-wing ter-
+                                       rorists selecting governmental buildings [13]; persecuted individuals seeking out civilians
+                                       in everyday locations such as malls [14]; territorial terrorists operating in peripheral envi-
+                                       ronments [15]. There is further a self-reinforcing cycle in which areas previously attacked
+                                       become increasingly attractive to future attackers [16], and a relationship between terror-
+                                       ists’ bases of planning and preparation [17–19] suggests target locations are a function of
+                                       geographic convenience as much as an act of coercion.
+                                             Singh et al. combined Hidden Markov Chains to model, in real-time, activities deemed
+                                       consistent with historical attacks and determine the best actions to prevent them [20].
+                                       Additionally, Dixon et al. developed a feed-forward neural network (NN) to identify
+                                       deceptive behavior, producing an average accuracy of 0.6 with the best success rate of
+                                       0.68 [21]. An ensemble was also trained to predict the attributes of attacks with accuracy
+                                       scores of 0.79 to 0.85 [22]. Mo et al. built a Support Vector Machine (SVM), Naïve Bayes
+                                       classifier, and a Logistic Regression to predict terrorist events with a maximum accuracy of
+                                       0.78 [23].
+                                             Dixon et al. [24] developed a NN, SVM, and a Random Forest, in which the authors
+                                       concluded 0.96 accuracy scores and robust classification reports in predicting attack loca-
+                                       tions, but noted the global aggregation reduced the model’s sensitivity to regional and
+                                       local factors.
+                                             Most recently, Uddin et al. [25] developed five machine learning models based on NNs
+                                       to predict the outcomes of attacks, such as attack type and weapon used. To supplement
+                                       NN architectures, the researchers employed logistic regression, SVM, and Naïve Bayes
+                                       classification. A comparison of results concluded that DNNs are more successful than other
+                                       algorithms, achieving 0.95 accuracies compared to 0.83 for non-DNN models. In doing so,
+                                       the team concluded the successful creation of a model that accurately predicts the future
+                                       lethality of a terror organization based solely on the first 10 attacks attributed to it.
+                                             While the research to date has reported robust results, little has been performed to
+                                       understand terrorism at the sub-state level. It is well understood that the causes of terrorism
+                                       at general levels and there are qualitative inferences as to why it occurs within specific
+                                       regions, but what is less clear is whether terrorism can be predicted at smaller scales.
+                                       Additionally, few studies have focused on remote sensing and spatial sciences.
+                                             This research aims to predict terrorism in Europe at the sub-national level. The ob-
+                                       jectives of the study are the following: (1) develop a model to predict terrorism using
+                                       satellite imagery and socio-environmental data; (2) develop a grid-cell-based spatial statis-
+                                       tics approach to reveal specific causal variables and trends in this region at a previously
+                                       unexplored spatial scale.
+
+                                       2. Methods
+                                            This study includes 18,741 attacks occurring between 1970 and 2018 in Eastern and
+                                       Western Europe apart from Russia. The target was developed using the National Consor-
+                                       tium for the Study of Terrorism and Responses to Global Terrorism Database (GTD) [26].
+                                       The GTD is an open-source dataset of terrorist incidents since 1970 that has been georefer-
+                                       enced, matches the definitional criteria of the study, and has been the primary source of
+                                       terrorism studies in the United States.
+                                            Remotely sensed data was collected from a variety of sources including the 2000 Shuttle
+                                       Radar Topography Mission, 2020 Copernicus land cover [27], and 2018 nighttime lights
+                                       from the visible and infrared imaging suite (VIIRS) sensor on board the Joint Polar-orbiting
+                                       Satellite System [28]. Figure 1 visualizes the study and samples the remote sensing data
+                                       used in the study.
+
+ ISPRS Int. J. Geo-Inf. 2022, 11, x FOR PEER REVIEW                                                                                         3 of 12
+ISPRS Int. J. Geo-Inf. 2022, 11, 211                                                                                                        3 of 12
+
+
+
+
+                                    Figure1.
+                                   Figure      The study
+                                                    studyarea
+                                            1. The             (a)with
+                                                                   withsample
+                                                          area(a)       sampleexplanatory variables.
+                                                                                explanatory           Attacks
+                                                                                             variables.       occurring
+                                                                                                        Attacks         between
+                                                                                                                 occurring            and
+                                                                                                                                 19701970
+                                                                                                                           between
+                                    2018 within this geographic region are considered. Explanatory variables were collected from re-
+                                   and 2018 within this geographic region are considered. Explanatory variables were collected from
+                                    motely sensed data including (b) digital elevation model, (c) land cover classification [8], and (d)
+                                   remotely sensed data including (b) digital elevation model, (c) land cover classification [8], and
+                                    distance to major road intersections. DEM and distance to major road intersections data can be
+                                   (d) distance
+                                    found        to major road intersections.
+                                           at www.worldpop.org                DEM
+                                                                    (accessed on    and distance
+                                                                                 10 October 2021).to major road intersections data can be
+                                   found at www.worldpop.org (accessed on 10 October 2021).
+                                          Geospatial and population features were collected from WorldPop, a peer-reviewed
+                                          Geospatial and population features were collected from WorldPop, a peer-reviewed re-
+                                    research data archive. From this archive, data was obtained on distances to major water-
+                                   search data archive. From this archive, data was obtained on distances to major waterways,
+                                    ways, inland water, major road intersections, roadways, population counts, population
+                                   inland water, major road intersections, roadways, population counts, population densities,
+                                    densities, built settlement growth, and demographics from 2000–2020. Civil unrest was
+                                   built settlement growth, and demographics from 2000–2020. Civil unrest was calculated
+                                    calculated from the Armed Conflict Location and Event Dataset (ACLED) [29]. It should
+                                   from the Armed Conflict Location and Event Dataset (ACLED) [29]. It should be noted as a
+                                    be noted as a limitation, however, that this study covers terrorism until 2018 (the last year
+                                   limitation, however, that this study covers terrorism until 2018 (the last year GTD has data
+                                    GTD has at
+                                   available    data
+                                                   theavailable
+                                                        time of the at the timewhile
+                                                                        study)           study)
+                                                                                 of thecivil     while
+                                                                                              unrest  is calculated     is calculated
+                                                                                                          civil unrestfrom              from data
+                                                                                                                             data beginning      in
+                                    beginning
+                                   2018           in 2018year
+                                          (the earliest            earliest year
+                                                            (theACLED             ACLED
+                                                                            has data        has data
+                                                                                       available        available
+                                                                                                   at the             thestudy).
+                                                                                                           time ofatthe    time ofItthe  study). It
+                                                                                                                                     is therefore
+                                   assumed           feature isthis
+                                               thisassumed
+                                    is therefore                      feature is representative
+                                                                   representative   of larger civilofunrest    civil unrest
+                                                                                                       largerduring                   the study’s
+                                                                                                                             duringtime
+                                                                                                                       the study’s         period.
+                                    time   period.   For   spatial-temporal      analysis,  the  Integrated     Crisis
+                                   For spatial-temporal analysis, the Integrated Crisis Early Warning System (ICEWS)    Early  Warning     System
+                                                                                                                                              [30],
+                                    (ICEWS)     [30], which     documents     socio-political  interactions    extracted   via
+                                   which documents socio-political interactions extracted via open-source documents, is used.  open-source     doc-
+                                    uments,    is used.
+                                          Shapefile boundaries were imported from the Department of State’s International
+                                          Shapefile
+                                   Boundaries      databoundaries
+                                                          set. ACLED      dataimported
+                                                                        were               from as
+                                                                                was imported      thevector
+                                                                                                        Department      of State’s
+                                                                                                              points before        International
+                                                                                                                               being   converted
+                                    Boundaries      data   set. ACLED      data  was  imported     as vector   points   before
+                                   to raster format at a 10 km ground sampling distance (GSD). Pixel values were calculated     being   converted
+                                    to  raster format    at a 10   km   ground   sampling    distance    (GSD).  Pixel
+                                   as the number of events occurring within a pixel. Next, 5-square-kilometer hexagonal values   were   calculated
+                                    as the
+                                   cells    number
+                                          were         of events
+                                                           withinoccurring
+                                                 created                                  pixel.
+                                                                                  studyaand
+                                                                     the area ofwithin           Next,
+                                                                                               vector     5-square-kilometer
+                                                                                                       points                    hexagonal
+                                                                                                                placed at the centroid         cells
+                                                                                                                                           of each
+                                    were   created    within     the  area  of study   and   vector  points   placed    at the
+                                   polygon. Points falling within a 3-km buffer of attack locations were removed. The spatial   centroid   of each
+
+ ISPRS Int. J. Geo-Inf. 2022, 11, x FOR PEER REVIEW                                                                                                  4 of 12
+ISPRS Int. J. Geo-Inf. 2022, 11, 211                                                                                                                  4 of 12
+
+
+                                        polygon. Points falling within a 3-km buffer of attack locations were removed. The spatial
+                                        resolution for
+                                       resolution          eachobservation
+                                                                  observation isis therefore
+                                                     foreach                                      approximately 5-km
+                                                                                     thereforeapproximately             5-km andand the
+                                                                                                                                      the results
+                                                                                                                                            resultscancanbe be
+                                        interpretedas
+                                       interpreted     assuch.
+                                                          such.
+                                             The   dataset
+                                              Thedataset     was
+                                                           was      imported
+                                                                imported   intointo   a Python
+                                                                                  a Python         3.7 environment
+                                                                                             3.7 environment               for processing.
+                                                                                                                  for processing.                The 23 Co-
+                                                                                                                                     The 23 Copernicus
+                                       land
+                                        pernicus    classifications
+                                             coverland                 were aggregated
+                                                           cover classifications              into urban,into
+                                                                                      were aggregated         vegetation,      agriculture,agriculture,
+                                                                                                                                                and water.
+                                                                                                                     urban, vegetation,
+                                       The
+                                        anddata   wasThe
+                                              water.    then   randomly
+                                                             data   was then split
+                                                                                 randomly     split (0.7),
+                                                                                    into training            evaluation
+                                                                                                     into training           (0.15),
+                                                                                                                         (0.7),      and hold-out
+                                                                                                                                evaluation       (0.15), test
+                                                                                                                                                          and
+                                       splits (0.15).  Evaluation    data  was    used   for comparison       and   hyper-parameter
+                                        hold-out test splits (0.15). Evaluation data was used for comparison and hyper-parameter             tuning   while
+                                       the  hold-out
+                                        tuning   whiletest
+                                                         the set  was used
+                                                              hold-out         only
+                                                                         test set     forused
+                                                                                    was           performance
+                                                                                           finalonly                                    from whichfrom
+                                                                                                                     assessments,assessments,
+                                                                                                       for final performance                              the
+                                       reported
+                                        which the results
+                                                    reportedare derived.
+                                                                 results are derived.
+                                             An
+                                              Anunpruned
+                                                  unprunedRandomRandomForest
+                                                                           Forestofof100100trees
+                                                                                            treeswaswasfit
+                                                                                                         fitto
+                                                                                                             tothe
+                                                                                                                thetraining
+                                                                                                                      trainingdata
+                                                                                                                                 dataandandpermutation
+                                                                                                                                              permutation
+                                       importance
+                                        importanceused usedtotoretrieve  feature
+                                                                  retrieve  feature importance
+                                                                                       importance  scores  from
+                                                                                                      scores       the evaluation
+                                                                                                                from     the evaluationset toset
+                                                                                                                                               understand
+                                                                                                                                                  to under-
+                                       each  feature’s    generalizability.    This   methodology        performs       robustly
+                                        stand each feature’s generalizability. This methodology performs robustly on random         on  random       values,
+                                                                                                                                                          val-
+                                       data  sets  containing     both  categorical      and  binary    features,     as  well   as
+                                        ues, data sets containing both categorical and binary features, as well as in the presence  in  the   presence     of
+                                       co-linearity   [31].
+                                        of co-linearity [31].
+                                             Features
+                                              Featureswithwithlower
+                                                                lowerfeature
+                                                                        featureimportance
+                                                                                   importanceand   andcorrelation
+                                                                                                         correlationcoefficients
+                                                                                                                          coefficientshigher
+                                                                                                                                          higherthanthan0.70.7
+                                        wereremoved
+                                       were   removedapart apartfrom
+                                                                  frombinary
+                                                                        binaryand       categoricalfeatures.
+                                                                                  andcategorical      features.Lastly,
+                                                                                                                    Lastly,thethedata
+                                                                                                                                  datawaswasnormalized
+                                                                                                                                                normalized
+                                        toaa0–1
+                                       to    0–1scale.
+                                                  scale.This
+                                                           Thisresulted
+                                                                 resultedin inthe    followingfeatures
+                                                                                thefollowing       featuresused
+                                                                                                              usedfor  forprediction:
+                                                                                                                            prediction:(1) (1)distance
+                                                                                                                                                distanceto  to
+                                       inland  waterway,      (2) distance   to  major   road,
+                                        inland waterway, (2) distance to major road, (3) distance to major waterway, (4)elevation,
+                                                                                                 (3) distance    to  major    waterway,      (4)  elevation,
+                                        (5)civil
+                                       (5)  civilunrest,
+                                                  unrest,(6)(6)population
+                                                                populationdensity,
+                                                                               density,(7)     slope,(8)
+                                                                                          (7)slope,    (8)nighttime
+                                                                                                            nighttimelights,
+                                                                                                                           lights,asaswell
+                                                                                                                                        wellas as(9)
+                                                                                                                                                   (9)urban
+                                                                                                                                                       urban
+                                       and  (10) agricultural     land-cover.    The   study   workflow      is visualized
+                                        and (10) agricultural land-cover. The study workflow is visualized in Figure 2.        in Figure     2.
+
+
+
+
+                                        Figure2.2.The
+                                       Figure          methodologyworkflow.
+                                                                     workflow.Cell
+                                                   Themethodology                   valueswere
+                                                                                           weresampled
+                                                                               Cellvalues                fromprocessed
+                                                                                                sampledfrom     processedraster
+                                                                                                                          rasterand
+                                                                                                                                 andvector
+                                                                                                                                     vector
+                                        data via hexagonal grid centroids. Feature engineering was performed on train, validation, and test
+                                       data via hexagonal grid centroids. Feature engineering was performed on train, validation, and test
+                                        splits. Five machine learning models compared, and four spatial statistics methods used to output
+                                       splits. Five machine learning models compared, and four spatial statistics methods used to output a
+                                        a final prediction map.
+                                       final prediction map.
+
+ISPRS Int. J. Geo-Inf. 2022, 11, 211                                                                                               5 of 12
+
+
+
+
+                                             The predictor variables (Table 1) were chosen due to the interaction effect each likely
+                                       has on the target variable. Proximity to major roadways provides convenient transportation
+                                       to and from the target location while waterways may provide an additional, alternative, or
+                                       backup means of escape for well-planned attacks in addition to the well-known geographic
+                                       link between cities and bodies of water. Additionally, nighttime lights, population density,
+                                       and land cover each track an important aspect of human geography. Naturally, terrorists
+                                       are likely to attack urban centers with large numbers of civilians, and most likely, those that
+                                       are well-developed. All of which is captured in the three variables. Slope and elevation
+                                       were included to capture any geographic and spatial logic consistent among densely
+                                       populated urban areas not previously captured; while civil unrest attempts to assess the
+                                       public sentiment that may drive a terrorist to select, or not select, a specific location.
+
+                                       Table 1. Description of input features, the year they were collected, and original raster resolu-
+                                       tion. All variables, accounting for various spatial resolutions, were aggregated and sampled via
+                                       hexagonal grid-cells.
+
+                                                  Feature                       Description                Year          Resolution
+                                                                               Kilometers to
+                                          Distance to inland water                                         2016             100 m
+                                                                           inland body of water
+                                                                               Kilometers to
+                                           Distance to major road                                          2016             100 m
+                                                                               OSM roadway
+                                                                              Kilometers to
+                                        Distance to major waterway                                         2016             100 m
+                                                                        major navigable waterway
+                                                                               SRTM meters
+                                                  Elevation                                                2000             100 m
+                                                                              above sea level
+                                                                               Armed conflict
+                                                Civil unrest                                               2018             10 km
+                                                                         location and event dataset
+                                             Population density               People per pixel             2018             1 km
+                                                                               SRTM degree
+                                                   Slope                                                   2000             100 m
+                                                                           of topographic slope
+                                                                              VIIRS temporally
+                                              Nighttime lights                                             2018             100 m
+                                                                         calibrated nighttime lights
+                                                                                 Copernicus
+                                                 Landcover                                                 2018             100 m
+                                                                         calibrated nighttime lights
+
+
+                                             To evaluate model predictions, accuracy, average precision (AP), and F-1 scores are
+                                       reported. However, due to accuracy’s sensitivity to class imbalances [32], AP and F-1 are
+                                       used for final assessment and comparison. Average Precision, ∑ n ( Rn − Rn−1 ) Pn , is
+                                       informative of the precision-recall curve, with Rn and Pn being the precision and recall
+                                                                            2 ∗ ( P∗ R)
+                                       scores at the nth step, while F-1, P+ R , is the harmonic mean of precision and recall
+                                       globally [33]. Both metrics are therefore more robust and overcome overly optimistic
+                                       metrics by assessing Type 1 and Type 2 errors [34].
+                                             Logistic regression classifies input data by maximizing the log odds that an obser-
+                                       vation belongs to the nth class. In doing so, it provides intuitive coefficients and class
+                                       probabilities allowing for excellent inferential interpretation. Additionally, it has been
+                                       shown to perform well in the face of more flexible non-parametric models such as Support
+                                       Vector Machines and Neural Networks [35,36]. This model was optimized with stochastic
+                                       gradient descent [37], leveraging an alpha value of 1 × 10−6 , and an initial learning rate of
+                                       0.1, producing an 0.87 F-1 score.
+                                             The Random Forest classifier, by aggregating the predictions of multiple weak de-
+                                       cision trees, has found success among co-linear features, provides fast convergence, is
+                                       largely unresponsive to over-fitting [38], and provides impressive performance in handling
+                                       categorical and continuous variables, unbalanced data, outliers, and in a variety of fields
+
+ISPRS Int. J. Geo-Inf. 2022, 11, x FOR PEER REVIEW                                                                                                               6 of 12
+
+
+  ISPRS Int. J. Geo-Inf. 2022, 11, 211                                                                                                                               6 of 12
+                                         largely unresponsive to over-fitting [38], and provides impressive performance in han-
+                                         dling categorical and continuous variables, unbalanced data, outliers, and in a variety of
+                                         fields  including
+                                            including           remote
+                                                           remote         sensing
+                                                                    sensing    [39].[39].
+                                                                                      ThisThis
+                                                                                             study’s     datadata
+                                                                                                     study’s          set, containing
+                                                                                                                set, containing               categorical
+                                                                                                                                      categorical             and con-
+                                                                                                                                                        and continuous
+                                         tinuous      variables,   highly    unbalanced       features,       and  by   nature,     all
+                                            variables, highly unbalanced features, and by nature, all instances belonging to the positiveinstances      belonging       to
+                                         theclass
+                                              positive     class  are  outliers,  suggests     Random         Forest   is an    ideal
+                                                    are outliers, suggests Random Forest is an ideal model for the topic. This model   model      for  the  topic.   This
+                                         model     leveraged
+                                            leveraged       a maxa depth
+                                                                    max depth      of 3 trees,
+                                                                            of 3 trees,             Gini impurity,
+                                                                                          Gini impurity,                  and considered
+                                                                                                                 and considered          a maximum a maximum         of 3
+                                                                                                                                                            of 3 features
+                                         features
+                                            for each       eachproducing
+                                                      forsplit,               an F-1 an
+                                                                 split, producing           F-1 of 0.96.
+                                                                                        of 0.96.
+                                               Support
+                                                  Support      VectorMachines,
+                                                             Vector     Machines,well wellknown
+                                                                                             knownfor         the “kernel
+                                                                                                        for the                        [40], delineate
+                                                                                                                               trick” [40],
+                                                                                                                  “kernel trick”                delineatenon-linearly
+                                                                                                                                                              non-line-
+                                         arly  separable      features   by  mapping       data     points
+                                            separable features by mapping data points into an n-dimensional kernel to avoid thethe
+                                                                                                              into  an  n-dimensional           kernel    to avoid     com-
+                                         computational
+                                            putational cost    cost
+                                                                  of of calculating
+                                                                     calculating        n-dot
+                                                                                     n-dot        products
+                                                                                              products       in in a 3-D
+                                                                                                                a 3-D         feature
+                                                                                                                         feature        (Equation
+                                                                                                                                     (Equation          (1)).
+                                                                                                                                                     (1)).  TheThe    pri-
+                                                                                                                                                                  primary
+                                         mary    parameters
+                                            parameters            ofRadial
+                                                             of the   the Radial
+                                                                              BasisBasis
+                                                                                     FunctionFunctionkernel,kernel,
+                                                                                                               gamma, gamma,and Cand wereCsampled
+                                                                                                                                              were sampled          from
+                                                                                                                                                           from logarith-
+                                         logarithmic
+                                            mic grids of   grids  of ranges
+                                                              ranges   1.0 × 10  − 4
+                                                                               1.0 ×–1.0
+                                                                                      10 ×
+                                                                                         −4–1.0     4
+                                                                                               10× and10 and
+                                                                                                         4
+                                                                                                            1.0 ×      −  2
+                                                                                                                 1.010× 10–1.0
+                                                                                                                             −2–1.0     10 10                      How-
+                                                                                                                                                respectively.However,
+                                                                                                                                  × ×1010 , ,respectively.
+                                         ever,   despite
+                                            despite          the kernel
+                                                       the kernel          trick’s
+                                                                     trick’s             SVMsSVMs
+                                                                                   success,
+                                                                              success,                     are computationally
+                                                                                                     are computationally                   expensive
+                                                                                                                                   expensive               as fit increase
+                                                                                                                                                                   times
+                                                                                                                                                   as fit times
+                                         increase     quadratically
+                                            quadratically       with the with   the number
+                                                                           number                  of observations
+                                                                                       of observations         [41]. As[41].      As aten
+                                                                                                                            a result,     result,
+                                                                                                                                              SVMs         SVMs
+                                                                                                                                                     tenwere        were in
+                                                                                                                                                                trained
+                                         trained
+                                            a bagged in a ensemble.
+                                                           bagged ensemble.
+                                                                         Each childEach     child estimator
+                                                                                        estimator       was exposed was exposed         to a random
+                                                                                                                              to a random        sample of       0.1 ofof
+                                                                                                                                                             sample      the
+                                         0.1training
+                                              of the training      data  without     replacement,         decreasing      fit   times  and
+                                                        data without replacement, decreasing fit times and improving generalization [42].      improving       general-
+                                         ization    [42]. This
+                                            This model,          model, the
+                                                               utilizing   utilizing   the RBFleveraged
+                                                                                RBF kernel,           kernel, leveraged
+                                                                                                                   a C andagamma  C and gammaof 1.0 and of 1.0     × 10
+                                                                                                                                                              6.9and   6.9−3 ,
+                                            resulting
+                                         × 10 −3          in a 0.87
+                                                , resulting          F-1. F-1.
+                                                                in a 0.87                                                     !
+                                                                                                                 x − xi
+                                                                                      K𝐾 ( x,𝑥,x𝑥i ) = exp 𝑒𝑥𝑝 2σ2                                                     (1)(1)
+
+                                               Neural
+                                                  Neural  networks,
+                                                            networks,   comprise
+                                                                           comprise   anan arbitrary
+                                                                                              arbitrary  number
+                                                                                                           number       layers
+                                                                                                                    of of layersconnected
+                                                                                                                                   connected  bybyananarbitrary
+                                                                                                                                                        arbitrary
+                                         number     of  neurons,     allowing    it to  learn    non-linear    decision     boundaries
+                                            number of neurons, allowing it to learn non-linear decision boundaries via non-linear          via non-linear    ac-
+                                         tivation   functions.
+                                            activation            The The
+                                                          functions.     size size
+                                                                               of the    model,
+                                                                                    of the    model,       in terms
+                                                                                                    bothboth   in terms of layers   andand
+                                                                                                                            of layers     neurons
+                                                                                                                                             neurons      layer,
+                                                                                                                                                     perper  layer,
+                                         impacts
+                                            impacts thethelevel
+                                                            levelofofcomplexity
+                                                                        complexity    that
+                                                                                         thatcancanbebe learned.
+                                                                                                          learned.  However,
+                                                                                                                      However,    larger
+                                                                                                                                     largermodels
+                                                                                                                                             models will
+                                                                                                                                                       willoften
+                                                                                                                                                             often
+                                         degrade
+                                            degrade in in
+                                                        performance
+                                                           performance    past
+                                                                            pasta consistent
+                                                                                   a consistent   depth
+                                                                                                     depth due           number
+                                                                                                                    thethe
+                                                                                                                to to
+                                                                                                              due           number      matrix
+                                                                                                                                    of of      computations
+                                                                                                                                          matrix  computations
+                                         performed.      Therefore,     it cannot    be   stated    that   a  deeper
+                                           performed. Therefore, it cannot be stated that a deeper or larger model will or  larger   model   will  necessarily
+                                                                                                                                                      necessarily
+                                         perform    better.  Only     that, with   proper     techniques      to  avoid
+                                           perform better. Only that, with proper techniques to avoid vanishing/exploding vanishing/exploding        gradients
+                                                                                                                                                        gradients
+                                         andandover-fitting,
+                                                 over-fitting, it it
+                                                                  will
+                                                                     willnot likely
+                                                                           not  likely perform
+                                                                                          perform   significantly
+                                                                                                      significantly  worse.
+                                                                                                                        worse.
+                                               TheTheshallow
+                                                         shallow NN, NN, obtained
+                                                                            obtained  from    Ref.Ref.
+                                                                                           from      [25],[25],
+                                                                                                             consisted    of a of
+                                                                                                                  consisted     single    hidden
+                                                                                                                                    a single               of 10of
+                                                                                                                                                   layerlayer
+                                                                                                                                               hidden
+                                         neurons    with with
+                                           10 neurons      an initial   learning
+                                                                 an initial         rate of
+                                                                              learning        1 ×of101−3×
+                                                                                           rate            10−epochs
+                                                                                                        , 500  3 , 500 epochs
+                                                                                                                         of training,           optimization,
+                                                                                                                                        Adam Adam
+                                                                                                                                 of training,           optimiza-
+                                         logistic  activation
+                                            tion, logistic        function,
+                                                            activation         and cross
+                                                                           function,            entropy
+                                                                                        and cross           loss.loss.
+                                                                                                       entropy     The TheDNN DNN(Figure    3) leveraged
+                                                                                                                                       (Figure 3) leveraged  thethe
+                                         same
+                                            samehyperparameters
+                                                   hyperparameters          thethe
+                                                                         as as   single
+                                                                                     single layer-NN,
+                                                                                               layer-NN,        with
+                                                                                                           butbut      5 layers
+                                                                                                                    with   5 layersconsisting
+                                                                                                                                      consisting   100,
+                                                                                                                                                of of        30,30,
+                                                                                                                                                         50,50,
+                                                                                                                                                      100,
+                                           10,  and  5  neurons.     The   neural    networks      achieved     a  0.91  and   0.92
+                                         10, and 5 neurons. The neural networks achieved a 0.91 and 0.92 F-1 score, respectively.    F-1  score, respectively.
+
+
+
+
+                                         Figure 3. Uddin
+                                           Figure        et al.etDNN
+                                                   3. Uddin            architecture
+                                                                  al. DNN            [25] used
+                                                                                           [25] in
+                                                                            architecture           the in
+                                                                                                used      the outperformed
+                                                                                                       study                 larger and
+                                                                                                              study outperformed         more
+                                                                                                                                     larger   com-
+                                                                                                                                            and more
+                                         plex models  with regularization   built for comparison    producing   an F1 score of 0.92.
+                                           complex models with regularization built for comparison producing an F1 score of 0.92.
+
+ISPRS Int. J. Geo-Inf. 2022, 11, x FOR PEER REVIEW                                                                               7 of 12
+ ISPRS Int. J. Geo-Inf. 2022, 11, 211                                                                                              7 of 12
+
+
+                                   3. Results
+                                    3. Results
+                                         Table 2 compares the results across accuracy, average precision computed from pre-
+                                          Table 2curves,
+                                   cision-recall          and the
+                                                   compares         resultsAverage
+                                                                F1 scores.           precision average
+                                                                             across accuracy,             precision
+                                                                                                              chosencomputed
+                                                                                                 and F1 were                    from
+                                                                                                                      as the evalua-
+                                   tion               to their and
+                                         metrics due curves,
+                                    precision-recall                F1 scores.
+                                                               robustness       Average
+                                                                            in the face ofprecision  and
+                                                                                           large class   F1 were chosen
+                                                                                                       imbalances.        as the per-
+                                                                                                                                 eval-
+                                                                                                                    Each model
+                                    uation  metrics  due  to their robustness   in the face  of large class imbalances.
+                                   formed exceptionally well, but the Random Forest outperformed every other across all  Each  model
+                                    performed
+                                   tasks,        exceptionally
+                                           with Figure           well, feature
+                                                       4 visualizing            Random Forest
+                                                                        but theimportance           obtained fromevery
+                                                                                             scoresoutperformed         other across
+                                                                                                                   the Random    For-
+                                    all tasks,
+                                   est model.  with Figure  4 visualizing   feature importance    scores obtained from  the Random
+                                    Forest model.
+                                   Table 2. Classification report results. Random Forest achieved the highest F1 and average precision
+                                    Table 2. Classification report results. Random Forest achieved the highest F1 and average precision
+                                   scores. Due to class imbalances, F1 and AP are considered the primary evaluation metrics. Random
+                                    scores.isDue
+                                   Forest         to class
+                                              therefore    imbalances,
+                                                         used           F1 and AP are considered the primary evaluation metrics. Random
+                                                              for final predictions.
+                                    Forest is therefore used for final predictions.
+                                                     Model                               Accuracy                AP             F1
+                                              Model  DNN       Accuracy                    0.98 AP               0.91      F1  0.91
+                                             DNN      NN         0.98                      0.98 0.91             0.90     0.91 0.91
+                                              NN                 0.98
+                                                Random Forest                              0.99 0.90             0.97     0.91
+                                                                                                                               0.96
+                                         Random Forest           0.99                           0.97                      0.96
+                                         Log Reg Log Reg + SGD
+                                                 + SGD           0.96                      0.96 0.90             0.90     0.88 0.88
+                                                 SVM Ensemble
+                                         SVM Ensemble            0.96                      0.96 0.63             0.63     0.88 0.88
+
+
+
+
+                                    Figure 4. Random Forest feature importance scores. Urban landcover classification, population
+                                   Figure 4. Random Forest feature importance scores. Urban landcover classification, population den-
+                                    density, and nighttime lights are the most important features impacting model prediction. These
+                                   sity, and nighttime lights are the most important features impacting model prediction. These find-
+                                   ings  are inare
+                                    findings       inwith
+                                                line      with previous
+                                                     line previous       qualitative
+                                                                   qualitative       studies
+                                                                               studies       and enhance
+                                                                                       and enhance       our understanding
+                                                                                                   our understanding         of terrorist
+                                                                                                                     of terrorist target
+                                    target selection.
+                                   selection.
+
+                                         Spatial statistics were then used to validate the Random Forest’s spatial accuracy. Join
+                                         Spatial statistics were then used to validate the Random Forest’s spatial accuracy.
+                                    counts were used to assess the spatial correlation between the classifier’s predictions. We
+                                   Join counts were used to assess the spatial correlation between the classifier’s predictions.
+                                    can understand spatial processes and distributions as one of many, or potentially infinite,
+                                   We can understand spatial processes and distributions as one of many, or potentially in-
+                                    possibilities. Therefore, by modeling random distributions, join counts compare synthetic
+                                   finite, possibilities. Therefore, by modeling random distributions, join counts compare
+                                    results with the observed values to assess the likelihood of geographic correlation.
+                                   synthetic results with the observed values to assess the likelihood of geographic correla-
+                                         The Random Forest did not demonstrate a statistically significant correlation among
+                                   tion.
+                                    incorrect predictions at large, with a synthetic p-value of 0.191. With a high simulated
+                                         The Random Forest did not demonstrate a statistically significant correlation among
+                                    p-value, this research can reject the null hypothesis that the results were clustered, and
+                                   incorrect  predictions
+                                    thus, spatial           at large,
+                                                   correlation   is notwith a synthetic
+                                                                        occurring among p-value of 0.191.
+                                                                                           incorrect predictions high
+                                                                                                          With a at    simulated
+                                                                                                                    large.       p-
+                                                                                                                           However,
+
+ISPRS Int. J. Geo-Inf. 2022, 11, x FOR PEER REVIEW                                                                                                 8 of 12
+
+
+ISPRS Int. J. Geo-Inf. 2022, 11, 211                                                                                                                8 of 12
+
+                                       value, this research can reject the null hypothesis that the results were clustered, and thus,
+                                       spatial correlation is not occurring among incorrect predictions at large. However, the
+                                       the model
+                                       model    diddid exhibit
+                                                    exhibit    a significant
+                                                            a significant    spatial
+                                                                           spatial   correlationininterms
+                                                                                   correlation                                 predictions,
+                                                                                                                     negative predictions,
+                                                                                                                falsenegative
+                                                                                                      termsofoffalse
+                                       with    synthetic p-value
+                                       with aa synthetic  p-value of
+                                                                   of 0.001.
+                                                                      0.001.
+                                            AA DBSCAN
+                                                 DBSCAN model
+                                                           model identified
+                                                                    identified clusters
+                                                                               clusters of  false negatives
+                                                                                        of false   negatives in in the
+                                                                                                                   the Donetsk
+                                                                                                                       Donetsk region
+                                                                                                                                 region of
+                                                                                                                                         of
+                                       Ukraine,   Northern  Ireland,  Kosovo, the  Basque  country    of Spain,  and the island
+                                       Ukraine, Northern Ireland, Kosovo, the Basque country of Spain, and the island of Cor-   of Corsica,
+                                       France   (Figure
+                                       sica, France     5). 5).
+                                                     (Figure
+
+
+
+
+                                       Figure 5.
+                                       Figure  5. DBSCAN          negative clusters
+                                                            false negative
+                                                  DBSCAN false                                 Clustering is
+                                                                                     (purple). Clustering
+                                                                            clusters (purple).             is occurring  within Northern
+                                                                                                              occurring within  Northern Ireland,
+                                                                                                                                           Ireland,
+                                       Northern    Spain, Eastern  Ukraine,  Kosovo,   and Corsica,   France.  Each
+                                       Northern Spain, Eastern Ukraine, Kosovo, and Corsica, France. Each region has region has  thethe
+                                                                                                                                     following  at-
+                                                                                                                                        following
+                                       tribute in common:   large-scale and  ongoing   separatist terrorism.  Thus, suggesting  a common
+                                       attribute in common: large-scale and ongoing separatist terrorism. Thus, suggesting a common         spatial
+                                       attribute among territorial terrorism separate from non-territorial. Note, clusters were enlarged for
+                                       spatial attribute among territorial terrorism separate from non-territorial. Note, clusters were enlarged
+                                       visualization purposes and are therefore not to scale. The map is in the Albers equal- area conic
+                                       for visualization purposes and are therefore not to scale. The map is in the Albers equal- area conic
+                                       projection system.
+                                       projection system.
+                                       4. Discussion
+                                       4. Discussion
+                                             While the
+                                             While         best-performingmodel,
+                                                                               model,Random
+                                                     the best-performing                 RandomForest,Forest,demonstrated
+                                                                                                                demonstratedclustered
+                                                                                                                                  clusteredfalsefalsenega-
+                                                                                                                                                      neg-
+                                       atives,  this revealed    an  underlying     trend.   Each    cluster  is a known     hot
+                                       tives, this revealed an underlying trend. Each cluster is a known hot spot of terrorism inspot   of  terrorism    in
+                                       which   territorial   control  is the  primary    grievance      or objective.    As noted
+                                       which territorial control is the primary grievance or objective. As noted earlier, Northern    earlier,  Northern
+                                       Ireland         inundated with
+                                                 was inundated
+                                       Ireland was                        ethno-nationalist conflict
+                                                                     with ethno-nationalist       conflict from
+                                                                                                            from thethe 1960s
+                                                                                                                         1960s to   the late
+                                                                                                                                to the  late 1990s
+                                                                                                                                               1990s [43];
+                                                                                                                                                      [43];
+                                       the Basque
+                                       the            countryof
+                                            Basque country       ofSpain
+                                                                     Spainalso     sawarmed
+                                                                             alsosaw      armedconflict
+                                                                                                    conflict
+                                                                                                           fromfromthethe  1960s
+                                                                                                                        1960s       to the
+                                                                                                                               to the   earlyearly   2000s
+                                                                                                                                                 2000s be-
+                                       between    Basque      organizations    who    sought     independence        [44];
+                                       tween Basque organizations who sought independence [44]; Kosovo underwent upheaval   Kosovo     underwent       up-
+                                       heaval
+                                       with     with to
+                                             respect   respect   to autonomy
+                                                           autonomy               in thebetween
+                                                                       in the 1990’s       1990’s between
+                                                                                                     Yugoslavian Yugoslavian
+                                                                                                                      and Kosovo       Kosovo nation-
+                                                                                                                                 andnationalists      [45];
+                                       alists [45];  Corsican    nationalists   have    fought    French,   Italian,
+                                       Corsican nationalists have fought French, Italian, and Spanish security forces  and  Spanish     security    forces
+                                                                                                                                               regarding
+                                       regarding independence
+                                       independence       from Francefrom      France
+                                                                         [46]; most       [46]; most
+                                                                                      recently,          recently,
+                                                                                                   conflict           conflict
+                                                                                                             in Eastern         in Eastern
+                                                                                                                           Ukraine,    stemming  Ukraine,
+                                                                                                                                                     from
+                                       stemming
+                                       the          from the
+                                           2014 Russian         2014 Russian
+                                                             invasion,           invasion,
+                                                                         has resulted         has resulted
+                                                                                         in Russian             in Russian
+                                                                                                        separatists          separatists
+                                                                                                                       fighting              fightinginto
+                                                                                                                                  for annexation        for
+                                       annexation
+                                       Russia   [47]. into Russia [47].
+                                             While non-territorial terrorists target highly populated urban areas with                 with symbols
+                                                                                                                                              symbols of of
+                                       their grievance, separatism is a function of operating on the periphery, where               where the the current
+                                       government does not retain high      high degrees
+                                                                                   degrees of  of control.
+                                                                                                  control. These locations are likely to occur       occur
+                                       outside of the      most populated
+                                                     the most                  areas that
+                                                                                       that are
+                                                                 populated areas                   typical of
+                                                                                              are typical        other types
+                                                                                                             of other    types of
+                                                                                                                                of terrorism.
+                                                                                                                                     terrorism. This is   is
+                                       likely  thereason
+                                       likely the   reasonfor   clustering
+                                                              for  clustering     validates
+                                                                             butbut   validatesthe geographic
+                                                                                                    the geographic differences   between
+                                                                                                                         differences         these types
+                                                                                                                                        between      these
+                                       of terrorism.
+                                       types            Furthermore,
+                                               of terrorism.             the lackthe
+                                                                Furthermore,       of clustering      among non-territorial
+                                                                                        lack of clustering                         terrorismterrorism
+                                                                                                                                                 suggests
+                                                                                                                 among non-territorial
+                                       sub-classes    of terroristoftypes
+                                       suggests sub-classes                (right-wing,
+                                                                     terrorist              left-wing, environmental,
+                                                                                types (right-wing,                            etc.) maintain
+                                                                                                          left-wing, environmental,           etc.)similar
+                                                                                                                                                    main-
+                                       geographical      logic  and   planning.     Thus,    it may    be  more    appropriate
+                                       tain similar geographical logic and planning. Thus, it may be more appropriate for future    for  future    spatial
+                                       studies to examine terrorism in terms of its territorial or non-territorial nature rather than
+                                       the specific issues that drive them.
+
+ISPRS Int. J. Geo-Inf. 2022, 11, x FOR PEER REVIEW                                                                                                         9 of 12
+
+
+
+
+ISPRS Int. J. Geo-Inf. 2022, 11, 211    spatial studies to examine terrorism in terms of its territorial or non-territorial nature                         9 ofra-
+                                                                                                                                                                 12
+                                        ther than the specific issues that drive them.
+                                               These findings can play an important role in counter-terrorism studies. First, given
+                                        the Random        Forest’scan
+                                              These findings           outperformance
+                                                                            play an important of morerolecomplex
+                                                                                                           in counter-terrorism          be inferred
+                                                                                                                     models, it canstudies.        First,that
+                                                                                                                                                           giventhe
+                                        complexity      of  terrorist     target  selection   is not   high,  as  can  be deduced
+                                       the Random Forest’s outperformance of more complex models, it can be inferred that the          from    an  ensemble       of
+                                        decision     trees.   In  fact,   these   results   are  such    that  it  may   be   inferred
+                                       complexity of terrorist target selection is not high, as can be deduced from an ensemble of       that   areas   analysts
+                                        believe to
+                                       decision        be likely
+                                                   trees.  In fact,targets     based are
+                                                                      these results     on common
+                                                                                            such that it intuition   and previously
+                                                                                                            may be inferred     that areas established     litera-
+                                                                                                                                             analysts believe
+                                        ture
+                                           be are,
+                                       to                fact, the
+                                               likelyintargets        most
+                                                                  based     onlikely
+                                                                                common targets,   and rarely
+                                                                                            intuition             do terrorists
+                                                                                                         and previously       established     outside of
+                                                                                                                                   ventureliterature      are,this.
+                                                                                                                                                                 in
+                                        Additionally,
+                                       fact,               the lack
+                                              the most likely            of significant
+                                                                     targets,   and rarely relationships
+                                                                                               do terrorists between
+                                                                                                                venture  ICEWS
+                                                                                                                           outside andof GTD     data suggests
+                                                                                                                                          this. Additionally,
+                                        thatlack
+                                       the    terrorists    are notrelationships
+                                                   of significant       likely to be mobilized
+                                                                                          between ICEWS         larger
+                                                                                                       by the and     GTDsocio-political
+                                                                                                                             data suggests   discourse.     It can
+                                                                                                                                                that terrorists
+                                        be  inferred    that   terrorists     are  either   uninterested     in  public   discourse
+                                       are not likely to be mobilized by the larger socio-political discourse. It can be inferred that  or  are  largely   disas-
+                                        sociated from
+                                       terrorists            it. If uninterested
+                                                                     the former isintrue,
+                                                    are either                                 terrorism
+                                                                                          public  discourse  may    be alargely
+                                                                                                                or are    marketing      campaign
+                                                                                                                                   disassociated        of sorts,
+                                                                                                                                                     from    it. If
+                                        aimed
+                                       the  formerat moving
+                                                       is true, the    direction
+                                                                  terrorism      may       a marketingtowards
+                                                                                        conversation
+                                                                                    of be                   campaign  an area    of their
+                                                                                                                          of sorts,   aimedfavor.   If the latter
+                                                                                                                                               at moving       the
+                                        holds true,
+                                       direction        then more research
+                                                    of conversation          towards should
+                                                                                        an area       their favor.toIfcollect
+                                                                                                beofperformed                    the holds
+                                                                                                                        the latter   interactions
+                                                                                                                                             true, thenterrorists
+                                                                                                                                                           more
+                                        are interested
+                                       research    shouldin.be performed to collect the interactions terrorists are interested in.
+                                               Final predictions (Figure
+                                              Final                      (Figure 6) 6)show
+                                                                                        showthe themodel
+                                                                                                      modelcorrectly
+                                                                                                               correctly capturing
+                                                                                                                             capturing current
+                                                                                                                                           currentandandpastpasthot
+                                       hot
+                                        spotsspots
+                                                 whilewhile     removing
+                                                         removing        somesomegridsgrids           attacksattacks
+                                                                                                in which
+                                                                                         in which                       have occurred
+                                                                                                                have occurred                and predicting
+                                                                                                                                    and predicting       new lo-
+                                       new
+                                        cationslocations
+                                                   where theywhere      they
+                                                                     have          Fornot.
+                                                                                have
+                                                                             not.              For deployment
+                                                                                        deployment                    in real-world
+                                                                                                          in real-world     applications, applications,      it is
+                                                                                                                                              it is envisioned
+                                        that points that
+                                       envisioned              pointswould
+                                                        of interest       of interest   would be
+                                                                                  be sampled,         sampled,
+                                                                                                    and   the results    the results interpreted
+                                                                                                                   andinterpreted                        as a 25-
+                                                                                                                                        as a 25-square-kilo-
+                                       square-kilometer
+                                        meter area around       areathearound
+                                                                         point. the    point.
+                                                                                  In this  way,In the   way, the
+                                                                                                   thisresults      results
+                                                                                                                  would       would
+                                                                                                                          prove       prove
+                                                                                                                                   more        more dynamic
+                                                                                                                                           dynamic      than the
+                                       than
+                                        staticthe
+                                                mapstatic  map represented
+                                                       represented                  here. However,
+                                                                          here. However,       subject subject     matter expertise
+                                                                                                          matter expertise               in regional
+                                                                                                                                               studies,studies,
+                                                                                                                                in regional               terror-
+                                       terrorism,     and   machine        learning   should    be  considered     when
+                                        ism, and machine learning should be considered when interpreting any results from  interpreting     any   results   fromthe
+                                       the  model,     as terrorism       is a complex     topic  with
+                                        model, as terrorism is a complex topic with many caveats that no model can capture in in
+                                                                                                         many     caveats   that  no  model    can   capture     its
+                                       its entirety,
+                                        entirety,      including,
+                                                    including,       forfor  example,
+                                                                          example,     thethe intricacies
+                                                                                            intricacies    ofof lone
+                                                                                                              lone     wolf
+                                                                                                                    wolf      attacks.
+                                                                                                                           attacks.
+
+
+
+
+                                        Figure6.6. Random
+                                       Figure                Forestpredictions
+                                                                    predictionsof
+                                                   Random Forest                    terroristtarget
+                                                                                              targetlocations.
+                                                                                 ofterrorist                    Each red
+                                                                                                     locations.Each   reddot
+                                                                                                                           dotrepresents
+                                                                                                                                representsaagrid-cell
+                                                                                                                                              grid-cell
+                                        the model has predicted as consistent with historical targets for terrorism. Those grids that have
+                                       the model has predicted as consistent with historical targets for terrorism. Those grids that have
+                                        been attacked before are at elevated risk, while those that have never been attacked are predicted to
+                                       been attacked before are at elevated risk, while those that have never been attacked are predicted
+                                        be at risk should the political and social environment lend itself. Please note grid cells have been
+                                       to be at risk
+                                        enlarged   forshould  the political
+                                                       visualization        andtherefore
+                                                                      and are                           Theitself.
+                                                                                         not to scale.lend
+                                                                                social environment          map is   in thenote
+                                                                                                                   Please             cells have been
+                                                                                                                                 gridequal-area
+                                                                                                                            Albers               conic
+                                       enlarged
+                                        projectionfor  visualization and are therefore not to scale. The map is in the Albers equal-area conic
+                                                    system.
+                                       projection system.
+
+ISPRS Int. J. Geo-Inf. 2022, 11, 211                                                                                                10 of 12
+
+
+
+
+                                       5. Conclusions
+                                            Although this study demonstrated robust results, there remain challenges in the field
+                                       and limitations to the study. First, this study created a 25 sq. km hexagonal grid cell
+                                       approach to understand where terrorism is likely to occur. However, it did not consider
+                                       neighboring pixel values in the rasters from which the features were sampled. It may be
+                                       deduced that if an attack occurred in an area deemed agricultural but on the edge of the
+                                       pixel nearest urban areas, the attack location was not chosen due to its agricultural nature
+                                       but its proximity to urban centers. However, attempts to include this spatial attribute
+                                       degraded model performance and limited inference. Additionally, categorical variables
+                                       could not be computed in this way as it would result in the loss of the land cover class
+                                       entirely and introduce a continuous component to a categorical variable.
+                                            To ensure this limitation was not detrimental to the results of the study, multiple
+                                       experiments were conducted at different grid-cell sizes (100 and 50 square kilometers),
+                                       shapes (square), and random sampling. Across all experiments, results differed marginally,
+                                       by approximately 0.06. The method proposed in this study produced the highest results,
+                                       but relative model performance remained consistent across all studies, with Random Forest
+                                       outperforming every other model. Nonetheless, future research should improve upon this
+                                       methodology and include the spatial relationship of nearby pixel values.
+                                            Additionally, the features collected for this data contained only a snapshot of the
+                                       temporal period covered. For example, it is not believed a terrorist attack in 1970 could
+                                       have foreseen the land use of Europe in 2020, and it is unlikely the classification would
+                                       have remained across the fifty years. Greater control over the spatial-temporal aspect of
+                                       terrorism should be a consideration of future research.
+                                            Lastly, despite these studies’ results suggesting traditional classifiers outperform
+                                       neural network architectures, there remain significant areas in which deep learning could
+                                       improve upon the limitations of this work. This study approached the topic from a vector-
+                                       based solution, but the issue could also be applied from a computer vision approach using
+                                       convolutional neural networks and key point detection. Research in this area would likely
+                                       improve upon the shortcomings of this work.
+                                            The Random Forest outperformed more complex models, including multi-layered
+                                       neural networks. This is likely due to Random Forest’s robustness in the presence of
+                                       multiple issues inherent in anomaly detection studies, of which terrorism is most assuredly
+                                       a spatial anomaly. Neural network performance, however, cannot be guaranteed in the
+                                       presence of large data imbalances. In fact, class imbalance is perhaps one of the greatest
+                                       pitfalls of fully connected networks [48].
+                                            However, the model demonstrated false negative spatial correlation and therefore may
+                                       not capture all possible attack locations in Eastern Ukraine, Northern Ireland, the island of
+                                       Corsica, and the central Balkans or project to those areas subject to separatist terrorism in
+                                       the future. In doing so, this study quantitatively backed previous research’s understanding
+                                       of the geographic difference between territorial and non-territorial terrorism. Future work
+                                       should improve upon this study with respect to the consideration of surrounding pixel
+                                       values among the raster data sets.
+                                            From this work, we can conclude the following: terrorist target selection is not complex
+                                       and can largely be inferred. Additionally, non-separatist terrorism operates with like-
+                                       spatial logic but distinct from that of separatists. Parsing the spatial dimension of territorial
+                                       terrorism will likely require a unique set of explanatory variables and model selection that
+                                       is not captured here.
+
+                                       Author Contributions: Conceptualization, Caleb Buffa and Vasit Sagan; methodology, Caleb Buffa
+                                       and Vasit Sagan; validation, Caleb Buffa; formal analysis, Caleb Buffa; resources, Vasit Sagan; data
+                                       curation, Caleb Buffa and Gregory Brunner; writing—original draft preparation, Caleb Buffa, Gregory
+                                       Brunner, Vasit Sagan and Zachary Phillips; writing—review and editing, Caleb Buffa, Gregory
+                                       Brunner, Vasit Sagan and Zachary Phillips; visualization, Caleb Buffa, Gregory Brunner, Vasit Sagan
+                                       and Zachary Phillips; supervision, Vasit Sagan, Gregory Brunner and Zachary Phillips; project
+
+ISPRS Int. J. Geo-Inf. 2022, 11, 211                                                                                                   11 of 12
+
+
+
+
+                                       administration, Vasit Sagan, Gregory Brunner and Zachary Phillips. All authors have read and agreed
+                                       to the published version of the manuscript.
+                                       Funding: This research received no external funding.
+                                       Data Availability Statement: Publicly available datasets were analyzed in this study. Data can
+                                       be found here: www.worldpop.org (accessed on 11 March 2022). Other data presented in this
+                                       study are openly available at https://doi.org/10.5281/zenodo.3939050 (accessed on 11 March 2022)
+                                       https://www.doi.org/10.1177/0022343310378914 (accessed on 11 March 2022) and https://doi.org/
+                                       10.7910/DVN/28075 (accessed on 11 March 2022), reference numbers [27,29,30].
+                                       Conflicts of Interest: The authors declare no conflict of interest.
+
+References
+1.    Cooper, H.A. Terrorism: The problem of definition revisited. Am. Behav. Sci. 2001, 44, 881–893. [CrossRef]
+2.    Sanchez-Cuenca, I.; de la Calle, L. What we talk about when we talk about terrorism. Politics Soc. 2011, 39, 451–472. [CrossRef]
+3.    Murphy, J. Defining international terrorism: A way out of the quagmire. In The Progression of International Law; Dinstein, Y., Domb,
+      F., Eds.; Brill Nijhoff: Leiden, The Netherlands, 2011; pp. 465–490. [CrossRef]
+4.    Ruby, C.L. The definition of terrorism. Anal. Soc. Issues Public Policy 2002, 2, 9–14. [CrossRef]
+5.    Bahgat, K.; Medina, R. An overview of geographical perspectives and approaches in terrorism research. Perspect. Terror. 2013, 7,
+      38–72. Available online: http://www.jstor.org/stable/26296908 (accessed on 8 November 2020).
+6.    Flint, C. The Geography of War and Peace: From Death Camps to Diplomats; Oxford University Press: Oxford, UK, 2004.
+7.    Galgano, F.A. A geographical analysis of un-governed spaces. Pa. Geogr. 2006, 44, 67.
+8.    Kittner, C. The role of safe havens in Islamist terrorism. Terror. Political Violence 2007, 19, 307–329. [CrossRef]
+9.    Korteweg, R. Black holes: On terrorist sanctuaries and governmental weakness. Civil Wars 2008, 10, 60–71. [CrossRef]
+10.   Rock, J. The geographic nature of terrorism. Pa. Geogr. 2013, 44, 133. Available online: http://www.ontology.buffalo.edu/smith/
+      courses01/papers/Rock(Geo).pdf (accessed on 8 November 2020).
+11.   Savitch, H.; Ardashev, G. Does terror have an urban future? Urban Stud. 2001, 38, 2515–2533. [CrossRef]
+12.   Hobbs, J. The geographical dimensions of Al-Qaeda rhetoric. Geogr. Rev. 2005, 95, 301–327. [CrossRef]
+13.   Nunn, S. Incidents of terrorism in the United States, 1997–2005. Geogr. Rev. 2007, 97, 89–111. [CrossRef]
+14.   Mustafa, D. The terrible geographicalness of terrorism: Reflections of a hazards geographer. Antipode 2005, 37, 72–92. [CrossRef]
+15.   Braithwaite, A.; Li, Q. Transnational terrorism hot spots: Identification and impact evaluation. Confl. Manag. Peace Sci. 2007, 24,
+      281–296. [CrossRef]
+16.   Kliot, K.; Charney, I. The geography of suicide terrorism in Israel. GeoJournal 2006, 66, 353–373. [CrossRef]
+17.   Berrebi, C.; Lakdawalla, D. How does terrorism risk vary across space and time? An analysis based on the Israeli experience. Def.
+      Peace Econ. 2007, 18, 113–133. [CrossRef]
+18.   Smith, B.L.; Cothren, J.; Roberts, P.; Damphousse, K.R. Geospatial Analysis of Terrorist Activities: The Identification of Spatial and
+      Temporal Patterns of Preparatory Behavior of International and Environmental Terrorists; Terrorism Research Center in Fulbright College,
+      2008. Available online: https://www.ncjrs.gov/pdffiles1/nij/grants/222909.pdf (accessed on 8 November 2020).
+19.   Rossmo, K.; Harries, K. The geospatial structure of terrorist cells. Justice Q. 2011, 28, 221–248. [CrossRef]
+20.   Singh, S.; Allanach, J.; Tu, H.; Pattipati, K.; Krishna, P.; Willett, P. Stochastic modeling of a terrorist event via the ASAM system. In
+      Proceedings of the 2004 IEEE International Conference on Systems, Man and Cybernetics (IEEE Cat. No.04CH37583), The Hague,
+      The Netherlands, 10–13 October 2004. [CrossRef]
+21.   Dixon, S.J.; Dixon, M.B.; Elliot, J.; Guest, E.; Mullier, D.J. A neural network for counter-terrorism. In Research and Development in
+      Intelligent Systems XXVIII; Bramer, M., Petridis, M., Nolle, L., Eds.; Springer: Berlin/Heidelberg, Germany, 2011; pp. 229–234.
+22.   Saha, S.; Aladi, H.; Kurian, A.; Basu, A. Future Terrorist Attack Prediction Using Machine Learning Techniques; PESIT South Campus:
+      Bengaluru, India, 2017. [CrossRef]
+23.   Mo, H.; Meng, X.; Li, J.; Zhao, S. Terrorist event prediction based on revealing data. In Proceedings of the Institute of Electrical
+      and Electronics Engineers, Beijing, China, 10–12 March 2017. [CrossRef]
+24.   Ding, F.; Ge, Q.; Jiang, D.; Fu, J.; Hao, M. Understanding the dynamics of terrorism events with multiple-discipline datasets and
+      machine learning approach. PLoS ONE 2017, 12, e0179057. [CrossRef]
+25.   Uddin, M.I.; Zada, N.; Aziz, F.; Saeed, Y.; Zeb, A.; Shah, S.A.A.; Al-Khasawneh, M.A.; Mahmoud, M. Prediction of future terrorist
+      activities using deep neural networks. Complexity 2020, 2020, 1373087. [CrossRef]
+26.   LaFree, G. The global terrorism database (GTD): Accomplishments and challenges. Perspect. Terror. 2010, 4, 24–46. Available
+      online: https://www.jstor.org/stable/26298434F (accessed on 8 November 2020).
+27.   Buchhorn, M.; Smets, B.; Bertels, L.; De Roo, B.; Lesiv, M.; Tsendbazar, N.-E.; Herold, M.; Fritz, S. Copernicus Global Land Service:
+      Land Cover 100m: Collection 3: Epoch 2019: Globe; Zenodo: Genève, Switzerland, 2020. [CrossRef]
+28.   Li, X.; Zhou, Y.; Zhao, M.; Zhao, X. A harmonized global nighttime light dataset 1992–2018. Sci. Data 2020, 7, 168. [CrossRef]
+29.   Raleigh, C.; Linke, A.; Hegre, H.; Karlsen, J. Introducing ACLED: An armed conflict location and event dataset. J. Peace Res. 2010,
+      47, 651–660. [CrossRef]
+
+ISPRS Int. J. Geo-Inf. 2022, 11, 211                                                                                                 12 of 12
+
+
+
+
+30.   Boschee, E.; Lautenschlager, J.; O’Brien, S.; Shellman, S.; Starz, J.; Ward, M. ICEWS Coded Event Data; Harvard Dataverse: Harvard,
+      MA, USA, 2015. [CrossRef]
+31.   Altmann, A.; Tolosi, L.; Sander, O.; Lengauer, T. Permutation importance: A corrected feature importance measure. Bioinformatics
+      2010, 26, 1340–1347. [CrossRef] [PubMed]
+32.   Guo, X.; Yin, Y.; Dong, C.; Yang, G.; Zhou, G. On the Class Imbalance Problem. In Proceedings of the 2008 Fourth International
+      Conference on Natural Computation, Jinan, China, 18–20 October 2008; pp. 192–201. [CrossRef]
+33.   Pedregosa, F.; Varoquaux, G.; Gramfort, A.; Michel, V.; Thirion, B.; Grisel, O.; Blondel, M.; Prettenhofer, P.; Weiss, R.; Dubourg, V.;
+      et al. Scikit-learn: Machine Learning in Python. J. Mach. Learn. Res. 2011, 12, 2825–2830.
+34.   Grandini, M.; Bagli, E.; Visani, G. Metrics for Multi-Class Classification: An Overview. arXiv 2020, arXiv:2008.05756.
+35.   Kalantar, B.; Pradhan, B.; Naghibi, S.A.; Motevalli, A.; Mansor, S. Assessment of the effects of training data selection on the
+      landslide susceptibility mapping: A comparison between support vector machine (SVM), logistic regression (LR) and artificial
+      neural networks (ANN). Geomat. Nat. Hazards Risk 2018, 9, 49–69. [CrossRef]
+36.   Bui, D.T.; Pradhan, B.; Lofman, O.; Revhaug, I.; Dick, O.B. Application of support vector machines in landslide susceptibility
+      assessment for the Hoa Binh province (Vietnam) with kernel functions analysis. Int. Congr. Environ. Model. Softw. 2012, 226.
+      Available online: http://scholarsarchive.byu.edu/iemssconference/2012/Stream-B/226 (accessed on 8 November 2020).
+37.   Zhang, T. Solving large scale linear prediction problems using stochastic gradient descent algorithms. In Proceedings of the
+      Twenty-First International Conference on Machine Learning, Banff, AB, Canada, 4–8 July 2004. [CrossRef]
+38.   Belgiu, M.; Dragut, L. Random forrest in remote sensing: A review of applications and future directions. ISPRS J. Photogramm.
+      Remote Sens. 2016, 114, 24–31. [CrossRef]
+39.   Rahayu, S.P.; Embong, A. Overview of random forest: Effective ensemble method in modern data mining. In Proceedings of
+      the National Conference on Software Engineering and Computer Systems 2007 (NaCES 2007); 2007. Available online: http:
+      //umpir.ump.edu.my/id/eprint/982/1/NaCSES-2007-133_Overview_of_Random_Forest_Effective_Ensemble.pdf (accessed on
+      8 November 2020).
+40.   Wang, L. (Ed.) Support Vector Machines: Theory and Applications; Springer: Berlin/Heidelberg, Germany, 2005; Volume 7.
+41.   Suthaharan, S. Support vector machine. In Machine Learning Models and Algorithms for Big Data Classification; Springer:
+      Berlin/Heidelberg, Germany, 2016; pp. 207–235. [CrossRef]
+42.   Kim, H.C.; Pang, S.; Je, H.M.; Kim, D.; Bang, S.Y. Constructing support vector machine ensemble. Pattern Recognit. 2003, 36,
+      2757–2767. [CrossRef]
+43.   Stevenson, J. The Price of Peace in Northern Ireland: “Say Nothing” Shows How Slow Reconciliation Can Be; Foreign Affairs: Congers, NY,
+      USA, 2019; Available online: https://www.foreignaffairs.com/reviews/review-essay/2019-05-20/price-peace-northern-ireland
+      (accessed on 8 November 2020).
+44.   Balfour, S. A Brief History of Catalan Nationalism: The Roots of the Current Crisis. Foreign Affairs. 2017. Available online:
+      https://www.foreignaffairs.com/articles/spain/2017-10-18/brief-history-catalan-nationalism (accessed on 8 November 2020).
+45.   Kupchan, F.C.A. Independence for Kosovo. Foreign Affairs. 2005. Available online: https://www.foreignaffairs.com/articles/
+      europe/2005-10-01/independence-kosovo (accessed on 8 November 2020).
+46.   Thompson, I. Settlement and conflict in Corsica. Trans. Inst. Br. Geogr. 1978, 3, 259–273. [CrossRef]
+47.   Motyl, A.J. War Comes to Ukraine: The Consequences of the Crash in Donetsk. Foreign Affairs. 2014. Available online:
+      https://www.foreignaffairs.com/articles/russian-federation/2014-07-17/war-comes-ukraine (accessed on 8 November 2020).
+48.   Johnson, J.M.; Khoshgoftaar, T.M. Survey on deep learning with class imbalance. J. Big Data 2019, 6, 27. [CrossRef]
+

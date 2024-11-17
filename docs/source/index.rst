@@ -31,7 +31,7 @@ Contents
    02_parameters
    03_pasting_code
    04_login
-   05_something
+   05_downloading_packages
    06_jotain
    07_pirat
    08_pegasus

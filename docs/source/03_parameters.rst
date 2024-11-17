@@ -63,4 +63,4 @@ Google Brain team (2024): `Project Tensorflow <https://projector.tensorflow.org/
 
 Wikipedia (2024): `Beam search <https://en.wikipedia.org/wiki/Beam_search>`_,
 
-Santos, O (2023): `Understanding Key AI Language Model Parameters: top_p, Temperature, num_beams, and do_sample <https://becomingahacker.org/understanding-key-ai-language-model-parameters-top-p-temperature-num-beams-and-do-sample-9874bf3c89ae>`_
+Santos, O (2023): `Understanding Key AI Language Model Parameters: <https://becomingahacker.org/understanding-key-ai-language-model-parameters-top-p-temperature-num-beams-and-do-sample-9874bf3c89ae>`_ top_p, Temperature, num_beams, and do_sample

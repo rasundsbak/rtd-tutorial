@@ -3,7 +3,7 @@
 ===============
 You have done this already: `Sign up <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_ for the course.
 
-For everyone
+First time users of Educloud
 ------------
 * Download Microsoft Authenticator on your phone. It may be downloaded from App Store (iPhone) or Google Play (Android)
 
@@ -14,6 +14,10 @@ For everyone
 *  Try your setup on `Educloud on demand <https://ood.educloud.no>`_
 
 In this tutorial, you will learn how to set up your own virtual environment at the UiO Nvidia Cluster. This repo is a part of the course held as a part of `Digital Scholarship Days 2025 <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/00-mainpage.html/>`_
+
+Already users of Educloud
+------------
+Go to https://selfservice.educloud.no/ and apply for project membership under **Project membership**
 
 Log in to through SSH, in Bash or Terminal and making your own virtual environment on ec443
 -------------------------------------------------

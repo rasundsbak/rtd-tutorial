@@ -22,7 +22,7 @@ Already users of Educloud
 ------------
 Go to https://selfservice.educloud.no/ and apply for project membership under **Project membership**
 
-Log in to through SSH, in Bash or Terminal and making your own virtual environment on ec443
+Log in to through SSH, in Bash, Terminal, Command prompt or ledetekst and making your own virtual environment on ec443
 -------------------------------------------------
 
 .. index:: login, ssh, bash, terminal

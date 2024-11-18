@@ -10,17 +10,18 @@ First time users of Educloud
 ------------
 * Download Microsoft Authenticator on your phone. It may be downloaded from App Store (iPhone) or Google Play (Android)
 
-*  `Follow the instructions <https://www.uio.no/english/services/it/research/platforms/edu-research/help/getting-started-with-educloud.html#with-idporten>`_ for first time setup of Educloud Research.
+* Apply for `Membership in the group <https://selfservice.educloud.no/membershipapplication>`_ 
+* `Follow the instructions <https://www.uio.no/english/services/it/research/platforms/edu-research/help/getting-started-with-educloud.html#with-idporten>`_ for first time setup of Educloud Research.
+
+Already users on Educloud:
+--------------------------
+* Go to https://selfservice.educloud.no/ and apply for project membership under **Project membership**
 * Apply for project membership to ec443
 * send email to `Ragnhild <ragnhild.sundsbak@ub.uio.no>`_ with heading "I applied for membership in ec443"
 * When project manager has approved of your application, log in to Educloud with your two factor authenticator
 *  Try your setup on `Educloud on demand <https://ood.educloud.no>`_
 
 In this tutorial, you will learn how to set up your own virtual environment at the UiO Nvidia Cluster. This repo is a part of the course held as a part of `Digital Scholarship Days 2025 <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/00-mainpage.html/>`_
-
-Already users of Educloud
-------------
-Go to https://selfservice.educloud.no/ and apply for project membership under **Project membership**
 
 Log in to through SSH, in Bash, Terminal, Command prompt or ledetekst and making your own virtual environment on ec443
 -------------------------------------------------
@@ -34,9 +35,6 @@ Terminal view 1::
    
    Last login: Sat Nov  2 10:51:34 on console
    (base) navnesenmaskin@eduroam-193-157-163-121 ~ %
-
-
-
 
 
 Terminal view 2::

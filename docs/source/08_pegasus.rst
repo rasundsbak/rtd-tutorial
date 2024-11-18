@@ -4,7 +4,11 @@
 =============================================
 .. index:: noko
 
-Before starting to run summarizations, everyone should put the 5 pdfs into a folder called "documents" at your homedrive at ec443. All of these documents are taken from DOAJ, a database for open research. References will be found below. The idea is that you are a researcher, with a specific subject in mind. In this case, I had a search for "terrorism" and "western europe" in DOAJ. The idea right now is not to do new scientifig discoveries regarding terrorism in europe, but rather to connect the documents to an AI and see how the system can 
+Before starting to run summarizations, everyone should put the 5 pdfs into a folder called "documents" at your homedrive at ec443. See illustration below.
+
+
+
+The easiest way doing this, is to use the browser view for Fox. All of these documents are taken from DOAJ, a database for open research. References will be found below. The idea is that you are a researcher, with a specific subject in mind. In this case, I had a search for "terrorism" and "western europe" in DOAJ. The idea right now is not to do new scientifig discoveries regarding terrorism in europe, but rather to connect the documents to an AI and see how the system can 
 
 code view::
 

@@ -18,6 +18,13 @@ In this documentation, you will learn how to set up an AI process at the UiO Nvi
 .. todo:: 
    Todo 0.2: Legg emneord på alle kapitlene der det mangler.
 
+Learning objectives
+-------------------
+- Learn how large language models (LLMs) are made
+- learn how to use UiOs infrastructure for computational power to use various open LLMs
+- Learn how to create effective promts and adjust relevant parameters
+- Connect the model to your own data in the form of PDFs og text data.
+
 Contents
 --------
 

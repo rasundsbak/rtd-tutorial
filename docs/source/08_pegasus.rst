@@ -9,9 +9,7 @@ Before starting to run summarizations, everyone should move 5 chosen pdfs from a
 
 .. image:: fox_dokument.png
 
-The easiest way doing this, is to use the browser view for Fox. All of these documents are taken from DOAJ, a database for open research. References will be found below. The idea is that you are a researcher, with a specific subject in mind. In this case, I had a search for "terrorism" and "western europe" in DOAJ. The idea right now is not to do new scientifig discoveries regarding terrorism in europe, but rather to connect the documents to an AI and see how the system can 
-
-
+The easiest way doing this, is to use the browser view for Fox. The idea is that you are a researcher, with a specific subject in mind. In this case, I had a search for "terrorism" and "western europe" in DOAJ. Unfortunately, we are not yet fot to make new scientific discoveries regarding terrorism in Europe. Howeverm this setup will connect to the right places on the computer, and make the process work. In this project grpup, we have an ambition to help users do the setup, and generate functioning outputs. We are aspiring to make RAG or other more advanced AI processes once we have started educating our public on how the system is working.
 
 code view::
 

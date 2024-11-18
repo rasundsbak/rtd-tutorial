@@ -10,7 +10,7 @@ Run large language models through Educloud UiO
 
 It is a big piece og software, that you can talk to. It will give you differend kinds of response depending on the functionality. You may talk to the LLM from a web page, or from an app. At the UiO we have had access to Chat GPT since 2023. In this course we want to learn you what goes on behind that interface, and you will learn more on how to start up your own AI from a Script in Jupyter Lab.
 
-.. ordsky.png::
+.. image:: ordsky.png
 
 **In this course we will go from 1 to 100**
 

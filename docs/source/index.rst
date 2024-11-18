@@ -44,7 +44,7 @@ Contents
    07_pirat
    08_pegasus
    09_algo
-   10_alami
+   10_valami
    11_juoga
    21_elastic_search
    22_disk_quota

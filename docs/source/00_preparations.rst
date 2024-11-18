@@ -4,7 +4,7 @@
 You have done this already: `Sign up <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_ for the course.
 
 .. todo:: 
-   Todo 0.3: Splitt i First time og already uders, slik at det blir en for en.
+   Todo 0.3: Splitt i First time og already users, slik at det blir en for en.
 
 First time users of Educloud
 ------------
@@ -83,6 +83,3 @@ Terminal view 6::
    # Aktivér ditt venv
    source /fp/projects01/ec443/**[your username at uio)**/my_venv/bin/activate
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Table of Contents

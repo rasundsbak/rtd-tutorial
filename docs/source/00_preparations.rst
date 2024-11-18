@@ -1,13 +1,21 @@
 .. _00_preparations: Before you come:
 00 Preparations: Before you come
 ===============
-* Only for those who plan to attend Digital Scholarship Days in January 2025: `Sign up <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_ for the course.
+You have done this already: `Sign up <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_ for the course.
 
-For everyone
+.. todo:: 
+   Todo 0.3: Splitt i First time og already users, slik at det blir en for en.
+
+First time users of Educloud
 ------------
 * Download Microsoft Authenticator on your phone. It may be downloaded from App Store (iPhone) or Google Play (Android)
 
-*  `Follow the instructions <https://www.uio.no/english/services/it/research/platforms/edu-research/help/getting-started-with-educloud.html#with-idporten>`_ for first time setup of Educloud Research.
+* Apply for `Membership in the group <https://selfservice.educloud.no/membershipapplication>`_ 
+* `Follow the instructions <https://www.uio.no/english/services/it/research/platforms/edu-research/help/getting-started-with-educloud.html#with-idporten>`_ for first time setup of Educloud Research.
+
+Already users on Educloud:
+--------------------------
+* Go to https://selfservice.educloud.no/ and apply for project membership under **Project membership**
 * Apply for project membership to ec443
 * send email to `Ragnhild <ragnhild.sundsbak@ub.uio.no>`_ with heading "I applied for membership in ec443"
 * When project manager has approved of your application, log in to Educloud with your two factor authenticator
@@ -15,7 +23,7 @@ For everyone
 
 In this tutorial, you will learn how to set up your own virtual environment at the UiO Nvidia Cluster. This repo is a part of the course held as a part of `Digital Scholarship Days 2025 <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/00-mainpage.html/>`_
 
-Log in to through SSH, in Bash or Terminal and making your own virtual environment on ec443
+Log in to through SSH, in Bash, Terminal, Command prompt or ledetekst and making your own virtual environment on ec443
 -------------------------------------------------
 
 .. index:: login, ssh, bash, terminal
@@ -23,13 +31,10 @@ Log in to through SSH, in Bash or Terminal and making your own virtual environme
 
 Open the Command prompt (PC) or Terminal. Log in to Fox using ssh. You will need to read the information on the USIT page `Fox Account Creation and Login (SSH) <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/account-login.md>`_
 
-This is an example how it may look: 
-
 Terminal view 1::
    
    Last login: Sat Nov  2 10:51:34 on console
    (base) navnesenmaskin@eduroam-193-157-163-121 ~ %
-
 
 
 Terminal view 2::
@@ -38,7 +43,8 @@ Terminal view 2::
    (base) navnesen@eduroam-193-157-163-121 ~ % ssh ec-navnesen@fox.educloud.no
    (ec-navnesen@fox.educloud.no) One-Time_Code: 
 
-
+.. todo:: 
+   Todo 0.4: fjern alt anna enn ec-yourusername@fox.educloud.no
 
 Terminal view 3::
 
@@ -75,11 +81,4 @@ Terminal view 5::
 Terminal view 6::
 
    # Aktivér ditt venv
-   source /fp/projects01/ec443/**[your username at uio]**/my_venv/bin/activate
-
-Terminal view 7::
-
-   We encourage you to choose the least busy machine.
-   Last login: Thu Nov  7 09:13:17 2024 from ood-prod01.educloud.no
-   [ec-palml@login-1 ~]$ source /fp/projects01/ec443/**yourusername**/my_venv/bin/activate
-   (my_venv) [ec-yourusername@login-1 ~]$
+   source /fp/projects01/ec443/**[your username at uio)**/my_venv/bin/activate

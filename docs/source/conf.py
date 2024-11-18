@@ -39,11 +39,9 @@ exclude_patterns = []
 html_theme = "pyramid"
 
 # -- Options for TODO extension --
-# Bruke denne linjen for å INKLUDERE todo-innhold
-todo_include_todos = True
-
-# Bruke denne linjen for å EKSKLUDERE todo-innhold
-#todo_include_todos = False
+# Inkludere eller ekskludere todo-innhold
+# todo_include_todos = True
+todo_include_todos = False
 
 # -- Options for EPUB output --
 epub_show_urls = 'footnote'

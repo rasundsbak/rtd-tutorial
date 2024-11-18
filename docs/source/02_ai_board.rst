@@ -21,6 +21,7 @@ Wether you like it or not, AI may be your new colleague. When i talk about aspec
 **Cluster**, The Fox is a `High performance computing cluster for Educloud research users <https://www.uio.no/english/services/it/research/hpc/fox/>`_. A Computing Cluster is a set of connected computers that work together so closely that in many respects they function as a single computer.
 
 .. image:: fox_hpc.png
+
 (UiO it department 2024: dScience – Centre for Computational and Data Science)
 
 **HPC**, A High Performance Computing cluster
@@ -38,4 +39,3 @@ Wether you like it or not, AI may be your new colleague. When i talk about aspec
 
 .. todo:: 
   Todo 2.1: Vi må legge inn oppgaver, i hvert eneste kapittel.
-

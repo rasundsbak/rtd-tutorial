@@ -16,7 +16,7 @@ Fox, Cuda and Cluster
 ---------------------
 Wether you like it or not, AI may be your new colleague. When i talk about aspects of the setup on Fox, i say Cuda, Fox or Cluster.
 
-**CUDA** means Compute Unified Device Architecture. According to Wikipedia is a proprietary parallel computing platform and interface, that allows software to use certain types of graphics processing units (GPUs) (Wikipedia Nov. 12th 2024). 
+**CUDA** means Compute Unified Device Architecture. According to Wikipedia is a proprietary parallel computing platform and interface, that allows software to use certain types of graphics processing units (GPUs) (Wikipedia Nov. 12th 2024). It has programming languages C++, Cuda C and libraries for mathemathics like cuBLAS. Cuda is made by the firm Nvidia.
 
 **Cluster**, The Fox is a `High performance computing cluster for Educloud research users <https://www.uio.no/english/services/it/research/hpc/fox/>`_. A Computing Cluster is a set of connected computers that work together so closely that in many respects they function as a single computer.
 

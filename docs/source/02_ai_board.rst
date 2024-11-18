@@ -20,6 +20,8 @@ Wether you like it or not, AI may be your new colleague. When i talk about aspec
 
 **Cluster**, The Fox is a `High performance computing cluster for Educloud research users <https://www.uio.no/english/services/it/research/hpc/fox/>`_. A Computing Cluster is a set of connected computers that work together so closely that in many respects they function as a single computer.
 
+.. image:: fox_hpc.png
+
 **HPC**, A High Performance Computing cluster
 
 **Transformers** A transformer is a learning architecture developed by researchers at Google and based on the multi-head attention mechanism, proposed in the 2017 paper "Attention Is All You Need".

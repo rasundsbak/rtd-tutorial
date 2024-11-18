@@ -12,7 +12,8 @@ It is a big piece og software, that you can talk to. It will give you differend 
 
 .. ordsky.png::
 
-**In this course we will go from 1 to 100 on six hours**
+**In this course we will go from 1 to 100**
+
 You wioll come out fluent in how to set up, prompt and use parameters to regulate the creativiti of the language model. This process is not commercial and might contribute to bringing the science forward.
 
 

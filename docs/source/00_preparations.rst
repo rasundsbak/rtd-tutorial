@@ -23,6 +23,8 @@ Log in to through SSH, in Bash or Terminal and making your own virtual environme
 
 Open the Command prompt (PC) or Terminal. Log in to Fox using ssh. You will need to read the information on the USIT page `Fox Account Creation and Login (SSH) <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/account-login.md>`_
 
+This is an example how it may look: 
+
 Terminal view 1::
    
    Last login: Sat Nov  2 10:51:34 on console
@@ -73,4 +75,11 @@ Terminal view 5::
 Terminal view 6::
 
    # Aktivér ditt venv
-   source /fp/projects01/ec443/**[your username at uio)**/my_venv/bin/activate
+   source /fp/projects01/ec443/**[your username at uio]**/my_venv/bin/activate
+
+Terminal view 7::
+
+   We encourage you to choose the least busy machine.
+   Last login: Thu Nov  7 09:13:17 2024 from ood-prod01.educloud.no
+   [ec-palml@login-1 ~]$ source /fp/projects01/ec443/**yourusername**/my_venv/bin/activate
+   (my_venv) [ec-yourusername@login-1 ~]$

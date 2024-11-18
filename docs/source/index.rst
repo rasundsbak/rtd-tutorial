@@ -37,13 +37,13 @@ Contents
    00_preparations
    01_downloading_packages
    02_ai_board
-   03_parameters
-   04_hello_world
+   03_hello_world
+   04_parameters
    05_login
    06_jotain
    07_pirat
    08_pegasus
-   09_algo
+   09_forside
    10_valami
    11_juoga
    21_elastic_search

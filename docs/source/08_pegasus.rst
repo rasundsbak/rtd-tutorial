@@ -7,7 +7,7 @@
 
 Before starting to run summarizations, everyone should move 5 chosen pdfs from a shared space into a folder called "documents" at your homedrive at ec443. The reason is that when you get the output, the user rights management at fox, will be set up much easier if whe do it in the way described here, than if you would choose to make the model generate output on your procejt area that you have at tje same place as the venv. See illustration below.
 
-.. image:: fox_document.png
+.. image:: fox_dokument.png
 
 The easiest way doing this, is to use the browser view for Fox. All of these documents are taken from DOAJ, a database for open research. References will be found below. The idea is that you are a researcher, with a specific subject in mind. In this case, I had a search for "terrorism" and "western europe" in DOAJ. The idea right now is not to do new scientifig discoveries regarding terrorism in europe, but rather to connect the documents to an AI and see how the system can 
 

@@ -27,7 +27,7 @@ Jupyter lab keyboard shortcuts
 
 it may be useful for you to look at some `Jupyter lab shortcuts <https://gist.github.com/discdiver/9e00618756d120a8c9fa344ac1c375ac>`_
 
-..note::
+.. note::
 
   Task 4.2: How do we run a cell in Jupyter lab?
   Task 4.3: How do we stop a cell from running?

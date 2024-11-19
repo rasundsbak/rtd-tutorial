@@ -8,17 +8,33 @@ Run large language models through Educloud UiO
 
 .. index:: algo
 
+Contents
+--------
 
-**What is AI and what is an LLM?**
+.. toctree::
+   :maxdepth: 2
+   :caption: Table of Contents
+   :titlesonly:
 
-It is a big piece og software, that you can talk to. It will give you differend kinds of response depending on the functionality. You may talk to the LLM from a web page, or from an app. At the UiO we have had access to Chat GPT since 2023. In this course we want to learn you what goes on behind that interface, and you will learn more on how to start up your own AI from a Script in Jupyter Lab.
+   00_toc
+   01_preparations
+   02_downloading_packages
+   03_ai_board
+   04_parameters
+   05_hello_world
+   06_login
+   07_jotain
+   08_pirat
+   09_pegasus
+   09_algo
+   10_valami
+   11_juoga
+   21_elastic_search
+   22_disk_quota
+   30_todo
 
-.. image:: ordsky.png
+Indices and tables
+==================
 
-**In this course we will go from 1 to 100**
-
-You will come out fluent in how to set up, prompt and use parameters to regulate the creativiti of the language model. This process is not commercial and might contribute to bringing the science forward.
-
-
-
-
+* :ref:`genindex`
+* :ref:`search`

@@ -1,5 +1,5 @@
-.. _00_preparations: Before you come:
-00 Preparations: Before you come
+.. _01_preparations: Before you come:
+01 Preparations: Before you come
 ===============
 You have done this already: `Sign up <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_ for the course.
 

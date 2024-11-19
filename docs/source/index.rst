@@ -30,20 +30,18 @@ Contents
    :caption: Table of Contents
    :titlesonly:
 
-   00_preparations
-   01_downloading_packages
-   02_ai_board
-   03_hello_world
-   04_parameters
+   00_run_llms
+   01_preparations
+   02_downloading_packages
+   03_ai_board
+   04_hello_world
    05_login
-   06_jotain
+   06_prompting
    07_pirat
-   08_pegasus
-   09_forside
+   08_parameters
+   09_pegasus
    10_valami
    11_juoga
-   21_elastic_search
-   22_disk_quota
    30_todo
 
 Indices and tables

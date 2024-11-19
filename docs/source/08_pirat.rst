@@ -70,7 +70,7 @@ Cell 4::
   import sys
   print(f"Python executable in use: {sys.executable}")
 
-**The economist example**
+**The pirate example**
 Cell 5::
 
   # Angi stien til Hugging Face cache (felles for alle)

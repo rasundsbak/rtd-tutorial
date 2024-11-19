@@ -1,6 +1,6 @@
-.. _01_downloading_packages: to your new venv
+.. _02_downloading_packages: to your new venv
 
-01 Downloading packages to venv
+02 Downloading packages to venv
 ===================================
 
 .. index:: something

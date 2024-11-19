@@ -149,10 +149,9 @@ Cell inspiration for task 8.1::
     )
 
 
-Save your jupyter notebook in your home directory in jupyter lab, and open a new one. Check that you have ordered enough time on Fox for the next lesson.
+..note::
 
-
-
+  Task 8.2: Save your jupyter notebook in your home directory in jupyter lab, and open a new one. Check that you have ordered enough time on the Fox for the next lesson.
 
 
 

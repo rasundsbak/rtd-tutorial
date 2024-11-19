@@ -32,7 +32,7 @@ Wether you like it or not, AI may be your new colleague. When i talk about aspec
 
 **llama_cpp** is a C++ library that allows us to run quantized models. The cpp format also developed by developed by @ggerganov interprets the GGML and GGUF formats.
 
-.. note:
+.. note::
 
   Task: Write a list over concepts that you do not understand. Go in pairs, and discuss the concepts you want to elaborate on. Use google, UiO GPT or an encyclopedia from the library.
 

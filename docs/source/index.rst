@@ -30,17 +30,17 @@ Contents
 
    00_run_llms
    01_preparations
-   02_login
+   02_easy_login
    03_downloading_packages
-   03_ai_board
-   04_hello_world
-   05_login
-   06_prompting
-   07_pirat
-   08_parameters
-   09_pegasus
-   10_valami
+   04_ai_board
+   05_hello_world
+   06_where_ais_live
+   07_prompting
+   08_pirat
+   09_parameters
+   10_pegasus
    11_juoga
+   12_valami
    30_todo
 
 Indices and tables

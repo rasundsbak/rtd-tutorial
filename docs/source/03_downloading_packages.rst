@@ -1,5 +1,5 @@
-.. _02_downloading_packages:
-02 Downloading packages to venv
+.. _03_downloading_packages:
+03 Downloading packages to venv
 ==============================
 .. index:: something
 

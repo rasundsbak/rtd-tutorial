@@ -1,7 +1,7 @@
 .. _00_run_llms:
-
 00 More information and learning objectives
 ==================================
+
 
 .. image:: fox.png
 UiO, the Fox and the Nvidia cluster

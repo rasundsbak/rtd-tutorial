@@ -1,7 +1,7 @@
-.. _00_toc:
+.. _00_overview:
 
-00 Table of contents
-====================
+00 Overview
+===========
 
 Run large language models through Educloud UiO
 -----------------------------------------

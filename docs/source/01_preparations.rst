@@ -61,11 +61,13 @@ Terminal view 3::
 In the coming examples, if you have problems copying and pasting into the terminal, it is maybe the best practice to write in the commands directly. But write slowly so that you see that it gets right, before presing enter. Do not fear. Remember also to fill in the right details where it says [your username at uio]
 
 **Change into the right subdirectory**
+
 Terminal view 4::
 
    cd /fp/projects01/ec443
 
 **Make a directory at ec443, where you plan to have your working files**
+
 Terminal view 5::
 
    mkdir [your username at uio]
@@ -73,11 +75,13 @@ Terminal view 5::
 **Remember to put in your username before you copy and paste!**
 
 **Making a virtual env for python packages**
+
 Terminal view 6::
 
    python -m venv /fp/projects01/ec443/[your username at uio]/my_venv
 
-**Aktivér ditt venv**
+**Aktivate your venv**
+
 Terminal view 7::
 
    source /fp/projects01/ec443/**[your username at uio)**/my_venv/bin/activate

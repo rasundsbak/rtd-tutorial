@@ -1,6 +1,6 @@
-.. _10 valami:
+.. _12 valami:
 
-10 Valami
+12 Valami
 =======
 .. index:: valami
 

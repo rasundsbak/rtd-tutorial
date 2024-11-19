@@ -18,4 +18,8 @@ When you are logged on to `the Fox <https://oidc.fp.educloud.no/>`_, move like t
 .. note::
 
   Task 2.1: Look into the folders. What does it look like? Familiarize yourself with the browser view of Fox. 
+
+.. note::
+
   Task 2.2: How do you copy or move files? 
+

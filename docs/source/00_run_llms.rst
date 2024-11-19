@@ -17,4 +17,4 @@ Learning objectives
 - Be fluent in how to set up your own model in Jupyter Lab, so that you may use the process independently for interaction with open LLMs
 
 .. todo:: 
-   Todo 0.1: Splitt i First time og already users, slik at det blir en for en.
+   Todo 0.3: Lag ny overskrift her i dette dokumentet, og forklare at vi skal kommunisere med røde og grønne sticky notes, og hvordan. Finn sticky notes.

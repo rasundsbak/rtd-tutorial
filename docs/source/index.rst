@@ -5,7 +5,7 @@ Run large language models (LLM) through Educloud UiO
 
 What is AI and what is an LLM?
 ------------------------------
-An AI is a big piece of software, that you can talk to. It will give you differend kinds of response depending on its programming and functionality. You may talk to the LLM from a web page, or from an app. At the UiO we have had access to Chat GPT since 2023. In this course we want to learn you what goes on behind the interface. You will learn more on how to start up your own AI from a Script in Jupyter Lab.
+An AI is a big piece of software, that you can talk to. It will give you differend kinds of response depending on its programming and functionality. You may talk to the LLM from a web page, or from an app. At the UiO we have had access to Chat GPT since 2023. In this course we want to teach you what goes on behind the interface. You will learn more on how to start up your own AI from a Script in Jupyter Lab.
 
 .. image:: ordsky.png
 

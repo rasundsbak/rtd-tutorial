@@ -23,9 +23,9 @@ Contents
    01_preparations
    02_downloading_packages
    03_ai_board
-   04_parameters
-   05_hello_world
-   06_login
+   04_hello_world
+   05_login
+   06_parameters
    07_jotain
    08_pirat
    09_pegasus

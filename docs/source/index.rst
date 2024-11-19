@@ -30,7 +30,8 @@ Contents
 
    00_run_llms
    01_preparations
-   02_downloading_packages
+   02_login
+   03_downloading_packages
    03_ai_board
    04_hello_world
    05_login

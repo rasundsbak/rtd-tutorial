@@ -27,7 +27,10 @@ Already users on Educloud:
 * Go to `self service <https://selfservice.educloud.no/>`_ and apply for project membership under **Project membership**
 * Apply for project membership to ec443
 * send email to `Ragnhild <ragnhild.sundsbak@ub.uio.no>`_ with heading "I applied for membership in ec443"
-* When the project manager has approved of your application, log in to Educloud with your two factor authenticator
+* When the project manager has approved of your application, log in to Educloud with your two factor authenticator.
+
+Important step for veryone
+---------------------------
 *  Try your setup on `Educloud on demand <https://ood.educloud.no>`_
 
 

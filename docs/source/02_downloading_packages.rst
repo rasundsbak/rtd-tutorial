@@ -1,5 +1,4 @@
-.. _02_downloading_packages: to your new venv
-
+.. _02_downloading_packages:
 02 Downloading packages to venv
 ===================================
 

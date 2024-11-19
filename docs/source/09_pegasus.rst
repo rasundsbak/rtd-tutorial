@@ -1,6 +1,6 @@
-.. _08 pegasus:
+.. _09 pegasus:
 
-06 Pegasus XSum simple and more advanced summarization
+09 Pegasus XSum simple and more advanced summarization
 =============================================
 .. index:: noko
 

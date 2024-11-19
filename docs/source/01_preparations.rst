@@ -22,7 +22,6 @@ Already users on Educloud:
 * Make your two factor work with the QR code. Follow `this recipe <https://www.uio.no/english/services/it/research/platforms/edu-research/help/two-factor-authentication.html>`_.
 *  Try your setup on `Educloud on demand <https://ood.educloud.no>`_
 
-In this tutorial, you will learn how to set up your own virtual environment at the UiO Nvidia Cluster. This repo is a part of the course held as a part of `Digital Scholarship Days 2025 <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/00-mainpage.html/>`_
 
 Log in to through SSH, in Bash, Terminal, Command prompt or ledetekst and making your own virtual environment on ec443
 -------------------------------------------------

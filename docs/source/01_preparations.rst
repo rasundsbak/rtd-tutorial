@@ -13,13 +13,20 @@ First time users of Educloud
 * Download Microsoft Authenticator on your phone. It may be downloaded from App Store (iPhone) or Google Play (Android)
 * Log in with `Your bank ID <https://selfservice.educloud.no/membershipapplication>`_  and apply for group membership in ec443
 
+Set up Authentication with microsoft authenticator
+--------------------------------------------
+*  Make your two factor work with the QR code. Follow `this recipe <https://www.uio.no/english/services/it/research/platforms/edu-research/help/two-factor-authentication.html>`_.
+* You should have your Microsoft Authenticator open, and at the same time have the screen open with login on "Change your OTP". You need to have your mobile camera enabled. The system will be set up automatically via a QR code on the screen, that is seen by the Authenticator app.
+* In the Authenticator --> Home --> Microsoft entra ID --> Konfigurer totrinnsbekreftelse
+
+.. image:: qr_sladdet.png
+
 Already users on Educloud:
 --------------------------
 * Go to `self service <https://selfservice.educloud.no/>`_ and apply for project membership under **Project membership**
 * Apply for project membership to ec443
 * send email to `Ragnhild <ragnhild.sundsbak@ub.uio.no>`_ with heading "I applied for membership in ec443"
 * When the project manager has approved of your application, log in to Educloud with your two factor authenticator
-* Make your two factor work with the QR code. Follow `this recipe <https://www.uio.no/english/services/it/research/platforms/edu-research/help/two-factor-authentication.html>`_.
 *  Try your setup on `Educloud on demand <https://ood.educloud.no>`_
 
 

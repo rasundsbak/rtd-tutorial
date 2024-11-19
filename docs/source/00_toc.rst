@@ -29,12 +29,8 @@ Contents
    07_pirat
    08_parameters
    09_pegasus
-   10_
-   09_algo
    10_valami
    11_juoga
-   21_elastic_search
-   22_disk_quota
    30_todo
 
 Indices and tables

@@ -1,5 +1,5 @@
-.. _03_ai_board:
-03 Getting overview with AI on the blackboard
+.. _04_ai_board:
+04 Getting overview with AI on the blackboard
 =================
 
 .. index:: artificial, intelligence, cluster, HPC, Transformers, CUDA, .gguf, llama_cpp

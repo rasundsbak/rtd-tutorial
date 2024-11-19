@@ -11,7 +11,7 @@ You have done this already: `Sign up <https://www.ub.uio.no/english/courses-even
 First time users of Educloud
 ------------
 * Download Microsoft Authenticator on your phone. It may be downloaded from App Store (iPhone) or Google Play (Android)
-* Log in with `Your bank ID <https://selfservice.educloud.no/membershipapplication>`_ 
+* Log in with `Your bank ID <https://selfservice.educloud.no/membershipapplication>`_  and apply for group membership in ec443
 
 Already users on Educloud:
 --------------------------

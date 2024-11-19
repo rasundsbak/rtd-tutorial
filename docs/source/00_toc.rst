@@ -25,11 +25,11 @@ Contents
    03_ai_board
    04_hello_world
    05_login
-   06_
-   07_jotain
+   06_prompting
+   07_pirat
    08_parameters
-   09_pirat
-   10_pegasus
+   09_pegasus
+   10_
    09_algo
    10_valami
    11_juoga

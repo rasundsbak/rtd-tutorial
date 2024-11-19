@@ -1,5 +1,5 @@
-.. _07_pirat:
-07 Pirate example with .gguf format
+.. _08_pirat:
+08 Pirate example with .gguf format
 ==============
 
 Cell  1::

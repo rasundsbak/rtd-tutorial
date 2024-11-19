@@ -132,6 +132,26 @@ Cell 6::
     # Print responsen
     print(response['choices'][0]['message']['content'])
 
+..note::
+
+  Task 8.1: Copy one of the prompting cells in Jupyter lab, and make your own prompt where you make your own role for the AI and ask it Who are you, and a question that you would like it to answer.
+
+Cell inspiration for task 8.1::
+
+    # Lage en chat completion
+    response = lcpp_model.create_chat_completion(
+        messages=[
+            {"role": "system", "content": "You are a world class economist chatbot who always responds in understandable speak in whole sentences!"},
+            {"role": "user", "content": "Who are you?"},
+            {"role": "user", "content": "Tell me about income equality and colonial history?"},
+        ],
+        temperature=0.3,
+    )
+
+
+
+
+
 
 
 

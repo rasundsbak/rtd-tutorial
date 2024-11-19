@@ -10,7 +10,6 @@ An AI is a big piece of software, that you can talk to. It will give you differe
 .. image:: ordsky.png
 
 **In this course we will go from 0 to 100 in two days**
-
 You will come out of our classroom fluent in how to set up, prompt, use parameters and regulate the creativity of the language model. This process of using open or available LLModels from Huggingface is not commercial and might have the potential to bringing science forward with greater speed than what we have seen before.
 
 .. todo:: 

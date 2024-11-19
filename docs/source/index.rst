@@ -30,7 +30,7 @@ In this documentation, you will learn how to set up an AI process at the UiO Nvi
    :caption: Table of Contents
    :titlesonly:
 
-   00_toc
+   00_overview
    01_preparations
    02_downloading_packages
    03_ai_board

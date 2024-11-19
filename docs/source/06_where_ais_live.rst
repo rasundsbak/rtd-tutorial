@@ -1,5 +1,5 @@
-.. _05_login:
-05 Login to browser and overview
+.. _06_where_ais_live:
+06 Where do the AIs live?
 =====================
 .. index:: Fox, server, CUDA, A100, GPU, hardware
 

@@ -8,8 +8,8 @@
 In this course, we have tried to make it easy for you, through making the code available. We still have to spend some time familiarizing outselves with copying, pasting and running the code in the cells of Jupyter lab. 
 
 
-..note::
-
+.. note::
+  
   Task 4.1: Look around in Jupyter lab, and try googling subjects like "jupyter lab cheat sheet", "run cell jupyter lab" and "introduction Jupyter lab".
 
 
@@ -27,7 +27,7 @@ Jupyter lab keyboard shortcuts
 
 it may be useful for you to look at some `Jupyter lab shortcuts <https://gist.github.com/discdiver/9e00618756d120a8c9fa344ac1c375ac>`_
 
-..note::
+.. note::
 
   Task 4.2: How do we run a cell in Jupyter lab?
   Task 4.3: How do we stop a cell from running?

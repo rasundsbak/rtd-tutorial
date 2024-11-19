@@ -1,6 +1,6 @@
 .. _00_run_llms:
 
-More information and learning objectives
+00 More information and learning objectives
 ==================================
 
 .. image:: fox.png

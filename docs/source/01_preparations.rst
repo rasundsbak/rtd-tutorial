@@ -9,13 +9,11 @@ You have done this already: `Sign up <https://www.ub.uio.no/english/courses-even
 First time users of Educloud
 ------------
 * Download Microsoft Authenticator on your phone. It may be downloaded from App Store (iPhone) or Google Play (Android)
-
-* Apply for `Membership in the group <https://selfservice.educloud.no/membershipapplication>`_ 
-* `Follow the instructions <https://www.uio.no/english/services/it/research/platforms/edu-research/help/getting-started-with-educloud.html#with-idporten>`_ for first time setup of Educloud Research.
+* Log in with `Your bank ID <https://selfservice.educloud.no/membershipapplication>`_ 
 
 Already users on Educloud:
 --------------------------
-* Go to https://selfservice.educloud.no/ and apply for project membership under **Project membership**
+* Go to `self service <https://selfservice.educloud.no/>`_ and apply for project membership under **Project membership**
 * Apply for project membership to ec443
 * send email to `Ragnhild <ragnhild.sundsbak@ub.uio.no>`_ with heading "I applied for membership in ec443"
 * When project manager has approved of your application, log in to Educloud with your two factor authenticator

@@ -1,10 +1,7 @@
-.. _00_overview:
-
-00 Overview
-===========
+.. _00_run_llms:
 
 Run large language models through Educloud UiO
------------------------------------------
+===========
 
 .. index:: algo
 

@@ -1,7 +1,8 @@
 .. _02_downloading_packages:
 02 Downloading packages to venv
-===================================
+==============================
 .. index:: something
+
 Vi skal laste ned alle pakkene i venv. Til dette bruker vi et dokument som ligger i en fellesmappe her: 
 
 **/fp/projects01/ec443/clean_env**

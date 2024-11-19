@@ -1,6 +1,6 @@
 In this project, We use `Sphinx <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ to formulate our ideas.
 
-Run large language models through Educloud UiO
+Run large language models (LLM) through Educloud UiO
 ===========================================
 
 What is AI and what is an LLM?

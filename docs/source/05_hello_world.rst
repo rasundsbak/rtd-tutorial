@@ -1,5 +1,5 @@
-.. _04_hello_world: how to run cells and change from code to markdown
-04 Hello world and how to run cells in Jupyter lab
+.. _05_hello_world: how to run cells and change from code to markdown
+05 Hello world and how to run cells in Jupyter lab
 =============================================
 
 .. index:: introduction, hello world

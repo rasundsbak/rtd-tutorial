@@ -132,7 +132,7 @@ Cell 6::
     # Print responsen
     print(response['choices'][0]['message']['content'])
 
-..note::
+.. note::
 
   Task 8.1: Copy one of the prompting cells in Jupyter lab, and make your own prompt where you make your own role for the AI and ask it Who are you, and a question that you would like it to answer.
 
@@ -149,8 +149,7 @@ Cell inspiration for task 8.1::
     )
 
 
-..note::
-
+.. note::
   Task 8.2: Save your jupyter notebook in your home directory in jupyter lab, and open a new one. Check that you have ordered enough time on the Fox for the next lesson.
 
 

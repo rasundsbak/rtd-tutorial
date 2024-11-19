@@ -16,6 +16,7 @@ First time users of Educloud
 Set up Authentication with microsoft authenticator
 --------------------------------------------
 *  Make your two factor work with the QR code. Follow `this recipe <https://www.uio.no/english/services/it/research/platforms/edu-research/help/two-factor-authentication.html>`_.
+* Setting the password: `Here is how <https://www.uio.no/english/services/it/research/platforms/edu-research/help/change-password.html>`_.
 * You should have your Microsoft Authenticator open, and at the same time have the screen open with login on "Change your OTP". You need to have your mobile camera enabled. The system will be set up automatically via a QR code on the screen, that is seen by the Authenticator app.
 * In the Authenticator --> Home --> Microsoft entra ID --> Konfigurer totrinnsbekreftelse
 
@@ -26,7 +27,10 @@ Already users on Educloud:
 * Go to `self service <https://selfservice.educloud.no/>`_ and apply for project membership under **Project membership**
 * Apply for project membership to ec443
 * send email to `Ragnhild <ragnhild.sundsbak@ub.uio.no>`_ with heading "I applied for membership in ec443"
-* When the project manager has approved of your application, log in to Educloud with your two factor authenticator
+* When the project manager has approved of your application, log in to Educloud with your two factor authenticator.
+
+Important step for veryone
+---------------------------
 *  Try your setup on `Educloud on demand <https://ood.educloud.no>`_
 
 

@@ -1,5 +1,5 @@
-.. _02_login:
-05 Login to browser: Easy
+.. _02_easy_login:
+02 Login to browser: Easy way
 =====================
 .. index:: Fox, server, A100, GPU, hardware, NVIDIA
 

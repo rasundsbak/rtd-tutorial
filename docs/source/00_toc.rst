@@ -11,6 +11,9 @@ Run large language models through Educloud UiO
 Contents
 --------
 
+.. image:: fox.png
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Table of Contents

@@ -1,5 +1,5 @@
-.. _05_parameters:
-05 Parameters
+.. _06_parameters:
+06 Parameters
 ==========
 
 .. index:: parameters, num_beams, max_length, tokens, n_grams, early_stoppings, length_penalty

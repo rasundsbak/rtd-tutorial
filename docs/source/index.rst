@@ -26,6 +26,8 @@ In this documentation, you will learn how to set up an AI process at the UiO Nvi
 .. todo:: 
    Todo 0.2: Legg emneord på alle kapitlene der det mangler.
 
+For a full Table of Contents, see :doc:`the Table of Contents <00_toc>`.
+
 Learning objectives
 -------------------
 - Learn how large language models (LLMs) are made

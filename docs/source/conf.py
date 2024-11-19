@@ -6,7 +6,7 @@ import os  # Importer os for å kunne bruke miljøvariabler (valgfritt)
 
 project = 'AI on Cluster'
 copyright = '2024'
-author = 'Documentation Team'
+author = 'Ragnhild Sundsbak'
 
 release = '4.2'
 version = '4.2.AI'

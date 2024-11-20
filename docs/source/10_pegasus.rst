@@ -1,6 +1,6 @@
 .. _10 pegasus:
 
-10 Pegasus XSum simple and more advanced summarization
+10 Pegasus XSum simple summarization
 =============================================
 .. index:: summarization, open source
 
@@ -9,58 +9,36 @@ Before starting to run summarizations, everyone should move 5 chosen pdfs from a
 
 .. image:: fox_dokument.png
 
-The easiest way doing this, is to use the browser view for Fox. The idea is that you are a researcher, with a specific subject in mind. In this case, I had a search for "terrorism" and "western europe" in DOAJ. Unfortunately, we are not yet fot to make new scientific discoveries regarding terrorism in Europe. Howeverm this setup will connect to the right places on the computer, and make the process work. In this project grpup, we have an ambition to help users do the setup, and generate functioning outputs. We are aspiring to make RAG or other more advanced AI processes once we have started educating our public on how the system is working.
-
-code view::
-
-  #1
-  # Endre arbeidskatalogen til prosjektmappen
-  
-  !export HF_HOME=/fp/projects01/ec367/huggingface/cache
+The easiest way doing this, is to use the browser view for Fox. The idea is that you are a researcher, with a specific subject in mind. In this case, I had a search for "terrorism" and "western europe" in DOAJ. Unfortunately, we are not yet technically fit to make the AI participating in doing new scientific discoveries regarding terrorism in Europe. Howeverm this setup will connect to the right places on the computer, and make the process work. In the project group, we have an ambition to help users do the setup, and generate functioning outputs. We are aspiring to make RAG or other more advanced AI processes once we have started educating our public on how the system is working. We hope you will join us in the work.
 
 
-code view::
+Importerer os-modulen for å samhandle med operativsystemet.
+Setter PyTorch miljøvariabelen PYTORCH_CUDA_ALLOC_CONF til "expandable_segments:True", som optimaliserer minnehåndtering for CUDA-enheter.
+Definerer miljøvariabelen HF_HOME, som angir katalogen hvor Hugging Face-modeller cachen skal lagres.
+Code view 1::
 
-  #2
-  ! ls -lh /fp/projects01/ec367/huggingface/cache/Llama/Meta-Llama-3-8B-Instruct.Q5_K_M.gguf
-
-code view::
-
-  #3
   import os
-  os.chdir("/fp/projects01/ec367/ragnhsu")
-  print(f"Nåværende arbeidskatalog: {os.getcwd()}")
+  os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+  os.environ["HF_HOME"] = "/fp/projects01/ec443/huggingface/cache"
 
-code view::
 
-  #4
-  # renser requirements.txt for navnet på gamle filstier:
+
+Bekrefter at miljøvariablene er satt korrekt ved å skrive dem ut til konsollen.
+code view 2::
+
+  print("PYTORCH_CUDA_ALLOC_CONF:", os.getenv("PYTORCH_CUDA_ALLOC_CONF"))
+  print("HF_HOME:", os.getenv("HF_HOME"))
+
+
+code view 3::
+
+  from transformers import AutoModel, AutoTokenizer
+  import torch
   
-  import re
-  
-  def clean_requirements_file(input_file, output_file):
-      with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
-          for line in infile:
-              # Fjern linjen hvis den inneholder @ file:/// eller @ /path/
-              if not re.search(r'(@ file:///|@ /|@file:///|@/)', line):
-                  outfile.write(line)
-              else:
-                  # Finn og hent pakkenavn og versjon hvis de finnes på spesifik formatt
-                  match = re.match(r'([^@]+)@ .+', line)
-                  if match:
-                      package_name = match.group(1)
-                      outfile.write(f'{package_name}\n')
-                  else:
-                      # Hvis match ikke finnes, behold linjen som den er
-                      outfile.write(line)
-  
-  input_file = 'requirements.txt'
-  output_file = 'cleaned_requirements.txt'
-  clean_requirements_file(input_file, output_file)
-  print(f"Cleaned requirements written to {output_file}")
-  
-  
-  document_folder = 'documents'
+  # Confirm the import
+  print("Packages are successfully imported.")
+
+code view 4::
   
   document_folder = 'documents'
   
@@ -71,30 +49,36 @@ code view::
   print("PYTORCH_CUDA_ALLOC_CONF:", os.getenv("PYTORCH_CUDA_ALLOC_CONF"))
   print("HF_HOME:", os.getenv("HF_HOME"))
 
-code view::
+.. todo:: 
+   Todo 10.1: Find out do we need both 5 and 6 in order to avoid technical problems?
 
-  #5
-  from transformers import AutoModel, AutoTokenizer
-  import torch
+code view 5::
 
-  # Bekreft importen
-  print("Packages are successfully imported.")
-  
-  %env HF_HOME=/fp/projects01/ec367/huggingface/cache/
-  
+  # Set Hugging Face cache directory
+  %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
+
+This might be redundant. But we do it just in case. We can never be safe enough!
+Code view 6::
+
+  # Set Hugging Face Cache Directory in Python
   import os
-  os.environ['HF_HOME'] = '/fp/projects01/ec367/huggingface/cache'
+  os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache'
 
-Code view::
+This is to be done in terminal, after ssh login
+Code view 7::
 
-  #6
-  # Første del: Importer nødvendige biblioteker og sett opp cache-katalog og miljøvariabler.
+  # It is advisable to activate your virtual environment before you start the processes in Jupyter lab.
+  # source /fp/projects01/ec367/ragnhsu/venv_transformers/bin/activate
+
+This is a long piece of code, but we can do it anyway.
+Code view 8::
+
   import os
   from transformers import pipeline, PegasusForConditionalGeneration, PegasusTokenizer
   import fitz  # PyMuPDF for PDF-konvertering, hvis nødvendig
   
   # Definer en unik cache-katalog for Pegasus-XSum prosjektet
-  project_cache_dir = "/fp/projects01/ec367/huggingface/cache/Pegasus_XS"
+  project_cache_dir = "/fp/projects01/ec443/huggingface/cache/Pegasus_XS"
   
   # Opprett katalogen hvis den ikke eksisterer
   os.makedirs(project_cache_dir, exist_ok=True)
@@ -221,13 +205,14 @@ Code view::
   Scottish extraction, who, at that early period, were still considered as\
   """
   
-  # Generer sammendrag ved hjelp av generert funksjon
+    # Generer sammendrag ved hjelp av generert funksjon
   summary = generate_summary(input_text, model, tokenizer)
   print("Generated Summary with Custom Parameters:\n", summary)
   
   # Alternativt, generer sammendrag ved hjelp av pipelinen
   # summary_pipeline = summarizer(input_text)
   # print("Generated Summary with Pipeline:\n", summary_pipeline[0]['summary_text'])
+
 
 
 

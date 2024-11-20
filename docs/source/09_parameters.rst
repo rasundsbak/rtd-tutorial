@@ -6,7 +6,7 @@
 
 We will see how to control the creativity of the model. If it is creative to the extent that it shows a pattern nobody have thought of, the creativity may be beneficial for your project. However, too much creativity may lead to hallucinations.
 
-In these lessons, the cell in Jupyter lab will be marked with comments, so that the user will be able to vary the parameters. Below, you may see an example of parameters set with Pegasus XSum. Instead of explaining the parameters, we are going to experiment with them. Different AI models may use slightly differend parameters. The documentation for every AI model, is where you find how to use parameters. If you find definitions of parameters on this page, that is not set in the code below, it is because it is not relevant for the example, Pegasus XSum.
+In these lessons, the cell in Jupyter lab will be marked with comments. We want the user to change the parameters. Below, you may see an example of parameters set with Pegasus XSum. Instead of just explaining the parameters, we are also going to experiment with them. Different AI models may use slightly different parameters. The documentation for every AI model, is where you find how to use parameters. If you find definitions of parameters on this page, that is not set in the code below, it is because it is not relevant for the example, Pegasus XSum.
 
 **Max_length** the total number of tokens the AI is allowed to generate in that output. For example if it is set to 10 tokens, it can produce: "The weather today is nice and sunny." But with no constraints it might be long like this: "The weather today is quite pleasant with clear skies and warm temperatures. It is a perfect day for outdoor activities such as hiking, biking, or simply taking a walk in the park. The forecast predicts that the good weather will continue throughout the day, making it an excellent opportunity to enjoy the great outdoors with family and friends."
 
@@ -46,7 +46,7 @@ Code view with parameters::
 
 **no_repeat_ngram_size** Without it you can get: "The weather today is nice and sunny. The weather today is warm and pleasant. The weather today is perfect for a picnic." but with the size to 3 you can get: "The weather today is nice and sunny with a gentle breeze. It's a perfect day for a picnic or a walk in the park." 
 
-**top_k** means that you limit what the model should consider as the next word. top_k=3 would only consider the three most probable words for the next step, so it can result in " The weather today is sunny and warm.", but with top_k=50, it consider so much other probable words, like: "The weather today is pleasantly warm with a chance of mild breezes and partly cloudy skies, making it an ideal day for outdoor activities."
+**top_k** means that you limit what the model should consider as the next word. top_k=3 would only consider the three most probable words for the next step. The result may be something like "The weather today is sunny and warm.", but with top_k=50, it will consider a higher number of probable words, like: "The weather today is pleasantly warm with a chance of mild breezes and partly cloudy skies, making it an ideal day for outdoor activities."
 
 **top_p** means top_p=0.9 can give: "The weather today is sunny and warm, perfect for a day at the beach." while top_p=0.5 can give "The weather today is sunny and warm." If top_p is set to 0.5, the model will be even more selective, considering only the few tokens with the highest probabilities that together cover 50% of the cumulative distribution.
 

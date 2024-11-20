@@ -28,7 +28,6 @@ Already users on Educloud and for first time users that have created an user in 
 * send email to `Ragnhild <ragnhild.sundsbak@ub.uio.no>`_ with heading "I applied for membership in ec443"
 * When the project manager has approved of your application, log in to Educloud with your two factor authenticator.
 
-
 Important step for veryone
 ---------------------------
 *  Try your setup on `Educloud on demand <https://ood.educloud.no>`_

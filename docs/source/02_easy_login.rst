@@ -27,4 +27,3 @@ When you are logged on to `the Fox <https://oidc.fp.educloud.no/>`_, move like t
 .. note::
 
     Task 2.2: How do you copy or move files? Hint, mark the file, and click on Move/Copy
-

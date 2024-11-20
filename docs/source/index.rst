@@ -38,8 +38,7 @@ Contents
    08_pirat
    09_parameters
    10_pegasus
-   11_juoga
-   12_valami
+   11_pegasus_continued
    30_todo
 
 Indices and tables

@@ -22,6 +22,3 @@ Learning objectives
 - Learn how to create effective promts and adjust relevant parameters
 - Connect the model to your own data in the form of PDFs og text data.
 - Be fluent in how to set up your own model in Jupyter Lab, so that you may use the process independently for interaction with open LLMs
-
-.. todo:: 
-   Todo 0.3: Lag ny overskrift her i dette dokumentet, og forklare at vi skal kommunisere med røde og grønne sticky notes, og hvordan. Finn sticky notes.

@@ -2,7 +2,7 @@
 01 Preparations: Before you come
 ===============
 
-.. index:: something
+.. index:: preparations, two-factor, Microsoft Authenticator
 You have done this already: `Sign up <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_ for the course.
 
 .. todo:: 
@@ -22,7 +22,7 @@ Set up Authentication with microsoft authenticator
 
 .. image:: qr_sladdet.png
 
-Already users on Educloud:
+Already users on Educloud and for first time users that have created an user in Educloud:
 --------------------------
 * Apply for project membership to ec443
 * send email to `Ragnhild <ragnhild.sundsbak@ub.uio.no>`_ with heading "I applied for membership in ec443"
@@ -31,7 +31,7 @@ Already users on Educloud:
 Important step for veryone
 ---------------------------
 *  Try your setup on `Educloud on demand <https://ood.educloud.no>`_
-*  Try your setup on `Educloud on demand <https://ondemand.educloud.no/>`_
+*  Try your setup on `Educloud on demand <https://ondemand.educloud.no/o>`_
 
 Log in through SSH in Bash, Terminal, Command prompt or ledetekst and making your own virtual environment on ec443
 -------------------------------------------------

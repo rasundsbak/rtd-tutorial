@@ -73,7 +73,7 @@ Terminal view 3::
            `-:_:-'
    The HPC Cluster in Educloud
 
-In the coming examples, if you have problems copying and pasting into the terminal, it is maybe the best practice to write in the commands directly. But write slowly so that you see that it gets right, before presing enter. Do not fear. Remember also to fill in the right details where it says [your username at uio]
+In the coming examples, if you have problems copying and pasting into the terminal, it is maybe the best practice to write in the commands directly. But write slowly so that you see that it gets right, before pressing enter. Do not fear. Remember also to fill in the right details where it says [your username at uio]
 
 **Change into the right subdirectory**
 
@@ -99,6 +99,6 @@ Terminal view 6::
 
 Terminal view 7::
 
-   source /fp/projects01/ec443/**[your username at uio)**/my_venv/bin/activate
+   source /fp/projects01/ec443/[your username at uio)/my_venv/bin/activate
 
 You can now enter the Fox in the Browser, and wheck if the folder with your username is in the right place. See next lesson.

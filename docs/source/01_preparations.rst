@@ -31,13 +31,9 @@ Already users on Educloud:
 Important step for veryone
 ---------------------------
 *  Try your setup on `Educloud on demand <https://ood.educloud.no>`_
-
-Important step for veryone
----------------------------
-*  Try your setup on `Educloud on demand <https://ood.educloud.no>`_
 *  Try your setup on `Educloud on demand <https://ondemand.educloud.no/>`_
 
-Log in to through SSH, in Bash, Terminal, Command prompt or ledetekst and making your own virtual environment on ec443
+Log in through SSH in Bash, Terminal, Command prompt or ledetekst and making your own virtual environment on ec443
 -------------------------------------------------
 .. index:: login, ssh, bash, terminal
 

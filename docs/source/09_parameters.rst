@@ -50,6 +50,9 @@ Code view with parameters::
 
 **top_p** means top_p=0.9 can give: "The weather today is sunny and warm, perfect for a day at the beach." while top_p=0.5 can give "The weather today is sunny and warm." If top_p is set to 0.5, the model will be even more selective, considering only the few tokens with the highest probabilities that together cover 50% of the cumulative distribution.
 
+.. todo:: 
+   Todo 3.2: Definere early stopping.
+
 Further reading
 --------------
 When it comes to creaticity, Where does the machine take its suggestions from? In order to understand, it can help to take a look at this three dimensional presentation of a model `Project Tensorflow <https://projector.tensorflow.org/>`_  

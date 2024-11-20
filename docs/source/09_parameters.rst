@@ -46,7 +46,7 @@ Code view with parameters::
 
 **no_repeat_ngram_size** Without it you can get: "The weather today is nice and sunny. The weather today is warm and pleasant. The weather today is perfect for a picnic." but with the size to 3 you can get: "The weather today is nice and sunny with a gentle breeze. It's a perfect day for a picnic or a walk in the park." 
 
-**top_k** means that you limit what the model should consider as the next word. top_k=3 would only consider the three most probable words for the next step, so it can result in " The weather today is sunny and warm.", but with top_k=50, it consider so much other probable words, like: "The weather today is pleasantly warm with a chance of mild breezes and partly cloudy skies, making it an ideal day for outdoor activities."
+**top_k** means that you limit what the model should consider as the next word. top_k=3 would only consider the three most probable words for the next step. The result may be something like "The weather today is sunny and warm.", but with top_k=50, it will consider a higher number of probable words, like: "The weather today is pleasantly warm with a chance of mild breezes and partly cloudy skies, making it an ideal day for outdoor activities."
 
 **top_p** means top_p=0.9 can give: "The weather today is sunny and warm, perfect for a day at the beach." while top_p=0.5 can give "The weather today is sunny and warm." If top_p is set to 0.5, the model will be even more selective, considering only the few tokens with the highest probabilities that together cover 50% of the cumulative distribution.
 

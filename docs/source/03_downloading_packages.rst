@@ -52,8 +52,3 @@ Terminal view 2::
    install_requirements(requirements_path)
    
    # Inni requirements.txt, triton==2.0.0  # Endret til kompatibel versjon
-
-
-.. todo:: 
-
-   todo 1.1: Each user must install the correct packages in their environment called `my_env`. The packages are defined in      the `cleaned_requirements_2.txt` file located here: `/fp/projects01/ec443/clean_env`.

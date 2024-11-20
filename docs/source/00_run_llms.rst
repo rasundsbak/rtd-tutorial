@@ -1,7 +1,7 @@
 .. _00_run_llms:
-00 More information and learning objectives
+00 Run large language models through Educloud UiO: Learning objectives
 ==================================
-.. index:: something
+.. index:: learning objectives
 
 .. image:: fox.png
 UiO, the Fox and the Nvidia cluster

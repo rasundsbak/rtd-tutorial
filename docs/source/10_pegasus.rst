@@ -9,13 +9,11 @@ Before starting to run summarizations, everyone should move 5 chosen pdfs from a
 
 .. image:: fox_dokument.png
 
-The easiest way doing this, is to use the browser view for Fox. The idea is that you are a researcher, with a specific subject in mind. In this case, I had a search for "terrorism" and "western europe" in DOAJ. Unfortunately, we are not yet fot to make new scientific discoveries regarding terrorism in Europe. Howeverm this setup will connect to the right places on the computer, and make the process work. In this project grpup, we have an ambition to help users do the setup, and generate functioning outputs. We are aspiring to make RAG or other more advanced AI processes once we have started educating our public on how the system is working.
+The easiest way doing this, is to use the browser view for Fox. The idea is that you are a researcher, with a specific subject in mind. In this case, I had a search for "terrorism" and "western europe" in DOAJ. Unfortunately, we are not yet technically fit to make the AI participating in doing new scientific discoveries regarding terrorism in Europe. Howeverm this setup will connect to the right places on the computer, and make the process work. In the project group, we have an ambition to help users do the setup, and generate functioning outputs. We are aspiring to make RAG or other more advanced AI processes once we have started educating our public on how the system is working. We hope you will join us in the work.
 
-code view::
+** Endre arbeidskatalogen til prosjektmappen**
+Code view 1::
 
-  #1
-  # Endre arbeidskatalogen til prosjektmappen
-  
   !export HF_HOME=/fp/projects01/ec367/huggingface/cache
 
 

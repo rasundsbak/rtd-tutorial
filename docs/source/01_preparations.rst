@@ -24,7 +24,6 @@ Set up Authentication with microsoft authenticator
 
 Already users on Educloud:
 --------------------------
-* Go to `self service <https://selfservice.educloud.no/>`_ and apply for project membership under **Project membership**
 * Apply for project membership to ec443
 * send email to `Ragnhild <ragnhild.sundsbak@ub.uio.no>`_ with heading "I applied for membership in ec443"
 * When the project manager has approved of your application, log in to Educloud with your two factor authenticator.
@@ -32,13 +31,9 @@ Already users on Educloud:
 Important step for veryone
 ---------------------------
 *  Try your setup on `Educloud on demand <https://ood.educloud.no>`_
+*  Try your setup on `Educloud on demand <https://ondemand.educloud.no/>`_
 
-Important step for veryone
----------------------------
-*  Try your setup on `Educloud on demand <https://ood.educloud.no>`_
-*  Try your setup on `Educloud on demand <https://ondemand.educloud.no/o>`_
-
-Log in to through SSH, in Bash, Terminal, Command prompt or ledetekst and making your own virtual environment on ec443
+Log in through SSH in Bash, Terminal, Command prompt or ledetekst and making your own virtual environment on ec443
 -------------------------------------------------
 .. index:: login, ssh, bash, terminal
 
@@ -73,7 +68,7 @@ Terminal view 3::
            `-:_:-'
    The HPC Cluster in Educloud
 
-In the coming examples, if you have problems copying and pasting into the terminal, it is maybe the best practice to write in the commands directly. But write slowly so that you see that it gets right, before presing enter. Do not fear. Remember also to fill in the right details where it says [your username at uio]
+In the coming examples, if you have problems copying and pasting into the terminal, it is maybe the best practice to write in the commands directly. But write slowly so that you see that it gets right, before pressing enter. Do not fear. Remember also to fill in the right details where it says [your username at uio]
 
 **Change into the right subdirectory**
 
@@ -99,6 +94,6 @@ Terminal view 6::
 
 Terminal view 7::
 
-   source /fp/projects01/ec443/**[your username at uio)**/my_venv/bin/activate
+   source /fp/projects01/ec443/[your username at uio)/my_venv/bin/activate
 
 You can now enter the Fox in the Browser, and wheck if the folder with your username is in the right place. See next lesson.

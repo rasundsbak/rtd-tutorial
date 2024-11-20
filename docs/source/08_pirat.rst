@@ -71,6 +71,7 @@ Cell 4::
   print(f"Python executable in use: {sys.executable}")
 
 **The pirate example**
+
 Cell 5::
 
   # Angi stien til Hugging Face cache (felles for alle)
@@ -104,6 +105,7 @@ Cell 5::
 
 
 **The economist example**
+
 Cell 6::
 
     # Importing the Llama class from the llama_cpp package

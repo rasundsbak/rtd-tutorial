@@ -13,13 +13,18 @@ When you are logged on to `the Fox <https://oidc.fp.educloud.no/>`_, move like t
 How to order a job on the Fox
 ____________________________
 When you are logged on to `the Fox <https://oidc.fp.educloud.no/>`_, move like this: from the left menu, go to Jupyter lab --> ec443 Choose one of the Nvidia GPUs from the drop down menu --> Rumtime. 1h --> Jupyter variant, Jupyter lab --> (You need not choose jupyter module, as the last version is pre selected) -->  Launch. You are now in the line to get into the Jupyter lab on UiO Fox. You can get tea or coffee, and have a chat with your colleague, while you wait. The waiting time depends on how much you are asking for, when it comes to machine power and time.
+
+.. warning:: 
+
+  Try to get used to that you may experience small technical problems like the kernel stops, because they are just annoying hickups and usually don't make to much problem.
+
 .. image:: fox_skjermbilde.png
 
 .. note::
 
-  Task 2.1: Look into the folders. What does it look like? Familiarize yourself with the browser view of Fox. 
+  Task 2.1: Look into the folders. What does it look like? Familiarize yourself with the browser view of Fox, because that will be a good help if you later are using the terminal to do the work. 
 
 .. note::
 
-  Task 2.2: How do you copy or move files? 
+    Task 2.2: How do you copy or move files? Hint, mark the file, and click on Move/Copy
 

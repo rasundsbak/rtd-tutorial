@@ -2,7 +2,7 @@
 05 Hello world and how to run cells in Jupyter lab
 =============================================
 
-.. index:: introduction, hello world
+.. index:: introduction, hello world, 
 
 
 In this course, we have tried to make it easy for you, through making the code available. We still have to spend some time familiarizing outselves with copying, pasting and running the code in the cells of Jupyter lab. 
@@ -25,10 +25,10 @@ You may look `into this tutorial <http://justinbois.github.io/bootcamp/2020_fsri
 Jupyter lab keyboard shortcuts
 ---------------------
 
-it may be useful for you to look at some `Jupyter lab shortcuts <https://gist.github.com/discdiver/9e00618756d120a8c9fa344ac1c375ac>`_
+It may be useful for you to look at some `Jupyter lab shortcuts <https://gist.github.com/discdiver/9e00618756d120a8c9fa344ac1c375ac>`_
 
 .. note::
 
-  Task 4.2: How do we run a cell in Jupyter lab?
+  Task 4.2: How do we run a cell in Jupyter lab? Try to find shortcut and the menues.
   Task 4.3: How do we stop a cell from running?
-  Task 4.5: How do we change the content of a cell from markdown to code, and back again?
+  Task 4.5: How do we change the content of a cell from markdown to code, and back again? What use can that have?

@@ -10,6 +10,9 @@ In this documentation, you will learn how to set up an AI process at the UiO Nvi
 
 To facilitate clear and effective communication within this document, we will utilize red and green sticky notes. Below are the guidelines on how we will use these sticky notes: Red sticky notes will indicate areas of concern, questions, or issues that require attention. Green sticky notes will give a task that is productive for the learning.
 
+.. note::
+This is a note
+
 In this tutorial, you will learn how to set up your own virtual environment at the UiO Nvidia Cluster. This repo is a part of the course held as a part of `Digital Scholarship Days 2025 <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/00-mainpage.html/>`_
 
 Learning objectives

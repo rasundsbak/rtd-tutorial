@@ -1,7 +1,7 @@
 .. _03_downloading_packages:
 03 Downloading packages to venv
 ==============================
-.. index:: something
+.. index:: virtual environment, activate venv, path, requirements, project
 
 Vi skal laste ned alle pakkene i venv. Til dette bruker vi et dokument som ligger i en fellesmappe her: 
 
@@ -55,4 +55,5 @@ Terminal view 2::
 
 
 .. todo:: 
-   todo 1.1: Hver bruker må installere de rette pakkene i sitt miljø som heter `my_env`. Pakkene ligger definert i `cleaned_requirements_2.txt` filen som befinner seg her: `/fp/projects01/ec443/clean_env`.
+
+   todo 1.1: Each user must install the correct packages in their environment called `my_env`. The packages are defined in      the `cleaned_requirements_2.txt` file located here: `/fp/projects01/ec443/clean_env`.

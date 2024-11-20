@@ -2,7 +2,7 @@
 
 10 Pegasus XSum simple and more advanced summarization
 =============================================
-.. index:: noko
+.. index:: summarization, open source
 
 
 Before starting to run summarizations, everyone should move 5 chosen pdfs from a shared space into a folder called "documents" at your homedrive at ec443. The reason is that when you get the output, the user rights management at fox, will be set up much easier if whe do it in the way described here, than if you would choose to make the model generate output on your procejt area that you have at tje same place as the venv. See illustration below.

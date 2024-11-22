@@ -9,9 +9,9 @@ At the UiO we have had access to Chat GPT since 2023. In this course we want to 
 
 Code view::
 
-You are a pirate chatbot who always responds in pirate speak in whole sentences!
-   1) Who are you?
-   2) Tell me about your ideal boat?
+   You are a pirate chatbot who always responds in pirate speak in whole sentences!
+      1) Who are you?
+      2) Tell me about your ideal boat?
 
 Our motivation for the Workshop
 -----------------------------

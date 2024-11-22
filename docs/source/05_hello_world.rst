@@ -10,7 +10,7 @@ In this course, we have tried to make it easy for you, through making the code a
 
 .. note::
   
-  Task 4.1: Look around in Jupyter lab, and try googling subjects like "jupyter lab cheat sheet", "run cell jupyter lab" and "introduction Jupyter lab".
+  Task 5.1: Look around in Jupyter lab, and try googling subjects like "jupyter lab cheat sheet", "run cell jupyter lab" and "introduction Jupyter lab".
 
 
 Hello world
@@ -29,6 +29,6 @@ It may be useful for you to look at some `Jupyter lab shortcuts <https://gist.gi
 
 .. note::
 
-  Task 4.2: How do we run a cell in Jupyter lab? Try to find shortcut and the menues.
-  Task 4.3: How do we stop a cell from running?
-  Task 4.5: How do we change the content of a cell from markdown to code, and back again? What use can that have?
+  Task 5.2: How do we run a cell in Jupyter lab? Try to find shortcut and the menues.
+  Task 5.3: How do we stop a cell from running?
+  Task 5.5: How do we change the content of a cell from markdown to code, and back again? What use can that have?

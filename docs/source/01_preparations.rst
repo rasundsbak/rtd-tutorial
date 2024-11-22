@@ -25,6 +25,9 @@ Note that you may have different sites on your phone, that generate separate cod
 
 .. image:: advanced_user.png
 
+You will succed in your setup, if you read the whole ´page down <https://www.uio.no/english/services/it/research/platforms/edu-research/help/two-factor-authentication.html>`_, because the most important step is explained on the bottom of the page:
+
+.. image:: otp_boksen.png
 
 Already users on Educloud and for first time users that have created an user in Educloud:
 --------------------------

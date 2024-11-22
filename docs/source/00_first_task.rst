@@ -3,7 +3,7 @@
 ==============
 .. index:: pirate, chatbot, motivation, Huggingface
 
-At the UiO we have had access to Chat GPT since 2023. In this course we want to teach you what goes on behind the interface. You will learn more on how to start up your own AI from a script in Jupyter Lab.
+At the UiO we have had access to Chat GPT since 2023. In this workshop, we want to teach you what goes on behind the interface. You will learn more on how to start up your own AI from a script in Jupyter Lab.
 
 .. note:: Task 0.1:  Visit UiO `Chat GPT <https://www.uio.no/tjenester/it/ki/gpt-uio/>`_ and enter the following: 
 

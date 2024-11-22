@@ -3,6 +3,8 @@
 =====================
 .. index:: Fox, server, CUDA, A100, GPU, hardware, hugging face
 
+..image:: hugging_face.png
+
 At the Fox server, you have your own storage space. There is also a common space for the group on the server. This is where the AIs are located, and where the AI will be temporarily cached when you download it from Huggingface. In order to get the AI to work in Jupyter lab, it is essential that you set up the paths in the right way. Take a look around, and see if you can think of a good way to organize your project. 
 
 .. note::

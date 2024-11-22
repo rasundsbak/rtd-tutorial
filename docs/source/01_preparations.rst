@@ -23,7 +23,7 @@ Read the whole page down
 -------------------------
 Note that you may have different sites on your phone, that generate separate codes. Velow, you will see an example of how the phone of an advances user may look like. The Educloud assess is marked with yellow.
 
-.. image:: advanced_user.png
+.. image:: advanced.png
 
 You will succed in your setup, if you read the whole ´page down <https://www.uio.no/english/services/it/research/platforms/edu-research/help/two-factor-authentication.html>`_, because the most important step is explained on the bottom of the page:
 

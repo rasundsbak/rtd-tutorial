@@ -4,6 +4,8 @@ Run large language models (LLM) through Educloud UiO
 ===========================================
 .. index:: learning objectives
 
+.. image:: fox.png
+
 What is AI and what is an LLM?
 ------------------------------
 AI is a term that is meant to denote what is happening, when a computer do things that require intelligence when done by people (Heaven 2024). In this workshop we are going to work with LLMs. LLMs is a type of artificial intelligence program.
@@ -12,8 +14,6 @@ AI is a term that is meant to denote what is happening, when a computer do thing
 
 
 At the UiO we have had access to Chat GPT since 2023. In this course we want to teach you what goes on behind the interface. You will learn more on how to start up your own AI from a script in Jupyter Lab.
-
-.. image:: fox.png
 
 .. todo:: 0.1 lage referanseliste. Gå gjennom alle sider og samle alt av referanser eller "further reading" til referanselisten 29_references. Dersom referansen ikke står fra tekst, sett den under egen overskrift: "Further reading". Tekstreferanser settes under "References". Bruk overskrift 2 på begge som er med "-----" under. På samme side skal det være en tekstsnutt med takk til nettverket vårt, slik at vi gir ære til de som æres bør, og som har gjort dette mulig.
 

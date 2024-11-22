@@ -25,7 +25,7 @@ Wether you like it or not, AI may be your new colleague. When i talk about aspec
 
 **HPC**, A High Performance Computing cluster
 
-**Transformers** A transformer is a learning architecture developed by researchers at Google and based on the multi-head attention mechanism, proposed in the 2017 paper _Attention Is All You Need_ (Vaswani et.al. 2023)
+**Transformers** A transformer is a learning architecture developed by researchers at Google and based on the multi-head attention mechanism, proposed in the 2017 paper "Attention Is All You Need" (Vaswani et.al. 2023).
 
 
 **The .gguf format** developed by @ggerganov is a quantified AI file format that that stores both tensors and metadata in a single file.

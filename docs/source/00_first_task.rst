@@ -1,7 +1,7 @@
 .. _00_first_task:
 00 First task
 ==============
-.. index:: pirate, chatbot, motivation, Huggingface
+.. index:: pirate, chatbot, motivation, Huggingface, transformers
 
 
 Motivation for the Workshop

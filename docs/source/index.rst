@@ -39,6 +39,7 @@ Contents
    09_parameters
    10_pegasus
    11_pegasus_continued
+   29_references
    30_todo
 
 Indices and tables

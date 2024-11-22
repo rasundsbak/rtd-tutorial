@@ -22,6 +22,3 @@ Code view::
    You are a pirate chatbot who always responds in pirate speak in whole sentences!
       1) Who are you?
       2) Tell me about your ideal boat?
-
-
-

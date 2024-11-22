@@ -1,7 +1,7 @@
 .. _03_downloading_packages:
 03 Downloading packages to venv
 ==============================
-.. index:: virtual environment, activate venv, path, requirements, project
+.. index:: virtual environment, activate venv, path, requirements
 
 Vi skal laste ned alle pakkene i venv. Til dette bruker vi et dokument som ligger i en fellesmappe her: 
 

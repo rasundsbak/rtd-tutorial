@@ -34,9 +34,12 @@ Wether you like it or not, AI may be your new colleague. When i talk about aspec
 
 .. note::
 
-  Task: Write a list over concepts that you do not understand. Go in pairs, and discuss the concepts you want to elaborate on. Use google, UiO GPT or an encyclopedia from the library.
+  Task 4.1: 10 mins. Write a list over concepts that you do not understand. Go in pairs, and discuss the concepts you want to elaborate on. Use google, UiO GPT or an encyclopedia from the library.
 
 
 .. todo:: 
   Todo 4.1: Vi må legge inn oppgaver der det passer. Det er bedre å erfare enn å lese.
+
+.. todo:: 
+  Todo 4.2: Indikere minutter på alle oppgavene. Hvor lang tid tar hver oppgave?.
 

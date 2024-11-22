@@ -19,6 +19,13 @@ Set up Authentication with microsoft authenticator
 
 .. image:: qr_sladdet.png
 
+Read the whole page down
+-------------------------
+Note that you may have different sites on your phone, that generate separate codes. Velow, you will see an example of how the phone of an advances user may look like. The Educloud assess is marked with yellow.
+
+.. image:: advanced_user.png
+
+
 Already users on Educloud and for first time users that have created an user in Educloud:
 --------------------------
 * Apply for project membership to ec443

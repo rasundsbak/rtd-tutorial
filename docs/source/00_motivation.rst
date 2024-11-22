@@ -1,9 +1,14 @@
 .. _00_motivation:
 00 Motivation for the Workshop
 ==============
-.. index:: pirate, chatbot, motivation, Huggingface, transformers
+.. index:: chatbot, motivation, Huggingface, transformers, LLM, cluster, Nvidia
 
-In this workshop, you will learn how to run an LLM at the UiO Nvidia Cluster. Models like those we are going to use,  are available from the platform Huggingface. In this project group, we believe open or available LLMs are beneficial for science. This is why we want to learn people how to use them. AIs from Huggingface run on a Transformer architecture.       The interactive development environment we are going to use, Jupyter Lab, is an effective way of showing what goes on behind the interface of more expensive or sophisitcated AIs. Regarding sophistication, one may also argue that the models we are going to show, have their advantage in the fact that they may be adjusted in a transparent way, by the competent user. You will learn how the functionalities of the various language models are put together. You will also learn to set parameters, and how they affect the output. We hope this will give some insight into how the AI of our times work. We hope that you as participant will be inspired to continue using the LLMs and develop the method we are going to show you, together with us, and in your own research community.
+In this workshop, you will learn how to run an LLM (**Large Language Model**) at the UiO Nvidia Cluster. **Nvidia** is a producer of graphics processing units; GPU. **A Cluster** is a set of computers that work together so that they can be viewed as a single system. Models like those we are going to use,  are available from the platform **Huggingface**. Huggingface is a place where developers can freely share code, models, and datasets. In this project group, we believe open or available LLMs are beneficial for science. This is why we want to teach people how to use them. Artificial intelligence models from Huggingface are specific implementations of Transformer architecture. The transformer architecture has made self-supervised learning of neural networks possible, and represents a leap in computer science. 
+
+Why Jupyter lab
+---------------
+The interactive development environment we are going to use, Jupyter Lab, is an effective way of showing what goes on behind the interface of more expensive or sophisticated AIs. Regarding sophistication, one may also argue that the models we are going to show, have their advantage in the fact that they may be adjusted in a transparent way, by the competent user. You will learn how the functionalities of the various language models are put together. You will also learn to set parameters, and how they affect the output. We hope this will give some insight into how the AI of our times work. We hope that you as participant will be inspired to continue using the LLMs and develop the method we are going to show you, together with us, and in your own research community.
+
 
 First task
 -----------

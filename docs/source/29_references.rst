@@ -15,6 +15,8 @@ Attention Is All You Need 2. Aug 2023
 Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin
 <https://arxiv.org/abs/1706.03762>`_ 
 
+"When you have 3 or more authors, you only use the first author's surname in text, and abbreviate the rest of the list with "et al." (Latin for "and others"). In your reference list, you list all of the authors (up to 20)."
+
 
 Recommended reading
 ------------------

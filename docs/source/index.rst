@@ -11,7 +11,7 @@ AI is a term that is meant to denote what is happening, when a computer do thing
    A large language model (LLM) is a type of artificial intelligence (AI) program that can recognize and generate text, among other tasks. LLMs are trained on huge sets of data — hence the name "large." LLMs are built on machine learning: specifically, a type of neural network called a transformer model. (Cloudflare 2024)
 
 
-At the UiO we have had access to Chat GPT since 2023. In this course we want to teach you what goes on behind the interface. You will learn more on how to start up your own AI from a Script in Jupyter Lab.
+At the UiO we have had access to Chat GPT since 2023. In this course we want to teach you what goes on behind the interface. You will learn more on how to start up your own AI from a script in Jupyter Lab.
 
 .. image:: fox.png
 

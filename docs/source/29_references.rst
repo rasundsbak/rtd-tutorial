@@ -9,6 +9,10 @@ Cloudflare (2024): `What is a large language model (LLM)? <https://www.cloudflar
 
 Heaven(2024), Will Douglas: `Artificial intelligence: What is AI? <https://www.technologyreview.com/2024/07/10/1094475/what-is-artificial-intelligence-ai-definitive-guide/>`_. July 10. MIT Technology Review
 
+Attention Is All You Need 2. Aug 2023
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin
+<https://arxiv.org/abs/1706.03762>`_ 
+
 
 Recommended reading
 ------------------

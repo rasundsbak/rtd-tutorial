@@ -22,8 +22,8 @@ When you are logged on to `the Fox <https://oidc.fp.educloud.no/>`_, move like t
 
 .. note::
 
-  Task 2.1: Look into the folders. What does it look like? Familiarize yourself with the browser view of Fox, because that will be a good help if you later are using the terminal to do the work. 
+  Task 2.1: Look into the folders. What does it look like? Familiarize yourself with the browser view of Fox. For a beginner, this will be useful if you are using the terminal. You can switch back and forth between browser view and terminal/ command prompt, to check if everything is in compliance.
 
 .. note::
 
-    Task 2.2: How do you copy or move files? Hint, mark the file, and click on Move/Copy
+    Task 2.2: How do you copy or move files in the terminal view? Hint, mark the file, and click on Move/Copy

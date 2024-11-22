@@ -14,10 +14,8 @@ At the UiO we have had access to Chat GPT since 2023. In this course we want to 
 
 .. image:: fox.png
 
-.. todo:: 0.1 lage referanseliste. Gå gjennom alle sider og samle alt av referanser eller "further reading" til referanselisten 29_references.
-
-**In this course we will go from 0 to 100 in two days**
-You will come out of our classroom fluent in how to set up, prompt, use parameters and regulate the creativity of the language model. This process of using open or available LLModels from Huggingface is not commercial and might have the potential to bringing science forward with greater speed than what we have seen before.
+.. todo:: 0.1 lage referanseliste. Gå gjennom alle sider og samle alt av referanser eller "further reading" til referanselisten 29_references. Detsom referansen ikke står fra tekst, sett den under egen overskrift: "Further reading". Tekstreferanser settes under "References". Bruk overskrift 2 på begge som er med "-----" under.
+.. note:: Task 0.1:  Visit UiO `Chat GPT <https://www.uio.no/tjenester/it/ki/gpt-uio/>`_ and enter the following: 
 
 Contents
 --------

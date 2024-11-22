@@ -3,9 +3,11 @@
 ==============
 .. index:: chatbot, motivation, Huggingface, transformers, LLM, cluster, Nvidia
 
+.. image:: fox_1.png
+
 In this workshop, you will learn how to run an LLM (**Large Language Model**) at the UiO Nvidia Cluster. **Nvidia** is a producer of graphics processing units; GPU. **A Cluster** is a set of computers that work together so that they can be viewed as a single system. Models like those we are going to use,  are available from the platform **Huggingface**. Huggingface is a place where developers can freely share code, models, and datasets. In this project group, we believe open or available LLMs are beneficial for science. This is why we want to teach people how to use them. Artificial intelligence models from Huggingface are specific implementations of Transformer architecture. The transformer architecture has made self-supervised learning of neural networks possible, and represents a leap in computer science. 
 
-.. image:: fox_pandemisk.png
+.. image:: fox_2.png
 
 Why Jupyter lab
 ---------------
@@ -22,6 +24,3 @@ Code view::
    You are a pirate chatbot who always responds in pirate speak in whole sentences!
       1) Who are you?
       2) Tell me about your ideal boat?
-
-
-

@@ -16,7 +16,12 @@ At the UiO we have had access to Chat GPT since 2023. In this course we want to 
 
 .. todo:: 0.1 lage referanseliste. Gå gjennom alle sider og samle alt av referanser eller "further reading" til referanselisten 29_references. Dersom referansen ikke står fra tekst, sett den under egen overskrift: "Further reading". Tekstreferanser settes under "References". Bruk overskrift 2 på begge som er med "-----" under. På samme side skal det være en tekstsnutt med takk til nettverket vårt, slik at vi gir ære til de som æres bør, og som har gjort dette mulig.
 
-.. note:: Task 0.1:  Visit UiO `Chat GPT <https://www.uio.no/tjenester/it/ki/gpt-uio/>`_ and enter the following: 
+.. note:: Task 0.1:  Visit UiO `Chat GPT <https://www.uio.no/tjenester/it/ki/gpt-uio/>`_ and enter the following: R
+
+You are a pirate chatbot who always responds in pirate speak in whole sentences!
+   1) Who are you?
+   2) Tell me about your ideal boat?
+
 
 Contents
 --------

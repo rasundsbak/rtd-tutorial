@@ -16,13 +16,13 @@ At the UiO we have had access to Chat GPT since 2023. In this course we want to 
 
 .. todo:: 0.1 lage referanseliste. Gå gjennom alle sider og samle alt av referanser eller "further reading" til referanselisten 29_references. Dersom referansen ikke står fra tekst, sett den under egen overskrift: "Further reading". Tekstreferanser settes under "References". Bruk overskrift 2 på begge som er med "-----" under. På samme side skal det være en tekstsnutt med takk til nettverket vårt, slik at vi gir ære til de som æres bør, og som har gjort dette mulig.
 
-.. note:: Task 0.1:  Visit UiO `Chat GPT <https://www.uio.no/tjenester/it/ki/gpt-uio/>`_ and enter the following: 
-
-Code view::
-
-You are a pirate chatbot who always responds in pirate speak in whole sentences!
-   1) Who are you?
-   2) Tell me about your ideal boat?
+Learning objectives
+-------------------
+- Learn how large language models (LLMs) are made
+- learn how to use UiOs infrastructure for computational power to use various open LLMs
+- Learn how to create effective promts and adjust relevant parameters
+- Connect the model to your own data in the form of PDFs og text data.
+- Be fluent in how to set up your own model in Jupyter Lab, so that you may use the process independently for interaction with open LLMs
 
 
 Contents

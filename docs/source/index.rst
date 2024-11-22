@@ -2,7 +2,7 @@ In this project, We use `Sphinx <https://www.sphinx-doc.org/en/master/usage/rest
 
 Run large language models (LLM) through Educloud UiO
 ===========================================
-... index:: learning objectives
+.. index:: learning objectives
 
 What is AI and what is an LLM?
 ------------------------------

@@ -1,7 +1,7 @@
 .. _00_first_task:
 00 First task
 ==============
-.. index:: pirate, chatbot
+.. index:: pirate, chatbot, motivation, Huggingface
 
 .. note:: Task 0.1:  Visit UiO `Chat GPT <https://www.uio.no/tjenester/it/ki/gpt-uio/>`_ and enter the following: 
 

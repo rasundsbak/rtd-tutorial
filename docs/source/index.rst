@@ -33,7 +33,7 @@ Contents
    :caption: Table of Contents
    :titlesonly:
 
-   00_run_llms
+   00_first_task
    01_preparations
    02_easy_login
    03_downloading_packages

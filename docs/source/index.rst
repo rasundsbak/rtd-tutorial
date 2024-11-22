@@ -6,7 +6,7 @@ Run large language models (LLM) through Educloud UiO
 
 .. image:: fox.png
 
-What is AI and what is an LLM?
+What is Artificial Intelligence (AI) and what is an LLM?
 ------------------------------
 AI is a term that is meant to denote what is happening, when a computer do things that require intelligence when done by people (Heaven 2024). In this workshop we are going to work with LLMs. LLMs is a type of artificial intelligence program.
 

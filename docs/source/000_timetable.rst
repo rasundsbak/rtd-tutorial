@@ -51,4 +51,5 @@ In this workshop we are going to use a supercomputer with the name Fox. Logon to
 - Finish!
 
 Welcome, this will be fun!
+
 From Pål and Ragnhild

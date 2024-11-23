@@ -20,7 +20,7 @@ Code cell 1::
 
   print('Hello, world.')
 
-You may look `into this tutorial <http://justinbois.github.io/bootcamp/2020_fsri/lessons/l01_welcome.html>`_, in order to become more confident in Jupyter lab. It is advisable that everybody do lesson number 1 "Hello world".
+You may look `into this tutorial <https://swcarpentry.github.io/python-novice-gapminder/02-variables.html>`_, in order to become more confident in Jupyter lab. It is advisable that everybody do lesson number 2 "Variables and Assignment".
 
 Jupyter lab keyboard shortcuts
 ---------------------

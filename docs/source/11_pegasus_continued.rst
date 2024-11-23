@@ -2,6 +2,4 @@
 
 11 Pegasus continued
 ==============
-.. index:: juoga
-
-
+.. index::

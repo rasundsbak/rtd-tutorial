@@ -32,7 +32,7 @@ I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger
  #. eventuelt har noen å sitte med dersom dette virker umulig
  #. har satt opp virtuelt miljø evt sitter med noen som har
 - First task from :doc:`00_motivation`
-- Kapitlene :doc:`02_easy_login` og :doc:`05_hello_world`.
+- Tasks from :doc:`02_easy_login` and :doc:`03_downliading_packages`.
 
 **11:00-11.10 Pause**
 

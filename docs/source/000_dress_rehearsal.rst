@@ -10,13 +10,14 @@ Everybody must bring
 * A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_.
 * Bank id
 
-Hvorfor Cluster?
+Why Cluster?
 ------------
-Å kjøre den største modellen lokalt krever 8 grafikkort som hver for seg koster en ganske fin bruktbil. Siden man ikke trenger denne modellen så ofte, er det bedre å dele på ressursene enn at alle skal ha sin egen superdatamaskin.   
+Driving the largest model locally requires 8 graphics cards where each card costs the equivalent of a nice used car. Since you do not need this model so often, it is better to share the resources than everybody having their own supercomputer.
 
-**Hvordan:**
+**How?**
 
-In this workshop we are going to use a supercomputer with the name Fox.Logon to Fox is through Educloud. Vi skal lære å stille inn modellene slik at vi kan kontrollere kreativiteten til disse modellene. Vi skal bruke et grensesnitt som heter Juypyter Lab fordi det er enklere enn rent terminalgrensesnitt, samtidig som det åpner opp for mulighetene til å bruke røde data og kontrollere innstillingene på modellene. Omtrent samme framgangsmåte kan brukes på svarte data, men da må man bruke en supercomputer som heter Colossus. Dette dekkes ikke i workshopen.
+In this workshop we are going to use a supercomputer with the name Fox.Logon to Fox is through Educloud. We are going to learn how to control the creativity of the models. We are going to use an interface with the name of Juypyter Lab because it is easier than running the model from the command prompt. At the same time
+it opens the possibilities of using red data and control the parameters of the model. The same method might be used on black data, but in that case a supercomputer with the name of Colossus, would have had to be used. This will not be covered in the workshop.
 
 **10:00-10:15**
 

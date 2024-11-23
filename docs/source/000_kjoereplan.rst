@@ -23,14 +23,14 @@ I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger
 * We go strait to the cluster, and order a job :doc:`02_easy_login`. RS demonstration on main screen.
 * Short presentation while we are waiting to come into the cluster. Name, role at UiO and what is my relation to AI.
 * Presentation working methods with the red and green sticky notes.
-* Short presentation of the workshop, and its documentation pages 00 - 03 and 05
 
 **10:15-11:00** 
 
-- Sørge for at alle:
- #. behersker innlogging med Authenticator og passord (10:15 - 10:30)
- #. eventuelt har noen å sitte med dersom dette virker umulig
- #. har satt opp virtuelt miljø evt sitter med noen som har
+- Short presentation of the workshop, and its documentation pages 00 - 03 and 05
+- Start doing the tasks, while PML and RS check out that everybody:
+ #. control login with Authenticator and password (10:15 - 10:30)
+ #. otherwise have someone to sit with if login proves impossible
+ #. have set up a my_venv
 - First task from :doc:`00_motivation`
 - Tasks from :doc:`02_easy_login` and :doc:`03_downloading_packages`.
 - :doc:`05_hello_world`

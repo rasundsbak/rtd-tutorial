@@ -1,6 +1,6 @@
 .. _000_timetable:
 
-000 Plan for Dress rehearsal AI workshop November 26th 2024 
+000 Timetable for Dress rehearsal AI workshop November 26th 2024 
 =================================
 
 Everybody must bring

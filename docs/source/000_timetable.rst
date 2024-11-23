@@ -43,7 +43,7 @@ In this workshop we are going to use a supercomputer with the name Fox. Logon to
 - "AI board", "Where AIs live" and "Parameters" - One table for each of these chapters, 5 mins for reading. Then 10 min talk and room for questions: :doc:`04_ai_board`, :doc:`06_where_ais_live` and :doc:`09_parameters`
 - We are starting up a model :doc:`08_pirat`
 - Making a prompt and checking the answer. Tasks :doc:`08_pirat`
-- Pegasus X Sum. Changing the parameter, and checking the answer Preparations: Read :doc:`09_parameters`. Task: Run the content of the page :doc:`10_pegasus`
+- Pegasus X Sum. Changing the parameter, and checking the answer Preparations: Study :doc:`09_parameters`. Task: Run the content of the page :doc:`10_pegasus`
 - Connecting the model to the documents: :doc:`11_pegasus_continued`
 - Logout. 
 - Short evaluation: Do I want to stay on 443? Write your name on a green sticly note, if you want to stay until december 2025

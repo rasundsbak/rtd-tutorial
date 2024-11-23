@@ -16,13 +16,11 @@ Hvorfor Cluster?
 
 **Hvordan:**
 
-I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger inn i Fox via Educloud. Vi skal lære å stille inn modellene slik at vi kan kontrollere kreativiteten til disse modellene. Vi skal bruke et grensesnitt som heter Juypyter Lab fordi det er enklere enn rent terminalgrensesnitt, samtidig som det åpner opp for mulighetene til å bruke røde data og kontrollere innstillingene på modellene. Omtrent samme framgangsmåte kan brukes på svarte data, men da må man bruke en supercomputer som heter Colossus. Dette dekkes ikke i workshopen. 
-:doc:`younggnu`
-:doc:`02_easy_login`
+I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger inn i Fox via Educloud. Vi skal lære å stille inn modellene slik at vi kan kontrollere kreativiteten til disse modellene. Vi skal bruke et grensesnitt som heter Juypyter Lab fordi det er enklere enn rent terminalgrensesnitt, samtidig som det åpner opp for mulighetene til å bruke røde data og kontrollere innstillingene på modellene. Omtrent samme framgangsmåte kan brukes på svarte data, men da må man bruke en supercomputer som heter Colossus. Dette dekkes ikke i workshopen.
 
 **10:00-10:15**
 
-* Vi logger rett inn på Clusteret og bestiller jobb: 02 Login to browser: Easy way
+* Vi logger rett inn på Clusteret og bestiller jobb: :doc:`02_easy_login`.
 * Vi tar presentasjon kursdeltakere mens vi venter på å komme inn på clusteret 
 * Presentasjon av kurset med dokumentasjon. Kjøreplan for de to dagene. Vi følger rekkefølgen i kapitlene. Kjøreplan vil tilpasses ettersom vi får oversikt over deltakernes behov.
 

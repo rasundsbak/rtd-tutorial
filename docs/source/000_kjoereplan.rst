@@ -46,7 +46,6 @@ I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger
 Vi kommer til å dele en dokumentasjonsside som dere kan ha på lur, dere blir kjent med eksperter på USIT og andre eksperter på KI. Pål og Ragnhild er mer enn gjerne tilgjengelige for hjelp og støtte med det vi kan. 
 
 Velkommen, dette blir gøy! 
-
 Hilsen Ragnhild og Pål 
 
  

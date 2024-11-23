@@ -2,5 +2,4 @@
 
 12 Valami
 =======
-.. index:: valami
-
+.. index::

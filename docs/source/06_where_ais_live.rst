@@ -1,7 +1,7 @@
 .. _06_where_ais_live:
 06 Where do the AIs live?
 =====================
-.. index:: Fox, server, CUDA, A100, GPU, hardware, hugging face
+.. index:: Fox, server, CUDA, A100, GPU, hardware, Huggingface
 
 .. image:: hugging_face.png
 
@@ -15,5 +15,3 @@ Huggingface is a place where developers can freely share code, models, and datas
 Further reading
 --------------
 If you wish, you may read more about the `technical specifications <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/system-overview.md>`_ on Fox.
-
-

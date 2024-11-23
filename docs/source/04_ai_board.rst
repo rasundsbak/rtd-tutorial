@@ -2,7 +2,7 @@
 04 Getting overview with AI on the blackboard
 =================
 
-.. index:: artificial, intelligence, cluster, HPC, Transformers, CUDA, gguf, llama_cpp
+.. index:: artificial, intelligence, cluster, HPC, transformers, CUDA, gguf, llama_cpp
 
 .. image:: AI_board.JPG
 

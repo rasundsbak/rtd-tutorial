@@ -33,7 +33,7 @@ In this workshop we are going to use a supercomputer with the name Fox. Logon to
 - First task from :doc:`00_motivation`
 - Tasks from :doc:`02_easy_login` and :doc:`03_downloading_packages`.
 - :doc:`05_hello_world`
-- Participants choose the sequence of these tasks themselves.
+- Participants choose the sequence of these tasks themselves. If you are unfamiliar with Jupyter lab, you may want to do "Hello World" first. This task can also be done in pairs if that makes you more effective.
 
 **11:00-11.10 Break**
 

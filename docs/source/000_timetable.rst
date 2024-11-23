@@ -1,4 +1,4 @@
-.. _000_dress_rehearsal:
+.. _000_timetable:
 
 000 Plan for Dress rehearsal AI workshop November 26th 2024 
 =================================

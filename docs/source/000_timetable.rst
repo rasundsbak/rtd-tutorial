@@ -40,7 +40,7 @@ In this workshop we are going to use a supercomputer with the name Fox. Logon to
 **11.10-12:00**
 
 - Confirming that everybody still has a job running on the cluster.
-- "AI board", "Where AIs live" and Parameters - One table for each of these chapters, 5 mins for reading. Then 10 min talk and room for questions: :doc:`04_ai_board`, :doc:`06_where_ais_live` and :doc:`09_parameters`
+- "AI board", "Where AIs live" and "Parameters" - One table for each of these chapters, 5 mins for reading. Then 10 min talk and room for questions: :doc:`04_ai_board`, :doc:`06_where_ais_live` and :doc:`09_parameters`
 - We are starting up a model :doc:`08_pirat`
 - Making a prompt and checking the answer. Tasks :doc:`08_pirat`
 - Pegasus X Sum. Changing the parameter, and checking the answer Preparations: Read :doc:`09_parameters`. Task: Run the content of the page :doc:`10_pegasus`

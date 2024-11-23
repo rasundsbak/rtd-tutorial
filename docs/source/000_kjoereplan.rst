@@ -22,11 +22,14 @@ I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger
 
 * Vi logger rett inn på Clusteret og bestiller jobb: :doc:`02_easy_login`.
 * Vi tar presentasjon kursdeltakere mens vi venter på å komme inn på clusteret 
-* Presentasjon av kurset med dokumentasjon. Kjøreplan for de to dagene. Vi følger rekkefølgen i kapitlene. Kjøreplan vil tilpasses ettersom vi får oversikt over deltakernes behov.
+* Kort presentasjon av kurset med dokumentasjon. Vi følger rekkefølgen i kapitlene. Kjøreplanen tilpasses ettersom vi får oversikt over deltakernes behov.
+* Presentasjon arbeidsmetode med grønne og røde lapper.
 
 **10:15-11:00** 
 
-* Sørge for at alle er innlogget i e443 prosjektet 
+* Sørge for at alle:
+ * behersker innlogging med Authenticator og passord
+ * eventuelt har noen å sitte med dersom dette virker umulig
 * Sette opp virtuelt miljø.
 * Kapitlene Easy login og Hello World.
 

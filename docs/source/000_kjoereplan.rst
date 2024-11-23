@@ -20,24 +20,26 @@ I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger
 
 **10:00-10:15**
 
-* Vi logger rett inn på Clusteret og bestiller jobb: :doc:`02_easy_login`.
-* Vi tar presentasjon kursdeltakere mens vi venter på å komme inn på clusteret 
-* Kort presentasjon av kurset med dokumentasjon. Vi følger rekkefølgen i kapitlene. Kjøreplanen tilpasses ettersom vi får oversikt over deltakernes behov.
-* Presentasjon arbeidsmetode med grønne og røde lapper.
+* We go strait to the cluster, and order a job :doc:`02_easy_login`.
+* Short presentation while we are waiting to come into the cluster. Name, role at UiO and what is my relation to AI.
+* Presentation working methods with the red and green sticky notes.
+* Short presentation of the workshop, and its documentation pages 00 - 03
 
 **10:15-11:00** 
 
 - Sørge for at alle:
- #. behersker innlogging med Authenticator og passord
+ #. behersker innlogging med Authenticator og passord (10:15 - 10:30)
  #. eventuelt har noen å sitte med dersom dette virker umulig
  #. har satt opp virtuelt miljø evt sitter med noen som har
 - First task from :doc:`00_motivation`
-- Tasks from :doc:`02_easy_login` and :doc:`03_downliading_packages`.
+- Tasks from :doc:`02_easy_login` and :doc:`03_downloading_packages`.
+- :doc:`05_hello_world`
 
 **11:00-11.10 Pause**
 
 **11.10-12:00**
 
+* AI board - 10 min talk and room for questions
 * Vi starter en modell 
 * Gjør en spørring og sjekker svaret 
 * Går inn og endrer noen parametre, og sjekker svaret

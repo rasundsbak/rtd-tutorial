@@ -12,12 +12,11 @@ Everybody must bring
 
 Why Cluster?
 ------------
-Driving the largest model locally requires 8 graphics cards where each card costs the equivalent of a nice used car. Since you do not need this model so often, it is better to share the resources than everybody having their own supercomputer.
+Driving the largest AI model locally requires 8 graphics cards where each card costs the equivalent of a nice used car. Since you do not need the model so often, it is better to share the resources than everybody having their own supercomputer. 
 
-**How?**
-
-In this workshop we are going to use a supercomputer with the name Fox. Logon to Fox is through Educloud. We are going to learn how to control the creativity of the models. We are going to use an interface with the name of Juypyter Lab because it is easier than running the model from the command prompt. At the same time
-it opens the possibilities of using red data and control the parameters of the model. The same method might be used on black data, but in that case a supercomputer with the name of Colossus, would have had to be used. This will not be covered in the workshop.
+How
+---
+In this workshop we are going to use a supercomputer with the name Fox. Logon to Fox is through Educloud. We are going to learn how to control the creativity of the models. We are going to use an interface with the name of Juypyter Lab. This is easier than running the model from the command prompt. At the same time it opens the possibilities of using red data and control the parameters of the model. The same method might be used on black data, but in that case a supercomputer with the name of Colossus, would have had to be used. This will not be covered in the workshop.
 
 **10:00-10:15**
 
@@ -34,22 +33,23 @@ it opens the possibilities of using red data and control the parameters of the m
 - First task from :doc:`00_motivation`
 - Tasks from :doc:`02_easy_login` and :doc:`03_downloading_packages`.
 - :doc:`05_hello_world`
-- Participants choose the sequence of these tasks themselves.
+- Participants choose the sequence of these tasks themselves. If you are unfamiliar with Jupyter lab, you may want to do "Hello World" first. This task can also be done in pairs if that makes you more effective.
 
 **11:00-11.10 Break**
 
 **11.10-12:00**
 
 - Confirming that everybody still has a job running on the cluster.
-- "AI board" and "Where AIs live" - 10 min talk and room for questions: :doc:`04_ai_board`, :doc:`06_where_ais_live` and :doc:`09_parameters`
+- "AI board", "Where AIs live" and "Parameters" - One table for each of these chapters, 5 mins for reading. Then 10 min talk and room for questions: :doc:`04_ai_board`, :doc:`06_where_ais_live` and :doc:`09_parameters`
 - We are starting up a model :doc:`08_pirat`
 - Making a prompt and checking the answer. Tasks :doc:`08_pirat`
-- Pegasus X Sum. Changing the parameter, and checking the answer Preparations: Read :doc:`09_parameters`. Task: Run the content of the page :doc:`10_pegasus`
-- Kobler modellen til dokumenter: :doc:`11_pegasus_continued`
-- Logger ut. 
-- Kort evaluering: vil jeg være med videre? Skriver navn på grønn lappe om man vil være med i gruppen ut desember 2025
-- Skriver navn på rød lapp om man vil slettes fra gruppen.
-- Ferdig!
+- Pegasus X Sum. Changing the parameter, and checking the answer Preparations: Study :doc:`09_parameters`. Task: Run the content of the page :doc:`10_pegasus`
+- Connecting the model to the documents: :doc:`11_pegasus_continued`
+- Logout. 
+- Short evaluation: Do I want to stay on 443? Write your name on a green sticly note, if you want to stay until december 2025
+- Write your name on a red sticky note if you want to leave the group.
+- Finish!
 
-Velkommen, dette blir gøy!
-Hilsen Pål og Ragnhild
+Welcome, this will be fun!
+
+From Pål and Ragnhild

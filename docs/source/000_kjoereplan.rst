@@ -23,7 +23,7 @@ I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger
 * We go strait to the cluster, and order a job :doc:`02_easy_login`.
 * Short presentation while we are waiting to come into the cluster. Name, role at UiO and what is my relation to AI.
 * Presentation working methods with the red and green sticky notes.
-* Short presentation of the workshop, and its documentation pages 00 - 03
+* Short presentation of the workshop, and its documentation pages 00 - 03 and 05
 
 **10:15-11:00** 
 

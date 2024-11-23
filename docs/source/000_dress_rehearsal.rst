@@ -34,6 +34,7 @@ it opens the possibilities of using red data and control the parameters of the m
 - First task from :doc:`00_motivation`
 - Tasks from :doc:`02_easy_login` and :doc:`03_downloading_packages`.
 - :doc:`05_hello_world`
+- Participants choose the sequence of these tasks themselves.
 
 **11:00-11.10 Break**
 

@@ -39,7 +39,8 @@ I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger
 * Går inn og endrer noen parametre, og sjekker svaret
 * Kobler modellen til dokumenter.
 * Logger ut. 
-* Kort evaluering: vil jeg være med videre? Skriver navn på grønn lappe om man vil være med i gruppen ut desember 2025. * Skriver navn på rød lapp om man vil slettes fra gruppen.
+* Kort evaluering: vil jeg være med videre? Skriver navn på grønn lappe om man vil være med i gruppen ut desember 2025
+* Skriver navn på rød lapp om man vil slettes fra gruppen.
 * Ferdig! 
 
 Vi kommer til å dele en dokumentasjonsside som dere kan ha på lur, dere blir kjent med eksperter på USIT og andre eksperter på KI. Pål og Ragnhild er mer enn gjerne tilgjengelige for hjelp og støtte med det vi kan. 

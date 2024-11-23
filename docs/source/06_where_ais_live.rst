@@ -1,7 +1,7 @@
 .. _06_where_ais_live:
 06 Where do the AIs live?
 =====================
-.. index:: Fox, server, CUDA, A100, GPU, hardware, hugging face
+.. index:: Fox, server, CUDA, A100, GPU, hardware, Huggingface
 
 .. image:: hugging_face.png
 

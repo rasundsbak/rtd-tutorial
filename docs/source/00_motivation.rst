@@ -5,7 +5,7 @@
 
 .. image:: fox_1.png
 
-In this workshop, you will learn how to run an LLM (**Large Language Model**) at the UiO Nvidia Cluster. **Nvidia** is a producer of graphics processing units; GPU. **A Cluster** is a set of computers that work together so that they can be viewed as a single system. Models like those we are going to use,  are available from the platform **Huggingface**. Read more on this in the chapter 06_where_ais_live. In this project group, we believe open or available LLMs are beneficial for science. This is why we want to teach people how to use them. Artificial intelligence models from Huggingface are specific implementations of Transformer architecture. The transformer architecture has made self-supervised learning of neural networks possible, and represents a leap in computer science. 
+In this workshop, you will learn how to run an LLM (**Large Language Model**) at the UiO Nvidia Cluster. **Nvidia** is a producer of graphics processing units; GPU. **A Cluster** is a set of computers that work together so that they can be viewed as a single system. Models like those we are going to use,  are available from the platform **Huggingface**. Read more on this in the chapter :doc:`06_where_ais_live`. In this project group, we believe open or available LLMs are beneficial for science. This is why we want to teach people how to use them. Artificial intelligence models from Huggingface are specific implementations of Transformer architecture. The transformer architecture has made self-supervised learning of neural networks possible, and represents a leap in computer science. 
 
 .. image:: fox_2.png
 

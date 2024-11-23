@@ -1,6 +1,6 @@
-.. _000_kjoereplan:
+.. _000_dress_rehearsal:
 
-000 Kjøreplan for førpremiere av KI workshop 26. november 2024 
+000 Plan for Dress rehearsal AI workshop November 26th 2024 
 =================================
 
 Everybody must bring

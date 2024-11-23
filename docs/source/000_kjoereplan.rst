@@ -35,12 +35,13 @@ I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger
 - Tasks from :doc:`02_easy_login` and :doc:`03_downloading_packages`.
 - :doc:`05_hello_world`
 
-**11:00-11.10 Pause**
+**11:00-11.10 Pause** 
+Have a Coffee, powder noses and read: :doc:`07_prompting`
 
 **11.10-12:00**
 
 - Confirming that everybody still has a job running on the cluster.
-- AI board - 10 min talk and room for questions: :doc:`04_ai_board`
+- AI board - 10 min talk and room for questions: :doc:`04_ai_board` and :doc:`06_where_ais_live`
 - We are starting up a model :doc:`08_pirat`
 - Making a prompt and checking the answer. Tasks chapter 08.
 * Går inn og endrer noen parametre, og sjekker svaret

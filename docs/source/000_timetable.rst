@@ -44,11 +44,11 @@ In this workshop we are going to use a supercomputer with the name Fox. Logon to
 - We are starting up a model :doc:`08_pirat`
 - Making a prompt and checking the answer. Tasks :doc:`08_pirat`
 - Pegasus X Sum. Changing the parameter, and checking the answer Preparations: Read :doc:`09_parameters`. Task: Run the content of the page :doc:`10_pegasus`
-- Kobler modellen til dokumenter: :doc:`11_pegasus_continued`
-- Logger ut. 
-- Kort evaluering: vil jeg være med videre? Skriver navn på grønn lappe om man vil være med i gruppen ut desember 2025
-- Skriver navn på rød lapp om man vil slettes fra gruppen.
-- Ferdig!
+- Connecting the model to the documents: :doc:`11_pegasus_continued`
+- Logout. 
+- Short evaluation: Do I want to stay on 443? Write your name on a green sticly note, if you want to stay until december 2025
+- Write your name on a red sticky note if you want to leave the group.
+- Finish!
 
-Velkommen, dette blir gøy!
-Hilsen Pål og Ragnhild
+Welcome, this will be fun!
+From Pål and Ragnhild

@@ -1,6 +1,7 @@
 .. _000_timetable:
 
-000 Timetable for Dress rehearsal AI workshop November 26th 2024 
+000 Timetable for Run large language models (LLM) through Educloud UiO November 26th 2024 
+===========================================
 
 Everybody must bring
 --------------

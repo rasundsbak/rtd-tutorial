@@ -16,7 +16,7 @@ Driving the largest model locally requires 8 graphics cards where each card cost
 
 **How?**
 
-In this workshop we are going to use a supercomputer with the name Fox.Logon to Fox is through Educloud. We are going to learn how to control the creativity of the models. We are going to use an interface with the name of Juypyter Lab because it is easier than running the model from the command prompt. At the same time
+In this workshop we are going to use a supercomputer with the name Fox. Logon to Fox is through Educloud. We are going to learn how to control the creativity of the models. We are going to use an interface with the name of Juypyter Lab because it is easier than running the model from the command prompt. At the same time
 it opens the possibilities of using red data and control the parameters of the model. The same method might be used on black data, but in that case a supercomputer with the name of Colossus, would have had to be used. This will not be covered in the workshop.
 
 **10:00-10:15**

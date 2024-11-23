@@ -14,7 +14,7 @@ ___________________________
 
 Fox, Cuda and Cluster
 ---------------------
-Wether you like it or not, AI may be your new colleague. When i talk about aspects of the setup on Fox, i say Cuda, Fox or Cluster.
+Wether you like it or not, AI may be your new colleague. When talking about aspects of the setup on Fox, you may hear the words Cuda, Fox or Cluster.
 
 **CUDA** means Compute Unified Device Architecture. According to Wikipedia is a proprietary parallel computing platform and interface, that allows software to use certain types of graphics processing units (GPUs) (Wikipedia Nov. 12th 2024). It has programming languages C++, Cuda C and libraries for mathemathics like cuBLAS. Cuda is made by the firm Nvidia.
 

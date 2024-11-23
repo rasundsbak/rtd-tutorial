@@ -1,7 +1,6 @@
 .. _000_timetable:
 
 000 Timetable for Dress rehearsal AI workshop November 26th 2024 
-=================================
 
 Everybody must bring
 --------------
@@ -52,15 +51,4 @@ it opens the possibilities of using red data and control the parameters of the m
 - Ferdig!
 
 Velkommen, dette blir gøy!
-Hilsen Pål og Ragnhild 
-
- 
-
- 
-
-
-
-
-
-
-
+Hilsen Pål og Ragnhild

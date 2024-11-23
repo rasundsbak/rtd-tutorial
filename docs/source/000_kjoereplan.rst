@@ -28,7 +28,7 @@ I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger
 
 * Sørge for at alle er innlogget i e443 prosjektet 
 * Sette opp virtuelt miljø.
-* Laste inn modellene, sette opp stier («path») 
+* Kapitlene Easy login og Hello World.
 
 **11:00-11.10 Pause**
 

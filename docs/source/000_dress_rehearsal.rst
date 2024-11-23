@@ -16,7 +16,7 @@ Hvorfor Cluster?
 
 **Hvordan:**
 
-I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger inn i Fox via Educloud. Vi skal lære å stille inn modellene slik at vi kan kontrollere kreativiteten til disse modellene. Vi skal bruke et grensesnitt som heter Juypyter Lab fordi det er enklere enn rent terminalgrensesnitt, samtidig som det åpner opp for mulighetene til å bruke røde data og kontrollere innstillingene på modellene. Omtrent samme framgangsmåte kan brukes på svarte data, men da må man bruke en supercomputer som heter Colossus. Dette dekkes ikke i workshopen.
+In this workshop we are going to use a supercomputer with the name Fox.Logon to Fox is through Educloud. Vi skal lære å stille inn modellene slik at vi kan kontrollere kreativiteten til disse modellene. Vi skal bruke et grensesnitt som heter Juypyter Lab fordi det er enklere enn rent terminalgrensesnitt, samtidig som det åpner opp for mulighetene til å bruke røde data og kontrollere innstillingene på modellene. Omtrent samme framgangsmåte kan brukes på svarte data, men da må man bruke en supercomputer som heter Colossus. Dette dekkes ikke i workshopen.
 
 **10:00-10:15**
 
@@ -27,10 +27,9 @@ I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger
 **10:15-11:00** 
 
 - Short presentation of the workshop, and its documentation pages 00 - 03 and 05
-- Start doing the tasks, while PML and RS check out that everybody:
+- Start doing the tasks, while PML and RS check out (green/ red sticky note method) that everybody:
  #. control login with Authenticator and password (10:15 - 10:30)
- #. otherwise have someone to sit with if login proves impossible
- #. have set up a my_venv
+ #. have set up a my_venv according to the :doc:`01_preparations`
 - First task from :doc:`00_motivation`
 - Tasks from :doc:`02_easy_login` and :doc:`03_downloading_packages`.
 - :doc:`05_hello_world`

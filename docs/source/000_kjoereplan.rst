@@ -38,10 +38,11 @@ I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger
 **11:00-11.10 Pause**
 
 **11.10-12:00**
-* Confirming that everybody still has a job running on the cluster.
-* AI board - 10 min talk and room for questions
-* We are starting up a model :doc:`08_pirat`
-* Gjør en spørring og sjekker svaret 
+
+- Confirming that everybody still has a job running on the cluster.
+- AI board - 10 min talk and room for questions: :doc:`04_ai_board`
+- We are starting up a model :doc:`08_pirat`
+- Making a prompt and checking the answer. Tasks chapter 08.
 * Går inn og endrer noen parametre, og sjekker svaret
 * Kobler modellen til dokumenter.
 * Logger ut. 

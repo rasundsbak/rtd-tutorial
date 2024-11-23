@@ -7,7 +7,7 @@ Everybody must bring
 --------------
 
 * A laptop
-* A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_
+* A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_.
 * Bank id
 
 Hvorfor Cluster?

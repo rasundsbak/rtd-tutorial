@@ -37,16 +37,14 @@ I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger
 
 **11:00-11.10 Break**
 
-Have a Coffee, powder noses and read: :doc:`07_prompting`
-
 **11.10-12:00**
 
 - Confirming that everybody still has a job running on the cluster.
-- AI board - 10 min talk and room for questions: :doc:`04_ai_board` and :doc:`06_where_ais_live`
+- "AI board" and "Where AIs live" - 10 min talk and room for questions: :doc:`04_ai_board` and :doc:`06_where_ais_live`
 - We are starting up a model :doc:`08_pirat`
-- Making a prompt and checking the answer. Tasks chapter 08.
-- Går inn og endrer noen parametre, og sjekker svaret
-- Kobler modellen til dokumenter.
+- Making a prompt and checking the answer. Tasks :doc:`08_pirat`
+- Pegasus X Sum. Changing the parameter, and checking the answer Preparations: Read :doc:`09_parameters`. Task: Run the content of the page :doc:`10_pegasus`
+- Kobler modellen til dokumenter: :doc:`11_pegasus_continued`
 - Logger ut. 
 - Kort evaluering: vil jeg være med videre? Skriver navn på grønn lappe om man vil være med i gruppen ut desember 2025
 - Skriver navn på rød lapp om man vil slettes fra gruppen.

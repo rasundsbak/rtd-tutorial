@@ -31,6 +31,7 @@ I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger
  #. behersker innlogging med Authenticator og passord
  #. eventuelt har noen å sitte med dersom dette virker umulig
  #. har satt opp virtuelt miljø
+- First task from `00_motivation`
 - Kapitlene `02_easy_login` og `05_hello_world`.
 
 **11:00-11.10 Pause**

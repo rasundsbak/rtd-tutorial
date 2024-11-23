@@ -1,6 +1,6 @@
 .. _000_timetable:
 
-000 Timetable for Dress rehearsal AI workshop November 26th 2024 
+000 Timetable
 
 Everybody must bring
 --------------

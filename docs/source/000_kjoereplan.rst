@@ -35,7 +35,8 @@ I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger
 - Tasks from :doc:`02_easy_login` and :doc:`03_downloading_packages`.
 - :doc:`05_hello_world`
 
-**11:00-11.10 Pause** 
+**11:00-11.10 Break**
+
 Have a Coffee, powder noses and read: :doc:`07_prompting`
 
 **11.10-12:00**

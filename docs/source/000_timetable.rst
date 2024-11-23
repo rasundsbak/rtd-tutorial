@@ -1,7 +1,6 @@
-.. _000_kjoereplan:
+.. _000_timetable:
 
-000 Kjøreplan for førpremiere av KI workshop 26. november 2024 
-=================================
+000 Timetable for Dress rehearsal AI workshop November 26th 2024 
 
 Everybody must bring
 --------------
@@ -10,54 +9,46 @@ Everybody must bring
 * A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_.
 * Bank id
 
-Hvorfor Cluster?
+Why Cluster?
 ------------
-Å kjøre den største modellen lokalt krever 8 grafikkort som hver for seg koster en ganske fin bruktbil. Siden man ikke trenger denne modellen så ofte, er det bedre å dele på ressursene enn at alle skal ha sin egen superdatamaskin.   
+Driving the largest model locally requires 8 graphics cards where each card costs the equivalent of a nice used car. Since you do not need this model so often, it is better to share the resources than everybody having their own supercomputer.
 
-**Hvordan:**
+**How?**
 
-I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger inn i Fox via Educloud. Vi skal lære å stille inn modellene slik at vi kan kontrollere kreativiteten til disse modellene. Vi skal bruke et grensesnitt som heter Juypyter Lab fordi det er enklere enn rent terminalgrensesnitt, samtidig som det åpner opp for mulighetene til å bruke røde data og kontrollere innstillingene på modellene. Omtrent samme framgangsmåte kan brukes på svarte data, men da må man bruke en supercomputer som heter Colossus. Dette dekkes ikke i workshopen. 
-:doc:`younggnu`
-:doc:`02_easy_login`
+In this workshop we are going to use a supercomputer with the name Fox. Logon to Fox is through Educloud. We are going to learn how to control the creativity of the models. We are going to use an interface with the name of Juypyter Lab because it is easier than running the model from the command prompt. At the same time
+it opens the possibilities of using red data and control the parameters of the model. The same method might be used on black data, but in that case a supercomputer with the name of Colossus, would have had to be used. This will not be covered in the workshop.
 
 **10:00-10:15**
 
-* Vi logger rett inn på Clusteret og bestiller jobb: 02 Login to browser: Easy way
-* Vi tar presentasjon kursdeltakere mens vi venter på å komme inn på clusteret 
-* Presentasjon av kurset med dokumentasjon. Kjøreplan for de to dagene. Vi følger rekkefølgen i kapitlene. Kjøreplan vil tilpasses ettersom vi får oversikt over deltakernes behov.
+* We go strait to the cluster, and order a job :doc:`02_easy_login`. RS demonstration on main screen.
+* Short presentation while we are waiting to come into the cluster. Name, role at UiO and what is my relation to AI.
+* Presentation working methods with the red and green sticky notes.
 
 **10:15-11:00** 
 
-* Sørge for at alle er innlogget i e443 prosjektet 
-* Sette opp virtuelt miljø.
-* Kapitlene Easy login og Hello World.
+- Short presentation of the workshop, and its documentation pages 00 - 03 and 05
+- Start doing the tasks, while PML and RS check out (green/ red sticky note method) that everybody:
+ #. control login with Authenticator and password (10:15 - 10:30)
+ #. have set up a my_venv according to the :doc:`01_preparations`
+- First task from :doc:`00_motivation`
+- Tasks from :doc:`02_easy_login` and :doc:`03_downloading_packages`.
+- :doc:`05_hello_world`
+- Participants choose the sequence of these tasks themselves.
 
-**11:00-11.10 Pause**
+**11:00-11.10 Break**
 
 **11.10-12:00**
 
-* Vi starter en modell 
-* Gjør en spørring og sjekker svaret 
-* Går inn og endrer noen parametre, og sjekker svaret
-* Kobler modellen til dokumenter.
-* Logger ut. 
-* Kort evaluering: vil jeg være med videre? Skriver navn på grønn lappe om man vil være med i gruppen ut desember 2025
-* Skriver navn på rød lapp om man vil slettes fra gruppen.
-* Ferdig! 
+- Confirming that everybody still has a job running on the cluster.
+- "AI board" and "Where AIs live" - 10 min talk and room for questions: :doc:`04_ai_board`, :doc:`06_where_ais_live` and :doc:`09_parameters`
+- We are starting up a model :doc:`08_pirat`
+- Making a prompt and checking the answer. Tasks :doc:`08_pirat`
+- Pegasus X Sum. Changing the parameter, and checking the answer Preparations: Read :doc:`09_parameters`. Task: Run the content of the page :doc:`10_pegasus`
+- Kobler modellen til dokumenter: :doc:`11_pegasus_continued`
+- Logger ut. 
+- Kort evaluering: vil jeg være med videre? Skriver navn på grønn lappe om man vil være med i gruppen ut desember 2025
+- Skriver navn på rød lapp om man vil slettes fra gruppen.
+- Ferdig!
 
-Vi kommer til å dele en dokumentasjonsside som dere kan ha på lur, dere blir kjent med eksperter på USIT og andre eksperter på KI. Pål og Ragnhild er mer enn gjerne tilgjengelige for hjelp og støtte med det vi kan. 
-
-Velkommen, dette blir gøy! 
-
-Hilsen Ragnhild og Pål 
-
- 
-
- 
-
-
-
-
-
-
-
+Velkommen, dette blir gøy!
+Hilsen Pål og Ragnhild

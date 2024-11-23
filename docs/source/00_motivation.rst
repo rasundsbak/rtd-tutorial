@@ -1,7 +1,7 @@
 .. _00_motivation:
 00 Motivation for the Workshop
 ==============
-.. index:: chatbot, motivation, Huggingface, transformers, LLM, cluster, Nvidia
+.. index:: chatbot, motivation, Huggingface, transformers, LLM, cluster, NVIDIA
 
 .. image:: fox_1.png
 

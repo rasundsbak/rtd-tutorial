@@ -12,7 +12,7 @@ Everybody must bring
 
 Hvorfor Cluster?
 ------------
-Å kjøre den største modellen lokalt krever 8 grafikkort som hver for seg koster en ganske fin bruktbil, og siden man ikke trenger denne modellen så ofte, er det bedre å dele på ressursene enn at alle skal ha sin egen superdatamaskin.   
+Å kjøre den største modellen lokalt krever 8 grafikkort som hver for seg koster en ganske fin bruktbil. Siden man ikke trenger denne modellen så ofte, er det bedre å dele på ressursene enn at alle skal ha sin egen superdatamaskin.   
 
 Hvordan: 
 I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger inn i Fox via Educloud. Vi skal lære å stille inn modellene slik at vi kan kontrollere kreativiteten til disse modellene. Vi skal bruke et grensesnitt som heter Juypyter Lab fordi det er enklere enn rent terminalgrensesnitt, samtidig som det åpner opp for mulighetene til å bruke røde data og kontrollere innstillingene på modellene. Omtrent samme framgangsmåte kan brukes på svarte data, men da må man bruke en supercomputer som heter Colossus. Dette dekkes ikke i workshopen. 

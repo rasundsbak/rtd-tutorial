@@ -2,7 +2,7 @@
 04 Getting overview with AI on the blackboard
 =================
 
-.. index:: artificial, intelligence, cluster, HPC, Transformers, CUDA, gguf, llama_cpp
+.. index:: artificial, intelligence, cluster, HPC, transformers, CUDA, gguf, llama_cpp
 
 .. image:: AI_board.JPG
 
@@ -14,7 +14,7 @@ ___________________________
 
 Fox, Cuda and Cluster
 ---------------------
-Wether you like it or not, AI may be your new colleague. When i talk about aspects of the setup on Fox, i say Cuda, Fox or Cluster.
+Wether you like it or not, AI may be your new colleague. When talking about aspects of the setup on Fox, you may hear the words Cuda, Fox or Cluster.
 
 **CUDA** means Compute Unified Device Architecture. According to Wikipedia is a proprietary parallel computing platform and interface, that allows software to use certain types of graphics processing units (GPUs) (Wikipedia Nov. 12th 2024). It has programming languages C++, Cuda C and libraries for mathemathics like cuBLAS. Cuda is made by the firm Nvidia.
 
@@ -34,7 +34,7 @@ Wether you like it or not, AI may be your new colleague. When i talk about aspec
 
 .. note::
 
-  Task 4.1: 10 mins. Write a list over concepts that you do not understand. Go in pairs, and discuss the concepts you want to elaborate on. Use google, UiO GPT or an encyclopedia from the library.
+  Task 4.1: Write a list over concepts that you do not understand. Go in pairs, and discuss the concepts you want to elaborate on. Use google, UiO GPT or an encyclopedia from the library.
 
 
 .. todo:: 
@@ -42,4 +42,3 @@ Wether you like it or not, AI may be your new colleague. When i talk about aspec
 
 .. todo:: 
   Todo 4.2: Indikere minutter på alle oppgavene. Hvor lang tid tar hver oppgave?.
-

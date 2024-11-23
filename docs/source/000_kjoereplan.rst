@@ -20,7 +20,7 @@ I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger
 
 **10:00-10:15**
 
-* Vi logger rett inn på Clusteret og bestiller jobb. 
+* Vi logger rett inn på Clusteret og bestiller jobb: 02 Login to browser: Easy way
 * Vi tar presentasjon kursdeltakere mens vi venter på å komme inn på clusteret 
 * Presentasjon av kurset med dokumentasjon. Kjøreplan for de to dagene. Vi følger rekkefølgen i kapitlene. Kjøreplan vil tilpasses ettersom vi får oversikt over deltakernes behov.
 

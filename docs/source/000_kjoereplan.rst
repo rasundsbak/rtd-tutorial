@@ -40,7 +40,7 @@ I dette kurset skal vi bruke en superdatamaskin på UiO som heter Fox. Vi logger
 **11.10-12:00**
 
 - Confirming that everybody still has a job running on the cluster.
-- "AI board" and "Where AIs live" - 10 min talk and room for questions: :doc:`04_ai_board` and :doc:`06_where_ais_live`
+- "AI board" and "Where AIs live" - 10 min talk and room for questions: :doc:`04_ai_board`, :doc:`06_where_ais_live` and :doc:`09_parameters`
 - We are starting up a model :doc:`08_pirat`
 - Making a prompt and checking the answer. Tasks :doc:`08_pirat`
 - Pegasus X Sum. Changing the parameter, and checking the answer Preparations: Read :doc:`09_parameters`. Task: Run the content of the page :doc:`10_pegasus`

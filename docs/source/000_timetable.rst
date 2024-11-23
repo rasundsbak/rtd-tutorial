@@ -1,7 +1,7 @@
 .. _000_timetable:
 
 000 Timetable AI workshop November 26th 2024
-====================================
+==========================================
 
 Everybody must bring
 --------------

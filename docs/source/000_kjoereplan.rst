@@ -1,6 +1,6 @@
 .. _000_kjoereplan:
 
-Kjøreplan for førpremiere av KI workshop 26. november 2024 
+000 Kjøreplan for førpremiere av KI workshop 26. november 2024 
 =================================
 
 Everybody must bring

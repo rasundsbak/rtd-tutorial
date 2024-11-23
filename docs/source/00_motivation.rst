@@ -5,7 +5,7 @@
 
 .. image:: fox_1.png
 
-In this workshop, you will learn how to run an LLM (**Large Language Model**) at the UiO Nvidia Cluster. **Nvidia** is a producer of graphics processing units; GPU. **A Cluster** is a set of computers that work together so that they can be viewed as a single system. Models like those we are going to use,  are available from the platform **Huggingface**. Huggingface is a place where developers can freely share code, models, and datasets. In this project group, we believe open or available LLMs are beneficial for science. This is why we want to teach people how to use them. Artificial intelligence models from Huggingface are specific implementations of Transformer architecture. The transformer architecture has made self-supervised learning of neural networks possible, and represents a leap in computer science. 
+In this workshop, you will learn how to run an LLM (**Large Language Model**) at the UiO Nvidia Cluster. **Nvidia** is a producer of graphics processing units; GPU. **A Cluster** is a set of computers that work together so that they can be viewed as a single system. Models like those we are going to use,  are available from the platform **Huggingface**. Read more on this in the chapter :doc:`06_where_ais_live`. In this project group, we believe open or available LLMs are beneficial for science. This is why we want to teach people how to use them. Artificial intelligence models from Huggingface are specific implementations of Transformer architecture. The transformer architecture has made self-supervised learning of neural networks possible, and represents a leap in computer science. 
 
 .. image:: fox_2.png
 
@@ -17,7 +17,7 @@ First task
 -----------
 At the UiO we have had access to Chat GPT since 2023. In this workshop, we want to teach you what goes on behind the interface. You will learn more on how to start up your own AI from a script in Jupyter Lab.
 
-.. note:: Task 0.1. 5 mins.:  Visit UiO `Chat GPT <https://www.uio.no/tjenester/it/ki/gpt-uio/>`_ and enter the following: 
+.. note:: Task 0.1. 2 mins.:  Visit UiO `Chat GPT <https://www.uio.no/tjenester/it/ki/gpt-uio/>`_ and enter the following: 
 
 Code view::
 

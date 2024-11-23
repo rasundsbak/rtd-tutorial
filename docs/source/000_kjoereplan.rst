@@ -45,18 +45,15 @@ Have a Coffee, powder noses and read: :doc:`07_prompting`
 - AI board - 10 min talk and room for questions: :doc:`04_ai_board` and :doc:`06_where_ais_live`
 - We are starting up a model :doc:`08_pirat`
 - Making a prompt and checking the answer. Tasks chapter 08.
-* Går inn og endrer noen parametre, og sjekker svaret
-* Kobler modellen til dokumenter.
-* Logger ut. 
-* Kort evaluering: vil jeg være med videre? Skriver navn på grønn lappe om man vil være med i gruppen ut desember 2025
-* Skriver navn på rød lapp om man vil slettes fra gruppen.
-* Ferdig! 
+- Går inn og endrer noen parametre, og sjekker svaret
+- Kobler modellen til dokumenter.
+- Logger ut. 
+- Kort evaluering: vil jeg være med videre? Skriver navn på grønn lappe om man vil være med i gruppen ut desember 2025
+- Skriver navn på rød lapp om man vil slettes fra gruppen.
+- Ferdig!
 
-Vi kommer til å dele en dokumentasjonsside som dere kan ha på lur, dere blir kjent med eksperter på USIT og andre eksperter på KI. Pål og Ragnhild er mer enn gjerne tilgjengelige for hjelp og støtte med det vi kan. 
-
-Velkommen, dette blir gøy! 
-
-Hilsen Ragnhild og Pål 
+Velkommen, dette blir gøy!
+Hilsen Pål og Ragnhild 
 
  
 

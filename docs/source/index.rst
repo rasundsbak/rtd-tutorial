@@ -31,7 +31,7 @@ Learning objectives
    :caption: Table of Contents
    :titlesonly:
 
-   000_kjoereplan
+   000_timetable
    00_motivation
    01_preparations
    02_easy_login

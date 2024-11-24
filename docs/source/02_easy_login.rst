@@ -16,7 +16,7 @@ When you are logged on to `the Fox <https://oidc.fp.educloud.no/>`_, move like t
 
 .. warning:: 
 
-  Try to get used to that you may experience small technical problems like the kernel stops, because they are just annoying hickups and usually don't make to much problem.
+  Try to get used to experiencing small technical problems like the kernel stops. These are just annoying hickups and usually don't make to much problem.
 
 .. image:: fox_skjermbilde.png
 

@@ -381,4 +381,3 @@ code view 1::
   # Congratulations. You have now finishes the workshop
   # on how to Run large language models (LLM) through Educloud UiO
   # We hope to see you again!
-

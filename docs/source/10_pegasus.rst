@@ -228,4 +228,5 @@ Scott (1822)
 .. image:: copy_cell.png
 
 .. note::
+
   Task 10.2: Use copy cell in jupyter lab in order to get e a copy of the summarization cell. Change some of the parameters, and see if the output changes.

@@ -41,5 +41,4 @@ Wether you like it or not, AI may be your new colleague. When talking about aspe
   Todo 4.1: Vi må legge inn oppgaver der det passer. Det er bedre å erfare enn å lese.
 
 .. todo:: 
-
   Todo 4.2: Indikere minutter på alle oppgavene. Hvor lang tid tar hver oppgave?

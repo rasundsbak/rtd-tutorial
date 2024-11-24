@@ -12,7 +12,7 @@ code view 1::
     
     ```bash
     # Activate the virtual environment
-    source /fp/projects01/ec443/ec-username/my_venv/bin/activate
+    source /fp/projects01/ec443/username/my_venv/bin/activate
 
 Run these cells one my one in Juputer lab:
 

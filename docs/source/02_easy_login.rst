@@ -18,7 +18,7 @@ When you are logged on to `the Fox <https://ood.educloud.no/>`_, move like this:
 
 .. note::
 
-  Task 2.1: 2 mins. Look into the folders. What does it look like? Familiarize yourself with the browser view of Fox. For a beginner, this will be useful when you are using the terminal. You can switch back and forth between browser view and terminal/ command prompt, to check if everything is in compliance.
+  Task 2.1: 2 mins. Look into the folders. What does it look like? Familiarize yourself with the browser view of Fox. For a beginner, this will be useful even when you are using the terminal. You can switch back and forth between browser view and terminal/ command prompt, to check if everything is in compliance.
 
 .. note::
 

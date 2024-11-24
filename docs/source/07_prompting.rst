@@ -6,7 +6,7 @@
 
 Turning roles around: Who is asking now?
 -------------
-Promting an AI can be like making a conversation with an expert. If you know what you are asking for, and provide some context, the AI will answer your questions in the best possible way. For example: "I want to grow vegetables in my garden, but before you answer, make an interview with me so that you can give a best possible answer." The AI may ask how much sunlight there is in your garden". Background information may be essential for the response the AI gives. The AI and you may not have ended on the same conclusion, if you at first had not asked for the interview.
+A good promting the AI should be like making a conversation with an expert. If you know what you are asking for, and provide some context, the AI will answer your questions in the best possible way. For example: "I want to grow vegetables in my garden, but before you answer, make an interview with me so that you can give a best possible answer." The AI may ask how much sunlight there is in your garden". Background information may be essential for the response the AI gives. The AI and you may not have ended on the same conclusion, if you at first had not asked for the interview.
 
 Tips for future prompting
 ---------------------

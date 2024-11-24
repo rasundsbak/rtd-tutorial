@@ -15,6 +15,7 @@ The easiest way doing this, is to use the browser view for Fox. The idea is that
 Pro tip but only if something is not working: use pipinstall fitz, frontend, starlette. Don't run tis cell, but later if needed:
 
 Code view 0::
+
   # Install necessary packages directly in Jupyter Notebook
   !pip install fitz frontend starlette --user
 

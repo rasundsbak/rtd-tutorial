@@ -214,6 +214,8 @@ Code view 8::
   # summary_pipeline = summarizer(input_text)
   # print("Generated Summary with Pipeline:\n", summary_pipeline[0]['summary_text'])
 
+Scott (1822)
+
 .. image:: copy_cell.png
 
 .. note::

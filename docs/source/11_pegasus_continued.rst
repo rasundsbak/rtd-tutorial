@@ -8,12 +8,13 @@ We are going to connect the model to our documents. You had the overview over th
 
 
 code view 1::
+  
   # får rar feilmelding "expendable segments", vil sjekke torch versjon.
   import torch
   print(torch.__version__)
 
 
-code view 1::
+code view 2::
 
   import torch
   print(torch.__version__)  # Should show: 2.0.0+cu117
@@ -21,7 +22,7 @@ code view 1::
   import torchvision
   print(torchvision.__version__)  # Should show: 0.15.1+cu117
 
-code view 1::
+code view 3::
 
   # Import necessary libraries
   import os
@@ -44,7 +45,7 @@ code view 1::
   # Check if GPU is available
   print("Is GPU available?:", torch.cuda.is_available())
 
-code view 1::
+code view 4::
 
   import torch
   
@@ -62,7 +63,7 @@ code view 1::
       print("No GPU available")
 
 
-code view 1::
+code view 5::
 
   # Count words in the folder CleanTests
   import os
@@ -105,7 +106,7 @@ code view 1::
   for filename, word_count in sorted(txt_word_counts.items()):
       print(f"{filename}: {word_count} words")
 
-code view 1::
+code view 6::
   
   # Generate summaries for all documents in the "documents" folder
   
@@ -221,7 +222,7 @@ code view 1::
 
 This cell is heavy for beginners but well-structured documentation and in-line comments make it comprehensible. Chunking is essential given the document sizes, ensuring that the Pegasus model processes the text effectively.
 
-code view 1::
+code view 7::
 
   # Generate summaries for all documents in the "documents" folder
   
@@ -365,10 +366,19 @@ code view 1::
   
   print("All summaries have been generated.")
 
+.. note::
 
+  Task 11:1: Use copy cell in jupyter lab in order to get e a copy of the summarization cell. Change some of the parameters, and see if the output changes. Remember to change the values of the "documents" path before you run and generate new output. See cell below for illustration.
+
+code view 1::
+
+  # Specify the folder for PDF documents and the output folder for summaries
+  documents_folder = f"/fp/homes01/u01/{username}/documents"
+  summaries_folder = f"/fp/homes01/u01/{username}/summaries_2"
 
 code view 1::
 
   # Congratulations. You have now finishes the workshop
   # on how to Run large language models (LLM) through Educloud UiO
   # We hope to see you again!
+

@@ -365,7 +365,15 @@ code view 1::
   
   print("All summaries have been generated.")
 
+.. note::
 
+  Task 11:1: Use copy cell in jupyter lab in order to get e a copy of the summarization cell. Change some of the parameters, and see if the output changes. Remember to change the values of the "documents" path before you run and generate new output. See cell below for illustration.
+
+code view 1::
+
+  # Specify the folder for PDF documents and the output folder for summaries
+  documents_folder = f"/fp/homes01/u01/{username}/documents"
+  summaries_folder = f"/fp/homes01/u01/{username}/summaries_2"
 
 code view 1::
 

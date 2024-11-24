@@ -15,5 +15,3 @@ Huggingface is a place where developers can freely share code, models, and datas
 Further reading
 --------------
 If you wish, you may read more about the `technical specifications <https://www.uio.no/english/services/it/research/platforms/edu-research/help/fox/system-overview.md>`_ on Fox.
-
-

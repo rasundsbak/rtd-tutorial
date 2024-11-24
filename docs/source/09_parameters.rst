@@ -55,5 +55,6 @@ Code view with parameters::
 
 Further reading
 --------------
-When it comes to creaticity, Where does the machine take its suggestions from? In order to understand, it can help to take a look at this three dimensional presentation of a model `Project Tensorflow <https://projector.tensorflow.org/>`_  
+When it comes to creaticity, Where does the machine take its suggestions from? In order to understand, it can help studying at this three dimensional presentation of a model `Project Tensorflow <https://projector.tensorflow.org/>`_  
+
 Num_beams is related to `beam search <https://en.wikipedia.org/wiki/Beam_search>`_,

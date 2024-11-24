@@ -22,4 +22,4 @@ When you are logged on to `the Fox <https://ood.educloud.no/>`_, move like this:
 
 .. note::
 
-  Task 2.2: 2 mins. How do you copy or move files in the terminal view? Hint, mark the file, and click on Move/Copy
+  Task 2.2: 2 mins. How do you copy or move files in the browser view? Hint, mark the file, and click on Move/Copy

@@ -14,4 +14,4 @@ In this workshop, you will practice deciding the role of the AI. An economist, a
 
 When the log is too long, the model gets tired
 ---------------------
-It needs to rest. When the conversation is too long, the model might start to seem comfused, or start using a strange language. Ask the model to sum up the conversation. This can be the first prompt in a new dialogue, and you can delete the old dialogue.
+The AI needs to rest. It can be overwhelmed, just like humans. When the conversation is too long, the model might start to seem comfused, or start using a strange language. Ask the model to sum up the conversation. This can be the first prompt in a new dialogue, and you can delete the old dialogue.

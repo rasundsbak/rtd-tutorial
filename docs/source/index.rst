@@ -24,7 +24,7 @@ Learning objectives
 - learn how to use UiOs infrastructure for computational power to use various open LLMs
 - Learn how to create effective prompts and adjust relevant parameters
 - Connect the model to your own data in the form of PDFs or text data.
-- Be fluent in how to set up your own model in Jupyter Lab, so that you may use the process independently for interaction with open LLMs
+- Be fluent in how to set up your own model in Jupyter Lab, so that you may use the process independently for interaction with other open LLMs
 
 .. toctree::
    :maxdepth: 2

@@ -24,7 +24,7 @@ Hello world
   Task 5.2: Copy the content of the cell below, and run it in Jupyter lab, in an ipynb document.
 
 
-Code cell 1::
+Run this Cell::
 
   print('Hello, world.')
 

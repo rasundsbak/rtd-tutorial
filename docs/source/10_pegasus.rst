@@ -73,6 +73,7 @@ Code view 7::
 This is a long piece of code, but we can do it anyway.
 Code view 8::
 
+  # Ignore  expandable_segments error message as the model will still deliver an output
   import os
   from transformers import pipeline, PegasusForConditionalGeneration, PegasusTokenizer
   import fitz  # PyMuPDF for PDF-konvertering, hvis nødvendig
@@ -212,6 +213,13 @@ Code view 8::
   # Alternativt, generer sammendrag ved hjelp av pipelinen
   # summary_pipeline = summarizer(input_text)
   # print("Generated Summary with Pipeline:\n", summary_pipeline[0]['summary_text'])
+
+Scott (1822)
+
+.. image:: copy_cell.png
+
+.. note::
+  Task 10.1: Use copy cell in jupyter lab som that you have a copy of the summarization cell. Change some of the parameters, and see if the output changes.
 
 
 

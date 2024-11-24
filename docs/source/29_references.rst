@@ -11,11 +11,10 @@ Cloudflare (2024): `What is a large language model (LLM)? <https://www.cloudflar
 
 Heaven(2024), Will Douglas: `Artificial intelligence: What is AI? <https://www.technologyreview.com/2024/07/10/1094475/what-is-artificial-intelligence-ai-definitive-guide/>`_. July 10. MIT Technology Review
 
-Attention Is All You Need 2. Aug 2023
-Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin
-(2023) <https://arxiv.org/abs/1706.03762>`_ 
+Scott, Sir Walter (1822): The Pirate. Edinburgh, Hurst.
 
-"When you have 3 or more authors, you only use the first author's surname in text, and abbreviate the rest of the list with "et al." (Latin for "and others"). In your reference list, you list all of the authors (up to 20)."
+Vaswani, Ashish; Noam Shazeer; Niki Parmar; Jakob Uszkoreit; Llion Jones; Aidan N. Gomez; Lukasz Kaiser and Illia Polosukhin (2023): Attention Is All You Need.
+<https://arxiv.org/abs/1706.03762>`_  2. Aug 2023
 
 
 Recommended reading

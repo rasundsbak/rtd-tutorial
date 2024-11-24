@@ -44,6 +44,7 @@ Learning objectives
    09_parameters
    10_pegasus
    11_pegasus_continued
+   12_pips
    29_references
    30_todo
 

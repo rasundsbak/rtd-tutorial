@@ -16,6 +16,8 @@ Scott, Sir Walter (1822): The Pirate. Edinburgh, Hurst.
 Vaswani, Ashish; Noam Shazeer; Niki Parmar; Jakob Uszkoreit; Llion Jones; Aidan N. Gomez; Lukasz Kaiser and Illia Polosukhin (2023): Attention Is All You Need.
 <https://arxiv.org/abs/1706.03762>`_  2. Aug 2023
 
+UiO ChatGPT (2024): Assistance in developing workshop documentation using OpenAI's GPT models. University of Oslo. Available at: <https://www.uio.no/tjenester/it/ki/gpt-uio/> Accessed Nov. 24th.
+
 
 Recommended reading
 ------------------

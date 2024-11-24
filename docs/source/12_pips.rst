@@ -14,6 +14,8 @@ code view 1::
     # Activate the virtual environment
     source /fp/projects01/ec443/ec-username/my_venv/bin/activate
 
+Run these cells one my one in Juputer lab:
+
 code view 2::
 
   # Install ipykernel if not already installed
@@ -22,17 +24,10 @@ code view 2::
   # Add the virtual environment as a Jupyter kernel
   python -m ipykernel install --user --name=my_venv --display-name "Python (my_venv)"
 
+To ensure you have all the necessary packages installed in your virtual environment, run the following cells to install them within the Jupyter Notebook.
 code view 3::
 
-  ## Setting Up the Environment in Jupyter Notebook
-  
-  To ensure you have all the necessary packages installed in your virtual environment, run the following cells to install them within the Jupyter Notebook.
-  
-  ### Step 1: Install Packages
-  
-  Run these cells one by one:
-  
-  ```python
+  # Setting Up the Environment in Jupyter Notebook
   # Install transformers
   !pip install transformers==4.45.0
 

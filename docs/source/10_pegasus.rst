@@ -53,7 +53,7 @@ code view 4::
   
   import os
   os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
-  os.environ["HF_HOME"] = "/fp/projects01/ec367/huggingface/cache"
+  os.environ["HF_HOME"] = "/fp/projects01/ec443/huggingface/cache"
   
   print("PYTORCH_CUDA_ALLOC_CONF:", os.getenv("PYTORCH_CUDA_ALLOC_CONF"))
   print("HF_HOME:", os.getenv("HF_HOME"))
@@ -77,7 +77,7 @@ This is to be done in terminal, after ssh login
 Code view 7::
 
   # It is advisable to activate your virtual environment before you start the processes in Jupyter lab.
-  # source /fp/projects01/ec367/ragnhsu/venv_transformers/bin/activate
+  # source /fp/projects01/ec443/[user-name-here-no-ec]/venv_transformers/bin/activate
 
 This is a long piece of code, but we can do it anyway.
 Code view 8::

@@ -6,7 +6,7 @@
 
 
 .. note:: 
-  Task 10.1: Before starting to run summarizations, everyone should move 5 chosen pdfs from a shared space into a folder called "documents" at your homedrive at ec443. The reason is that when you get the output, the user rights management at fox, will be set up much easier if whe do it in the way described here, than if you would choose to make the model generate output on your project area that you have at the same place as the venv. See illustration below. It will also look better in the project area. 
+  Task 10.1: Before starting to run summarizations, everyone should move 5 chosen pdfs from a shared space into a folder called "documents" at your homedrive at ec443. The reason is that this will make you set for having your own texts in this folder, in your future work process. Also, when you get the output, the user rights management at fox, will be set up much easier if we do it in the way described here, than if you would choose to make the model generate output on your project area that you have at the same place as the venv. See illustration below. Finally, it will look tidier in the project area. 
 
 .. image:: fox_dokument.png
 

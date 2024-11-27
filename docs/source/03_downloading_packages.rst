@@ -1,12 +1,46 @@
 .. _03_downloading_packages:
-03 Creating your venv and downloading packages
+03 Creating your venv and downloading packages old and new style
 ===================
+New Style: Using Jupyter Notebook
+-------------
+Execute the following code in a Jupyter notebook cell to create a new virtual environment:
+
+Cell 1::
+
+   import os
+   import subprocess
+   import sys
+   
+   # Specify the path to your virtual environment
+   venv_path = "/fp/homes01/u01/your_username/my_venv"  # Replace 'your_username' with the actual username
+   
+   # Create the virtual environment
+   subprocess.check_call([sys.executable, "-m", "venv", venv_path])
+   print(f"Created new virtual environment at {venv_path}")
+
+Cell 2::
+
+   # Function to activate the virtual environment in Jupyter notebook
+   def activate_venv():
+       activate_this = os.path.join(venv_path, "bin/activate_this.py")
+       with open(activate_this) as f:
+           exec(f.read(), {'__file__': activate_this})
+   
+   # Activate the virtual environment
+   activate_venv()
+   print(f"Activated virtual environment at {venv}")
+
+Cell 3::
+
+
+   
 
 
 
 
-03 Downloading packages to venv old style
-==============================
+
+03. 1 Old style - you have established a venv from commandline. Nownload packages to it.
+--------------------------------------------------
 .. index:: virtual environment, activate venv, path, requirements
 
 Vi skal laste ned alle pakkene i venv. Til dette bruker vi et dokument som ligger i en fellesmappe her: 
@@ -14,7 +48,7 @@ Vi skal laste ned alle pakkene i venv. Til dette bruker vi et dokument som ligge
 **/fp/projects01/ec443/clean_env**
 
 **Kjør denne**
-Terminal view 1::
+Cell 1::
 
    import subprocess
    import sys
@@ -37,7 +71,7 @@ Terminal view 1::
 
 
 **Deretter kjører du denne**
-Terminal view 2::
+Cell 2::
 
    import subprocess
    import sys

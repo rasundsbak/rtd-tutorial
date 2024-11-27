@@ -1,5 +1,11 @@
 .. _03_downloading_packages:
-03 Downloading packages to venv
+03 Creating your venv and downloading packages
+===================
+
+
+
+
+03 Downloading packages to venv old style
 ==============================
 .. index:: virtual environment, activate venv, path, requirements
 
@@ -52,7 +58,3 @@ Terminal view 2::
    install_requirements(requirements_path)
    
    # Inni requirements.txt, triton==2.0.0  # Endret til kompatibel versjon
-
-Terminal view 3::
-
-   !pip install --upgrade pip

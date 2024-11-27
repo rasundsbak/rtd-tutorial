@@ -51,7 +51,7 @@ Cell 3::
 
 
 
-03. 1 Old style - you have established a venv from commandline. Nownload packages to it.
+03. 1 Old style - you have established a venv from commandline. Download packages to it.
 --------------------------------------------------
 .. index:: virtual environment, activate venv, path, requirements
 

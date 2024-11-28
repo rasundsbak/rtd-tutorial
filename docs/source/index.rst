@@ -20,14 +20,14 @@ This documentation is a part of the course held as a part of `Digital Scholarshi
 
 Learning objectives
 -------------------
-- Learn how large language models (LLMs) are made
+- Learn how large language models (LLMs) are used
 - learn how to use UiOs infrastructure for computational power to use various open LLMs
 - Learn how to create effective prompts and adjust relevant parameters
 - Connect the model to your own data in the form of PDFs or text data.
 - Be fluent in how to set up your own model in Jupyter Lab, so that you may use the process independently for interaction with other open LLMs
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Table of Contents
    :titlesonly:
 

@@ -2,7 +2,7 @@
 04 Getting overview with AI on the blackboard
 =================
 
-.. index:: artificial, intelligence, cluster, HPC, transformers, CUDA, gguf, llama_cpp
+.. index:: artificial, intelligence, cluster, HPC, transformers, CUDA, gguf, llama_cpp, neurons
 
 .. image:: AI_board.JPG
 
@@ -31,6 +31,8 @@ Wether you like it or not, AI may be your new colleague. When talking about aspe
 **The .gguf format** developed by @ggerganov is a quantified AI file format that that stores both tensors and metadata in a single file.
 
 **llama_cpp** is a C++ library that allows us to run quantized models. The cpp format also developed by developed by @ggerganov interprets the GGML and GGUF formats.
+
+**Artificial neurons** are software modules, called nodes, and artificial neural networks are software programs or algorithms that, at their core, use computing systems to solve mathematical calculations.
 
 .. note::
 

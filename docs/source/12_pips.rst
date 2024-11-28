@@ -29,12 +29,12 @@ code view 3::
 
   # Setting Up the Environment in Jupyter Notebook
   # Install transformers
-  !pip install transformers==4.45.0
+  # !pip install transformers==4.45.0
 
 code view 4::
 
   # Install PyTorch
-  !pip install torch==2.0.0
+  # !pip install torch==2.0.0
 
 code view 5::
 

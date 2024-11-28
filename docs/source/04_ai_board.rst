@@ -6,19 +6,28 @@
 
 .. image:: AI_board.JPG
 
-Hugging face and the AIs
+The Hugging face platform and the AIs
 ___________________________
-"Hugging Face is a machine learning (ML) and data science platform and community that helps users build, deploy and train machine learning models." Ben Lutkevich on `Tech Target <https://www.techtarget.com/whatis/definition/Hugging-Face>`_
+"Hugging Face is a machine learning (ML) and data science platform and community that helps users build, deploy and train machine learning models." Ben Lutkevich on `Tech Target <https://www.techtarget.com/whatis/definition/Hugging-Face>`_. `Hugging face <https://huggingface.co/>`_ is a good place to start, when you want to familiarize yourself with the LLMs. However, in this course you do not need to download them, because we, the instructors have already done some of the work for you. If you want to learn, keep reading!
 
-`Hugging face <https://huggingface.co/>`_ is a good place to start, when you want to familiarize yourself with the LLMs. However, in this course you do not need to download them, because we, the instructors have already done some of the work for you. If you want to learn, keep reading!
+Ny overskrift
+-------------
+**A large language model (LLM)** is a type of artificial intelligence (AI) program that can recognize and generate text, among other tasks. LLMs are trained on huge sets of data — hence the name "large." LLMs are built on machine learning: specifically, a type of neural network called a transformer model (Cloudflare 2024).
 
-Fox, Cuda and Cluster
----------------------
-Wether you like it or not, AI may be your new colleague. When talking about aspects of the setup on Fox, you may hear the words Cuda, Fox or Cluster.
+
+ **Nvidia** is a producer of graphics processing units; GPU. 
+
+**Huggingface**. 
+
+**Open AIs and available AIs** In this project group, we believe open or available LLMs are beneficial for science. This is why we want to teach people how to use them. 
+
+**Transformers** Artificial intelligence models from Huggingface are specific implementations of Transformer architecture. The transformer architecture has made self-supervised learning of neural networks possible, and represents a leap in computer science.
+
+**AI** is a term that is meant to denote what is happening, when a computer do things that require intelligence when done by people (Heaven 2024). In this workshop we are going to work with LLMs: A type of artificial intelligence program.
 
 **CUDA** means Compute Unified Device Architecture. According to Wikipedia is a proprietary parallel computing platform and interface, that allows software to use certain types of graphics processing units (GPUs) (Wikipedia Nov. 12th 2024). It has programming languages C++, Cuda C and libraries for mathemathics like cuBLAS. Cuda is made by the firm Nvidia.
 
-**Cluster**, The Fox is a High performance `computing cluster <https://www.uio.no/english/services/it/research/hpc/fox/>`_ for Educloud research users. A Computing Cluster is a set of connected computers that work so closely together that in many respects they function as a single computer.
+**Cluster**, The Fox is a High performance `computing cluster <https://www.uio.no/english/services/it/research/hpc/fox/>`_ for Educloud research users. A Computing Cluster is a set of connected computers that work so closely together that in many respects they function as a single computer. In this workshop, you will learn how to run an LLM (**Large Language Model**) at the UiO Nvidia Cluster.
 
 .. image:: fox_hpc.png
 (UiO it department 2024: dScience – Centre for Computational and Data Science)

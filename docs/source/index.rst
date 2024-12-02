@@ -6,12 +6,6 @@ Run large language models (LLM) through Educloud UiO
 
 .. image:: fox.png
 
-What is Artificial Intelligence (AI) and what is an LLM?
-------------------------------
-AI is a term that is meant to denote what is happening, when a computer do things that require intelligence when done by people (Heaven 2024). In this workshop we are going to work with LLMs: A type of artificial intelligence program.
-
-   A large language model (LLM) is a type of artificial intelligence (AI) program that can recognize and generate text, among other tasks. LLMs are trained on huge sets of data — hence the name "large." LLMs are built on machine learning: specifically, a type of neural network called a transformer model (Cloudflare 2024).
-
 Digital Scholarship Days 2025
 -----------------------------
 This documentation is a part of the course held as a part of `Digital Scholarship Days 2025 <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/00-mainpage.html/>`_ The course is for employees at the University of Oslo. If you are in the interest group, you may `sign up here <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_. 
@@ -27,11 +21,11 @@ Learning objectives
 - Be fluent in how to set up your own model in Jupyter Lab, so that you may use the process independently for interaction with other open LLMs
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Table of Contents
    :titlesonly:
 
-   000_timetable
+   001_timetable
    00_motivation
    01_preparations
    02_easy_login

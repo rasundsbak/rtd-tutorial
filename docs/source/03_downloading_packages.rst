@@ -1,9 +1,10 @@
 .. _03_downloading_packages:
-03 Creating your venv and downloading packages old and new style
-===================
+03 Setup
+========
 New Style: Using Jupyter Notebook
 -------------
-Execute the following code in a Jupyter notebook cell to create a new virtual environment:
+
+.. todo:: This will change: put in new setup from workbook
 
 Cell 1::
 

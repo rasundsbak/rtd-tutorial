@@ -1,12 +1,10 @@
 .. _03_downloading_packages:
-03 Creating your venv and downloading packages old and new style
-===================
+03 Setup
+========
 New Style: Using Jupyter Notebook
 -------------
 
 .. todo:: This will change: put in new setup from workbook
-
-Execute the following code in a Jupyter notebook cell to create a new virtual environment:
 
 Cell 1::
 
@@ -107,3 +105,7 @@ Cell 2::
    install_requirements(requirements_path)
    
    # Inni requirements.txt, triton==2.0.0  # Endret til kompatibel versjon
+
+Terminal view 3::
+
+   !pip install --upgrade pip

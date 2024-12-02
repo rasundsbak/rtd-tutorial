@@ -3,6 +3,8 @@
 001 Timetable AI workshop January 2025
 ======================================
 
+.. todo:: make timetalbe for day 1 and day 2
+
 Everybody must bring
 --------------
 
@@ -26,18 +28,12 @@ In this workshop we are going to use a supercomputer with the name Fox. Logon to
 
 **10:15-11:00** 
 
-- More 
-- Start doing the tasks, while PML and RS check out (green/ red sticky note method) that everybody:
- #. control login with Authenticator and password (10:15 - 10:30)
- #. have set up a my_venv according to the :doc:`01_preparations`
-- First task from :doc:`00_motivation`
-- Tasks from :doc:`02_easy_login` and :doc:`03_downloading_packages`.
-- :doc:`05_hello_world`
-- Participants choose the sequence of these tasks themselves. If you are unfamiliar with Jupyter lab, you may want to do "Hello World" first. This task can also be done in pairs if that makes you more effective.
+- Progression - Llama model and onwards - coding together in slow motion
+- Everybody follows in the same pace
 
-**11:00-11.10 Break**
+**11:00-11.15 Break**
 
-**11.10-12:00**
+**11.15-12:00**
 
 - Confirming that everybody still has a job running on the cluster.
 - "AI board", "Where AIs live" and "Parameters" - One table for each of these chapters, 5 mins for reading. Then 10 min talk and room for questions: :doc:`04_ai_board`, :doc:`06_where_ais_live` and :doc:`09_parameters`

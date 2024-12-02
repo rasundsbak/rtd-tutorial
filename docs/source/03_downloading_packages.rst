@@ -3,6 +3,9 @@
 ===================
 New Style: Using Jupyter Notebook
 -------------
+
+.. todo:: This will change: put in new setup from workbook
+
 Execute the following code in a Jupyter notebook cell to create a new virtual environment:
 
 Cell 1::

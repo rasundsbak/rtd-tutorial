@@ -12,6 +12,7 @@ Cell 1::
    # Set the location for extra pacakages That are not provided by the modules
    # A directory with the same name as EXTRA_PACKAGES_DIR should not exist 
    # in your home directory, for best reproducibility of exercises
+  
    import sys
    import os
    # Your home directory

@@ -1,39 +1,65 @@
 .. _03_downloading_packages:
-03 Setup
-========
-New Style: Using Jupyter Notebook
--------------
 
-.. todo:: This will change: put in new setup from workbook
+03 Setup and downloading packages
+========================
 
 Cell 1::
 
-   import os
-   import subprocess
+   # Set paths
+   # It is expected that following modules are already loaded
+   # module load PyTorch-bundle/2.1.2-foss-2023a-CUDA-12.1.1
+   # module load Transformers/4.39.3-gfbf-2023a
+   # Set the location for extra pacakages That are not provided by the modules
+   # A directory with the same name as EXTRA_PACKAGES_DIR should not exist 
+   # in your home directory, for best reproducibility of exercises
    import sys
+   import os
+   # Your home directory
+   HOME_DIR=os.getenv('HOME')
+   # The new directory you want to create to store the pakages
+   EXTRA_PACKAGES_DIR="llm-tutorial3"
+   # The location for pip install
+   EXTRA_PACKAGES_PATH_PIP=HOME_DIR+"/"+EXTRA_PACKAGES_DIR
+   # The location for jupyter 
+   EXTRA_PACKAGES_PATH_JUPYTER=EXTRA_PACKAGES_PATH_PIP+"/lib/python3.11/site-packages/"
    
-   # Specify the path to your virtual environment
-   username = "your_username"  # Replace 'your_username' with the actual username
-   venv_path = f"/fp/homes01/u01/{username}/my_venv"
+   # This is needed to inform pip 
+   # to avoid reinstalling everytime, PYTHONPATH could be updated(not done here)
+   os.environ['EXTRA_PACKAGES_PATH_PIP'] = EXTRA_PACKAGES_PATH_PIP
    
-   # Create the virtual environment
-   subprocess.check_call([sys.executable, "-m", "venv", venv_path])
-   print(f"Created new virtual environment at {venv_path}")
+   
+   # This is needed so that jupyter can find thr pakages
+   if EXTRA_PACKAGES_PATH_JUPYTER not in sys.path:
+       sys.path.append(EXTRA_PACKAGES_PATH_JUPYTER)
+   
+   
+   # Locaiton of locally downloaded models
+   HF_HOME="/fp/projects01/ec443/huggingface/cache"
+   os.environ['HF_HOME'] = HF_HOME
+   
+   os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+   
+   
+   # Angi stien til den kvantiserte modellfilen
+   quantized_modelfile_path = "/fp/projects01/ec443/huggingface/cache/Llama/Meta-Llama-3-8B-Instruct.Q5_K_M.gguf"
+   
+   # test by printing
+   print(EXTRA_PACKAGES_PATH_JUPYTER)
+   ! echo $EXTRA_PACKAGES_PATH_PIP
+
+Output:
+
+/fp/homes01/u01/ec-name/llm-tutorial3/lib/python3.11/site-packages/
+
+/fp/homes01/u01/ec-name/llm-tutorial3
 
 Cell 2::
 
-   import subprocess
-   import sys
-   
-   # Function to activate the virtual environment in Jupyter notebook
-   def activate_venv(venv_path):
-       activate_this = os.path.join(venv_path, "bin/activate_this.py")
-       with open(activate_this) as f:
-           exec(f.read(), {'__file__': activate_this})
-   
-   # Activate the virtual environment
-   activate_venv(venv_path)
-   print(f"Activated virtual environment at {venv_path}")
+   # install the extra pakages in EXTRA_PACKAGES_PATH
+   # list of pakages seperated with a space 
+   #! pip install --prefix=$EXTRA_PACKAGES_PATH frontend starlette tools
+   #! pip install --prefix=$EXTRA_PACKAGES_PATH_PIP PyMuPDF 
+   #! pip install --user PyMuPDF
 
 Cell 3::
 
@@ -51,61 +77,43 @@ Cell 3::
    # Inni requirements.txt, triton==2.0.0  # Endret til kompatibel versjon
 
 
+Cell 4::
 
-03. 1 Old style - you have established a venv from commandline. Downloading packages.
---------------------------------------------------
-.. index:: virtual environment, activate venv, path, requirements
-
-Vi skal laste ned alle pakkene i venv. Til dette bruker vi et dokument som ligger i en fellesmappe her: 
-
-**/fp/projects01/ec443/clean_env**
-
-**Kjør denne**
-Cell 1::
-
-   import subprocess
-   import sys
+   #! pip install --upgrade pip
    
-   # Bytt ut '[your_username]' med ditt faktiske brukernavn. 
-   username = "[your_username]"
-   
-   # Angi stien til aktiveringsskriptet for det virtuelle miljøet
-   venv_activate_path = f"/fp/projects01/ec443/{username}/my_venv/bin/activate"
-   
-   # Funksjon for å aktivere det virtuelle miljøet
-   def activate_venv(activate_path):
-       try:
-           subprocess.run(["bash", "-c", f"source {activate_path} && echo 'Virtuelt miljø aktivert.'"], check=True)
-       except subprocess.CalledProcessError as e:
-           print(f"En feil oppsto ved aktivering av det virtuelle miljøet: {e}")
-   
-   # Kall funksjonen for å aktivere det virtuelle miljøet
-   activate_venv(venv_activate_path)
+Cell 5::
 
+   # Test : check from wich location the pakage is loading from
+   # Here it should load from EXTRA_PACKAGES_PATH_JUPYTER
+   import pymupdf as pkg
+   print("PyMuPDF is loading from: "+pkg.__file__)
 
 **Deretter kjører du denne**
-Cell 2::
+Cell 6::
+   
+   # Install regex
+   #!pip install regex
+   
+   # Install TQDM
+   #!pip install tqdm==4.66.5
+   #!pip install tqdm
+   
+   # Install datasets
+   #! pip install datasets==3.0.1
+   
+   # Install sentence-transformers
+   # !pip install sentence-transformers>=3.2.0
 
-   import subprocess
-   import sys
-   
-   # Funksjon for å installere avhengigheter fra requirements.txt
-   def install_requirements(requirements_path):
-       try:
-           # Installerer pakker fra requirements.txt
-           subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", requirements_path])
-           print("Alle avhengigheter er installert.")
-       except subprocess.CalledProcessError as e:
-           print(f"En feil oppsto ved installasjon av avhengigheter: {e}")
-   
-   # Sti til requirements.txt
-   requirements_path = "/fp/projects01/ec443/clean_env/cleaned_requirements_2.txt"
-   
-   # Kaller funksjonen for å installere avhengigheter
-   install_requirements(requirements_path)
-   
-   # Inni requirements.txt, triton==2.0.0  # Endret til kompatibel versjon
+Cell 7::
 
-Terminal view 3::
+   # Sjekker at alle pakker kan installeres uten problemer:
+   import pymupdf
+   import regex
+   import tqdm
+   import datasets
+   import sentence_transformers
+   print("All packages are successfully imported.")
 
-   !pip install --upgrade pip
+
+
+

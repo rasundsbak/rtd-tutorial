@@ -48,6 +48,7 @@ Cell 1::
 
 Output:
 /fp/homes01/u01/ec-name/llm-tutorial3/lib/python3.11/site-packages/
+
 /fp/homes01/u01/ec-name/llm-tutorial3
 
 Cell 2::

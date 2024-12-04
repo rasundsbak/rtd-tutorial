@@ -29,21 +29,3 @@ Requirement already satisfied: h11<0.15,>=0.13 in ./.local/lib/python3.11/site-p
 Requirement already satisfied: jsonpointer>=1.9 in ./.local/lib/python3.11/site-packages (from jsonpatch<2.0,>=1.33->langchain-core<0.4.0,>=0.3.21->langchain) (3.0.0)
 
 ...and more
-
-Cell 3::
-
-Output:
-
-
-Cell 4::
-
-Output:
-
-Cell 5::
-
-
-Cell 6::
-   
-
-
-Cell 7::

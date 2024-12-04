@@ -19,7 +19,7 @@ Cell 2::
   import os
   
   # Sett brukernavnet til studentene
-  username = "ragnhsu"  # Studentene må endre dette til sitt faktiske brukernavn
+  username = "your username no ec"  # Studentene må endre dette til sitt faktiske brukernavn
   
   # Definer sti til prosjektmappen
   project_dir = f"/fp/projects01/ec443/{username}"
@@ -35,7 +35,7 @@ Cell 3::
   import os
   
   # Sett brukernavnet til studentene
-  username = "ragnhsu"  # Studentene må endre dette til sitt faktiske brukernavn
+  username = "your username no ec"  # Studentene må endre dette til sitt faktiske brukernavn
   
   # Sti til ditt virtuelle miljøs site-packages
   venv_path = f'/fp/projects01/ec443/{username}/my_venv/lib/python3.9/site-packages'

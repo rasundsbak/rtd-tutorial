@@ -1,4 +1,4 @@
-In this project, We use `Sphinx <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ to formulate our ideas.
+This is a cooperative project. See also `LLM Course <https://uio-library.github.io/LLM-course/index.html>`_.
 
 Run large language models (LLM) through Educloud UiO
 ===========================================
@@ -38,7 +38,7 @@ Learning objectives
    09_parameters
    10_pegasus
    11_pegasus_continued
-   12_pips
+   12_problem_solving
    29_references
    30_todo
 

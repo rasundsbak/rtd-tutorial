@@ -1,11 +1,10 @@
-.. _12 pips:
+.. _12 problem solving:
 
 12 Problem solving
 ==================
 .. index::
 
 code view 1::
-
 
 code view 2::
 
@@ -20,7 +19,6 @@ code view 6::
 code view 7::
 
 code view 8::
-
 
 code view 9::
 

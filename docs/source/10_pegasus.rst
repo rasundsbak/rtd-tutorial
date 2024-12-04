@@ -6,7 +6,7 @@
 
 
 .. note:: 
-  Task 10.1: Before starting to run summarizations, everyone should move 5 chosen pdfs from a shared space into a folder called "documents" at your homedrive at ec443. The reason is that when you get the output, the user rights management at fox, will be set up much easier if whe do it in the way described here, than if you would choose to make the model generate output on your project area that you have at the same place as the venv. See illustration below. It will also look better in the project area. 
+  Task 10.1: Before starting to run summarizations, everyone should move 5 chosen pdfs from a shared space into a folder called "documents" at your homedrive at ec443. The reason is that this will make you set for having your own texts in this folder, in your future work process. Also, when you get the output, the user rights management at fox, will be set up much easier if we do it in the way described here, than if you would choose to make the model generate output on your project area that you have at the same place as the venv. See illustration below. Finally, it will look tidier in the project area. 
 
 .. image:: fox_dokument.png
 
@@ -53,7 +53,7 @@ code view 4::
   
   import os
   os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
-  os.environ["HF_HOME"] = "/fp/projects01/ec367/huggingface/cache"
+  os.environ["HF_HOME"] = "/fp/projects01/ec443/huggingface/cache"
   
   print("PYTORCH_CUDA_ALLOC_CONF:", os.getenv("PYTORCH_CUDA_ALLOC_CONF"))
   print("HF_HOME:", os.getenv("HF_HOME"))
@@ -77,7 +77,7 @@ This is to be done in terminal, after ssh login
 Code view 7::
 
   # It is advisable to activate your virtual environment before you start the processes in Jupyter lab.
-  # source /fp/projects01/ec367/ragnhsu/venv_transformers/bin/activate
+  # source /fp/projects01/ec443/[user-name-here-no-ec]/venv_transformers/bin/activate
 
 This is a long piece of code, but we can do it anyway.
 Code view 8::

@@ -16,6 +16,8 @@ Scott, Sir Walter (1822): The Pirate. Edinburgh, Hurst.
 Vaswani, Ashish; Noam Shazeer; Niki Parmar; Jakob Uszkoreit; Llion Jones; Aidan N. Gomez; Lukasz Kaiser and Illia Polosukhin (2023): Attention Is All You Need.
 <https://arxiv.org/abs/1706.03762>`_  2. Aug 2023
 
+UiO ChatGPT (2024): Assistance in developing workshop documentation using OpenAI's GPT models. University of Oslo. Available at: <https://www.uio.no/tjenester/it/ki/gpt-uio/> Accessed Nov. 24th.
+
 
 Recommended reading
 ------------------
@@ -25,3 +27,5 @@ GGUF and interaction with Transformers. (n.d.). Retrieved 22 November 2024, from
 Snehal. (2024, May 1). Exploring Model Quantization for LLMs. Medium. https://medium.com/@isnehal.sp/exploring-model-quantization-for-llms-bc2c1f4c9382
 
 What 🤗 Transformers can do. (n.d.). Retrieved 22 November 2024, from https://huggingface.co/docs/transformers/en/task_summary
+
+Epoch (2024) – with major processing by Our World in Data. “Parameters in notable artificial intelligence systems” [dataset]. Epoch, “Parameter, Compute and Data Trends in Machine Learning” [original data]. Retrieved November 24, 2024 from https://ourworldindata.org/grapher/artificial-intelligence-parameter-count

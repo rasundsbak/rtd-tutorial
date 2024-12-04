@@ -1,58 +1,41 @@
 .. _03_downloading_packages:
-03 Downloading packages to venv
-==============================
-.. index:: virtual environment, activate venv, path, requirements
 
-Vi skal laste ned alle pakkene i venv. Til dette bruker vi et dokument som ligger i en fellesmappe her: 
+03 Setup and downloading packages
+========================
 
-**/fp/projects01/ec443/clean_env**
+Cell 1::
 
-**Kjør denne**
-Terminal view 1::
+   # Set paths
+   # It is expected that following modules are already loaded
+   # module load PyTorch-bundle/2.1.2-foss-2023a-CUDA-12.1.1
+   # module load Transformers/4.39.3-gfbf-2023a
+   # Set the location for extra pacakages That are not provided by the modules
+   # A directory with the same name as EXTRA_PACKAGES_DIR should not exist 
+   # in your home directory, for best reproducibility of exercises
 
-   import subprocess
-   import sys
+
+Output:
+
+
+Cell 2::
+
+Output:
+
+
+Cell 3::
+
+Output:
+
+
+Cell 4::
+
+Output:
+
+Cell 5::
+
+
+Cell 6::
    
-   # Bytt ut '[your_username]' med ditt faktiske brukernavn. 
-   username = "[your_username]"
-   
-   # Angi stien til aktiveringsskriptet for det virtuelle miljøet
-   venv_activate_path = f"/fp/projects01/ec443/{username}/my_venv/bin/activate"
-   
-   # Funksjon for å aktivere det virtuelle miljøet
-   def activate_venv(activate_path):
-       try:
-           subprocess.run(["bash", "-c", f"source {activate_path} && echo 'Virtuelt miljø aktivert.'"], check=True)
-       except subprocess.CalledProcessError as e:
-           print(f"En feil oppsto ved aktivering av det virtuelle miljøet: {e}")
-   
-   # Kall funksjonen for å aktivere det virtuelle miljøet
-   activate_venv(venv_activate_path)
 
 
-**Deretter kjører du denne**
-Terminal view 2::
-
-   import subprocess
-   import sys
-   
-   # Funksjon for å installere avhengigheter fra requirements.txt
-   def install_requirements(requirements_path):
-       try:
-           # Installerer pakker fra requirements.txt
-           subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", requirements_path])
-           print("Alle avhengigheter er installert.")
-       except subprocess.CalledProcessError as e:
-           print(f"En feil oppsto ved installasjon av avhengigheter: {e}")
-   
-   # Sti til requirements.txt
-   requirements_path = "/fp/projects01/ec443/clean_env/cleaned_requirements_2.txt"
-   
-   # Kaller funksjonen for å installere avhengigheter
-   install_requirements(requirements_path)
-   
-   # Inni requirements.txt, triton==2.0.0  # Endret til kompatibel versjon
-
-Terminal view 3::
-
-   !pip install --upgrade pip
+Cell 7::

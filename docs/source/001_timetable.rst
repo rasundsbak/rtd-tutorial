@@ -38,6 +38,8 @@ Morning coffee and preparations.
 
 - Confirming that everybody still has a job running on the cluster.
 - "AI board", "Where AIs live" and "Parameters" - One table for each of these chapters, 5 mins for reading. Then 10 min talk and room for questions: :doc:`04_ai_board`, :doc:`06_where_ais_live` and :doc:`09_parameters`
+
+
 - Making a prompt and checking the answer. Tasks :doc:`08_pirat`
 - Connecting the model to the documents: :doc:`11_pegasus_continued`
 - Logout.

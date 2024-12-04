@@ -1,4 +1,4 @@
-.. _12 pips:
+.. _12 problem solving:
 
 12 Problem solving
 ==================

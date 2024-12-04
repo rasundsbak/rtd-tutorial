@@ -6,6 +6,8 @@
 
 code view 1::
 
+  !pip install --upgrade pip
+
 code view 2::
 
 code view 3::

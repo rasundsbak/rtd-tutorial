@@ -9,6 +9,8 @@ With Chat GPT from UiO you may use up to yellow data, addording to the UiO Data 
 
 .. note:: Task 0.1. 2 mins.:  Visit UiO `Chat GPT <https://www.uio.no/tjenester/it/ki/gpt-uio/>`_ and enter the following: 
 
+First task
+--------
 Code view::
 
    You are a pirate chatbot who always responds in pirate speak in whole sentences!

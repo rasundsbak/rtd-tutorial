@@ -10,7 +10,7 @@ First time users of Educloud
 * Download Microsoft Authenticator on your phone. It may be downloaded from App Store (iPhone) or Google Play (Android)
 * Log in with `Your bank ID <https://selfservice.educloud.no/membershipapplication>`_  and apply for group membership in ec443
 
-Set up Authentication with microsoft authenticator
+Set up Authentication with Microsoft authenticator
 --------------------------------------------
 *  Make your two factor work with the QR code. Follow `this recipe <https://www.uio.no/english/services/it/research/platforms/edu-research/help/two-factor-authentication.html>`_.
 * Setting the password: `Here is how <https://www.uio.no/english/services/it/research/platforms/edu-research/help/change-password.html>`_.

@@ -1,5 +1,5 @@
-.. _00_motivation:
-00 Motivation for the Workshop
+.. _00 motivation:
+00 Artificial intelligence and the UiO storage guide
 ==============
 .. index:: chatbot, Chat GPT
 

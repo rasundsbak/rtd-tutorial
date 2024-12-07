@@ -24,6 +24,11 @@ extensions = [
     'sphinx.ext.todo',
 ]
 
+# Build PDF & ePub
+formats:
+  - epub
+  - pdf
+
 # Innstillinger for Intersphinx
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),

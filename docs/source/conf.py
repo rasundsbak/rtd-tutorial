@@ -25,9 +25,9 @@ extensions = [
 ]
 
 # Build PDF & ePub
-formats:
-  - epub
-  - pdf
+#formats:
+#  - epub
+#  - pdf
 
 # Innstillinger for Intersphinx
 intersphinx_mapping = {

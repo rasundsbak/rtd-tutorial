@@ -14,6 +14,7 @@ Everybody must bring
 
 Why Cluster?
 ------------
+
 AI requires a lot of resources when it comes to machine power. Driving the largest AI model locally requires 8 graphics cards where each card costs the equivalent of a nice used car. Since you do not need the model so often, it is better to share the resources than everybody having their own supercomputer.
 
 Day 1

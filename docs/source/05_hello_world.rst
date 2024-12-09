@@ -7,4 +7,4 @@
 Querying LLMs (Chatbots)
 ----------------------
 
-We will use `LangChain] <https://www.langchain.com/>`_, an open-source library for making applications with LLMs.
+We will use `LangChain <https://www.langchain.com/>`_, an open-source library for making applications with LLMs.

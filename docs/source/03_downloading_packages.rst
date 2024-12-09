@@ -1,6 +1,6 @@
 .. _03_downloading_packages:
 
-03 Startup downloading packages
+03 Startup and downloading packages
 ========================
 
 In this course, we have tried to make it easy for you, through making the code available. We still have to spend some time familiarizing outselves with copying, pasting and running the code in the cells of Jupyter lab.

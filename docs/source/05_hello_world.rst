@@ -1,6 +1,6 @@
 .. _05_hello_world: how to run cells and change from code to markdown
-05 Hello world and how to run cells in Jupyter lab
-=============================================
+05 Startup
+===========
 
 .. index:: introduction, hello world, 
 
@@ -27,10 +27,6 @@ Hello world
 Run this Cell::
 
   print('Hello, world.')
-
-.. note::
-
-  Task 5.3: Go to the browser view of Fox. Find the folder "hello_world" on 443. Move it to your Home directory. You will be able to find it in the Jupyter lab that you have launched. Use red sticky note if you need help to find it. Run the cells. Take a minute and reflect on what you did. Study the outputs and cooperate with your sidemate.
 
 
 .. note::

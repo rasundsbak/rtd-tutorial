@@ -31,6 +31,6 @@ Run this Cell::
 
 .. note::
 
-  Task 5.4: How do we run a cell in Jupyter lab? Try to find shortcut and the menues.
-  Task 5.5: How do we stop a cell from running?
-  Task 5.6: How do we change the content of a cell from markdown to code, and back again? What is the point with this?
+  Task 5.1: How do we run a cell in Jupyter lab? Try to find shortcut and the menues.
+  Task 5.2: How do we stop a cell from running?
+  Task 5.3: How do we change the content of a cell from markdown to code, and back again? What is the point with this?

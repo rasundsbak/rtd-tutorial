@@ -30,7 +30,9 @@ Run this Cell::
 .. note::
 
   Task 3.3: How do we run a cell in Jupyter lab? Try to find shortcut and the menues.
+
   Task 3.4: How do we stop a cell from running?
+
   Task 3.5: How do we change the content of a cell from markdown to code, and back again? What is the point with this?
 
 

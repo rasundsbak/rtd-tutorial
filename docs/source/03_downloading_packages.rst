@@ -3,6 +3,9 @@
 03 Setup and downloading packages
 ========================
 
+This works on "small" Nvidia machines, only they have GPU. UiO: MIG and RTX
+-------------------------
+
 Cell 1::
 
    # Location of locally downloaded models

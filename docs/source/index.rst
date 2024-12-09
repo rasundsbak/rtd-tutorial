@@ -6,6 +6,9 @@ Run large language models (LLM) through Educloud UiO
 
 .. image:: fox.png
 
+.. todo:: 	Speech and Language Processing (3rd ed. draft)
+Dan Jurafsky and James H. Martin 
+
 Digital Scholarship Days 2025
 -----------------------------
 This documentation is a part of the course held as a part of `Digital Scholarship Days 2025 <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/00-mainpage.html/>`_ The course is for employees at the University of Oslo. If you are in the interest group, you may `sign up here <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_. 

@@ -8,7 +8,7 @@ In this course, we have tried to make it easy for you, through making the code a
 
 .. note::
 
-  Task 5.1: Look around in Jupyter lab, and try googling subjects like "jupyter lab cheat sheet" and "run cell jupyter lab".
+  Task 3.1: Look around in Jupyter lab, and try googling subjects like "jupyter lab cheat sheet" and "run cell jupyter lab".
 
 Jupyter lab keyboard shortcuts
 ---------------------
@@ -19,7 +19,7 @@ Hello world
 --------------
 .. note::
 
-  Task 5.2: Copy the content of the cell below, and run it in Jupyter lab, in an ipynb document.
+  Task 3.2: Copy the content of the cell below, and run it in Jupyter lab, in an ipynb document.
 
 
 Run this Cell::
@@ -29,9 +29,9 @@ Run this Cell::
 
 .. note::
 
-  Task 3.1: How do we run a cell in Jupyter lab? Try to find shortcut and the menues.
-  Task 3.2: How do we stop a cell from running?
-  Task 3.3: How do we change the content of a cell from markdown to code, and back again? What is the point with this?
+  Task 3.3: How do we run a cell in Jupyter lab? Try to find shortcut and the menues.
+  Task 3.4: How do we stop a cell from running?
+  Task 3.5: How do we change the content of a cell from markdown to code, and back again? What is the point with this?
 
 
 This works on "small" Nvidia machines, only they have GPU. UiO: MIG and RTX
@@ -120,6 +120,6 @@ Cell 5::
 
 .. note::
 
-   Task 3.4 Copy the cell above and change the temperature to 10.0
+   Task 3.6: Copy the cell above and change the temperature to 10.0. Run the cell.
 
 

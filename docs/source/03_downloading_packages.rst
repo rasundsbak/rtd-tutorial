@@ -49,4 +49,43 @@ Add token as git credential?
 
 **Pro Tip:** If you don't already have one, you can create a dedicated 'notebooks' token with 'write' access, that you can then easily reuse for all notebooks.
 
+Cell 4::
+
+   ! pip install llama-cpp-python
+
+Cell 5::
+
+   # Angi stien til Hugging Face cache (felles for alle)
+   cache_base_path = "/fp/projects01/ec443/huggingface/cache/Llama"
+   
+   # Sti til den kvantiserte modellfilen
+   quantized_modelfile_path = f"{cache_base_path}/Meta-Llama-3-8B-Instruct.Q5_K_M.gguf"
+   
+   # Importere Llama-klassen fra llama_cpp-pakken
+   from llama_cpp import Llama
+   
+   # Initialiser modellen med riktig filsti
+   lcpp_model = Llama(
+       model_path=quantized_modelfile_path,  # Path to the quantized model file
+       chat_format="chatml",  # Using the 'chatml' format for conversations
+       n_gpu_layers=-1  # Running on CPU (no GPU layers)
+   )
+   
+   # Lage en chat completion
+   response = lcpp_model.create_chat_completion(
+       messages=[
+           {"role": "system", "content": "You are a pirate chatbot who always responds in pirate speak in whole sentences!"},
+           {"role": "user", "content": "Who are you?"},
+           {"role": "user", "content": "Tell me about your ideal boat?"},
+       ],
+       temperature=0.3,
+   )
+   
+   # Print responsen
+   print(response['choices'][0]['message']['content'])
+
+.. note::
+
+   Copy the cell aabove and change the temperature to 10.0
+
 

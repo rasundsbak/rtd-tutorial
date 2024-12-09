@@ -6,6 +6,7 @@
 Cell 1::
 
    # Location of locally downloaded models
+   # %env HF_HOME=/fp/projects01/ec443/huggingface/cache/Llama
    %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
 
 Output:
@@ -47,3 +48,5 @@ Token:
 Add token as git credential?
 
 **Pro Tip:** If you don't already have one, you can create a dedicated 'notebooks' token with 'write' access, that you can then easily reuse for all notebooks.
+
+

@@ -14,12 +14,15 @@ Everybody must bring
 
 Why Cluster?
 ------------
-AI requires a lot of resources when it comes to machine power. Driving the largest AI model locally requires 8 graphics cards where each card costs the equivalent of a nice used car. Since you do not need the model so often, it is better to share the resources than everybody having their own supercomputer. In this workshop we are going to use a supercomputer with the name Fox. Logon to Fox is through Educloud. We are going to learn how to control the creativity of the models. We are going to use an interface with the name of Juypyter Lab. This is easier than running the model from the command prompt, while also making it possible to control the parameters of the model. Educloud is safe for up to red data. The same method might be used on black data, but in that case on a supercomputer with the name of Colossus. This will not be covered in the workshop.
+
+AI requires a lot of resources when it comes to machine power. Driving the largest AI model locally requires 8 graphics cards where each card costs the equivalent of a nice used car. Since you do not need the model so often, it is better to share the resources than everybody having their own supercomputer.
 
 Day 1
 -----
 **08:00-09:00**
 Morning coffee and preparations.
+
+This is compulsory if you have not done the preparations from chapter 01.
 
 **09:00-10:00**
 

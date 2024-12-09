@@ -39,6 +39,42 @@ Cell 3::
       }
   )
 
-Cell 3::
+Library function for prompts
+Cell 4::
+
+  from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+  from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
+
+Cell 5::
+
+  messages = [
+      SystemMessage("You are a pirate chatbot who always responds in pirate speak in whole sentences!"),
+      MessagesPlaceholder(variable_name="messages")
+  ]
+
+Cell 6::
+
+  prompt = ChatPromptTemplate.from_messages(messages)
+
+LangChain processes input in chains that can consist of several steps. Now, we define our chain which sends the prompt into the LLM.
+
+Cell 7::
+
+  chatbot = prompt | llm
+
+The chatbot is complete, and we can try it out by invoking it:
+
+Cell 8::
+
+  result = chatbot.invoke([HumanMessage("Who are you?")])
+  print(result)
+
+Cell 9::
+
+  result = chatbot.invoke([HumanMessage("Tell me about your ideal boat?")])
+  print(result)
+
+
+
 
 

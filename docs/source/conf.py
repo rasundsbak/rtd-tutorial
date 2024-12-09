@@ -8,8 +8,8 @@ project = 'AI on Cluster'
 copyright = '2024'
 author = 'Ragnhild Sundsbak, Pål Lykkja'
 
-release = '4.3'
-version = '4.3.AI'
+release = '4.5'
+version = '4.5.AI'
 
 # -- General configuration --
 

@@ -1,10 +1,12 @@
-In this project, We use `Sphinx <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ to formulate our ideas.
+This is a cooperative project. See also `LLM Course <https://uio-library.github.io/LLM-course/index.html>`_.
 
 Run large language models (LLM) through Educloud UiO
 ===========================================
 .. index:: learning objectives
 
 .. image:: fox.png
+
+.. todo:: 	Speech and Language Processing (3rd ed. draft), Dan Jurafsky and James H. Martin, https://web.stanford.edu/~jurafsky/slp3/
 
 Digital Scholarship Days 2025
 -----------------------------
@@ -38,7 +40,7 @@ Learning objectives
    09_parameters
    10_pegasus
    11_pegasus_continued
-   12_pips
+   12_problem_solving
    29_references
    30_todo
 

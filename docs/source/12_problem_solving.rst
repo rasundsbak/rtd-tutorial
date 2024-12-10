@@ -1,4 +1,4 @@
-.. _12 pips:
+.. _12 problem solving:
 
 12 Problem solving
 ==================
@@ -6,6 +6,7 @@
 
 code view 1::
 
+  !pip install --upgrade pip
 
 code view 2::
 
@@ -21,6 +22,4 @@ code view 7::
 
 code view 8::
 
-
 code view 9::
-

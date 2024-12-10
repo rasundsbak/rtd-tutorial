@@ -33,7 +33,7 @@ Learning objectives
    02_easy_login
    03_downloading_packages
    04_ai_board
-   05_hello_world
+   05_chatbot
    06_where_ais_live
    07_prompting
    08_pirat

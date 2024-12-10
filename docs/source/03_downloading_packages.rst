@@ -13,13 +13,20 @@ In this course, we have tried to make it easy for you, through making the code a
 Jupyter lab keyboard shortcuts
 ---------------------
 
-It is useful for you to look at some `Jupyter lab shortcuts <https://gist.github.com/discdiver/9e00618756d120a8c9fa344ac1c375ac>`_
+
+It might be useful for you to look at some `Jupyter lab shortcuts <https://gist.github.com/discdiver/9e00618756d120a8c9fa344ac1c375ac>`_
+
+.. image:: jupyter_lab_menu.png
 
 Hello world
 --------------
 .. note::
 
-  Task 3.2: Copy the content of the cell below, and run it in Jupyter lab, in an ipynb document.
+  Task 3.2: Explore the top menu of jupyter lab, and see what is behind categories like File, Edit, View and Run. How do you add or remove cells in a .ipynb document?
+
+.. note::
+
+  Task 3.3: Copy the content of the cell below, and run it in Jupyter lab, in an .ipynb document.
 
 
 Run this Cell::
@@ -77,6 +84,7 @@ Output:
 
 Copy a token from your Hugging Face tokens page and paste it below.
 
+
 Immediately click login after copying your token or it might be stored in plain text in this notebook file.
 
 Token:
@@ -97,8 +105,10 @@ Cell 5::
    # Sti til den kvantiserte modellfilen
    quantized_modelfile_path = f"{cache_base_path}/Meta-Llama-3-8B-Instruct.Q5_K_M.gguf"
    
+   
    # Importere Llama-klassen fra llama_cpp-pakken
    from llama_cpp import Llama
+   
    
    # Initialiser modellen med riktig filsti
    lcpp_model = Llama(

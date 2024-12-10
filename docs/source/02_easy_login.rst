@@ -8,7 +8,7 @@ Fox has a GPU accelerated part of the system, with four NVIDIA A100 cards each, 
 
 How to order a job on the Fox
 ____________________________
-When you are logged on to `the Fox <https://ood.educloud.no/>`_, move like this: from the left menu, go to Jupyter lab --> ec443 Choose one of the Nvidia GPUs from the drop down menu --> Rumtime. 1h --> Jupyter variant, Jupyter lab --> (You need not choose jupyter module, as the last version is pre selected) -->  Launch. You are now in the line to get into the Jupyter lab on UiO Fox. You can get tea or coffee, and have a chat with your colleague, while you wait. The waiting time depends on how much you are asking for, when it comes to machine power and time.
+When you are logged on to `the Fox <https://ood.educloud.no/>`_, move like this: from the left menu, go to Jupyter lab --> ec443 Choose one of the Nvidia GPUs from the drop down menu --> Rumtime. 1h --> Jupyter variant, Jupyter lab --> Choose Jupyter module 12.3.0. Make sure you have loaded the correct modules in the box for "Additional modules (optional)" -->  Launch. You are now in the line to get into the Jupyter lab on UiO Fox. You can get tea or coffee, and have a chat with your colleague, while you wait. The waiting time depends on how much you are asking for, when it comes to machine power and time.
 
 .. warning:: 
 
@@ -23,7 +23,9 @@ In the additional modules (optional)::
 
 .. note::
 
-  Task 2.1: 2 mins. Look into the folders. What does it look like? Familiarize yourself with the browser view of Fox. For a beginner, this will be useful even when you are using the terminal. You can switch back and forth between browser view and terminal/ command prompt, to check if everything is in compliance.
+  Task 2.1: 2 mins. Explore the top menu and look into the folders. What does it look like? Familiarize yourself with the browser view of Fox. For a beginner, it is useful to learn how to copy paths and move or copy files and folders between the project area and the Home Directory.
+
+.. image:: fox_top_menu.png
 
 .. note::
 

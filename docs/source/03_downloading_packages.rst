@@ -15,11 +15,17 @@ Jupyter lab keyboard shortcuts
 
 It might be useful for you to look at some `Jupyter lab shortcuts <https://gist.github.com/discdiver/9e00618756d120a8c9fa344ac1c375ac>`_
 
+.. image:: jupyter_lab_menu.png
+
 Hello world
 --------------
 .. note::
 
-  Task 3.2: Copy the content of the cell below, and run it in Jupyter lab, in an ipynb document.
+  Task 3.2: Explore the top menu of jupyter lab, and see what is behind categories like File, Edit, View and Run. How do you add or remove cells in a .ipynb document?
+
+.. note::
+
+  Task 3.3: Copy the content of the cell below, and run it in Jupyter lab, in an .ipynb document.
 
 
 Run this Cell::
@@ -29,11 +35,11 @@ Run this Cell::
 
 .. note::
 
-  Task 3.3: How do we run a cell in Jupyter lab? Try to find shortcut and the menues.
+  Task 3.4: How do we run a cell in Jupyter lab? Try to find a solution through both shortcut and the menues.
 
-  Task 3.4: How do we stop a cell from running?
+  Task 3.5: How do we stop a cell from running?
 
-  Task 3.5: How do we change the content of a cell from markdown to code, and back again? What is the point with this?
+  Task 3.6: How do we change the content of a cell from markdown to code, and back again? What is the point with this?
 
 
 This works on "small" Nvidia machines, only they have GPU. UiO: MIG and RTX

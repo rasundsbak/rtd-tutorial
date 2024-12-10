@@ -20,6 +20,8 @@ UiO ChatGPT (2024): Assistance in developing workshop documentation using OpenAI
 
 UiO (2024): UiO Data storage guide. Available at: <https://www.uio.no/english/services/it/security/lsis/storage-guide.html> Accessed Des 10th.
 
+https://projector.tensorflow.org
+
 
 Recommended reading
 ------------------

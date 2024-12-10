@@ -23,7 +23,7 @@ In the additional modules (optional)::
 
 .. note::
 
-  Task 2.1: 2 mins. Look into the folders. What does it look like? Familiarize yourself with the browser view of Fox. For a beginner, this will be useful even when you are using the terminal. You can switch back and forth between browser view and terminal/ command prompt, to check if everything is in compliance.
+  Task 2.1: 2 mins. Explore the top menu and look into the folders. What does it look like? Familiarize yourself with the browser view of Fox. For a beginner, it is useful to learn how to copy paths and move or copy files and folders between the project area and the Home Directory.
 
 .. note::
 

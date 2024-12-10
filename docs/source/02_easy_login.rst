@@ -21,6 +21,8 @@ In the additional modules (optional)::
   module load PyTorch-bundle/2.1.2-foss-2023a-CUDA-12.1.1 module load Transformers/4.39.3-gfbf-2023a
 
 
+.. image:: fox_top_menu.png
+
 .. note::
 
   Task 2.1: 2 mins. Explore the top menu and look into the folders. What does it look like? Familiarize yourself with the browser view of Fox. For a beginner, it is useful to learn how to copy paths and move or copy files and folders between the project area and the Home Directory.

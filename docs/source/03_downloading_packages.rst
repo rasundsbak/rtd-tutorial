@@ -13,7 +13,7 @@ In this course, we have tried to make it easy for you, through making the code a
 Jupyter lab keyboard shortcuts
 ---------------------
 
-It is useful for you to look at some `Jupyter lab shortcuts <https://gist.github.com/discdiver/9e00618756d120a8c9fa344ac1c375ac>`_
+It might be useful for you to look at some `Jupyter lab shortcuts <https://gist.github.com/discdiver/9e00618756d120a8c9fa344ac1c375ac>`_
 
 Hello world
 --------------

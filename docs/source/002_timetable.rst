@@ -12,10 +12,6 @@ Everybody must bring
 * A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_.
 * Bank id
 
-Why Cluster?
-------------
-
-AI requires a lot of resources when it comes to machine power. Driving the largest AI model locally requires 8 graphics cards where each card costs the equivalent of a nice used car. Since you do not need the model so often, it is better to share the resources than everybody having their own supercomputer.
 
 Day 1
 -----
@@ -56,6 +52,10 @@ Day 2
 - Short evaluation: Do I want to stay on 443? Write your name on a green sticly note, if you want to stay until december 2025
 - Write your name on a red sticky note if you want to leave the group.
 - Finish!
+
+Why Cluster?
+------------
+AI requires a lot of resources when it comes to machine power. Driving the largest AI model locally requires 8 graphics cards where each card costs the equivalent of a nice used car. Since you do not need the model so often, it is better to share the resources than everybody having their own supercomputer.
 
 Welcome, this will be fun!
 

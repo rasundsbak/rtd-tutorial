@@ -7,15 +7,15 @@ Run large language models (LLM) through Educloud UiO
 
 .. todo:: 	Speech and Language Processing (3rd ed. draft), Dan Jurafsky and James H. Martin, https://web.stanford.edu/~jurafsky/slp3/
 
-Digital Scholarship Days 2025
------------------------------
+Who are we inviting
+----------
 This documentation is a part of the course held at The University og Oslo Library. The course is for employees at the University of Oslo who has some experience with Jupyter. If you are in the interest group, you may `sign up here <https://nettskjema.no/a/465610>`_. 
 
 .. todo:: 0.1 lage referanseliste. Gå gjennom alle sider og samle alt av referanser eller "further reading" til referanselisten 29_references. Dersom referansen ikke står fra tekstreferanse, er det mer som anbefalt litteratur å regne. Da skal den settes under overskrift: "Further reading". Tekstreferanser settes under "References". Bruk overskrift 2 på begge. På samme side skal det være en tekstsnutt med takk til nettverket vårt, slik at vi gir ære til de som æres bør, og som har gjort dette mulig. De skal selv bestemmes om de vil nevnes med navn eller bare institutt.
 
 Prior Knowledge
 --------------
-You should have attended the course "Plotting and Programming in Python" held as a Carpentry program at the `Digital Scholarship Centre <https://www.ub.uio.no/english/libraries/dsc/>`_. Alternatively you may take `The lesson <https://swcarpentry.github.io/python-novice-gapminder/>`_. as a self study.
+You should have attended the course "Plotting and Programming in Python" held as a Carpentry program at the `Digital Scholarship Centre <https://www.ub.uio.no/english/libraries/dsc/>`_, or have a similar degree of knowledge to Pythin and JupyterLab. You may take `The lesson <https://swcarpentry.github.io/python-novice-gapminder/>`_. as a self study.
 
 Learning objectives
 -------------------

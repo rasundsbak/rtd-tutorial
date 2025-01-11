@@ -1,17 +1,15 @@
 .. _08_pirat:
-08 Pirate example with .gguf format
+08 Summarization
 ==============
+
+We will use `LangChain <https://www.langchain.com/>`_, an open-source library for making applications with LLMs. The documents should be in your Home Directory, in a folder named "documents". We have 5 documents in pdf that contain a test search on terms terrorism and europe. When you have run this process, you may of course replace the documents with your own data.
 
 Cell  1::
 
-  # Angi sti for Hugging Face cache
-  cache_path = "/fp/projects01/ec443/huggingface/cache"
-  %env HF_HOME={cache_path}
+  #document_folder = 'documents'
+  #document_folder = '../summarizing'
+  document_folder = '../documents'
   
-  # Sjekk om modellfilen finnes på den spesifiserte stien
-  !ls -lh /fp/projects01/ec443/huggingface/cache/Llama/Meta-Llama-3-8B-Instruct.Q5_K_M.gguf
-
-
 
 Cell 2::
 
@@ -19,7 +17,7 @@ Cell 2::
   import os
   
   # Sett brukernavnet til studentene
-  username = "ragnhsu"  # Studentene må endre dette til sitt faktiske brukernavn
+  username = "your username no ec"  # Studentene må endre dette til sitt faktiske brukernavn
   
   # Definer sti til prosjektmappen
   project_dir = f"/fp/projects01/ec443/{username}"
@@ -35,7 +33,7 @@ Cell 3::
   import os
   
   # Sett brukernavnet til studentene
-  username = "ragnhsu"  # Studentene må endre dette til sitt faktiske brukernavn
+  username = "your username no ec"  # Studentene må endre dette til sitt faktiske brukernavn
   
   # Sti til ditt virtuelle miljøs site-packages
   venv_path = f'/fp/projects01/ec443/{username}/my_venv/lib/python3.9/site-packages'

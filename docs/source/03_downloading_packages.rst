@@ -13,7 +13,6 @@ In this course, we have tried to make it easy for you, through making the code a
 Jupyter lab keyboard shortcuts
 ---------------------
 
-
 It might be useful for you to look at some `Jupyter lab shortcuts <https://gist.github.com/discdiver/9e00618756d120a8c9fa344ac1c375ac>`_
 
 .. image:: jupyter_lab_menu.png
@@ -84,7 +83,6 @@ Output:
 
 Copy a token from your Hugging Face tokens page and paste it below.
 
-
 Immediately click login after copying your token or it might be stored in plain text in this notebook file.
 
 Token:
@@ -104,12 +102,10 @@ Cell 5::
    
    # Sti til den kvantiserte modellfilen
    quantized_modelfile_path = f"{cache_base_path}/Meta-Llama-3-8B-Instruct.Q5_K_M.gguf"
-   
-   
+
    # Importere Llama-klassen fra llama_cpp-pakken
    from llama_cpp import Llama
-   
-   
+
    # Initialiser modellen med riktig filsti
    lcpp_model = Llama(
        model_path=quantized_modelfile_path,  # Path to the quantized model file

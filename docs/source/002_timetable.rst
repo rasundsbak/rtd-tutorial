@@ -3,7 +3,7 @@
 002 Timetable AI workshop Medio February 2025
 ======================================
 
-.. todo:: make timetalbe for day 1 and day 2
+.. todo:: make timetalbe for morning and afternoon
 
 Everybody must bring
 --------------
@@ -13,7 +13,7 @@ Everybody must bring
 * Bank id
 
 
-Day 1
+Morning session
 -----
 **08:00-09:00**
 Morning coffee and preparations.
@@ -43,7 +43,7 @@ This is compulsory if you have not done the preparations from chapter 01.
 - Connecting the model to the documents: :doc:`11_pegasus_continued`
 - Logout.
 
-Day 2
+Afternoon session
 -----
 -
 -

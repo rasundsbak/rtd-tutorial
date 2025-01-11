@@ -1,6 +1,6 @@
 .. _002_timetable:
 
-002 Timetable AI workshop January 2025
+002 Timetable AI workshop Medio February 2025
 ======================================
 
 .. todo:: make timetalbe for day 1 and day 2

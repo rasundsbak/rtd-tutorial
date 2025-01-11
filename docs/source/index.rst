@@ -9,9 +9,13 @@ Run large language models (LLM) through Educloud UiO
 
 Digital Scholarship Days 2025
 -----------------------------
-This documentation is a part of the course held as a part of `Digital Scholarship Days 2025 <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/00-mainpage.html/>`_ The course is for employees at the University of Oslo. If you are in the interest group, you may `sign up here <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_. 
+This documentation is a part of the course held at The University og Oslo Library. The course is for employees at the University of Oslo who has some experience with Jupyter. If you are in the interest group, you may `sign up here <https://nettskjema.no/a/465610>`_. 
 
 .. todo:: 0.1 lage referanseliste. Gå gjennom alle sider og samle alt av referanser eller "further reading" til referanselisten 29_references. Dersom referansen ikke står fra tekstreferanse, er det mer som anbefalt litteratur å regne. Da skal den settes under overskrift: "Further reading". Tekstreferanser settes under "References". Bruk overskrift 2 på begge. På samme side skal det være en tekstsnutt med takk til nettverket vårt, slik at vi gir ære til de som æres bør, og som har gjort dette mulig. De skal selv bestemmes om de vil nevnes med navn eller bare institutt.
+
+Prior Knowledge
+--------------
+You should have attended the course "Plotting and Programming in Python" held as a Carpentry program at the ´Digital Scholarship Centre <https://www.ub.uio.no/english/libraries/dsc/>`_. Alternatively you may take `The lesson <https://swcarpentry.github.io/python-novice-gapminder/>`_. as a self study.
 
 Learning objectives
 -------------------

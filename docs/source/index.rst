@@ -15,7 +15,7 @@ This documentation is a part of the course held at The University og Oslo Librar
 
 Prior Knowledge
 --------------
-You should have attended the course "Plotting and Programming in Python" held as a Carpentry program at the ´Digital Scholarship Centre <https://www.ub.uio.no/english/libraries/dsc/>`_. Alternatively you may take `The lesson <https://swcarpentry.github.io/python-novice-gapminder/>`_. as a self study.
+You should have attended the course "Plotting and Programming in Python" held as a Carpentry program at the `Digital Scholarship Centre <https://www.ub.uio.no/english/libraries/dsc/>`_. Alternatively you may take `The lesson <https://swcarpentry.github.io/python-novice-gapminder/>`_. as a self study.
 
 Learning objectives
 -------------------

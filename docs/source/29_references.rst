@@ -18,6 +18,10 @@ Vaswani, Ashish; Noam Shazeer; Niki Parmar; Jakob Uszkoreit; Llion Jones; Aidan 
 
 UiO ChatGPT (2024): Assistance in developing workshop documentation using OpenAI's GPT models. University of Oslo. Available at: <https://www.uio.no/tjenester/it/ki/gpt-uio/> Accessed Nov. 24th.
 
+UiO (2024): UiO Data storage guide. Available at: <https://www.uio.no/english/services/it/security/lsis/storage-guide.html> Accessed Des 10th.
+
+https://projector.tensorflow.org
+
 
 Recommended reading
 ------------------

@@ -4,8 +4,13 @@
 .. todo:: make timetalbe for morning and afternoon
 
 
-002 Timetable AI workshop January 2025
+002 Timetable AI workshop February 2025
 ======================================
+
+Prerequisites
+-------------
+All participants should have taken the Carpentry lesson on `Plotting and Programming in Python < https://swcarpentry.github.io/python-novice-gapminder/>_`.
+
 
 Everybody must bring
 --------------

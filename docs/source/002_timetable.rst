@@ -22,26 +22,27 @@ Everybody must bring
 Morning session
 -----
 
-**09:00-09:45**
+**09:15-10:00**
 Morning coffee and preparations.
 Applying for group memdership.
 
-
-
-**09:00-10:00**
+**10:15-11:00**
 
 * We go strait to the cluster, and order a job :doc:`02_easy_login`.
 * Presentation working methods with the red and green sticky notes.
 * Startup and setup
 
-**10:15-11:00** 
+**11:15-12:00** 
 
 - Progression - Llama model and onwards - coding together in slow motion
 - Everybody follows in the same pace
 
-**11:00-11.15 Break**
+**12:00-13.15 Break**
 
-**11.15-12:00**
+Afternoon session
+-----
+
+**13.15-14:00**
 
 - Confirming that everybody still has a job running on the cluster.
 - "AI board", "Where AIs live" and "Parameters" - One table for each of these chapters, 5 mins for reading. Then 10 min talk and room for questions: :doc:`04_ai_board`, :doc:`06_where_ais_live` and :doc:`09_parameters`
@@ -52,8 +53,7 @@ Applying for group memdership.
 - Logout.
 
 
-Afternoon session
------
+
 -
 -
 -

@@ -1,4 +1,4 @@
-.. _01_preparations: Before you come:
+.. _01_preparations:
 01 Preparations: Before you come
 ===============
 

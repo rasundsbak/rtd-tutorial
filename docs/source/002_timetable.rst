@@ -1,6 +1,5 @@
 .. _002_timetable:
 
-
 .. todo:: make timetalbe for morning and afternoon
 
 
@@ -13,6 +12,7 @@ Everybody must bring
 * A laptop
 * A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_.
 * Bank id
+
 
 Morning session
 -----

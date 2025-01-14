@@ -9,7 +9,7 @@
 
 Prerequisites
 -------------
-All participants should have taken the Carpentry lesson on `Plotting and Programming in Python <https://swcarpentry.github.io/python-novice-gapminder/>_`.
+All participants should have taken the Carpentry lesson on `Plotting and Programming in Python <https://swcarpentry.github.io/python-novice-gapminder/>`_.
 
 
 Everybody must bring

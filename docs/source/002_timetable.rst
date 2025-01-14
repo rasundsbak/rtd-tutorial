@@ -1,8 +1,5 @@
 .. _002_timetable:
 
-002 Timetable AI workshop Medio February 2025
-======================================
-
 .. todo:: make timetalbe for morning and afternoon
 
 Everybody must bring
@@ -13,8 +10,14 @@ Everybody must bring
 * Bank id
 
 
+Why Cluster?
+------------
+
+AI requires a lot of resources when it comes to machine power. Driving the largest AI model locally requires 8 graphics cards where each card costs the equivalent of a nice used car. Since you do not need the model so often, it is better to share the resources than everybody having their own supercomputer.
+
 Morning session
 -----
+
 **08:00-09:00**
 Morning coffee and preparations.
 
@@ -43,6 +46,7 @@ This is compulsory if you have not done the preparations from chapter 01.
 - Connecting the model to the documents: :doc:`11_pegasus_continued`
 - Logout.
 
+
 Afternoon session
 -----
 -
@@ -61,4 +65,5 @@ AI requires a lot of resources when it comes to machine power. Driving the large
 Welcome, this will be fun!
 
 From Pål, Erik and Ragnhild
+
 

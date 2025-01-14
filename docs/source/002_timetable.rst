@@ -22,10 +22,11 @@ Everybody must bring
 Morning session
 -----
 
-**08:00-09:00**
+**09:00-09:45**
 Morning coffee and preparations.
+Applying for group memdership.
 
-This is compulsory if you have not done the preparations from chapter 01.
+
 
 **09:00-10:00**
 

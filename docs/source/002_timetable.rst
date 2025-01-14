@@ -1,6 +1,11 @@
 .. _002_timetable:
 
+
 .. todo:: make timetalbe for morning and afternoon
+
+
+002 Timetable AI workshop January 2025
+======================================
 
 Everybody must bring
 --------------
@@ -8,12 +13,6 @@ Everybody must bring
 * A laptop
 * A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_.
 * Bank id
-
-
-Why Cluster?
-------------
-
-AI requires a lot of resources when it comes to machine power. Driving the largest AI model locally requires 8 graphics cards where each card costs the equivalent of a nice used car. Since you do not need the model so often, it is better to share the resources than everybody having their own supercomputer.
 
 Morning session
 -----
@@ -62,8 +61,8 @@ Why Cluster?
 ------------
 AI requires a lot of resources when it comes to machine power. Driving the largest AI model locally requires 8 graphics cards where each card costs the equivalent of a nice used car. Since you do not need the model so often, it is better to share the resources than everybody having their own supercomputer.
 
-Welcome, this will be fun!
 
+Welcome, this will be fun!
 From Pål, Erik and Ragnhild
 
 

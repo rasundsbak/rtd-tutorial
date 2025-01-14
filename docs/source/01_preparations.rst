@@ -1,5 +1,5 @@
 .. _01_preparations:
-01 Preparations: Before you come
+01 Preparations: Getting into the Cluster
 ===============
 
 .. index:: preparations, two-factor, Microsoft Authenticator

@@ -19,7 +19,7 @@ Everybody must bring
 * A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_.
 * Bank id
 
-Morning session
+Day 1
 -----
 
 **09:15-10:00**
@@ -37,22 +37,19 @@ Applying for group memdership.
 - Progression - Llama model and onwards - coding together in slow motion
 - Everybody follows in the same pace
 
-**12:00-13.15 Break**
 
-Afternoon session
+Day 2
 -----
 
-**13.15-14:00**
-
-- Confirming that everybody still has a job running on the cluster.
-- "AI board", "Where AIs live" and "Parameters" - One table for each of these chapters, 5 mins for reading. Then 10 min talk and room for questions: :doc:`04_ai_board`, :doc:`06_where_ais_live` and :doc:`09_parameters`
+**09:15-10:00**
 
 
-- Making a prompt and checking the answer. Tasks :doc:`08_pirat`
-- Connecting the model to the documents: :doc:`11_pegasus_continued`
-- Logout.
+**10:15-11:00**
 
--
+
+**11:15-12:00** 
+
+
 - Short evaluation: Do I want to stay on 443? 
 - Write your name on a green sticly note, if you want to stay until december 2025
 - Write your name on a red sticky note if you want to leave the group.

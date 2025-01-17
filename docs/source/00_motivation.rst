@@ -11,7 +11,7 @@ Copy this::
       1) Who are you?
       2) Tell me about your ideal boat?
 
-At the UiO we have had access to Chat GPT since 2023. Many are using it every week. In this workshop, we will look at what goes on behind the interface of an AI. Is it possible to make reproducible research through using the open source `Transformers library <https://huggingface.co/docs/transformers/index>`_ together with state-of-the-art pretrained models from Huggingface? 
+At the UiO we have had access to Chat GPT since 2023. Many are using it every week. In this workshop, we will look at what goes on behind the interface of an AI. Is it possible to make reproducible research through using the open source Transformers library together with state-of-the-art pretrained models from Huggingface? 
 
 Knowledge through structured playing
 ---------------------------

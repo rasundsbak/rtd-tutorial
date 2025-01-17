@@ -52,11 +52,6 @@ Afternoon session
 - Connecting the model to the documents: :doc:`11_pegasus_continued`
 - Logout.
 
-
-
--
--
--
 -
 - Short evaluation: Do I want to stay on 443? 
 - Write your name on a green sticly note, if you want to stay until december 2025

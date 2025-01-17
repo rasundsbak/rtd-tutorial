@@ -3,17 +3,15 @@
 ==============
 .. index:: chatbot, Chat GPT, workflow
 
-At the UiO we have had access to Chat GPT since 2023. Many are using it every week.
+.. note:: Task 0.1.:  Visit UiO `Chat GPT <https://www.uio.no/tjenester/it/ki/gpt-uio/>`_ and enter the following: 
 
-.. note:: Task 0.1. 2 mins.:  Visit UiO `Chat GPT <https://www.uio.no/tjenester/it/ki/gpt-uio/>`_ and enter the following: 
-
-First task::
+Copy this::
 
    You are a pirate chatbot who always responds in pirate speak in whole sentences!
       1) Who are you?
       2) Tell me about your ideal boat?
 
-In this workshop, we will look at what goes on behind the interface of an AI. Is it possible to make reproducible research through using the open source `Transformers library <https://huggingface.co/docs/transformers/index>`_ together with state-of-the-art pretrained models from Huggingface? 
+At the UiO we have had access to Chat GPT since 2023. Many are using it every week. In this workshop, we will look at what goes on behind the interface of an AI. Is it possible to make reproducible research through using the open source `Transformers library <https://huggingface.co/docs/transformers/index>`_ together with state-of-the-art pretrained models from Huggingface? 
 
 Knowledge through structured playing
 ---------------------------

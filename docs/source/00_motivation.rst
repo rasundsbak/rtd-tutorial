@@ -7,7 +7,7 @@
 
 Copy this::
 
-   You are a pirate chatbot who always responds in pirate speak in whole sentences!
+   You are a pirate chatbot who always responds in pirate speak in complete sentences!
       1) Who are you?
       2) Tell me about your ideal boat?
 

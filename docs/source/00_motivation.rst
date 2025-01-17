@@ -1,5 +1,5 @@
 .. _00 motivation:
-00 AIs and Scientific workflows.
+00 AIs and Scientific workflows
 ==============
 .. index:: chatbot, Chat GPT, workflow
 

@@ -13,6 +13,8 @@ Heaven(2024), Will Douglas: `Artificial intelligence: What is AI? <https://www.t
 
 Scott, Sir Walter (1822): The Pirate. Edinburgh, Hurst.
 
+`Transformers library <https://huggingface.co/docs/transformers/index>`_
+
 Vaswani, Ashish; Noam Shazeer; Niki Parmar; Jakob Uszkoreit; Llion Jones; Aidan N. Gomez; Lukasz Kaiser and Illia Polosukhin (2023): Attention Is All You Need.
 <https://arxiv.org/abs/1706.03762>`_  2. Aug 2023
 

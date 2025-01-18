@@ -45,51 +45,51 @@ Run this Cell::
 This works on "small" Nvidia machines, only they have GPU. UiO: MIG and RTX
 -------------------------
 
+We are going to download packages. We have to do this the first time we are going to use the models. The second and thirs time, you may neutralice the !pip install code with a # in front of the cell.
+
 Cell 1::
 
-   # Location of locally downloaded models
-   # %env HF_HOME=/fp/projects01/ec443/huggingface/cache/Llama
-   %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
+   # Make installations
+   !pip install --upgrade pip huggingface-hub langchain langchain-community langchain-huggingface sentence-transformers    sentencepiece
 
 Output:
-env: HF_HOME=/fp/projects01/ec443/huggingface/cache/
+
 
 Cell 2::
 
-   !pip install --upgrade huggingface-hub langchain langchain-community sentence-transformers sentencepiece
+   # !pip install --upgrade unstructured[all-docs] langchain-unstructured
 
 Output example:
-Requirement already satisfied: joblib>=1.2.0 in /cluster/software/EL9/easybuild/software/Python-bundle-PyPI/2023.06-GCCcore-12.3.0/lib/python3.11/site-packages (from scikit-learn->sentence-transformers) (1.2.0)
-
-Requirement already satisfied: threadpoolctl>=3.1.0 in /cluster/software/EL9/easybuild/software/Python-bundle-PyPI/2023.06-GCCcore-12.3.0/lib/python3.11/site-packages (from scikit-learn->sentence-transformers) (3.1.0)
-
-Requirement already satisfied: anyio in /cluster/software/EL9/easybuild/software/jupyter-server/2.7.2-GCCcore-12.3.0/lib/python3.11/site-packages (from httpx<1,>=0.23.0->langsmith<0.2.0,>=0.1.17->langchain) (3.7.1)
-
-Requirement already satisfied: httpcore==1.* in ./.local/lib/python3.11/site-packages (from httpx<1,>=0.23.0->langsmith<0.2.0,>=0.1.17->langchain) (1.0.7)
-
-Requirement already satisfied: h11<0.15,>=0.13 in ./.local/lib/python3.11/site-packages (from httpcore==1.*->httpx<1,>=0.23.0->langsmith<0.2.0,>=0.1.17->langchain) (0.14.0)
-
-Requirement already satisfied: jsonpointer>=1.9 in ./.local/lib/python3.11/site-packages (from jsonpatch<2.0,>=1.33->langchain-core<0.4.0,>=0.3.21->langchain) (3.0.0)
-
-...and more
 
 Cell 3::
+  
+  !pip install --upgrade faiss-cpu
 
-   from huggingface_hub import login
-   login()
+Output
 
-Output:
-(image)
+We enter the location of the model. You should navigate to this location in the browser interface, and have a look at the models.
 
-Copy a token from your Hugging Face tokens page and paste it below.
+Cell 4::
 
-Immediately click login after copying your token or it might be stored in plain text in this notebook file.
+  %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
 
-Token:
-​
-Add token as git credential?
+We are importing a module from the library. This allows us to set up a pipeline that can perform tasks such as text generation from the model.
 
-**Pro Tip:** If you don't already have one, you can create a dedicated 'notebooks' token with 'write' access, that you can then easily reuse for all notebooks.
+Cell 5::
+  
+  from langchain_huggingface.llms import HuggingFacePipeline
+
+Cell 6::
+
+  model_id = 'mistralai/Mistral-7B-Instruct-v0.3'
+
+Cell 7::
+
+  task = 'text-generation'
+
+Cell 8::
+
+  
 
 Cell 4::
 

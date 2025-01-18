@@ -12,7 +12,7 @@ Run large language models (LLM) through Educloud UiO
 
 Who are we inviting
 ----------
-This documentation is a part of the course held at The University og Oslo Library. The course is for employees at the University of Oslo who has some experience with Jupyter. We invite Researchers, PhD and Postdoc. If you are in the interest group, you may `sign up here <https://nettskjema.no/a/465610>`_. 
+This documentation is a part of the course held at The University og Oslo Library. The course is for employees at the University of Oslo who has some experience with Jupyter. We invite Researchers, PhDs and Postdocs. If you are in the interest group, you may `sign up here <https://nettskjema.no/a/465610>`_. 
 
 .. todo:: 0.1 lage referanseliste. Gå gjennom alle sider og samle alt av referanser eller "further reading" til referanselisten 29_references. Dersom referansen ikke står fra tekstreferanse, er det mer som anbefalt litteratur å regne. Da skal den settes under overskrift: "Further reading". Tekstreferanser settes under "References". Bruk overskrift 2 på begge. På samme side skal det være en tekstsnutt med takk til nettverket vårt, slik at vi gir ære til de som æres bør, og som har gjort dette mulig. De skal selv bestemmes om de vil nevnes med navn eller bare institutt.
 

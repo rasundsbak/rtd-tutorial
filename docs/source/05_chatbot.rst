@@ -12,7 +12,7 @@ We will use `LangChain <https://python.langchain.com/docs/introduction/>`_, an o
 Model Location
 -------------
 
-We should tell the HuggingFace library where to store its data. If you’re running on Educloud/Fox project ec443 the model is stored at the path below.
+We are using models from `HuggingFace <https://huggingface.co/>`_ . Huggingface is an american company that develops tools for machine learning. They are the inventor of the Transformers library, that provides tools for downloading pretrained models. This documentation has a chapter on literature and references, where you may find urls and information on these subjects. We should tell the HuggingFace LLM where to store its data. If you’re running on Educloud/Fox project ec443 the model is stored on the path below.
 
 We enter the location of the model. You should navigate to this location in the browser interface, and have a look at the models.
 

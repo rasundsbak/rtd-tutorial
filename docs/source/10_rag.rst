@@ -1,8 +1,10 @@
+
 .. _10 rag:
 
 10 Retrieval Augmented Generation (RAG)
 ========================================
 .. index:: summarization, open source
+
 
 Location of the document folder
 

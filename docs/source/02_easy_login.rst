@@ -25,11 +25,6 @@ When you are logged on to `the Fox <https://ood.educloud.no/>`_, move like this:
 
 .. note::
 
-  Task 2.2: Look for the left menu in the browser view. Go to Home directory --> New directory (White button on second top menu) --> Directory name: documents. This is where you may store the documents for this workshop, and later your own material.
-
-.. note::
+  Task 2.2: Look for the left menu in the browser view. Go to Home directory --> Nev directory (White button on second top menu) --> Directory name: documents. This is where you may store the documents for this workshop, and later your own material.
 
   Task 2.3: Take some, or all of the content from this path: /fp/projects01/ec443/documents, and move it into your own documents folder that you made on your own home directory.
-
-
-

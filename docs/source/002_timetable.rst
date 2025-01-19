@@ -18,12 +18,14 @@ Everybody must bring
 * A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_.
 * Bank id
 
+
 Day 1
 -----
 
 **09:15-10:00**
-Morning coffee and preparations.
-Applying for group memdership.
+Motivation and first task.
+Preparations.
+Easy login
 
 **10:15-11:00**
 

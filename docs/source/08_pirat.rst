@@ -19,19 +19,19 @@ Cell 2::
 
 Cell 3::
 
-from langchain_huggingface.llms import HuggingFacePipeline
-
-  llm = HuggingFacePipeline.from_model_id(
-      model_id='mistralai/Ministral-8B-Instruct-2410',
-      task='text-generation',
-      device=0,
-      pipeline_kwargs={
-          'max_new_tokens': 1000,
-          #'do_sample': True,
-          #'temperature': 0.3,
-          #'num_beams': 4,
-      }
-  )
+  from langchain_huggingface.llms import HuggingFacePipeline
+  
+    llm = HuggingFacePipeline.from_model_id(
+        model_id='mistralai/Ministral-8B-Instruct-2410',
+        task='text-generation',
+        device=0,
+        pipeline_kwargs={
+            'max_new_tokens': 1000,
+            #'do_sample': True,
+            #'temperature': 0.3,
+            #'num_beams': 4,
+        }
+    )
 
 Cell 4::
 

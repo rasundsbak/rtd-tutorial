@@ -34,7 +34,7 @@ Learning objectives
    :titlesonly:
 
    002_timetable
-   00_motivation
+   00_motivatio
    01_preparations
    02_easy_login
    03_downloading_packages
@@ -42,9 +42,9 @@ Learning objectives
    05_chatbot
    06_where_ais_live
    07_prompting
-   08_pirat
+   08_summarization
    09_parameters
-   10_pegasus
+   10_rag
    11_pegasus_continued
    12_problem_solving
    29_references

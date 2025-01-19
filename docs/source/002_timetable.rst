@@ -59,5 +59,3 @@ Day 2
 
 Welcome, this will be fun!
 From Pål, Erik and Ragnhild
-
-

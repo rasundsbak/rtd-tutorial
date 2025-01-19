@@ -37,6 +37,7 @@ Cell 7::
   task = 'text-generation'
 
 This is the first step of building a working pipeline.
+
 Cell 8::
   
     llm = HuggingFacePipeline.from_model_id(
@@ -46,6 +47,7 @@ Cell 8::
   )
 
 We can add keyword arguments to the pipeline. Kwargs is a short form for additional keyword arguments. They are  passed along to the specific pipeline init.
+
 Cell 9::
 
   llm = HuggingFacePipeline.from_model_id(
@@ -57,12 +59,28 @@ Cell 9::
       }
   )
 
-Cell 11::
+We can add even more arguments. In this cell they are commented out, so that they do not have a function. If you want to use them, take away the # and see what happens. Later, we are going to change the value for some of them.
+
+Cell 10::
+
+llm = HuggingFacePipeline.from_model_id(
+    model_id,
+    task,
+    device=0,
+    pipeline_kwargs={
+        'max_new_tokens': 100,
+        #'do_sample': True,
+        #'temperature': 0.3,
+        #'num_beams': 4,
+    }
+)
+
+Cell 10::
 
   from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
   from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
-Cell 12::
+Cell 11::
 
   messages = [
     SystemMessage("You are a pirate chatbot who always responds in pirate speak in complete sentences!"),

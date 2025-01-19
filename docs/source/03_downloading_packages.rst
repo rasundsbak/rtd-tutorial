@@ -8,7 +8,7 @@ In this course, we have tried to make it easy for you, through making the code a
 
 .. note::
 
-  Task 3.1: Look around in Jupyter lab, and try googling subjects like "jupyter lab cheat sheet" and "run cell jupyter lab".
+  Task 3.1: Look around in Jupyter lab. Open another tab in your browser, and google subjects like "jupyter lab cheat sheet" and "run cell jupyter lab".
 
 Jupyter lab keyboard shortcuts
 ---------------------

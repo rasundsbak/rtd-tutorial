@@ -44,7 +44,7 @@ Learning objectives
    07_prompting
    08_pirat
    09_parameters
-   10_pegasus
+   10_rag
    11_pegasus_continued
    12_problem_solving
    29_references

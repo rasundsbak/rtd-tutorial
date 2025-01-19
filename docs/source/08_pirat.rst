@@ -1,7 +1,12 @@
 .. _08_pirat:
 08 Summarization
 ==============
-We are going to sum up the documents that we have in the folder "doduments". The pdfs from this lesson are located on the path "/fp/projects01/ec443/documents". In task number 2 in the chapter on "Easy login", you where asked to make your own documents folder in your home directiry. In case you did not do it, you will now get a second chance. Do the task below, if not done before:
+We are going to sum up the documents that we have in the folder "documents". The pdfs from this lesson are located on the path "/fp/projects01/ec443/documents". In task number 2 in the chapter on "Easy login", you where asked to make your own documents folder in your home directiry. In case you did not do it, you will now get a second chance. Do the task below, if not done before:
+
+.. image:: fox_dokument.png
+
+The easiest way doing this, is to use the browser view for Fox. The idea is that you are a researcher, with a specific subject in mind. In this case, I had a search for "terrorism" and "western europe" in DOAJ.
+
 
 
 .. note::

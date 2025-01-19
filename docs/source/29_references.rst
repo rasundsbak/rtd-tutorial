@@ -5,7 +5,7 @@
 .. index:: pipeline initialization, kwargs, transformers, LLM, 
 
 
-.. todo:: ordne referansene
+.. todo:: ordne referansene. dytt på flere emneord. Alt som omtales i referanser og litteraturforslag bør kanskje ha minst ett emneord hver. Vurdere dette!
 
 Cloudflare (2024): `What is a large language model (LLM)? <https://www.cloudflare.com/learning/ai/what-is-large-language-model/>`_ Accessed Nov 22.
 

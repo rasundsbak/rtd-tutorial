@@ -63,24 +63,24 @@ We can add even more arguments. In this cell they are commented out, so that the
 
 Cell 10::
 
-llm = HuggingFacePipeline.from_model_id(
-    model_id,
-    task,
-    device=0,
-    pipeline_kwargs={
-        'max_new_tokens': 100,
-        #'do_sample': True,
-        #'temperature': 0.3,
-        #'num_beams': 4,
-    }
-)
+  llm = HuggingFacePipeline.from_model_id(
+      model_id,
+      task,
+      device=0,
+      pipeline_kwargs={
+          'max_new_tokens': 100,
+          #'do_sample': True,
+          #'temperature': 0.3,
+          #'num_beams': 4,
+      }
+  )
 
-Cell 10::
+Cell 11::
 
   from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
   from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
-Cell 11::
+Cell 12::
 
   messages = [
     SystemMessage("You are a pirate chatbot who always responds in pirate speak in complete sentences!"),

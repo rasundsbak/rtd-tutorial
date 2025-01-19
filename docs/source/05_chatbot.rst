@@ -6,15 +6,17 @@
 
 Querying LLMs (Chatbots)
 ----------------------
+We will use `LangChain <https://python.langchain.com/docs/introduction/>`_, an open-source library for making applications with LLMs. Whenever you see the name of a package in an error message or in a tutorial, you may google the name of the package. Sometimes you will have to look around a bit, but it might help you to add the word "documentation" for better results. 
 
-We will use `LangChain <https://python.langchain.com/docs/introduction/>`_, an open-source library for making applications with LLMs. Whenever you see the name of a package in an error message or in a tutorial, you may google the name of the package. Sometimes you will have to look around a bit, but it might help you to add the word "documentation" for better results.
+Transformers and Huggingface
+----------------------------
+We are using models from `HuggingFace <https://huggingface.co/>`_ . Huggingface is an american company that develops tools for machine learning. They are the inventor of the Transformers library, that provides tools for downloading pretrained models. This documentation has a chapter on literature and references :doc:`29_references`, where you may find urls and information on these subjects.
 
 Model Location
 -------------
+We should tell the HuggingFace LLM where to store its data. If you’re running on Educloud/Fox project ec443 the model is stored on the path below. We enter the location of the model.
 
-We are using models from `HuggingFace <https://huggingface.co/>`_ . Huggingface is an american company that develops tools for machine learning. They are the inventor of the Transformers library, that provides tools for downloading pretrained models. This documentation has a chapter on literature and references :doc:`29_references`, where you may find urls and information on these subjects. We should tell the HuggingFace LLM where to store its data. If you’re running on Educloud/Fox project ec443 the model is stored on the path below.
-
-We enter the location of the model. You should navigate to this location in the browser interface, and have a look at the models.
+Task 5.1: Navigate to the location mentioned in cell 4, and look at the models. Do you recognize any names? Are there any European AIs in the collection?
 
 Cell 4::
 

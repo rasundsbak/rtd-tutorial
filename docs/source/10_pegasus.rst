@@ -4,16 +4,6 @@
 ========================================
 .. index:: summarization, open source
 
-
-.. note:: 
-  Task 10.1: Before starting to run summarizations, everyone should move 5 chosen pdfs from a shared space into a folder called "documents" at your homedrive at ec443. The reason is that this will make you set for having your own texts in this folder, in your future work process. Also, when you get the output, the user rights management at fox, will be set up much easier if we do it in the way described here, than if you would choose to make the model generate output on your project area that you have at the same place as the venv. See illustration below. Finally, it will look tidier in the project area. 
-
-.. image:: fox_dokument.png
-
-The easiest way doing this, is to use the browser view for Fox. The idea is that you are a researcher, with a specific subject in mind. In this case, I had a search for "terrorism" and "western europe" in DOAJ. Unfortunately, we are not yet technically fit to make the AI participate in doing new scientific discoveries regarding the chosen subject. However, this setup will connect to the right places on the computer, and make the process work. In the project group, we have an ambition to help users do the setup, and generate functioning outputs. We are aspiring to make RAG or other more advanced AI processes once we have started educating our public on how the system is working. We hope you will join us in the further work.
-
-Pro tip but only if something is not working: use pipinstall fitz, frontend, starlette. 
-Don't run tis cell, but later if needed.
 Code view 0::
 
   # Install necessary packages directly in Jupyter Notebook

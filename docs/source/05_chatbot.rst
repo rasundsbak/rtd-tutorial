@@ -2,7 +2,7 @@
 05 Chatbot
 ===========
 
-.. index:: introduction, hello world,
+.. index:: chatbot, pipeline
 
 Querying LLMs (Chatbots)
 ----------------------
@@ -14,67 +14,65 @@ Model Location
 
 We should tell the HuggingFace library where to store its data. If you’re running on Educloud/Fox project ec443 the model is stored at the path below.
 
-Cell 1::
+We enter the location of the model. You should navigate to this location in the browser interface, and have a look at the models.
+
+Cell 4::
 
   %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
 
-
-We need this library function:
-Cell 2::
-
-  from langchain_community.llms import HuggingFacePipeline
-
-Cell 3::
-
-  llm = HuggingFacePipeline.from_model_id(
-      #model_id='mistralai/Mistral-Nemo-Instruct-2407',
-      model_id='meta-llama/Llama-3.2-1B',
-      task='text-generation',
-      device=0,
-      pipeline_kwargs={
-          'max_new_tokens': 100,
-          #'temperature': 0.3,
-          #'num_beams': 4,
-          #'do_sample': True
-      }
-  )
-
-Library function for prompts
-Cell 4::
-
-  from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-  from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
+We are importing a module from the library. This allows us to set up a pipeline that can perform tasks such as text generation from the model.
 
 Cell 5::
-
-  messages = [
-      SystemMessage("You are a pirate chatbot who always responds in pirate speak in whole sentences!"),
-      MessagesPlaceholder(variable_name="messages")
-  ]
+  
+  from langchain_huggingface.llms import HuggingFacePipeline
 
 Cell 6::
 
-  prompt = ChatPromptTemplate.from_messages(messages)
-
-LangChain processes input in chains that can consist of several steps. Now, we define our chain which sends the prompt into the LLM.
+  model_id = 'mistralai/Mistral-7B-Instruct-v0.3'
 
 Cell 7::
 
-  chatbot = prompt | llm
+  task = 'text-generation'
 
-The chatbot is complete, and we can try it out by invoking it:
-
+Now, we are going to build up a pipeline. You do not need to run this cell yet. We are going to add some arguments.
 Cell 8::
-
-  result = chatbot.invoke([HumanMessage("Who are you?")])
-  print(result)
+  
+    llm = HuggingFacePipeline.from_model_id(
+      model_id,
+      task,
+      device=0
+  )
 
 Cell 9::
+  llm = HuggingFacePipeline.from_model_id(
+      model_id,
+      task,
+      device=0,
+      pipeline_kwargs={
+          'max_new_tokens': 100,
+      }
+  )
 
-  result = chatbot.invoke([HumanMessage("Tell me about your ideal boat?")])
-  print(result)
+Cell 10::
 
+  task = 'text-generation'
 
+Cell 11::
 
+  task = 'text-generation'
 
+Cell 12::
 
+  task = 'text-generation'
+
+Cell 13::
+
+  task = 'text-generation'
+
+Cell 14::
+
+  task = 'text-generation'
+
+.. note::
+
+   Task 3.2: Copy the cell above and change the temperature to 10.0. Run the cell.

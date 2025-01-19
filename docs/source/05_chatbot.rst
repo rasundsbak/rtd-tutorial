@@ -54,25 +54,36 @@ Cell 9::
       }
   )
 
-Cell 10::
-
-  task = 'text-generation'
-
 Cell 11::
 
-  task = 'text-generation'
+  from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+  from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
 Cell 12::
 
-  task = 'text-generation'
+  messages = [
+    SystemMessage("You are a pirate chatbot who always responds in pirate speak in complete sentences!"),
+    MessagesPlaceholder(variable_name="messages")
+  ]
 
 Cell 13::
 
-  task = 'text-generation'
+  prompt = ChatPromptTemplate.from_messages(messages)
 
 Cell 14::
 
-  task = 'text-generation'
+  chatbot = prompt | llm
+
+Cell 15::
+
+  result = chatbot.invoke([HumanMessage("Who are you?")])
+  print(result)
+
+Cell 16::
+
+  result = chatbot.invoke([HumanMessage("Tell me about your ideal boat?")])
+  print(result)
+
 
 .. note::
 

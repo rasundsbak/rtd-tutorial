@@ -1,138 +1,117 @@
 .. _08_pirat:
 08 Summarization
 ==============
+We are going to sum up the documents that we have in the folder "doduments". The pdfs from this lesson are located on the path "/fp/projects01/ec443/documents". In task number 2 in the chapter on "Easy login", you where asked to make your own documents folder in your home directiry. In case you did not do it, you will now get a second chance. Do the task below, if not done before:
 
-Cell  1::
 
-  #document_folder = 'documents'
-  #document_folder = '../summarizing'
-  document_folder = '../documents'
-  
+.. note::
+  Task 8.1: Copy all of the content from this path: /fp/projects01/ec443/documents, and move it into your own documents folder named "documents" on your own home directory.
+
+Cell 1::
+
+  document_folder = '/fp/projects01/ec443/documents/terrorism'
+
+Repeating the location of the models, just in case
 
 Cell 2::
 
-  # Endre arbeidskatalogen til prosjektmappen
-  import os
-  
-  # Sett brukernavnet til studentene
-  username = "your username no ec"  # Studentene må endre dette til sitt faktiske brukernavn
-  
-  # Definer sti til prosjektmappen
-  project_dir = f"/fp/projects01/ec443/{username}"
-  
-  # Endre arbeidskatalogen
-  os.chdir(project_dir)
-  print(f"Nåværende arbeidskatalog: {os.getcwd()}")
+  %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
 
 Cell 3::
 
-  # Importer nødvendige moduler
-  import sys
-  import os
-  
-  # Sett brukernavnet til studentene
-  username = "your username no ec"  # Studentene må endre dette til sitt faktiske brukernavn
-  
-  # Sti til ditt virtuelle miljøs site-packages
-  venv_path = f'/fp/projects01/ec443/{username}/my_venv/lib/python3.9/site-packages'
-  
-  # Legg til stien til sys.path hvis den ikke allerede er der
-  if venv_path not in sys.path:
-      sys.path.append(venv_path)
-  
-  # Prøv å importere nødvendige pakker
-  try:
-      import llama_cpp
-      print('llama_cpp import successful')
-  except ModuleNotFoundError as e:
-      print(f"Failed to import llama_cpp: {e}")
-  
-  try:
-      import transformers
-      from transformers import AutoTokenizer, AutoModelForCausalLM, GenerationConfig
-      print('transformers import successful')
-  except ModuleNotFoundError as e:
-      print(f"Failed to import transformers: {e}")
-  
-  try:
-      import torch
-      print('torch import successful')
-  except ModuleNotFoundError as e:
-      print(f"Failed to import torch: {e}")
+from langchain_huggingface.llms import HuggingFacePipeline
+
+  llm = HuggingFacePipeline.from_model_id(
+      model_id='mistralai/Ministral-8B-Instruct-2410',
+      task='text-generation',
+      device=0,
+      pipeline_kwargs={
+          'max_new_tokens': 1000,
+          #'do_sample': True,
+          #'temperature': 0.3,
+          #'num_beams': 4,
+      }
+  )
 
 Cell 4::
 
-  # Kontrollere hvilken Python executable som er i bruk
-  import sys
-  print(f"Python executable in use: {sys.executable}")
-
-**The pirate example**
+  from langchain.chains.combine_documents import create_stuff_documents_chain
+  from langchain.chains.llm import LLMChain
+  from langchain.prompts import PromptTemplate
 
 Cell 5::
-
-  # Angi stien til Hugging Face cache (felles for alle)
-  cache_base_path = "/fp/projects01/ec443/huggingface/cache/Llama"
   
-  # Sti til den kvantiserte modellfilen
-  quantized_modelfile_path = f"{cache_base_path}/Meta-Llama-3-8B-Instruct.Q5_K_M.gguf"
+  separator = '\nYour Summary:\n'
+  prompt_template = '''Write a summary of the following:
   
-  # Importere Llama-klassen fra llama_cpp-pakken
-  from llama_cpp import Llama
-  
-  # Initialiser modellen med riktig filsti
-  lcpp_model = Llama(
-      model_path=quantized_modelfile_path,  # Path to the quantized model file
-      chat_format="chatml",  # Using the 'chatml' format for conversations
-      n_gpu_layers=-1  # Running on CPU (no GPU layers)
-  )
-  
-  # Lage en chat completion
-  response = lcpp_model.create_chat_completion(
-      messages=[
-          {"role": "system", "content": "You are a pirate chatbot who always responds in pirate speak in whole sentences!"},
-          {"role": "user", "content": "Who are you?"},
-          {"role": "user", "content": "Tell me about your ideal boat?"},
-      ],
-      temperature=0.3,
-  )
-  
-  # Print responsen
-  print(response['choices'][0]['message']['content'])
-
-
-**The economist example**
+  {context}
+  ''' + separator
+  prompt = PromptTemplate(template=prompt_template,
+                          input_variables=['context'])
 
 Cell 6::
 
-    # Importing the Llama class from the llama_cpp package
-    from llama_cpp import Llama
-    
-    # Angi stien til den kvantiserte modellfilen
-    quantized_modelfile_path = "/fp/projects01/ec367/huggingface/cache/Llama/Meta-Llama-3-8B-Instruct.Q5_K_M.gguf"
-    
-    # Initialiser modell med riktig filsti
-    lcpp_model = Llama(
-        model_path=quantized_modelfile_path,  # Path to the quantized model file
-        chat_format="chatml",  # Using the 'chatml' format for conversations
-        n_gpu_layers=-1  # Running on CPU (no GPU layers)
-    )
-    
-    # Lage en chat completion
-    response = lcpp_model.create_chat_completion(
-        messages=[
-            {"role": "system", "content": "You are a world class economist chatbot who always responds in understandable speak in whole sentences!"},
-            {"role": "user", "content": "Who are you?"},
-            {"role": "user", "content": "Tell me about income equality and colonial history?"},
-        ],
-        temperature=0.3,
-    )
-    
-    # Print responsen
-    print(response['choices'][0]['message']['content'])
+  chain = create_stuff_documents_chain(llm, prompt)
+
+
+A function to split the summary from the input. LangChain returns both the input prompt and the generated response in one long text. To get only the summary, we must split the summary from the document that we sent as input.
+
+Cell 7::
+
+  def split_result(result):
+      "Split the reply from the prompt, should be done with output parser?"
+      position = result.find(separator)
+      summary = result[position + len(separator) :]
+      return summary
+
+Cell 8::
+
+  from langchain_community.document_loaders import DirectoryLoader
+  
+  loader = DirectoryLoader(document_folder)
+  documents = loader.load()
+  print('number of documents:', len(documents))
+
+
+Cell 9::
+  
+  summaries = {}
+  
+  for document in documents:
+      filename = document.metadata['source']
+      print(filename)
+      summary = chain.invoke({"context": [document]})
+      summary = split_result(summary)
+      summaries[filename] = summary
+      print('Summary of file', filename)
+      print(summary)
+
+
+Cell 10::
+  
+  with open('summaries_2.txt', 'w') as outfile:
+      for filename in summaries:
+          print('Summary of ', filename, file = outfile)
+          print(summaries[filename], file=outfile)
+          print(file=outfile)
+
+Cell 11::
+
+  chain = create_stuff_documents_chain(llm, prompt)
+
+Cell 12::
+
+  chain = create_stuff_documents_chain(llm, prompt)
+
+
+Cell 13::
+
+  chain = create_stuff_documents_chain(llm, prompt)
+
 
 .. note::
 
-  Task 8.1: Copy one of the prompting cells in Jupyter lab, and make your own prompt where you make your own role for the AI and ask it Who are you, and a question that you would like it to answer.
+  Task 8.2: Copy one of the prompting cells in Jupyter lab, and make your own prompt where you make your own role for the AI and ask it Who are you, and a question that you would like it to answer.
 
 Cell inspiration for task 8.1::
 

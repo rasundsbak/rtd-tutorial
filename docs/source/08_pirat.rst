@@ -2,8 +2,6 @@
 08 Summarization
 ==============
 
-We will use `LangChain <https://www.langchain.com/>`_, an open-source library for making applications with LLMs. The documents should be in your Home Directory, in a folder named "documents". We have 5 documents in pdf that contain a test search on terms terrorism and europe. When you have run this process, you may of course replace the documents with your own data.
-
 Cell  1::
 
   #document_folder = 'documents'

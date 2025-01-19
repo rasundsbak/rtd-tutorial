@@ -1,7 +1,7 @@
 .. _10 pegasus:
 
-10 Pegasus XSum simple summarization
-=============================================
+10 Retrieval Augmented Generation (RAG)
+========================================
 .. index:: summarization, open source
 
 

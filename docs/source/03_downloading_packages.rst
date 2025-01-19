@@ -66,34 +66,3 @@ Cell 3::
   !pip install --upgrade faiss-cpu
 
 Output
-
-We enter the location of the model. You should navigate to this location in the browser interface, and have a look at the models.
-
-Cell 4::
-
-  %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
-
-We are importing a module from the library. This allows us to set up a pipeline that can perform tasks such as text generation from the model.
-
-Cell 5::
-  
-  from langchain_huggingface.llms import HuggingFacePipeline
-
-Cell 6::
-
-  model_id = 'mistralai/Mistral-7B-Instruct-v0.3'
-
-Cell 7::
-
-  task = 'text-generation'
-
-
-
-
-
-
-.. note::
-
-   Task 3.2: Copy the cell above and change the temperature to 10.0. Run the cell.
-
-

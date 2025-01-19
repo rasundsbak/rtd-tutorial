@@ -42,7 +42,7 @@ Run this Cell::
   Task 3.5: How do we change the content of a cell from markdown to code, and back again? What is the point with this?
 
 
-This works on "small" Nvidia machines, only they have GPU. UiO: MIG and RTX
+Use only the two largest A100 machines for this lesson. When you do RAG, you will have to use the largest GPU (1xNvidia A100 80 GB, 24 CPU cores, 250 GB RAM
 -------------------------
 
 We are going to download packages. We have to do this the first time we are going to use the models. The second and thirs time, you may neutralice the !pip install code with a # in front of the cell.

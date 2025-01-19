@@ -5,7 +5,7 @@ We are going to sum up the documents that we have in the folder "documents". The
 
 .. image:: fox_dokument.png
 
-The easiest way doing this, is to use the browser view for Fox. The idea is that you are a researcher, with a specific subject in mind. In this case, I had a search for "terrorism" and "western europe" in DOAJ.
+The easiest way doing this, is to use the browser view for Fox. The idea is that you are a researcher, with a specific subject in mind. In this case, there was a search for "terrorism" and "western europe" in DOAJ.
 
 
 

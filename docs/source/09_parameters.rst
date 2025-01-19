@@ -6,30 +6,20 @@
 
 We want the user to change the parameters in order to experiment with inputs and putputs. Different AI models may use slightly different parameters. The documentation for every AI model, is where you find how to use parameters. If you find definitions of parameters on this page, that is not set in the code of the lesson, it is because it is not relevant for the example.
 
-   ``Max_length`` the total number of tokens the AI is allowed to generate in that output.
+   ``max_length`` the total number of tokens the AI is allowed to generate in that output.
 
-   ``Num_beams`` Increasing num_beams lets the model explore multiple potential paths or 'beams' for the next word. Consequences: More beams mean the model can generate higher quality and varied text, but at the cost of computational resources and time. Think of a torch, and the higher the nomber of beams, the further the beam will reach out into the forest.
+   ``min_length`` the minimum length of the output
 
-``max_new_tokens`` number of tokens allowed in the output.
+   ``num_beams`` Increasing num_beams lets the model explore multiple potential paths or 'beams' for the next word. Consequences: More beams mean the model can generate higher quality and varied text, but at the cost of computational resources and time. Think of a torch, and the higher the nomber of beams, the further the beam will reach out into the forest.
 
-``do_sample`` may be set to true og false. Enables different strategies of sampling. See also the reference list.
+   ``max_new_tokens`` number of tokens allowed in the output.
+
+   ``do_sample`` may be set to true og false. Enables different strategies of sampling. See also the reference list.
        
+   ``temperature`` determines wether the output is more random or creative or on the other end of the scale, more predictable. Higher temperature gives higher creativity.
 
-#'temperature': 0.3,
-        #'num_beams': 4,
-**min_length** Without min_length you can get an output like: "The weather today is nice." and with min_length on 10 tokens, you can get "The weather today is expected to be sunny with a high of 75 degrees Fahrenheit and a light breeze in the afternoon."
+   ``no_repeat_ngram_size`` counts the number of repetitions the model is allowed to do in an output
 
-**no_repeat_ngram_size** Without it you can get: "The weather today is nice and sunny. The weather today is warm and pleasant. The weather today is perfect for a picnic." but with the size to 3 you can get: "The weather today is nice and sunny with a gentle breeze. It's a perfect day for a picnic or a walk in the park." 
+   ``top_k`` you limit what the model should consider as the next word, to the k most probable words for the next step.
 
-**top_k** means that you limit what the model should consider as the next word. top_k=3 would only consider the three most probable words for the next step. The result may be something like "The weather today is sunny and warm.", but with top_k=50, it will consider a higher number of probable words, like: "The weather today is pleasantly warm with a chance of mild breezes and partly cloudy skies, making it an ideal day for outdoor activities."
-
-**top_p** means top_p=0.9 can give: "The weather today is sunny and warm, perfect for a day at the beach." while top_p=0.5 can give "The weather today is sunny and warm." If top_p is set to 0.5, the model will be even more selective, considering only the few tokens with the highest probabilities that together cover 50% of the cumulative distribution.
-
-.. todo:: 
-   Todo 3.2: Definere early stopping.
-
-Further reading
---------------
-When it comes to creaticity, Where does the machine take its suggestions from? In order to understand, it can help studying at this three dimensional presentation of a model `Project Tensorflow <https://projector.tensorflow.org/>`_  
-
-Num_beams is related to `beam search <https://en.wikipedia.org/wiki/Beam_search>`_,
+   ``top_p`` top_p computes the cumulative probability distribution, and cut off as soon as that distribution exceeds the value of top_p. For example, a top_p of 0.3 means that only the tokens comprising the top 30% probability mass are considered.

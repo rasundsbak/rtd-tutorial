@@ -1,4 +1,4 @@
-.. _10 pegasus:
+.. _10 rag:
 
 10 Retrieval Augmented Generation (RAG)
 ========================================

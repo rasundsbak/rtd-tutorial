@@ -2,7 +2,7 @@
 
 29 References
 =======
-.. index:: 
+.. index:: pipeline initialization, kwargs, transformers, LLM, 
 
 
 .. todo:: ordne referansene
@@ -23,6 +23,10 @@ UiO ChatGPT (2024): Assistance in developing workshop documentation using OpenAI
 UiO (2024): UiO Data storage guide. Available at: <https://www.uio.no/english/services/it/security/lsis/storage-guide.html> Accessed Des 10th.
 
 https://projector.tensorflow.org
+
+kwargs: https://huggingface.co/transformers/v3.1.0/main_classes/pipelines.html?highlight=ner
+
+pipeline initialization: https://jenkinsci.github.io/templating-engine-plugin/2.5/concepts/advanced/pipeline-initialization/
 
 
 Recommended reading

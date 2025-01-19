@@ -32,6 +32,8 @@ TensorFlow: https://projector.tensorflow.org/
 
 Beam search: https://en.wikipedia.org/wiki/Beam_search
 
+More on beams: https://ai.stackexchange.com/questions/41668/what-is-a-beam
+
 
 Recommended reading
 ------------------

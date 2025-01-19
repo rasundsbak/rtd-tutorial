@@ -8,37 +8,15 @@ We want the user to change the parameters in order to experiment with inputs and
 
    ``Max_length`` the total number of tokens the AI is allowed to generate in that output.
 
-.. todo:: 
-   Todo 3.1: RS gjør i julen: Endre været til mørkere hav, i tråd med det kommende pirateksempelet.
+   ``Num_beams`` Increasing num_beams lets the model explore multiple potential paths or 'beams' for the next word. Consequences: More beams mean the model can generate higher quality and varied text, but at the cost of computational resources and time. Think of a torch, and the higher the nomber of beams, the further the beam will reach out into the forest.
 
-``Num_beams`` Increasing num_beams lets the model explore multiple potential paths or 'beams' for the next word. Consequences: More beams mean the model can generate higher quality and varied text, but at the cost of computational resources and time.
+``max_new_tokens`` number of tokens allowed in the output.
 
-Code view with parameters::
+``do_sample`` may be set to true og false. Enables different strategies of sampling. See also the reference list.
+       
 
-    # Funksjon for å generere sammendrag
-    def generate_summary(text, model, tokenizer, max_length=800, num_beams=15, length_penalty=0.3, min_length=250, no_repeat_ngram_size=2):
-        """Generer sammendrag ved bruk av Pegasus-modellen med justerbare parametere."""
-        
-        # max_length: Den maksimale lengden på det genererte sammendraget.
-        # num_beams: Antall "beams" for strålesøk, noe som kan øke kvaliteten på genererte tekstsekvenser.
-        # length_penalty: Straff for lange sekvenser, en lav verdi (<1) kan oppmuntre lengre utgang.
-        # min_length: Minimum lengde på utgangen.
-        # no_repeat_ngram_size: Forhindrer gjentakelse av n-grams i utgangen.
-        
-        tokens = tokenizer(text, truncation=True, padding="longest", return_tensors="pt")
-        summary_ids = model.generate(tokens.input_ids, 
-                                     max_length=max_length, 
-                                     num_beams=num_beams, 
-                                     length_penalty=length_penalty, 
-                                     min_length=min_length, 
-                                     no_repeat_ngram_size=no_repeat_ngram_size, 
-                                     early_stopping=True)
-        summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
-        return summary
-
-
-**length_penalty** With hight penalty you get "The weather today is sunny and warm." while with low penalty you can get something like: "The weather today is quite pleasant with clear skies and a gentle breeze."
-
+#'temperature': 0.3,
+        #'num_beams': 4,
 **min_length** Without min_length you can get an output like: "The weather today is nice." and with min_length on 10 tokens, you can get "The weather today is expected to be sunny with a high of 75 degrees Fahrenheit and a light breeze in the afternoon."
 
 **no_repeat_ngram_size** Without it you can get: "The weather today is nice and sunny. The weather today is warm and pleasant. The weather today is perfect for a picnic." but with the size to 3 you can get: "The weather today is nice and sunny with a gentle breeze. It's a perfect day for a picnic or a walk in the park." 

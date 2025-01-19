@@ -95,19 +95,6 @@ Cell 10::
           print(summaries[filename], file=outfile)
           print(file=outfile)
 
-Cell 11::
-
-  chain = create_stuff_documents_chain(llm, prompt)
-
-Cell 12::
-
-  chain = create_stuff_documents_chain(llm, prompt)
-
-
-Cell 13::
-
-  chain = create_stuff_documents_chain(llm, prompt)
-
 
 .. note::
 

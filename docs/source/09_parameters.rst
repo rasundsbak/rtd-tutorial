@@ -1,20 +1,17 @@
 .. _09_parameters:
-09 Parameters
+09 Parameters and pipeline keyword arguments (kwargs)
 ==========
 
 .. index:: parameters, num_beams, max_length, tokens, n_grams, early_stoppings, length_penalty
 
-``We will`` see how to control the creativity of the model. If it is creative to the extent that it shows a pattern nobody have thought of, the ``creativity`` may be beneficial for your project. However, too much creativity may lead to hallucinations.
+We want the user to change the parameters in order to experiment with inputs and putputs. Different AI models may use slightly different parameters. The documentation for every AI model, is where you find how to use parameters. If you find definitions of parameters on this page, that is not set in the code of the lesson, it is because it is not relevant for the example.
 
-In these lessons, the cell in Jupyter lab will be marked with comments. We want the user to change the parameters. Below, you may see an example of parameters set with Pegasus XSum. Instead of just explaining the parameters, we are also going to experiment with them. Different AI models may use slightly different parameters. The documentation for every AI model, is where you find how to use parameters. If you find definitions of parameters on this page, that is not set in the code below, it is because it is not relevant for the example, Pegasus XSum.
-
-**Max_length** the total number of tokens the AI is allowed to generate in that output. For example if it is set to 10 tokens, it can produce: "The weather today is nice and sunny." But with no constraints it might be long like this: "The weather today is quite pleasant with clear skies and warm temperatures. It is a perfect day for outdoor activities such as hiking, biking, or simply taking a walk in the park. The forecast predicts that the good weather will continue throughout the day, making it an excellent opportunity to enjoy the great outdoors with family and friends."
-
+   ``Max_length`` the total number of tokens the AI is allowed to generate in that output.
 
 .. todo:: 
    Todo 3.1: RS gjør i julen: Endre været til mørkere hav, i tråd med det kommende pirateksempelet.
 
-**Num_beams** Increasing num_beams lets the model explore multiple potential paths or 'beams' for the next word. Consequences: More beams mean the model can generate higher quality and varied text, but at the cost of computational resources and time. For example with low tokens you just get: "The weather today is sunny and warm." because that is the most probable "next" words. But with hight beam, it can result in: "The weather today is sunny and warm, making it a perfect day for a picnic. However, there is a slight chance of light rain in the evening."
+``Num_beams`` Increasing num_beams lets the model explore multiple potential paths or 'beams' for the next word. Consequences: More beams mean the model can generate higher quality and varied text, but at the cost of computational resources and time.
 
 Code view with parameters::
 

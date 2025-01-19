@@ -34,7 +34,7 @@ Learning objectives
    :titlesonly:
 
    002_timetable
-   00_motivation
+   00_motivatio
    01_preparations
    02_easy_login
    03_downloading_packages

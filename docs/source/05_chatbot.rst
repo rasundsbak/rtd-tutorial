@@ -44,12 +44,13 @@ Cell 8::
   )
 
 Cell 9::
+
   llm = HuggingFacePipeline.from_model_id(
-      model_id,
-      task,
-      device=0,
-      pipeline_kwargs={
-          'max_new_tokens': 100,
+    model_id,
+    task,
+    device=0,
+    pipeline_kwargs={
+      'max_new_tokens': 100,
       }
   )
 

@@ -2,7 +2,7 @@
 05 Chatbot
 ===========
 
-.. index:: chatbot, pipeline
+.. index:: chatbot, pipeline, pipeline initialization, kwargs
 
 Querying LLMs (Chatbots)
 ----------------------
@@ -36,7 +36,7 @@ Cell 7::
 
   task = 'text-generation'
 
-Now, we are going to build up a pipeline. You do not need to run this cell yet. We are going to add some arguments.
+This is the first step of building a working pipeline.
 Cell 8::
   
     llm = HuggingFacePipeline.from_model_id(
@@ -45,6 +45,7 @@ Cell 8::
       device=0
   )
 
+We can add keyword arguments to the pipeline. Kwargs is a short form for additional keyword arguments. They are  passed along to the specific pipeline init.
 Cell 9::
 
   llm = HuggingFacePipeline.from_model_id(

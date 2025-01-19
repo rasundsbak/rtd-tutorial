@@ -160,6 +160,7 @@ code view 18::
   
   print(result['answer'])
 
+
 .. image:: copy_cell.png
 
 .. note::

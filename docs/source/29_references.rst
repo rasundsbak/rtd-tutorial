@@ -28,7 +28,6 @@ kwargs: https://huggingface.co/transformers/v3.1.0/main_classes/pipelines.html?h
 
 pipeline initialization: https://jenkinsci.github.io/templating-engine-plugin/2.5/concepts/advanced/pipeline-initialization/
 
-
 TensorFlow: https://projector.tensorflow.org/
 
 Beam search: https://en.wikipedia.org/wiki/Beam_search

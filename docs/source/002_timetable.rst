@@ -18,6 +18,7 @@ Everybody must bring
 * A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_.
 * Bank id
 
+
 Day 1
 -----
 

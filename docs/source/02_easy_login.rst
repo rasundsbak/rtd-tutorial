@@ -13,16 +13,23 @@ When you are logged on to `the Fox <https://ood.educloud.no/>`_, move like this:
 
 .. warning:: 
 
-  Try to get used to experiencing small technical problems like the kernel stops. These are just annoying hickups and usually don't make to much problem.
+  Try to get used to experiencing small technical problems like warnings and kernel stops. These are just annoying hickups and usually not problematic.
 
 .. image:: fox_skjermbilde.png
 
 .. note::
 
-  Task 2.1: 2 mins. Explore the top menu and look into the folders. What does it look like? Familiarize yourself with the browser view of Fox. For a beginner, it is useful to learn how to copy paths and move or copy files and folders between the project area and the Home Directory.
+  Task 2.1: Explore the top menu and look into the folders. What does it look like? Familiarize yourself with the browser view of Fox. For a beginner, it is useful to learn how to copy paths and move or copy files and folders between the project area and the Home Directory.
 
 .. image:: fox_top_menu.png
 
 .. note::
 
-  Task 2.2: 2 mins. How do you copy or move files in the browser view? Hint, mark the file, and click on Move/Copy
+  Task 2.2: Look for the left menu in the browser view. Go to Home directory --> Nev directory (White button on second top menu) --> Directory name: documents. This is where you may store the documents for this workshop, and later your own material.
+
+.. note::
+
+  Task 2.3: Take some, og all of the content from this path: /fp/projects01/ec443/documents, and move it into your own documents folder that you made on your own home directory.
+
+
+

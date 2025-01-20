@@ -16,4 +16,8 @@ python:
   install:
     - requirements: docs/requirements.txt
 
-# Korrigert 7. nov 2024 RS
+# Add Sphinx configuration
+sphinx:
+  configuration: docs/conf.py
+
+# Korrigert 20. januar 2025 RS

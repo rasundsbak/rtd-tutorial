@@ -1,6 +1,6 @@
 .. _00 motivation:
 00 AIs and Scientific workflows
-==============
+=================================
 .. index:: chatbot, Chat GPT, workflow
 
 .. note:: Task 0.1.:  Visit UiO `Chat GPT <https://www.uio.no/tjenester/it/ki/gpt-uio/>`_ and enter the following: 

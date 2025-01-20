@@ -5,12 +5,12 @@
 .. todo:: make timetalbe for morning and afternoon
 
 Prerequisites
--------------
+-----_--------
 All participants should have taken the Carpentry lesson on `Plotting and Programming in Python <https://swcarpentry.github.io/python-novice-gapminder/>`_. The lesson can also be taken as a self study before you come.
 
 
 Everybody must bring
---------------
+------______--------
 
 * A laptop
 * A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_.
@@ -18,7 +18,7 @@ Everybody must bring
 
 
 Day 1
------
+-_----
 
 **09:15-10:00**
 Motivation and first task.

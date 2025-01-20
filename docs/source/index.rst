@@ -8,8 +8,6 @@ Run large language models (LLM) through Educloud UiO
 
 .. image:: fox.png
 
-.. todo:: 	Speech and Language Processing (3rd ed. draft), Dan Jurafsky and James H. Martin, https://web.stanford.edu/~jurafsky/slp3/
-
 Who are we inviting
 ----------
 This documentation is a part of the course held at The University og Oslo Library. The course is for employees at the University of Oslo who has some experience with Jupyter. We invite Researchers, PhDs and Postdocs. If you are in the interest group, you may `sign up here <https://nettskjema.no/a/465610>`_. 

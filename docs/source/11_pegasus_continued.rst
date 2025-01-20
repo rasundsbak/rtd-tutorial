@@ -2,31 +2,12 @@
 
 11 Pegasus continued
 =======================
-.. index::
+.. index:: pegasus
 
 We are going to connect the model to our documents. You had the overview over the paths in the previous chapter. You are prepared for connecting the model to your documents. This process is a continuation of the previous chapter. Use the same ipynb file. This chapter has some error search in it. This might be good to know for later.
 
 
 code view 1::
- 
-code view 1::
-
-code view 1::
-
-
-code view 2::
-
-
-code view 3::
-
-
-code view 4::
-
-
-code view 5::
-
-
-code view 6::
  
 
 .. note::
@@ -41,6 +22,6 @@ code view 1::
 
 code view 1::
 
-Congratulations. You have now finished the workshop
-on how to Run large language models (LLM) through Educloud UiO
-We hope to see you again!
+ Congratulations. You have now finished the workshop
+ on how to Run large language models (LLM) through Educloud UiO
+ We hope to see you again!

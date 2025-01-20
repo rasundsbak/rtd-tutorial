@@ -38,7 +38,7 @@ Parameters for text generation strategies: https://huggingface.co/docs/transform
 
 
 Recommended reading
-------------------
+----------------------
 
 GGUF and interaction with Transformers. (n.d.). Retrieved 22 November 2024, from https://huggingface.co/docs/transformers/en/gguf
 

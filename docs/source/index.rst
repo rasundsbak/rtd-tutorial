@@ -2,7 +2,6 @@ Are you a team member? `Edit this page  <https://github.com/rasundsbak/rtd-tutor
 
 This is a cooperative project. See also `LLM Course <https://uio-library.github.io/LLM-course/index.html>`_.
 
-
 Run large language models (LLM) through Educloud UiO
 ===========================================
 

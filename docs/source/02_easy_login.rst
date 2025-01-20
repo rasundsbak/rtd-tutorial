@@ -1,6 +1,7 @@
 .. _02_easy_login:
 02 Login to browser: Easy way
-=====================
+00 AIs and Scientific workflows
+=================================
 .. index:: Fox, server, A100, GPU, hardware, NVIDIA
 
 Fox has a GPU accelerated part of the system, with four NVIDIA A100 cards each, as well as three nodes with four NVIDIA RTX 3090 cards from IFI. These systems of hardware are fit for running AI on.

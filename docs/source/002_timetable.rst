@@ -1,10 +1,8 @@
 .. _002_timetable:
+002 Timetable AI workshop February 2025
+=========================================
 
 .. todo:: make timetalbe for morning and afternoon
-
-
-002 Timetable AI workshop February 2025
-======================================
 
 Prerequisites
 -------------

@@ -1,7 +1,5 @@
 # Configuration file for the Sphinx documentation builder.
 
-import os  # Importer os for å kunne bruke miljøvariabler (valgfritt)
-
 # -- Project information --
 
 project = 'AI on Cluster'
@@ -33,15 +31,17 @@ intersphinx_disabled_domains = ['std']
 templates_path = ['_templates']
 exclude_patterns = []
 
+# -- Master document --
+
+master_doc = 'index'
+
 # -- Options for HTML output --
 
 html_theme = 'sphinx_rtd_theme'
-#html_theme = "pyramid"
 
 # -- Options for TODO extension --
 
 todo_include_todos = True
-#todo_include_todos = False
 
 # -- Options for EPUB output --
 epub_show_urls = 'footnote'

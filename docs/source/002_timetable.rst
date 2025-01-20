@@ -1,4 +1,5 @@
 .. _002_timetable:
+
 002 Timetable AI workshop February 2025
 =========================================
 

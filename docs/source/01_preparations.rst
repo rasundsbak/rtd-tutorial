@@ -6,11 +6,11 @@
 You have done this already: `Sign up <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_ for the course.
 
 First time users of Educloud
-------------
+-----------------------------
 * `Log in <https://selfservice.educloud.no/membershipapplication>`_  with Your bank ID  and apply for group membership in **ec443**
 
 Set up Authentication with Microsoft authenticator
---------------------------------------------
+-----------------------------------------------------
 * If you do not have Microsoft Authenticator, you can download from App Store (iPhone) or Google Play (Android)
 *  Make your two factor work with the QR code. Follow `this recipe <https://www.uio.no/english/services/it/research/platforms/edu-research/help/two-factor-authentication.html>`_.
 * Setting the password: `Here is how <https://www.uio.no/english/services/it/research/platforms/edu-research/help/change-password.html>`_.
@@ -30,7 +30,7 @@ You will succed in your setup, if you read the whole `page down <https://www.uio
 .. image:: otp.png
 
 Already users on Educloud and for first time users that have created an user in Educloud:
---------------------------
+-----------------------------------------------------------------------------------------
 * Apply for project membership to ec443
 * send email to `Ragnhild <ragnhild.sundsbak@ub.uio.no>`_ with heading "I applied for membership in ec443"
 * When the project manager has approved of your application, log in to Educloud with your two factor authenticator.

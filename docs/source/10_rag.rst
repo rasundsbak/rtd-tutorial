@@ -1,7 +1,7 @@
 .. _10 rag:
 
 10 Retrieval Augmented Generation (RAG)
-=========================================
+========================================
 .. index:: summarization, open source
 
 Location of the document folder
@@ -159,7 +159,6 @@ code view 17::
 code view 18::
   
   print(result['answer'])
-
 
 .. image:: copy_cell.png
 

@@ -18,6 +18,6 @@ python:
 
 # Add Sphinx configuration
 sphinx:
-  configuration: docs/source/conf.py
+  configuration: docs/conf.py
 
 # Korrigert 20. januar 2025 RS

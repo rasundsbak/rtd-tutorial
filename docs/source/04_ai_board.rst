@@ -1,4 +1,5 @@
 .. _04_ai_board:
+
 04 Getting overview with AI on the blackboard
 ==============================================
 

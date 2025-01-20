@@ -37,6 +37,6 @@ Already users on Educloud and for first time users that have created an user in 
 * When the project manager has approved of your application, log in to Educloud with your two factor authenticator.
 
 Final step - Is it working?
----------------
+-------------------------------
 *  Try your setup on `Educloud on demand <https://ood.educloud.no>`_
 *  Try your setup on `Educloud on demand <https://ondemand.educloud.no/>`_

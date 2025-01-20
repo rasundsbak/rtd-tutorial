@@ -1,7 +1,7 @@
 .. _07 prompting:
 
 07 Prompting
-=======
+=============
 .. index:: prompting
 
 Turning roles around: Who is asking now?

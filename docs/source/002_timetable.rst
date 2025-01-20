@@ -48,7 +48,7 @@ Day 2
 
 
 - Short evaluation: Do I want to stay on 443? 
-- Write your name on a green sticly note, if you want to stay until december 2025
+- Write your name on a green sticky note, if you want to stay until december 2025
 - Write your name on a red sticky note if you want to leave the group.
 - Finish!
 

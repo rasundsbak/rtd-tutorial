@@ -1,6 +1,5 @@
 .. _02_easy_login:
 02 Login to browser: Easy way
-00 AIs and Scientific workflows
 =================================
 .. index:: Fox, server, A100, GPU, hardware, NVIDIA
 

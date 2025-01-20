@@ -1,7 +1,7 @@
 .. _29 references:
 
 29 References
-=======
+==============
 .. index:: pipeline initialization, kwargs, transformers, LLM, 
 
 
@@ -36,7 +36,6 @@ More on beams: https://ai.stackexchange.com/questions/41668/what-is-a-beam
 
 Parameters for text generation strategies: https://huggingface.co/docs/transformers/generation_strategies
 
-
 TensorFlow: https://projector.tensorflow.org/
 
 Beam search: https://en.wikipedia.org/wiki/Beam_search
@@ -45,12 +44,11 @@ More on beams: https://ai.stackexchange.com/questions/41668/what-is-a-beam
 
 Parameters for text generation strategies: https://huggingface.co/docs/transformers/generation_strategies
 
-
 Speech and Language Processing (3rd ed. draft), Dan Jurafsky and James H. Martin, https://web.stanford.edu/~jurafsky/slp3/
 
 
 Recommended reading
-------------------
+----------------------
 
 GGUF and interaction with Transformers. (n.d.). Retrieved 22 November 2024, from https://huggingface.co/docs/transformers/en/gguf
 

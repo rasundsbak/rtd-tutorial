@@ -1,7 +1,7 @@
 .. _12 problem solving:
 
 12 Problem solving
-==================
+=====================
 .. index::
 
 code view 1::

@@ -1,17 +1,18 @@
 .. _04_ai_board:
+
 04 Getting overview with AI on the blackboard
-=================
+==============================================
 
 .. index:: artificial, intelligence, cluster, HPC, transformers, CUDA, gguf, llama_cpp, neurons
 
 .. image:: AI_board.JPG
 
 The Hugging face platform and the AIs
-___________________________
+---------------------------------------
 "Hugging Face is a machine learning (ML) and data science platform and community that helps users build, deploy and train machine learning models." Ben Lutkevich on `Tech Target <https://www.techtarget.com/whatis/definition/Hugging-Face>`_. `Hugging face <https://huggingface.co/>`_ is a good place to start, when you want to familiarize yourself with the LLMs. However, in this course you do not need to download them, because we, the instructors have already done some of the work for you. If you want to learn, keep reading!
 
 Ny overskrift
--------------
+----------------
 **A large language model (LLM)** is a type of artificial intelligence (AI) program that can recognize and generate text, among other tasks. LLMs are trained on huge sets of data — hence the name "large." LLMs are built on machine learning: specifically, a type of neural network called a transformer model (Cloudflare 2024).
 
 

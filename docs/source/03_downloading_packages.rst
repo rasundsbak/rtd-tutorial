@@ -11,14 +11,14 @@ In this course, we have tried to make it easy for you, through making the code a
   Task 3.1: Look around in Jupyter lab. Open another tab in your browser, and google subjects like "jupyter lab cheat sheet" and "run cell jupyter lab".
 
 Jupyter lab keyboard shortcuts
----------------------
+-------------------------------
 
 It might be useful for you to look at some `Jupyter lab shortcuts <https://gist.github.com/discdiver/9e00618756d120a8c9fa344ac1c375ac>`_
 
 .. image:: jupyter_lab_menu.png
 
 Hello world
---------------
+-------------
 .. note::
 
   Task 3.2: Explore the top menu of jupyter lab, and see what is behind categories like File, Edit, View and Run. How do you add or remove cells in a .ipynb document?
@@ -43,8 +43,7 @@ Run this Cell::
 
 
 Use only the two largest A100 machines for this lesson. When you do RAG, you will have to use the largest GPU (1xNvidia A100 80 GB, 24 CPU cores, 250 GB RAM
--------------------------
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 We are going to download packages. We have to do this the first time we are going to use the models. The second and thirs time, you may neutralice the !pip install code with a # in front of the cell.
 
 Cell 1::

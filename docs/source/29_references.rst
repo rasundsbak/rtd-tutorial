@@ -46,6 +46,8 @@ Parameters for text generation strategies: https://huggingface.co/docs/transform
 
 Speech and Language Processing (3rd ed. draft), Dan Jurafsky and James H. Martin, https://web.stanford.edu/~jurafsky/slp3/
 
+Eriks Collaboration members documentation: https://uio-library.github.io/LLM-course/4_RAG.html
+
 
 Recommended reading
 ----------------------

@@ -5,7 +5,7 @@
 
 .. index:: chatbot, pipeline, pipeline initialization, kwargs
 
-Querying LLMs (Chatbots)
+The LangChain library
 -------------------------
 We will use `LangChain <https://python.langchain.com/docs/introduction/>`_, an open-source library for making applications with LLMs. Whenever you see the name of a package in an error message or in a tutorial, you may google the name of the package. Sometimes you will have to look around a bit, but it might help on the results if you add the word "documentation". 
 
@@ -31,7 +31,8 @@ Cell 5::
 
 Cell 6::
 
-  model_id = 'mistralai/Mistral-7B-Instruct-v0.3'
+  model_id = 'meta-llama/Llama-3.2-1B'
+  # model_id = 'mistralai/Mistral-7B-Instruct-v0.3'
 
 Cell 7::
 
@@ -76,6 +77,9 @@ Cell 10::
       }
   )
 
+Making a prompt
+---------------
+
 Cell 11::
 
   from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
@@ -110,3 +114,6 @@ Cell 16::
 .. note::
 
    Task 3.2: Copy the cell above and change the temperature to 10.0. Run the cell.
+
+
+

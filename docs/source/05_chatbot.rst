@@ -1,11 +1,11 @@
 .. _05_chatbot
 
 05 Querying LLMs (Chatbots)
-===========
+===========================
 
 .. index:: chatbot, pipeline, pipeline initialization, kwargs
 
-The LangChain library
+Querying LLMs (Chatbots)
 -------------------------
 We will use `LangChain <https://python.langchain.com/docs/introduction/>`_, an open-source library for making applications with LLMs. Whenever you see the name of a package in an error message or in a tutorial, you may google the name of the package. Sometimes you will have to look around a bit, but it might help on the results if you add the word "documentation". 
 

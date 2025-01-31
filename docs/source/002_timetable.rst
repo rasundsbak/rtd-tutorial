@@ -21,8 +21,8 @@ Day 1
 -------
 **09:15-10:00**
 Motivation and first task.
-Preparations.
-Easy login
+Preparations: :doc:`01_preparations`
+Easy login: `02_easy_login`
 
 **10:15-11:00**
 

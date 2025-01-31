@@ -1,7 +1,7 @@
 .. _05_chatbot
 
-05 Chatbot
-===========
+05 Querying LLMs (Chatbots)
+===========================
 
 .. index:: chatbot, pipeline, pipeline initialization, kwargs
 
@@ -31,7 +31,8 @@ Cell 5::
 
 Cell 6::
 
-  model_id = 'mistralai/Mistral-7B-Instruct-v0.3'
+  model_id = 'meta-llama/Llama-3.2-1B'
+  # model_id = 'mistralai/Mistral-7B-Instruct-v0.3'
 
 Cell 7::
 
@@ -76,6 +77,9 @@ Cell 10::
       }
   )
 
+Making a prompt
+---------------
+
 Cell 11::
 
   from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
@@ -110,3 +114,6 @@ Cell 16::
 .. note::
 
    Task 3.2: Copy the cell above and change the temperature to 10.0. Run the cell.
+
+
+

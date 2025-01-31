@@ -1,7 +1,7 @@
 .. _03_downloading_packages:
 
-03 Startup and downloading packages
-=====================================
+03 Installing software
+========================
 
 In this course, we have tried to make it easy for you, through making the code available. We still have to spend some time familiarizing outselves with copying, pasting and running the code in the cells of Jupyter lab.
 
@@ -48,15 +48,15 @@ We are going to download packages. We have to do this the first time we are goin
 
 Cell 1::
 
-   # Make installations
-   !pip install --upgrade pip huggingface-hub langchain langchain-community langchain-huggingface sentence-transformers    sentencepiece
+  # Make installations   
+  !pip install --upgrade pip huggingface-hub langchain langchain-community langchain-huggingface sentence-transformers sentencepiece
 
-Output:
+Output example:
 
 
 Cell 2::
 
-   # !pip install --upgrade unstructured[all-docs] langchain-unstructured
+  !pip install --upgrade unstructured[all-docs] langchain-unstructured
 
 Output example:
 
@@ -67,6 +67,10 @@ Cell 3::
 Output
 
 If you run on ec443, you do not need to log into Huggingface. This is why next cell is optional. If you run on your own, or want to download a model that is not previously used by the group, you will need to make an account at Huggingface, and store the token you get. In that case you will be able to find the token under your profile, in the right side of the top menu "access tokens". For the gated models, you need to apply, before you are allowed to download. We recommend that you store your token in a safe place, and do not share it with anyone.
+
+Cell 4::
+
+  %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
 
 Optional cell for entering your HF token::
 

@@ -1,19 +1,20 @@
 .. _05_chatbot
-05 Chatbot
-===========
+
+05 Querying LLMs (Chatbots)
+===========================
 
 .. index:: chatbot, pipeline, pipeline initialization, kwargs
 
 Querying LLMs (Chatbots)
-----------------------
+-------------------------
 We will use `LangChain <https://python.langchain.com/docs/introduction/>`_, an open-source library for making applications with LLMs. Whenever you see the name of a package in an error message or in a tutorial, you may google the name of the package. Sometimes you will have to look around a bit, but it might help on the results if you add the word "documentation". 
 
 Transformers and Huggingface
-----------------------------
+-----------------------------
 We are using models from `HuggingFace <https://huggingface.co/>`_ . Huggingface is an american company that develops tools for machine learning. They are the inventor of the Transformers library, that provides tools for downloading pretrained models. This documentation has a chapter on literature and references :doc:`29_references`, where you may find urls and information on these subjects.
 
 Model Location
--------------
+---------------
 We should tell the HuggingFace LLM where to store its data. If you’re running on Educloud/Fox project ec443 the model is stored on the path below. We enter the location of the model.
 
 Task 5.1: Navigate to the location mentioned in cell 4, and look at the models. Do you recognize any names? Are there any European AIs in the collection?
@@ -30,7 +31,8 @@ Cell 5::
 
 Cell 6::
 
-  model_id = 'mistralai/Mistral-7B-Instruct-v0.3'
+  model_id = 'meta-llama/Llama-3.2-1B'
+  # model_id = 'mistralai/Mistral-7B-Instruct-v0.3'
 
 Cell 7::
 
@@ -75,6 +77,9 @@ Cell 10::
       }
   )
 
+Making a prompt
+---------------
+
 Cell 11::
 
   from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
@@ -109,3 +114,6 @@ Cell 16::
 .. note::
 
    Task 3.2: Copy the cell above and change the temperature to 10.0. Run the cell.
+
+
+

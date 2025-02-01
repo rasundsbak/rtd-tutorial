@@ -38,7 +38,7 @@ code view 3::
       }
   )
 
-First, we are going to use the language model without connecting it to the documents. The output will be what the model knows from before, on the cubject we ask.
+First, we are going to use the language model without connecting it to the documents. The output will be what the model knows from before, on the subject we ask.
 
 code view 4::
 
@@ -55,6 +55,8 @@ code view 5::
   from IPython.display import Markdown
   display(Markdown(output))
 
+The Vectorizer
+---------------
 We need a vectorizer
 
 code view 6::
@@ -69,6 +71,7 @@ code view 6::
   )
 
 Loading the documents
+-----------------------
 
 code view 7::
   
@@ -84,11 +87,14 @@ code view 8::
   print(f'Number of documents:', len(documents))
   print('Maximum document length: ', max([len(doc.page_content) for doc in documents]))
 
+We can examine one of the documents
+
 code view 9::
   
   print(documents[0])
 
-Splitting the documents.
+Splitting the documents
+--------------------------
 
 code view 9::
   
@@ -101,10 +107,15 @@ code view 9::
   documents = text_splitter.split_documents(documents)
 
 
+We can check if the maximum document length has changed:
+
 code view 10::
 
   print(f'Number of documents:', len(documents))
   print('Maximum document length: ', max([len(doc.page_content) for doc in documents]))
+
+The Document Index
+--------------------
 
 code view 11::
   
@@ -120,11 +131,15 @@ code view 13::
   
   print(relevant_documents[0].page_content)
 
+
+For our RAG application we need to access the search engine through an interface called a retriever:
+
 code view 14::
   
   retriever = vectorstore.as_retriever(search_kwargs={'k': 3})
 
-Making a prompt.
+Making a prompt
+----------------
 
 code view 15::
   
@@ -144,6 +159,7 @@ code view 15::
 
 
 Making the "Chatbot"
+---------------------
 
 code view 16::
   
@@ -154,6 +170,7 @@ code view 16::
   rag_chain = create_retrieval_chain(retriever, combine_documents_chain)
 
 Asking the "Chatbot"
+----------------------
 
 code view 17::
   

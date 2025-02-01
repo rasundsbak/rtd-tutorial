@@ -4,6 +4,10 @@
 ========================================
 .. index:: summarization, open source
 
+.. image:: rag_2025.png
+
+Our project is the result of team work. We have two `documentation pages <https://uio-library.github.io/LLM-course/4_RAG.html>`_. Thanks to our team member for making the illustration.
+
 Location of the document folder
 
 Code view 1::

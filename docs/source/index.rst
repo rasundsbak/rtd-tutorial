@@ -42,7 +42,6 @@ Learning objectives
    08_summarization
    09_parameters
    10_rag
-   11_pegasus_continued
    12_problem_solving
    29_references
    30_todo

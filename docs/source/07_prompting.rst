@@ -6,7 +6,6 @@
 
 Turning roles around: Who is asking now?
 -------------------------------------------
-
 A good promting of the AI whould take into account that the AI might not know your context. For example: "I want to grow vegetables in my garden, but before you answer, make an interview with me so that you can give a best possible answer." The AI may ask how much sunlight there is in your garden, and what kind of soil you have. Background information may be essential for the response the AI gives. The AI and you may not have ended on the same conclusion, if you at first had not asked for the interview.
 
 Tips for future prompting

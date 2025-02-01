@@ -39,6 +39,9 @@ Cell 3::
         }
     )
 
+Making a prompt
+---------------
+
 Cell 4::
 
   from langchain.chains.combine_documents import create_stuff_documents_chain
@@ -55,6 +58,10 @@ Cell 5::
   prompt = PromptTemplate(template=prompt_template,
                           input_variables=['context'])
 
+Create chain
+-------------
+The document loader loads each PDF page as a separate ‘document’. This is partly for technical reasons because that is the way PDFs are structured. Therefore, we use the chain called create_stuff_documents_chain which joins multiple documents into a single large document.
+
 Cell 6::
 
   chain = create_stuff_documents_chain(llm, prompt)
@@ -70,6 +77,10 @@ Cell 7::
       summary = result[position + len(separator) :]
       return summary
 
+Loading the Documents
+----------------------
+We use LangChain’s DirectoryLoader to load all in files in document_folder. document_folder is defined at the start of this Notebook.
+
 Cell 8::
 
   from langchain_community.document_loaders import DirectoryLoader
@@ -78,6 +89,10 @@ Cell 8::
   documents = loader.load()
   print('number of documents:', len(documents))
 
+
+Creating the Summaries
+------------------------
+Now, we can iterate over these documents with a for-loop.
 
 Cell 9::
   
@@ -93,6 +108,10 @@ Cell 9::
       print(summary)
 
 
+Saving the Summaries to Text Files
+------------------------------------
+Finally, we save the summaries for later use. In the example below, we save all the summaries in the file summaries.txt.
+
 Cell 10::
   
   with open('summaries_2.txt', 'w') as outfile:
@@ -101,6 +120,10 @@ Cell 10::
           print(summaries[filename], file=outfile)
           print(file=outfile)
 
+
+Make an overall summary
+------------------------
+See here under `bonus material <https://uio-library.github.io/LLM-course/3_summarizing.html>`_
 
 .. note::
 

@@ -23,7 +23,7 @@ Cell 4::
 
   %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
 
-We are importing a module from the library. This allows us to set up a pipeline that can perform tasks such as text generation from the model.
+We are importing a module from the library. The pipeline allows us to feed the raw text into a model. The model will then be asked to perform a specifoc task such as text generation or summarization.
 
 Cell 5::
   
@@ -113,7 +113,11 @@ Cell 16::
 
 .. note::
 
-   Task 3.2: Copy the cell above and change the temperature to 10.0. Run the cell.
+   Task 3.1: The model meta-llama/Llama-3.2-1B is a small model and will yield low accuracy on many tasks. To get the benefit of the power of the GPU, we should use a larger model. Try to change the code in the pirate example to use the model mistralai/Mistral-7B-Instruct-v0.3 instead. How does this change the output?
+
+.. note::
+
+  Task 3.2: Continue using the model mistralai/Mistral-7B-Instruct-v0.3. Change the temperature parameter. The value needs a decimal in order to work, for example 0.9 or 10.0. For the temperature to have an effect, you must also set the parameter 'do_sample': True. How does this change the output?
 
 
 

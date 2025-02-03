@@ -120,14 +120,9 @@ Cell 16::
   Task 3.2: Continue using the model mistralai/Mistral-7B-Instruct-v0.3. Change the temperature parameter. The value needs a decimal in order to work, for example 0.9 or 10.0. For the temperature to have an effect, you must also set the parameter 'do_sample': True. How does this change the output?
 
 .. note::
-  
+
   Task 3.3: Find the relevant input cells in your notebook, and replace some of the code with this:
 
   1) SystemMessage("You are a world class economist chatbot who always responds in understandable speak in complete sentences!"),
 
   2) result = chatbot.invoke([HumanMessage("Tell me about income equality and colonial history?")]),
-
-
-
-
-

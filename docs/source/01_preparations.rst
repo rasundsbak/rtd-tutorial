@@ -32,11 +32,12 @@ You will succed in your setup, if you read the whole `page down <https://www.uio
 
 Already users on Educloud and for first time users that have created an user in Educloud:
 -----------------------------------------------------------------------------------------
-* Apply for project membership to ec443
+* apply for project membership to ec443
 * send email to `Ragnhild <ragnhild.sundsbak@ub.uio.no>`_ with heading "I applied for membership in ec443"
-* When the project manager has approved of your application, log in to Educloud with your two factor authenticator.
+* when the project manager has approved of your application, log in to Educloud with your two factor authenticator.
 
 Final step - Is it working?
 -------------------------------
-*  Try your setup on `Educloud on demand <https://ood.educloud.no>`_
-*  Try your setup on `Educloud on demand <https://ondemand.educloud.no/>`_
+* mark that your educloud username might be different from your other UiO password, and ask on the email above, if in doubt.
+* try your setup on `Educloud on demand <https://ood.educloud.no>`_
+* try your setup on `Educloud on demand <https://ondemand.educloud.no/>`_

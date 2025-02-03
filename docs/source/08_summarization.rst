@@ -2,7 +2,7 @@
 
 08 Summarization
 ==================
-We are going to sum up the documents that we have in the folder "documents". The pdfs from this lesson are located on the path "/fp/projects01/ec443/documents". In task number 2 in the chapter on "Easy login", you where asked to make your own documents folder in your home directiry. In case you did not do it, you will now get a second chance. Do the task below, if not done before:
+We are going to sum up the documents that we have in the folder "documents". The pdfs from this lesson are located on the path "/fp/projects01/ec443/documents". In task number 2 in the chapter on "Easy login", you were asked to make your own documents folder in your home directory. In case you did not get the time, you will now get a second chance. Do the task below, if not done before:
 
 .. image:: fox_dokument.png
 

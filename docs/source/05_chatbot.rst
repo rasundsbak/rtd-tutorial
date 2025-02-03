@@ -23,7 +23,7 @@ Cell 4::
 
   %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
 
-We are importing a module from the library. This allows us to set up a pipeline that can perform tasks such as text generation from the model.
+We are importing a module from the library. The pipeline allows us to feed the raw text into a model. The model will then be asked to perform a specifoc task such as text generation or summarization.
 
 Cell 5::
   

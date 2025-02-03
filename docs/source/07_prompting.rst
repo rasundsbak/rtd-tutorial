@@ -1,11 +1,9 @@
 .. _07 prompting:
 
-07 Prompting
-=============
+07 Prompt engineering
+=======================
 .. index:: prompting
 
-Prompt engineering
---------------------
 A good prompting of the AI should be as detailed as possible, and provide the necessary context. Many users at UiO have already had a year of experience with prompting the UiO Chat GPT. This is a more advanced AI that can remember the conversation. In this workshop, you have practiced deciding the role of the AI. An economist or a pirate. In your future interactions with various AIs, review outputs critically and refine your prompts iteratively. Use the model's strengths to handle complex tasks by breaking them down into simpler questions, like for instance "what is the best cure of Ibux and Paracetamol, if you have headache?". Use follow up questions. Ask the model to elaborate on something you want to know more about. Context and information is important in order to make use of the AI.
 
 Conversation and the Limits of Computational Architecture

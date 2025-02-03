@@ -22,7 +22,7 @@ Set up Authentication with Microsoft authenticator
 
 Read the whole page down
 -------------------------
-Note that you may have different sites on your phone, that generate separate codes. Below, you will see an example of how the phone of an advances user may look like. The Educloud assess is marked with yellow.
+Note that you may have different sites on your phone, that generate separate codes. Below, you can see an example of how the phone of an advances user may look like. The Educloud assess is marked with yellow.
 
 .. image:: advanced.png
 

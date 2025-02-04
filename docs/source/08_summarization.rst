@@ -129,7 +129,7 @@ See here under `bonus material <https://uio-library.github.io/LLM-course/3_summa
 
 .. note::
 
-  Task 8.1: Lorem ipsum
+  Task 8.1: The processes of the Chapters Chatbot and Summarization, may be done on the second largest GPU at Fox. As we advance to the next chapter with Rag, we depend on the largest GPU with its 80GB memory. Make sure you have your job running on the mentioned GPU resource. Also go to . 
 
 .. note::
 

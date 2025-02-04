@@ -125,24 +125,13 @@ Make an overall summary
 ------------------------
 See here under `bonus material <https://uio-library.github.io/LLM-course/3_summarizing.html>`_
 
-.. note::
-
-  Task 8.2: Copy one of the prompting cells in Jupyter lab, and make your own prompt where you make your own role for the AI and ask it Who are you, and a question that you would like it to answer.
-
-Cell inspiration for task 8.1::
-
-    # Lage en chat completion
-    response = lcpp_model.create_chat_completion(
-        messages=[
-            {"role": "system", "content": "You are a world class economist chatbot who always responds in understandable speak in whole sentences!"},
-            {"role": "user", "content": "Who are you?"},
-            {"role": "user", "content": "Tell me about income equality and colonial history?"},
-        ],
-        temperature=0.3,
-    )
 
 
 .. note::
 
-  Task 8.2: Save your jupyter notebook in your home directory in jupyter lab, and open a new one. Check that you have ordered enough time on the Fox for the next lesson.
+  Task 8.1: Lorem ipsum
+
+.. note::
+
+  Task 8.2: Lorem ipsum dolor sit
 

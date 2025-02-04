@@ -126,7 +126,6 @@ Make an overall summary
 See here under `bonus material <https://uio-library.github.io/LLM-course/3_summarizing.html>`_
 
 
-
 .. note::
 
   Task 8.1: The processes of the Chapters Chatbot and Summarization, may be done on the largest and the second largest GPU at Fox (40GB memory). As we advance to the next chapter with RAG, we depend on the largest GPU with its 80GB memory. Make sure you have your job running on the mentioned GPU resource. Also go to the menu in Jupyter lab, and choose as shown in the illustration below: Kernel --> Shut down all kernels. Now, you are going to open a new workbook, save it with a name you choose, and run the RAG process in that new document, without any other content in the cells.
@@ -136,4 +135,3 @@ See here under `bonus material <https://uio-library.github.io/LLM-course/3_summa
 .. note::
 
   Task 8.2: How can you see if a single kernel is running and how do you shut them down one by one?
-

@@ -57,7 +57,7 @@ code view 5::
 
 The Vectorizer
 ---------------
-Text must be vectorized before it can be processed. Our HuggingFace pipeline will do that automatically for the large language model. But we must make a vectorizer for the search index for our documents database. We use a vectorizer called a word embedding model from HuggingFace. Again, the HuggingFace library will automatically download the model.
+Text must be vectorized before it can be processed. Our HuggingFace pipeline will do that automatically for the large language model. But we must make a vectorizer for the search index for our documents database. We use a vectorizer called a word embedding model from HuggingFace. Again, the HuggingFace library will automatically download the model. You can read more on the `Embedding model here <https://huggingface.co/BAAI/bge-m3>`_ . The developer writes this: "BGE M3 is an embedding model supporting dense retrieval, lexical matching and multi-vector interaction".
 
 code view 6::
   

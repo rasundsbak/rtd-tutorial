@@ -6,7 +6,7 @@
 
 .. image:: rag_2025.png
 
-Our project is the result of team work. We have two sets of documentation pages. Thanks to our `team member for making the illustration <https://uio-library.github.io/LLM-course/4_RAG.html>`_ .
+Our project is the result of team work. We have two sets of documentation pages. Thanks to our `team member for illustrating the process <https://uio-library.github.io/LLM-course/4_RAG.html>`_ .
 
 Location of the document folder
 

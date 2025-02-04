@@ -8,14 +8,14 @@
 
 Our project is the result of team work. We have two sets of documentation pages. Thanks to our `team member for illustrating the process <https://uio-library.github.io/LLM-course/4_RAG.html>`_ .
 
-Location of the document folder
+Recommended location of the document folder: Replace the section for username with your own.
 
 Code view 1::
 
-  document_folder = '/fp/projects01/ec443/documents'
-  #document_folder = '/fp/homes01/u01/{ec-username}/documents'
+  #document_folder = '/fp/projects01/ec443/documents'
+  document_folder = '/fp/homes01/u01/{ec-username}/documents'
 
-The location of the models repeated
+The location of the models repeated.
 
 Code view 2::
 

@@ -57,7 +57,7 @@ code view 5::
 
 The Vectorizer
 ---------------
-We need a vectorizer
+Text must be vectorized before it can be processed. Our HuggingFace pipeline will do that automatically for the large language model. But we must make a vectorizer for the search index for our documents database. We use a vectorizer called a word embedding model from HuggingFace. Again, the HuggingFace library will automatically download the model.
 
 code view 6::
   

@@ -6,16 +6,16 @@
 
 .. image:: rag_2025.png
 
-Our project is the result of team work. We have two sets of documentation pages. Thanks to our `team member for making the illustration <https://uio-library.github.io/LLM-course/4_RAG.html>`_ .
+Our project is the result of team work. We have two sets of documentation pages. Thanks to our `team member for illustrating the process <https://uio-library.github.io/LLM-course/4_RAG.html>`_ .
 
-Location of the document folder
+Recommended location of the document folder: Replace the section for username with your own.
 
 Code view 1::
 
-  document_folder = '/fp/projects01/ec443/documents'
-  #document_folder = '/fp/homes01/u01/{ec-username}/documents'
+  #document_folder = '/fp/projects01/ec443/documents'
+  document_folder = '/fp/homes01/u01/{ec-username}/documents'
 
-The location of the models repeated
+The location of the models repeated.
 
 Code view 2::
 
@@ -57,7 +57,7 @@ code view 5::
 
 The Vectorizer
 ---------------
-We need a vectorizer
+Text must be vectorized before it can be processed. Our HuggingFace pipeline will do that automatically for the large language model. But we must make a vectorizer for the search index for our documents database. We use a vectorizer called a word embedding model from HuggingFace. Again, the HuggingFace library will automatically download the model. You can read more on the `Embedding model here <https://huggingface.co/BAAI/bge-m3>`_ . The developer writes this in the readme file: "BGE M3 is an embedding model supporting dense retrieval, lexical matching and multi-vector interaction".
 
 code view 6::
   

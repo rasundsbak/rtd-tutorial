@@ -1,61 +1,47 @@
 .. _29 references:
 
-29 References
+29 Literature
 ==============
-.. index:: pipeline initialization, kwargs, transformers, LLM, 
+.. index:: pipeline initialization, kwargs, transformers, LLM,
 
+Joun our `group library here <https://www.zotero.org/groups/5856400/llm-course/library>`_
 
-.. todo:: ordne referansene. dytt på flere emneord. Alt som omtales i referanser og litteraturforslag bør kanskje ha minst ett emneord hver. Vurdere dette!
+Cho, C., 2023. Answer to “What is a beam?” Artificial Intelligence Stack Exchange.
 
-Cloudflare (2024): `What is a large language model (LLM)? <https://www.cloudflare.com/learning/ai/what-is-large-language-model/>`_ Accessed Nov 22.
+Cloudflare, n.d. What is an LLM (large language model)? [WWW Document]. URL https://www.cloudflare.com/learning/ai/what-is-large-language-model/ (accessed 2.5.25).
 
-Heaven(2024), Will Douglas: `Artificial intelligence: What is AI? <https://www.technologyreview.com/2024/07/10/1094475/what-is-artificial-intelligence-ai-definitive-guide/>`_. July 10. MIT Technology Review
+Geremia, 2023. What is a beam? Artificial Intelligence Stack Exchange.
 
-Scott, Sir Walter (1822): The Pirate. Edinburgh, Hurst.
+Heaven, W.D., 2024. Why does AI hallucinate? MIT Technology Review 127, 20–21.
 
-`Transformers library <https://huggingface.co/docs/transformers/index>`_
+Huggingface, n.d. What 🤗 Transformers can do [WWW Document]. URL https://huggingface.co/docs/transformers/en/task_summary (accessed 2.5.25a).
 
-Vaswani, Ashish; Noam Shazeer; Niki Parmar; Jakob Uszkoreit; Llion Jones; Aidan N. Gomez; Lukasz Kaiser and Illia Polosukhin (2023): Attention Is All You Need.
-<https://arxiv.org/abs/1706.03762>`_  2. Aug 2023
+Huggingface, n.d. Text generation strategies [WWW Document]. URL https://huggingface.co/docs/transformers/generation_strategies (accessed 2.5.25b).
 
-UiO ChatGPT (2024): Assistance in developing workshop documentation using OpenAI's GPT models. University of Oslo. Available at: <https://www.uio.no/tjenester/it/ki/gpt-uio/> Accessed Nov. 24th.
+Huggingface, n.d. Pipelines — transformers 3.1.0 documentation [WWW Document]. URL https://huggingface.co/transformers/v3.1.0/main_classes/pipelines.html?highlight=ner (accessed 2.5.25c).
 
-UiO (2024): UiO Data storage guide. Available at: <https://www.uio.no/english/services/it/security/lsis/storage-guide.html> Accessed Des 10th.
+Huggingface, n.d. GGUF and interaction with Transformers [WWW Document]. URL https://huggingface.co/docs/transformers/en/gguf (accessed 2.5.25d).
 
-https://projector.tensorflow.org
+Huggingface, n.d. 🤗 Transformers [WWW Document]. URL https://huggingface.co/docs/transformers/index (accessed 2.5.25e).
 
-kwargs: https://huggingface.co/transformers/v3.1.0/main_classes/pipelines.html?highlight=ner
+Jenkins, T.E., n.d. Pipeline Initialization - Jenkins Templating Engine [WWW Document]. URL https://jenkinsci.github.io/templating-engine-plugin/2.5/concepts/advanced/pipeline-initialization/ (accessed 2.5.25).
 
-pipeline initialization: https://jenkinsci.github.io/templating-engine-plugin/2.5/concepts/advanced/pipeline-initialization/
+Jurafsky, D., Martin, J.H., n.d. Speech and Language Processing [WWW Document]. URL https://web.stanford.edu/~jurafsky/slp3/ (accessed 2.5.25).
 
-TensorFlow: https://projector.tensorflow.org/
+nbro, 2023. Answer to “What is a beam?” Artificial Intelligence Stack Exchange.
 
-Beam search: https://en.wikipedia.org/wiki/Beam_search
+Our World in Data, n.d. Parameters in notable artificial intelligence systems [WWW Document]. Our World in Data. URL https://ourworldindata.org/grapher/artificial-intelligence-parameter-count (accessed 2.5.25).
 
-More on beams: https://ai.stackexchange.com/questions/41668/what-is-a-beam
+Picture, D.S., Nikhil Thorat, Charles Nicholson, Big, n.d. Embedding projector - visualization of high-dimensional data [WWW Document]. URL http://projector.tensorflow.org (accessed 2.5.25).
 
-Parameters for text generation strategies: https://huggingface.co/docs/transformers/generation_strategies
+Snehal, 2024. Exploring Model Quantization for LLMs. Medium. URL https://medium.com/@isnehal.sp/exploring-model-quantization-for-llms-bc2c1f4c9382 (accessed 2.5.25).
 
-TensorFlow: https://projector.tensorflow.org/
+University of Oslo, n.d. GPT UiO – UiOs personverntrygge KI-chat - Universitetet i Oslo [WWW Document]. URL https://www.uio.no/tjenester/it/ki/gpt-uio/index.html (accessed 2.5.25a).
 
-Beam search: https://en.wikipedia.org/wiki/Beam_search
+University of Oslo, n.d. Data storage guide - University of Oslo [WWW Document]. URL https://www.uio.no/english/services/it/security/lsis/storage-guide.html (accessed 2.5.25b).
 
-More on beams: https://ai.stackexchange.com/questions/41668/what-is-a-beam
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.N., Kaiser, L., Polosukhin, I., 2023. Attention Is All You Need. https://doi.org/10.48550/arXiv.1706.03762
 
-Parameters for text generation strategies: https://huggingface.co/docs/transformers/generation_strategies
+Wikipedia, 2024. Beam search. Wikipedia.
 
-Speech and Language Processing (3rd ed. draft), Dan Jurafsky and James H. Martin, https://web.stanford.edu/~jurafsky/slp3/
-
-Eriks Collaboration members documentation: https://uio-library.github.io/LLM-course/4_RAG.html
-
-
-Recommended reading
-----------------------
-
-GGUF and interaction with Transformers. (n.d.). Retrieved 22 November 2024, from https://huggingface.co/docs/transformers/en/gguf
-
-Snehal. (2024, May 1). Exploring Model Quantization for LLMs. Medium. https://medium.com/@isnehal.sp/exploring-model-quantization-for-llms-bc2c1f4c9382
-
-What 🤗 Transformers can do. (n.d.). Retrieved 22 November 2024, from https://huggingface.co/docs/transformers/en/task_summary
-
-Epoch (2024) – with major processing by Our World in Data. “Parameters in notable artificial intelligence systems” [dataset]. Epoch, “Parameter, Compute and Data Trends in Machine Learning” [original data]. Retrieved November 24, 2024 from https://ourworldindata.org/grapher/artificial-intelligence-parameter-count
+Winge, E., n.d. Retrieval-Augmented Generation — Introduction to Large Language Models on Fox [WWW Document]. URL https://uio-library.github.io/LLM-course/4_RAG.html (accessed 2.5.25).

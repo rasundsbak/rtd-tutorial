@@ -17,18 +17,6 @@ Everybody must bring
 * A laptop
 * A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_. Tested and ready for use.
 
-
-Before lunch
--------------
-**10:00-10:45**
-Preparations: :doc:`03_downloading_packages`
-
-**11:00-11:45**
-Querying LLMs (Chatbots) :doc:`05_chatbot`
-
-**11:45-12:15** 
-Lunch
-
 Before lunch
 -------------
 **10:00-10:45**
@@ -55,4 +43,3 @@ From Pål, Erik and Ragnhild
 Evaluation form
 ----------------
 We are inviting you to continue using Educloud ec443 until Desember 2025. Kindly `log in to Nettskjema <https://nettskjema.no/a/llm-course>`_ in order to answer this and the evaluation questions.
-

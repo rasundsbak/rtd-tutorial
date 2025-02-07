@@ -29,7 +29,7 @@ Querying LLMs (Chatbots) :doc:`05_chatbot`
 Lunch
 
 After lunch
-
+-------------
 **12:15-13:00**
 Retrieval Augmented Generation (RAG)) :doc:`10_rag`
 

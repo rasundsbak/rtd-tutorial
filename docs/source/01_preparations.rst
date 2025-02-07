@@ -8,7 +8,6 @@ You have done this already: `Sign up <https://www.ub.uio.no/english/courses-even
 
 First time users of Educloud
 -----------------------------
-
 * `Log in <https://selfservice.educloud.no/membershipapplication>`_  with Your bank ID  and apply for membership in project code **ec443**
 
 

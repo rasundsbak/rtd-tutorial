@@ -1,49 +1,51 @@
 .. _002_timetable:
 
-002 Timetable AI workshop February 2025
-=========================================
+002 Timetable AI workshop February 19th 2025
+=============================================
 
-.. todo:: make timetalbe for morning and afternoon
 
 Prerequisites
 ---------------
-All participants should have taken the Carpentry lesson on `Plotting and Programming in Python <https://swcarpentry.github.io/python-novice-gapminder/>`_. The lesson can also be taken as a self study before you come.
+1) All participants should have a working and tested account at Educloud on Demand. The url is: https://ondemand.educloud.no/
+
+2) The Carpentry lesson on `Plotting and Programming in Python <https://swcarpentry.github.io/python-novice-gapminder/>`_. may be done as a self study. We recommend doing chapters one and six as a minimum.
+
+3) Find your screen keyboard on your computer, so that you have it ready. You are going to need it.
 
 Everybody must bring
 -----------------------
 * A laptop
 * A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_.
-* Bank id
 
-Day 1
--------
-**09:15-10:00**
+Before lunch
+-------------
+**10:00-10:45**
 Motivation and first task.
 Preparations: :doc:`01_preparations`
 Easy login: `02_easy_login`
 
-**10:15-11:00**
+**11:00-11:45**
 
 * We go strait to the cluster, and order a job :doc:`02_easy_login`.
 * Presentation working methods with the red and green sticky notes.
 * Startup and setup
 
-**11:15-12:00** 
+**11:45-12:15** 
 
-- Progression - Llama model and onwards - coding together in slow motion
-- Everybody follows in the same pace
-
-
-Day 2
------
-**09:15-10:00**
+Lunch
 
 
-**10:15-11:00**
+After lunch
+------------
+**12:15-13:00**
 
 
-**11:15-12:00** 
+**13:15-14:00**
 
+
+Evaluation form
+----------------
+We are inviting you to continue using Educloud ec443 until Desember 2025. Kindly `log in to Nettskjema <https://nettskjema.no/a/llm-course>`_ in order to answer this and the evaluation questions.
 
 - Short evaluation: Do I want to stay on 443? 
 - Write your name on a green sticky note, if you want to stay until december 2025

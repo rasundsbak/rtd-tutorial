@@ -29,22 +29,10 @@ Querying LLMs (Chatbots) :doc:`05_chatbot`
 **11:45-12:15** 
 Lunch
 
-Before lunch
--------------
-**10:00-10:45**
-Preparations: :doc:`03_downloading_packages`
-
-**11:00-11:45**
-Querying LLMs (Chatbots) :doc:`05_chatbot`
-
-**11:45-12:15** 
-Lunch
-
+After lunch
+------------
 **12:15-13:00**
 Retrieval Augmented Generation (RAG)) :doc:`10_rag`
-
-**13:15-14:00**
-Bonus hour: Run AI on your own material.
 
 **13:15-14:00**
 Bonus hour: Run AI on your own material.
@@ -55,4 +43,3 @@ From Pål, Erik and Ragnhild
 Evaluation form
 ----------------
 We are inviting you to continue using Educloud ec443 until Desember 2025. Kindly `log in to Nettskjema <https://nettskjema.no/a/llm-course>`_ in order to answer this and the evaluation questions.
-

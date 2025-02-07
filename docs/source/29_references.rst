@@ -4,7 +4,7 @@
 ==============
 .. index:: pipeline initialization, kwargs, transformers, LLM,
 
-Joun our `group library here <https://www.zotero.org/groups/5856400/llm-course/library>`_
+Joun our `Zotero group library here <https://www.zotero.org/groups/5856400/llm-course/library>`_
 
 Cho, C., 2023. Answer to “What is a beam?” Artificial Intelligence Stack Exchange.
 

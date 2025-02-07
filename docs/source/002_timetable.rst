@@ -17,7 +17,6 @@ Everybody must bring
 * A laptop
 * A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_. Tested and ready for use.
 
-
 Before lunch
 -------------
 **10:00-10:45**
@@ -30,7 +29,7 @@ Querying LLMs (Chatbots) :doc:`05_chatbot`
 Lunch
 
 After lunch
-------------
+
 **12:15-13:00**
 Retrieval Augmented Generation (RAG)) :doc:`10_rag`
 

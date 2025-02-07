@@ -28,11 +28,10 @@ Querying LLMs (Chatbots) :doc:`05_chatbot`
 **11:45-12:15** 
 Lunch
 
+After lunch
+-------------
 **12:15-13:00**
 Retrieval Augmented Generation (RAG)) :doc:`10_rag`
-
-**13:15-14:00**
-Bonus hour: Run AI on your own material.
 
 **13:15-14:00**
 Bonus hour: Run AI on your own material.

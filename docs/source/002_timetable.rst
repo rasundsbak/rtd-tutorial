@@ -37,18 +37,10 @@ Retrieval Augmented Generation (RAG)) :doc:`10_rag`
 **13:15-14:00**
 Bonus hour: Run AI on your own material.
 
+Welcome, this will be fun!
+From Pål, Erik and Ragnhild
+
 Evaluation form
 ----------------
 We are inviting you to continue using Educloud ec443 until Desember 2025. Kindly `log in to Nettskjema <https://nettskjema.no/a/llm-course>`_ in order to answer this and the evaluation questions.
-
-For those who prefers analogue evaluation
---------------------------------------------
-- Short evaluation: Do I want to stay on 443? 
-- Write your name on a green sticky note, if you want to stay until december 2025
-- Write your name on a red sticky note if you want to leave the group.
-- Finish!
-
-
-Welcome, this will be fun!
-From Pål, Erik and Ragnhild
 

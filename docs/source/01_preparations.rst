@@ -10,6 +10,7 @@ First time users of Educloud
 -----------------------------
 * `Log in <https://selfservice.educloud.no/membershipapplication>`_  with Your bank ID  and apply for membership in project code **ec443**
 
+
 Set up Authentication with Microsoft authenticator
 -----------------------------------------------------
 * If you do not have Microsoft Authenticator, you can download from App Store (iPhone) or Google Play (Android)

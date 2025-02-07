@@ -15,7 +15,8 @@ Prerequisites
 Everybody must bring
 -----------------------
 * A laptop
-* A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_.
+* A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_. Tested and ready for use.
+
 
 Before lunch
 -------------
@@ -28,11 +29,22 @@ Querying LLMs (Chatbots) :doc:`05_chatbot`
 **11:45-12:15** 
 Lunch
 
+Before lunch
+-------------
+**10:00-10:45**
+Preparations: :doc:`03_downloading_packages`
 
-After lunch
-------------
+**11:00-11:45**
+Querying LLMs (Chatbots) :doc:`05_chatbot`
+
+**11:45-12:15** 
+Lunch
+
 **12:15-13:00**
 Retrieval Augmented Generation (RAG)) :doc:`10_rag`
+
+**13:15-14:00**
+Bonus hour: Run AI on your own material.
 
 **13:15-14:00**
 Bonus hour: Run AI on your own material.

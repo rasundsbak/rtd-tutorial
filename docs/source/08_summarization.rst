@@ -133,4 +133,5 @@ See here under `bonus material <https://uio-library.github.io/LLM-course/3_summa
 .. image:: shut_kernel.png
 
 .. note::
+
   Task 8.2: How can you see if a single kernel is running and how do you shut them down one by one?

@@ -20,33 +20,29 @@ Everybody must bring
 Before lunch
 -------------
 **10:00-10:45**
-Motivation and first task.
-Preparations: :doc:`01_preparations`
-Easy login: `02_easy_login`
+Preparations: :doc:`03_downloading_packages`
 
 **11:00-11:45**
-
-* We go strait to the cluster, and order a job :doc:`02_easy_login`.
-* Presentation working methods with the red and green sticky notes.
-* Startup and setup
+Querying LLMs (Chatbots) :doc:`05_chatbot`
 
 **11:45-12:15** 
-
 Lunch
 
 
 After lunch
 ------------
 **12:15-13:00**
-
+Retrieval Augmented Generation (RAG)) :doc:`10_rag`
 
 **13:15-14:00**
-
+Bonus hour: Run AI on your own material.
 
 Evaluation form
 ----------------
 We are inviting you to continue using Educloud ec443 until Desember 2025. Kindly `log in to Nettskjema <https://nettskjema.no/a/llm-course>`_ in order to answer this and the evaluation questions.
 
+For those who prefers analogue evaluation
+--------------------------------------------
 - Short evaluation: Do I want to stay on 443? 
 - Write your name on a green sticky note, if you want to stay until december 2025
 - Write your name on a red sticky note if you want to leave the group.

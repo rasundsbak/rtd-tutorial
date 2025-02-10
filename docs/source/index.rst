@@ -30,7 +30,7 @@ Learning objectives
    :caption: Table of Contents
    :titlesonly:
 
-   002_timetable
+   003_timetable
    00_motivatio
    01_preparations
    02_easy_login

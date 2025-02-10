@@ -15,7 +15,7 @@ Prerequisites
 Everybody must bring
 -----------------------
 * A laptop
-* A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_. Tested and ready for use.
+* A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_. Tested and ready for use in Educloud on demand.
 
 Before lunch
 -------------

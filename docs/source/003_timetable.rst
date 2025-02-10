@@ -1,7 +1,7 @@
-.. _002_timetable:
+.. _003_timetable:
 
-002 Timetable AI workshop February 19th 2025
-=============================================
+Timetable AI workshop February 19th 2025
+==========================================
 
 
 Prerequisites

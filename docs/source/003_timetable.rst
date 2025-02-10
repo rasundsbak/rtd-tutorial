@@ -20,7 +20,7 @@ Everybody must bring
 Before lunch
 -------------
 **10:00-10:45**
-`Preparations <https://uio-library.github.io/LLM-course/1_installing.html`_
+`Preparations <https://uio-library.github.io/LLM-course/1_installing.html>`_
 
 **11:00-11:45**
 `Querying LLMs (Chatbots) <https://uio-library.github.io/LLM-course/2_chatbot.html>`_

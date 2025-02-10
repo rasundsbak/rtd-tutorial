@@ -31,7 +31,7 @@ Lunch
 After lunch
 -------------
 **12:15-13:00**
-`Summarization https://uio-library.github.io/LLM-course/3_summarizing.html <https://uio-library.github.io/LLM-course/3_summarizing.html>`_
+`Summarization <https://uio-library.github.io/LLM-course/3_summarizing.html>`_
 
 **13:15-14:00**
 `Retrieval Augmented Generation (RAG) <https://uio-library.github.io/LLM-course/4_RAG.html>`_

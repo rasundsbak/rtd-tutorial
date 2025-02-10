@@ -35,7 +35,8 @@ After lunch
 
 **13:15-14:00**
 `Retrieval Augmented Generation (RAG) <https://uio-library.github.io/LLM-course/4_RAG.html>`_
-If we get time, you might upload your own material, and we try to use the methods on what you have.
+
+If we get time, upload your own material, and we try to use the methods on what you have.
 
 Welcome, this will be fun!
 From Pål, Erik and Ragnhild

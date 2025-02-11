@@ -6,7 +6,7 @@ Timetable AI workshop February 19th 2025
 
 Prerequisites
 ---------------
-1) All participants should have a working and tested account at Educloud on Demand. The url is: https://ondemand.educloud.no/
+1) All participants should have a working and tested account at Educloud on Demand. Follow the instructions here :doc:`01_preparations`
 
 2) The Carpentry lesson on `Plotting and Programming in Python <https://swcarpentry.github.io/python-novice-gapminder/>`_. may be done as a self study. We recommend doing chapters one and six as a minimum.
 
@@ -36,7 +36,7 @@ After lunch
 **13:15-14:00**
 `Retrieval Augmented Generation (RAG) <https://uio-library.github.io/LLM-course/4_RAG.html>`_
 
-If we get time, upload your own material, and we try to use the methods on what you have.
+If we get time, upload your own material, and you may try to use the methods on what you have. The instructors will assist you.
 
 Welcome, this will be fun!
 From Pål, Erik and Ragnhild

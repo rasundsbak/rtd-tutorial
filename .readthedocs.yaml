@@ -1,6 +1,8 @@
 # .readthedocs.yaml
 # Read the Docs configuration file
 # See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+# Ambition to migrate to jypyter-book
+# https://jupyterbook.org/en/stable/start/your-first-book.html
 
 # Required
 version: 2

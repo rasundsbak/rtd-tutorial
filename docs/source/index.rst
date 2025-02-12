@@ -28,7 +28,6 @@ Learning objectives
 .. toctree::
    :maxdepth: 2
    :caption: Table of Contents
-   :titlesonly:
    :hidden:
 
    003_timetable

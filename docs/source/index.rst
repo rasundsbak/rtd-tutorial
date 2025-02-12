@@ -29,6 +29,7 @@ Learning objectives
    :maxdepth: 3
    :caption: Table of Contents
    :titlesonly:
+   :hidden:
 
    003_timetable
    00_motivatio

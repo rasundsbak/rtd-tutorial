@@ -26,9 +26,9 @@ Learning objectives
 - Be fluent in how to set up your own model in Jupyter Lab, so that you may use the process independently for interaction with other open LLMs
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Table of Contents
-   :titlesonly:
+   :hidden:
 
    003_timetable
    00_motivatio

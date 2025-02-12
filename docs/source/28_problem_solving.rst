@@ -1,4 +1,4 @@
-.. _12 problem solving:
+.. _28 problem solving:
 
 12 Problem solving
 =====================

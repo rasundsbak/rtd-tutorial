@@ -6,4 +6,8 @@
 
 Try this
 --------
-https://python.langchain.com/v0.1/docs/modules/memory/
+https://python.langchain.com/docs/how_to/chatbots_memory/
+
+Furthermore
+-------------
+https://python.langchain.com/docs/integrations/memory/redis_chat_message_history/

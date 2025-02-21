@@ -19,7 +19,7 @@ This is a tutorial for learning how to download Comtrade data and processing the
 ============================
 The tutorial will not bring you into rocket science. However, it may be used by people who need an example at how to download data. Problems of discussion will be kept simple. We will look at the OPEC countries and their oil export in crude oil. The time period we are going to analyze is 1995-2024. Data on Trade value in Crude oil will be collected from Comtrade legacy database [@muir2023]. "Trade value" was chosen because it is the variable in this category that includes the most data. If choosing another category, the number of missing values would have been larger. The development of the values of Trade value will be shown from the period 1995-2014. The steps from collecting to breaking down the data will be shown in a sequence that will be possible for a beginner to reconstruct.
 
-03 Hypotheses
+03 Quetions
 =============
 We are going to look at data from the Comtrade database published by the World bank.
 

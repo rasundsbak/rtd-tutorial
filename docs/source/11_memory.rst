@@ -141,9 +141,9 @@ code view 11::
   clear_memory_by_thread_id(thread_ids_to_clear)
 
 code view 12::
-
-# Print the memory for thread-2, excluding system messages
-print(f"Memory for {thread_id2}: {get_non_system_messages(thread_id2)}")
+ 
+ # Print the memory for thread-2, excluding system messages
+ print(f"Memory for {thread_id2}: {get_non_system_messages(thread_id2)}")
 
 code view 9::
 code view 9::

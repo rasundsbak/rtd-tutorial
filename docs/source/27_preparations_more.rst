@@ -1,4 +1,5 @@
-## Preparing for Slurm anv Batch
+Preparing for Slurm and Batch
+==============================
 
 If you have done all the steps until this chapter, you have gotten used to writing puthon code, and you are readu for the next step. Once we are finished developing the AI-process, we are going to convert our .ipynb files to .py files. A JupyterLab session reserves a GPU all the time, also when you’re not running computations. This is the reason why it is desirable that we save and export the notebook into an executable script. Sbatch submits a batch script to Slurm. This allows the job to wait in a queue until the resources become available. We can use a lot of the code that we already have. However, some preparations before we enter into the new working method is useful.
 

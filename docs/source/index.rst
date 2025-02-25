@@ -43,6 +43,7 @@ Learning objectives
    09_parameters
    10_rag
    11_memory
+   27_preparations
    28_problem_solving
    29_references
    30_todo

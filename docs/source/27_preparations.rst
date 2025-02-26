@@ -41,7 +41,7 @@ Terminal view 1::
 
 Terminal view 2::
 
-   pip install --upgrade pip huggingface-hub langchain langchain-community langchain-         huggingface sentence-transformers sentencepiece 
+   pip install --upgrade pip huggingface-hub langchain langchain-community langchain-huggingface sentence-transformers sentencepiece 
 
 Terminal view 3::
 

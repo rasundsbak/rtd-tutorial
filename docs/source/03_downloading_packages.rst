@@ -42,9 +42,9 @@ Run this Cell::
   Task 3.5: How do we change the content of a cell from markdown to code, and back again? What is the point with this?
 
 
-Use only the two largest A100 machines for this lesson. 
------------------------------------------------------------
-When you do RAG, you will have to use the largest GPU (1xNvidia A100 80 GB, 24 CPU cores, 250 GB RAM
+Use only the three largest machines on Fox for this lesson: A100 og RTX
+------------------------------------------------------------------------
+Some of these processes, like installing or simply punching code in Jupyter Lab, without executing it, can be done on any machine on Fox. When it comes to operations like Rag or Chatbot, it is better performed on a stronger machine with GPU.
 
 Downloading packages
 ---------------------
@@ -52,23 +52,26 @@ We are going to download packages. We have to do this the first time we are goin
 
 Cell 1::
 
-  # Make installations   
-  !pip install --upgrade pip huggingface-hub langchain langchain-community langchain-huggingface sentence-transformers sentencepiece
-
-Output example:
+  # General LLM Software  
+  !pip install --upgrade pip 
+  !pip install --upgrade huggingface-hub
+  !pip install --upgrade langchain
+  !pip install --upgrade langchain-community langchain-huggingface
+  !pip install --upgrade sentence-transformers
+  !pip install --upgrade sentencepiece
 
 
 Cell 2::
 
+  # Software for reading text documents
   !pip install --upgrade unstructured[all-docs] langchain-unstructured
 
-Output example:
 
 Cell 3::
-  
+
+  # Search index
   !pip install --upgrade faiss-cpu
 
-Output
 
 If you run on ec443, you do not need to log into Huggingface. This is why next cell is optional. If you run on your own, or want to download a model that is not previously used by the group, you will need to make an account at Huggingface, and store the token you get. In that case you will be able to find the token under your profile, in the right side of the top menu "access tokens". For the gated models, you need to apply, before you are allowed to download. We recommend that you store your token in a safe place, and do not share it with anyone.
 

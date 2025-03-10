@@ -1,7 +1,7 @@
 .. _003_timetable:
 
-Timetable AI workshop February 19th 2025
-==========================================
+Timetable AI workshop March 31st 2025
+========================================
 
 
 Prerequisites
@@ -19,11 +19,14 @@ Everybody must bring
 
 Before lunch
 -------------
-**10:00-10:45**
-`Preparations <https://uio-library.github.io/LLM-course/1_installing.html>`_
+**09:15-10:00**
+`Installing Software <https://uio-library.github.io/LLM-course/1_installing.html>`_
 
-**11:00-11:45**
+**10:15-11:00**
 `Querying LLMs (Chatbots) <https://uio-library.github.io/LLM-course/2_chatbot.html>`_
+
+**11:15-11:45**
+`Summarization <https://uio-library.github.io/LLM-course/3_summarizing.html#summarization>`_
 
 **11:45-12:15** 
 Lunch
@@ -33,8 +36,13 @@ After lunch
 **12:15-13:00**
 `Summarization <https://uio-library.github.io/LLM-course/3_summarizing.html>`_
 
-**13:15-14:00**
+**13:15-13:45**
 `Retrieval Augmented Generation (RAG) <https://uio-library.github.io/LLM-course/4_RAG.html>`_
+
+**13:45-14:00**
+`Evaluering <https://nettskjema.no/a/llm-course>`_
+
+.. todo:: 0.2 Evaluering
 
 If we get time, upload your own material, and you may try to use the methods on what you have. The instructors will assist you.
 

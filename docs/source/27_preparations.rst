@@ -1,6 +1,6 @@
 .. _27 preparations:
 
-Preparing for Slurm and Batch
+27 Preparing for Slurm and Batch
 ==============================
 .. index:: slurm batch virtual environment
 
@@ -41,7 +41,7 @@ Terminal view 1::
 
 Terminal view 2::
 
-   pip install --upgrade pip huggingface-hub langchain langchain-community langchain-         huggingface sentence-transformers sentencepiece 
+   pip install --upgrade pip huggingface-hub langchain langchain-community langchain-huggingface sentence-transformers sentencepiece 
 
 Terminal view 3::
 

@@ -1,9 +1,9 @@
-Are you a team member? `Edit this page  <https://github.com/rasundsbak/rtd-tutorial>`_.
+Er du gruppemedlem? `Redigere her  <https://github.com/rasundsbak/rtd-tutorial>`_.
 
-This is a cooperative project. See also `LLM Course <https://uio-library.github.io/LLM-course/index.html>`_.
+Dette er et samarbeidsprosjekt. Se også `LLM Course <https://uio-library.github.io/LLM-course/index.html>`_.
 
-Run large language models (LLM) through Educloud UiO
-======================================================
+Kjør store språkmodeller på UiO Educloud
+=========================================
 
 .. image:: hpc.png
 

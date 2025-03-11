@@ -2,9 +2,9 @@
 
 # -- Project information --
 
-project = 'AI on Cluster'
-copyright = '2025'
-author = 'Ragnhild Sundsbak'
+project = 'AI på Kluster'
+copyright = '2025, KI gruppen på UB'
+author = 'Pål Lykkja, Ragnhild Sundsbak, Erik Winge'
 
 release = '4.6'
 version = '4.6.no'

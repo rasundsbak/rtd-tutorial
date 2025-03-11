@@ -7,15 +7,13 @@ Kjør store språkmodeller på UiO Educloud
 
 .. image:: hpc.png
 
-Who are we inviting
-----------------------
-This documentation is a part of the course held at The University og Oslo Library. The course is for employees at the University of Oslo who has some experience with Jupyter. We invite Researchers, PhDs and Postdocs. If you are in the interest group, you may `sign up here <https://nettskjema.no/a/465610>`_. 
+Hvem passer kurset for?
+-------------------------
+Dette er dokumentasjonen for et kurs som avholdes ved Universitetsbiblioteket i Oslo. Kurset er for ansatte ved UiO, og egner seg for de som har noe erfaring med Jupyter. Vi ønsker å invitere forskere, PhD og postdoc. Vi har hatt uformelle nettverksmøter på UB, Humsam hver tordag. Vi takker nettverket for støtte og entusiasme.
 
-.. todo:: 0.1 Takke nettverket ett eller annet sted.
-
-Prior Knowledge
------------------
-You should have attended the course "Plotting and Programming in Python" held as a Carpentry program at the `Digital Scholarship Centre <https://www.ub.uio.no/english/libraries/dsc/>`_, or have a similar degree of knowledge to Python and JupyterLab. You may take `The lesson <https://swcarpentry.github.io/python-novice-gapminder/>`_, as a self study.
+Forkunnskaper
+--------------
+Du bør ha gjennomført kurset "Plotting and Programming in Python", som holdes ved  `Senter for digital forskerstøtte (DSC) <https://www.ub.uio.no/english/libraries/dsc/>`_, Kurset kan også tas som `selvstudium <https://swcarpentry.github.io/python-novice-gapminder/>`_, før du kommer.
 
 Learning objectives
 ----------------------

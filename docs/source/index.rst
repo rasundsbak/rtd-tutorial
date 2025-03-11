@@ -5,7 +5,7 @@ This is a cooperative project. See also `LLM Course <https://uio-library.github.
 Run large language models (LLM) through Educloud UiO
 ======================================================
 
-.. image:: fox.png
+.. image:: hpc.png
 
 Who are we inviting
 ----------------------

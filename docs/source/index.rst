@@ -15,13 +15,13 @@ Forkunnskaper
 --------------
 Du bør ha gjennomført kurset "Plotting and Programming in Python", som holdes ved  `Senter for digital forskerstøtte (DSC) <https://www.ub.uio.no/english/libraries/dsc/carpentry-uio/>`_, Kurset kan også tas som `selvstudium før du kommer <https://swcarpentry.github.io/python-novice-gapminder/>`_.
 
-Learning objectives
-----------------------
-- Learn how large language models (LLMs) are used
-- learn how to use UiOs infrastructure for computational power to use various open LLMs
-- Learn how to create effective prompts and adjust relevant parameters
-- Connect the model to your own data in the form of PDFs or text data.
-- Be fluent in how to set up your own model in Jupyter Lab, so that you may use the process independently for interaction with other open LLMs
+Læringsmål
+----------
+- lær deg hvordan store språkmodeller brukes
+- lær hvordan UiOs tungregningsklynge kan brukes på ulike språkmodeller
+- lær hvordan du kan lage effektive spørringer og tilpasse parameterne
+- koble modellen til egne data som eksempelvis Pdfer
+- bli flytende i hvordan du setter opp din egen modell i Jupyter Lab, og bruk prosessen selv til å videreutvikle forskningsprosesser eller oppdag andre KI-modeller
 
 .. toctree::
    :maxdepth: 2
@@ -46,8 +46,8 @@ Learning objectives
    29_references
    30_todo
 
-Indices and tables
-====================
+Søk og indekser
+=================
 
 * :ref:`genindex`
 * :ref:`search`

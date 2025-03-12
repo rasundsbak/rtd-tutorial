@@ -1,8 +1,7 @@
 .. _003_timetable:
 
-Timetable AI workshop March 31st 2025
-========================================
-
+002 Timeplan KI verksted 31. mars 2025
+=======================================
 
 Prerequisites
 ---------------

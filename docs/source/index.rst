@@ -1,29 +1,27 @@
-Are you a team member? `Edit this page  <https://github.com/rasundsbak/rtd-tutorial>`_.
+Er du gruppemedlem? `Redigere her  <https://github.com/rasundsbak/rtd-tutorial>`_.
 
-This is a cooperative project. See also `LLM Course <https://uio-library.github.io/LLM-course/index.html>`_.
+Dette er et samarbeidsprosjekt. Se også `LLM Course <https://uio-library.github.io/LLM-course/index.html>`_.
 
-Run large language models (LLM) through Educloud UiO
-======================================================
+Kjør store språkmodeller på UiO Educloud
+=========================================
 
-.. image:: fox.png
+.. image:: hpc.png
 
-Who are we inviting
-----------------------
-This documentation is a part of the course held at The University og Oslo Library. The course is for employees at the University of Oslo who has some experience with Jupyter. We invite Researchers, PhDs and Postdocs. If you are in the interest group, you may `sign up here <https://nettskjema.no/a/465610>`_. 
+Hvem passer kurset for?
+-------------------------
+Dette er dokumentasjonen for et kurs som avholdes ved Universitetsbiblioteket i Oslo. Kurset er for ansatte ved UiO, og egner seg for de som har noe erfaring med Jupyter. Vi ønsker å invitere forskere, PhD og postdoc. Vi har hatt uformelle nettverksmøter på UB, Humsam hver tordag. Vi takker nettverket for støtte og entusiasme.
 
-.. todo:: 0.1 Takke nettverket ett eller annet sted.
+Forkunnskaper
+--------------
+Du bør ha gjennomført kurset "Plotting and Programming in Python", som holdes ved  `Senter for digital forskerstøtte (DSC) <https://www.ub.uio.no/english/libraries/dsc/carpentry-uio/>`_, Kurset kan også tas som `selvstudium før du kommer <https://swcarpentry.github.io/python-novice-gapminder/>`_.
 
-Prior Knowledge
------------------
-You should have attended the course "Plotting and Programming in Python" held as a Carpentry program at the `Digital Scholarship Centre <https://www.ub.uio.no/english/libraries/dsc/>`_, or have a similar degree of knowledge to Python and JupyterLab. You may take `The lesson <https://swcarpentry.github.io/python-novice-gapminder/>`_, as a self study.
-
-Learning objectives
-----------------------
-- Learn how large language models (LLMs) are used
-- learn how to use UiOs infrastructure for computational power to use various open LLMs
-- Learn how to create effective prompts and adjust relevant parameters
-- Connect the model to your own data in the form of PDFs or text data.
-- Be fluent in how to set up your own model in Jupyter Lab, so that you may use the process independently for interaction with other open LLMs
+Læringsmål
+----------
+- lær deg hvordan store språkmodeller brukes
+- lær hvordan UiOs tungregningsklynge kan brukes på ulike språkmodeller
+- lær hvordan du kan lage effektive spørringer og tilpasse parameterne
+- koble modellen til egne data som eksempelvis Pdfer
+- bli flytende i hvordan du setter opp din egen modell i Jupyter Lab, og bruk prosessen selv til å videreutvikle forskningsprosesser eller oppdag andre KI-modeller
 
 .. toctree::
    :maxdepth: 2
@@ -48,8 +46,8 @@ Learning objectives
    29_references
    30_todo
 
-Indices and tables
-====================
+Søk og indekser
+=================
 
 * :ref:`genindex`
 * :ref:`search`

@@ -1,40 +1,26 @@
-AI from Huggingface, Cached at a cluster at UiO
+AI fra Huggingface, på organisasjonens kluster
 ================================================
 
-This GitHub template includes a work process from in Jupyter Lab
+Dette GitHub depotet handler om en prosess som kan kjøres i Jupyter Lab
 
-The AI from Huggingface is cached at UiOs Nvidia Cluster
+En KI froa Huggingface kjøres fra UiOs Nvidia Kluster.
 
-The course will be held on January 6th and 7th 2025
+Kurset avholdes første gang 31. mars 2025 kl 9 - 13. Vi håper det slår an!
 
-Here, you will be able to find the course preparations.
-
-We use Sphinx to formulate our ideas:
+Vi bruker Sphinx til å formulere ideene våre:
 https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 
-Etherpad for cooperation in class:
+Etherpad kan brukes for samarbeid i klasserommet:
 https://hackmd.okfn.de/
 
-Current collaboration here:
+Dagens notater:
 https://hackmd.okfn.de/g1yXOHdmRIuxnVydrq0vIA?both
 
-More on syntax:
-https://www.cometvisu.org/CometVisu/en/0.11/manual/colab/doc/rst.html
-
-Leapchat for Nov 26th
-https://www.leapchat.org/#UnflavoredAcousticsViolinKetchupRuptureVixenOlderKeroseneMosquitoAlarmclockIglooGuerrillaGnomishExamUnquenchedHushingJokinglyObjectJetskiTractorUnicycleRewriteLimousineAnxietyZirconium
-
-
-Format
-=======
-RST, Restructured Text, is a file format created by the Python community to write documentation. It is part of Docutils. RST is a markup language like HTML but is much more lightweight and easier to read.
-
-The Toctree
-===========
-Read more here: https://sphinx-doc-zh.readthedocs.io/en/latest/markup/toctree.html
-
 Recommended courses
-==================
+====================
+Plotting and Programming in Python
+https://swcarpentry.github.io/python-novice-gapminder/
+
 https://www.sigma2.no/training-and-events
 
 https://www.sigma2.no/nb/node/193

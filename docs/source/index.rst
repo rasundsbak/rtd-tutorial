@@ -1,4 +1,4 @@
-Er du gruppemedlem? `Redigere her  <https://github.com/rasundsbak/rtd-tutorial>`_.
+Er du gruppemedlem? `Redigering  <https://github.com/rasundsbak/rtd-tutorial>`_.
 
 Dette er et samarbeidsprosjekt. Se også `LLM Course <https://uio-library.github.io/LLM-course/index.html>`_.
 

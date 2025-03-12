@@ -36,8 +36,8 @@ Tidligere brukere av Educloud, eller brukere som har blitt ferdige med å lage e
 * send epost til `Ragnhild <ragnhild.sundsbak@ub.uio.no>`_ med emne "Søkte medlemskap i ec443"
 * når prosjektlederen har observert og godkjent din søknad, logg inn i Educloud med din 2FA.
 
-Final step - Is it working?
--------------------------------
-* mark that your educloud username might be different from your other UiO password, and ask on the email above, if in doubt.
-* try your setup on `Educloud on demand <https://ood.educloud.no>`_
-* try your setup on `Educloud on demand <https://ondemand.educloud.no/>`_
+Virker det?
+-----------
+* merk deg at ditt brukernavn kan være annerledes enn bare ec pluss ditt vanlige UiO passord. Kontakt prosjektleder dersom du trenger at vi ser etter ditt brukernavn.
+* prøv oppsettet ditt her `Educloud on demand <https://ood.educloud.no>`_
+* prøv oppsettet ditt her `Educloud on demand <https://ondemand.educloud.no/>`_

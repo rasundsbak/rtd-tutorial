@@ -1,26 +1,27 @@
 .. _002_timetable:
 
-002 Timetable AI workshop February 19th 2025
-=============================================
+002 Timeplan KI verksted 31. mars 2025
+=======================================
 
-
-Prerequisites
+Forkunnskaper
 ---------------
-1) All participants should have a working and tested account at Educloud on Demand. The url is: https://ondemand.educloud.no/
+1) Alle deltakere skal ha en ferdig testet konto på Educloud On Demand. Nettsted: https://ondemand.educloud.no/
 
-2) The Carpentry lesson on `Plotting and Programming in Python <https://swcarpentry.github.io/python-novice-gapminder/>`_. may be done as a self study. We recommend doing chapters one and six as a minimum.
+2) Carpentry leksjonen `Plotting and Programming in Python <https://swcarpentry.github.io/python-novice-gapminder/>`_. kan tas som selvstudiom, om du ikke har deltatt i egen person.
 
-3) Find your screen keyboard on your computer, so that you have it ready. You are going to need it.
+3) Finn fram skjermtasteturet på maskinen din, senest dagen før du kommer på kurs. Du vil trolig få bruk for det.
 
-Everybody must bring
------------------------
-* A laptop
-* A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_. Tested and ready for use.
+Alle må ha med
+----------------
+* Egen bærbar PC
+* En smarttelefon med `denne autentiserings appen <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_. Testet og klar til bruk, som betyr at du har vært inne i Educloud On Demand.
 
-Before lunch
--------------
-**10:00-10:45**
-Preparations: :doc:`03_downloading_packages`
+Tentativ timeplan: Vi tilpasser underveis.
+
+Før lunsj
+----------
+**09:00-09:45**
+Forberedelser: :doc:`03_downloading_packages`
 
 **11:00-11:45**
 Querying LLMs (Chatbots) :doc:`05_chatbot`

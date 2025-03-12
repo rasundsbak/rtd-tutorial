@@ -1,24 +1,26 @@
 .. _003_timetable:
 
-Timetable AI workshop March 31st 2025
-========================================
+003 Timeplan KI verksted 31. mars 2025
+=======================================
 
-
-Prerequisites
+Forkunnskaper
 ---------------
-1) All participants should have a working and tested account at Educloud on Demand. Follow the instructions here :doc:`01_preparations`
+1) Alle deltakere skal ha en ferdig testet konto på Educloud On Demand. Nettsted: https://ondemand.educloud.no/
 
-2) The Carpentry lesson on `Plotting and Programming in Python <https://swcarpentry.github.io/python-novice-gapminder/>`_. may be done as a self study. We recommend doing chapters one and six as a minimum.
+2) Carpentry leksjonen `Plotting and Programming in Python <https://swcarpentry.github.io/python-novice-gapminder/>`_. kan tas som selvstudiom, om du ikke har deltatt i egen person.
 
-3) Find your screen keyboard on your computer, so that you have it ready. You are going to need it.
+3) Finn fram skjermtasteturet på maskinen din, senest dagen før du kommer på kurs. Du vil trolig få bruk for det.
 
-Everybody must bring
------------------------
-* A laptop
-* A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_. Tested and ready for use in Educloud on demand.
 
-Before lunch
--------------
+Alle må ha med
+----------------
+* Egen bærbar PC
+* En smarttelefon med `denne autentiserings appen <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_. Testet og klar til bruk, som betyr at du har vært inne i Educloud On Demand.
+
+Timeplanen under er tentativ. Vi tilpasser underveis.
+
+Før lunsj
+-----------
 **09:15-10:00**
 `Installing Software <https://uio-library.github.io/LLM-course/1_installing.html>`_
 
@@ -31,7 +33,7 @@ Before lunch
 **11:45-12:15** 
 Lunch
 
-After lunch
+Etter lunsj
 -------------
 **12:15-13:00**
 `Summarization <https://uio-library.github.io/LLM-course/3_summarizing.html>`_
@@ -44,12 +46,12 @@ After lunch
 
 .. todo:: 0.2 Evaluering
 
-If we get time, upload your own material, and you may try to use the methods on what you have. The instructors will assist you.
 
-Welcome, this will be fun!
-From Pål, Erik and Ragnhild
+Hvis vi får tid, last opp eget materiale, og du kan prøve å bruke metodenedu har lært på eget materiale. Vi hjelper hverandre.
 
-Evaluation form
+Velkommen!
+Fra Pål, Erik and Ragnhild
+
+Evaluering
 ----------------
-We are inviting you to continue using Educloud ec443 until Desember 2025. Kindly `log in to Nettskjema <https://nettskjema.no/a/llm-course>`_ in order to answer this and the evaluation questions.
-
+Vi inviterer deg til å fortsette å bruke Educloud ec443 ut desember 2025. `Logg inn i Nettskjema <https://nettskjema.no/a/llm-course>`_ for å svare på dette, og øvrig evaluering.

@@ -5,9 +5,9 @@
 
 .. index:: preparations, two-factor, Microsoft Authenticator
 
-First time users of Educloud
------------------------------
-* `Log in <https://selfservice.educloud.no/membershipapplication>`_  with Your bank ID  and apply for membership in project code **ec443**
+Førstegangsbrukere Educloud On Demand
+--------------------------------------
+* `Logg inn <https://selfservice.educloud.no/membershipapplication>`_  with Your bank ID  and apply for membership in project code **ec443**
 
 
 Set up Authentication with Microsoft authenticator

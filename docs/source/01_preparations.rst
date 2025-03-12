@@ -15,13 +15,13 @@ Sett opp autentisering med Microsoft authenticator
 * Hvis du ikke har Microsoft Authenticator, kan du laste ned fra App Store (iPhone) eller Google Play (Android)
 *  Få to faktoren din til å virke med  QR code. Prøv `denne oppskriften <https://www.uio.no/english/services/it/research/platforms/edu-research/help/two-factor-authentication.html>`_.
 * Sette passord: `Her ser du hvordan <https://www.uio.no/english/services/it/research/platforms/edu-research/help/change-password.html>`_.
-* You should have your Microsoft Authenticator open, and at the same time have the screen open with login on "Change your OTP". You need to have your mobile camera enabled.
-* In the Authenticator --> Home --> Microsoft entra ID --> Konfigurer totrinnsbekreftelse
+* Du bør ha din Microsoft Authenticator oppe, og på samme tid en skjerm med innlogging på stedet der det står "Change your OTP". Mobilkamera aktivert.
+* I Authenticator --> Home --> Microsoft entra ID --> Konfigurer totrinnsbekreftelse
 
 .. image:: qr_sladdet.png
 
-Read the whole page down
--------------------------
+Les hele siden ned
+---------------------
 Note that you may have different sites on your phone, that generate separate codes. Below, you can see an example of how the phone of an advanced user may look like. The Educloud assess is marked with yellow.
 
 .. image:: advanced.png

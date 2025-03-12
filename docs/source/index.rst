@@ -9,11 +9,15 @@ Kjør store språkmodeller på UiO Educloud
 
 Hvem passer kurset for?
 -------------------------
-Dette er dokumentasjonen for et kurs som avholdes ved Universitetsbiblioteket i Oslo. Kurset er for ansatte ved UiO, og egner seg for de som har noe erfaring med Jupyter. Vi ønsker å invitere forskere, PhD og postdoc. Vi har hatt uformelle nettverksmøter på UB, Humsambiblioteket ni Georg Sverdrups hus hver tordag. Vi takker nettverket for støtte og entusiasme. Dere har vært sentrale for prosjektets suksess!
+Dette er dokumentasjonen for et kurs som avholdes ved Universitetsbiblioteket i Oslo. Kurset er for ansatte ved UiO, og egner seg for de som har noe erfaring med Jupyter. Vi ønsker å invitere forskere, PhD og postdoc. Vi har hatt uformelle nettverksmøter på UB, Humsambiblioteket ni Georg Sverdrups hus hver tordag. Vi takker nettverket for støtte og entusiasme!
 
 Forkunnskaper
 --------------
 Du bør ha gjennomført kurset "Plotting and Programming in Python", som holdes ved  `Senter for digital forskerstøtte (DSC) <https://www.ub.uio.no/english/libraries/dsc/carpentry-uio/>`_, Kurset kan også tas som `selvstudium før du kommer <https://swcarpentry.github.io/python-novice-gapminder/>`_.
+
+Påmelding
+----------
+Her legges lenke til påmelding når dette er aktuelt
 
 Læringsmål
 ----------

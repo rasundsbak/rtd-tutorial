@@ -15,9 +15,9 @@ Forkunnskaper
 --------------
 Du bør ha gjennomført kurset "Plotting and Programming in Python", som holdes ved  `Senter for digital forskerstøtte (DSC) <https://www.ub.uio.no/english/libraries/dsc/carpentry-uio/>`_, Kurset kan også tas som `selvstudium før du kommer <https://swcarpentry.github.io/python-novice-gapminder/>`_.
 
-# Påmelding
-# ----------
-# `Påmelding her <www.url.no>`_.
+Påmelding
+----------
+Her legges lenke til påmelding når dette er aktuelt
 
 Læringsmål
 ----------

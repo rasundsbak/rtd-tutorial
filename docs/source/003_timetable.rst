@@ -19,8 +19,8 @@ Alle må ha med
 
 Timeplanen under er tentativ. Vi tilpasser underveis.
 
-Before lunch
--------------
+Før lunsj
+-----------
 **09:15-10:00**
 `Installing Software <https://uio-library.github.io/LLM-course/1_installing.html>`_
 
@@ -33,7 +33,7 @@ Before lunch
 **11:45-12:15** 
 Lunch
 
-After lunch
+Etter lunsj
 -------------
 **12:15-13:00**
 `Summarization <https://uio-library.github.io/LLM-course/3_summarizing.html>`_
@@ -46,12 +46,12 @@ After lunch
 
 .. todo:: 0.2 Evaluering
 
-If we get time, upload your own material, and you may try to use the methods on what you have. The instructors will assist you.
 
-Welcome, this will be fun!
-From Pål, Erik and Ragnhild
+Hvis vi får tid, last opp eget materiale, og du kan prøve å bruke metodenedu har lært på eget materiale. Vi hjelper hverandre.
 
-Evaluation form
+Velkommen!
+Fra Pål, Erik and Ragnhild
+
+Evaluering
 ----------------
-We are inviting you to continue using Educloud ec443 until Desember 2025. Kindly `log in to Nettskjema <https://nettskjema.no/a/llm-course>`_ in order to answer this and the evaluation questions.
-
+Vi inviterer deg til å fortsette å bruke Educloud ec443 ut desember 2025. `Logg inn i Nettskjema <https://nettskjema.no/a/llm-course>`_ for å svare på dette, og øvrig evaluering.

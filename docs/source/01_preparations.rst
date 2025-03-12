@@ -1,12 +1,12 @@
 .. _01_preparations:
 
-01 Forberedelser: Inn på Klusteret
-====================================
+01 Forberedelser: Inn på Klusteret: Detaljert beskrivelse
+===========================================================
 
 .. index:: preparations, two-factor, Microsoft Authenticator
 
 Førstegangsbrukere Educloud On Demand
---------------------------------------
+---------------------------------------
 * `Logg inn <https://selfservice.educloud.no/membershipapplication>`_  med din Bank ID  og søk medlemskap i prosjekt **ec443**
 
 
@@ -22,19 +22,19 @@ Sett opp autentisering med Microsoft authenticator
 
 Les hele siden ned
 ---------------------
-Note that you may have different sites on your phone, that generate separate codes. Below, you can see an example of how the phone of an advanced user may look like. The Educloud assess is marked with yellow.
+Legg merke til at Autenticatoren kan ha flere innlogginger, fra ulike nettsteder, som genererer egne koder. Under, ser du et eksempel på hvordan telefonen til en avansert bruker kan se ut. Educloud tilgangen er her merket med gult.
 
 .. image:: advanced.png
 
-You will succed in your setup, if you read the whole `page down <https://www.uio.no/english/services/it/research/platforms/edu-research/help/two-factor-authentication.html>`_, because the most important step is explained at the bottom of the page:
+Det er viktig at du leser du leser `hele siden ned <https://www.uio.no/english/services/it/research/platforms/edu-research/help/two-factor-authentication.html>`_, fordi ett av de viktigste poengene illustreres helt nederst på siden.
 
 .. image:: otp.png
 
-Already users on Educloud and for first time users that have created an user in Educloud:
------------------------------------------------------------------------------------------
-* apply for project membership to ec443
-* send email to `Ragnhild <ragnhild.sundsbak@ub.uio.no>`_ with heading "I applied for membership in ec443"
-* when the project manager has approved of your application, log in to Educloud with your two factor authenticator.
+Tidligere brukere av Educloud, eller brukere som har blitt ferdige med å lage en bruker som vist over
+--------------------------------------------------------------------------------------------------------
+* søk medlemsskap i prosjekt ec443
+* send epost til `Ragnhild <ragnhild.sundsbak@ub.uio.no>`_ med emne "Søkte medlemskap i ec443"
+* når prosjektlederen har observert og godkjent din søknad, logg inn i Educloud med din 2FA.
 
 Final step - Is it working?
 -------------------------------

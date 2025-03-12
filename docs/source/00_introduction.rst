@@ -6,7 +6,7 @@
 
 Dette er et instoduksjonskurs hvor du lærer å kjøre store språkmodeller på on the UiO sin tungregningsklynge Fox. Store språkmodeller som ChatGPT, er trenet til å generere ordsekvenser basert på kontekst, som når de fullfører setningen. For eksempel, hvis bi begynner med "kyllingen krysset veien", kan en mulig fullføring være "for å finne mat" eller "komme over på den andre siden". For å lære mer om hvordan språkmodeller trenes, anbefaler vi å se youtube videoene `Intro to Large Language Models <https://www.youtube.com/watch?v=zjkBMFhNj_g>`_ og `Deep Dive into LLMs like ChatGPT <https://www.youtube.com/watch?v=7xTGNNLPyMI>`_ av Andrej Karpathy.
 
-In this course, we use Python programming to run LLMs. Therefore, the course requires basic programming skills. If you are unfamiliar with programming, we recommend doing a programming course before this course, for example the Software Carpentry course Plotting and Programming in Python.
+I dette kurset bruker vi Python programmering til å kjøre språkmodellene. Det er derfor nødvendig å ha grunnleggende programmeringskunnskaper. Hvis programmering er nytt for deg, anbefaler vi at du programmerer litt før du kommer på kurs. Eksempelvis kurset Plotting and Programming in Python.
 
 This course consists of five chapters. In Getting Started, we log on to Fox. You will need a user account at the University of Oslo and a smart phone or other means of using two factor authentication (2FA).
 

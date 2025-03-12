@@ -7,14 +7,14 @@
 
 Førstegangsbrukere Educloud On Demand
 --------------------------------------
-* `Logg inn <https://selfservice.educloud.no/membershipapplication>`_  with Your bank ID  and apply for membership in project code **ec443**
+* `Logg inn <https://selfservice.educloud.no/membershipapplication>`_  med din Bank ID  og søk medlemskap i prosjekt **ec443**
 
 
-Set up Authentication with Microsoft authenticator
+Sett opp autentisering med Microsoft authenticator
 -----------------------------------------------------
-* If you do not have Microsoft Authenticator, you can download from App Store (iPhone) or Google Play (Android)
-*  Make your two factor work with the QR code. Follow `this recipe <https://www.uio.no/english/services/it/research/platforms/edu-research/help/two-factor-authentication.html>`_.
-* Setting the password: `Here is how <https://www.uio.no/english/services/it/research/platforms/edu-research/help/change-password.html>`_.
+* Hvis du ikke har Microsoft Authenticator, kan du laste ned fra App Store (iPhone) eller Google Play (Android)
+*  Få to faktoren din til å virke med  QR code. Prøv `denne oppskriften <https://www.uio.no/english/services/it/research/platforms/edu-research/help/two-factor-authentication.html>`_.
+* Sette passord: `Her ser du hvordan <https://www.uio.no/english/services/it/research/platforms/edu-research/help/change-password.html>`_.
 * You should have your Microsoft Authenticator open, and at the same time have the screen open with login on "Change your OTP". You need to have your mobile camera enabled.
 * In the Authenticator --> Home --> Microsoft entra ID --> Konfigurer totrinnsbekreftelse
 

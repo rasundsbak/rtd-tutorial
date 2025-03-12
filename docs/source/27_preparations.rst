@@ -1,7 +1,8 @@
 .. _27 preparations:
 
 27 Preparing for Slurm and Batch
-==================================
+===================================
+
 .. index:: slurm batch virtual environment
 
 If you have done all the steps until this chapter, you have gotten used to writing python code, and you are ready for the next step. Once we are finished developing the AI-process, we are going to convert our .ipynb files to .py files. A JupyterLab session reserves a GPU all the time, also when you’re not running computations. There is a better way to use the shared computer resources. We will save and export the notebook into an executable script. Sbatch submits a batch script to Slurm. This allows the job to wait in a queue until the resources become available. We can use the code that we already have. However, some preparations before we enter into the new working method is useful.

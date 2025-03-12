@@ -1,10 +1,9 @@
 .. _01_preparations:
 
-01 Preparations: Getting into the Cluster
-===========================================
+01 Forberedelser: Inn på Klusteret
+====================================
 
 .. index:: preparations, two-factor, Microsoft Authenticator
-You have done this already: `Sign up <https://www.ub.uio.no/english/courses-events/events/dsc/2025/digital-scholarship-days/01-run%20large%20language%20models%20through%20Educloud%20UiO>`_ for the course.
 
 First time users of Educloud
 -----------------------------

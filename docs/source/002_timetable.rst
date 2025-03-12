@@ -13,13 +13,15 @@ Forkunnskaper
 
 Alle må ha med
 ----------------
-* A laptop
-* A smartphone with `this Authenticator <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_. Tested and ready for use.
+* Egen bærbar PC
+* En smarttelefon med `denne autentiserings appen <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_. Testet og klar til bruk, som betyr at du har vært inne i Educloud On Demand.
 
-Before lunch
--------------
-**10:00-10:45**
-Preparations: :doc:`03_downloading_packages`
+Tentativ timeplan: Vi tilpasser underveis.
+
+Før lunsj
+----------
+**09:00-09:45**
+Forberedelser: :doc:`03_downloading_packages`
 
 **11:00-11:45**
 Querying LLMs (Chatbots) :doc:`05_chatbot`

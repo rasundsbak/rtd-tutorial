@@ -13,6 +13,9 @@ Dette kuret består av fire kapitler.
 
 mer her, men oversett kapitlene først:
 
+
+
+
 In Installing Software, we install the software that we will need for this course.
 
 In Querying LLMs (Chatbots), we learn to load and query basic LLMs.

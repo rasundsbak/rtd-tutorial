@@ -44,13 +44,10 @@ Etter lunsj
 **13:45-14:00**
 `Evaluering <https://nettskjema.no/a/llm-course>`_
 
-.. todo:: 0.2 Evaluering
-
-
-Hvis vi får tid, last opp eget materiale, og du kan prøve å bruke metodenedu har lært på eget materiale. Vi hjelper hverandre.
+Hvis vi får tid, last opp eget materiale, og du kan prøve å bruke metodene som du har lært på eget materiale. Vi hjelper hverandre.
 
 Velkommen!
-Fra Pål, Erik and Ragnhild
+Hilsen Pål, Erik and Ragnhild
 
 Evaluering
 ----------------

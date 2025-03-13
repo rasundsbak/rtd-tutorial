@@ -2,23 +2,22 @@
 
 Oppstart
 =========
-
 Vi skal kjøre programmene via tjenesten Educloud On Demand. (Educloud On Demand er en del av Universitetet i Oslo sin databehandlingsplattform Educloud Research.) Educloud On Demand kjører i din nettleser, og du behøver ikke innstallere noen ekstra programmer på din maskin.
 
 Tilgang
 --------
 For å logge inn, må du søke medlemsskap i Educloud project ec443. Hvordan du gjør det, kommer an på om du allerede har en aktiv konto på Educloud.
 
-    Hvid su har en konto, kan du søke om medlemsskap i Educloud prosjektet ec443. Søk gjennom å følge denne veiledningen: Søk om tilgang til et eksisterende Educloud Research-prosjekt.
+    Hvid du har en konto, kan du søke om medlemsskap i Educloud prosjektet ec443. Søk gjennom å følge denne veiledningen: Søk om tilgang til et eksisterende Educloud Research-prosjekt.
 
     Hvis du ikke har en konto, må du lage en. Utfør punkt 1b, 2 and 3 i denne veiledningen: Førstegangsoppsett av Educloud Research. I punkt 1b fører du opp prosjekt ec443.
 
 Innlogging
 -----------
 
-Now, you can log in to Educloud On Demand with your Educloud username and password.
+Logg inn i Educloud On Demand med ditt Educloud brukernavn og passord.
 
-Note
+.. note::
 
 Your username on Educloud is different from your regular UiO username. Educloud usernames always start with the three characters “ec-“. Educloud also has its own, separate two-factor identification (2FA) codes.
 Starting JupyterLab

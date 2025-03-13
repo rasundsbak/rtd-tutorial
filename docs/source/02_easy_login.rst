@@ -1,20 +1,23 @@
 .. _02_easy_login:
 
-02 Login to browser: Easy way
-=================================
+02 Innlogging og oversikt
+===========================
 .. index:: Fox, server, A100, GPU, hardware, NVIDIA
 
-Fox has a GPU accelerated part of the system, with four NVIDIA A100 cards each, as well as three nodes with four NVIDIA RTX 3090 cards from IFI. These systems of hardware are fit for running AI on.
+Oppstart med JupyterLab
+-------------------------
 
+Etter du har logget in, kan du se Educlouds instrumentpanel. Klikk på JupyterLab, for å konfigurere sesjonen.
 
-How to order a job on the Fox
-------------------------------
+    I feltet “Choose the Educloud project to run under:”, you should select ec443.
 
-When you are logged on to `the Fox <https://ood.educloud.no/>`_, move like this: from the left menu, go to Jupyter lab --> ec443 Choose one of the Nvidia GPUs from the drop down menu --> Rumtime. 1h --> Jupyter variant, Jupyter lab --> (You need not choose jupyter module, as the last version is pre selected) -->  Launch. You are now in the line to get into the Jupyter lab on UiO Fox. You can get tea or coffee, and have a chat with your colleague, while you wait. The waiting time depends on how much machine power and time you are asking for.
+    In the field “Choose resources:”, skal du velge “GPU (1x Nvidia MIG 20G VRAM, 24 CPU cores, 100GB RAM)”.
 
-.. warning:: 
+    In the field “Runtime (in hours)” you should enter 3, for this course. In general, avoid reserving a GPU for longer than necessary, because GPUs are limited, shared resources.
 
-  Try to get used to experiencing small technical problems like warnings and kernel stops. These are just annoying hickups and usually not problematic.
+    In the field “Choose Jupyter module (required)” you should select “4.2.0-GCCcore-13.2.0”.
+
+The other fields should be blank. Now, your setup should look like the picture below.
 
 .. image:: fox_skjermbilde.png
 

@@ -48,7 +48,9 @@ Exercises
 ----------
 
 
-.. dropdown:: Dokumentmappe i Jupyter lab grensesnitt
+.. dropdown:: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id odio tempor, rhoncus ipsum quis, ullamcorper quam. Aliquam placerat hendrerit lectus et ultrices. Suspendisse hendrerit eget arcu quis consequat. Fusce quam risus, auctor vel tempor et, vulputate sit amet mauris. Curabitur sit amet tellus varius, maximus ex vitae, ullamcorper ipsum. Proin id dignissim erat, at dapibus felis. Duis non diam a ligula fermentum venenatis sed vel tellus. Etiam aliquet tincidunt mollis. Suspendisse sed ipsum orci. Cras eget lectus risus. 
 
 
 .. tip:: Dokumentmappe i Jupyter lab grensesnitt

@@ -1,85 +1,49 @@
 .. _03_downloading_packages:
 
-03 Installing software
-========================
+03 Installering
+=================
 
-In this course, we have tried to make it easy for you, through making the code available. We still have to spend some time familiarizing outselves with copying, pasting and running the code in the cells of Jupyter lab.
+We’ll use LangChain, an open-source library for making applications with LLMs. We’ll use models from HuggingFace, a website that has tools and models for machine learning.
 
+Exercise: Create new notebook
 
-.. note::
+Create a new Jupyter Notebook called installing by clicking the File-menu in JupyterLab, and then New and Notebook. If you are asked to select a kernel, choose “Python 3”. Give the new notebook a name by clicking the File-menu in JupyterLab and then clicking Rename Notebook. Use the name installing.
+General LLM Software
 
-  Task 3.1: Look around in Jupyter lab. Open another tab in your browser, and google subjects like "jupyter lab cheat sheet" and "run cell jupyter lab".
+We will install LangChain and HuggingFace software first. Transformers is the basic technology used in large language models, so we install the library sentence-transformers as well. Models use the sentencepiece library, so we’ll need that as well.
 
-Jupyter lab keyboard shortcuts
--------------------------------
+!pip install --upgrade pip 
+!pip install --upgrade huggingface-hub
+!pip install --upgrade langchain
+!pip install --upgrade langchain-community langchain-huggingface
+!pip install --upgrade sentence-transformers
+!pip install --upgrade sentencepiece
 
-It might be useful for you to look at some `Jupyter lab shortcuts <https://gist.github.com/discdiver/9e00618756d120a8c9fa344ac1c375ac>`_
+Software for Reading Text Documents
 
-.. image:: jupyter_lab_menu.png
+We will use unstructured for reading documents. Unstructured supports different document formats, like PDFs, Word files and plain text documents.
 
-Hello world
--------------
-.. note::
+!pip install --upgrade unstructured[all-docs] langchain-unstructured
 
-  Task 3.2: Explore the top menu of jupyter lab, and see what is behind categories like File, Edit, View and Run. How do you add or remove cells in a .ipynb document?
+Search Index
 
-.. note::
+For the RAG chapter we will use FAISS to search for documents.
 
-  Task 3.3: Copy the content of the cell below, and run it in Jupyter lab, in an .ipynb document.
+!pip install --upgrade faiss-cpu
 
+The Language Model
 
-Run this Cell::
+We’ll use models from HuggingFace, a website that has tools and models for machine learning. We’ll use the open-weights LLM mistralai/Ministral-8B-Instruct-2410 for most of our tasks. This model has 8 billion parameters. For comparison, one of the largest LLMs at the time of writing is Llama 3.1, with 405 billion parameters. Still, Ministral-8B-Instruct-2410 is around 16 GB, which makes it a quite large model. To run it, we must have a GPU with at least 20 GB memory. It can also be run without a GPU, but that will be much slower.
 
-  print('Hello, world.')
+%env HF_HOME=/fp/projects01/ec443/huggingface/cache/
 
+Optional
 
-.. note::
+If you’re running one of the models that is already downloaded Educloud/Fox project ec443 the model, you can skip this step. If you’re not running on Educloud/Fox project ec443 or want to use a model that isn’t already downloaded, you’ll need to download the model.
 
-  Task 3.3: How do we run a cell in Jupyter lab? Try to find shortcut and the menues.
+You will need a User Access Token from HuggingFace. If you don’t already have a user account on HuggingFace, you must first sign up for one. Click the button “Sign Up” in the upper right corner on HuggingFace.
 
-  Task 3.4: How do we stop a cell from running?
+When you have logged in to HuggingFace with your user account, you can create a User Access Token giving read access by following this guide.
 
-  Task 3.5: How do we change the content of a cell from markdown to code, and back again? What is the point with this?
-
-
-Use only the three largest machines on Fox for this lesson: A100 og RTX
-------------------------------------------------------------------------
-Some of these processes, like installing or simply punching code in Jupyter Lab, without executing it, can be done on any machine on Fox. When it comes to operations like Rag or Chatbot, it is better performed on a stronger machine with GPU.
-
-Downloading packages
----------------------
-We are going to download packages. We have to do this the first time we are going to use the models. The second and thirs time, you may neutralice the !pip install code with a # in front of the cell.
-
-Cell 1::
-
-  # General LLM Software  
-  !pip install --upgrade pip 
-  !pip install --upgrade huggingface-hub
-  !pip install --upgrade langchain
-  !pip install --upgrade langchain-community langchain-huggingface
-  !pip install --upgrade sentence-transformers
-  !pip install --upgrade sentencepiece
-
-
-Cell 2::
-
-  # Software for reading text documents
-  !pip install --upgrade unstructured[all-docs] langchain-unstructured
-
-
-Cell 3::
-
-  # Search index
-  !pip install --upgrade faiss-cpu
-
-
-If you run on ec443, you do not need to log into Huggingface. This is why next cell is optional. If you run on your own, or want to download a model that is not previously used by the group, you will need to make an account at Huggingface, and store the token you get. In that case you will be able to find the token under your profile, in the right side of the top menu "access tokens". For the gated models, you need to apply, before you are allowed to download. We recommend that you store your token in a safe place, and do not share it with anyone.
-
-Cell 4::
-
-  %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
-
-Optional cell for entering your HF token::
-
-  from huggingface_hub import login
-  login()
+from huggingface_hub import login
+login()

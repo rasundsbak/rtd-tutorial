@@ -1,32 +1,56 @@
 .. _02_easy_login:
 
-02 Login to browser: Easy way
-=================================
+Oppstart
+=========
 .. index:: Fox, server, A100, GPU, hardware, NVIDIA
 
-Fox has a GPU accelerated part of the system, with four NVIDIA A100 cards each, as well as three nodes with four NVIDIA RTX 3090 cards from IFI. These systems of hardware are fit for running AI on.
+Vi skal kjøre programmene via tjenesten Educloud On Demand. (Educloud On Demand er en del av Universitetet i Oslo sin databehandlingsplattform Educloud Research.) Educloud On Demand kjører i din nettleser, og du behøver ikke innstallere noen ekstra programmer på din maskin.
 
+Tilgang
+--------
+For å logge inn, må du søke medlemsskap i Educloud project ec443. Hvordan du gjør det, kommer an på om du allerede har en aktiv konto på Educloud.
 
-How to order a job on the Fox
-------------------------------
+Hvis du har en konto, kan du søke om medlemsskap i Educloud prosjektet ec443. Søk gjennom å følge denne veiledningen: Søk om tilgang til et eksisterende Educloud Research-prosjekt.
 
-When you are logged on to `the Fox <https://ood.educloud.no/>`_, move like this: from the left menu, go to Jupyter lab --> ec443 Choose one of the Nvidia GPUs from the drop down menu --> Rumtime. 1h --> Jupyter variant, Jupyter lab --> (You need not choose jupyter module, as the last version is pre selected) -->  Launch. You are now in the line to get into the Jupyter lab on UiO Fox. You can get tea or coffee, and have a chat with your colleague, while you wait. The waiting time depends on how much machine power and time you are asking for.
+Hvis du ikke har en konto, må du lage en. Utfør punkt 1b, 2 and 3 i denne veiledningen: Førstegangsoppsett av Educloud Research. I punkt 1b fører du opp prosjekt ec443.
 
-.. warning:: 
+Innlogging
+-----------
+Logg inn i Educloud On Demand med ditt Educloud brukernavn og passord.
 
-  Try to get used to experiencing small technical problems like warnings and kernel stops. These are just annoying hickups and usually not problematic.
+.. note:: Ditt brukernavn i Educloud er forskjellig fra ditt vanlige UiO brukernavn. Educloud brukernavn starter alltid med de tre bokstavene “ec-“. Educloud also has its own, separate two-factor identification (2FA) codes.
 
-.. image:: fox_skjermbilde.png
+Oppstart med JupyterLab
+-------------------------
+Etter du har logget in, kan du se Educlouds instrumentpanel. Klikk på JupyterLab, for å konfigurere sesjonen.
 
-.. note::
+I feltet “Choose the Educloud project to run under:”, you should select ec443.
 
-  Task 2.1: Explore the top menu and look into the folders. What does it look like? Familiarize yourself with the browser view of Fox. For a beginner, it is useful to learn how to copy paths and move or copy files and folders between the project area and the Home Directory.
+I feltet “Choose resources:”, bør du velge “GPU (1x Nvidia MIG 20G VRAM, 24 CPU cores, 100GB RAM)”.
 
-.. image:: fox_top_menu.png
+I feltet “Runtime (in hours)” velg gjerne 1 t av gangen. Prøv å unngå å reservere en GPU lenger enn nødvendig, fordi GPUer er begrensede, delte ressurser.
 
-.. note::
+I feltet “Choose Jupyter module (required)” bør du velge “4.2.0-GCCcore-13.2.0”.
 
-  Task 2.2: Look for the left menu in the browser view. Go to Home directory --> New directory (White button on second top menu) --> Directory name: documents. This is where you may store the documents for this workshop, and later your own material.
+De andre feltene skal ikke fylles ut. Oppsettet ditt skal se ut som bildet under.
 
+.. image:: bytt_bilde.png
 
-  Task 2.3: Take some, or all of the content from this path: /fp/projects01/ec443/documents, and move it into your own documents folder that you made on your own home directory.
+Start JupyterLab by clicking the blue “Launch” button at the bottom of the form. This creates a job that is sent to the job queue. When the necessary resources are available your job starts.
+
+When the job has started, click the blue button “Connect to Jupyter” to open JupyterLab.
+
+Valgfri OCR Støtte
+
+Optionally, you can enable support for Optical Character Recognition (OCR). OCR lets you convert images to text. Load the module tesseract/5.3.4-GCCcore-12.3.0 by adding it to the field “Additional modules”. You will also need to change the field “Choose Jupyter module (required)” to “4.0.5-GCCcore-12.3.0”, so that the versions match.
+
+Exercises
+----------
+
+.. note:: Nulla leo sem, suscipit et velit quis, dictum pellentesque neque. Duis laoreet turpis at posuere interdum. Nunc tempor, arcu sit amet auctor efficitur, sem nunc semper tellus, dignissim imperdiet felis erat et urna. Cras diam libero, commodo non tellus id, vulputate tincidunt massa. Quisque eros erat, pretium sed enim sit amet, molestie fermentum tellus. Aliquam sapien ipsum, suscipit vitae feugiat sit amet, maximus ut ipsum. Curabitur eget tempus lorem. 
+
+.. tip:: Curabitur consectetur turpis sit amet felis rhoncus, tincidunt condimentum nisi egestas. Vivamus facilisis arcu a massa euismod ornare. Phasellus eu tincidunt massa, sed facilisis mauris. Nunc a arcu ultricies dolor lobortis consectetur non et lectus. Nulla rutrum orci ac leo scelerisque aliquet. Maecenas et risus mattis, laoreet odio sed, imperdiet diam. Etiam eget vehicula sapien, quis sagittis nunc. Phasellus porta ut eros sed auctor. Morbi cursus accumsan tellus, nec porttitor diam scelerisque vel. Aenean felis enim, sollicitudin sed ullamcorper nec, aliquam ac turpis. Fusce rhoncus sem quis urna viverra tempus. 
+
+Dokumentmappe
+
+You will need a folder to store documents on Educloud. When you open JupyterLab, you get the File Browser in the left column. This is your home directory, where you can store your own files. If you don’t already have a folder called “documents”, create one. To create a new folder, click the gray “New Folder” button in the top menu. A new folder appears in the list, with a suggested name like “Untitled Folder”. Write “documents” instead of “Untitled Folder” and press the Enter key on your keyboard to save.

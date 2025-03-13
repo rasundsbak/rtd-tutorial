@@ -47,6 +47,10 @@ Optionally, you can enable support for Optical Character Recognition (OCR). OCR 
 Exercises
 ----------
 
+
+.. dropdown:: Dokumentmappe i Jupyter lab grensesnitt
+
+
 .. tip:: Dokumentmappe i Jupyter lab grensesnitt
 
 Du trenger en mappe til å lagre dokumentene dine på Educloud. Når du åpner JupyterLab, vil du få filmenyen til venstre. Den peker til ditt Home directory som du finner igjen på Educlou. Her kan du lagre filene dine. Hvis du ikke allerede har en mappe som kalles “documents”, lag en. For å lage en ny mappe, klikk den grå , click the gray “New Folder” knappen i toppmenyen. Nå dukker det en ny mappe opp på listen, med forslag til navn “Untitled Folder”. Skriv “documents” istedenfor “Untitled Folder” og trykk enter på ditt eget tastatur for å lagre.

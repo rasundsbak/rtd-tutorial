@@ -17,9 +17,7 @@ Innlogging
 
 Logg inn i Educloud On Demand med ditt Educloud brukernavn og passord.
 
-.. note::
-
-Your username on Educloud is different from your regular UiO username. Educloud usernames always start with the three characters “ec-“. Educloud also has its own, separate two-factor identification (2FA) codes.
+.. note:: Your username on Educloud is different from your regular UiO username. Educloud usernames always start with the three characters “ec-“. Educloud also has its own, separate two-factor identification (2FA) codes.
 Starting JupyterLab
 
 After logging in, you should see the Educloud Dashboard. Click on JupyterLab on the dashboard. Here, you can configure your JupyterLab session.

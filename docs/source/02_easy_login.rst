@@ -34,31 +34,23 @@ I feltet “Choose Jupyter module (required)” bør du velge “4.2.0-GCCcore-1
 
 De andre feltene skal ikke fylles ut. Oppsettet ditt skal se ut som bildet under.
 
-02 Innlogging og oversikt
-===========================
+.. image:: bytt_bilde.png
 
+Start JupyterLab by clicking the blue “Launch” button at the bottom of the form. This creates a job that is sent to the job queue. When the necessary resources are available your job starts.
 
+When the job has started, click the blue button “Connect to Jupyter” to open JupyterLab.
 
+Valgfri OCR Støtte
 
-    In the field “Choose resources:”, skal du velge “GPU (1x Nvidia MIG 20G VRAM, 24 CPU cores, 100GB RAM)”.
+Optionally, you can enable support for Optical Character Recognition (OCR). OCR lets you convert images to text. Load the module tesseract/5.3.4-GCCcore-12.3.0 by adding it to the field “Additional modules”. You will also need to change the field “Choose Jupyter module (required)” to “4.0.5-GCCcore-12.3.0”, so that the versions match.
 
-    In the field “Runtime (in hours)” you should enter 3, for this course. In general, avoid reserving a GPU for longer than necessary, because GPUs are limited, shared resources.
+Exercises
+----------
 
-    In the field “Choose Jupyter module (required)” you should select “4.2.0-GCCcore-13.2.0”.
+.. note:: Nulla leo sem, suscipit et velit quis, dictum pellentesque neque. Duis laoreet turpis at posuere interdum. Nunc tempor, arcu sit amet auctor efficitur, sem nunc semper tellus, dignissim imperdiet felis erat et urna. Cras diam libero, commodo non tellus id, vulputate tincidunt massa. Quisque eros erat, pretium sed enim sit amet, molestie fermentum tellus. Aliquam sapien ipsum, suscipit vitae feugiat sit amet, maximus ut ipsum. Curabitur eget tempus lorem. 
 
-The other fields should be blank. Now, your setup should look like the picture below.
+.. tip:: Curabitur consectetur turpis sit amet felis rhoncus, tincidunt condimentum nisi egestas. Vivamus facilisis arcu a massa euismod ornare. Phasellus eu tincidunt massa, sed facilisis mauris. Nunc a arcu ultricies dolor lobortis consectetur non et lectus. Nulla rutrum orci ac leo scelerisque aliquet. Maecenas et risus mattis, laoreet odio sed, imperdiet diam. Etiam eget vehicula sapien, quis sagittis nunc. Phasellus porta ut eros sed auctor. Morbi cursus accumsan tellus, nec porttitor diam scelerisque vel. Aenean felis enim, sollicitudin sed ullamcorper nec, aliquam ac turpis. Fusce rhoncus sem quis urna viverra tempus. 
 
-.. image:: fox_skjermbilde.png
+Dokumentmappe
 
-.. note::
-
-  Task 2.1: Explore the top menu and look into the folders. What does it look like? Familiarize yourself with the browser view of Fox. For a beginner, it is useful to learn how to copy paths and move or copy files and folders between the project area and the Home Directory.
-
-.. image:: fox_top_menu.png
-
-.. note::
-
-  Task 2.2: Look for the left menu in the browser view. Go to Home directory --> New directory (White button on second top menu) --> Directory name: documents. This is where you may store the documents for this workshop, and later your own material.
-
-
-  Task 2.3: Take some, or all of the content from this path: /fp/projects01/ec443/documents, and move it into your own documents folder that you made on your own home directory.
+You will need a folder to store documents on Educloud. When you open JupyterLab, you get the File Browser in the left column. This is your home directory, where you can store your own files. If you don’t already have a folder called “documents”, create one. To create a new folder, click the gray “New Folder” button in the top menu. A new folder appears in the list, with a suggested name like “Untitled Folder”. Write “documents” instead of “Untitled Folder” and press the Enter key on your keyboard to save.

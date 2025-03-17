@@ -34,17 +34,15 @@ I feltet “Choose Jupyter module (required)” bør du velge “4.2.0-GCCcore-1
 
 De andre feltene skal ikke fylles ut. Oppsettet ditt skal se ut som bildet under.
 
-.. image:: bytt_bilde.png
+.. image:: jupyter_lab_mig.png
 
 Start JupyterLab ved å klikke på den brå “Launch” knappen nederst i skjemaet. Dette lager en jobb som blir sendt til køen. Når de påkrevde ressursene er tilgjengelige, starter jobben din opp.
 
 Når jobben har startet, klikk på “Connect to Jupyter” for å åpne JupyterLab.
 
 .. dropdown:: Valgfri OCR Støtte
-
-    Dropdown text only
-
-    Dropdown text with an internal link :doc:`directory/file_name`
+    
+    Optionally, you can enable support for Optical Character Recognition (OCR). OCR lets you convert images to text. Load the module 'tesseract/5.3.4-GCCcore-12.3.0' by adding it to the field “Additional modules”. You will also need to change the field “Choose Jupyter module (required)” to “4.0.5-GCCcore-12.3.0”, so that the versions match.
 
 
 

@@ -40,6 +40,12 @@ Start JupyterLab by clicking the blue “Launch” button at the bottom of the f
 
 When the job has started, click the blue button “Connect to Jupyter” to open JupyterLab.
 
+.. dropdown:: Dropdown menu title
+
+    Dropdown text only
+
+    Dropdown text with an internal link :doc:`directory/file_name`
+
 Valgfri OCR Støtte
 
 Optionally, you can enable support for Optical Character Recognition (OCR). OCR lets you convert images to text. Load the module tesseract/5.3.4-GCCcore-12.3.0 by adding it to the field “Additional modules”. You will also need to change the field “Choose Jupyter module (required)” to “4.0.5-GCCcore-12.3.0”, so that the versions match.

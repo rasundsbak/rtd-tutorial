@@ -44,7 +44,6 @@ Når jobben har startet, klikk på “Connect to Jupyter” for å åpne Jupyter
     
     Du kan legge til støtte for `Optical Character Recognition (OCR) <https://en.wikipedia.org/wiki/Optical_character_recognition>`_. OCR lar deg konvertere bilder til tekst. Last inn modulen ``tesseract/5.3.4-GCCcore-12.3.0`` ved å legge den til i feltet “Additional modules”. Du må også endre  “Choose Jupyter module (required)” til “4.0.5-GCCcore-12.3.0”, slik at versjonene matcher. .. image:: jupyter_lab_tesseract.png
 
-
 Oppgaver
 ---------
 .. tip:: Dokumentmappe i Jupyter lab grensesnitt

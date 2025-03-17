@@ -44,13 +44,8 @@ Valgfri OCR Støtte
 
 Optionally, you can enable support for Optical Character Recognition (OCR). OCR lets you convert images to text. Load the module tesseract/5.3.4-GCCcore-12.3.0 by adding it to the field “Additional modules”. You will also need to change the field “Choose Jupyter module (required)” to “4.0.5-GCCcore-12.3.0”, so that the versions match.
 
-Exercises
+Oppgaver
 ----------
-
-.. dropdown:: 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id odio tempor, rhoncus ipsum quis, ullamcorper quam. Aliquam placerat hendrerit lectus et ultrices. Suspendisse hendrerit eget arcu quis consequat. Fusce quam risus, auctor vel tempor et, vulputate sit amet mauris. Curabitur sit amet tellus varius, maximus ex vitae, ullamcorper ipsum. Proin id dignissim erat, at dapibus felis. Duis non diam a ligula fermentum venenatis sed vel tellus. Etiam aliquet tincidunt mollis. Suspendisse sed ipsum orci. Cras eget lectus risus. 
-
 
 .. tip:: Dokumentmappe i Jupyter lab grensesnitt
 
@@ -59,11 +54,3 @@ Du trenger en mappe til å lagre dokumentene dine på Educloud. Når du åpner J
 .. tip:: Laste opp filer med Educloud grensesnitt
 
 Du kan laste opp dokumenter som du ønsker å jobbe med på Fox. Prøv å unngå dokumenter som inneholder sensitive data. Vi anbefaler å teste med offentlig tilgjengelige dokumenter som kun inneholder grønne data.
-
-.. note:: Nulla leo sem, suscipit et velit quis, dictum pellentesque neque. Duis laoreet turpis at posuere interdum. Nunc tempor, arcu sit amet auctor efficitur, sem nunc semper tellus, dignissim imperdiet felis erat et urna. Cras diam libero, commodo non tellus id, vulputate tincidunt massa. Quisque eros erat, pretium sed enim sit amet, molestie fermentum tellus. Aliquam sapien ipsum, suscipit vitae feugiat sit amet, maximus ut ipsum. Curabitur eget tempus lorem. 
-
-.. tip:: Curabitur consectetur turpis sit amet felis rhoncus, tincidunt condimentum nisi egestas. Vivamus facilisis arcu a massa euismod ornare. Phasellus eu tincidunt massa, sed facilisis mauris. Nunc a arcu ultricies dolor lobortis consectetur non et lectus. Nulla rutrum orci ac leo scelerisque aliquet. Maecenas et risus mattis, laoreet odio sed, imperdiet diam. Etiam eget vehicula sapien, quis sagittis nunc. Phasellus porta ut eros sed auctor. Morbi cursus accumsan tellus, nec porttitor diam scelerisque vel. Aenean felis enim, sollicitudin sed ullamcorper nec, aliquam ac turpis. Fusce rhoncus sem quis urna viverra tempus. 
-
-Dokumentmappe
-
-You will need a folder to store documents on Educloud. When you open JupyterLab, you get the File Browser in the left column. This is your home directory, where you can store your own files. If you don’t already have a folder called “documents”, create one. To create a new folder, click the gray “New Folder” button in the top menu. A new folder appears in the list, with a suggested name like “Untitled Folder”. Write “documents” instead of “Untitled Folder” and press the Enter key on your keyboard to save.

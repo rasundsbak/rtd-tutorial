@@ -3,35 +3,47 @@
 03 Installering
 =================
 
-We’ll use LangChain, an open-source library for making applications with LLMs. We’ll use models from HuggingFace, a website that has tools and models for machine learning.
+Vi kommer til å bruke LangChain, et bibliotek med åpen kildekode, som brukes til å lage 
+aplikasjoner med LLMer. Vi vil bruke modeller fra HuggingFace, en nettside som har verktøy og modeller som brukes til maskinlæring.
 
-Exercise: Create new notebook
+.. tip:: Lag en ny notebook
 
-Create a new Jupyter Notebook called installing by clicking the File-menu in JupyterLab, and then New and Notebook. If you are asked to select a kernel, choose “Python 3”. Give the new notebook a name by clicking the File-menu in JupyterLab and then clicking Rename Notebook. Use the name installing.
-General LLM Software
+Lag en ny Jupyter Notebook med navn "installing" by ved å klikke File-menyen i JupyterLab, og så New og Notebook. IHvis du blir spurt om å velge en kjerne (kernel), velg “Python 3”. Gi navn til notebooken ved å klikke Fil-meny i JupyterLab og deretter "Rename Notebook". Bruk navnet installing.
 
-We will install LangChain and HuggingFace software first. Transformers is the basic technology used in large language models, so we install the library sentence-transformers as well. Models use the sentencepiece library, so we’ll need that as well.
+Vanlig programvare for store språkmodeller
+--------------------------------------------
 
-!pip install --upgrade pip 
-!pip install --upgrade huggingface-hub
-!pip install --upgrade langchain
-!pip install --upgrade langchain-community langchain-huggingface
-!pip install --upgrade sentence-transformers
-!pip install --upgrade sentencepiece
+Vi installerer programvaren til LangChain og HuggingFace først. Transformers er den grunnleggende teknologien som brukes for store språkmideller, derfor installerer vi library sentence-transformers også. Modellene bruker sentencepiece biblioteket, derfor er dette også viktig.
 
-Software for Reading Text Documents
+Kopiere eller skriv inn::
 
-We will use unstructured for reading documents. Unstructured supports different document formats, like PDFs, Word files and plain text documents.
+  !pip install --upgrade pip 
+  !pip install --upgrade huggingface-hub
+  !pip install --upgrade langchain
+  !pip install --upgrade langchain-community langchain-huggingface
+  !pip install --upgrade sentence-transformers
+  !pip install --upgrade sentencepiece
 
-!pip install --upgrade unstructured[all-docs] langchain-unstructured
+Programvare til å lese tekstdokumenter
+-----------------------------------------
 
-Search Index
+Vi kommer til å bruke "unstructured" til å lese dokumenter. Biblioteket unstructured støtter ulike dokumentformater, som PDFer, Word filer og rene tekstdokumenter.
 
-For the RAG chapter we will use FAISS to search for documents.
+Kopiere eller skriv inn::
 
-!pip install --upgrade faiss-cpu
+  !pip install --upgrade unstructured[all-docs] langchain-unstructured
 
-The Language Model
+Søkeindeks
+----------
+
+Til RAG kapittelet vil vi bruke FAISS til å søke etter dokumenter lokalt på maskinen.
+
+Kopiere eller skriv inn::
+
+  !pip install --upgrade faiss-cpu
+
+Språkmodellen
+---------------
 
 We’ll use models from HuggingFace, a website that has tools and models for machine learning. We’ll use the open-weights LLM mistralai/Ministral-8B-Instruct-2410 for most of our tasks. This model has 8 billion parameters. For comparison, one of the largest LLMs at the time of writing is Llama 3.1, with 405 billion parameters. Still, Ministral-8B-Instruct-2410 is around 16 GB, which makes it a quite large model. To run it, we must have a GPU with at least 20 GB memory. It can also be run without a GPU, but that will be much slower.
 

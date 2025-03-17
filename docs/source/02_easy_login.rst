@@ -36,17 +36,17 @@ De andre feltene skal ikke fylles ut. Oppsettet ditt skal se ut som bildet under
 
 .. image:: bytt_bilde.png
 
-Start JupyterLab by clicking the blue “Launch” button at the bottom of the form. This creates a job that is sent to the job queue. When the necessary resources are available your job starts.
+Start JupyterLab ved å klikke på den brå “Launch” knappen nederst i skjemaet. Dette lager en jobb som blir sendt til køen. Når de påkrevde ressursene er tilgjengelige, starter jobben din opp.
 
-When the job has started, click the blue button “Connect to Jupyter” to open JupyterLab.
+Når jobben har startet, klikk på “Connect to Jupyter” for å åpne JupyterLab.
 
-.. dropdown:: Dropdown menu title
+.. dropdown:: Valgfri OCR Støtte
 
     Dropdown text only
 
     Dropdown text with an internal link :doc:`directory/file_name`
 
-Valgfri OCR Støtte
+
 
 Optionally, you can enable support for Optical Character Recognition (OCR). OCR lets you convert images to text. Load the module tesseract/5.3.4-GCCcore-12.3.0 by adding it to the field “Additional modules”. You will also need to change the field “Choose Jupyter module (required)” to “4.0.5-GCCcore-12.3.0”, so that the versions match.
 

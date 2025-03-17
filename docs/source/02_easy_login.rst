@@ -1,6 +1,6 @@
 .. _02_easy_login:
 
-Oppstart
+02 Oppstart
 =========
 .. index:: Fox, server, A100, GPU, hardware, NVIDIA
 

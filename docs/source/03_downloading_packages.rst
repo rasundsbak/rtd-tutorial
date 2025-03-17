@@ -4,14 +4,16 @@
 =================
 
 Vi kommer til å bruke LangChain, et bibliotek med åpen kildekode, som brukes til å lage 
-aplikasjoner med LLMer. Vi vil bruke modeller fra HuggingFace, en nettside som har verktøy og models til maskinlæring.
+aplikasjoner med LLMer. Vi vil bruke modeller fra HuggingFace, en nettside som har verktøy og modeller som brukes til maskinlæring.
 
-Exercise: Create new notebook
+Oppgave: Lag en ny notebook
 
-Create a new Jupyter Notebook called installing by clicking the File-menu in JupyterLab, and then New and Notebook. If you are asked to select a kernel, choose “Python 3”. Give the new notebook a name by clicking the File-menu in JupyterLab and then clicking Rename Notebook. Use the name installing.
-General LLM Software
+Lag en ny Jupyter Notebook med navn "installing" by ved å klikke File-menyen i JupyterLab, og så New og Notebook. IHvis du blir spurt om å velge en kjerne (kernel), velg “Python 3”. Gi navn til notebooken ved å klikke Fil-meny i JupyterLab og deretter "Rename Notebook". Bruk navnet installing.
 
-We will install LangChain and HuggingFace software first. Transformers is the basic technology used in large language models, so we install the library sentence-transformers as well. Models use the sentencepiece library, so we’ll need that as well.
+Vanlig programvare for store språkmodeller
+
+Vi installerer LangChain og HuggingFace programvaren først. Transformers er den grunnleggende teknologien som brukes for store språkmideller, derfor installerer vi library sentence-transformers også. Modeller bruker sentencepiece biblioteket, derfor er dette også viktig.
+
 
 !pip install --upgrade pip 
 !pip install --upgrade huggingface-hub

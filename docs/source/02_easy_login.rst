@@ -1,7 +1,7 @@
 .. _02_easy_login:
 
-Oppstart
-=========
+02 Oppstart
+============
 .. index:: Fox, server, A100, GPU, hardware, NVIDIA
 
 Vi skal kjøre programmene via tjenesten Educloud On Demand. (Educloud On Demand er en del av Universitetet i Oslo sin databehandlingsplattform Educloud Research.) Educloud On Demand kjører i din nettleser, og du behøver ikke innstallere noen ekstra programmer på din maskin.
@@ -34,21 +34,19 @@ I feltet “Choose Jupyter module (required)” bør du velge “4.2.0-GCCcore-1
 
 De andre feltene skal ikke fylles ut. Oppsettet ditt skal se ut som bildet under.
 
-.. image:: bytt_bilde.png
+.. image:: jupyter_lab_mig.png
 
-Start JupyterLab by clicking the blue “Launch” button at the bottom of the form. This creates a job that is sent to the job queue. When the necessary resources are available your job starts.
+Start JupyterLab ved å klikke på den brå “Launch” knappen nederst i skjemaet. Dette lager en jobb som blir sendt til køen. Når de påkrevde ressursene er tilgjengelige, starter jobben din opp.
 
-When the job has started, click the blue button “Connect to Jupyter” to open JupyterLab.
+Når jobben har startet, klikk på “Connect to Jupyter” for å åpne JupyterLab.
 
-.. dropdown:: Dropdown menu title
+.. dropdown:: Valgfri OCR Støtte
+    
+    Optionally, you can enable support for `Optical Character Recognition (OCR) <https://en.wikipedia.org/wiki/Optical_character_recognition>`_. OCR llar deg konvertere bilder til tekst. Last inn modulen 'tesseract/5.3.4-GCCcore-12.3.0' by adding it to the field “Additional modules”. You will also need to change the field “Choose Jupyter module (required)” to “4.0.5-GCCcore-12.3.0”, so that the versions match.
 
-    Dropdown text only
 
-    Dropdown text with an internal link :doc:`directory/file_name`
 
-Valgfri OCR Støtte
-
-Optionally, you can enable support for Optical Character Recognition (OCR). OCR lets you convert images to text. Load the module tesseract/5.3.4-GCCcore-12.3.0 by adding it to the field “Additional modules”. You will also need to change the field “Choose Jupyter module (required)” to “4.0.5-GCCcore-12.3.0”, so that the versions match.
+'Optionally', you can ::enable:: support for :Optical: Character Recognition (OCR). OCR lets you convert images to text. Load the module tesseract/5.3.4-GCCcore-12.3.0 by adding it to the field “Additional modules”. You will also need to change the field “Choose Jupyter module (required)” to “4.0.5-GCCcore-12.3.0”, so that the versions match.
 
 Oppgaver
 ---------

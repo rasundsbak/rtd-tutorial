@@ -3,7 +3,8 @@
 03 Installering
 =================
 
-We’ll use LangChain, an open-source library for making applications with LLMs. We’ll use models from HuggingFace, a website that has tools and models for machine learning.
+Vi kommer til å bruke LangChain, et bibliotek med åpen kildekode, som brukes til å lage 
+aplikasjoner med LLMer. Vi vil bruke modeller fra HuggingFace, en nettside som har verktøy og models til maskinlæring.
 
 Exercise: Create new notebook
 

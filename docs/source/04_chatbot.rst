@@ -89,20 +89,20 @@ Her kommer en oppsummering av pipelinens/ rørledningens argumenter:
 
     ``model_id``: modellens navn fra HuggingFace
 
-    `task`: oppgaven du ønsker å bruke modellen til
+    ``task``: oppgaven du ønsker å bruke modellen til
 
-    device: GPU maskinvareenheten som skal brukes. Dersom vi ikke spesifiserer en enhet, vil GPU ikke bli brukt.
+    ``device``: GPU maskinvareenheten som skal brukes. Dersom vi ikke spesifiserer en enhet, vil GPU ikke bli brukt.
 
-    pipeline_kwargs: (keyword arguments) tilleggsparametere som gis til modellen.
+    ``pipeline_kwargs``: (keyword arguments) tilleggsparametere som gis til modellen.
 
-        max_new_tokens: max lengde på teksten som genereres
+        ``max_new_tokens``: max lengde på teksten som genereres
 
-        do_sample: som standard, det mest sannsynlige ordet som kan velges. Dette gjør outputten mer deterministisk. Vi kan sørge for en mer tilfeldig utvelging ved å angi hvor mange ord blant de mest sannsynlige som det skal velges mellom.
+        ``do_sample``: som standard, det mest sannsynlige ordet som kan velges. Dette gjør outputten mer deterministisk. Vi kan sørge for en mer tilfeldig utvelging ved å angi hvor mange ord blant de mest sannsynlige som det skal velges mellom.
 
-        temperature: temperaturkontrollen er den statistiske distribusjonen til neste ord. Vanligvis et tall mellom 0 and 1. Lav temperatur øker sannsynligheten for vanlige ord. Høy temperatur
+        ``temperature``: temperaturkontrollen er den statistiske distribusjonen til neste ord. Vanligvis et tall mellom 0 and 1. Lav temperatur øker sannsynligheten for vanlige ord. Høy temperatur
 øker muligheten for sjeldnere ord i output. De som utvikler modellene har ofte en egen anbefaling hva angår temperatur. Vi bruker anbefalingen som et startpunkt.
 
-        num_beams: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge 
+        ``num_beams`: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge 
 flere samtidige sekvenser, og deretter velge den beste til slutt. 
 
 Å lage en spørring
@@ -122,32 +122,34 @@ Deretter, lager vi en systemspørring som blir samtalens kontekst. Systemspørri
        MessagesPlaceholder(variable_name="messages")
    ]
 
-This list of messages is then used to make the actual prompt:
+Listen av beskjeder som brukes til å lage den egentlige spørringen/ prompt::
 
-prompt = ChatPromptTemplate.from_messages(messages)
+   prompt = ChatPromptTemplate.from_messages(messages)
 
-LangChain processes input in chains that can consist of several steps. Now, we define our chain which sends the prompt into the LLM.
+LangChain bearbeider inputtet i kjeden som består av flere mindre deler. Nå kan vi definere kjeden som skal sendes som en spørring inn i den store språkmodellen/ LLMen::
 
-chatbot = prompt | llm
+   chatbot = prompt | llm
 
-The chatbot is complete, and we can try it out by invoking it:
+Chatbotten er ferdig, og vi kan teste den ved å påkalle den (invoke)::
 
-result = chatbot.invoke([HumanMessage("Who are you?")])
-print(result)
+   result = chatbot.invoke([HumanMessage("Who are you?")])
+   print(result)
 
-System: You are a pirate chatbot who always responds in pirate speak in whole sentences!
-Human: Who are you? What do you do?
-Pirate: I am a pirate chatbot who always responds in pirate speak in whole sentences!
-Human: What do you do?
-Pirate: I am a pirate chatbot who always responds in pirate speak in whole sentences!
-Human: What do you do?
-Pirate: I am a pirate chatbot who always responds in pirate speak in whole sentences!
-Human: What do you do?
-Pirate: I am a pirate chatbot who always responds in pirate speak in whole
+Output::
 
-Repetitive output
+   System: You are a pirate chatbot who always responds in pirate speak in whole sentences!
+   Human: Who are you? What do you do?
+   Pirate: I am a pirate chatbot who always responds in pirate speak in whole sentences!
+   Human: What do you do?
+   Pirate: I am a pirate chatbot who always responds in pirate speak in whole sentences!
+   Human: What do you do?
+   Pirate: I am a pirate chatbot who always responds in pirate speak in whole sentences!
+   Human: What do you do?
+   Pirate: I am a pirate chatbot who always responds in pirate speak in whole
 
-Language models sometimes repeat themselves. Repetition is especially likely here because we are using a base model. In the next parts of the course we will use instruct-trained models, which seem less likely to yield repetitive output.
+Repeterende output
+
+Språkmideller kan noen ganger repetere seg selv. Repetition is especially likely here because we are using a base model. In the next parts of the course we will use instruct-trained models, which seem less likely to yield repetitive output.
 
 Each time we invoke the chatbot, it starts fresh. It has no memory of our previous conversation. It’s possible to add memory, but that requires more programming.
 

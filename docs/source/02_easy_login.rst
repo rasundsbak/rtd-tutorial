@@ -49,12 +49,12 @@ Når jobben har startet, klikk på “Connect to Jupyter” for å åpne Jupyter
 
 Oppgaver
 ---------
-.. note:: Dokumentmappe i Jupyter lab grensesnitt
+.. admonition:: Dokumentmappe i Jupyter lab grensesnitt
    :collapsible: closed
 
     Du trenger en mappe til å lagre dokumentene dine på Educloud. Når du åpner JupyterLab, vil du få filmenyen til venstre. Den peker til ditt Home directory som du finner igjen på Educlou. Her kan du lagre filene dine. Hvis du ikke allerede har en mappe som kalles “documents”, lag en. For å lage en ny mappe, klikk den grå , click the gray “New Folder” knappen i toppmenyen. Nå dukker det en ny mappe opp på listen, med forslag til navn “Untitled Folder”. Skriv “documents” istedenfor “Untitled Folder” og trykk enter på ditt eget tastatur for å lagre.
 
-.. note:: Laste opp filer med Educloud grensesnitt
+.. admonition:: Laste opp filer med Educloud grensesnitt
    :collapsible: closed
 
     Du kan laste opp dokumenter som du ønsker å jobbe med på Fox. Prøv å unngå dokumenter som inneholder sensitive data. Vi anbefaler å teste med offentlig tilgjengelige dokumenter som kun inneholder grønne data.

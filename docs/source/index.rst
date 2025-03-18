@@ -32,7 +32,6 @@ Læringsmål
    :caption: Table of Contents
    :hidden:
 
-   003_timetable
    00_motivation
    01_preparations
    02_easy_login
@@ -50,9 +49,7 @@ Læringsmål
    29_references
    30_todo
 
-Søk og indekser
+Indeks
 =================
-
 * :ref:`genindex`
-* :ref:`search`
 

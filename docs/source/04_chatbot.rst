@@ -1,6 +1,6 @@
 .. _04_chatbot
 
-04 Spørring av Store Språkmideller (Chatboter)
+04 Spørring av Store Språkmodeller (Chatboter)
 ===============================================
 
 .. index:: chatbot, språkmodeller

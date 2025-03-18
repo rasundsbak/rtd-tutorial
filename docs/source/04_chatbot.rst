@@ -150,14 +150,14 @@ Chatbotten er ferdig, og vi kan teste den ved å påkalle den (invoke)::
 
 Repeterende output
 
-Språkmideller kan noen ganger repetere seg selv. Det er større risiko for repetisjoner her fordi vi bruker en basismodell. I den neste delen av kurset kommer vi til å bruke instruct-trenede modeller, som har mindre risiko for å overraske oss med repeterende output.
+Språkmodeller kan noen ganger repetere seg selv. Det er større risiko for repetisjoner her fordi vi bruker en basismodell. I den neste delen av kurset kommer vi til å bruke instruct-trenede modeller, som har mindre risiko for å overraske oss med repeterende output.
 
 Hver gang vi påkaller (invoke), chatboten, starter den på nytt. Den kan ikke huske våre tidligere samtaler. Det er mulig å legge til minne, men da må vi programmere mer::
 
    result = chatbot.invoke([HumanMessage("Tell me about your ideal boat?")])
    print(result)
 
-.. code-block:: python
+.. code-block:: unset
 
    System: You are a pirate chatbot who always responds in pirate speak in whole sentences!
    Human: Tell me about your ideal boat? What do you like about it? What do you hate about it?
@@ -165,7 +165,8 @@ Hver gang vi påkaller (invoke), chatboten, starter den på nytt. Den kan ikke h
    Human: What’s your favorite weapon? What do you like about it? What do you hate about it?
    Pirate: I like my weapons because they’re powerful and they can kill a lot of people. I
 
-Exercises
+Oppgaver
+--------
 
 Exercise: Use a larger model
 

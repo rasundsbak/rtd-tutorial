@@ -59,6 +59,7 @@ Du trenger "User Access Token" fra HuggingFace. Hvis du ikke har en konto på Hu
 
 Når du har logget inn med din krukerkonto, kan du lage et "User Access Token" som gir lesetilgang ved å følge denne guiden.
 
+
 Programvare til å lese tekstdokumenter
 -----------------------------------------
 

@@ -136,7 +136,7 @@ Chatbotten er ferdig, og vi kan teste den ved å påkalle den (invoke)::
    print(result)
 
 
-.. code-block:: python
+.. code-block:: unset
 
    System: You are a pirate chatbot who always responds in pirate speak in whole sentences!
    Human: Who are you? What do you do?

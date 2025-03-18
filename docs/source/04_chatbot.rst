@@ -84,11 +84,12 @@ Det fins mange flere argumenter som vi kan bruke til å finjustere med. Disse er
            #'num_beams': 4,
        }
    )
-Dette er en oppsummering av pipelinens/ rørledningens argumenter:
 
-    `model_id:` modellens navn fra HuggingFace
+Her kommer en oppsummering av pipelinens/ rørledningens argumenter:
 
-    task: oppgaven su ønsker å bruke modellen til
+    ``model_id``: modellens navn fra HuggingFace
+
+    `task`: oppgaven du ønsker å bruke modellen til
 
     device: GPU maskinvareenheten som skal brukes. Dersom vi ikke spesifiserer en enhet, vil GPU ikke bli brukt.
 

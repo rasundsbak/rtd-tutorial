@@ -50,14 +50,16 @@ Kode::
 
   %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
 
-Frivillig
------------
 
-If you’re running one of the models that is already downloaded Educloud/Fox project ec443 the model, you can skip this step. If you’re not running on Educloud/Fox project ec443 or want to use a model that isn’t already downloaded, you’ll need to download the model.
+.. note:: Frivillig
 
-You will need a User Access Token from HuggingFace. If you don’t already have a user account on HuggingFace, you must first sign up for one. Click the button “Sign Up” in the upper right corner on HuggingFace.
+  Hvis du kjører en av modellene som allerede er lastet ned til Educloud/Fox prosjekt ec443, kan du droppe dette. Hvis du ikke kjører på Educloud/Fox project ec443, eller du vil bruke en modell som ikke er lastet ned, må du laste den.
 
-When you have logged in to HuggingFace with your user account, you can create a User Access Token giving read access by following this guide.
+Hu behøver "User Access Token" fra HuggingFace. Hvis du ikke har en konto på HuggingFace, må du først registrere deg. Klikk på knappen “Sign Up” i øvre høyre hjørne på HuggingFace' nettside.
 
-from huggingface_hub import login
-login()
+Når du har logget inn med din krukerkonto, kan du lage et "User Access Token" som gir lesetilgang ved å følge denne guiden.
+
+Kode::
+
+  from huggingface_hub import login
+  login()

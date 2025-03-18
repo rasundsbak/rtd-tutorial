@@ -22,7 +22,7 @@ Logg inn i Educloud On Demand med ditt Educloud brukernavn og passord.
 
 Oppstart med JupyterLab
 -------------------------
-Etter du har logget in, kan du se Educlouds instrumentpanel. Klikk på JupyterLab, for å konfigurere sesjonen.
+Etter du har logget inn, kan du se Educlouds instrumentpanel. Klikk på JupyterLab, for å konfigurere sesjonen.
 
 I feltet “Choose the Educloud project to run under:”, you should select ec443.
 
@@ -42,7 +42,9 @@ Når jobben har startet, klikk på “Connect to Jupyter” for å åpne Jupyter
 
 .. dropdown:: Valgfri OCR Støtte
     
-    Du kan legge til støtte for `Optical Character Recognition (OCR) <https://en.wikipedia.org/wiki/Optical_character_recognition>`_. OCR lar deg konvertere bilder til tekst. Last inn modulen ``tesseract/5.3.4-GCCcore-12.3.0`` ved å legge den til i feltet “Additional modules”. Du må også endre  “Choose Jupyter module (required)” til “4.0.5-GCCcore-12.3.0”, slik at versjonene matcher. .. image:: jupyter_lab_tesseract.png
+    Du kan legge til støtte for `Optical Character Recognition (OCR) <https://en.wikipedia.org/wiki/Optical_character_recognition>`_. OCR lar deg konvertere bilder til tekst. Last inn modulen ``tesseract/5.3.4-GCCcore-12.3.0`` ved å legge den til i feltet “Additional modules”. Du må også endre  “Choose Jupyter module (required)” til “4.0.5-GCCcore-12.3.0”, slik at versjonene matcher. 
+.. image:: jupyter_lab_tesseract.png
+
 
 Oppgaver
 ---------

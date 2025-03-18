@@ -1,4 +1,4 @@
-.. _05_chatbot
+.. _04_chatbot
 
 05 Querying LLMs (Chatbots)
 ===========================

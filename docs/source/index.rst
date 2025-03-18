@@ -36,8 +36,7 @@ Læringsmål
    01_preparations
    02_easy_login
    03_downloading_packages
-   04_ai_board
-   05_chatbot
+   04_chatbot
    06_where_ais_live
    07_prompting
    08_summarization

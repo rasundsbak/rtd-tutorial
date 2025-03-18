@@ -7,11 +7,13 @@
 
 I denne første delen av kurset skal vi sende en spørring til en språkmidell.  Vi vil få et output. Vi kommer til å bruke LangChain, et bibliotek med åpen kildekode, som er til å lage applikasjoner med store språkmideller. 
 
-Exercise: Create new notebook
+.. admonition:: Oppgave: Lag en ny notebook
+   :collapsible: closed
 
 Create a new Jupyter Notebook called chatbot by clicking the File-menu in JupyterLab, and then New and Notebook. If you are asked to select a kernel, choose “Python 3”. Give the new notebook a name by clicking the File-menu in JupyterLab and then Rename Notebook. Use the name chatbot.
 
-Exercise: Stop old kernels
+.. admonition:: Oppgave: Stopp gamle kjerner
+   :collapsible: closed
 
 JupyterLab uses a Python kernel to execute the code in each notebook. To free up GPU memory used in the previous chapter, you should stop the kernel for that notebook. In the menu on the left side of JupyterLab, click the dark circle with a white square in it. Then click KERNELS and Shut Down All.
 The Language Model

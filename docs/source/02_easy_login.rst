@@ -44,12 +44,12 @@ Når jobben har startet, klikk på “Connect to Jupyter” for å åpne Jupyter
     
     Du kan legge til støtte for `Optical Character Recognition (OCR) <https://en.wikipedia.org/wiki/Optical_character_recognition>`_. OCR lar deg konvertere bilder til tekst. Last inn modulen ``tesseract/5.3.4-GCCcore-12.3.0`` ved å legge den til i feltet “Additional modules”. Du må også endre  “Choose Jupyter module (required)” til “4.0.5-GCCcore-12.3.0”, slik at versjonene matcher. 
 
-.. image:: jupyter_lab_tesseract.png
+    .. image:: jupyter_lab_tesseract.png
 
 
 Oppgaver
 ---------
-.. dokumentmappe i Jupyter lab grensesnitt:: 
+.. tip:: dokumentmappe i Jupyter lab grensesnitt
 
     Du trenger en mappe til å lagre dokumentene dine på Educloud. Når du åpner JupyterLab, vil du få filmenyen til venstre. Den peker til ditt Home directory som du finner igjen på Educlou. Her kan du lagre filene dine. Hvis du ikke allerede har en mappe som kalles “documents”, lag en. For å lage en ny mappe, klikk den grå , click the gray “New Folder” knappen i toppmenyen. Nå dukker det en ny mappe opp på listen, med forslag til navn “Untitled Folder”. Skriv “documents” istedenfor “Untitled Folder” og trykk enter på ditt eget tastatur for å lagre.
 

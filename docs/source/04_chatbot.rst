@@ -23,98 +23,103 @@ Språkmodellen
 Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy om modeller til maskinlæring. Vi vil bruke LLM meta-llama/Llama-3.2-1B, som er en modell som har åpne vekter og parametere. Dette er en liten modell med bare 1 milliard parametere. Den bør være mulig å bruke på de fleste bærbare maskiner.
 
 ..note:: 
-   **Typer av modeller**  meta-llama/Llama-3.2-1B is a base model. Base models have been trained on large text corpora, but not fine-tuned to a specific task. Many models are also available in versions that have been fine-tuned to follow instructions, called instruct or chat models. Instruct and chat models are more suitable for use in applications like chatbots.
-Model Location
+   **Typer av modeller:**  meta-llama/Llama-3.2-1B er en basismodell. Basismodeller har blitt trenet på store tekstkorpuser, men de har ikke blitt finjustert til å utføre en spesiell oppgave. Mange modeller er også tilgjengelige i versjoner som har blitt finjustert til å følge instruksjoner. Disse kalles instruct eller chat modeller. Instruct og Chat modeller passer bedre til å lage chatbots med.
 
-We should tell the HuggingFace library where to store its data. If you’re running on Educloud/Fox project ec443 the model is stored at the path below.
+Modellens plassering
 
-import os
-os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'
+Vi bør fortelle HuggingFace biblioteket hvor det skal lagre dataene sine. Hvis du kjører på Educloud/Fox prosjekt ec443 finner du modellen på stien nedenfor::
 
-Loading the Model
+   import os
+   os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'
 
-To use the model, we create a pipeline. A pipeline can consist of several processing steps, but in this case, we only need one step. We can use the method HuggingFacePipeline.from_model_id(), which automatically downloads the specified model from HuggingFace.
 
-First, we import the library function that we need:
+Lasting av modellen
+--------------------
 
-from langchain_community.llms import HuggingFacePipeline
+For å bruke kodellen, lager vi en pipeline. en pipeline/ rørledning kan bestå av flere mindre biter, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden HuggingFacePipeline.from_model_id(), som automatisk laster ned den spesifiserte modellen fra HuggingFace.
 
-We specify the model identifier. You can find the identifier on HuggingFace.
+Først importerer vi biblioteksfunksjonen som vi trenger::
 
-model_id = 'meta-llama/Llama-3.2-1B'
+   from langchain_community.llms import HuggingFacePipeline
 
-HuggingFacePipeline also needs a parameter that tells it which task we want to do. For this course, the task will always be text-generation.
+Vi spesifiserer modellens identifikator. Dette finner du på nettsiden til HuggingFace::
 
-task = 'text-generation'
+   model_id = 'meta-llama/Llama-3.2-1B'
 
-In addition, we will enable GPU use by setting the argument device=0.
+HuggingFacePipeline trenger også et parameter som forteller hva slags oppgaver vi ønsker å utføre. I dette kurset, skal oppgaven alltid være text-generation::
 
-Now, we are ready to load the model:
+   task = 'text-generation'
 
-llm = HuggingFacePipeline.from_model_id(
-    model_id,
-    task,
-    device=0
-)
+I tillegg skal vi aktivere GPU ved hjelp av argumentet device=0.
 
-We can also limit the length of the output by setting max_new_tokens, for example to 100.
+Nå er vi klare til å laste modellen::
 
-llm = HuggingFacePipeline.from_model_id(
-    model_id,
-    task,
-    device=0,
-    pipeline_kwargs={
-        'max_new_tokens': 100,
-    }
-)
+   llm = HuggingFacePipeline.from_model_id(
+       model_id,
+       task,
+       device=0
+   )
 
-There are even more arguments that we can tweak. These are commented out below, so that they have no effect. You can try to remove the #-signs, so that they take effect. The arguments are described below.
+Vi kan også begrense outputens lengde ved å angi max_new_tokens, eksempelvis til 100::
 
-llm = HuggingFacePipeline.from_model_id(
-    model_id,
-    task,
-    device=0,
-    pipeline_kwargs={
-        'max_new_tokens': 100,
-        #'do_sample': True,
-        #'temperature': 0.3,
-        #'num_beams': 4,
-    }
-)
+   llm = HuggingFacePipeline.from_model_id(
+       model_id,
+       task,
+       device=0,
+       pipeline_kwargs={
+           'max_new_tokens': 100,
+       }
+   )
 
-This is a summary of the arguments to the pipeline:
+Det fins mange flere argumenter som vi kan bruke til å finjustere med. Disse er kommentert ut under, slik at de ikke har noen effekt. Du kan prøve å fjerne #- tegnene, slik at de virker. Argumentene beskrives under::
 
-    model_id: the name of the model on HuggingFace
+   llm = HuggingFacePipeline.from_model_id(
+       model_id,
+       task,
+       device=0,
+       pipeline_kwargs={
+           'max_new_tokens': 100,
+           #'do_sample': True,
+           #'temperature': 0.3,
+           #'num_beams': 4,
+       }
+   )
+Dette er en oppsummering av pipelinens/ rørledningens argumenter:
 
-    task: the task you want to use the model for
+    `model_id:` modellens navn fra HuggingFace
 
-    device: the GPU hardware device to use. If we don’t specify a device, no GPU will be used.
+    task: oppgaven su ønsker å bruke modellen til
 
-    pipeline_kwargs: additional parameters that are passed to the model.
+    device: GPU maskinvareenheten som skal brukes. Dersom vi ikke spesifiserer en enhet, vil GPU ikke bli brukt.
 
-        max_new_tokens: maximum length of the generated text
+    pipeline_kwargs: (keyword arguments) tilleggsparametere som gis til modellen.
 
-        do_sample: by default, the most likely next word is chosen. This makes the output deterministic. We can introduce some randomness by sampling among the most likely words instead.
+        max_new_tokens: max lengde på teksten som genereres
 
-        temperature: the temperature controls the statistical distribution of the next word and is usually between 0 and 1. A low temperature increases the probability of common words. A high temperature increases the probability of outputting a rare word. Model makers often recommend a temperature setting, which we can use as a starting point.
+        do_sample: som standard, det mest sannsynlige ordet som kan velges. Dette gjør outputten mer deterministisk. Vi kan sørge for en mer tilfeldig utvelging ved å angi hvor mange ord blant de mest sannsynlige som det skal velges mellom.
 
-        num_beams: by default the model works with a single sequence of tokens/words. With beam search, the program builds multiple sequences at the same time, and then selects the best one in the end.
+        temperature: temperaturkontrollen er den statistiske distribusjonen til neste ord. Vanligvis et tall mellom 0 and 1. Lav temperatur øker sannsynligheten for vanlige ord. Høy temperatur
+øker muligheten for sjeldnere ord i output. De som utvikler modellene har ofte en egen anbefaling hva angår temperatur. Vi bruker anbefalingen som et startpunkt.
 
-Making a Prompt
+        num_beams: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge 
+flere samtidige sekvenser, og deretter velge den beste til slutt. 
 
-We can use a prompt to tell the language model how to answer. The prompt should contain a few short, helpful instructions. In addition, we provide placeholders for the context. LangChain replaces these with the actual documents when we execute a query.
+Å lage en spørring
+-------------------
 
-Again, we import the library functions that we need:
+Vi kan bruke en spørring til å fortelle språkmodellen hvirdan vi ønsker at den skal svare. Spørringen bør inneholde etpar korte, konstruktive instruksjoner. Vi lager også plassholdere til konteksten. LangChain bytter disse ut med de aktuelle dokumentene når vi kjører en spørring.
 
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
+Nok en gang importerer vi biblioteksfunksjonene som vi trenger::
 
-Next, we make the system prompt that will be the context for the chat. The system prompt consists of a system message to the model and a placeholder for the user’s message.
+   from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+   from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
-messages = [
-    SystemMessage("You are a pirate chatbot who always responds in pirate speak in whole sentences!"),
-    MessagesPlaceholder(variable_name="messages")
-]
+Deretter, lager vi en systemspørring som blir samtalens kontekst. Systemspørringen (system prompt) består av en systembeskjed til modellen og en plassholder til brukerens beskjed/ spørsmål::
+
+   messages = [
+       SystemMessage("You are a pirate chatbot who always responds in pirate speak in whole sentences!"),
+       MessagesPlaceholder(variable_name="messages")
+   ]
 
 This list of messages is then used to make the actual prompt:
 

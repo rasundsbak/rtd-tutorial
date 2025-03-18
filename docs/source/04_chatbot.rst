@@ -15,14 +15,15 @@ Lag en ny Jupyter Notebook som du kaller "chatbot" ved å klikke Filmenyen i Jup
 .. admonition:: Oppgave: Stopp gamle kjerner
    :collapsible: closed
 
-JupyterLab uses a Python kernel to execute the code in each notebook. To free up GPU memory used in the previous chapter, you should stop the kernel for that notebook. In the menu on the left side of JupyterLab, click the dark circle with a white square in it. Then click KERNELS and Shut Down All.
-The Language Model
+JupyterLab bruker en Python kjerne til å kjøre koden i hver notebook. For å frigjøre GPU minne som ble brukt i forrige kapittel, bør du stoppe kjernen for den notebooken. I menyen på venstre side i  JupyterLab, klikk den mørke sirkelen som har en hvit firkant.  wKlikk så KERNELS og Shut Down All.
 
-We’ll use models from HuggingFace, a website that has tools and models for machine learning. For this task, we’ll use the open-weights LLM meta-llama/Llama-3.2-1B. This is a small model with only 1 billion parameters. It should be possible to use on most laptops.
+Språkmodellen
+--------------
 
-Model types
+Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy om modeller til maskinlæring. Vi vil bruke LLM meta-llama/Llama-3.2-1B, som er en modell som har åpne vekter og parametere. Dette er en liten modell med bare 1 milliard parametere. Den bør være mulig å bruke på de fleste bærbare maskiner.
 
-meta-llama/Llama-3.2-1B is a base model. Base models have been trained on large text corpora, but not fine-tuned to a specific task. Many models are also available in versions that have been fine-tuned to follow instructions, called instruct or chat models. Instruct and chat models are more suitable for use in applications like chatbots.
+..note:: 
+   **Typer av modeller**  meta-llama/Llama-3.2-1B is a base model. Base models have been trained on large text corpora, but not fine-tuned to a specific task. Many models are also available in versions that have been fine-tuned to follow instructions, called instruct or chat models. Instruct and chat models are more suitable for use in applications like chatbots.
 Model Location
 
 We should tell the HuggingFace library where to store its data. If you’re running on Educloud/Fox project ec443 the model is stored at the path below.

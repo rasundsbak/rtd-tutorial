@@ -1,4 +1,4 @@
-.. _02_easy_login:
+.. _01_easy_login:
 
 02 Oppstart
 ============

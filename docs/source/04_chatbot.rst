@@ -168,17 +168,18 @@ Hver gang vi påkaller (invoke), chatboten, starter den på nytt. Den kan ikke h
 Oppgaver
 --------
 
-Exercise: Use a larger model
+.. admonition:: Oppgave: Bruk en større modell
+   :collapsible: closed
 
-The model meta-llama/Llama-3.2-1B is a small model and will yield low accuracy on many tasks. To get the benefit of the power of the GPU, we should use a larger model. Also, we should use an instruct model.
+Modellen meta-llama/Llama-3.2-1B er liten, og vil gi lav nøyaktighet på mange oppgaver. for å dra nytte av GPUens fordeler, må vi bruke en større modell. Vi trenger å introdusere en Instruct-modell.
 
-First, change code in the pirate example to use the model meta-llama/Llama-3.2-1B-Instruct. How does this change the output?
+Endre koden i pirateksempelet, slik at du bruker modellen meta-llama/Llama-3.2-1B-Instruct. Hvordan endrer resultatet seg?
 
-Next, use the model meta-llama/Llama-3.2-3B-Instruct instead. This model has 3 billion parameters instead of 1 billion. Does this change the output?
+Vi skal nå endre enda en gang, til meta-llama/Llama-3.2-3B-Instruct. Denne modellen har 3 milliarder parametere i stedenfor bare 1 miliard. Hvordan endrer resultatet seg?
 
-Exercise: Change the model parameters
+.. admonition:: Oppgave: Endre modellparameterne
+   :collapsible: closed
 
-Continue using the model meta-llama/Llama-3.2-3B-Instruct. Try to change the temperature parameter, first to 0.9, then to 2.0 and 5.0. For the temperature to have an effect, you must also set the parameter 'do_sample': True.
+Fortsett å bruke modellen meta-llama/Llama-3.2-3B-Instruct. Prøv å endre temperaturparameteren, først til 0.9, så til 2.0 og 5.0. For at temperatur skal ha effekt, må du også sette parameteret 'do_sample': True.
 
 How does changing the temperature influence the output?
-

@@ -31,7 +31,6 @@ Læringsmål
    :hidden:
 
    00_motivation
-   01_preparations
    02_easy_login
    03_downloading_packages
    04_chatbot
@@ -41,7 +40,7 @@ Læringsmål
    09_parameters
    10_rag
    11_memory
-   27_preparations
+   _preparations
    28_problem_solving
    29_references
    30_todo

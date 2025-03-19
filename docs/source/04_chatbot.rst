@@ -102,7 +102,7 @@ Her kommer en oppsummering av pipelinens/ rørledningens argumenter:
         ``temperature``: temperaturkontrollen er den statistiske distribusjonen til neste ord. Vanligvis et tall mellom 0 and 1. Lav temperatur øker sannsynligheten for vanlige ord. Høy temperatur
 øker muligheten for sjeldnere ord i output. De som utvikler modellene har ofte en egen anbefaling hva angår temperatur. Vi bruker anbefalingen som et startpunkt.
 
-        ``num_beams`: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge 
+        ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge 
 flere samtidige sekvenser, og deretter velge den beste til slutt. 
 
 Å lage en spørring
@@ -150,14 +150,14 @@ Chatbotten er ferdig, og vi kan teste den ved å påkalle den (invoke)::
 
 Repeterende output
 
-Språkmideller kan noen ganger repetere seg selv. Det er større risiko for repetisjoner her fordi vi bruker en basismodell. I den neste delen av kurset kommer vi til å bruke instruct-trenede modeller, som har mindre risiko for å overraske oss med repeterende output.
+Språkmodeller kan noen ganger repetere seg selv. Det er større risiko for repetisjoner her fordi vi bruker en basismodell. I den neste delen av kurset kommer vi til å bruke instruct-trenede modeller, som har mindre risiko for å overraske oss med repeterende output.
 
 Hver gang vi påkaller (invoke), chatboten, starter den på nytt. Den kan ikke huske våre tidligere samtaler. Det er mulig å legge til minne, men da må vi programmere mer::
 
    result = chatbot.invoke([HumanMessage("Tell me about your ideal boat?")])
    print(result)
 
-.. code-block:: python
+.. code-block:: unset
 
    System: You are a pirate chatbot who always responds in pirate speak in whole sentences!
    Human: Tell me about your ideal boat? What do you like about it? What do you hate about it?
@@ -165,19 +165,21 @@ Hver gang vi påkaller (invoke), chatboten, starter den på nytt. Den kan ikke h
    Human: What’s your favorite weapon? What do you like about it? What do you hate about it?
    Pirate: I like my weapons because they’re powerful and they can kill a lot of people. I
 
-Exercises
+Oppgaver
+--------
 
-Exercise: Use a larger model
+.. admonition:: Oppgave: Bruk en større modell
+   :collapsible: closed
 
-The model meta-llama/Llama-3.2-1B is a small model and will yield low accuracy on many tasks. To get the benefit of the power of the GPU, we should use a larger model. Also, we should use an instruct model.
+   Modellen meta-llama/Llama-3.2-1B er liten, og vil gi lav nøyaktighet på mange oppgaver. for å dra nytte av GPUens fordeler, må vi bruke en større modell. Vi trenger å introdusere en Instruct-modell.
+   
+   Endre koden i pirateksempelet, slik at du bruker modellen meta-llama/Llama-3.2-1B-Instruct. Hvordan endrer resultatet seg?
+   
+   Vi skal nå endre enda en gang, til meta-llama/Llama-3.2-3B-Instruct. Denne modellen har 3 milliarder parametere i stedenfor bare 1 miliard. Hvordan endrer resultatet seg?
 
-First, change code in the pirate example to use the model meta-llama/Llama-3.2-1B-Instruct. How does this change the output?
+.. admonition:: Oppgave: Endre modellparameterne
+   :collapsible: closed
 
-Next, use the model meta-llama/Llama-3.2-3B-Instruct instead. This model has 3 billion parameters instead of 1 billion. Does this change the output?
-
-Exercise: Change the model parameters
-
-Continue using the model meta-llama/Llama-3.2-3B-Instruct. Try to change the temperature parameter, first to 0.9, then to 2.0 and 5.0. For the temperature to have an effect, you must also set the parameter 'do_sample': True.
-
-How does changing the temperature influence the output?
-
+   Fortsett å bruke modellen meta-llama/Llama-3.2-3B-Instruct. Prøv å endre temperaturparameteren, først til 0.9, så til 2.0 og 5.0. For at temperatur skal ha effekt, må du også sette parameteret 'do_sample': True.
+   
+   Hvordan vil du si at endret temperatur påvirker resultatet?

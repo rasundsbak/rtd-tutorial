@@ -65,13 +65,13 @@ Vi kan gi noen argumenter til pipelinen:
 
     ``pipeline_kwargs``: (keyword arguments) tilleggsparametere som gis til modellen
 
-        ``max_new_tokens``: max lengde på teksten som genereres
+         ``max_new_tokens``: max lengde på teksten som genereres
 
-        ``do_sample``: som standard, det mest sannsynlige ordet som kan velges. Dette gjør outputten mer deterministisk. Vi kan sørge for en mer tilfeldig utvelging ved å angi hvor mange ord blant de mest sannsynlige som det skal velges mellom.
+         ``do_sample``: som standard, det mest sannsynlige ordet som kan velges. Dette gjør outputten mer deterministisk. Vi kan sørge for en mer tilfeldig utvelging ved å angi hvor mange ord blant de mest sannsynlige som det skal velges mellom.
 
-        ``temperature``: temperaturkontrollen er den statistiske distribusjonen til neste ord. Vanligvis et tall mellom 0 and 1. Lav temperatur øker sannsynligheten for vanlige ord. Høy temperatur øker muligheten for sjeldnere ord i output. Utviklerne har ofte en anbefaling hva angår temperatur. Vi bruker anbefalingen som et startpunkt.
+         ``temperature``: temperaturkontrollen er den statistiske distribusjonen til neste ord. Vanligvis et tall mellom 0 and 1. Lav temperatur øker sannsynligheten for vanlige ord. Høy temperatur øker muligheten for sjeldnere ord i output. Utviklerne har ofte en anbefaling hva angår temperatur. Vi bruker anbefalingen som et startpunkt.
 
-        ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge 
+         ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge 
 flere samtidige sekvenser, og deretter velge den beste til slutt. 
 
 Å lage en spørring
@@ -104,8 +104,8 @@ LangChain returnerer både input spørringen og svaret som genereres i en lang t
        output_keys=['summary'],
        flags=re.DOTALL)
 
-Å lage kjede
--------------
+Å lage kjede (chain)
+---------------------
 
 Dokument innlasteren laster hver PDF side som et separat ‘document’. Dette er delvis av tekniske grunner og på grunn av måten PDFer er organisert. Av denne grunn bruker vi en kjede som kalles create_stuff_documents_chain som (gjen)forener flere dokumenter til ett enkelt stort dokument::
    
@@ -157,23 +157,23 @@ Lage en metaoppsumemring
 Oppgaver
 --------
 
-Oppgave: Oppsummere dine egne dokumenter
+.. admonition:: Oppgave: Oppsummere dine egne dokumenter
+   :collapsible: closed
 
-Lag en oppsummering av et dokument som du laster opp i din egen dokumentmappe. Les oppsummeringen nøye, og vurdere resultatet i lys av følgende momenter:
-
-   Er oppsummeringen nyttig?
-
-   Er det noe som mangler i oppsummeringen?
-
-   Er lengden adekvat?
+   Lag en oppsummering av et dokument som du laster opp i din egen dokumentmappe. Les oppsummeringen nøye, og vurdere resultatet i lys av følgende momenter:
    
+   * Er oppsummeringen nyttig?
+   * Er det noe som mangler i oppsummeringen?
+   * Er lengden adekvat?
+   
+.. admonition:: Oppgave: Tilpass oppsummeringen
+   :collapsible: closed
 
-Oppgave: Tilpass oppsummeringen
+   Prøv å lage noen tilpasninger til spørringen for å justere oppsummeringen som du fikk i den andre oppgaven. Kan du for eksempel spørre etter en lengre eller mer nøyaktig oppsummering? Eller kan du be modellen om å legge vekt på visse aspekter i teksten?
 
-Try to make some adjustments to the prompt to modify the summary you got in exercise 1. For example, you can ask for a longer or more concise summary. Or you can tell the model to emphasize certain aspects of the text.
+.. admonition:: Oppgave: Lage en oppsummering på et annet språk
+   :collapsible: closed
 
-Oppgave: Lage en oppsummering på et annet språk
+   Vi kan bruke modellen til å få en oppsummering på et annet språk enn originaldokumentet. Hvis for eksempel spørringen er på Norsk, vil svaret vanligvis også gis på Norsk. Du kan også spesifisere i spørringen hvilket sprøk du ønsker å ha oppsummeringen på. Bruk modellen til å lage en oppsummering av ditt dokument fra den andre oppgaven, på et annet språk enn det opprinnelig ble gitt.
 
-We can use the model to get a summary in a different language from the original document. For example, if the prompt is in Norwegian the response will usually also be Norwegian. You can also specify on the prompt which language you want the summary to be in. Use the model to make a summary of your document from exercise 1 in a different language.
-
-Bonus Exercise: Slurm Jobs
+Bonusoppgave: Slurmjobber

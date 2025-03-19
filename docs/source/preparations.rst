@@ -1,4 +1,4 @@
-.. _preparations:
+.. preparations:
 
 01 Forberedelser: Detaljert beskrivelse
 =========================================

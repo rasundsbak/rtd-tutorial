@@ -1,7 +1,9 @@
 .. _04_summarization:
 
 Oppsummeringer
----------------
+===============
+
+.. index:: oppsummeringer, dokumenter, PDFer
 
 I denne delen av kurset, skal vi forsøke å bruke språkmodellen på noen artikler. Oppsummeringer av dokumenter har betegnes ogte med sommarizing eller summarization, i koden. Det fins dedikert programvare for å lage oppsummeringer. Imidlertid har store språkmideller også begynt å beherske oppgaven ganske bra.
 
@@ -9,8 +11,8 @@ Nok en gang, skal vi bruke LangChain. Dette er et bibliotek som har åpen kildek
 
 .. admonition:: Oppgave: Lage en ny notebook
    :collapsible: closed
-  
-  Lag en ny Jupyter Notebook som du kaller "summarizing" ved å klikke i JupyterLabs filmeny, deretter "New" og "Notebook". Hvis du blir spurt om å velge en kjerne, velg “Python 3”. Gi den nye notebooken et navn ved å klikke JupyterLabs filmeny og så "Rename Notebook". Bruk navnet "summarizing".
+
+   Lag en ny Jupyter Notebook som du kaller "summarizing" ved å klikke i JupyterLabs filmeny, deretter "New" og "Notebook". Hvis du blir spurt om å velge en kjerne, velg “Python 3”. Gi den nye notebooken et navn ved å klikke JupyterLabs filmeny og så "Rename Notebook". Bruk navnet "summarizing".
 
 .. admonition:: Oppgave: Stoppe gamle kjerner
    :collapsible: closed

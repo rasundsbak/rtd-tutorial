@@ -1,6 +1,6 @@
-.. _10 rag:
+.. _05 rag:
 
-10 Retrieval Augmented Generation (RAG)
+Retrieval Augmented Generation (RAG)
 ========================================
 .. index:: summarization, open source
 

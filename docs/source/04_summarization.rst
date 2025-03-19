@@ -166,12 +166,13 @@ Lag en oppsummering av et dokument som du laster opp i din egen dokumentmappe. L
    Er det noe som mangler i oppsummeringen?
 
    Er lengden passelig?
+   
 
 Oppgave: Tilpass oppsummeringen
 
 Try to make some adjustments to the prompt to modify the summary you got in exercise 1. For example, you can ask for a longer or more concise summary. Or you can tell the model to emphasize certain aspects of the text.
 
-Exercise: Make a summary in a different language
+Oppgave: Lage en oppsummering på et annet språk
 
 We can use the model to get a summary in a different language from the original document. For example, if the prompt is in Norwegian the response will usually also be Norwegian. You can also specify on the prompt which language you want the summary to be in. Use the model to make a summary of your document from exercise 1 in a different language.
 

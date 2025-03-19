@@ -1,7 +1,7 @@
-.. _01_preparations:
+.. _preparations:
 
-01 Forberedelser: Inn på beregningsklyngen: Detaljert beskrivelse
-===================================================================
+01 Forberedelser: Detaljert beskrivelse
+=========================================
 
 .. index:: autentisering, 2FA, Microsoft Authenticator
 

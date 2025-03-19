@@ -1,6 +1,6 @@
-.. _00 introduction:
+.. _00_introduction:
 
-00 Kjøring av store språkmodeller på Fox, en introduksjon
+Kjøring av store språkmodeller på Fox, en introduksjon
 ==========================================================
 
 .. index:: LLM, large language models, språkmodeller, HPC, tungregningsklynge
@@ -12,7 +12,6 @@ I dette kurset bruker vi Python programmering til å kjøre språkmodellene. Det
 Dette kuret består av fire kapitler. 
 
 mer her, men oversett kapitlene først:
-
 
 
 In Installing Software, we install the software that we will need for this course.

@@ -15,7 +15,7 @@ Nok en gang, skal vi bruke LangChain. Dette er et bibliotek som har åpen kildek
 .. admonition:: Oppgave: Stoppe gamle kjerner
    :collapsible: closed
 
-JupyterLab bruker en Python kjerne til å kjøre kode i hver notebook. For å frigjøre GPU minne som ble brukt i forrige kapittel, bør du stoppe kjernen fra den notebooken. I menyen på venstre side i JupyterLab, klikk den børke sirkelen som har en hvit firkant inni. Klikk så KERNELS og Shut Down All.
+   JupyterLab bruker en Python kjerne til å kjøre kode i hver notebook. For å frigjøre GPU minne som ble brukt i forrige kapittel, bør du stoppe kjernen fra den notebooken. I menyen på venstre side i JupyterLab, klikk den børke sirkelen som har en hvit firkant inni. Klikk så KERNELS og Shut Down All.
 
 Dokumentenes plassering
 ------------------------
@@ -27,85 +27,92 @@ Vi har samlet noen forskningsartikler som har Creative Commons lisens.  Vi skal 
 Språkmodellen
 ---------------
 
-We’ll use models from HuggingFace, a website that has tools and models for machine learning. We’ll use the open-weights LLM meta-llama/Llama-3.2-3B-Instruct. This model has a large context window, which means that we can use it to process quite large documents. Yet it is small enough that we can use it with the smallest GPUs on Fox. However, for better results you might want to use one of the somewhat larger models with around 7B or 8B parameters, for example mistralai/Ministral-8B-Instruct-2410.
+Vi skal bruke modeller fra HuggingFace, en nettside som har verktøy og modeller til maskinlæring. Vi vil bruke språkmidellen meta-llama/Llama-3.2-3B-Instruct, som har åpne vekter og parametere. Modellen har et stort kontekstvindu, som betyr at vi kan bruke den til å behandle ganske store dokumenter. Likevel er den liten nok til at vi kan bruke den med den minste GPUen på Fox. Hvis du ønsker bedre resultater kan du bruke en av de litt større modellene på
+rundt 7B eller 8B parameters, eksempelvis mistralai/Ministral-8B-Instruct-2410.
 
-Tokens versus Words
+Tokens kontra ord
+------------------
 
-Short words can be a single token, but longer words usually consist of multiple tokens. Therefore, the maximum document size with this model is less than 128k words. Exactly how words are converted to tokens depends on the tokenizer. LLMs usually come with tokenizers. We will use the default tokenizer that ship with the LLM we use.
+Korte ord kan være ett enkelt token, men lengre ord består vanligvis av flere tokens. Maksimum dokumentstørrelse med denne modellen er derfor mindre enn 128k ord. Akkurat hvor mange ord man skal beregne per token kommer an på tokenizeren. Store språkmodeller har vanligvis egne tokenizere. Vi kommer til å bruke standard tokenizeren som 
+hører til den store språkmodellen vi til enhver tid bruker::
+   
+   import os
+   os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'
 
-import os
-os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'
+For å fruke modellen, lager vi en pipeline. En pipeline ckan bestå av flere steg, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden HuggingFacePipeline.from_model_id(), som automatisk laster ned den spesifiserte modellen fra HuggingFace::
 
-To use the model, we create a pipeline. A pipeline can consist of several processing steps, but in this case, we only need one step. We can use the method HuggingFacePipeline.from_model_id(), which automatically downloads the specified model from HuggingFace.
+   from langchain_community.llms import HuggingFacePipeline
+   
+   llm = HuggingFacePipeline.from_model_id(
+       model_id='meta-llama/Llama-3.2-3B-Instruct',
+       task='text-generation',
+       device=0,
+       pipeline_kwargs={
+           'max_new_tokens': 1000,
+           #'do_sample': True,
+           #'temperature': 0.3,
+           #'num_beams': 4,
+       }
+   )
 
-from langchain_community.llms import HuggingFacePipeline
+Vi kan gi noen argumenter til pipelinen:
 
-llm = HuggingFacePipeline.from_model_id(
-    model_id='meta-llama/Llama-3.2-3B-Instruct',
-    task='text-generation',
-    device=0,
-    pipeline_kwargs={
-        'max_new_tokens': 1000,
-        #'do_sample': True,
-        #'temperature': 0.3,
-        #'num_beams': 4,
-    }
-)
+    ``model_id``: modellens navn fra HuggingFace
 
-We can give some arguments to the pipeline:
+    ``task``: oppgaven du planlegger å bruke modellen til
 
-    model_id: the name of the model on HuggingFace
+    ``device``: GPU maskinvaren som enheten bruker. Hvis vi ikke spesifiserer en enhet, vil GPU ikke brukes.
 
-    task: the task you want to use the model for
+    ``pipeline_kwargs``: (keyword arguments) tilleggsparametere som gis til modellen
 
-    device: the GPU hardware device to use. If we don’t specify a device, no GPU will be used.
+        ``max_new_tokens``: max lengde på teksten som genereres
 
-    pipeline_kwargs: additional parameters that are passed to the model.
+        ``do_sample``: som standard, det mest sannsynlige ordet som kan velges. Dette gjør outputten mer deterministisk. Vi kan sørge for en mer tilfeldig utvelging ved å angi hvor mange ord blant de mest sannsynlige som det skal velges mellom.
 
-        max_new_tokens: maximum length of the generated text
+        ``temperature``: temperaturkontrollen er den statistiske distribusjonen til neste ord. Vanligvis et tall mellom 0 and 1. Lav temperatur øker sannsynligheten for vanlige ord. Høy temperatur øker muligheten for sjeldnere ord i output. Utviklerne har ofte en anbefaling hva angår temperatur. Vi bruker anbefalingen som et startpunkt.
 
-        do_sample: by default, the most likely next word is chosen. This makes the output deterministic. We can introduce some randomness by sampling among the most likely words instead.
+        ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge 
+flere samtidige sekvenser, og deretter velge den beste til slutt. 
 
-        temperature: the temperature controls the statistical distribution of the next word and is usually between 0 and 1. A low temperature increases the probability of common words. A high temperature increases the probability of outputting a rare word. Model makers often recommend a temperature setting, which we can use as a starting point.
+Å lage en spørring
+-------------------
 
-        num_beams: by default the model works with a single sequence of tokens/words. With beam search, the program builds multiple sequences at the same time, and then selects the best one in the end.
+Vi kan bruke en spørring til å fortelle språkmodellen hvordan vi ønsker at den skal svare. Spørringen bør inneholde etpar korte, konstruktive instruksjoner. Vi lager også plassholdere til konteksten. LangChain bytter disse ut med de aktuelle dokumentene når vi kjører en spørring::
 
-Making a Prompt
+   from langchain.chains.combine_documents import create_stuff_documents_chain
+   from langchain.chains.llm import LLMChain
+   from langchain.prompts import PromptTemplate
+   
+   separator = '\nYour Summary:\n'
+   prompt_template = '''Write a summary of the following:
+   
+   {context}
+   ''' + separator
+   prompt = PromptTemplate(template=prompt_template,
+                           input_variables=['context'])
 
-We can use a prompt to tell the language model how to answer. The prompt should contain a few short, helpful instructions. In addition, we provide placeholders for the input, called context. LangChain replaces the placeholder with the input document when we execute a query.
+Vi skiller oppsummeringen fra inputten
+----------------------------------------
 
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain.chains.llm import LLMChain
-from langchain.prompts import PromptTemplate
+LangChain returnerer både input spørringen og svaret som genereres i en lang tekst. For å få bare oppsummeringen, må vi splitteoppsummeringen fra dokumentet som vi sendte som input. Til dette kan vi bruke LangChain output parseren som lyder navnet RegexParser::
 
-separator = '\nYour Summary:\n'
-prompt_template = '''Write a summary of the following:
+   from langchain.output_parsers import RegexParser
+   import re
+   
+   output_parser = RegexParser(
+       regex=rf'{separator}(.*)',
+       output_keys=['summary'],
+       flags=re.DOTALL)
 
-{context}
-''' + separator
-prompt = PromptTemplate(template=prompt_template,
-                        input_variables=['context'])
+Å lage kjede
+-------------
 
-Separating the Summary from the Input
-
-LangChain returns both the input prompt and the generated response in one long text. To get only the summary, we must split the summary from the document that we sent as input. We can use the LangChain output parser RegexParser for this.
-
-from langchain.output_parsers import RegexParser
-import re
-
-output_parser = RegexParser(
-    regex=rf'{separator}(.*)',
-    output_keys=['summary'],
-    flags=re.DOTALL)
-
-Create chain
-
-The document loader loads each PDF page as a separate ‘document’. This is partly for technical reasons because that is the way PDFs are structured. Therefore, we use the chain called create_stuff_documents_chain which joins multiple documents into a single large document.
-
-chain = create_stuff_documents_chain(
-        llm, prompt, output_parser=output_parser)
-
-Loading the Documents
+Dokument innlasteren laster hver PDF side som et separat ‘document’. Dette er delvis av tekniske grunner og på grunn av måten PDFer er organisert. Av denne grunn bruker vi en kjede som kalles create_stuff_documents_chain som (gjen)forener flere dokumenter til ett enkelt stort dokument::
+   
+   chain = create_stuff_documents_chain(
+           llm, prompt, output_parser=output_parser)
+   
+   Loading the Documents
 
 We use LangChain’s DirectoryLoader to load all in files in document_folder. document_folder is defined at the start of this Notebook.
 

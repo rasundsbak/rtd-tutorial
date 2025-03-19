@@ -1,4 +1,4 @@
-.. _00 introduction:
+.. _00_introduction:
 
 00 Kjøring av store språkmodeller på Fox, en introduksjon
 ==========================================================

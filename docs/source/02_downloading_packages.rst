@@ -1,4 +1,4 @@
-.. _03_downloading_packages:
+.. _02_downloading_packages:
 
 03 Installering
 =================

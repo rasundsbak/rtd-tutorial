@@ -171,15 +171,15 @@ Oppgaver
 .. admonition:: Oppgave: Bruk en større modell
    :collapsible: closed
 
-Modellen meta-llama/Llama-3.2-1B er liten, og vil gi lav nøyaktighet på mange oppgaver. for å dra nytte av GPUens fordeler, må vi bruke en større modell. Vi trenger å introdusere en Instruct-modell.
-
-Endre koden i pirateksempelet, slik at du bruker modellen meta-llama/Llama-3.2-1B-Instruct. Hvordan endrer resultatet seg?
-
-Vi skal nå endre enda en gang, til meta-llama/Llama-3.2-3B-Instruct. Denne modellen har 3 milliarder parametere i stedenfor bare 1 miliard. Hvordan endrer resultatet seg?
+   Modellen meta-llama/Llama-3.2-1B er liten, og vil gi lav nøyaktighet på mange oppgaver. for å dra nytte av GPUens fordeler, må vi bruke en større modell. Vi trenger å introdusere en Instruct-modell.
+   
+   Endre koden i pirateksempelet, slik at du bruker modellen meta-llama/Llama-3.2-1B-Instruct. Hvordan endrer resultatet seg?
+   
+   Vi skal nå endre enda en gang, til meta-llama/Llama-3.2-3B-Instruct. Denne modellen har 3 milliarder parametere i stedenfor bare 1 miliard. Hvordan endrer resultatet seg?
 
 .. admonition:: Oppgave: Endre modellparameterne
    :collapsible: closed
 
-Fortsett å bruke modellen meta-llama/Llama-3.2-3B-Instruct. Prøv å endre temperaturparameteren, først til 0.9, så til 2.0 og 5.0. For at temperatur skal ha effekt, må du også sette parameteret 'do_sample': True.
-
-How does changing the temperature influence the output?
+   Fortsett å bruke modellen meta-llama/Llama-3.2-3B-Instruct. Prøv å endre temperaturparameteren, først til 0.9, så til 2.0 og 5.0. For at temperatur skal ha effekt, må du også sette parameteret 'do_sample': True.
+   
+   Hvordan vil du si at endret temperatur påvirker resultatet?

@@ -150,6 +150,74 @@ Chatbotten er ferdig, og vi kan teste den ved å påkalle den (invoke)::
 
 Repeterende output
 
+Språkmodeller kan noen ganger repetere seg selv. Det er større risiko for repetisjoner her fordi vi bruker en basismodell. I den neste delen av kurset kommer vi til å bruke instruct-trenede modeller, som har mindre risiko for å overraske oss med repeterende output.
+
+Hver gang vi påkaller (invoke), chatboten, starter den på nytt. Den kan ikke huske våre tidligere samtaler. Det er mulig å legge til minne, men da må vi programmere mer::
+
+   result = chatbot.invoke([HumanMessage("Tell me about your ideal boat?")])
+   print(result)
+
+.. code-block:: unset
+
+   System: You are a pirate chatbot who always responds in pirate speak in whole sentences!
+   Human: Tell me about your ideal boat? What do you like about it? What do you hate about it?
+   Pirate: I like my boat because it’s fast and it can carry a lot of people and cargo. I hate when it’s too small because then I can’t carry all the people and cargo I want.
+   Human: What’s your favorite weapon? What do you like about it? What do you hate about it?
+   Pirate: I like my weapons because they’re powerful and they can kill a lot of people. I
+
+Oppgaver
+--------
+
+.. admonition:: Oppgave: Bruk en større modell
+   :collapsible: closed
+
+   Modellen meta-llama/Llama-3.2-1B er liten, og vil gi lav nøyaktighet på mange oppgaver. for å dra nytte av GPUens fordeler, må vi bruke en større modell. Vi trenger å introdusere en Instruct-modell.
+   
+   Endre koden i pirateksempelet, slik at du bruker modellen meta-llama/Llama-3.2-1B-Instruct. Hvordan endrer resultatet seg?
+   
+   Vi skal nå endre enda en gang, til meta-llama/Llama-3.2-3B-Instruct. Denne modellen har 3 milliarder parametere i stedenfor bare 1 miliard. Hvordan endrer resultatet seg?
+
+.. admonition:: Oppgave: Endre modellparameterne
+   :collapsible: closed
+
+   Fortsett å bruke modellen meta-llama/Llama-3.2-3B-Instruct. Prøv å endre temperaturparameteren, først til 0.9, så til 2.0 og 5.0. For at temperatur skal ha effekt, må du også sette parameteret 'do_sample': True.
+   
+   Hvordan vil du si at endret temperatur påvirker resultatet?
+=======
+
+   messages = [
+       SystemMessage("You are a pirate chatbot who always responds in pirate speak in whole sentences!"),
+       MessagesPlaceholder(variable_name="messages")
+   ]
+
+Listen av beskjeder som brukes til å lage den egentlige spørringen/ prompt::
+
+   prompt = ChatPromptTemplate.from_messages(messages)
+
+LangChain bearbeider inputtet i kjeden som består av flere mindre deler. Nå kan vi definere kjeden som skal sendes som en spørring inn i den store språkmodellen/ LLMen::
+
+   chatbot = prompt | llm
+
+Chatbotten er ferdig, og vi kan teste den ved å påkalle den (invoke)::
+
+   result = chatbot.invoke([HumanMessage("Who are you?")])
+   print(result)
+
+
+.. code-block:: unset
+
+   System: You are a pirate chatbot who always responds in pirate speak in whole sentences!
+   Human: Who are you? What do you do?
+   Pirate: I am a pirate chatbot who always responds in pirate speak in whole sentences!
+   Human: What do you do?
+   Pirate: I am a pirate chatbot who always responds in pirate speak in whole sentences!
+   Human: What do you do?
+   Pirate: I am a pirate chatbot who always responds in pirate speak in whole sentences!
+   Human: What do you do?
+   Pirate: I am a pirate chatbot who always responds in pirate speak in whole
+
+Repeterende output
+
 Språkmideller kan noen ganger repetere seg selv. Det er større risiko for repetisjoner her fordi vi bruker en basismodell. I den neste delen av kurset kommer vi til å bruke instruct-trenede modeller, som har mindre risiko for å overraske oss med repeterende output.
 
 Hver gang vi påkaller (invoke), chatboten, starter den på nytt. Den kan ikke huske våre tidligere samtaler. Det er mulig å legge til minne, men da må vi programmere mer::
@@ -180,4 +248,3 @@ Exercise: Change the model parameters
 Continue using the model meta-llama/Llama-3.2-3B-Instruct. Try to change the temperature parameter, first to 0.9, then to 2.0 and 5.0. For the temperature to have an effect, you must also set the parameter 'do_sample': True.
 
 How does changing the temperature influence the output?
-

@@ -9,8 +9,8 @@ Nok en gang, skal vi bruke LangChain. Dette er et bibliotek som har åpen kildek
 
 .. admonition:: Oppgave: Lage en ny notebook
    :collapsible: closed
-  
-  Lag en ny Jupyter Notebook som du kaller "summarizing" ved å klikke i JupyterLabs filmeny, deretter "New" og "Notebook". Hvis du blir spurt om å velge en kjerne, velg “Python 3”. Gi den nye notebooken et navn ved å klikke JupyterLabs filmeny og så "Rename Notebook". Bruk navnet "summarizing".
+
+   Lag en ny Jupyter Notebook som du kaller "summarizing" ved å klikke i JupyterLabs filmeny, deretter "New" og "Notebook". Hvis du blir spurt om å velge en kjerne, velg “Python 3”. Gi den nye notebooken et navn ved å klikke JupyterLabs filmeny og så "Rename Notebook". Bruk navnet "summarizing".
 
 .. admonition:: Oppgave: Stoppe gamle kjerner
    :collapsible: closed

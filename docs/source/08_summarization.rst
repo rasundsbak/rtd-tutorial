@@ -15,16 +15,17 @@ Nok en gang, skal vi bruke LangChain. Dette er et bibliotek som har åpen kildek
 .. admonition:: Oppgave: Stoppe gamle kjerner
    :collapsible: closed
 
+JupyterLab bruker en Python kjerne til å kjøre kode i hver notebook. For å frigjøre GPU minne som ble brukt i forrige kapittel, bør du stoppe kjernen fra den notebooken. I menyen på venstre side i JupyterLab, klikk den børke sirkelen som har en hvit firkant inni. Klikk så KERNELS og Shut Down All.
 
+Dokumentenes plassering
+------------------------
 
-JupyterLab uses a Python kernel to execute the code in each notebook. To free up GPU memory used in the previous chapter, you should stop the kernel for that notebook. In the menu on the left side of JupyterLab, click the dark circle with a white square in it. Then click KERNELS and Shut Down All.
-Document location
+Vi har samlet noen forskningsartikler som har Creative Commons lisens.  Vi skal nå forsøke å laste opp alle dokumentene fra mappen som defineres under. Hvis du foretrekker, kan du endre stien til en annen mappe::
 
-We have collected some papers licensed with a Creative Commons license. We will try to load all the documents in the folder defined below. If you prefer, you can change this to a different folder name.
+   document_folder = '/fp/projects01/ec443/documents/terrorism'
 
-document_folder = '/fp/projects01/ec443/documents/terrorism'
-
-The Language Model
+Språkmodellen
+---------------
 
 We’ll use models from HuggingFace, a website that has tools and models for machine learning. We’ll use the open-weights LLM meta-llama/Llama-3.2-3B-Instruct. This model has a large context window, which means that we can use it to process quite large documents. Yet it is small enough that we can use it with the smallest GPUs on Fox. However, for better results you might want to use one of the somewhat larger models with around 7B or 8B parameters, for example mistralai/Ministral-8B-Instruct-2410.
 

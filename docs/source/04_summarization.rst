@@ -104,8 +104,8 @@ LangChain returnerer både input spørringen og svaret som genereres i en lang t
        output_keys=['summary'],
        flags=re.DOTALL)
 
-Å lage kjede
--------------
+Å lage kjede (chain)
+---------------------
 
 Dokument innlasteren laster hver PDF side som et separat ‘document’. Dette er delvis av tekniske grunner og på grunn av måten PDFer er organisert. Av denne grunn bruker vi en kjede som kalles create_stuff_documents_chain som (gjen)forener flere dokumenter til ett enkelt stort dokument::
    

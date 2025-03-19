@@ -1,6 +1,6 @@
-.. _27 slurm:
+.. _06 slurm:
 
-27 Preparing for Slurm and Batch
+Preparing for Slurm and Batch
 ===================================
 
 .. index:: slurm batch virtual environment

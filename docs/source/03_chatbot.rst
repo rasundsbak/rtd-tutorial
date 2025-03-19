@@ -1,4 +1,4 @@
-.. _04_chatbot
+.. _03_chatbot
 
 04 Spørring av Store Språkmodeller (Chatboter)
 ===============================================

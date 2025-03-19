@@ -3,7 +3,7 @@
 Oppsummeringer
 ---------------
 
-I denne delen av kurset, skal vi forsøke å bruke språkmidellen på noen artikler. Oppsummeringer av dokumenter har betegnes ogte med sommarizing eller summarization, i koden. Det fins dedikert programvare for å lage oppsummeringer. Imidlertid har store språkmideller også begynt å beherske oppgaven ganske bra.
+I denne delen av kurset, skal vi forsøke å bruke språkmodellen på noen artikler. Oppsummeringer av dokumenter har betegnes ogte med sommarizing eller summarization, i koden. Det fins dedikert programvare for å lage oppsummeringer. Imidlertid har store språkmideller også begynt å beherske oppgaven ganske bra.
 
 Nok en gang, skal vi bruke LangChain. Dette er et bibliotek som har åpen kildekode, og som brukes til å lage applikasjoner med store språkmodeller.
 
@@ -114,56 +114,60 @@ Dokument innlasteren laster hver PDF side som et separat ‘document’. Dette e
    
    Loading the Documents
 
-We use LangChain’s DirectoryLoader to load all in files in document_folder. document_folder is defined at the start of this Notebook.
+Vi bruker LangChain sin DirectoryLoader til å laste alle inn filer fra document_folder. document_folder er definert i starten av denne notebooken::
 
-from langchain_community.document_loaders import DirectoryLoader
+   from langchain_community.document_loaders import DirectoryLoader
+   
+   loader = DirectoryLoader(document_folder)
+   documents = loader.load()
+   print('number of documents:', len(documents))
 
-loader = DirectoryLoader(document_folder)
-documents = loader.load()
-print('number of documents:', len(documents))
+Lage oppsummeringene
+----------------------
 
-Creating the Summaries
+Nå kan vi iterere over disse dokumentene med en for-loop::
 
-Now, we can iterate over these documents with a for-loop.
+   summaries = {}
+   
+   for document in documents:
+       filename = document.metadata['source']
+       print('Summarizing document:', filename)
+       result = chain.invoke({"context": [document]})
+       summary = result['summary']
+       summaries[filename] = summary
+       print('Summary of file', filename)
+       print(summary)
 
-summaries = {}
+Lagre oppsummeringene til tekstfiler
+---------------------------------------
 
-for document in documents:
-    filename = document.metadata['source']
-    print('Summarizing document:', filename)
-    result = chain.invoke({"context": [document]})
-    summary = result['summary']
-    summaries[filename] = summary
-    print('Summary of file', filename)
-    print(summary)
+Endelig, lagrer vi oppsummeringene for at vi senere skal kunne se dem. Vi lagrer oppsummeringene i filen summaries.txt. Hvis du vil, kan du lagre hver oppsummering i en egen fil::
 
-Saving the Summaries to Text Files
+   with open('summaries.txt', 'w') as outfile:
+       for filename in summaries:
+           print('Summary of ', filename, file = outfile)
+           print(summaries[filename], file=outfile)
+           print(file=outfile)
 
-Finally, we save the summaries for later use. We save all the summaries in the file summaries.txt. If you like, you can store each summary in a separate file.
+Bonusmateriale
+-----------------
 
-with open('summaries.txt', 'w') as outfile:
-    for filename in summaries:
-        print('Summary of ', filename, file = outfile)
-        print(summaries[filename], file=outfile)
-        print(file=outfile)
+Lage en metaoppsumemring
 
-Bonus Material
+Oppgaver
+--------
 
-Make an Overall Summary
+Oppgave: Oppsummere dine egne dokumenter
 
-Exercises
+Lag en oppsummering av et dokument som du laster opp i din egen dokumentmappe. Les oppsummeringen nøye, og vurdere resultatet i lys av følgende momenter:
 
-Exercise: Summarize your own document
+   Er oppsummeringen nyttig?
 
-Make a summary of a document that you upload to your own documents folder. Read the summary carefully, and evaluate it with these questions in mind:
+   Er det noe som mangler i oppsummeringen?
 
-    Is the summary useful?
+   Er lengden passelig?
 
-    Is there anything missing from the summary?
-
-    Is the length of the summary suitable?
-
-Exercise: Adjust the summary
+Oppgave: Tilpass oppsummeringen
 
 Try to make some adjustments to the prompt to modify the summary you got in exercise 1. For example, you can ask for a longer or more concise summary. Or you can tell the model to emphasize certain aspects of the text.
 

@@ -35,8 +35,9 @@ Læringsmål
    02_downloading_packages
    03_chatbot
    04_summarization
-   04_rag
-   27_preparations
+   05_rag
+   06_slurm
+   26_preparations
    28_problem_solving
    29_references
    30_todo

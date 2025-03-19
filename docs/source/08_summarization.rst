@@ -1,137 +1,166 @@
 .. _08_summarization:
 
-08 Summarization
-==================
-We are going to sum up the documents that we have in the folder "documents". The pdfs from this lesson are located on the path "/fp/projects01/ec443/documents". In task number 2 in the chapter on "Easy login", you were asked to make your own documents folder in your home directory. In case you did not get the time, you will now get a second chance. Do the task below, if not done before:
-
-.. image:: fox_dokument.png
-
-The easiest way doing this, is to use the browser view for Fox. The idea is that you are a researcher with a specific subject in mind. In this case, there was a search for "terrorism" and "western europe" in DOAJ.
-
-
-
-.. note::
-  Task 8.1: Copy all of the content from this path: /fp/projects01/ec443/documents, and move it into your own documents folder named "documents" on your own home directory.
-
-Cell 1::
-
-  document_folder = '/fp/projects01/ec443/documents/terrorism'
-
-Repeating the location of the models, just in case
-
-Cell 2::
-
-  %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
-
-Cell 3::
-
-  from langchain_huggingface.llms import HuggingFacePipeline
-  
-  llm = HuggingFacePipeline.from_model_id(
-        model_id='mistralai/Ministral-8B-Instruct-2410',
-        task='text-generation',
-        device=0,
-        pipeline_kwargs={
-            'max_new_tokens': 1000,
-            #'do_sample': True,
-            #'temperature': 0.3,
-            #'num_beams': 4,
-        }
-    )
-
-Making a prompt
+Oppsummeringer
 ---------------
 
-Cell 4::
+I denne delen av kurset, skal vi forsøke å bruke språkmidellen på noen artikler. Oppsummeringer av dokumenter har betegnes ogte med sommarizing eller summarization, i koden. Det fins dedikert programvare for å lage oppsummeringer. Imidlertid har store språkmideller også begynt å beherske oppgaven ganske bra.
 
-  from langchain.chains.combine_documents import create_stuff_documents_chain
-  from langchain.chains.llm import LLMChain
-  from langchain.prompts import PromptTemplate
+Nok en gang, skal vi bruke LangChain. Dette er et bibliotek som har åpen kildekode, og som brukes til å lage applikasjoner med store språkmodeller.
 
-Cell 5::
+.. admonition:: Oppgave: Lage en ny notebook
+   :collapsible: closed
   
-  separator = '\nYour Summary:\n'
-  prompt_template = '''Write a summary of the following:
-  
-  {context}
-  ''' + separator
-  prompt = PromptTemplate(template=prompt_template,
-                          input_variables=['context'])
+  Lag en ny Jupyter Notebook som du kaller "summarizing" ved å klikke i JupyterLabs filmeny, deretter "New" og "Notebook". Hvis du blir spurt om å velge en kjerne, velg “Python 3”. Gi den nye notebooken et navn ved å klikke JupyterLabs filmeny og så "Rename Notebook". Bruk navnet "summarizing".
+
+.. admonition:: Oppgave: Stoppe gamle kjerner
+   :collapsible: closed
+
+
+
+JupyterLab uses a Python kernel to execute the code in each notebook. To free up GPU memory used in the previous chapter, you should stop the kernel for that notebook. In the menu on the left side of JupyterLab, click the dark circle with a white square in it. Then click KERNELS and Shut Down All.
+Document location
+
+We have collected some papers licensed with a Creative Commons license. We will try to load all the documents in the folder defined below. If you prefer, you can change this to a different folder name.
+
+document_folder = '/fp/projects01/ec443/documents/terrorism'
+
+The Language Model
+
+We’ll use models from HuggingFace, a website that has tools and models for machine learning. We’ll use the open-weights LLM meta-llama/Llama-3.2-3B-Instruct. This model has a large context window, which means that we can use it to process quite large documents. Yet it is small enough that we can use it with the smallest GPUs on Fox. However, for better results you might want to use one of the somewhat larger models with around 7B or 8B parameters, for example mistralai/Ministral-8B-Instruct-2410.
+
+Tokens versus Words
+
+Short words can be a single token, but longer words usually consist of multiple tokens. Therefore, the maximum document size with this model is less than 128k words. Exactly how words are converted to tokens depends on the tokenizer. LLMs usually come with tokenizers. We will use the default tokenizer that ship with the LLM we use.
+
+import os
+os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'
+
+To use the model, we create a pipeline. A pipeline can consist of several processing steps, but in this case, we only need one step. We can use the method HuggingFacePipeline.from_model_id(), which automatically downloads the specified model from HuggingFace.
+
+from langchain_community.llms import HuggingFacePipeline
+
+llm = HuggingFacePipeline.from_model_id(
+    model_id='meta-llama/Llama-3.2-3B-Instruct',
+    task='text-generation',
+    device=0,
+    pipeline_kwargs={
+        'max_new_tokens': 1000,
+        #'do_sample': True,
+        #'temperature': 0.3,
+        #'num_beams': 4,
+    }
+)
+
+We can give some arguments to the pipeline:
+
+    model_id: the name of the model on HuggingFace
+
+    task: the task you want to use the model for
+
+    device: the GPU hardware device to use. If we don’t specify a device, no GPU will be used.
+
+    pipeline_kwargs: additional parameters that are passed to the model.
+
+        max_new_tokens: maximum length of the generated text
+
+        do_sample: by default, the most likely next word is chosen. This makes the output deterministic. We can introduce some randomness by sampling among the most likely words instead.
+
+        temperature: the temperature controls the statistical distribution of the next word and is usually between 0 and 1. A low temperature increases the probability of common words. A high temperature increases the probability of outputting a rare word. Model makers often recommend a temperature setting, which we can use as a starting point.
+
+        num_beams: by default the model works with a single sequence of tokens/words. With beam search, the program builds multiple sequences at the same time, and then selects the best one in the end.
+
+Making a Prompt
+
+We can use a prompt to tell the language model how to answer. The prompt should contain a few short, helpful instructions. In addition, we provide placeholders for the input, called context. LangChain replaces the placeholder with the input document when we execute a query.
+
+from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain.chains.llm import LLMChain
+from langchain.prompts import PromptTemplate
+
+separator = '\nYour Summary:\n'
+prompt_template = '''Write a summary of the following:
+
+{context}
+''' + separator
+prompt = PromptTemplate(template=prompt_template,
+                        input_variables=['context'])
+
+Separating the Summary from the Input
+
+LangChain returns both the input prompt and the generated response in one long text. To get only the summary, we must split the summary from the document that we sent as input. We can use the LangChain output parser RegexParser for this.
+
+from langchain.output_parsers import RegexParser
+import re
+
+output_parser = RegexParser(
+    regex=rf'{separator}(.*)',
+    output_keys=['summary'],
+    flags=re.DOTALL)
 
 Create chain
--------------
+
 The document loader loads each PDF page as a separate ‘document’. This is partly for technical reasons because that is the way PDFs are structured. Therefore, we use the chain called create_stuff_documents_chain which joins multiple documents into a single large document.
 
-Cell 6::
-
-  chain = create_stuff_documents_chain(llm, prompt)
-
-
-A function to split the summary from the input. LangChain returns both the input prompt and the generated response in one long text. To get only the summary, we must split the summary from the document that we sent as input.
-
-Cell 7::
-
-  def split_result(result):
-      "Split the reply from the prompt, should be done with output parser?"
-      position = result.find(separator)
-      summary = result[position + len(separator) :]
-      return summary
+chain = create_stuff_documents_chain(
+        llm, prompt, output_parser=output_parser)
 
 Loading the Documents
-----------------------
+
 We use LangChain’s DirectoryLoader to load all in files in document_folder. document_folder is defined at the start of this Notebook.
 
-Cell 8::
+from langchain_community.document_loaders import DirectoryLoader
 
-  from langchain_community.document_loaders import DirectoryLoader
-  
-  loader = DirectoryLoader(document_folder)
-  documents = loader.load()
-  print('number of documents:', len(documents))
-
+loader = DirectoryLoader(document_folder)
+documents = loader.load()
+print('number of documents:', len(documents))
 
 Creating the Summaries
-------------------------
+
 Now, we can iterate over these documents with a for-loop.
 
-Cell 9::
-  
-  summaries = {}
-  
-  for document in documents:
-      filename = document.metadata['source']
-      print(filename)
-      summary = chain.invoke({"context": [document]})
-      summary = split_result(summary)
-      summaries[filename] = summary
-      print('Summary of file', filename)
-      print(summary)
+summaries = {}
 
+for document in documents:
+    filename = document.metadata['source']
+    print('Summarizing document:', filename)
+    result = chain.invoke({"context": [document]})
+    summary = result['summary']
+    summaries[filename] = summary
+    print('Summary of file', filename)
+    print(summary)
 
 Saving the Summaries to Text Files
-------------------------------------
-Finally, we save the summaries for later use. In the example below, we save all the summaries in the file summaries.txt.
 
-Cell 10::
-  
-  with open('summaries_2.txt', 'w') as outfile:
-      for filename in summaries:
-          print('Summary of ', filename, file = outfile)
-          print(summaries[filename], file=outfile)
-          print(file=outfile)
+Finally, we save the summaries for later use. We save all the summaries in the file summaries.txt. If you like, you can store each summary in a separate file.
 
+with open('summaries.txt', 'w') as outfile:
+    for filename in summaries:
+        print('Summary of ', filename, file = outfile)
+        print(summaries[filename], file=outfile)
+        print(file=outfile)
 
-Make an overall summary
-------------------------
-See here under `bonus material <https://uio-library.github.io/LLM-course/3_summarizing.html>`_
+Bonus Material
 
+Make an Overall Summary
 
-.. note::
+Exercises
 
-  Task 8.1: The processes of the Chapters Chatbot and Summarization, may be done on the largest and the second largest GPU at Fox (40GB memory). As we advance to the next chapter with RAG, we depend on the largest GPU with its 80GB memory. Make sure you have your job running on the mentioned GPU resource. Also go to the menu in Jupyter lab, and choose as shown in the illustration below: Kernel --> Shut down all kernels. Now, you are going to open a new workbook, save it with a name you choose, and run the RAG process in that new document, without any other content in the cells.
+Exercise: Summarize your own document
 
-.. image:: shut_kernel.png
+Make a summary of a document that you upload to your own documents folder. Read the summary carefully, and evaluate it with these questions in mind:
 
-.. note::
+    Is the summary useful?
 
-  Task 8.2: How can you see if a single kernel is running and how do you shut them down one by one?
+    Is there anything missing from the summary?
+
+    Is the length of the summary suitable?
+
+Exercise: Adjust the summary
+
+Try to make some adjustments to the prompt to modify the summary you got in exercise 1. For example, you can ask for a longer or more concise summary. Or you can tell the model to emphasize certain aspects of the text.
+
+Exercise: Make a summary in a different language
+
+We can use the model to get a summary in a different language from the original document. For example, if the prompt is in Norwegian the response will usually also be Norwegian. You can also specify on the prompt which language you want the summary to be in. Use the model to make a summary of your document from exercise 1 in a different language.
+
+Bonus Exercise: Slurm Jobs

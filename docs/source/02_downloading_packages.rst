@@ -1,7 +1,7 @@
 .. _02_downloading_packages:
 
-03 Installering
-=================
+Installering
+==============
 
 Vi kommer til å bruke LangChain, et bibliotek med åpen kildekode, som brukes til å lage 
 aplikasjoner med LLMer. Vi vil bruke modeller fra HuggingFace, en nettside som har verktøy og modeller som brukes til maskinlæring.

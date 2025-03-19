@@ -17,7 +17,6 @@ Lag en ny Jupyter Notebook som du kaller "chatbot" ved å klikke Filmenyen i Jup
 
    JupyterLab bruker en Python kjerne til å kjøre koden i hver notebook. For å frigjøre GPU minne som ble brukt i forrige kapittel, bør du stoppe kjernen for den notebooken. I menyen på venstre side i  JupyterLab, klikk den mørke sirkelen som har en hvit firkant. Klikk så KERNELS og Shut Down All.
 
-
 Språkmodellen
 --------------
 
@@ -39,7 +38,7 @@ Vi bør fortelle HuggingFace biblioteket hvor det skal lagre dataene sine. Hvis 
 Lasting av modellen
 --------------------
 
-For å bruke kodellen, lager vi en pipeline. en pipeline/ rørledning kan bestå av flere mindre biter, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden HuggingFacePipeline.from_model_id(), som automatisk laster ned den spesifiserte modellen fra HuggingFace.
+For å bruke kodellen, lager vi en pipeline. en pipeline (rørledning) kan bestå av flere mindre biter, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden HuggingFacePipeline.from_model_id(), som automatisk laster ned den spesifiserte modellen fra HuggingFace.
 
 Først importerer vi biblioteksfunksjonen som vi trenger::
 

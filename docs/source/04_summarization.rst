@@ -165,7 +165,7 @@ Lag en oppsummering av et dokument som du laster opp i din egen dokumentmappe. L
 
    Er det noe som mangler i oppsummeringen?
 
-   Er lengden passelig?
+   Er lengden adekvat?
    
 
 Oppgave: Tilpass oppsummeringen

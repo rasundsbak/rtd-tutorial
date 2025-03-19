@@ -1,7 +1,8 @@
 .. _01_easy_login:
 
 Oppstart
-=========
+==========
+
 .. index:: Fox, server, A100, GPU, hardware, NVIDIA
 
 Vi skal kjøre programmene via tjenesten Educloud On Demand. (Educloud On Demand er en del av Universitetet i Oslo sin databehandlingsplattform Educloud Research.) Educloud On Demand kjører i din nettleser, og du behøver ikke innstallere noen ekstra programmer på din maskin.

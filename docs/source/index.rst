@@ -35,8 +35,7 @@ Læringsmål
    02_downloading_packages
    03_chatbot
    04_summarization
-   09_parameters
-   10_rag
+   04_rag
    11_memory
    preparations
    28_problem_solving

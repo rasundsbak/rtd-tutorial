@@ -1,4 +1,4 @@
-.. _27 preparations:
+.. _27 slurm:
 
 27 Preparing for Slurm and Batch
 ===================================

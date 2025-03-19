@@ -1,4 +1,4 @@
-.. _08_summarization:
+.. _04_summarization:
 
 08 Summarization
 ==================

@@ -30,7 +30,7 @@ Læringsmål
    :caption: Table of Contents
    :hidden:
 
-   00_motivation
+   00_introduction
    01_easy_login
    02_downloading_packages
    03_chatbot

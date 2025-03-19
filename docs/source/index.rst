@@ -31,16 +31,14 @@ Læringsmål
    :hidden:
 
    00_motivation
-   02_easy_login
-   03_downloading_packages
-   04_chatbot
-   06_where_ais_live
-   07_prompting
-   08_summarization
+   01_easy_login
+   02_downloading_packages
+   03_chatbot
+   04_summarization
    09_parameters
    10_rag
    11_memory
-   _preparations
+   preparations
    28_problem_solving
    29_references
    30_todo

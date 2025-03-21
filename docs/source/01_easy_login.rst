@@ -23,7 +23,7 @@ Logg inn i `Educloud On Demand <https://ondemand.educloud.no>`_ med ditt Educlou
 
 Oppstart med JupyterLab
 -------------------------
-Etter du har logget inn, kan du se `Educlouds instrumentpanel <https://ondemand.educloud.no/pun/sys/dashboard>`_. Klikk på `JupyterLab <https://ondemand.educloud.no/pun/sys/dashboard/batch_connect/sys/fox-ood-jupyter/session_contexts/ne>`_, for å konfigurere sesjonen.
+Etter du har logget inn, kan du se `Educlouds instrumentpanel <https://ondemand.educloud.no/pun/sys/dashboard>`_. Klikk på `JupyterLab <https://ondemand.educloud.no/pun/sys/dashboard/batch_connect/sys/fox-ood-jupyter/session_contexts/new>`_, for å konfigurere sesjonen.
 
 I feltet “Choose the Educloud project to run under:”, you should select ec443.
 

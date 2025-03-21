@@ -5,7 +5,7 @@ Oppstart
 
 .. index:: Fox, server, A100, GPU, hardware, NVIDIA
 
-Vi skal kjøre programmene via tjenesten `Educloud On Demand <hhttps://www.uio.no/tjenester/it/forskning/beregning/open-on-demand/>`_. (Educloud On Demand er en del av Universitetet i Oslo sin databehandlingsplattform `Educloud Research <https://www.uio.no/tjenester/it/forskning/plattformer/edu-research/index.html/>`_.) Educloud On Demand kjører i din nettleser, og du behøver ikke å innstallere noen ekstra programmer.
+Vi skal kjøre programmene via tjenesten `Educloud On Demand <https://www.uio.no/tjenester/it/forskning/beregning/open-on-demand/>`_. (Educloud On Demand er en del av Universitetet i Oslo sin databehandlingsplattform `Educloud Research <https://www.uio.no/tjenester/it/forskning/plattformer/edu-research/index.html/>`_.) Educloud On Demand kjører i din nettleser, og du behøver ikke å innstallere noen ekstra programmer.
 
 Tilgang
 --------

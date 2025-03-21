@@ -25,11 +25,11 @@ Oppstart med JupyterLab
 -------------------------
 Etter du har logget inn, kan du se `Educlouds instrumentpanel <https://ondemand.educloud.no/pun/sys/dashboard>`_. Klikk på `JupyterLab <https://ondemand.educloud.no/pun/sys/dashboard/batch_connect/sys/fox-ood-jupyter/session_contexts/new>`_, for å konfigurere sesjonen.
 
-I feltet “Choose the Educloud project to run under:”, you should select ec443.
+I feltet “Choose the Educloud project to run under:”, velger du ec443.
 
 I feltet “Choose resources:”, bør du velge “GPU (1x Nvidia MIG 20G VRAM, 24 CPU cores, 100GB RAM)”.
 
-I feltet “Runtime (in hours)” velg gjerne 1 t av gangen. Prøv å unngå å reservere en GPU lenger enn nødvendig, fordi GPUer er begrensede, delte ressurser.
+I feltet “Runtime (in hours)” kan du velge 1 t av gangen. Prøv å unngå å reservere en GPU lenger enn nødvendig, fordi GPUer er begrensede, delte ressurser.
 
 I feltet “Choose Jupyter module (required)” bør du velge “4.2.0-GCCcore-13.2.0”.
 
@@ -37,7 +37,7 @@ De andre feltene skal ikke fylles ut. Oppsettet ditt skal se ut som bildet under
 
 .. image:: jupyter_lab_mig.png
 
-Start JupyterLab ved å klikke på den brå “Launch” knappen nederst i skjemaet. Dette lager en jobb som blir sendt til køen. Når de påkrevde ressursene er tilgjengelige, starter jobben din opp.
+Start JupyterLab ved å klikke på den blå “Launch” knappen nederst i skjemaet. Dette lager en jobb som blir sendt til køen. Når de påkrevde ressursene er tilgjengelige, starter jobben din opp.
 
 Når jobben har startet, klikk på “Connect to Jupyter” for å åpne JupyterLab.
 

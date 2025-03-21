@@ -5,7 +5,7 @@ Oppstart
 
 .. index:: Fox, server, A100, GPU, hardware, NVIDIA
 
-Vi skal kjøre programmene via tjenesten `Educloud On Demand <https://www.uio.no/tjenester/it/forskning/beregning/open-on-demand/>`_. (Educloud On Demand er en del av Universitetet i Oslo sin databehandlingsplattform `Educloud Research <https://www.uio.no/tjenester/it/forskning/plattformer/edu-research/index.html/>`_.) Educloud On Demand kjører i din nettleser, og du behøver ikke å innstallere noen ekstra programmer.
+Vi skal kjøre programmene via tjenesten `Educloud On Demand <https://www.uio.no/tjenester/it/forskning/beregning/open-on-demand/>`_. (Educloud On Demand er en del av Universitetet i Oslo sin databehandlingsplattform `Educloud Research <https://www.uio.no/tjenester/it/forskning/plattformer/edu-research/index.html/>`_.) Educloud On Demand kjører i nettleseren, og du behøver ikke å innstallere noen ekstra programmer.
 
 Tilgang
 --------
@@ -19,7 +19,7 @@ Innlogging
 -----------
 Logg inn i `Educloud On Demand <https://ondemand.educloud.no>`_ med ditt Educloud brukernavn og passord.
 
-.. note:: Ditt brukernavn i Educloud er forskjellig fra det vanlige UiO brukernavnet. Educloud brukernavn starter alltid med de tre tegnene “ec-“. Educloud har også en egen to-faktor autentisering (2FA) som må gjøres klar på mobilen.
+.. note:: Ditt brukernavn i Educloud er forskjellig fra det vanlige UiO brukernavnet. Educloud brukernavn starter alltid med de tre tegnene “ec-“. Educloud har også en egen to-faktor autentisering (2FA).
 
 Oppstart med JupyterLab
 -------------------------

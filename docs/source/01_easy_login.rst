@@ -17,7 +17,7 @@ Hvis du ikke har en konto, må du lage en. Utfør punkt 1b, 2 and 3 i denne veil
 
 Innlogging
 -----------
-Logg inn i Educloud On Demand med ditt Educloud brukernavn og passord.
+Logg inn i `Educloud On Demand <https://ondemand.educloud.no>`_ med ditt Educloud brukernavn og passord.
 
 .. note:: Ditt brukernavn i Educloud er forskjellig fra det vanlige UiO brukernavnet. Educloud brukernavn starter alltid med de tre tegnene “ec-“. Educloud har også en egen to-faktor autentisering (2FA) som må gjøres klar på mobilen.
 

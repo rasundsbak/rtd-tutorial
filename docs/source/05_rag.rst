@@ -39,17 +39,20 @@ Språkmodellen
 
 Vi skal bruke modeller fra HuggingFace, en nettside som har verktøy og modeller til maskinlæring. Vi kommer til å bruke språkmodellen meta-llama/Llama-3.2-3B-Instruct, fordi den er liten nok til at vi kan bruke den med de minste GPUene på Fox. Hvis du kjører på en GPU med mer minne, kan du få bedre resultater med en større modell, som for eksempel mistralai/Ministral-8B-Instruct-2410.
 
-Model Storage Location
+Modellens plassering
+---------------------
 
-We must download the model we want to use. Because of the requirements mentioned above, we run our program on the Fox high-performance computer at UiO. We must set the location where our program should store the models that we download from HuggingFace:
+Vi må laste ned modellen som vi skal bruke. Vi kjører programmet på tungregningsklyngen Fox ved UiO. Vi må peke på stedet der vårt program skal lagre modellene som vi laster ned fra HuggingFace::
 
-import os
-os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'
+   import os
+   os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'
 
-Note
+.. note::
 
-If you run the program locally on your own computer, you might not need to set HF_HOME.
-The Model
+   Hvis du kjører programmene lokalt på din egen datamaskin, trenger du kanskje ikke sette HF_HOME.
+
+Modellen
+---------
 
 Now, we are ready to download and use the model. To use the model, we create a pipeline. A pipeline can consist of several processing steps, but in this case, we only need one step. We can use the method HuggingFacePipeline.from_model_id(), which automatically downloads the specified model from HuggingFace.
 

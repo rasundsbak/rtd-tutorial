@@ -182,15 +182,15 @@ Oppgaver
    :collapsible: closed
 
 
-Når du har laget et program som virker, er det mer effektivt å kjøre det som en batch jobb enn i JupyterLab. Dette er fordi JupyterLab reserverer en GPU hele tiden, også når den ikke kjører. Dette er grunnen til at det ferdige programmet bør lages til et Python program som legges inn i den ordinære køen på tungregningsklyngen. Du kan lagre koden ved å klikke Filmenyen i JupyterLab. Velg “Save and Export Notebook As…” og deretter “Executable Script”. Resultatet er Python filen summarizing.py som lastes ned lokalt på din maskin. Du trenger også å laste ned slurmskriptet LLM.slurm.
+Når du har laget et program som virker, er det mer effektivt å kjøre det som en batch jobb enn i JupyterLab. Dette er fordi JupyterLab reserverer en GPU hele tiden, også når den ikke kjører. Dette er grunnen til at det ferdige programmet bør lages til et Python program som legges inn i den ordinære køen på tungregningsklyngen. Du kan lagre koden ved å klikke Filmenyen i JupyterLab. Velg “Save and Export Notebook As…” og deretter “Executable Script”. Resultatet er Python filen summarizing.py som lastes ned lokalt på din maskin. Du trenger også å laste ned slurmskriptet :download:`LLM.slurm <LLM.slurm>`.
 
-See :download:`LLM.slurm <LLM.slurm>`.
 
-Upload both the Python file summarizing.py and the slurm script LLM.slurm to Fox. Then, start the job with this command:
+
+Last opp både python filen summarizing.py og slurm skriptet LLM.slurm til Fox. Du starter jobben med denne kommandoen::
 
 sbatch LLM.slurm summarizing.py
 
-Slurm creates a log file for each job which is stored with a name like slurm-1358473.out. By default, these log files are stored in the current working directory where you run the sbatch command. If you want to store the log files somewhere else, you can add a line like below to your slurm script. Remember to change the username.
+Slurm lager en logfil for hver jobb som deretter lagres med et navn som for eksempel slurm-1358473.out. Som standard blir disse log filene lagret i den samme arbeidskatalogen (working directory) som du kjører sbatch kommandoen fra. Dersom du ønsker å lagre loggen et annet sted, kan du legge til en linje som spesifiserer ønsket sted i slurm. Husk å endre brukernavnet::
 
 #SBATCH --output=/fp/projects01/ec443/<username>/logs/slurm-%j.out
 

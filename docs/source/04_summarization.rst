@@ -185,8 +185,8 @@ Oppgaver
    
    Last opp både python filen summarizing.py og slurm skriptet LLM.slurm til Fox. Du starter jobben med denne kommandoen::
    
-   sbatch LLM.slurm summarizing.py
+      sbatch LLM.slurm summarizing.py
    
    Slurm lager en logfil for hver jobb som deretter lagres med et navn som for eksempel slurm-1358473.out. Som standard blir disse log filene lagret i den samme arbeidskatalogen (working directory) som du kjører sbatch kommandoen fra. Dersom du ønsker å lagre loggen et annet sted, kan du legge til en linje som spesifiserer ønsket sted i slurm. Husk å endre brukernavnet::
    
-   #SBATCH --output=/fp/projects01/ec443/<username>/logs/slurm-%j.out
+    #SBATCH --output=/fp/projects01/ec443/<username>/logs/slurm-%j.out

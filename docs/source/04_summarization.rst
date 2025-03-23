@@ -193,3 +193,4 @@ sbatch LLM.slurm summarizing.py
 Slurm creates a log file for each job which is stored with a name like slurm-1358473.out. By default, these log files are stored in the current working directory where you run the sbatch command. If you want to store the log files somewhere else, you can add a line like below to your slurm script. Remember to change the username.
 
 #SBATCH --output=/fp/projects01/ec443/<username>/logs/slurm-%j.out
+

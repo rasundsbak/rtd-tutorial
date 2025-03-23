@@ -184,11 +184,7 @@ Oppgaver
 
 Når du har laget et program som virker, er det mer effektivt å kjøre det som en batch jobb enn i JupyterLab. Dette er fordi JupyterLab reserverer en GPU hele tiden, også når den ikke kjører. Dette er grunnen til at det ferdige programmet bør lages til et Python program som legges inn i den ordinære køen på tungregningsklyngen. Du kan lagre koden ved å klikke Filmenyen i JupyterLab. Velg “Save and Export Notebook As…” og deretter “Executable Script”. Resultatet er Python filen summarizing.py som lastes ned lokalt på din maskin. Du trenger også å laste ned slurmskriptet LLM.slurm.
 
-See :download:`LLM.slurm <../data/python/LLM.slurm>`.
-
 See :download:`LLM.slurm <LLM.slurm>`.
-
-See :download:`LLM.slurm <..LLM.slurm>`.
 
 Upload both the Python file summarizing.py and the slurm script LLM.slurm to Fox. Then, start the job with this command:
 

@@ -1,10 +1,10 @@
 .. _05 rag:
 
-Retrieval Augmented Generation (RAG)
-========================================
-.. index:: RAG, documents, retrieval augmented generation, gjenvinningsutvidet tekstgenerering
+Retrieval-Augmented Generation (RAG) på norsk: Gjenfinningsutvidet tekstgenerering
+====================================================================================
+.. index:: RAG, dokumenter, retrieval augmented generation, gjenfinningsutvidet tekstgenerering
 
-Retrieval-Augmented Generation (RAG/ gjenfinningsutvidet generasjon i LLM) er en måte å inkludere (deler av) matching documents as context for questions to a Large Language Model (LLM). This can help reduce hallucinations and wrong answers. A system for RAG has two major parts: a document database with a search index and a large language model. The figure below shows the structure of our RAG program.
+Gjenfinningsutvidet tekstgenerering eller RAG er en måte å inkludere dokumenter for å gi kontekst til spørsmål som man stiller en språkmodell. Dette kan redusere tendensen til hallusinering eller andre feil i svarene. Et system for gjenfinningsutvidet tekstgenerering har to hoveddeler. For det første en dokument database med en søkeindeks og for det andre en stor språkmodell. Tegningen under viser RAG programmets struktur.
 
 .. image:: rag_2025.png
 

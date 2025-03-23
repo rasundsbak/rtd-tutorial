@@ -1,249 +1,192 @@
-.. _05 rag:
+.. _04_summarization:
 
-Retrieval-Augmented Generation (RAG) på norsk: Gjenfinningsutvidet tekstgenerering
-====================================================================================
-.. index:: RAG, dokumenter, retrieval augmented generation, gjenfinningsutvidet tekstgenerering
+Oppsummeringer
+===============
 
-Gjenfinningsutvidet tekstgenerering eller RAG er en måte å inkludere dokumenter for å gi kontekst til spørsmål som man stiller en språkmodell. Dette kan redusere tendensen til hallusinering eller andre feil i svarene. Et system for gjenfinningsutvidet tekstgenerering har to hoveddeler. For det første en dokument database med en søkeindeks og for det andre en stor språkmodell. Tegningen under viser RAG programmets struktur.
+.. index:: oppsummeringer, dokumenter, PDFer
 
-.. image:: rag_2025.png
+I denne delen av kurset, skal vi forsøke å bruke språkmodellen på noen artikler. Oppsummeringer av dokumenter har betegnes ogte med sommarizing eller summarization, i koden. Det fins dedikert programvare for å lage oppsummeringer. Imidlertid har store språkmideller også begynt å beherske oppgaven ganske bra.
 
-Bilde fra `Retrieval-Augmented Generation <https://uio-library.github.io/LLM-course/4_RAG.html>`_ .
-Når brukeren stiller et spørsmål, vil det bli håndtert i to steg. Først blir det brukt til et søk i dokument databasen. Søkeresultatene blir så sendt sammen med spørsmålet til språkmodellen. Språkmodellen blir bedt om å svare på spørsmålene basert på konteksten i søkeresultatene.
+Nok en gang, skal vi bruke LangChain. Dette er et bibliotek som har åpen kildekode, og som brukes til å lage applikasjoner med store språkmodeller.
 
-Vi vil bruke `LangChain <https://www.langchain.com/>`_, et bibliotek med åpen kildekode, som brukes til å lage programmer med store språkmodeller.
+.. admonition:: Oppgave: Lage en ny notebook
+   :collapsible: closed
 
-Dette kapittelet er inspirert av artikkelen `Retrieval-Augmented Generation (RAG) with open-source Hugging Face LLMs using LangChain <https://medium.com/@jiangan0808/retrieval-augmented-generation-rag-with-open-source-hugging-face-llms-using-langchain-bd618371be9d>`.
+   Lag en ny Jupyter Notebook som du kaller "summarizing" ved å klikke i JupyterLabs filmeny, deretter "New" og "Notebook". Hvis du blir spurt om å velge en kjerne, velg “Python 3”. Gi den nye notebooken et navn ved å klikke JupyterLabs filmeny og så "Rename Notebook". Bruk navnet "summarizing".
 
-Exercise: Create new notebook
+.. admonition:: Oppgave: Stoppe gamle kjerner
+   :collapsible: closed
 
-Create a new Jupyter Notebook called RAG by clicking the File-menu in JupyterLab, and then New and Notebook. If you are asked to select a kernel, choose “Python 3”. Give the new notebook a name by clicking the File-menu in JupyterLab and then Rename Notebook. Use the name RAG.
+   JupyterLab bruker en Python kjerne til å kjøre kode i hver notebook. For å frigjøre GPU minne som ble brukt i forrige kapittel, bør du stoppe kjernen fra den notebooken. I menyen på venstre side i JupyterLab, klikk den børke sirkelen som har en hvit firkant inni. Klikk så KERNELS og Shut Down All.
 
-Exercise: Stop old kernels
+Dokumentenes plassering
+------------------------
 
-JupyterLab uses a Python kernel to execute the code in each notebook. To free up GPU memory used in the previous chapter, you should stop the kernel for that notebook. In the menu on the left side of JupyterLab, click the dark circle with a white square in it. Then click KERNELS and Shut Down All.
+Vi har samlet noen forskningsartikler som har Creative Commons lisens.  Vi skal nå forsøke å laste opp alle dokumentene fra mappen som defineres under. Hvis du foretrekker, kan du endre stien til en annen mappe::
 
-Document location
+   document_folder = '/fp/projects01/ec443/documents/terrorism'
 
-We have collected some papers licensed with a Creative Commons license. We will try to load all the documents in the folder defined below. If you prefer, you can change this to a different folder name.
+Språkmodellen
+---------------
 
-document_folder = '/fp/projects01/ec443/documents'
+Vi skal bruke modeller fra HuggingFace, en nettside som har verktøy og modeller til maskinlæring. Vi vil bruke språkmidellen meta-llama/Llama-3.2-3B-Instruct, som har åpne vekter og parametere. Modellen har et stort kontekstvindu, som betyr at vi kan bruke den til å behandle ganske store dokumenter. Likevel er den liten nok til at vi kan bruke den med den minste GPUen på Fox. Hvis du ønsker bedre resultater kan du bruke en av de litt større modellene på
+rundt 7B eller 8B parameters, eksempelvis mistralai/Ministral-8B-Instruct-2410.
 
-The Language Model
+Tokens kontra ord
+------------------
 
-We’ll use models from HuggingFace, a website that has tools and models for machine learning. We’ll use the open-weights LLM meta-llama/Llama-3.2-3B-Instruct, because it is small enough that we can use it with the smallest GPUs on Fox. If you run on a GPU with more memory, you can get better results with a larger model, such as mistralai/Ministral-8B-Instruct-2410.
-Model Storage Location
+Korte ord kan være ett enkelt token, men lengre ord består vanligvis av flere tokens. Maksimum dokumentstørrelse med denne modellen er derfor mindre enn 128k ord. Akkurat hvor mange ord man skal beregne per token kommer an på tokenizeren. Store språkmodeller har vanligvis egne tokenizere. Vi kommer til å bruke standard tokenizeren som 
+hører til den store språkmodellen vi til enhver tid bruker::
+   
+   import os
+   os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'
 
-We must download the model we want to use. Because of the requirements mentioned above, we run our program on the Fox high-performance computer at UiO. We must set the location where our program should store the models that we download from HuggingFace:
+For å fruke modellen, lager vi en pipeline. En pipeline ckan bestå av flere steg, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden HuggingFacePipeline.from_model_id(), som automatisk laster ned den spesifiserte modellen fra HuggingFace::
 
-import os
-os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'
+   from langchain_community.llms import HuggingFacePipeline
+   
+   llm = HuggingFacePipeline.from_model_id(
+       model_id='meta-llama/Llama-3.2-3B-Instruct',
+       task='text-generation',
+       device=0,
+       pipeline_kwargs={
+           'max_new_tokens': 1000,
+           #'do_sample': True,
+           #'temperature': 0.3,
+           #'num_beams': 4,
+       }
+   )
 
-Note
+Vi kan gi noen argumenter til pipelinen:
 
-If you run the program locally on your own computer, you might not need to set HF_HOME.
-The Model
+    ``model_id``: modellens navn fra HuggingFace
 
-Now, we are ready to download and use the model. To use the model, we create a pipeline. A pipeline can consist of several processing steps, but in this case, we only need one step. We can use the method HuggingFacePipeline.from_model_id(), which automatically downloads the specified model from HuggingFace.
+    ``task``: oppgaven du planlegger å bruke modellen til
 
-from langchain_community.llms import HuggingFacePipeline
+    ``device``: GPU maskinvaren som enheten bruker. Hvis vi ikke spesifiserer en enhet, vil GPU ikke brukes.
 
-llm = HuggingFacePipeline.from_model_id(
-    model_id='meta-llama/Llama-3.2-3B-Instruct',
-    task='text-generation',
-    device=0,
-    pipeline_kwargs={
-        'max_new_tokens': 500,
-        'do_sample': True,
-        'temperature': 0.3,
-        'num_beams': 4
-    }
-)
+    ``pipeline_kwargs``: (keyword arguments) tilleggsparametere som gis til modellen
 
-Pipeline Arguments
+         ``max_new_tokens``: max lengde på teksten som genereres
 
-We give some arguments to the pipeline:
+         ``do_sample``: som standard, det mest sannsynlige ordet som kan velges. Dette gjør outputten mer deterministisk. Vi kan sørge for en mer tilfeldig utvelging ved å angi hvor mange ord blant de mest sannsynlige som det skal velges mellom.
 
-    model_id: the name of the model on HuggingFace
+         ``temperature``: temperaturkontrollen er den statistiske distribusjonen til neste ord. Vanligvis et tall mellom 0 and 1. Lav temperatur øker sannsynligheten for vanlige ord. Høy temperatur øker muligheten for sjeldnere ord i output. Utviklerne har ofte en anbefaling hva angår temperatur. Vi bruker anbefalingen som et startpunkt.
 
-    task: the task you want to use the model for, other alternatives are translation and summarization
+         ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge 
+flere samtidige sekvenser, og deretter velge den beste til slutt. 
 
-    device: the GPU hardware device to use. If we don’t specify a device, no GPU will be used.
+Å lage en spørring
+-------------------
 
-    pipeline_kwargs: additional parameters that are passed to the model.
+Vi kan bruke en spørring til å fortelle språkmodellen hvordan vi ønsker at den skal svare. Spørringen bør inneholde etpar korte, konstruktive instruksjoner. Vi lager også plassholdere til konteksten. LangChain bytter disse ut med de aktuelle dokumentene når vi kjører en spørring::
 
-        max_new_tokens: maximum length of the generated text
+   from langchain.chains.combine_documents import create_stuff_documents_chain
+   from langchain.chains.llm import LLMChain
+   from langchain.prompts import PromptTemplate
+   
+   separator = '\nYour Summary:\n'
+   prompt_template = '''Write a summary of the following:
+   
+   {context}
+   ''' + separator
+   prompt = PromptTemplate(template=prompt_template,
+                           input_variables=['context'])
 
-        do_sample: by default, the most likely next word is chosen. This makes the output deterministic. We can introduce some randomness by sampling among the most likely words instead.
+Vi skiller oppsummeringen fra inputten
+----------------------------------------
 
-        temperature: the temperature controls the statistical distribution of the next word and is usually between 0 and 1. A low temperature increases the probability of common words. A high temperature increases the probability of outputting a rare word. Model makers often recommend a temperature setting, which we can use as a starting point.
+LangChain returnerer både input spørringen og svaret som genereres i en lang tekst. For å få bare oppsummeringen, må vi splitteoppsummeringen fra dokumentet som vi sendte som input. Til dette kan vi bruke LangChain output parseren som lyder navnet RegexParser::
 
-        num_beams: by default the model works with a single sequence of tokens/words. With beam search, the program builds multiple sequences at the same time, and then selects the best one in the end.
-
-Tip
-
-If you’re working on a computer with less memory, you might need to try a smaller model. You can try for example mistralai/Mistral-7B-Instruct-v0.3 or meta-llama/Llama-3.2-1B-Instruct. The latter has only 1 billion parameters, and might be possible to use on a laptop, depending on how much memory it has.
-Using the Language Model
-
-Now, the language model is ready to use. Let’s try to use only the language model without RAG. We can send it a query:
-
-query = 'What are the major contributions of the Trivandrum Observatory?'
-output = llm.invoke(query)
-print(output)
-
-This answer was generated based only on the information contained in the language model. To improve the accuracy of the answer, we can provide the language model with additional context for our query. To do that, we must load our document collection.
-The Vectorizer
-
-Text must be vectorized before it can be processed. Our HuggingFace pipeline will do that automatically for the large language model. But we must make a vectorizer for the search index for our documents database. We use a vectorizer called a word embedding model from HuggingFace. Again, the HuggingFace library will automatically download the model.
-
-from langchain_huggingface import HuggingFaceEmbeddings
-
-huggingface_embeddings = HuggingFaceEmbeddings(
-    model_name='BAAI/bge-m3',
-    model_kwargs = {'device': 'cuda:0'},
-    #or: model_kwargs={'device':'cpu'},
-    encode_kwargs={'normalize_embeddings': True}
-)
-
-Embeddings Arguments
-
-These are the arguments to the embedding model:
-
-    ‘model_name’: the name of the model on HuggingFace
-
-    ‘device’: the hardware device to use, either a GPU or CPU
-
-    ‘normalize_embeddings’: embeddings can have different magnitudes. Normalizing the embeddings makes their magnitudes equal.
-
-Loading the Documents
-
-We use DirectoryLoader from LangChain to load all in files in document_folder. documents_folder is defined above.
-
-from langchain_community.document_loaders import DirectoryLoader
-
-loader = DirectoryLoader(document_folder)
-documents = loader.load()
-
-The document loader loads each file as a separate document. We can check how long our documents are. For example, we can use the function max() to find the length of the longest document.
-
-print(f'Number of documents:', len(documents))
-print('Maximum document length: ', max([len(doc.page_content) for doc in documents]))
-
-We can examine one of the documents:
-
-print(documents[0])
-
-Splitting the Documents
-
-Since we are only using PDFs with quite short pages, we can use them as they are. Other, longer documents, for example the documents or webpages, we might need to split into chunks. We can use a text splitter from LangChain to split documents.
-
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-
-text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size = 700, #  Could be more, for larger models like mistralai/Ministral-8B-Instruct-2410
-    chunk_overlap  = 200,
-)
-documents = text_splitter.split_documents(documents)
-
-Text Splitter Arguments
-
-These are the arguments to the text splitter:
-
-    ‘chunk_size’: the number of tokens in each chunk. Not necessarily the same as the number of words.
-
-    ‘chunk_overlap’: the number of tokens that are included in both chunks where the text is split.
-
-We can check if the maximum document length has changed:
-
-print(f'Number of documents:', len(documents))
-print('Maximum document length: ', max([len(doc.page_content) for doc in documents]))
-
-The Document Index
-
-Next, we make a search index for our documents. We will use this index for the retrieval part of ‘Retrieval-Augmented Generation’. We use the open-source library FAISS (Facebook AI Similarity Search) through LangChain.
-
-from langchain_community.vectorstores import FAISS
-vectorstore = FAISS.from_documents(documents, huggingface_embeddings)
-
-FAISS can find documents that match a search query:
-
-relevant_documents = vectorstore.similarity_search(query)
-print(f'Number of documents found: {len(relevant_documents)}')
-
-We can display the first document:
-
-print(relevant_documents[0].page_content)
-
-For our RAG application we need to access the search engine through an interface called a retriever:
-
-retriever = vectorstore.as_retriever(search_kwargs={'k': 3})
-
-Retriever Arguments
-
-These are the arguments to the retriever:
-
-    ‘k’: the number of documents to return (kNN search)
-
-Making a Prompt
-
-We can use a prompt to tell the language model how to answer. The prompt should contain a few short, helpful instructions. In addition, we provide placeholders for the context and the question. LangChain replaces these with the actual context and question when we execute a query.
-
-from langchain.prompts import PromptTemplate
-
-prompt_template = '''You are an assistant for question-answering tasks.
-Use the following pieces of retrieved context to answer the question.
-Context: {context}
-
-Question: {input}
-
-Answer:
-'''
-
-prompt = PromptTemplate(template=prompt_template,
-                        input_variables=['context', 'input'])
-
-Making the «Chatbot»
-
-Now we can use the module create_retrieval_chain from LangChain to make an agent for answering questions, a «chatbot».
-
-from langchain.chains import create_retrieval_chain
-from langchain.chains.combine_documents import create_stuff_documents_chain
-
-combine_documents_chain = create_stuff_documents_chain(llm, prompt)
-rag_chain = create_retrieval_chain(retriever, combine_documents_chain)
-
-Asking the «Chatbot»
-
-Now, we can send our query to the chatbot.
-
-result = rag_chain.invoke({'input': query})
-
-print(result['answer'])
-
-Hopefully, this answer contains information from the context that wasn’t in the previous answer, when we queried only the language model without RAG.
-Exercises
-
-Exercise: Use your own documents
-
-Change the document location to your own documents folder. You can also upload more documents that you want to try with RAG. Change the query to a question that can be answered based on your documents. Try to the run the query and evaluate the answer.
-
-Exercise: Saving the document index
-
-The document index that we created with FAISS is only stored in memory. To avoid having to reindex the documents every time we load the notebook, we can save the index. Try to use the function vectorstore.save_local() to save the index. Then, you can load the index from file using the function FAISS.load_local(). See the documentation of the FAISS module in LangChain for further details.
-
-Exercise: Slurm Jobs
-
-When you have made a program that works, it’s more efficient to run the program as a batch job than in JupyterLab. This is because a JupyterLab session reserves a GPU all the time, also when you’re not running computations. Therefore, you should save your finished program as a regular Python program that you can schedule as a job.
-
-You can save your code by clicking the “File”-menu in JupyterLab, click on “Save and Export Notebook As…” and then click “Executable Script”. The result is the Python file RAG.py that is downloaded to your local computer. You will also need to download the slurm script LLM.slurm.
-
-Upload both the Python file RAG.py and the slurm script LLM.slurm to Fox. Then, start the job with this command:
-
-sbatch LLM.slurm RAG.py
-
-Slurm creates a log file for each job which is stored with a name like slurm-1358473.out. By default, these log files are stored in the current working directory where you run the sbatch command. If you want to store the log files somewhere else, you can add a line like below to your slurm script. Remember to change the username.
-
-#SBATCH --output=/fp/projects01/ec443/<username>/logs/slurm-%j.out
-
-
-
+   from langchain.output_parsers import RegexParser
+   import re
+   
+   output_parser = RegexParser(
+       regex=rf'{separator}(.*)',
+       output_keys=['summary'],
+       flags=re.DOTALL)
+
+Å lage kjede (chain)
+---------------------
+
+Dokument innlasteren laster hver PDF side som et separat ‘document’. Dette er delvis av tekniske grunner og på grunn av måten PDFer er organisert. Av denne grunn bruker vi en kjede som kalles create_stuff_documents_chain som (gjen)forener flere dokumenter til ett enkelt stort dokument::
+   
+   chain = create_stuff_documents_chain(
+           llm, prompt, output_parser=output_parser)
+   
+   Loading the Documents
+
+Vi bruker LangChain sin DirectoryLoader til å laste alle inn filer fra document_folder. document_folder er definert i starten av denne notebooken::
+
+   from langchain_community.document_loaders import DirectoryLoader
+   
+   loader = DirectoryLoader(document_folder)
+   documents = loader.load()
+   print('number of documents:', len(documents))
+
+Lage oppsummeringene
+----------------------
+
+Nå kan vi iterere over disse dokumentene med en for-loop::
+
+   summaries = {}
+   
+   for document in documents:
+       filename = document.metadata['source']
+       print('Summarizing document:', filename)
+       result = chain.invoke({"context": [document]})
+       summary = result['summary']
+       summaries[filename] = summary
+       print('Summary of file', filename)
+       print(summary)
+
+Lagre oppsummeringene til tekstfiler
+---------------------------------------
+
+Endelig, lagrer vi oppsummeringene for at vi senere skal kunne se dem. Vi lagrer oppsummeringene i filen summaries.txt. Hvis du vil, kan du lagre hver oppsummering i en egen fil::
+
+   with open('summaries.txt', 'w') as outfile:
+       for filename in summaries:
+           print('Summary of ', filename, file = outfile)
+           print(summaries[filename], file=outfile)
+           print(file=outfile)
+
+Bonusmateriale
+-----------------
+
+Lage en metaoppsumemring
+
+Oppgaver
+--------
+
+.. admonition:: Oppgave: Oppsummere dine egne dokumenter
+   :collapsible: closed
+
+   Lag en oppsummering av et dokument som du laster opp i din egen dokumentmappe. Les oppsummeringen nøye, og vurdere resultatet i lys av følgende momenter:
+   
+   * Er oppsummeringen nyttig?
+   * Er det noe som mangler i oppsummeringen?
+   * Er lengden adekvat?
+   
+.. admonition:: Oppgave: Tilpass oppsummeringen
+   :collapsible: closed
+
+   Prøv å lage noen tilpasninger til spørringen for å justere oppsummeringen som du fikk i den andre oppgaven. Kan du for eksempel spørre etter en lengre eller mer nøyaktig oppsummering? Eller kan du be modellen om å legge vekt på visse aspekter i teksten?
+
+.. admonition:: Oppgave: Lage en oppsummering på et annet språk
+   :collapsible: closed
+
+   Vi kan bruke modellen til å få en oppsummering på et annet språk enn originaldokumentet. Hvis for eksempel spørringen er på Norsk, vil svaret vanligvis også gis på Norsk. Du kan også spesifisere i spørringen hvilket sprøk du ønsker å ha oppsummeringen på. Bruk modellen til å lage en oppsummering av ditt dokument fra den andre oppgaven, på et annet språk enn det opprinnelig ble gitt.
+
+.. admonition:: Bonusoppgave: Slurmjobber
+   :collapsible: closed
+
+   Når du har laget et program som virker, er det mer effektivt å kjøre det som en batch jobb enn i JupyterLab. Dette er fordi JupyterLab reserverer en GPU hele tiden, også når den ikke kjører. Dette er grunnen til at det ferdige programmet bør lages til et Python program som legges inn i den ordinære køen på tungregningsklyngen. Du kan lagre koden ved å klikke Filmenyen i JupyterLab. Velg “Save and Export Notebook As…” og deretter “Executable Script”. Resultatet er Python filen summarizing.py som lastes ned lokalt på din maskin. Du trenger også å laste ned slurmskriptet :download:`LLM.slurm <LLM.slurm>`.
+   
+   Last opp både python filen summarizing.py og slurm skriptet LLM.slurm til Fox. Du starter jobben med denne kommandoen::
+   
+      sbatch LLM.slurm summarizing.py
+   
+   Slurm lager en logfil for hver jobb som deretter lagres med et navn som for eksempel slurm-1358473.out. Som standard blir disse log filene lagret i den samme arbeidskatalogen (working directory) som du kjører sbatch kommandoen fra. Dersom du ønsker å lagre loggen et annet sted, kan du legge til en linje som spesifiserer ønsket sted i slurm. Husk å endre brukernavnet::
+   
+    #SBATCH --output=/fp/projects01/ec443/<username>/logs/slurm-%j.out

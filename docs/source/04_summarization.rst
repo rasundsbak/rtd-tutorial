@@ -178,4 +178,18 @@ Oppgaver
 
    Vi kan bruke modellen til å få en oppsummering på et annet språk enn originaldokumentet. Hvis for eksempel spørringen er på Norsk, vil svaret vanligvis også gis på Norsk. Du kan også spesifisere i spørringen hvilket sprøk du ønsker å ha oppsummeringen på. Bruk modellen til å lage en oppsummering av ditt dokument fra den andre oppgaven, på et annet språk enn det opprinnelig ble gitt.
 
-Bonusoppgave: Slurmjobber
+.. admonition:: Bonusoppgave: Slurmjobber
+   :collapsible: closed
+
+
+Når du har laget et program som virker, er det mer effektivt å kjøre det som en batch jobb enn i JupyterLab. Dette er fordi JupyterLab reserverer en GPU hele tiden, også når den ikke kjører. Dette er grunnen til at det ferdige programmet bør lages til et Python program som legges inn i den ordinære køen på tungregningsklyngen. Du kan lagre koden ved å klikke Filmenyen i JupyterLab. Velg “Save and Export Notebook As…” og deretter “Executable Script”. Resultatet er Python filen summarizing.py som lastes ned lokalt på din maskin. Du trenger også å laste ned slurmskriptet LLM.slurm.
+
+See :download:`this example script <../example.py>`.
+
+Upload both the Python file summarizing.py and the slurm script LLM.slurm to Fox. Then, start the job with this command:
+
+sbatch LLM.slurm summarizing.py
+
+Slurm creates a log file for each job which is stored with a name like slurm-1358473.out. By default, these log files are stored in the current working directory where you run the sbatch command. If you want to store the log files somewhere else, you can add a line like below to your slurm script. Remember to change the username.
+
+#SBATCH --output=/fp/projects01/ec443/<username>/logs/slurm-%j.out

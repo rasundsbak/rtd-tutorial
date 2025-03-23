@@ -1,9 +1,8 @@
 .. _29 references:
 
-29 Literature
+Litteratur
 ==============
-.. index:: pipeline initialization, kwargs, transformers, LLM,
-
+.. index:: Kunstig intelligens, RAG, Gjenvinningsutvidet generasjon, Huggingface, maskinlæring, LLM, store språkmodeller
 
 Join our `Zotero group library here <https://www.zotero.org/groups/5856400/llm-course/library>`_
 

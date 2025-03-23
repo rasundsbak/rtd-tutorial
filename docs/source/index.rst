@@ -36,11 +36,9 @@ Læringsmål
    03_chatbot
    04_summarization
    05_rag
-   06_slurm
-   26_preparations
    28_problem_solving
    29_references
-   30_todo
+   26_preparations
 
 Indeks
 =================

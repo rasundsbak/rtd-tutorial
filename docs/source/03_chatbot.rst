@@ -119,7 +119,7 @@ Nok en gang importerer vi biblioteksfunksjonene som vi trenger::
 Deretter, lager vi en systemspørring som blir samtalens kontekst. Systemspørringen (system prompt) består av en systembeskjed til modellen og en plassholder til brukerens beskjed/ spørsmål::
 
    messages = [
-       SystemMessage("You are a pirate chatbot who always responds in pirate speak in whole sentences!"),
+       SystemMessage("You are a pirate chatbot who always responds in pirate speak in complete sentences!"),
        MessagesPlaceholder(variable_name="messages")
    ]
 

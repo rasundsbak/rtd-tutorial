@@ -22,9 +22,10 @@ Språkmodellen
 
 Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy om modeller til maskinlæring. Vi vil bruke LLM meta-llama/Llama-3.2-1B, som er en modell som har åpne vekter og parametere. Dette er en liten modell med bare 1 milliard parametere. Den bør være mulig å bruke på de fleste bærbare maskiner.
 
-..note::
+
+.. note:: **Typer av modeller:**
    
-   **Typer av modeller:**  meta-llama/Llama-3.2-1B er en basismodell. Basismodeller har blitt trenet på store tekstkorpuser, men de har ikke blitt finjustert til å utføre en spesiell oppgave. Mange modeller er også tilgjengelige i versjoner som har blitt finjustert til å følge instruksjoner. Disse kalles instruct eller chat modeller. Instruct og Chat modeller passer bedre til å lage chatbots med.
+   meta-llama/Llama-3.2-1B er en basismodell. Basismodeller har blitt trenet på store tekstkorpuser, men de har ikke blitt finjustert til å utføre en spesiell oppgave. Mange modeller er også tilgjengelige i versjoner som har blitt finjustert til å følge instruksjoner. Disse kalles instruct eller chat modeller. Instruct og Chat modeller passer bedre til å lage chatbots med.
 
 Modellens plassering
 ------------------------

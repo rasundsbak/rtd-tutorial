@@ -92,43 +92,44 @@ Nå er vi klare til å laste opp og bruke modellen. For å gjøre dette, lager v
 
 .. tip::
 
-If you’re working on a computer with less memory, you might need to try a smaller model. You can try for example mistralai/Mistral-7B-Instruct-v0.3 or meta-llama/Llama-3.2-1B-Instruct. The latter has only 1 billion parameters, and might be possible to use on a laptop, depending on how much memory it has.
-Using the Language Model
+   Hvis du jobber på en maskin med mindre minne, trenger du kanskje en mindre modell. Du kan prøve for eksempel ``mistralai/Mistral-7B-Instruct-v0.3`` eller ``meta-llama/Llama-3.2-1B-Instruct``. Sistnevnte har bare 1 miliard parametere, og det kan være mulig å bruke den på en bærbar maskin, avhengig av hvor mye minnekapasitet den har.
 
 Språkmodellen i bruk
 ----------------------
-Nå er språkmidellen klar til bruk. Let’s try to use only the language model without RAG. We can send it a query:
+Nå er språkmodellen klar til bruk. La oss forsøke å bruke den uten RAG. Vi kan sende en spørring::
 
+   query = 'What are the major contributions of the Trivandrum Observatory?'
+   output = llm.invoke(query)
+   print(output)
 
-query = 'What are the major contributions of the Trivandrum Observatory?'
-output = llm.invoke(query)
-print(output)
+Svaret ble generert på grunnlag av informasjonen som befinner seg fra før av i språkmodellen. For å forbedre presisjonen i svaret, kan vi sørge for at språkmodellen får mer kontekst til spørringen. For å gjøre dette, må vi laste inn dokumentsamlingen.
 
-This answer was generated based only on the information contained in the language model. To improve the accuracy of the answer, we can provide the language model with additional context for our query. To do that, we must load our document collection.
-The Vectorizer
+Vektorisering
+--------------
 
-Text must be vectorized before it can be processed. Our HuggingFace pipeline will do that automatically for the large language model. But we must make a vectorizer for the search index for our documents database. We use a vectorizer called a word embedding model from HuggingFace. Again, the HuggingFace library will automatically download the model.
+Tekst må vektoriseres før den kan bli bearbeidet. Vår HuggingFace pipeline vil gjøre det automatisk for språkmodellen, men vi må lage en vektorisator til søkeindeksen som vi skal bruke til dokumentdatabasen vår. Vi bruker en vektorisator som på engelsk kalles en word embedding model fra HuggingFace. HuggingFace biblioteket vil automatisk laste ned modellen::
+   
+   from langchain_huggingface import HuggingFaceEmbeddings
+   
+   huggingface_embeddings = HuggingFaceEmbeddings(
+       model_name='BAAI/bge-m3',
+       model_kwargs = {'device': 'cuda:0'},
+       #or: model_kwargs={'device':'cpu'},
+       encode_kwargs={'normalize_embeddings': True}
+   )
 
-from langchain_huggingface import HuggingFaceEmbeddings
+.. note:: Embeddingens argumenter
+   
+   Dette er argumentene til embedding modellen:
+   
+       ‘model_name’: modellens navn fra HuggingFace
+   
+       ‘device’: maskinvaren som skal brukes, enten GPU eller CPU
+   
+       ‘normalize_embeddings’: embeddinger kan ha forskjellige størrelser. Når embeddingen normaliseres betyr det at man gjør størrelsen lik for alle.
 
-huggingface_embeddings = HuggingFaceEmbeddings(
-    model_name='BAAI/bge-m3',
-    model_kwargs = {'device': 'cuda:0'},
-    #or: model_kwargs={'device':'cpu'},
-    encode_kwargs={'normalize_embeddings': True}
-)
-
-Embeddings Arguments
-
-These are the arguments to the embedding model:
-
-    ‘model_name’: the name of the model on HuggingFace
-
-    ‘device’: the hardware device to use, either a GPU or CPU
-
-    ‘normalize_embeddings’: embeddings can have different magnitudes. Normalizing the embeddings makes their magnitudes equal.
-
-Loading the Documents
+Lasting av dokumentene
+------------------------
 
 We use DirectoryLoader from LangChain to load all in files in document_folder. documents_folder is defined above.
 

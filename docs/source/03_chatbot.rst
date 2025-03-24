@@ -5,7 +5,7 @@ Spørring av Store Språkmodeller (Chatboter)
 
 .. index:: chatbot, språkmodeller, prompt, spørringer
 
-  I denne første delen av kurset skal vi sende en spørring til en språkmidell.  Vi vil få et output. Vi kommer til å bruke LangChain, et bibliotek med åpen kildekode, som er til å lage applikasjoner med store språkmideller. 
+I denne første delen av kurset skal vi sende en spørring til en språkmidell.  Vi vil få et output. Vi kommer til å bruke LangChain, et bibliotek med åpen kildekode, som er til å lage applikasjoner med store språkmideller. 
 
 .. admonition:: Oppgave: Lag en ny notebook
    :collapsible: closed
@@ -22,9 +22,10 @@ Språkmodellen
 
 Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy om modeller til maskinlæring. Vi vil bruke LLM meta-llama/Llama-3.2-1B, som er en modell som har åpne vekter og parametere. Dette er en liten modell med bare 1 milliard parametere. Den bør være mulig å bruke på de fleste bærbare maskiner.
 
-..note::
+
+.. note:: **Typer av modeller:**
    
-   **Typer av modeller:**  meta-llama/Llama-3.2-1B er en basismodell. Basismodeller har blitt trenet på store tekstkorpuser, men de har ikke blitt finjustert til å utføre en spesiell oppgave. Mange modeller er også tilgjengelige i versjoner som har blitt finjustert til å følge instruksjoner. Disse kalles instruct eller chat modeller. Instruct og Chat modeller passer bedre til å lage chatbots med.
+   meta-llama/Llama-3.2-1B er en basismodell. Basismodeller har blitt trenet på store tekstkorpuser, men de har ikke blitt finjustert til å utføre en spesiell oppgave. Mange modeller er også tilgjengelige i versjoner som har blitt finjustert til å følge instruksjoner. Disse kalles instruct eller chat modeller. Instruct og Chat modeller passer bedre til å lage chatbots med.
 
 Modellens plassering
 ------------------------
@@ -103,8 +104,7 @@ Her kommer en oppsummering av pipelinens/ rørledningens argumenter:
 
         ``temperature``: temperaturkontrollen er den statistiske distribusjonen til neste ord. Vanligvis et tall mellom 0 and 1. Lav temperatur øker sannsynligheten for vanlige ord. Høy temperatur øker muligheten for sjeldnere ord i output. De som utvikler modellene har ofte en egen anbefaling hva angår temperatur. Vi bruker anbefalingen som et startpunkt.
 
-        ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge 
-flere samtidige sekvenser, og deretter velge den beste til slutt. 
+        ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge flere samtidige sekvenser, og deretter velge den beste til slutt. 
 
 Å lage en spørring
 -------------------
@@ -119,7 +119,7 @@ Nok en gang importerer vi biblioteksfunksjonene som vi trenger::
 Deretter, lager vi en systemspørring som blir samtalens kontekst. Systemspørringen (system prompt) består av en systembeskjed til modellen og en plassholder til brukerens beskjed/ spørsmål::
 
    messages = [
-       SystemMessage("You are a pirate chatbot who always responds in pirate speak in whole sentences!"),
+       SystemMessage("You are a pirate chatbot who always responds in pirate speak in complete sentences!"),
        MessagesPlaceholder(variable_name="messages")
    ]
 
@@ -139,7 +139,7 @@ Chatbotten er ferdig, og vi kan teste den ved å påkalle den (invoke)::
 
 .. code-block:: unset
 
-   System: You are a pirate chatbot who always responds in pirate speak in whole sentences!
+   System: You are a pirate chatbot who always responds in pirate speak in complete sentences!
    Human: Who are you? What do you do?
    Pirate: I am a pirate chatbot who always responds in pirate speak in whole sentences!
    Human: What do you do?

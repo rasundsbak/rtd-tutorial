@@ -1,7 +1,7 @@
 .. _26_preparations:
 
-01 Forberedelser: Detaljert beskrivelse
-=========================================
+Forberedelser: Detaljert beskrivelse
+======================================
 
 .. index:: autentisering, 2FA, Microsoft Authenticator
 

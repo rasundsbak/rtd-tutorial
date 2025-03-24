@@ -9,9 +9,7 @@ Dette er et instoduksjonskurs hvor du lærer å kjøre store språkmodeller på 
 
 I dette kurset bruker vi Python programmering til å kjøre språkmodellene. Det er derfor nødvendig å ha grunnleggende programmeringskunnskaper. Hvis programmering er nytt for deg, anbefaler vi at du programmerer litt før du kommer på kurs. Eksempelvis kurset `Plotting and Programming in Python <https://swcarpentry.github.io/python-novice-gapminder/>`_, som avholdes av Senter for Digital Forskningsstøtte (DSC), ved Universitetsbiblioteket, UiO.
 
-Dette kuret består av fire kapitler. 
-
-mer her, men oversett kapitlene først:
+Kurset består av fem kapitler. I :doc:`intersphinx` Getting Started, we log on to Fox. You will need a user account at the University of Oslo and a smart phone or other means of using two factor authentication (2FA).
 
 
 In Installing Software, we install the software that we will need for this course.

@@ -49,53 +49,55 @@ Vi må laste ned modellen som vi skal bruke. Vi kjører programmet på tungregni
 
 .. note::
 
-   Hvis du kjører programmene lokalt på din egen datamaskin, trenger du kanskje ikke sette HF_HOME.
+   Hvis du kjører programmene lokalt på din egen datamaskin, trenger du kanskje ikke sette ``HF_HOME``.
 
 Modellen
 ---------
 
-Now, we are ready to download and use the model. To use the model, we create a pipeline. A pipeline can consist of several processing steps, but in this case, we only need one step. We can use the method HuggingFacePipeline.from_model_id(), which automatically downloads the specified model from HuggingFace.
+Nå er vi klare til å laste opp og bruke modellen. For å gjøre dette, lager vi en "pipeline". En pipeline kan bestå av flere steg, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden ``HuggingFacePipeline.from_model_id()``, som automatisk laster den spesifiserte modellen fra HuggingFace::
 
 from langchain_community.llms import HuggingFacePipeline
 
-llm = HuggingFacePipeline.from_model_id(
-    model_id='meta-llama/Llama-3.2-3B-Instruct',
-    task='text-generation',
-    device=0,
-    pipeline_kwargs={
-        'max_new_tokens': 500,
-        'do_sample': True,
-        'temperature': 0.3,
-        'num_beams': 4
-    }
-)
+   llm = HuggingFacePipeline.from_model_id(
+       model_id='meta-llama/Llama-3.2-3B-Instruct',
+       task='text-generation',
+       device=0,
+       pipeline_kwargs={
+           'max_new_tokens': 500,
+           'do_sample': True,
+           'temperature': 0.3,
+           'num_beams': 4
+       }
+   )
 
-Pipeline Arguments
+.. note:: Pipeline argumenter
 
-We give some arguments to the pipeline:
+   Vi kan gi noen argumenter til pipelinen:
+   
+       ``model_id``: modellens navn fra HuggingFace
+   
+       ``task``: oppgaven du planlegger å bruke modellen til
+   
+       ``device``: GPU maskinvaren som enheten bruker. Hvis vi ikke spesifiserer en enhet, vil GPU ikke brukes.
+   
+       ``pipeline_kwargs``: (keyword arguments) tilleggsparametere som gis til modellen
+   
+            ``max_new_tokens``: max lengde på teksten som genereres
+   
+            ``do_sample``: som standard, det mest sannsynlige ordet som kan velges. Dette gjør outputten mer deterministisk. Vi kan sørge for en mer tilfeldig utvelging ved å angi hvor mange ord blant de mest sannsynlige som det skal velges mellom.
+   
+            ``temperature``: temperaturkontrollen er den statistiske distribusjonen til neste ord. Vanligvis et tall mellom 0 and 1. Lav temperatur øker sannsynligheten for vanlige ord. Høy temperatur øker muligheten for sjeldnere ord i output. Utviklerne har ofte en anbefaling hva angår temperatur. Vi bruker anbefalingen som et startpunkt.
+   
+            ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge flere samtidige sekvenser, og deretter velge den beste til slutt.
 
-    model_id: the name of the model on HuggingFace
-
-    task: the task you want to use the model for, other alternatives are translation and summarization
-
-    device: the GPU hardware device to use. If we don’t specify a device, no GPU will be used.
-
-    pipeline_kwargs: additional parameters that are passed to the model.
-
-        max_new_tokens: maximum length of the generated text
-
-        do_sample: by default, the most likely next word is chosen. This makes the output deterministic. We can introduce some randomness by sampling among the most likely words instead.
-
-        temperature: the temperature controls the statistical distribution of the next word and is usually between 0 and 1. A low temperature increases the probability of common words. A high temperature increases the probability of outputting a rare word. Model makers often recommend a temperature setting, which we can use as a starting point.
-
-        num_beams: by default the model works with a single sequence of tokens/words. With beam search, the program builds multiple sequences at the same time, and then selects the best one in the end.
-
-Tip
+.. tip::
 
 If you’re working on a computer with less memory, you might need to try a smaller model. You can try for example mistralai/Mistral-7B-Instruct-v0.3 or meta-llama/Llama-3.2-1B-Instruct. The latter has only 1 billion parameters, and might be possible to use on a laptop, depending on how much memory it has.
 Using the Language Model
 
-Now, the language model is ready to use. Let’s try to use only the language model without RAG. We can send it a query:
+Språkmodellen i bruk
+----------------------
+Nå er språkmidellen klar til bruk. Let’s try to use only the language model without RAG. We can send it a query:
 
 
 query = 'What are the major contributions of the Trivandrum Observatory?'
@@ -182,7 +184,6 @@ relevant_documents = vectorstore.similarity_search(query)
 print(f'Number of documents found: {len(relevant_documents)}')
 
 We can display the first document:
-
 
 print(relevant_documents[0].page_content)
 

@@ -98,6 +98,7 @@ Using the Language Model
 
 Now, the language model is ready to use. Let’s try to use only the language model without RAG. We can send it a query:
 
+
 query = 'What are the major contributions of the Trivandrum Observatory?'
 output = llm.invoke(query)
 print(output)
@@ -182,6 +183,7 @@ relevant_documents = vectorstore.similarity_search(query)
 print(f'Number of documents found: {len(relevant_documents)}')
 
 We can display the first document:
+
 
 print(relevant_documents[0].page_content)
 

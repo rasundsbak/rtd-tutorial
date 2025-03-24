@@ -5,7 +5,7 @@ Spørring av Store Språkmodeller (Chatboter)
 
 .. index:: chatbot, språkmodeller, prompt, spørringer
 
-  I denne første delen av kurset skal vi sende en spørring til en språkmidell.  Vi vil få et output. Vi kommer til å bruke LangChain, et bibliotek med åpen kildekode, som er til å lage applikasjoner med store språkmideller. 
+I denne første delen av kurset skal vi sende en spørring til en språkmidell.  Vi vil få et output. Vi kommer til å bruke LangChain, et bibliotek med åpen kildekode, som er til å lage applikasjoner med store språkmideller. 
 
 .. admonition:: Oppgave: Lag en ny notebook
    :collapsible: closed

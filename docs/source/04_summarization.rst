@@ -73,8 +73,7 @@ Vi kan gi noen argumenter til pipelinen:
 
          ``temperature``: temperaturkontrollen er den statistiske distribusjonen til neste ord. Vanligvis et tall mellom 0 and 1. Lav temperatur øker sannsynligheten for vanlige ord. Høy temperatur øker muligheten for sjeldnere ord i output. Utviklerne har ofte en anbefaling hva angår temperatur. Vi bruker anbefalingen som et startpunkt.
 
-         ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge 
-flere samtidige sekvenser, og deretter velge den beste til slutt. 
+         ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge flere samtidige sekvenser, og deretter velge den beste til slutt. 
 
 Å lage en spørring
 -------------------
@@ -84,6 +83,8 @@ Vi kan bruke en spørring til å fortelle språkmodellen hvordan vi ønsker at d
    from langchain.chains.combine_documents import create_stuff_documents_chain
    from langchain.chains.llm import LLMChain
    from langchain.prompts import PromptTemplate
+
+::
    
    separator = '\nYour Summary:\n'
    prompt_template = '''Write a summary of the following:
@@ -93,8 +94,8 @@ Vi kan bruke en spørring til å fortelle språkmodellen hvordan vi ønsker at d
    prompt = PromptTemplate(template=prompt_template,
                            input_variables=['context'])
 
-Vi skiller oppsummeringen fra inputten
-----------------------------------------
+Skille oppsummeringen fra inputten
+-------------------------------------
 
 LangChain returnerer både input spørringen og svaret som genereres i en lang tekst. For å få bare oppsummeringen, må vi splitteoppsummeringen fra dokumentet som vi sendte som input. Til dette kan vi bruke LangChain output parseren som lyder navnet RegexParser::
 
@@ -109,14 +110,15 @@ LangChain returnerer både input spørringen og svaret som genereres i en lang t
 Å lage kjede (chain)
 ---------------------
 
-Dokument innlasteren laster hver PDF side som et separat ‘document’. Dette er delvis av tekniske grunner og på grunn av måten PDFer er organisert. Av denne grunn bruker vi en kjede som kalles create_stuff_documents_chain som (gjen)forener flere dokumenter til ett enkelt stort dokument::
+Dokument innlasteren laster hver PDF side som et separat ‘document’. Dette er delvis av tekniske grunner og på grunn av måten PDFer er organisert. Av denne grunn bruker vi en kjede som kalles ``create_stuff_documents_chain`` som (gjen)forener flere dokumenter til ett enkelt stort dokument::
    
    chain = create_stuff_documents_chain(
            llm, prompt, output_parser=output_parser)
    
-   Loading the Documents
+Laste inn dokumentene
+------------------------
 
-Vi bruker LangChain sin DirectoryLoader til å laste alle inn filer fra document_folder. document_folder er definert i starten av denne notebooken::
+Vi bruker LangChain sin ``DirectoryLoader`` til å laste alle inn filer fra ``document_folder``. ``document_folder`` er definert i starten av denne Notebooken::
 
    from langchain_community.document_loaders import DirectoryLoader
    
@@ -225,3 +227,4 @@ Oppgaver
    Slurm lager en logfil for hver jobb som deretter lagres med et navn som for eksempel slurm-1358473.out. Som standard blir disse log filene lagret i den samme arbeidskatalogen (working directory) som du kjører sbatch kommandoen fra. Dersom du ønsker å lagre loggen et annet sted, kan du legge til en linje som spesifiserer ønsket sted i slurm. Husk å endre brukernavnet::
    
     #SBATCH --output=/fp/projects01/ec443/<username>/logs/slurm-%j.out
+

@@ -185,7 +185,6 @@ print(f'Number of documents found: {len(relevant_documents)}')
 
 We can display the first document:
 
-
 print(relevant_documents[0].page_content)
 
 For our RAG application we need to access the search engine through an interface called a retriever:

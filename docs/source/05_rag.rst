@@ -56,19 +56,19 @@ Modellen
 
 Nå er vi klare til å laste opp og bruke modellen. For å gjøre dette, lager vi en "pipeline". En pipeline kan bestå av flere steg, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden ``HuggingFacePipeline.from_model_id()``, som automatisk laster den spesifiserte modellen fra HuggingFace::
 
-from langchain_community.llms import HuggingFacePipeline
-
+   from langchain_community.llms import HuggingFacePipeline
+   
    llm = HuggingFacePipeline.from_model_id(
-       model_id='meta-llama/Llama-3.2-3B-Instruct',
-       task='text-generation',
-       device=0,
-       pipeline_kwargs={
-           'max_new_tokens': 500,
-           'do_sample': True,
-           'temperature': 0.3,
-           'num_beams': 4
-       }
-   )
+         model_id='meta-llama/Llama-3.2-3B-Instruct',
+         task='text-generation',
+         device=0,
+         pipeline_kwargs={
+            'max_new_tokens': 500,
+            'do_sample': True,
+            'temperature': 0.3,
+            'num_beams': 4
+          }
+      )
 
 .. note:: Pipeline argumenter
 

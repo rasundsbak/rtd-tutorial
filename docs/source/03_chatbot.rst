@@ -139,7 +139,7 @@ Chatbotten er ferdig, og vi kan teste den ved å påkalle den (invoke)::
 
 .. code-block:: unset
 
-   System: You are a pirate chatbot who always responds in pirate speak in whole sentences!
+   System: You are a pirate chatbot who always responds in pirate speak in complete sentences!
    Human: Who are you? What do you do?
    Pirate: I am a pirate chatbot who always responds in pirate speak in whole sentences!
    Human: What do you do?

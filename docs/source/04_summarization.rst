@@ -83,6 +83,8 @@ Vi kan bruke en spørring til å fortelle språkmodellen hvordan vi ønsker at d
    from langchain.chains.combine_documents import create_stuff_documents_chain
    from langchain.chains.llm import LLMChain
    from langchain.prompts import PromptTemplate
+
+::
    
    separator = '\nYour Summary:\n'
    prompt_template = '''Write a summary of the following:
@@ -92,8 +94,8 @@ Vi kan bruke en spørring til å fortelle språkmodellen hvordan vi ønsker at d
    prompt = PromptTemplate(template=prompt_template,
                            input_variables=['context'])
 
-Vi skiller oppsummeringen fra inputten
-----------------------------------------
+Skille oppsummeringen fra inputten
+-------------------------------------
 
 LangChain returnerer både input spørringen og svaret som genereres i en lang tekst. For å få bare oppsummeringen, må vi splitteoppsummeringen fra dokumentet som vi sendte som input. Til dette kan vi bruke LangChain output parseren som lyder navnet RegexParser::
 
@@ -108,14 +110,15 @@ LangChain returnerer både input spørringen og svaret som genereres i en lang t
 Å lage kjede (chain)
 ---------------------
 
-Dokument innlasteren laster hver PDF side som et separat ‘document’. Dette er delvis av tekniske grunner og på grunn av måten PDFer er organisert. Av denne grunn bruker vi en kjede som kalles create_stuff_documents_chain som (gjen)forener flere dokumenter til ett enkelt stort dokument::
+Dokument innlasteren laster hver PDF side som et separat ‘document’. Dette er delvis av tekniske grunner og på grunn av måten PDFer er organisert. Av denne grunn bruker vi en kjede som kalles ``create_stuff_documents_chain`` som (gjen)forener flere dokumenter til ett enkelt stort dokument::
    
    chain = create_stuff_documents_chain(
            llm, prompt, output_parser=output_parser)
    
-   Loading the Documents
+Laste inn dokumentene
+------------------------
 
-Vi bruker LangChain sin DirectoryLoader til å laste alle inn filer fra document_folder. document_folder er definert i starten av denne notebooken::
+Vi bruker LangChain sin ``DirectoryLoader`` til å laste alle inn filer fra ``document_folder``. ``document_folder`` er definert i starten av denne Notebooken::
 
    from langchain_community.document_loaders import DirectoryLoader
    

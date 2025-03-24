@@ -2,12 +2,13 @@
 
 Retrieval-Augmented Generation (RAG)
 ======================================
-.. index:: RAG, dokumenter, retrieval augmented generation, gjenfinningsutvidet tekstgenerering
 
-På norsk: Gjenfinningsutvidet tekstgenerering
-----------------------------------------------
+.. index:: RAG, dokumenter, retrieval augmented generation, gjenfinningsforsterket tekstgenerering
 
-Gjenfinningsutvidet tekstgenerering eller RAG er en måte å inkludere dokumenter for å gi kontekst til spørsmål som man stiller en språkmodell. Dette kan redusere tendensen til hallusinering eller andre feil i svarene. Et system for gjenfinningsutvidet tekstgenerering har to hoveddeler. For det første en dokumentdatabase med søkeindeks og for det andre en stor språkmodell. Tegningen under viser RAG programmets struktur.
+På norsk: Gjenfinningsforsterket tekstgenerering
+-------------------------------------------------
+
+Gjenfinningsforsterket tekstgenerering eller RAG er en måte å inkludere dokumenter for å gi kontekst til spørsmål som man stiller en språkmodell. Dette kan redusere tendensen til hallusinering eller andre feil i svarene. Et system for gjenfinningsutvidet tekstgenerering har to hoveddeler. For det første en dokumentdatabase med søkeindeks og for det andre en stor språkmodell. Tegningen under viser RAG programmets struktur.
 
 .. image:: rag_2025.png
 
@@ -27,26 +28,32 @@ Vi vil bruke `LangChain <https://www.langchain.com/>`_, et bibliotek med åpen k
 
     JupyterLab bruker en Python kjerne til å kjøre koden i hver notebook. For å frigjøre GPU minne som ble brukt i forrige kapittel, bør du stoppe kjernen for den notebooken. I menyen på venstre side av JupyterLab, velg den mørke sirkelen med en hvit firkant i. Deretter velger du KERNELS og "Shut Down All".
 
-Document location
+Dokumentets plassering
+------------------------
 
-We have collected some papers licensed with a Creative Commons license. We will try to load all the documents in the folder defined below. If you prefer, you can change this to a different folder name.
+Vi har samlet noen artikler som har Creative Commons lisens. Vi skal forsøke å laste opp alle dokumentene fra mappen som det vises til under. Hvis du vil, kan du endre stien til din egen mappe på hjemmeområdet::
 
-document_folder = '/fp/projects01/ec443/documents'
+   document_folder = '/fp/projects01/ec443/documents'
 
-The Language Model
+Språkmodellen
+---------------
 
-We’ll use models from HuggingFace, a website that has tools and models for machine learning. We’ll use the open-weights LLM meta-llama/Llama-3.2-3B-Instruct, because it is small enough that we can use it with the smallest GPUs on Fox. If you run on a GPU with more memory, you can get better results with a larger model, such as mistralai/Ministral-8B-Instruct-2410.
-Model Storage Location
+Vi skal bruke modeller fra HuggingFace, en nettside som har verktøy og modeller til maskinlæring. Vi kommer til å bruke språkmodellen meta-llama/Llama-3.2-3B-Instruct, fordi den er liten nok til at vi kan bruke den med de minste GPUene på Fox. Hvis du kjører på en GPU med mer minne, kan du få bedre resultater med en større modell, som for eksempel mistralai/Ministral-8B-Instruct-2410.
 
-We must download the model we want to use. Because of the requirements mentioned above, we run our program on the Fox high-performance computer at UiO. We must set the location where our program should store the models that we download from HuggingFace:
+Modellens plassering
+---------------------
 
-import os
-os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'
+Vi må laste ned modellen som vi skal bruke. Vi kjører programmet på tungregningsklyngen Fox ved UiO. Vi må peke på stedet der vårt program skal lagre modellene som vi laster ned fra HuggingFace::
 
-Note
+   import os
+   os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'
 
-If you run the program locally on your own computer, you might not need to set HF_HOME.
-The Model
+.. note::
+
+   Hvis du kjører programmene lokalt på din egen datamaskin, trenger du kanskje ikke sette HF_HOME.
+
+Modellen
+---------
 
 Now, we are ready to download and use the model. To use the model, we create a pipeline. A pipeline can consist of several processing steps, but in this case, we only need one step. We can use the method HuggingFacePipeline.from_model_id(), which automatically downloads the specified model from HuggingFace.
 

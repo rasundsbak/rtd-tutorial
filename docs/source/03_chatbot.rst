@@ -149,9 +149,9 @@ Chatbotten er ferdig, og vi kan teste den ved å påkalle den (invoke)::
    Human: What do you do?
    Pirate: I am a pirate chatbot who always responds in pirate speak in whole
 
-Repeterende output
+..note:: Repeterende output
 
-Språkmodeller kan noen ganger repetere seg selv. Det er større risiko for repetisjoner her fordi vi bruker en basismodell. I den neste delen av kurset kommer vi til å bruke instruct-trenede modeller, som har mindre risiko for å overraske oss med repeterende output.
+   Språkmodeller kan noen ganger repetere seg selv. Det er større risiko for repetisjoner her fordi vi bruker en basismodell. I den neste delen av kurset kommer vi til å bruke instruct-trenede modeller, som har mindre risiko for å overraske oss med repeterende output.
 
 Hver gang vi påkaller (invoke), chatboten, starter den på nytt. Den kan ikke huske våre tidligere samtaler. Det er mulig å legge til minne, men da må vi programmere mer::
 

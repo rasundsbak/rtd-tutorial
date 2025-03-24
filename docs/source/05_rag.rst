@@ -17,7 +17,6 @@ Når brukeren stiller et spørsmål, vil det bli håndtert i to steg. Først bli
 
 Vi vil bruke `LangChain <https://www.langchain.com/>`_, et bibliotek med åpen kildekode, som brukes til å lage programmer med store språkmodeller. Dette kapittelet er inspirert av artikkelen `Retrieval-Augmented Generation (RAG) with open-source Hugging Face LLMs using LangChain <https://medium.com/@jiangan0808/retrieval-augmented-generation-rag-with-open-source-hugging-face-llms-using-langchain-bd618371be9d>`.
 
-
 .. admonition:: Oppgave: Lage en ny notebook
    :collapsible: closed
 

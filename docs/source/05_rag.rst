@@ -2,6 +2,7 @@
 
 Retrieval-Augmented Generation (RAG)
 ======================================
+
 .. index:: RAG, dokumenter, retrieval augmented generation, gjenfinningsforsterket tekstgenerering
 
 På norsk: Gjenfinningsforsterket tekstgenerering

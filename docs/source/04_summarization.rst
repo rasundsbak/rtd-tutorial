@@ -154,7 +154,42 @@ Endelig, lagrer vi oppsummeringene for at vi senere skal kunne se dem. Vi lagrer
 Bonusmateriale
 -----------------
 
-Lage en metaoppsumemring
+
+.. admonition:: Oppgave: Lage en metaoppsumemring
+   :collapsible: closed
+
+   Vi kan også forsøke å generere en oppsummering for alle dokumentene. Dette vil ikke gi så mye mening dersom dokumentene har helt forskjellige temaer. Hvis dokumentene henger sammen, eller har samme tema, kan det gi mening å lage en metaoppsummering.
+   
+   Først må vi importere noen funksjoner::
+   
+      from langchain.schema.document import Document
+      from langchain.prompts import ChatPromptTemplate
+   
+   Vi lager en ny spørring, med mer spesifikke instruksjoner enn vi gjorde med de vanlige oppsummeringene::
+   
+      total_prompt = ChatPromptTemplate.from_messages(
+          [("system", "Below is a list of summaries of some papers. Make a total summary all the information in all the papers:\n\n{context}\n\nTotal Summary:")]
+      )
+   Så kan vi lage en ny lenke/ chain basert på Språkmodellen og spørringen::
+   
+      total_chain = create_stuff_documents_chain(llm, total_prompt)
+      
+   This chain needs a list of ``Document`` objects as input::
+      
+      list_of_summaries = [Document(summary) for summary in summaries.values()]
+   
+   Nå kan vi påkalle (invoke) lenken (chain) med dene listen som input, og deretter skrive resultatet med print::
+   
+      total_summary = total_chain.invoke({"context": list_of_summaries})
+      
+      print('Summary of all the summaries:')
+      print(total_summary)
+   
+   Til slutt lagrer vi meta oppsummeringen i en tekstfil::
+   
+      with open('total_summary.txt', 'w') as outfile:
+          print(total_summary, file=outfile)
+
 
 Oppgaver
 --------

@@ -25,7 +25,7 @@ Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy om
 
 .. note:: **Typer av modeller:**
    
-   meta-llama/Llama-3.2-1B er en basismodell. Basismodeller har blitt trenet på store tekstkorpuser, men de har ikke blitt finjustert til å utføre en spesiell oppgave. Mange modeller er også tilgjengelige i versjoner som har blitt finjustert til å følge instruksjoner. Disse kalles instruct eller chat modeller. Instruct og Chat modeller passer bedre til å lage chatbots med.
+   ``meta-llama/Llama-3.2-1B`` er en basismodell. Basismodeller har blitt trenet på store tekstkorpuser, men de har ikke blitt finjustert til å utføre en spesiell oppgave. Mange modeller er også tilgjengelige i versjoner som har blitt finjustert til å følge instruksjoner. Disse kalles instruct eller chat modeller. Instruct og Chat modeller passer bedre til å lage chatbots med.
 
 Modellens plassering
 ------------------------
@@ -39,7 +39,7 @@ Vi bør fortelle HuggingFace biblioteket hvor det skal lagre dataene sine. Hvis 
 Lasting av modellen
 --------------------
 
-For å bruke kodellen, lager vi en pipeline. en pipeline (rørledning) kan bestå av flere mindre biter, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden HuggingFacePipeline.from_model_id(), som automatisk laster ned den spesifiserte modellen fra HuggingFace.
+For å bruke kodellen, lager vi en pipeline. en pipeline (rørledning) kan bestå av flere mindre biter, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden ``HuggingFacePipeline.from_model_id()``, som automatisk laster ned den spesifiserte modellen fra HuggingFace.
 
 Først importerer vi biblioteksfunksjonen som vi trenger::
 
@@ -49,11 +49,18 @@ Vi spesifiserer modellens identifikator. Dette finner du på nettsiden til Huggi
 
    model_id = 'meta-llama/Llama-3.2-1B'
 
-HuggingFacePipeline trenger også et parameter som forteller hva slags oppgaver vi ønsker å utføre. I dette kurset, skal oppgaven alltid være text-generation::
+``HuggingFacePipeline`` trenger også et parameter som forteller hva slags oppgaver vi ønsker å utføre. I dette kurset, skal oppgaven alltid være text-generation::
 
    task = 'text-generation'
 
-I tillegg skal vi aktivere GPU ved hjelp av argumentet device=0.
+Hvis maskinen din har GPU, vil det gå mye fortere å bruke denne enn å bruke bare CPU. Vi kan bruke ``torch`` biblioteket til å undersøke om vi har GPU::
+
+   import torch
+   torch.cuda.is_available()
+
+Vi aktiverer GPU ved hjelp av argumentet ``device=0``::
+
+   device = 0 if torch.cuda.is_available() else -1
 
 Nå er vi klare til å laste modellen::
 
@@ -63,7 +70,7 @@ Nå er vi klare til å laste modellen::
        device=0
    )
 
-Vi kan også begrense outputens lengde ved å angi max_new_tokens, eksempelvis til 100::
+Vi kan også begrense outputens lengde ved å angi ``max_new_tokens``, eksempelvis til 100::
 
    llm = HuggingFacePipeline.from_model_id(
        model_id,
@@ -74,7 +81,7 @@ Vi kan også begrense outputens lengde ved å angi max_new_tokens, eksempelvis t
        }
    )
 
-Det fins mange flere argumenter som vi kan bruke til å finjustere med. Disse er kommentert ut under, slik at de ikke har noen effekt. Du kan prøve å fjerne #- tegnene, slik at de virker. Argumentene beskrives under::
+Det fins mange flere argumenter som vi kan bruke til å finjustere med. Disse er kommentert ut under, slik at de ikke tas i bruk. Du kan prøve å fjerne #- tegnene, slik at de virker. Argumentene beskrives under::
 
    llm = HuggingFacePipeline.from_model_id(
        model_id,

@@ -8,7 +8,7 @@ Retrieval-Augmented Generation (RAG)
 På norsk: Gjenfinningsforsterket tekstgenerering
 -------------------------------------------------
 
-Gjenfinningsforsterket tekstgenerering eller RAG er en måte å inkludere dokumenter for å gi kontekst til spørsmål som man stiller en språkmodell. Dette kan redusere tendensen til hallusinering eller andre feil i svarene. Et system for gjenfinningsutvidet tekstgenerering har to hoveddeler. For det første en dokumentdatabase med søkeindeks og for det andre en stor språkmodell. Tegningen under viser RAG programmets struktur.
+Gjenfinningsforsterket tekstgenerering eller RAG er en måte å inkludere (deler av) dokumenter for å gi kontekst til spørsmål som man stiller en språkmodell. Dette kan redusere tendensen til hallusinering eller andre feil i svarene. Et system for gjenfinningsutvidet tekstgenerering har to hoveddeler. For det første en dokumentdatabase med søkeindeks og for det andre en stor språkmodell. Tegningen under viser RAG programmets struktur.
 
 .. image:: rag_process.png
 
@@ -54,7 +54,14 @@ Vi må laste ned modellen som vi skal bruke. Vi kjører programmet på tungregni
 Modellen
 ---------
 
-Nå er vi klare til å laste opp og bruke modellen. For å gjøre dette, lager vi en "pipeline". En pipeline kan bestå av flere steg, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden ``HuggingFacePipeline.from_model_id()``, som automatisk laster den spesifiserte modellen fra HuggingFace::
+Nå er vi klare til å laste opp og bruke modellen. For å gjøre dette, lager vi en "pipeline". En pipeline kan bestå av flere steg, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden ``HuggingFacePipeline.from_model_id()``, som automatisk laster den spesifiserte modellen fra HuggingFace.
+
+Som før, sjekker vi om vi har GPU tilgjengelig::
+
+   import torch
+   device = 0 if torch.cuda.is_available() else -1
+
+::
 
    from langchain_community.llms import HuggingFacePipeline
    
@@ -122,32 +129,33 @@ Tekst må vektoriseres før den kan bli bearbeidet. Vår HuggingFace pipeline vi
    
    Dette er argumentene til embedding modellen:
    
-       ‘model_name’: modellens navn fra HuggingFace
+       * ‘model_name’: modellens navn fra HuggingFace
    
-       ‘device’: maskinvaren som skal brukes, enten GPU eller CPU
+       * ‘device’: maskinvaren som skal brukes, enten GPU eller CPU
    
-       ‘normalize_embeddings’: embeddinger kan ha forskjellige størrelser. Når embeddingen normaliseres betyr det at man gjør størrelsen lik for alle.
+       * ‘normalize_embeddings’: embeddinger kan ha forskjellige størrelser. Når embeddingen normaliseres betyr det at man gjør størrelsen lik for alle.
 
 Lasting av dokumentene
 ------------------------
 
-We use DirectoryLoader from LangChain to load all in files in document_folder. documents_folder is defined above.
+Vi bruker  ``DirectoryLoader`` fra LangChain til å laste alle filene fra ``document_folder``. ``documents_folder`` defineres over::
+   
+   from langchain_community.document_loaders import DirectoryLoader
+   
+   loader = DirectoryLoader(document_folder)
+   documents = loader.load()
 
-from langchain_community.document_loaders import DirectoryLoader
+"Document loader" laster hver fil i et eget dokument. Vi kan undersøke størrelsen på dokumentene våre. Vi kan for eksempel bruke funksjonen max() for å finne lengden på det lengste dokumentet::
 
-loader = DirectoryLoader(document_folder)
-documents = loader.load()
+   print(f'Number of documents:', len(documents))
+   print('Maximum document length: ', max([len(doc.page_content) for doc in documents]))
 
-The document loader loads each file as a separate document. We can check how long our documents are. For example, we can use the function max() to find the length of the longest document.
+Vi kan se på ett av dokumentene::
 
-print(f'Number of documents:', len(documents))
-print('Maximum document length: ', max([len(doc.page_content) for doc in documents]))
+   print(documents[0])
 
-We can examine one of the documents:
-
-print(documents[0])
-
-Splitting the Documents
+Splitting av dokumentene
+-------------------------
 
 Since we are only using PDFs with quite short pages, we can use them as they are. Other, longer documents, for example the documents or webpages, we might need to split into chunks. We can use a text splitter from LangChain to split documents.
 

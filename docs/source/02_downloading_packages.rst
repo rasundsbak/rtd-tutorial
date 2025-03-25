@@ -37,9 +37,7 @@ Kode::
 Søkeindeks
 ----------
 
-Til RAG kapittelet vil vi bruke FAISS til å søke etter dokumenter lokalt på maskinen.
-
-Kode::
+Til :doc:`05_rag` kapittelet vil vi bruke `FAISS <https://faiss.ai/>`_til å søke etter dokumenter lokalt på maskinen::
 
   !pip install --upgrade faiss-cpu
 

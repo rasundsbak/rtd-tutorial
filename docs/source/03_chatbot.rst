@@ -10,7 +10,7 @@ I denne første delen av kurset skal vi sende en spørring til en språkmidell. 
 .. admonition:: Oppgave: Lag en ny notebook
    :collapsible: closed
 
-Lag en ny Jupyter Notebook som du kaller "chatbot" ved å klikke Filmenyen i JupyterLab, og deretter "New" og "Notebook". Hvis du blir spurt om å velge en kjerne, velg “Python 3”. Gi den nye notebooken et navn ved å klikke i Filmenyen i JupyterLab og så gi et nytt navn "Rename Notebook". Bruk navnet "chatbot".
+   Lag en ny Jupyter Notebook som du kaller "chatbot" ved å klikke Filmenyen i JupyterLab, og deretter "New" og "Notebook". Hvis du blir spurt om å velge en kjerne, velg “Python 3”. Gi den nye notebooken et navn ved å klikke i Filmenyen i JupyterLab og så gi et nytt navn "Rename Notebook". Bruk navnet "chatbot".
 
 .. admonition:: Oppgave: Stopp gamle kjerner
    :collapsible: closed

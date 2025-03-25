@@ -6,9 +6,10 @@ Installering
 Vi kommer til å bruke LangChain, et bibliotek med åpen kildekode, som brukes til å lage 
 aplikasjoner med LLMer. Vi vil bruke modeller fra HuggingFace, en nettside som har verktøy og modeller som brukes til maskinlæring.
 
-.. tip:: Lag en ny notebook
+.. admonition:: Oppgave: Lag en ny notebook
+   :collapsible: closed
 
-  Lag en ny Jupyter Notebook med navn "installing" by ved å klikke File-menyen i JupyterLab, og så New og Notebook. IHvis du blir spurt om å velge en kjerne (kernel), velg “Python 3”. Gi navn til notebooken ved å klikke Fil-meny i JupyterLab og deretter "Rename Notebook". Bruk navnet installing.
+  Lag en ny Jupyter Notebook med navn ``installing`` by ved å klikke File-menyen i JupyterLab, og så New og Notebook. IHvis du blir spurt om å velge en kjerne (kernel), velg “Python 3”. Gi navn til notebooken ved å klikke Filmenyen i JupyterLab og deretter "Rename Notebook". Bruk navnet ``installing``.
 
 Vanlig programvare for store språkmodeller
 --------------------------------------------

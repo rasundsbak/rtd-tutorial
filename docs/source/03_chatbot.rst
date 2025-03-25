@@ -49,11 +49,18 @@ Vi spesifiserer modellens identifikator. Dette finner du på nettsiden til Huggi
 
    model_id = 'meta-llama/Llama-3.2-1B'
 
-HuggingFacePipeline trenger også et parameter som forteller hva slags oppgaver vi ønsker å utføre. I dette kurset, skal oppgaven alltid være text-generation::
+``HuggingFacePipeline`` trenger også et parameter som forteller hva slags oppgaver vi ønsker å utføre. I dette kurset, skal oppgaven alltid være text-generation::
 
    task = 'text-generation'
 
-I tillegg skal vi aktivere GPU ved hjelp av argumentet device=0.
+Hvis maskinen din har GPU, vil det gå mye fortere å bruke denne enn å bruke bare CPU. Vi kan bruke ``torch`` biblioteket til å undersøke om vi har GPU::
+
+   import torch
+   torch.cuda.is_available()
+
+Vi aktiverer GPU ved hjelp av argumentet ``device=0``::
+
+   device = 0 if torch.cuda.is_available() else -1
 
 Nå er vi klare til å laste modellen::
 
@@ -63,7 +70,7 @@ Nå er vi klare til å laste modellen::
        device=0
    )
 
-Vi kan også begrense outputens lengde ved å angi max_new_tokens, eksempelvis til 100::
+Vi kan også begrense outputens lengde ved å angi ``max_new_tokens``, eksempelvis til 100::
 
    llm = HuggingFacePipeline.from_model_id(
        model_id,
@@ -74,7 +81,7 @@ Vi kan også begrense outputens lengde ved å angi max_new_tokens, eksempelvis t
        }
    )
 
-Det fins mange flere argumenter som vi kan bruke til å finjustere med. Disse er kommentert ut under, slik at de ikke har noen effekt. Du kan prøve å fjerne #- tegnene, slik at de virker. Argumentene beskrives under::
+Det fins mange flere argumenter som vi kan bruke til å finjustere med. Disse er kommentert ut under, slik at de ikke tas i bruk. Du kan prøve å fjerne #- tegnene, slik at de virker. Argumentene beskrives under::
 
    llm = HuggingFacePipeline.from_model_id(
        model_id,

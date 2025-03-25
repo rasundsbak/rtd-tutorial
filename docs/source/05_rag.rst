@@ -8,7 +8,7 @@ Retrieval-Augmented Generation (RAG)
 På norsk: Gjenfinningsforsterket tekstgenerering
 -------------------------------------------------
 
-Gjenfinningsforsterket tekstgenerering eller RAG er en måte å inkludere dokumenter for å gi kontekst til spørsmål som man stiller en språkmodell. Dette kan redusere tendensen til hallusinering eller andre feil i svarene. Et system for gjenfinningsutvidet tekstgenerering har to hoveddeler. For det første en dokumentdatabase med søkeindeks og for det andre en stor språkmodell. Tegningen under viser RAG programmets struktur.
+Gjenfinningsforsterket tekstgenerering eller RAG er en måte å inkludere (deler av) dokumenter for å gi kontekst til spørsmål som man stiller en språkmodell. Dette kan redusere tendensen til hallusinering eller andre feil i svarene. Et system for gjenfinningsutvidet tekstgenerering har to hoveddeler. For det første en dokumentdatabase med søkeindeks og for det andre en stor språkmodell. Tegningen under viser RAG programmets struktur.
 
 .. image:: rag_process.png
 

@@ -54,7 +54,14 @@ Vi må laste ned modellen som vi skal bruke. Vi kjører programmet på tungregni
 Modellen
 ---------
 
-Nå er vi klare til å laste opp og bruke modellen. For å gjøre dette, lager vi en "pipeline". En pipeline kan bestå av flere steg, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden ``HuggingFacePipeline.from_model_id()``, som automatisk laster den spesifiserte modellen fra HuggingFace::
+Nå er vi klare til å laste opp og bruke modellen. For å gjøre dette, lager vi en "pipeline". En pipeline kan bestå av flere steg, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden ``HuggingFacePipeline.from_model_id()``, som automatisk laster den spesifiserte modellen fra HuggingFace.
+
+Som før, sjekker vi om vi har GPU tilgjengelig::
+
+   import torch
+   device = 0 if torch.cuda.is_available() else -1
+
+::
 
    from langchain_community.llms import HuggingFacePipeline
    

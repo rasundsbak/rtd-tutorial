@@ -129,32 +129,33 @@ Tekst må vektoriseres før den kan bli bearbeidet. Vår HuggingFace pipeline vi
    
    Dette er argumentene til embedding modellen:
    
-       ‘model_name’: modellens navn fra HuggingFace
+       * ‘model_name’: modellens navn fra HuggingFace
    
-       ‘device’: maskinvaren som skal brukes, enten GPU eller CPU
+       * ‘device’: maskinvaren som skal brukes, enten GPU eller CPU
    
-       ‘normalize_embeddings’: embeddinger kan ha forskjellige størrelser. Når embeddingen normaliseres betyr det at man gjør størrelsen lik for alle.
+       * ‘normalize_embeddings’: embeddinger kan ha forskjellige størrelser. Når embeddingen normaliseres betyr det at man gjør størrelsen lik for alle.
 
 Lasting av dokumentene
 ------------------------
 
-We use DirectoryLoader from LangChain to load all in files in document_folder. documents_folder is defined above.
+Vi bruker  ``DirectoryLoader`` fra LangChain til å laste alle filene fra ``document_folder``. ``documents_folder`` defineres over::
+   
+   from langchain_community.document_loaders import DirectoryLoader
+   
+   loader = DirectoryLoader(document_folder)
+   documents = loader.load()
 
-from langchain_community.document_loaders import DirectoryLoader
+"Document loader" laster hver fil i et eget dokument. Vi kan undersøke størrelsen på dokumentene våre. Vi kan for eksempel bruke funksjonen max() for å finne lengden på det lengste dokumentet::
 
-loader = DirectoryLoader(document_folder)
-documents = loader.load()
+   print(f'Number of documents:', len(documents))
+   print('Maximum document length: ', max([len(doc.page_content) for doc in documents]))
 
-The document loader loads each file as a separate document. We can check how long our documents are. For example, we can use the function max() to find the length of the longest document.
+Vi kan se på ett av dokumentene::
 
-print(f'Number of documents:', len(documents))
-print('Maximum document length: ', max([len(doc.page_content) for doc in documents]))
+   print(documents[0])
 
-We can examine one of the documents:
-
-print(documents[0])
-
-Splitting the Documents
+Splitting av dokumentene
+-------------------------
 
 Since we are only using PDFs with quite short pages, we can use them as they are. Other, longer documents, for example the documents or webpages, we might need to split into chunks. We can use a text splitter from LangChain to split documents.
 

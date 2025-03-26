@@ -129,11 +129,11 @@ Tekst må vektoriseres før den kan bli bearbeidet. Vår HuggingFace pipeline vi
    
    Dette er argumentene til embedding modellen:
    
-       * ‘model_name’: modellens navn fra HuggingFace
+       * ``model_name``: modellens navn fra HuggingFace
    
-       * ‘device’: maskinvaren som skal brukes, enten GPU eller CPU
+       * ``device``: maskinvaren som skal brukes, enten GPU eller CPU
    
-       * ‘normalize_embeddings’: embeddinger kan ha forskjellige størrelser. Når embeddingen normaliseres betyr det at man gjør størrelsen lik for alle.
+       * ``normalize_embeddings``: embeddinger kan ha forskjellige størrelser. Når embeddingen normaliseres betyr det at man gjør størrelsen lik for alle.
 
 Lasting av dokumentene
 ------------------------
@@ -170,21 +170,21 @@ Siden vi bare bruker PDFer med ganske korte sider, kan vi laste dem inn som de e
 Text Splitterens Argumenter
 ----------------------------
 
-.. admonition:: Oppgave: Laste opp filer med Educloud grensesnitt :class: tip
-   :collapsible: closed
+.. note::
 
-Her er text splitterens argumenter
+   Her er text splitterens argumenter
 
-    ‘chunk_size’: the number of tokens in each chunk. Not necessarily the same as the number of words.
+      * ``chunk_size``: antall tokens i hver chunk. Ikke nødvendigvis det samme som antall ord.
 
-    ‘chunk_overlap’: the number of tokens that are included in both chunks where the text is split.
+      * ``chunk_overlap``: antall tokens som inkluderes i begge chunks der teksten deles.
 
-We can check if the maximum document length has changed:
+Vi kan se etter om maks dokumentlengde har endret seg::
 
-print(f'Number of documents:', len(documents))
-print('Maximum document length: ', max([len(doc.page_content) for doc in documents]))
+   print(f'Number of documents:', len(documents))
+   print('Maximum document length: ', max([len(doc.page_content) for doc in documents]))
 
-The Document Index
+Dokument indeksen
+------------------
 
 Next, we make a search index for our documents. We will use this index for the retrieval part of ‘Retrieval-Augmented Generation’. We use the open-source library FAISS (Facebook AI Similarity Search) through LangChain.
 

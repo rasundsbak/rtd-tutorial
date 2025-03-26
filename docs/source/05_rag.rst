@@ -157,19 +157,23 @@ Vi kan se på ett av dokumentene::
 Splitting av dokumentene
 -------------------------
 
-Since we are only using PDFs with quite short pages, we can use them as they are. Other, longer documents, for example the documents or webpages, we might need to split into chunks. We can use a text splitter from LangChain to split documents.
+Siden vi bare bruker PDFer med ganske korte sider, kan vi laste dem inn som de er. Andre og lengre dokumenter som for eksempel nettsider, bør deles inn i chunker Vi kan bruke en text splitter fra LangChain til å dele dokumentene::
+   
+   from langchain.text_splitter import RecursiveCharacterTextSplitter
+   
+   text_splitter = RecursiveCharacterTextSplitter(
+       chunk_size = 700, #  Could be more, for larger models like mistralai/Ministral-8B-Instruct-2410
+       chunk_overlap  = 200,
+   )
+   documents = text_splitter.split_documents(documents)
 
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+Text Splitterens Argumenter
+----------------------------
 
-text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size = 700, #  Could be more, for larger models like mistralai/Ministral-8B-Instruct-2410
-    chunk_overlap  = 200,
-)
-documents = text_splitter.split_documents(documents)
+.. admonition:: Oppgave: Laste opp filer med Educloud grensesnitt :class: tip
+   :collapsible: closed
 
-Text Splitter Arguments
-
-These are the arguments to the text splitter:
+Her er text splitterens argumenter
 
     ‘chunk_size’: the number of tokens in each chunk. Not necessarily the same as the number of words.
 
@@ -185,7 +189,7 @@ The Document Index
 Next, we make a search index for our documents. We will use this index for the retrieval part of ‘Retrieval-Augmented Generation’. We use the open-source library FAISS (Facebook AI Similarity Search) through LangChain.
 
 from langchain_community.vectorstores import FAISS
-vectorstore = FAISS.from_documents(documents, huggingface_embeddings)
+vectorstore = FAISS.from_documents(documents, huggingface_embeddings
 
 FAISS can find documents that match a search query:
 

@@ -2,7 +2,7 @@
 
 # -- Project information --
 
-project = 'AI på Kluster'
+project = 'AI på Klynge'
 copyright = '2025, KI gruppen på UB'
 author = 'Pål Lykkja, Ragnhild Sundsbak, Erik Winge'
 
@@ -21,7 +21,6 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.todo',
     'sphinx_panels',
-    'sphinx_immaterial',
 ]
 
 intersphinx_mapping = {

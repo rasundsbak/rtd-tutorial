@@ -170,9 +170,8 @@ Siden vi bare bruker PDFer med ganske korte sider, kan vi laste dem inn som de e
 Text Splitterens Argumenter
 ----------------------------
 
-.. admonition:: Oppgave: Laste opp filer med Educloud grensesnitt
+.. admonition:: Oppgave: Laste opp filer med Educloud grensesnitt :class: tip
    :collapsible: closed
-   :class: tip
 
 Her er text splitterens argumenter
 

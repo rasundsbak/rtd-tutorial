@@ -9,3 +9,4 @@ sphinx_rtd_theme
 readthedocs-sphinx-search
 sphinx_copybutton
 sphinx-panels
+sphinx-immaterial

@@ -157,7 +157,7 @@ Vi kan se på ett av dokumentene::
 Splitting av dokumentene
 -------------------------
 
-Siden vi bare bruker PDFer med ganske korte sider, kan vi laste dem inn som de er. Andre og lengre dokumenter som for eksempel nettsider, bør deles inn i chunker Vi kan bruke en text splitter fra LangChain til å dele dokumentene::
+Siden vi bare bruker PDFer med ganske korte sider, kan vi laste dem inn som de er. Andre og lengre dokumenter som for eksempel nettsider, bør deles inn i chunker. Vi kan bruke en text splitter fra LangChain til å dele dokumentene::
    
    from langchain.text_splitter import RecursiveCharacterTextSplitter
    
@@ -186,59 +186,64 @@ Vi kan se etter om maks dokumentlengde har endret seg::
 Dokument indeksen
 ------------------
 
-Next, we make a search index for our documents. We will use this index for the retrieval part of ‘Retrieval-Augmented Generation’. We use the open-source library FAISS (Facebook AI Similarity Search) through LangChain.
+Neste skritt er å lage en søkeindeks til dokumentene våre. 
+Denne indeksen kommer vi til å bruke til gjenfinningsdelen i "Gjenfinningsforsterket tekstgenerering". Vi bruker det åpne biblioteket FAISS (Facebook AI Similarity Search) gjennom LangChain::
 
-from langchain_community.vectorstores import FAISS
-vectorstore = FAISS.from_documents(documents, huggingface_embeddings
+   from langchain_community.vectorstores import FAISS
+   vectorstore = FAISS.from_documents(documents, huggingface_embeddings
 
-FAISS can find documents that match a search query:
+FAISS kan finne dokumenter som samsvarer med et søk::
 
-relevant_documents = vectorstore.similarity_search(query)
-print(f'Number of documents found: {len(relevant_documents)}')
+   relevant_documents = vectorstore.similarity_search(query)
+   print(f'Number of documents found: {len(relevant_documents)}')
 
-We can display the first document:
+Vi kan vise det første dokumentet::
 
-print(relevant_documents[0].page_content)
+   print(relevant_documents[0].page_content)
 
-For our RAG application we need to access the search engine through an interface called a retriever:
+Til RAG programmet vårt trenger vi tilgang til en søkemotor fra et grensesnitt som kalles en retriever::
 
-retriever = vectorstore.as_retriever(search_kwargs={'k': 3})
+   retriever = vectorstore.as_retriever(search_kwargs={'k': 3})
 
-Retriever Arguments
+Retriever argumenter
+---------------------
 
-These are the arguments to the retriever:
+Dette er retrieverens argumenter::
 
     ‘k’: the number of documents to return (kNN search)
 
-Making a Prompt
+Lage en spørring
+------------------
 
-We can use a prompt to tell the language model how to answer. The prompt should contain a few short, helpful instructions. In addition, we provide placeholders for the context and the question. LangChain replaces these with the actual context and question when we execute a query.
+Vi kan bruke en spørring til å fortelle språkmodellen hvordan den skal svare. Spørringen bør inneholde etpar korte, nyttige instruksjoner. I tillegg, skal vi ha plassbeholdere til spørsmålets kontekst. LangChain erstatter disse med den faktiske konteksten og spørsmålet når vi kjører spørringen::
+   
+   from langchain.prompts import PromptTemplate
+   
+   prompt_template = '''You are an assistant for question-answering tasks.
+   Use the following pieces of retrieved context to answer the question.
+   Context: {context}
+   
+   Question: {input}
+   
+   Answer:
+   '''
+   
+   prompt = PromptTemplate(template=prompt_template,
+                           input_variables=['context', 'input'])
 
-from langchain.prompts import PromptTemplate
+Vi lager «Chatboten»
+-----------------------
 
-prompt_template = '''You are an assistant for question-answering tasks.
-Use the following pieces of retrieved context to answer the question.
-Context: {context}
+Nå kan vi bruke modulen ``create_retrieval_chain`` fra from LangChain til å lage en agent som besvarer spørsmål, en «chatbot»::
 
-Question: {input}
+   from langchain.chains import create_retrieval_chain
+   from langchain.chains.combine_documents import create_stuff_documents_chain
+   
+   combine_documents_chain = create_stuff_documents_chain(llm, prompt)
+   rag_chain = create_retrieval_chain(retriever, combine_documents_chain)
 
-Answer:
-'''
-
-prompt = PromptTemplate(template=prompt_template,
-                        input_variables=['context', 'input'])
-
-Making the «Chatbot»
-
-Now we can use the module create_retrieval_chain from LangChain to make an agent for answering questions, a «chatbot».
-
-from langchain.chains import create_retrieval_chain
-from langchain.chains.combine_documents import create_stuff_documents_chain
-
-combine_documents_chain = create_stuff_documents_chain(llm, prompt)
-rag_chain = create_retrieval_chain(retriever, combine_documents_chain)
-
-Asking the «Chatbot»
+Spørsmål til «Chatboten»
+---------------------------
 
 Now, we can send our query to the chatbot.
 

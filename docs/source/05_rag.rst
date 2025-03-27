@@ -105,9 +105,10 @@ Språkmodellen i bruk
 ----------------------
 
 Nå er språkmodellen klar til bruk. La oss forsøke å bruke den uten RAG. Vi kan sende en instruks::
-=======
 
-   Hvis du kjører programmene lokalt på din egen datamaskin, trenger du kanskje ikke sette ``HF_HOME``.
+   query = 'What are the major contributions of the Trivandrum Observatory?'
+   output = llm.invoke(query)
+   print(output)
 
 Modellen
 ---------
@@ -323,19 +324,19 @@ Oppgaver
 
    Dokumentindeksen som vi lagde med FAISS er bare lagret i minnet. For å unngå at vi må reindeksere dokumentene hver gang vi laster notebooken, kan vi lagre indeksen. Prøv å bruke funksjonen 
 
-Prøv å bruke funksjonen ``vectorstore.save_local()`` ttil å lagre indeksen. Du kan dermed laste indeksen fra en fil ved å bruke funksjonen ``FAISS.load_local()``. Se dokumentasjon på `FAISS modulen i LangChain <https://python.langchain.com/docs/integrations/vectorstores/faiss/#saving-and-loading>`_ dersom du vil ha flere detaljer.
+Prøv å bruke funksjonen ``vectorstore.save_local()`` til å lagre indeksen. Du kan dermed laste indeksen fra en fil ved å bruke funksjonen ``FAISS.load_local()``. Se dokumentasjon på `FAISS modulen i LangChain <https://python.langchain.com/docs/integrations/vectorstores/faiss/#saving-and-loading>`_ dersom du vil ha flere detaljer.
 
 .. admonition:: Oppgave: Slurm jobber
    :collapsible: closed
 
-When you have made a program that works, it’s more efficient to run the program as a batch job than in JupyterLab. This is because a JupyterLab session reserves a GPU all the time, also when you’re not running computations. Therefore, you should save your finished program as a regular Python program that you can schedule as a job.
+   Når du har laget et program som virker, er det mer effektivt å kjøre pprogrammet som en batch jobb enn i
+JupyterLab. Dette fordi en økt i JupyterLab reserverer en GPU hele tiden, også når du ikke kjører beregninger. Dette er grunnen til at du bør lagre det ferdige programmet ditt som et vanlig Python program som kan planlegges som en del av slurm køen ved UiO. Du kan lagre koden ved å velge filmenyen i JupyterLab, velg “Save and Export Notebook As…” og så “Executable Script”. Resultatet er Python filen RAG.py som lastes ned lokalt til din maskin. Du trenger også å laste ned slurm skriptet :download:`LLM.slurm <LLM.slurm>`.
 
-You can save your code by clicking the “File”-menu in JupyterLab, click on “Save and Export Notebook As…” and then click “Executable Script”. The result is the Python file RAG.py that is downloaded to your local computer. You will also need to download the slurm script LLM.slurm.
+   Last opp båse Python filen RAG.py og slurm skriptet LLM.slurm til Fox. deretter starter du jobben med denne kommandoen::
 
-Upload both the Python file RAG.py and the slurm script LLM.slurm to Fox. Then, start the job with this command:
+   sbatch LLM.slurm RAG.py
 
-sbatch LLM.slurm RAG.py
+Slurm lager en log fil for hver jobb som lagres med et navn som for eksempel slurm-1358473.out. Som standard, blir disse logg filene lagret i den aktuelle arbeidskatalogen der du kjører sbatch kommandoen fra.
+Dersom du ønsker å lagre log filen et annet sted, kan du legge til en linje som vises under, i ditt slurm skript. Husk å endre brukernavnet::
 
-Slurm creates a log file for each job which is stored with a name like slurm-1358473.out. By default, these log files are stored in the current working directory where you run the sbatch command. If you want to store the log files somewhere else, you can add a line like below to your slurm script. Remember to change the username.
-
-#SBATCH --output=/fp/projects01/ec443/<username>/logs/slurm-%j.out
+   #SBATCH --output=/fp/projects01/ec443/<username>/logs/slurm-%j.out

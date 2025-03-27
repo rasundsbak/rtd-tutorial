@@ -172,7 +172,7 @@ Text Splitterens Argumenter
 
 .. note::
 
-   Her er text splitterens argumenter
+   Her er tekst splitterens argumenter
 
       * ``chunk_size``: antall tokens i hver chunk. Ikke nødvendigvis det samme som antall ord.
 
@@ -245,24 +245,33 @@ Nå kan vi bruke modulen ``create_retrieval_chain`` fra from LangChain til å la
 Spørsmål til «Chatboten»
 ---------------------------
 
-Now, we can send our query to the chatbot.
+Nå kan vi sende spørroingen til chatbotten::
 
-result = rag_chain.invoke({'input': query})
+   result = rag_chain.invoke({'input': query})
 
-print(result['answer'])
+::
 
-Hopefully, this answer contains information from the context that wasn’t in the previous answer, when we queried only the language model without RAG.
-Exercises
+   print(result['answer'])
 
-Exercise: Use your own documents
+Forhåpentligvis vil svaret inneholde informasjon fra konteksten som ikke var en del av det forrige svaret, da vi kjørte spørring uten RAG. 
 
-Change the document location to your own documents folder. You can also upload more documents that you want to try with RAG. Change the query to a question that can be answered based on your documents. Try to the run the query and evaluate the answer.
+Oppgaver
+---------
 
-Exercise: Saving the document index
+.. admonition:: Oppgave: Bruk dine egne dokumenter
+   :collapsible: closed
 
-The document index that we created with FAISS is only stored in memory. To avoid having to reindex the documents every time we load the notebook, we can save the index. Try to use the function vectorstore.save_local() to save the index. Then, you can load the index from file using the function FAISS.load_local(). See the documentation of the FAISS module in LangChain for further details.
+   Endre dokumentenes plassering til din egen dokumentmappe. Du kan laste opp flere dokumenter, dersom du vil prøve å kjøre RAG på dem. Husk å endre spørringen til et spørsmål som kan besvares basert på dine egne dokumenter. Kjør spørringen og evaluere svaret.
 
-Exercise: Slurm Jobs
+.. admonition:: Oppgave: Lagre dokumentindeksen
+   :collapsible: closed
+
+   Dokumentindeksen som vi lagde med FAISS er bare lagret i minnet. For å unngå at vi må reindeksere dokumentene hver gang vi laster notebooken, kan vi lagre indeksen. Prøv å bruke funksjonen 
+
+Prøv å bruke funksjonen ``vectorstore.save_local()`` ttil å lagre indeksen. Du kan dermed laste indeksen fra en fil ved å bruke funksjonen ``FAISS.load_local()``. Se dokumentasjon på `FAISS modulen i LangChain <https://python.langchain.com/docs/integrations/vectorstores/faiss/#saving-and-loading>`_ dersom du vil ha flere detaljer.
+
+.. admonition:: Oppgave: Slurm jobber
+   :collapsible: closed
 
 When you have made a program that works, it’s more efficient to run the program as a batch job than in JupyterLab. This is because a JupyterLab session reserves a GPU all the time, also when you’re not running computations. Therefore, you should save your finished program as a regular Python program that you can schedule as a job.
 

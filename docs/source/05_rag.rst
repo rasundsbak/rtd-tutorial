@@ -103,6 +103,7 @@ Som før, sjekker vi om vi har GPU tilgjengelig::
 
 Språkmodellen i bruk
 ----------------------
+
 Nå er språkmodellen klar til bruk. La oss forsøke å bruke den uten RAG. Vi kan sende en instruks::
 
    query = 'What are the major contributions of the Trivandrum Observatory?'

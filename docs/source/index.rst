@@ -21,7 +21,7 @@ Læringsmål
 ----------
 - lær deg hvordan store språkmodeller brukes
 - lær hvordan UiOs tungregningsklynge kan brukes på ulike språkmodeller
-- lær hvordan du kan lage effektive spørringer og tilpasse parameterne
+- lær hvordan du kan bygge en instruks og tilpasse parameterne
 - koble modellen til egne data som eksempelvis Pdfer
 - bli flytende i hvordan du setter opp din egen modell i Jupyter Lab, og bruk prosessen selv til å videreutvikle forskningsprosesser eller oppdag andre KI-modeller
 

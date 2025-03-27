@@ -13,7 +13,7 @@ Kurset består av fem kapitler. I :doc:`01_easy_login`, logger vi oss på Fox. D
 
 I :doc:`02_downloading_packages`, installerer vi programvaren som vi trenger til kurset.
 
-I :doc:`03_chatbot`, lærer vi å laste og spørre grunnleggende språkmodeller.
+I :doc:`03_chatbot`, lærer vi å laste og lage instruks til basismodeller.
 
 I :doc:`04_summarization`, vil vi bruke modellen til å kage korte oppsummeringer av dokumenter.
 

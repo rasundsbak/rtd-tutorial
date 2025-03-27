@@ -105,9 +105,10 @@ Språkmodellen i bruk
 ----------------------
 
 Nå er språkmodellen klar til bruk. La oss forsøke å bruke den uten RAG. Vi kan sende en instruks::
-=======
 
-   Hvis du kjører programmene lokalt på din egen datamaskin, trenger du kanskje ikke sette ``HF_HOME``.
+   query = 'What are the major contributions of the Trivandrum Observatory?'
+   output = llm.invoke(query)
+   print(output)
 
 Modellen
 ---------

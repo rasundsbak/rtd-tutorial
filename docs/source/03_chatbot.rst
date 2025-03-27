@@ -1,7 +1,7 @@
 .. _03_chatbot
 
-Spørring av Store Språkmodeller (Chatboter)
-===============================================
+Instruks til Store Språkmodeller (Chatboter)
+==============================================
 
 .. index:: chatbot, språkmodeller, prompt, spørringer
 

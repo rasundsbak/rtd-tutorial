@@ -261,15 +261,14 @@ Oppgaver
 .. admonition:: Oppgave: Bruk dine egne dokumenter
    :collapsible: closed
 
-
-
-
-Change the document location to your own documents folder. You can also upload more documents that you want to try with RAG. Change the query to a question that can be answered based on your documents. Try to the run the query and evaluate the answer.
+   Endre dokumentenes plassering til din egen dokumentmappe. Du kan laste opp flere dokumenter, dersom du vil prøve å kjøre RAG på dem. Husk å endre spørringen til et spørsmål som kan besvares basert på dine egne dokumenter. Kjør spørringen og evaluere svaret.
 
 .. admonition:: Oppgave: Lagre dokumentindeksen
    :collapsible: closed
 
-The document index that we created with FAISS is only stored in memory. To avoid having to reindex the documents every time we load the notebook, we can save the index. Try to use the function vectorstore.save_local() to save the index. Then, you can load the index from file using the function FAISS.load_local(). See the documentation of the FAISS module in LangChain for further details.
+   Dokumentindeksen som vi lagde med FAISS er bare lagret i minnet. For å unngå at vi må reindeksere dokumentene hver gang vi laster notebooken, kan vi lagre indeksen. Prøv å bruke funksjonen 
+
+Prøv å bruke funksjonen ``vectorstore.save_local()`` ttil å lagre indeksen. Du kan dermed laste indeksen fra en fil ved å bruke funksjonen ``FAISS.load_local()``. Se dokumentasjon på `FAISS modulen i LangChain <https://python.langchain.com/docs/integrations/vectorstores/faiss/#saving-and-loading>`_ dersom du vil ha flere detaljer.
 
 .. admonition:: Oppgave: Slurm jobber
    :collapsible: closed

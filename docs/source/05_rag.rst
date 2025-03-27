@@ -110,6 +110,60 @@ Nå er språkmodellen klar til bruk. La oss forsøke å bruke den uten RAG. Vi k
    output = llm.invoke(query)
    print(output)
 
+Modellen
+---------
+
+Nå er vi klare til å laste opp og bruke modellen. For å gjøre dette, lager vi en "pipeline". En pipeline kan bestå av flere steg, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden ``HuggingFacePipeline.from_model_id()``, som automatisk laster den spesifiserte modellen fra HuggingFace.
+
+Som før, sjekker vi om vi har GPU tilgjengelig::
+
+   import torch
+   device = 0 if torch.cuda.is_available() else -1
+
+::
+
+   from langchain_community.llms import HuggingFacePipeline
+   
+   llm = HuggingFacePipeline.from_model_id(
+         model_id='meta-llama/Llama-3.2-3B-Instruct',
+         task='text-generation',
+         device=0,
+         pipeline_kwargs={
+            'max_new_tokens': 500,
+            'do_sample': True,
+            'temperature': 0.3,
+            'num_beams': 4
+          }
+      )
+
+.. note:: Pipeline argumenter
+
+   Vi kan gi noen argumenter til pipelinen:
+   
+       ``model_id``: modellens navn fra HuggingFace
+   
+       ``task``: oppgaven du planlegger å bruke modellen til
+   
+       ``device``: GPU maskinvaren som enheten bruker. Hvis vi ikke spesifiserer en enhet, vil GPU ikke brukes.
+   
+       ``pipeline_kwargs``: (keyword arguments) tilleggsparametere som gis til modellen
+   
+            ``max_new_tokens``: max lengde på teksten som genereres
+   
+            ``do_sample``: som standard, det mest sannsynlige ordet som kan velges. Dette gjør outputten mer deterministisk. Vi kan sørge for en mer tilfeldig utvelging ved å angi hvor mange ord blant de mest sannsynlige som det skal velges mellom.
+   
+            ``temperature``: temperaturkontrollen er den statistiske distribusjonen til neste ord. Vanligvis et tall mellom 0 and 1. Lav temperatur øker sannsynligheten for vanlige ord. Høy temperatur øker muligheten for sjeldnere ord i output. Utviklerne har ofte en anbefaling hva angår temperatur. Vi bruker anbefalingen som et startpunkt.
+   
+            ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge flere samtidige sekvenser, og deretter velge den beste til slutt.
+
+.. tip::
+
+   Hvis du jobber på en maskin med mindre minne, trenger du kanskje en mindre modell. Du kan prøve for eksempel ``mistralai/Mistral-7B-Instruct-v0.3`` eller ``meta-llama/Llama-3.2-1B-Instruct``. Sistnevnte har bare 1 miliard parametere, og det kan være mulig å bruke den på en bærbar maskin, avhengig av hvor mye minnekapasitet den har.
+
+Språkmodellen i bruk
+----------------------
+Nå er språkmodellen klar til bruk. La oss forsøke å bruke den uten RAG. Vi kan sende en spørring::
+
 Svaret ble generert på grunnlag av informasjonen som befinner seg fra før av i språkmodellen. For å forbedre presisjonen i svaret, kan vi sørge for at språkmodellen får mer kontekst til spørsmålet. For å gjøre dette, må vi laste inn dokumentsamlingen.
 
 Vektorisering
@@ -270,19 +324,19 @@ Oppgaver
 
    Dokumentindeksen som vi lagde med FAISS er bare lagret i minnet. For å unngå at vi må reindeksere dokumentene hver gang vi laster notebooken, kan vi lagre indeksen. Prøv å bruke funksjonen 
 
-Prøv å bruke funksjonen ``vectorstore.save_local()`` ttil å lagre indeksen. Du kan dermed laste indeksen fra en fil ved å bruke funksjonen ``FAISS.load_local()``. Se dokumentasjon på `FAISS modulen i LangChain <https://python.langchain.com/docs/integrations/vectorstores/faiss/#saving-and-loading>`_ dersom du vil ha flere detaljer.
+Prøv å bruke funksjonen ``vectorstore.save_local()`` til å lagre indeksen. Du kan dermed laste indeksen fra en fil ved å bruke funksjonen ``FAISS.load_local()``. Se dokumentasjon på `FAISS modulen i LangChain <https://python.langchain.com/docs/integrations/vectorstores/faiss/#saving-and-loading>`_ dersom du vil ha flere detaljer.
 
 .. admonition:: Oppgave: Slurm jobber
    :collapsible: closed
 
-When you have made a program that works, it’s more efficient to run the program as a batch job than in JupyterLab. This is because a JupyterLab session reserves a GPU all the time, also when you’re not running computations. Therefore, you should save your finished program as a regular Python program that you can schedule as a job.
+   Når du har laget et program som virker, er det mer effektivt å kjøre pprogrammet som en batch jobb enn i
+JupyterLab. Dette fordi en økt i JupyterLab reserverer en GPU hele tiden, også når du ikke kjører beregninger. Dette er grunnen til at du bør lagre det ferdige programmet ditt som et vanlig Python program som kan planlegges som en del av slurm køen ved UiO. Du kan lagre koden ved å velge filmenyen i JupyterLab, velg “Save and Export Notebook As…” og så “Executable Script”. Resultatet er Python filen RAG.py som lastes ned lokalt til din maskin. Du trenger også å laste ned slurm skriptet :download:`LLM.slurm <LLM.slurm>`.
 
-You can save your code by clicking the “File”-menu in JupyterLab, click on “Save and Export Notebook As…” and then click “Executable Script”. The result is the Python file RAG.py that is downloaded to your local computer. You will also need to download the slurm script LLM.slurm.
+   Last opp båse Python filen RAG.py og slurm skriptet LLM.slurm til Fox. deretter starter du jobben med denne kommandoen::
 
-Upload both the Python file RAG.py and the slurm script LLM.slurm to Fox. Then, start the job with this command:
+   sbatch LLM.slurm RAG.py
 
-sbatch LLM.slurm RAG.py
+Slurm lager en log fil for hver jobb som lagres med et navn som for eksempel slurm-1358473.out. Som standard, blir disse logg filene lagret i den aktuelle arbeidskatalogen der du kjører sbatch kommandoen fra.
+Dersom du ønsker å lagre log filen et annet sted, kan du legge til en linje som vises under, i ditt slurm skript. Husk å endre brukernavnet::
 
-Slurm creates a log file for each job which is stored with a name like slurm-1358473.out. By default, these log files are stored in the current working directory where you run the sbatch command. If you want to store the log files somewhere else, you can add a line like below to your slurm script. Remember to change the username.
-
-#SBATCH --output=/fp/projects01/ec443/<username>/logs/slurm-%j.out
+   #SBATCH --output=/fp/projects01/ec443/<username>/logs/slurm-%j.out

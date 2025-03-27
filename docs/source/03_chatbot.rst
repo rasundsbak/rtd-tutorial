@@ -3,9 +3,9 @@
 Instruks til Store Språkmodeller (Chatboter)
 ==============================================
 
-.. index:: chatbot, språkmodeller, prompt, spørringer
+.. index:: chatbot, språkmodeller, prompt, instruks
 
-I denne første delen av kurset skal vi sende en spørring til en språkmidell.  Vi vil få et output. Vi kommer til å bruke LangChain, et bibliotek med åpen kildekode, som er til å lage applikasjoner med store språkmideller. 
+I denne første delen av kurset skal vi sende en instruks til en språkmidell.  Vi vil få et output. Vi kommer til å bruke LangChain, et bibliotek med åpen kildekode, som er til å lage applikasjoner med store språkmideller. 
 
 .. admonition:: Oppgave: Lag en ny notebook
    :collapsible: closed
@@ -113,28 +113,28 @@ Her kommer en oppsummering av pipelinens/ rørledningens argumenter:
 
         ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge flere samtidige sekvenser, og deretter velge den beste til slutt. 
 
-Å lage en spørring
--------------------
+Å lage instruks
+-----------------
 
-Vi kan bruke en spørring til å fortelle språkmodellen hvirdan vi ønsker at den skal svare. Spørringen bør inneholde etpar korte, konstruktive instruksjoner. Vi lager også plassholdere til konteksten. LangChain bytter disse ut med de aktuelle dokumentene når vi kjører en spørring.
+Vi kan bruke en instruks til å fortelle språkmodellen hvirdan vi ønsker at den skal svare. Instruksen bør være kort og konstruktiv. Vi lager også plassholdere til konteksten. LangChain bytter disse ut med de aktuelle dokumentene når vi kjører en instruks.
 
 Nok en gang importerer vi biblioteksfunksjonene som vi trenger::
 
    from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
    from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
-Deretter, lager vi en systemspørring som blir samtalens kontekst. Systemspørringen (system prompt) består av en systembeskjed til modellen og en plassholder til brukerens beskjed/ spørsmål::
+Deretter, lager vi en systeminstruks som blir samtalens kontekst. Systeminstruksen (system prompt) består av en systembeskjed til modellen og en plassholder til brukerens beskjed/ spørsmål::
 
    messages = [
        SystemMessage("You are a pirate chatbot who always responds in pirate speak in complete sentences!"),
        MessagesPlaceholder(variable_name="messages")
    ]
 
-Listen av beskjeder som brukes til å lage den egentlige spørringen/ prompt::
+Listen av beskjeder som brukes til å lage den egentlige instruksen/ prompt::
 
    prompt = ChatPromptTemplate.from_messages(messages)
 
-LangChain bearbeider inputtet i kjeden som består av flere mindre deler. Nå kan vi definere kjeden som skal sendes som en spørring inn i den store språkmodellen/ LLMen::
+LangChain bearbeider inputtet i kjeden som består av flere mindre deler. Nå kan vi definere kjeden som skal sendes som en instruks inn i den store språkmodellen/ LLMen::
 
    chatbot = prompt | llm
 

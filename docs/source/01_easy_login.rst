@@ -11,9 +11,9 @@ Tilgang
 --------
 For å logge inn, må du søke medlemsskap i Educloud project ec443. Hvordan du gjør det, kommer an på om du allerede har en aktiv konto på Educloud.
 
-Hvis du har en konto, kan du søke om medlemsskap i Educloud prosjektet ec443. Følg denne veiledningen: `Søk om tilgang til et eksisterende Educloud Research-prosjekt <https://www.uio.no/tjenester/it/forskning/plattformer/edu-research/hjelp/sok-medlemskap-prosjekt.html>`_.
+    * Hvis du har en konto, kan du søke om medlemsskap i Educloud prosjektet ec443. Følg denne veiledningen: `Søk om tilgang til et eksisterende Educloud Research-prosjekt <https://www.uio.no/tjenester/it/forskning/plattformer/edu-research/hjelp/sok-medlemskap-prosjekt.html>`_.
 
-Hvis du ikke har en konto, må du lage en. Utfør punkt 1b, 2 and 3 i denne veiledningen: `Førstegangsoppsett av Educloud Research <https://www.uio.no/tjenester/it/forskning/plattformer/edu-research/hjelp/kom-i-gang-med-educloud.html>`_. I punkt 1b fører du opp prosjekt ec443.
+    * Hvis du ikke har en konto, må du lage en. Utfør punkt 1b, 2 and 3 i denne veiledningen: `Førstegangsoppsett av Educloud Research <https://www.uio.no/tjenester/it/forskning/plattformer/edu-research/hjelp/kom-i-gang-med-educloud.html>`_. I punkt 1b fører du opp prosjekt ec443.
 
 Innlogging
 -----------
@@ -25,13 +25,13 @@ Oppstart med JupyterLab
 -------------------------
 Etter du har logget inn, kan du se `Educlouds instrumentpanel <https://ondemand.educloud.no/pun/sys/dashboard>`_. Klikk på `JupyterLab <https://ondemand.educloud.no/pun/sys/dashboard/batch_connect/sys/fox-ood-jupyter/session_contexts/new>`_, for å konfigurere sesjonen.
 
-I feltet “Choose the Educloud project to run under:”, velger du ec443.
+   * I feltet “Choose the Educloud project to run under:”, velger du ec443.
 
-I feltet “Choose resources:”, bør du velge “GPU (1x Nvidia MIG 20G VRAM, 24 CPU cores, 100GB RAM)”.
+   * I feltet “Choose resources:”, bør du velge “GPU (1x Nvidia MIG 20G VRAM, 24 CPU cores, 100GB RAM)”.
 
-I feltet “Runtime (in hours)” kan du velge 1 t av gangen. Prøv å unngå å reservere en GPU lenger enn nødvendig, fordi GPUer er begrensede, delte ressurser.
+   * I feltet “Runtime (in hours)” kan du velge 1 t av gangen. Prøv å unngå å reservere en GPU lenger enn nødvendig, fordi GPUer er begrensede, delte ressurser.
 
-I feltet “Choose Jupyter module (required)” bør du velge “4.2.0-GCCcore-13.2.0”.
+   * I feltet “Choose Jupyter module (required)” bør du velge “4.2.0-GCCcore-13.2.0”.
 
 De andre feltene skal ikke fylles ut. Oppsettet ditt skal se ut som bildet under.
 

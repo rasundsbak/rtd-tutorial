@@ -103,13 +103,14 @@ Som før, sjekker vi om vi har GPU tilgjengelig::
 
 Språkmodellen i bruk
 ----------------------
-Nå er språkmodellen klar til bruk. La oss forsøke å bruke den uten RAG. Vi kan sende en spørring::
+
+Nå er språkmodellen klar til bruk. La oss forsøke å bruke den uten RAG. Vi kan sende en instruks::
 
    query = 'What are the major contributions of the Trivandrum Observatory?'
    output = llm.invoke(query)
    print(output)
 
-Svaret ble generert på grunnlag av informasjonen som befinner seg fra før av i språkmodellen. For å forbedre presisjonen i svaret, kan vi sørge for at språkmodellen får mer kontekst til spørringen. For å gjøre dette, må vi laste inn dokumentsamlingen.
+Svaret ble generert på grunnlag av informasjonen som befinner seg fra før av i språkmodellen. For å forbedre presisjonen i svaret, kan vi sørge for at språkmodellen får mer kontekst til spørsmålet. For å gjøre dette, må vi laste inn dokumentsamlingen.
 
 Vektorisering
 --------------
@@ -212,10 +213,11 @@ Dette er retrieverens argumenter::
 
     ‘k’: the number of documents to return (kNN search)
 
-Lage en spørring
+Lage en instruks
 ------------------
 
-Vi kan bruke en spørring til å fortelle språkmodellen hvordan den skal svare. Spørringen bør inneholde etpar korte, nyttige instruksjoner. I tillegg, skal vi ha plassbeholdere til spørsmålets kontekst. LangChain erstatter disse med den faktiske konteksten og spørsmålet når vi kjører spørringen::
+Vi kan bruke en instruks til å fortelle språkmodellen hvordan den skal svare. instruksen bør være
+korte og nyttig. I tillegg, skal vi ha plassbeholdere til spørsmålets kontekst. LangChain erstatter disse med den faktiske konteksten og spørsmålet når vi legger inn instruksen::
    
    from langchain.prompts import PromptTemplate
    
@@ -245,7 +247,7 @@ Nå kan vi bruke modulen ``create_retrieval_chain`` fra from LangChain til å la
 Spørsmål til «Chatboten»
 ---------------------------
 
-Nå kan vi sende spørroingen til chatbotten::
+Nå kan vi sende instruksen til chatbotten::
 
    result = rag_chain.invoke({'input': query})
 
@@ -253,7 +255,7 @@ Nå kan vi sende spørroingen til chatbotten::
 
    print(result['answer'])
 
-Forhåpentligvis vil svaret inneholde informasjon fra konteksten som ikke var en del av det forrige svaret, da vi kjørte spørring uten RAG. 
+Forhåpentligvis vil svaret inneholde informasjon fra konteksten som ikke var en del av det forrige svaret, da vi kjørte instruksen uten uten RAG. 
 
 Oppgaver
 ---------
@@ -261,7 +263,7 @@ Oppgaver
 .. admonition:: Oppgave: Bruk dine egne dokumenter
    :collapsible: closed
 
-   Endre dokumentenes plassering til din egen dokumentmappe. Du kan laste opp flere dokumenter, dersom du vil prøve å kjøre RAG på dem. Husk å endre spørringen til et spørsmål som kan besvares basert på dine egne dokumenter. Kjør spørringen og evaluere svaret.
+   Endre dokumentenes plassering til din egen dokumentmappe. Du kan laste opp flere dokumenter, dersom du vil prøve å kjøre RAG på dem. Husk å endre instruksen til et spørsmål som kan besvares basert på dine egne dokumenter. Kjør instruksen og evaluere svaret.
 
 .. admonition:: Oppgave: Lagre dokumentindeksen
    :collapsible: closed

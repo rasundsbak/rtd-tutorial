@@ -75,10 +75,10 @@ Vi kan gi noen argumenter til pipelinen:
 
          ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge flere samtidige sekvenser, og deretter velge den beste til slutt. 
 
-Å lage en spørring
+Å lage en instruks
 -------------------
 
-Vi kan bruke en spørring til å fortelle språkmodellen hvordan vi ønsker at den skal svare. Spørringen bør inneholde etpar korte, konstruktive instruksjoner. Vi lager også plassholdere til konteksten. LangChain bytter disse ut med de aktuelle dokumentene når vi kjører en spørring::
+Vi kan bruke en instruks til å fortelle språkmodellen hvordan vi ønsker at den skal svare. Instruksen bør være kort og konstruktiv. Vi lager også plassholdere til konteksten. LangChain bytter disse ut med de aktuelle dokumentene når vi kjører en instruks::
 
    from langchain.chains.combine_documents import create_stuff_documents_chain
    from langchain.chains.llm import LLMChain
@@ -97,7 +97,7 @@ Vi kan bruke en spørring til å fortelle språkmodellen hvordan vi ønsker at d
 Skille oppsummeringen fra inputten
 -------------------------------------
 
-LangChain returnerer både input spørringen og svaret som genereres i en lang tekst. For å få bare oppsummeringen, må vi splitteoppsummeringen fra dokumentet som vi sendte som input. Til dette kan vi bruke LangChain output parseren som lyder navnet RegexParser::
+LangChain returnerer både input instruksen og svaret som genereres i en lang tekst. For å få bare oppsummeringen, må vi splitte oppsummeringen fra dokumentet som vi sendte som input. Til dette kan vi bruke LangChain output parseren som lyder navnet RegexParser::
 
    from langchain.output_parsers import RegexParser
    import re
@@ -167,12 +167,12 @@ Bonusmateriale
       from langchain.schema.document import Document
       from langchain.prompts import ChatPromptTemplate
    
-   Vi lager en ny spørring, med mer spesifikke instruksjoner enn vi gjorde med de vanlige oppsummeringene::
+   Vi lager en ny instruks, med mer spesifikke instruksjoner enn vi gjorde med de vanlige oppsummeringene::
    
       total_prompt = ChatPromptTemplate.from_messages(
           [("system", "Below is a list of summaries of some papers. Make a total summary all the information in all the papers:\n\n{context}\n\nTotal Summary:")]
       )
-   Så kan vi lage en ny lenke/ chain basert på Språkmodellen og spørringen::
+   Så kan vi lage en ny lenke/ chain basert på Språkmodellen og instruksen::
    
       total_chain = create_stuff_documents_chain(llm, total_prompt)
       
@@ -208,12 +208,12 @@ Oppgaver
 .. admonition:: Oppgave: Tilpass oppsummeringen
    :collapsible: closed
 
-   Prøv å lage noen tilpasninger til spørringen for å justere oppsummeringen som du fikk i den andre oppgaven. Kan du for eksempel spørre etter en lengre eller mer nøyaktig oppsummering? Eller kan du be modellen om å legge vekt på visse aspekter i teksten?
+   Prøv å lage noen tilpasninger i instriksen for å justere oppsummeringen som du fikk i den andre oppgaven. Kan du for eksempel spørre etter en lengre eller mer nøyaktig oppsummering? Eller kan du be modellen om å legge vekt på visse aspekter i teksten?
 
 .. admonition:: Oppgave: Lage en oppsummering på et annet språk
    :collapsible: closed
 
-   Vi kan bruke modellen til å få en oppsummering på et annet språk enn originaldokumentet. Hvis for eksempel spørringen er på Norsk, vil svaret vanligvis også gis på Norsk. Du kan også spesifisere i spørringen hvilket sprøk du ønsker å ha oppsummeringen på. Bruk modellen til å lage en oppsummering av ditt dokument fra den andre oppgaven, på et annet språk enn det opprinnelig ble gitt.
+   Vi kan bruke modellen til å få en oppsummering på et annet språk enn originaldokumentet. Hvis for eksempel instruksen er på Norsk, vil svaret vanligvis også gis på Norsk. Du kan også spesifisere i instruksen hvilket språk du ønsker å ha oppsummeringen på. Bruk modellen til å lage en oppsummering av ditt dokument fra den andre oppgaven, på et annet språk enn det opprinnelig ble gitt.
 
 .. admonition:: Bonusoppgave: Slurmjobber
    :collapsible: closed

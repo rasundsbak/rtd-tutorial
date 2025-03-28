@@ -42,7 +42,7 @@ Vi skal bruke modeller fra `HuggingFace <https://huggingface.co/>`_, en nettside
 Modellens plassering
 ---------------------
 
-Vi må laste ned modellen som vi skal bruke. Vi kjører programmet på tungregningsklyngen Fox ved UiO. Vi må peke på stedet der vårt program skal lagre modellene som vi laster ned fra HuggingFace::
+Vi må laste ned modellen som vi skal bruke. Vi kjører programmet på tungregningsklyngen `Fox ved UiO <https://www.uio.no/tjenester/it/forskning/beregning/fox/index.html>`_. Vi må peke på stedet der vårt program skal lagre modellene som vi laster ned fra HuggingFace::
 
    import os
    os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'

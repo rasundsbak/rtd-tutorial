@@ -88,7 +88,3 @@ JupyterLab kjerne til miljøet
 FOr å bruke det virtuelle miljet i JupyterLab, må vi definere en kjerne for det miljøet::
 
    ! .venv/bin/python -m ipykernel install --user --name LLM --display-name "Python (LLM)"
-
-
-
-

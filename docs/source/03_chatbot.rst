@@ -1,7 +1,7 @@
 .. _03_chatbot
 
 Instruks til Store Språkmodeller (Chatboter)
-==============================================
+===============================================
 
 .. index:: chatbot, språkmodeller, prompt, instruks
 

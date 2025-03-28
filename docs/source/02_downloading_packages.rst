@@ -58,6 +58,7 @@ Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy og
   %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
 
 .. note:: Frivillig
+      :collapsible: closed
 
   Hvis du kjører en av modellene som allerede er lastet ned til Educloud/Fox prosjekt ec443, kan du droppe dette. Hvis du ikke kjører på Educloud/Fox project ec443, eller du vil bruke en modell som ikke er lastet ned, må du laste den.
 

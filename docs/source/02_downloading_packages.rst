@@ -3,8 +3,8 @@
 Installering
 ==============
 
-Vi kommer til å bruke LangChain, et bibliotek med åpen kildekode, som brukes til å lage 
-aplikasjoner med LLMer. Vi vil bruke modeller fra HuggingFace, en nettside som har verktøy og modeller som brukes til maskinlæring.
+Vi kommer til å bruke `LangChain <https://www.langchain.com/>`_ , et bibliotek med åpen kildekode, som brukes til å lage 
+aplikasjoner med LLMer. Vi vil bruke modeller fra `HuggingFace <https://huggingface.co/>`_ , en nettside som har verktøy og modeller som brukes til maskinlæring.
 
 .. admonition:: Oppgave: Lag en ny notebook
    :collapsible: closed

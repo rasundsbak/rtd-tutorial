@@ -62,3 +62,32 @@ Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy og
 
    from huggingface_hub import login
    login()
+
+Bonus: Virtuelle miljøer
+-------------------------
+
+Som standard, vil ``pip`` kommandoen installere Python moduler eller biblioteker på din brukerprofil, der ditt standard Python miljø ligger. Hvis du bruker Python i forskjellige prosjekter med ulike biblioteker, kan det hende at prosjektene dine behøver ulike versjoner av det samme biblioteket. Du kan lage ett virtuelt miljø for hvert av dine prosjekter. Deretter installerer du alle biblioteker som hører til i ett spesifikt prosjekt i det virtuelle miljøet for det prosjektet. Det virtuelle miljøet blir ofte lagret i en mappe som heter ``venv``.
+
+Etablering av virtuelt miljø
+-------------------------------
+La oss lage et virtuelt miljø til å kjøre store språkmodeller. Det kan gjøres på mange måter, men vi anbefaler å bruke pythons innebygde ``venv`` kommando::
+
+   !python -m venv .venv
+
+Aktivering av miljøet
+-----------------------
+
+For å aktivere det virtuelle miljøet i konsollen, kan du bruke et aktiveringsskript::
+
+   source .venv/bin/activate
+
+JupyterLab kjerne til miljøet
+---------------------------------
+
+FOr å bruke det virtuelle miljet i JupyterLab, må vi definere en kjerne for det miljøet::
+
+   ! .venv/bin/python -m ipykernel install --user --name LLM --display-name "Python (LLM)"
+
+
+
+

@@ -110,6 +110,8 @@ Nå er språkmodellen klar til bruk. La oss forsøke å bruke den uten RAG. Vi k
    output = llm.invoke(query)
    print(output)
 
+Svaret ble generert på grunnlag av informasjonen som befinner seg fra før av i språkmodellen. For å forbedre presisjonen i svaret, kan vi sørge for at språkmodellen får mer kontekst til spørsmålet. For å gjøre dette, må vi laste inn dokumentsamlingen.
+
 Modellen
 ---------
 
@@ -159,12 +161,6 @@ Som før, sjekker vi om vi har GPU tilgjengelig::
 .. tip::
 
    Hvis du jobber på en maskin med mindre minne, trenger du kanskje en mindre modell. Du kan prøve for eksempel ``mistralai/Mistral-7B-Instruct-v0.3`` eller ``meta-llama/Llama-3.2-1B-Instruct``. Sistnevnte har bare 1 miliard parametere, og det kan være mulig å bruke den på en bærbar maskin, avhengig av hvor mye minnekapasitet den har.
-
-Språkmodellen i bruk
-----------------------
-Nå er språkmodellen klar til bruk. La oss forsøke å bruke den uten RAG. Vi kan sende en spørring::
-
-Svaret ble generert på grunnlag av informasjonen som befinner seg fra før av i språkmodellen. For å forbedre presisjonen i svaret, kan vi sørge for at språkmodellen får mer kontekst til spørsmålet. For å gjøre dette, må vi laste inn dokumentsamlingen.
 
 Vektorisering
 --------------

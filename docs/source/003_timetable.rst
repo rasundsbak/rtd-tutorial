@@ -1,7 +1,7 @@
 .. _003_timetable:
 
-003 Timeplan KI verksted 31. mars 2025
-=======================================
+Timeplan KI verksted 31. mars 2025
+====================================
 
 Forkunnskaper
 ---------------

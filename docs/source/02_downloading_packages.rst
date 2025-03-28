@@ -11,6 +11,10 @@ aplikasjoner med LLMer. Vi vil bruke modeller fra `HuggingFace <https://huggingf
 
    Lag en ny Jupyter Notebook med navn ``installing`` by ved å klikke File-menyen i JupyterLab, og så New og Notebook. IHvis du blir spurt om å velge en kjerne (kernel), velg “Python 3”. Gi navn til notebooken ved å klikke Filmenyen i JupyterLab og deretter "Rename Notebook". Bruk navnet ``installing``.
 
+.. warning:: Virtual Environments
+
+   Hvis du vanligvis jobber med virtuelle miljøer på Fox, bør du sette opp og aktivere et virtuelt miljø før du fortsetter. Se i Bonus: Virtuelle miljøer. Hvis du ikke har hørt om virtuelle miljøer, kan du fortsette uten å bruke virtuelle miljøer.
+
 Vanlig programvare for store språkmodeller
 --------------------------------------------
 

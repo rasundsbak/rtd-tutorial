@@ -75,8 +75,8 @@ Vi kan gi noen argumenter til pipelinen:
 
          ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge flere samtidige sekvenser, og deretter velge den beste til slutt. 
 
-Å lage en instruks
--------------------
+Å lage instruks
+-----------------
 
 Vi kan bruke en instruks til å fortelle språkmodellen hvordan vi ønsker at den skal svare. Instruksen bør være kort og konstruktiv. Vi lager også plassholdere til konteksten. LangChain bytter disse ut med de aktuelle dokumentene når vi kjører en instruks::
 

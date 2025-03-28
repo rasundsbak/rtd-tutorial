@@ -11,18 +11,23 @@ aplikasjoner med LLMer. Vi vil bruke modeller fra `HuggingFace <https://huggingf
 
    Lag en ny Jupyter Notebook med navn ``installing`` by ved å klikke File-menyen i JupyterLab, og så New og Notebook. IHvis du blir spurt om å velge en kjerne (kernel), velg “Python 3”. Gi navn til notebooken ved å klikke Filmenyen i JupyterLab og deretter "Rename Notebook". Bruk navnet ``installing``.
 
-.. warning:: Virtual Environments
+.. warning:: Virtuelle miljøer
 
    Hvis du vanligvis jobber med virtuelle miljøer på Fox, bør du sette opp og aktivere et virtuelt miljø før du fortsetter. Se i Bonus: Virtuelle miljøer. Hvis du ikke har hørt om virtuelle miljøer, kan du fortsette uten å bruke virtuelle miljøer.
+
+Pyton pakker
+-------------
+Vi kommer til å bruke pakkeinstallasjonsprogrammet ``pip``til å installere programvare. ``pip``installerer programvare fra `Python package index <https://pypi.org/>`_ . Først oppdaterer vi ``pip``til den nyeste versjonen::
+
+     !pip install --upgrade pip 
 
 Vanlig programvare for store språkmodeller
 --------------------------------------------
 
-Vi installerer programvaren til LangChain og HuggingFace først. Transformers er den grunnleggende teknologien som brukes for store språkmideller, derfor installerer vi library sentence-transformers også. Modellene bruker sentencepiece biblioteket, derfor er dette også viktig.
+Vi installerer programvaren til LangChain og HuggingFace først. Transformers er den grunnleggende teknologien som brukes for store språkmideller, derfor installerer vi biblioteket ``sentence-transformers`` også. Modellene bruker ``sentencepiece`` biblioteket, derfor er dette også viktig.
 
 Kode::
 
-  !pip install --upgrade pip 
   !pip install --upgrade huggingface-hub
   !pip install --upgrade langchain
   !pip install --upgrade langchain-community langchain-huggingface
@@ -61,8 +66,8 @@ Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy og
 
    Når du har logget inn med din krukerkonto, kan du lage et "User Access Token" som gir lesetilgang ved å følge denne guiden::
 
-   from huggingface_hub import login
-   login()
+      from huggingface_hub import login
+      login()
 
 Bonus: Virtuelle miljøer
 -------------------------

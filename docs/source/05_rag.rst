@@ -112,56 +112,6 @@ Nå er språkmodellen klar til bruk. La oss forsøke å bruke den uten RAG. Vi k
 
 Svaret ble generert på grunnlag av informasjonen som befinner seg fra før av i språkmodellen. For å forbedre presisjonen i svaret, kan vi sørge for at språkmodellen får mer kontekst til spørsmålet. For å gjøre dette, må vi laste inn dokumentsamlingen.
 
-Modellen
----------
-
-Nå er vi klare til å laste opp og bruke modellen. For å gjøre dette, lager vi en "pipeline". En pipeline kan bestå av flere steg, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden ``HuggingFacePipeline.from_model_id()``, som automatisk laster den spesifiserte modellen fra HuggingFace.
-
-Som før, sjekker vi om vi har GPU tilgjengelig::
-
-   import torch
-   device = 0 if torch.cuda.is_available() else -1
-
-::
-
-   from langchain_community.llms import HuggingFacePipeline
-   
-   llm = HuggingFacePipeline.from_model_id(
-         model_id='meta-llama/Llama-3.2-3B-Instruct',
-         task='text-generation',
-         device=0,
-         pipeline_kwargs={
-            'max_new_tokens': 500,
-            'do_sample': True,
-            'temperature': 0.3,
-            'num_beams': 4
-          }
-      )
-
-.. note:: Pipeline argumenter
-
-   Vi kan gi noen argumenter til pipelinen:
-   
-       ``model_id``: modellens navn fra HuggingFace
-   
-       ``task``: oppgaven du planlegger å bruke modellen til
-   
-       ``device``: GPU maskinvaren som enheten bruker. Hvis vi ikke spesifiserer en enhet, vil GPU ikke brukes.
-   
-       ``pipeline_kwargs``: (keyword arguments) tilleggsparametere som gis til modellen
-   
-            ``max_new_tokens``: max lengde på teksten som genereres
-   
-            ``do_sample``: som standard, det mest sannsynlige ordet som kan velges. Dette gjør outputten mer deterministisk. Vi kan sørge for en mer tilfeldig utvelging ved å angi hvor mange ord blant de mest sannsynlige som det skal velges mellom.
-   
-            ``temperature``: temperaturkontrollen er den statistiske distribusjonen til neste ord. Vanligvis et tall mellom 0 and 1. Lav temperatur øker sannsynligheten for vanlige ord. Høy temperatur øker muligheten for sjeldnere ord i output. Utviklerne har ofte en anbefaling hva angår temperatur. Vi bruker anbefalingen som et startpunkt.
-   
-            ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge flere samtidige sekvenser, og deretter velge den beste til slutt.
-
-.. tip::
-
-   Hvis du jobber på en maskin med mindre minne, trenger du kanskje en mindre modell. Du kan prøve for eksempel ``mistralai/Mistral-7B-Instruct-v0.3`` eller ``meta-llama/Llama-3.2-1B-Instruct``. Sistnevnte har bare 1 miliard parametere, og det kan være mulig å bruke den på en bærbar maskin, avhengig av hvor mye minnekapasitet den har.
-
 Vektorisering
 --------------
 

@@ -1,13 +1,13 @@
 .. _003_timetable:
 
-003 Timeplan KI verksted 31. mars 2025
-=======================================
+Timeplan KI verksted 31. mars 2025
+====================================
 
 Forkunnskaper
 ---------------
-1) Alle deltakere skal ha en ferdig testet konto på Educloud On Demand. Nettsted: https://ondemand.educloud.no/
+1) Alle deltakere har en ferdig testet konto på `Educloud On Demand <https://ondemand.educloud.no/>`_.
 
-2) Carpentry leksjonen `Plotting and Programming in Python <https://swcarpentry.github.io/python-novice-gapminder/>`_. kan tas som selvstudiom, om du ikke har deltatt i egen person.
+2) Carpentry leksjonen `Plotting and Programming in Python <https://swcarpentry.github.io/python-novice-gapminder/>`_. bør tas som selvstudiom, om du ikke har deltatt i egen person.
 
 3) Finn fram skjermtasteturet på maskinen din, senest dagen før du kommer på kurs. Du vil trolig få bruk for det.
 

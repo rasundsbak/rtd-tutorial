@@ -1,7 +1,7 @@
 .. _03_chatbot
 
 Instruks til Store Språkmodeller (Chatboter)
-==============================================
+===============================================
 
 .. index:: chatbot, språkmodeller, prompt, instruks
 
@@ -10,7 +10,7 @@ I denne første delen av kurset skal vi sende en instruks til en språkmodell.  
 .. admonition:: Oppgave: Lag en ny notebook
    :collapsible: closed
 
-Lag en ny Jupyter Notebook som du kaller "chatbot" ved å klikke Filmenyen i JupyterLab, og deretter "New" og "Notebook". Hvis du blir spurt om å velge en kjerne, velg “Python 3”. Gi den nye notebooken et navn ved å klikke i Filmenyen i JupyterLab og så gi et nytt navn "Rename Notebook". Bruk navnet "chatbot".
+   Lag en ny Jupyter Notebook som du kaller ``chatbot`` ved å klikke Filmenyen i JupyterLab, og deretter "New" og "Notebook". Hvis du blir spurt om å velge en kjerne, velg “Python 3”. Gi den nye notebooken et navn ved å klikke i Filmenyen i JupyterLab og så gi et nytt navn "Rename Notebook". Bruk navnet ``chatbot``.
 
 .. admonition:: Oppgave: Stopp gamle kjerner
    :collapsible: closed
@@ -97,21 +97,21 @@ Det fins mange flere argumenter som vi kan bruke til å finjustere med. Disse er
 
 Her kommer en oppsummering av pipelinens/ rørledningens argumenter:
 
-    ``model_id``: modellens navn fra HuggingFace
+    * ``model_id``: modellens navn fra HuggingFace
 
-    ``task``: oppgaven du ønsker å bruke modellen til
+    * ``task``: oppgaven du ønsker å bruke modellen til
 
-    ``device``: GPU maskinvareenheten som skal brukes. Dersom vi ikke spesifiserer en enhet, vil GPU ikke bli brukt.
+    * ``device``: GPU maskinvareenheten som skal brukes. Dersom vi ikke spesifiserer en enhet, vil GPU ikke bli brukt.
 
-    ``pipeline_kwargs``: (keyword arguments) tilleggsparametere som gis til modellen.
+    * ``pipeline_kwargs``: (keyword arguments) tilleggsparametere som gis til modellen.
 
-        ``max_new_tokens``: max lengde på teksten som genereres
+        * ``max_new_tokens``: max lengde på teksten som genereres
 
-        ``do_sample``: som standard, det mest sannsynlige ordet som kan velges. Dette gjør outputten mer deterministisk. Vi kan sørge for en mer tilfeldig utvelging ved å angi hvor mange ord blant de mest sannsynlige som det skal velges mellom.
+        * ``do_sample``: som standard, det mest sannsynlige ordet som kan velges. Dette gjør outputten mer deterministisk. Vi kan sørge for en mer tilfeldig utvelging ved å angi hvor mange ord blant de mest sannsynlige som det skal velges mellom.
 
-        ``temperature``: temperaturkontrollen er den statistiske distribusjonen til neste ord. Vanligvis et tall mellom 0 and 1. Lav temperatur øker sannsynligheten for vanlige ord. Høy temperatur øker muligheten for sjeldnere ord i output. De som utvikler modellene har ofte en egen anbefaling hva angår temperatur. Vi bruker anbefalingen som et startpunkt.
+        * ``temperature``: temperaturkontrollen er den statistiske distribusjonen til neste ord. Vanligvis et tall mellom 0 and 1. Lav temperatur øker sannsynligheten for vanlige ord. Høy temperatur øker muligheten for sjeldnere ord i output. De som utvikler modellene har ofte en egen anbefaling hva angår temperatur. Vi bruker anbefalingen som et startpunkt.
 
-        ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge flere samtidige sekvenser, og deretter velge den beste til slutt. 
+        * ``num_beams``: som standard gir modellen en enkel sekvens av tokens/ord. Med beam search, vil programmet bygge flere samtidige sekvenser, og deretter velge den beste til slutt. 
 
 Å lage instruks
 -----------------
@@ -179,15 +179,15 @@ Oppgaver
 .. admonition:: Oppgave: Bruk en større modell
    :collapsible: closed
 
-   Modellen meta-llama/Llama-3.2-1B er liten, og vil gi lav nøyaktighet på mange oppgaver. for å dra nytte av GPUens fordeler, må vi bruke en større modell. Vi trenger å introdusere en Instruct-modell.
+   Modellen ``meta-llama/Llama-3.2-1B`` er liten, og vil gi lav nøyaktighet på mange oppgaver. for å dra nytte av GPUens fordeler, må vi bruke en større modell. Vi trenger å introdusere en Instruct-modell.
    
-   Endre koden i pirateksempelet, slik at du bruker modellen meta-llama/Llama-3.2-1B-Instruct. Hvordan endrer resultatet seg?
+   Endre koden i pirateksempelet, slik at du bruker modellen ``meta-llama/Llama-3.2-1B-Instruct``. Hvordan endrer resultatet seg?
    
-   Vi skal nå endre enda en gang, til meta-llama/Llama-3.2-3B-Instruct. Denne modellen har 3 milliarder parametere i stedenfor bare 1 miliard. Hvordan endrer resultatet seg?
+   Vi skal nå endre enda en gang, til ``meta-llama/Llama-3.2-3B-Instruct``. Denne modellen har 3 milliarder parametere i stedenfor bare 1 miliard. Hvordan endrer resultatet seg?
 
 .. admonition:: Oppgave: Endre modellparameterne
    :collapsible: closed
 
-   Fortsett å bruke modellen meta-llama/Llama-3.2-3B-Instruct. Prøv å endre temperaturparameteren, først til 0.9, så til 2.0 og 5.0. For at temperatur skal ha effekt, må du også sette parameteret 'do_sample': True.
+   Fortsett å bruke modellen ``meta-llama/Llama-3.2-3B-Instruct``. Prøv å endre temperaturparameteren, først til 0.9, så til 2.0 og 5.0. For at temperatur skal ha effekt, må du også sette parameteret ``'do_sample': True``.
    
    Hvordan vil du si at endret temperatur påvirker resultatet?

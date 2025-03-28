@@ -65,8 +65,8 @@ Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy og
 
    Når du har logget inn med din krukerkonto, kan du lage et "User Access Token" som gir lesetilgang ved å følge denne guiden::
 
-   from huggingface_hub import login
-   login()
+      from huggingface_hub import login
+      login()
 
 Bonus: Virtuelle miljøer
 -------------------------

@@ -61,3 +61,5 @@ Oppgaver
    :collapsible: closed
 
     Du kan laste opp dokumenter som du ønsker å jobbe med på Fox. Prøv å unngå dokumenter som inneholder sensitive data. Vi anbefaler å teste med offentlig tilgjengelige dokumenter som kun inneholder `grønne data <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_.
+
+   Velg folderen "dokumenter" som du etablerte på ditt hjemmeområde i forrige oppgave. Velg den blå opplastingsknappen fra toppmenyen. Deretter velger du “browse files” og velger etpar filer til opplasting. Til slutt velger du den grønne "Upload x files" knappen i nedre venstre hjørne.

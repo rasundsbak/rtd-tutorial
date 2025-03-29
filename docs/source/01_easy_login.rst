@@ -35,7 +35,7 @@ Etter du har logget inn, kan du se `Educlouds instrumentpanel <https://ondemand.
 
 De andre feltene skal ikke fylles ut. Oppsettet ditt skal se ut som bildet under.
 
-.. image:: jupyter_lab_mig.png
+.. image:: ml_node_users.png
 
 Start JupyterLab ved å klikke på den blå “Launch” knappen nederst i skjemaet. Dette lager en jobb som blir sendt til køen. Når de påkrevde ressursene er tilgjengelige, starter jobben din opp.
 

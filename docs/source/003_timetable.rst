@@ -36,13 +36,7 @@ Lunch
 Etter lunsj
 -------------
 **12:15-13:00**
-`Summarization <https://uio-library.github.io/LLM-course/3_summarizing.html>`_
-
-**13:15-13:45**
-`Retrieval Augmented Generation (RAG) <https://uio-library.github.io/LLM-course/4_RAG.html>`_
-
-**13:45-14:00**
-`Evaluering <https://nettskjema.no/a/llm-course>`_
+`Retrieval Augmented Generation (RAG) <https://uio-library.github.io/LLM-course/4_RAG.html>`_ og til slutt `Evaluering <https://nettskjema.no/a/llm-course>`_
 
 Hvis vi får tid, last opp eget materiale, og du kan prøve å bruke metodene som du har lært på eget materiale. Vi hjelper hverandre.
 

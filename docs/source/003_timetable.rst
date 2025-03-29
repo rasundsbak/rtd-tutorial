@@ -9,8 +9,7 @@ Forkunnskaper
 
 2) Carpentry leksjonen `Plotting and Programming in Python <https://swcarpentry.github.io/python-novice-gapminder/>`_. bør tas som selvstudiom, om du ikke har deltatt i egen person.
 
-3) Finn fram skjermtasteturet på maskinen din, senest dagen før du kommer på kurs. Du vil trolig få bruk for det.
-
+3) Finn fram skjermtasteturet på maskinen din.
 
 Alle må ha med
 ----------------

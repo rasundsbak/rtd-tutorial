@@ -19,7 +19,7 @@ Pyton pakker
 -------------
 Vi kommer til å bruke pakkeinstallasjonsprogrammet ``pip``til å installere programvare. ``pip``installerer programvare fra `Python package index <https://pypi.org/>`_ . Først oppdaterer vi ``pip``til den nyeste versjonen::
 
-     !pip install --upgrade pip 
+     pip install --upgrade pip 
 
 Vanlig programvare for store språkmodeller
 --------------------------------------------

@@ -116,7 +116,7 @@ Her kommer en oppsummering av pipelinens/ rørledningens argumenter:
 Å lage instruks
 -----------------
 
-Vi kan bruke en instruks til å fortelle språkmodellen hvirdan vi ønsker at den skal svare. Instruksen bør være kort og konstruktiv. Vi lager også plassholdere til konteksten. LangChain bytter disse ut med de aktuelle dokumentene når vi kjører en instruks.
+Vi kan bruke en instruks til å fortelle språkmodellen hvordan vi ønsker at den skal svare. Instruksen bør være kort og konstruktiv. Vi lager også plassholdere til konteksten. LangChain bytter disse ut med de aktuelle dokumentene når vi kjører en instruks.
 
 Nok en gang importerer vi biblioteksfunksjonene som vi trenger::
 

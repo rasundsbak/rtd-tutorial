@@ -9,11 +9,11 @@ aplikasjoner med LLMer. Vi vil bruke modeller fra `HuggingFace <https://huggingf
 .. admonition:: Oppgave: Lag en ny notebook
    :collapsible: closed
 
-   Lag en ny Jupyter Notebook med navn ``installing`` by ved å klikke File-menyen i JupyterLab, og så New og Notebook. IHvis du blir spurt om å velge en kjerne (kernel), velg “Python 3”. Gi navn til notebooken ved å klikke Filmenyen i JupyterLab og deretter "Rename Notebook". Bruk navnet ``installing``.
+   Lag en ny Jupyter Notebook med navn ``installing`` ved å klikke Filmenyen i JupyterLab, og så "New" og "Notebook". Hvis du blir spurt om å velge en kjerne (kernel), velg “Python 3”. Gi navn til notebooken ved å klikke Filmenyen i JupyterLab og deretter "Rename Notebook". Bruk navnet ``installing``.
 
 .. warning:: Virtuelle miljøer
 
-   Hvis du vanligvis jobber med virtuelle miljøer på Fox, bør du sette opp og aktivere et virtuelt miljø før du fortsetter. Se i Bonus: Virtuelle miljøer. Hvis du ikke har hørt om virtuelle miljøer, kan du fortsette uten å bruke virtuelle miljøer.
+   Hvis du vanligvis jobber med `virtuelle miljøer <https://docs.python.org/3/library/venv.html>`_ på Fox, bør du sette opp og aktivere et virtuelt miljø før du fortsetter. Se i `Bonus: Virtuelle miljøer`_ . Hvis du ikke har hørt om virtuelle miljøer, kan du fortsette uten å bruke virtuelle miljøer.
 
 Pyton pakker
 -------------

@@ -11,3 +11,8 @@ Problemløsninger
 ::
 
   pip install --upgrade torch
+
+Cuda out of memory bekjed
+----------------------------
+
+I JupyterLab grensesnitt, gå til Kernels --> Shut down all kernels. .. image:: shut_kernels.png

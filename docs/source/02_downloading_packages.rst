@@ -52,7 +52,7 @@ Søkeindeks
 
 Til :doc:`05_rag` kapittelet vil vi bruke `FAISS <https://faiss.ai/>`_ til å søke etter dokumenter lokalt på maskinen::
 
-  !pip install --upgrade faiss-cpu
+  pip install --upgrade faiss-cpu
 
 Språkmodellen
 ---------------

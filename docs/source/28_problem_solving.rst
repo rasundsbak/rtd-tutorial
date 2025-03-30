@@ -4,6 +4,10 @@ Problemløsninger
 ==================
 .. index:: løsninger, problemer, oppdateringer
 
-kode1::
+::
 
   !pip install --upgrade pip
+
+::
+
+  pip install --upgrade torch

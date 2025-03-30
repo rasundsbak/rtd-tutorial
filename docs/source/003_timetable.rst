@@ -15,6 +15,7 @@ Alle må ha med
 ----------------
 * Egen bærbar PC
 * En smarttelefon med `denne autentiserings appen <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_. Testet og klar til bruk, som betyr at du har vært inne i Educloud On Demand.
+* Lurt: koble seg til `samarbeidsdokumentet <https://hackmd.okfn.de/AOCRq-OwTfWaTbbVaD9aBQ#>`_, dersom vi blir enige om å bruke det.
 
 Timeplanen under er tentativ. Vi tilpasser underveis.
 
@@ -41,7 +42,3 @@ Hvis vi får tid, last opp eget materiale, og du kan prøve å bruke metodene so
 
 Velkommen!
 Hilsen Pål, Erik and Ragnhild
-
-Evaluering
-----------------
-Vi inviterer deg til å fortsette å bruke Educloud ec443 ut desember 2025. `Logg inn i Nettskjema <https://nettskjema.no/a/llm-course>`_ for å svare på dette, og øvrig evaluering.

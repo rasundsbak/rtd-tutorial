@@ -21,10 +21,10 @@ Timeplanen under er tentativ. Vi tilpasser underveis.
 Før lunsj
 -----------
 **09:15-10:00**
-`Getting started <https://uio-library.github.io/LLM-course/0_login.html>`_ and `Installing Software <https://uio-library.github.io/LLM-course/1_installing.html>`_
+:doc:`01_easy_login` og :doc:`02_downloading_packages`
 
 **10:15-11:00**
-`Querying LLMs (Chatbots) <https://uio-library.github.io/LLM-course/2_chatbot.html>`_
+:doc:`03_chatbot`
 
 **11:15-11:45**
 `Summarization <https://uio-library.github.io/LLM-course/3_summarizing.html#summarization>`_

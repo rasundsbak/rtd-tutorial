@@ -19,7 +19,7 @@ Pyton pakker
 -------------
 Vi kommer til å bruke pakkeinstallasjonsprogrammet ``pip``til å installere programvare. ``pip``installerer programvare fra `Python package index <https://pypi.org/>`_ . Først oppdaterer vi ``pip``til den nyeste versjonen::
 
-     !pip install --upgrade pip 
+     pip install --upgrade pip 
 
 Vanlig programvare for store språkmodeller
 --------------------------------------------
@@ -52,7 +52,7 @@ Søkeindeks
 
 Til :doc:`05_rag` kapittelet vil vi bruke `FAISS <https://faiss.ai/>`_ til å søke etter dokumenter lokalt på maskinen::
 
-  !pip install --upgrade faiss-cpu
+  pip install --upgrade faiss-cpu
 
 Språkmodellen
 ---------------

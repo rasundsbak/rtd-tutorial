@@ -67,8 +67,9 @@ Vi bør fortelle HuggingFace biblioteket hvor det skal lagre dataene sine. Hvis 
    import os
    os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'
 
-.. note:: Frivillig
-      :collapsible: closed
+
+.. admonition:: Frivillig oppgave:
+   :collapsible: closed
 
   Hvis du kjører en av modellene som allerede er lastet ned til Educloud/Fox prosjekt ec443, kan du droppe dette. Hvis du ikke kjører på Educloud/Fox project ec443, eller du vil bruke en modell som ikke er lastet ned, må du laste den.
 

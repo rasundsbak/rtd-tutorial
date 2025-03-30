@@ -71,7 +71,7 @@ Vi bør fortelle HuggingFace biblioteket hvor det skal lagre dataene sine. Hvis 
 .. admonition:: Frivillig oppgave:
    :collapsible: closed
 
-  Hvis du kjører en av modellene som allerede er lastet ned til Educloud/Fox prosjekt ec443, kan du droppe dette. Hvis du ikke kjører på Educloud/Fox project ec443, eller du vil bruke en modell som ikke er lastet ned, må du laste den.
+   Hvis du kjører en av modellene som allerede er lastet ned til Educloud/Fox prosjekt ec443, kan du droppe dette. Hvis du ikke kjører på Educloud/Fox project ec443, eller du vil bruke en modell som ikke er lastet ned, må du laste den.
 
    Du trenger "User Access Token" fra HuggingFace. Hvis du ikke har en konto på HuggingFace, må du først registrere deg. Klikk på knappen “Sign Up” i øvre høyre hjørne på HuggingFace' nettside.
 

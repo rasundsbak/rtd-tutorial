@@ -6,11 +6,11 @@ Problemløsninger
 
 ::
 
-  !pip install --upgrade pip
+  pip install --upgrade pip
 
 ::
 
-  !pip install --upgrade torch
+  pip install --upgrade torch
 
 Cuda out of memory beskjed
 ----------------------------

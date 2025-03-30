@@ -57,9 +57,15 @@ Til :doc:`05_rag` kapittelet vil vi bruke `FAISS <https://faiss.ai/>`_ til å s�
 Språkmodellen
 ---------------
 
-Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy og modeller som brukes til maskinlæring. Vi vil bruke åpen- vektmodellen mistralai/Ministral-8B-Instruct-2410 til de fleste av våre oppgaver. Modellen har 8 milliarder parametere. Til sammenligning har en av de største språkmodellene når dette skrives, Llama 3.1, 405 milliarder parametere. Ministral-8B-Instruct-2410 har rundt 16 GB, noe som fortsatt gjør den til en ganske stor modell. For å kjøre den, må vi ha en GPU med minst 20 GB minne. Den kan også kjøres uten GPU, men da vil det ta lenger tid::
+Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy og modeller som brukes til maskinlæring. Vi vil bruke åpen- vektmodellen mistralai/Ministral-8B-Instruct-2410 til de fleste av våre oppgaver. Modellen har 8 milliarder parametere. Til sammenligning har en av de største språkmodellene når dette skrives, Llama 3.1, 405 milliarder parametere. Ministral-8B-Instruct-2410 har rundt 16 GB, noe som fortsatt gjør den til en ganske stor modell. For å kjøre den, må vi ha en GPU med minst 20 GB minne. Den kan også kjøres uten GPU, men da vil det ta lenger tid.
 
-  %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
+Modellens plassering
+------------------------
+
+Vi bør fortelle HuggingFace biblioteket hvor det skal lagre dataene sine. Hvis du kjører på Educloud/Fox prosjekt ec443 finner du modellen på stien nedenfor. Dersom du kjører på din egen manskin, trenger du antakelig ikke å spesifisere modellens plassering::
+
+   import os
+   os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'
 
 .. note:: Frivillig
       :collapsible: closed

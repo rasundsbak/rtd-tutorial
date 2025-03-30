@@ -23,11 +23,11 @@ Logg inn i `Educloud On Demand <https://ondemand.educloud.no>`_ med ditt Educlou
 
 Oppstart med JupyterLab
 -------------------------
-Etter du har logget inn, kan du se `Educlouds instrumentpanel <https://ondemand.educloud.no/pun/sys/dashboard>`_. Klikk på `JupyterLab <https://ondemand.educloud.no/pun/sys/dashboard/batch_connect/sys/fox-ood-jupyter/session_contexts/new>`_, for å konfigurere sesjonen.
+Etter du har logget inn, kan du se `Educlouds instrumentpanel <https://ondemand.educloud.no/pun/sys/dashboard>`_. Klikk på `JupyterLab <https://ondemand.educloud.no/pun/sys/dashboard/batch_connect/sys/fox-ood-jupyter/session_contexts/new>`_, for å konfigurere sesjonen. Gruppe ec443 har en reservasjon for 31. mars 2025: **Velg Jupyter (ML node users )**.
 
    * I feltet “Choose the Educloud project to run under:”, velger du ec443.
 
-   * I feltet “Choose resources:”, bør du velge “GPU (1x Nvidia MIG 20G VRAM, 24 CPU cores, 100GB RAM)”.
+   * I feltet “Choose resources:”, bør du velge “GPU (1x Nvidia A100, 40GB, 24 CPU cores, 250GB RAM)”.
 
    * I feltet “Runtime (in hours)” kan du velge 1 t av gangen. Prøv å unngå å reservere en GPU lenger enn nødvendig, fordi GPUer er begrensede, delte ressurser.
 

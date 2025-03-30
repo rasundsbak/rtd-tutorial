@@ -24,24 +24,28 @@ Vi kommer til å bruke pakkeinstallasjonsprogrammet ``pip``til å installere pro
 Vanlig programvare for store språkmodeller
 --------------------------------------------
 
-Vi installerer programvaren til LangChain og HuggingFace først. Transformers er den grunnleggende teknologien som brukes for store språkmideller, derfor installerer vi biblioteket ``sentence-transformers`` også. Modellene bruker ``sentencepiece`` biblioteket, derfor er dette også viktig.
+Vi installerer programvaren til LangChain og HuggingFace først. Vi bruker ``huggingface-hub`` til automatisk å laste ned modeller når dette er nødvendig::
 
-Kode::
+   pip install --upgrade huggingface-hub httpx
 
-  !pip install --upgrade huggingface-hub
-  !pip install --upgrade langchain
-  !pip install --upgrade langchain-community langchain-huggingface
-  !pip install --upgrade sentence-transformers
-  !pip install --upgrade sentencepiece
+Vi trenger flere pakker til å jobbe med LangChain og HuggingFace::
+
+   pip install --upgrade langchain langchain-community langchain-huggingface
+
+Transformers er den grunnleggende teknologien som brukes i store språkmodeller. Derfor installerer vi biblioteket ``sentence-transformers``::
+
+   pip install --upgrade sentence-transformers
+
+Noen modeller bruker ``sentencepiece biblioteket`. Derfor installerer vi dette også::
+
+   pip install --upgrade sentencepiece
 
 Programvare til å lese tekstdokumenter
------------------------------------------
+---------------------------------------
 
-Vi kommer til å bruke "unstructured" til å lese dokumenter. Biblioteket unstructured støtter ulike dokumentformater, som PDFer, Word filer og rene tekstdokumenter.
+Vi kommer til å bruke “unstructured” til å lese dokumenter. Unstructured støtter ulike dokumentformater, som PDFer, Word filer og rene tekstdokumenter::
 
-Kode::
-
-  !pip install --upgrade unstructured[all-docs] langchain-unstructured
+   pip install --upgrade unstructured[all-docs] langchain-unstructured
 
 Søkeindeks
 ----------

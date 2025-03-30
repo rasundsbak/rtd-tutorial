@@ -53,7 +53,7 @@ Vi spesifiserer modellens identifikator. Dette finner du på nettsiden til Huggi
 
    task = 'text-generation'
 
-Hvis maskinen din har GPU, vil det gå mye fortere å bruke denne enn å bruke bare CPU. Vi kan bruke ``torch`` biblioteket til å undersøke om vi har GPU::
+Hvis maskinen din har GPU, vil det gå mye fortere å bruke denne enn å bruke bare CPU. Vi kan bruke ``torch`` biblioteket til å undersøke om vi har GPU. Hvis du ønsker å lære mer om `PyTorch <https://pytorch.org/>`_, kan du lese mer i dokumentasjonen::
 
    import torch
    torch.cuda.is_available()

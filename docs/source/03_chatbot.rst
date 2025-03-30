@@ -20,7 +20,7 @@ I denne første delen av kurset skal vi sende en instruks til en språkmodell.  
 Språkmodellen
 --------------
 
-Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy om modeller til maskinlæring. Vi vil bruke LLM meta-llama/Llama-3.2-1B, som er en modell som har åpne vekter og parametere. Dette er en liten modell med bare 1 milliard parametere. Den bør være mulig å bruke på de fleste bærbare maskiner.
+Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy og modeller til maskinlæring. Vi vil bruke LLM meta-llama/Llama-3.2-1B, som er en modell som har åpne vekter og parametere. Dette er en liten modell med bare 1 milliard parametere. Den bør være mulig å bruke på de fleste bærbare maskiner.
 
 
 .. note:: **Typer av modeller:**

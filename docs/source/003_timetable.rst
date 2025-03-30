@@ -41,7 +41,3 @@ Hvis vi får tid, last opp eget materiale, og du kan prøve å bruke metodene so
 
 Velkommen!
 Hilsen Pål, Erik and Ragnhild
-
-Evaluering
-----------------
-Vi inviterer deg til å fortsette å bruke Educloud ec443 ut desember 2025. `Logg inn i Nettskjema <https://nettskjema.no/a/llm-course>`_ for å svare på dette, og øvrig evaluering.

@@ -16,6 +16,7 @@ Alle må ha med
 * Egen bærbar PC
 * En smarttelefon med `denne autentiserings appen <https://www.microsoft.com/nb-no/security/mobile-authenticator-app>`_. Testet og klar til bruk, som betyr at du har vært inne i Educloud On Demand.
 * Lurt: koble seg til `samarbeidsdokumentet <https://hackmd.okfn.de/AOCRq-OwTfWaTbbVaD9aBQ#>`_, dersom vi blir enige om å bruke det.
+* Lurt2: `Huggingface url <https://huggingface.co/>`_
 
 Timeplanen under er tentativ. Vi tilpasser underveis.
 

@@ -9,8 +9,7 @@ Forkunnskaper
 
 2) Carpentry leksjonen `Plotting and Programming in Python <https://swcarpentry.github.io/python-novice-gapminder/>`_. bør tas som selvstudiom, om du ikke har deltatt i egen person.
 
-3) Finn fram skjermtasteturet på maskinen din, senest dagen før du kommer på kurs. Du vil trolig få bruk for det.
-
+3) Finn fram skjermtasteturet på maskinen din.
 
 Alle må ha med
 ----------------
@@ -22,10 +21,10 @@ Timeplanen under er tentativ. Vi tilpasser underveis.
 Før lunsj
 -----------
 **09:15-10:00**
-`Installing Software <https://uio-library.github.io/LLM-course/1_installing.html>`_
+:doc:`01_easy_login` og :doc:`02_downloading_packages`
 
 **10:15-11:00**
-`Querying LLMs (Chatbots) <https://uio-library.github.io/LLM-course/2_chatbot.html>`_
+:doc:`03_chatbot`
 
 **11:15-11:45**
 `Summarization <https://uio-library.github.io/LLM-course/3_summarizing.html#summarization>`_
@@ -36,13 +35,7 @@ Lunch
 Etter lunsj
 -------------
 **12:15-13:00**
-`Summarization <https://uio-library.github.io/LLM-course/3_summarizing.html>`_
-
-**13:15-13:45**
-`Retrieval Augmented Generation (RAG) <https://uio-library.github.io/LLM-course/4_RAG.html>`_
-
-**13:45-14:00**
-`Evaluering <https://nettskjema.no/a/llm-course>`_
+`Retrieval Augmented Generation (RAG) <https://uio-library.github.io/LLM-course/4_RAG.html>`_ og til slutt `Evaluering <https://nettskjema.no/a/llm-course>`_
 
 Hvis vi får tid, last opp eget materiale, og du kan prøve å bruke metodene som du har lært på eget materiale. Vi hjelper hverandre.
 

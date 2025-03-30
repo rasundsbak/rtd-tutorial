@@ -39,7 +39,7 @@ Vi bør fortelle HuggingFace biblioteket hvor det skal lagre dataene sine. Hvis 
 Lasting av modellen
 --------------------
 
-For å bruke kodellen, lager vi en pipeline. en pipeline (rørledning) kan bestå av flere mindre biter, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden ``HuggingFacePipeline.from_model_id()``, som automatisk laster ned den spesifiserte modellen fra HuggingFace.
+For å bruke kodellen, lager vi en pipeline. En pipeline kan bestå av flere mindre biter, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden ``HuggingFacePipeline.from_model_id()``, som automatisk laster ned den spesifiserte modellen fra HuggingFace.
 
 Først importerer vi biblioteksfunksjonen som vi trenger::
 

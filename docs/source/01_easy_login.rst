@@ -23,11 +23,11 @@ Logg inn i `Educloud On Demand <https://ondemand.educloud.no>`_ med ditt Educlou
 
 Oppstart med JupyterLab
 -------------------------
-Etter du har logget inn, kan du se `Educlouds instrumentpanel <https://ondemand.educloud.no/pun/sys/dashboard>`_. Klikk på `JupyterLab <https://ondemand.educloud.no/pun/sys/dashboard/batch_connect/sys/fox-ood-jupyter/session_contexts/new>`_, for å konfigurere sesjonen.
+Etter du har logget inn, kan du se `Educlouds instrumentpanel <https://ondemand.educloud.no/pun/sys/dashboard>`_. Klikk på `JupyterLab <https://ondemand.educloud.no/pun/sys/dashboard/batch_connect/sys/fox-ood-jupyter/session_contexts/new>`_, for å konfigurere sesjonen. Gruppe ec443 har en reservasjon for 31. mars 2025: **Velg Jupyter (ML node users )**.
 
    * I feltet “Choose the Educloud project to run under:”, velger du ec443.
 
-   * I feltet “Choose resources:”, bør du velge “GPU (1x Nvidia MIG 20G VRAM, 24 CPU cores, 100GB RAM)”.
+   * I feltet “Choose resources:”, bør du velge “GPU (1x Nvidia A100, 40GB, 24 CPU cores, 250GB RAM)”.
 
    * I feltet “Runtime (in hours)” kan du velge 1 t av gangen. Prøv å unngå å reservere en GPU lenger enn nødvendig, fordi GPUer er begrensede, delte ressurser.
 
@@ -35,7 +35,7 @@ Etter du har logget inn, kan du se `Educlouds instrumentpanel <https://ondemand.
 
 De andre feltene skal ikke fylles ut. Oppsettet ditt skal se ut som bildet under.
 
-.. image:: jupyter_lab_mig.png
+.. image:: ml_node_users.png
 
 Start JupyterLab ved å klikke på den blå “Launch” knappen nederst i skjemaet. Dette lager en jobb som blir sendt til køen. Når de påkrevde ressursene er tilgjengelige, starter jobben din opp.
 
@@ -54,12 +54,12 @@ Oppgaver
 .. admonition:: Oppgave: Dokumentmappe i Jupyter lab grensesnitt
    :collapsible: closed
 
-    Du trenger en mappe til å lagre dokumentene dine på Educloud. Når du åpner JupyterLab, vil du få filmenyen til venstre. Den peker til ditt Home directory som du finner igjen på Educlou. Her kan du lagre filene dine. Hvis du ikke allerede har en mappe som kalles “documents”, lag en. For å lage en ny mappe, klikk den grå , click the gray “New Folder” knappen i toppmenyen. Nå dukker det en ny mappe opp på listen, med forslag til navn “Untitled Folder”. Skriv “documents” istedenfor “Untitled Folder” og trykk enter på ditt eget tastatur for å lagre.
+   Du trenger en mappe til å lagre dokumentene dine på Educloud. Når du åpner JupyterLab, vil du få filmenyen til venstre. Den peker til ditt hjemmeområde/ home directory som du finner igjen på Educloud. Her kan du lagre filene dine. Hvis du ikke allerede har en mappe som kalles “documents”, lag en. For å lage en ny mappe, klikk den grå , “New Folder” knappen i toppmenyen. Nå dukker det en ny mappe opp på listen, med forslag til navn “Untitled Folder”. Skriv “documents” istedenfor “Untitled Folder” og trykk enter på tastaturet for å lagre.
 
 
-.. admonition:: Oppgave: Laste opp filer med Educloud grensesnitt
+.. admonition:: Frivillig oppgave: Laste opp filer med Educloud grensesnitt
    :collapsible: closed
 
-    Du kan laste opp dokumenter som du ønsker å jobbe med på Fox. Prøv å unngå dokumenter som inneholder sensitive data. Vi anbefaler å teste med offentlig tilgjengelige dokumenter som kun inneholder `grønne data <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_.
+   Du kan laste opp dokumenter som du ønsker å jobbe med på Fox. Prøv å unngå dokumenter som inneholder sensitive data. Vi anbefaler å teste med offentlig tilgjengelige dokumenter som kun inneholder `grønne data <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_.
 
    Velg folderen "dokumenter" som du etablerte på ditt hjemmeområde i forrige oppgave. Velg den blå opplastingsknappen fra toppmenyen. Deretter velger du “browse files” og velger etpar filer til opplasting. Til slutt velger du den grønne "Upload x files" knappen i nedre venstre hjørne.

@@ -9,11 +9,11 @@ aplikasjoner med LLMer. Vi vil bruke modeller fra `HuggingFace <https://huggingf
 .. admonition:: Oppgave: Lag en ny notebook
    :collapsible: closed
 
-   Lag en ny Jupyter Notebook med navn ``installing`` by ved å klikke File-menyen i JupyterLab, og så New og Notebook. IHvis du blir spurt om å velge en kjerne (kernel), velg “Python 3”. Gi navn til notebooken ved å klikke Filmenyen i JupyterLab og deretter "Rename Notebook". Bruk navnet ``installing``.
+   Lag en ny Jupyter Notebook med navn ``installing`` ved å klikke Filmenyen i JupyterLab, og så "New" og "Notebook". Hvis du blir spurt om å velge en kjerne (kernel), velg “Python 3”. Gi navn til notebooken ved å klikke Filmenyen i JupyterLab og deretter "Rename Notebook". Bruk navnet ``installing``.
 
 .. warning:: Virtuelle miljøer
 
-   Hvis du vanligvis jobber med virtuelle miljøer på Fox, bør du sette opp og aktivere et virtuelt miljø før du fortsetter. Se i Bonus: Virtuelle miljøer. Hvis du ikke har hørt om virtuelle miljøer, kan du fortsette uten å bruke virtuelle miljøer.
+   Hvis du vanligvis jobber med `virtuelle miljøer <https://docs.python.org/3/library/venv.html>`_ på Fox, bør du sette opp og aktivere et virtuelt miljø før du fortsetter. Se i `Bonus: Virtuelle miljøer`_ . Hvis du ikke har hørt om virtuelle miljøer, kan du fortsette uten å bruke virtuelle miljøer.
 
 Pyton pakker
 -------------
@@ -24,24 +24,28 @@ Vi kommer til å bruke pakkeinstallasjonsprogrammet ``pip``til å installere pro
 Vanlig programvare for store språkmodeller
 --------------------------------------------
 
-Vi installerer programvaren til LangChain og HuggingFace først. Transformers er den grunnleggende teknologien som brukes for store språkmideller, derfor installerer vi biblioteket ``sentence-transformers`` også. Modellene bruker ``sentencepiece`` biblioteket, derfor er dette også viktig.
+Vi installerer programvaren til LangChain og HuggingFace først. Vi bruker ``huggingface-hub`` til automatisk å laste ned modeller når dette er nødvendig::
 
-Kode::
+   pip install --upgrade huggingface-hub httpx
 
-  !pip install --upgrade huggingface-hub
-  !pip install --upgrade langchain
-  !pip install --upgrade langchain-community langchain-huggingface
-  !pip install --upgrade sentence-transformers
-  !pip install --upgrade sentencepiece
+Vi trenger flere pakker til å jobbe med LangChain og HuggingFace::
+
+   pip install --upgrade langchain langchain-community langchain-huggingface
+
+Transformers er den grunnleggende teknologien som brukes i store språkmodeller. Derfor installerer vi biblioteket ``sentence-transformers``::
+
+   pip install --upgrade sentence-transformers
+
+Noen modeller bruker ``sentencepiece biblioteket`. Derfor installerer vi dette også::
+
+   pip install --upgrade sentencepiece
 
 Programvare til å lese tekstdokumenter
------------------------------------------
+---------------------------------------
 
-Vi kommer til å bruke "unstructured" til å lese dokumenter. Biblioteket unstructured støtter ulike dokumentformater, som PDFer, Word filer og rene tekstdokumenter.
+Vi kommer til å bruke “unstructured” til å lese dokumenter. Unstructured støtter ulike dokumentformater, som PDFer, Word filer og rene tekstdokumenter::
 
-Kode::
-
-  !pip install --upgrade unstructured[all-docs] langchain-unstructured
+   pip install --upgrade unstructured[all-docs] langchain-unstructured
 
 Søkeindeks
 ----------
@@ -53,12 +57,19 @@ Til :doc:`05_rag` kapittelet vil vi bruke `FAISS <https://faiss.ai/>`_ til å s�
 Språkmodellen
 ---------------
 
-Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy og modeller som brukes til maskinlæring. Vi vil bruke åpen- vektmodellen mistralai/Ministral-8B-Instruct-2410 til de fleste av våre oppgaver. Modellen har 8 milliarder parametere. Til sammenligning har en av de største språkmodellene når dette skrives, Llama 3.1, 405 milliarder parametere. Ministral-8B-Instruct-2410 har rundt 16 GB, noe som fortsatt gjør den til en ganske stor modell. For å kjøre den, må vi ha en GPU med minst 20 GB minne. Den kan også kjøres uten GPU, men da vil det ta lenger tid::
+Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy og modeller som brukes til maskinlæring. Vi vil bruke åpen- vektmodellen mistralai/Ministral-8B-Instruct-2410 til de fleste av våre oppgaver. Modellen har 8 milliarder parametere. Til sammenligning har en av de største språkmodellene når dette skrives, Llama 3.1, 405 milliarder parametere. Ministral-8B-Instruct-2410 har rundt 16 GB, noe som fortsatt gjør den til en ganske stor modell. For å kjøre den, må vi ha en GPU med minst 20 GB minne. Den kan også kjøres uten GPU, men da vil det ta lenger tid.
 
-  %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
+Modellens plassering
+------------------------
 
-.. note:: Frivillig
-      :collapsible: closed
+Vi bør fortelle HuggingFace biblioteket hvor det skal lagre dataene sine. Hvis du kjører på Educloud/Fox prosjekt ec443 finner du modellen på stien nedenfor. Dersom du kjører på din egen manskin, trenger du antakelig ikke å spesifisere modellens plassering::
+
+   import os
+   os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'
+
+
+.. admonition:: Frivillig oppgave:
+   :collapsible: closed
 
   Hvis du kjører en av modellene som allerede er lastet ned til Educloud/Fox prosjekt ec443, kan du droppe dette. Hvis du ikke kjører på Educloud/Fox project ec443, eller du vil bruke en modell som ikke er lastet ned, må du laste den.
 

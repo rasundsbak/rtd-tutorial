@@ -206,12 +206,11 @@ Til RAG programmet vårt trenger vi tilgang til en søkemotor fra et grensesnitt
 
    retriever = vectorstore.as_retriever(search_kwargs={'k': 3})
 
-Retriever argumenter
----------------------
+.. note:: Retriever argumenter
 
-Dette er retrieverens argumenter::
+   Dette er retrieverens argumenter:
 
-    ‘k’: the number of documents to return (kNN search)
+      * ‘k’: the number of documents to return (kNN search)
 
 Lage en instruks
 ------------------

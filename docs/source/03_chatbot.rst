@@ -39,7 +39,7 @@ Vi bør fortelle HuggingFace biblioteket hvor det skal lagre dataene sine. Hvis 
 Lasting av modellen
 --------------------
 
-For å bruke kodellen, lager vi en pipeline. En pipeline kan bestå av flere mindre biter, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden ``HuggingFacePipeline.from_model_id()``, som automatisk laster ned den spesifiserte modellen fra HuggingFace.
+For å bruke modellen, lager vi en pipeline. En pipeline kan bestå av flere mindre biter, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden ``HuggingFacePipeline.from_model_id()``, som automatisk laster ned den spesifiserte modellen fra HuggingFace.
 
 Først importerer vi biblioteksfunksjonen som vi trenger::
 
@@ -53,7 +53,7 @@ Vi spesifiserer modellens identifikator. Dette finner du på nettsiden til Huggi
 
    task = 'text-generation'
 
-Hvis maskinen din har GPU, vil det gå mye fortere å bruke denne enn å bruke bare CPU. Vi kan bruke ``torch`` biblioteket til å undersøke om vi har GPU::
+Hvis maskinen din har GPU, vil det gå mye fortere å bruke denne enn å bruke bare CPU. Vi kan bruke ``torch`` biblioteket til å undersøke om vi har GPU. Hvis du ønsker å lære mer om `PyTorch <https://pytorch.org/>`_, kan du lese mer i dokumentasjonen::
 
    import torch
    torch.cuda.is_available()
@@ -116,7 +116,7 @@ Her kommer en oppsummering av pipelinens/ rørledningens argumenter:
 Å lage instruks
 -----------------
 
-Vi kan bruke en instruks til å fortelle språkmodellen hvirdan vi ønsker at den skal svare. Instruksen bør være kort og konstruktiv. Vi lager også plassholdere til konteksten. LangChain bytter disse ut med de aktuelle dokumentene når vi kjører en instruks.
+Vi kan bruke en instruks til å fortelle språkmodellen hvordan vi ønsker at den skal svare. Instruksen bør være kort og konstruktiv. Vi lager også plassholdere til konteksten. LangChain bytter disse ut med de aktuelle dokumentene når vi kjører en instruks.
 
 Nok en gang importerer vi biblioteksfunksjonene som vi trenger::
 

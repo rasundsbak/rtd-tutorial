@@ -9,9 +9,7 @@ Run large language models (LLM) through Educloud UiO
 
 Who are we inviting
 ----------------------
-This documentation is a part of the course held at The University og Oslo Library. The course is for employees at the University of Oslo who has some experience with Jupyter. We invite Researchers, PhDs and Postdocs. If you are in the interest group, you may `sign up here <https://nettskjema.no/a/465610>`_. 
-
-.. todo:: 0.1 Takke nettverket ett eller annet sted.
+This documentation is held at The University og Oslo Library. The course is for employees at the University of Oslo who has some experience with Jupyter. We invite Researchers, PhDs and Postdocs. If you are in the interest group, you may `sign up here <https://nettskjema.no/a/465610>`_.
 
 Prior Knowledge
 -----------------
@@ -47,10 +45,4 @@ Learning objectives
    28_problem_solving
    29_references
    30_todo
-
-Indices and tables
-====================
-
-* :ref:`genindex`
-* :ref:`search`
 

@@ -10,7 +10,7 @@ Prerequisites
 
 2) The Carpentry lesson on `Plotting and Programming in Python <https://swcarpentry.github.io/python-novice-gapminder/>`_. may be done as a self study. We recommend doing chapters one and six as a minimum.
 
-3) Find your screen keyboard on your computer, so that you have it ready. You are going to need it.
+3) Find your screen keyboard on your computer. You are going to need it.
 
 Everybody must bring
 -----------------------

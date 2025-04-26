@@ -1,6 +1,4 @@
-Are you a team member? `Edit this page  <https://github.com/rasundsbak/rtd-tutorial>`_.
-
-This is a cooperative project. See also `LLM Course <https://uio-library.github.io/LLM-course/index.html>`_.
+Are you a team member? `Edit this page  <https://github.com/rasundsbak/rtd-tutorial>`_. This is a cooperative project. See also `LLM Course <https://uio-library.github.io/LLM-course/index.html>`_.
 
 Run large language models (LLM) through Educloud UiO
 ======================================================
@@ -13,7 +11,7 @@ This course is held at the Oslo Univsersity Library. We recommend that those who
 
 Prior Knowledge
 -----------------
-You should have attended the course "Plotting and Programming in Python" held as a Carpentry program at the `Digital Scholarship Centre <https://www.ub.uio.no/english/libraries/dsc/>`_, or have a similar degree of knowledge to Python and JupyterLab. You may take `The lesson <https://swcarpentry.github.io/python-novice-gapminder/>`_, as a self study.
+You should attend the course "Plotting and Programming in Python" held as a Carpentry program at the `Digital Scholarship Centre <https://www.ub.uio.no/english/libraries/dsc/>`_, or have a similar degree of knowledge to Python and JupyterLab. You may take `The lesson <https://swcarpentry.github.io/python-novice-gapminder/>`_, as a self study.
 
 Learning objectives
 ----------------------
@@ -29,15 +27,12 @@ Learning objectives
    :hidden:
 
    003_timetable
-   00_motivation
    01_preparations
    02_easy_login
    03_downloading_packages
-   04_ai_board
-   05_chatbot
-   06_where_ais_live
-   07_prompting
-   08_summarization
+   04_chatbot
+   05_prompting
+   06_summarization
    09_parameters
    10_rag
    11_memory

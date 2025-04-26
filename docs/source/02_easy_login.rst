@@ -12,11 +12,11 @@ How to order a job on the Fox
 
 When you are logged on to `the Fox <https://ood.educloud.no/>`_, move like this: from the left menu, go to Jupyter lab --> ec443 Choose one of the Nvidia GPUs from the drop down menu --> Rumtime. 1h --> Jupyter variant, Jupyter lab --> (You need not choose jupyter module, as the last version is pre selected) -->  Launch. You are now in the line to get into the Jupyter lab on UiO Fox. The waiting time depends on how much machine power and time you are asking for.
 
+.. image:: fox_skjermbilde.png
+
 How much machine power do I need?
 ----------------------------------
 Some of these processes, like installing or simply punching code in Jupyter Lab, without executing it, can be done on any machine on Fox. When it comes to operations like Rag or Chatbot, it is better performed on a stronger machine with GPU.
-
-.. image:: fox_skjermbilde.png
 
 .. note::
 

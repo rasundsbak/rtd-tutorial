@@ -3,7 +3,7 @@
 # -- Project information --
 
 project = 'AI on Cluster'
-copyright = '2025'
+copyright = '2025 Ragnhild Sundsbak in collaboration wigh Erik Winge and Pål Lykkja'
 author = 'Ragnhild Sundsbak'
 
 release = '4.5'

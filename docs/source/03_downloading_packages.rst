@@ -3,9 +3,16 @@
 03 Installing software
 ========================
 
-Downloading packages
----------------------
-We are going to download packages. We have to do this the first time we are going to use the models. The second and thirs time, you may neutralice the !pip install code with a # in front of the cell.
+We’ll use LangChain, an open-source library for making applications with LLMs. We’ll use models from HuggingFace, a website that has tools and models for machine learning.
+
+.. admonition:: Exercise: Create a new notebook
+   :collapsible: closed
+
+  Create a new Jupyter Notebook called installing by clicking the File-menu in JupyterLab, and then New and Notebook. If you are asked to select a kernel, choose “Python 3”. Give the new notebook a name by clicking the File-menu in JupyterLab and then clicking Rename Notebook. Use the name installing.
+
+.. warning ::
+
+  If you usually work with virtual environments on Fox, you should setup and activate a virtual environment before you continue, see Bonus: Virtual Environments. If you haven’t heard of virtual environments, you can continue without using virtual environments.
 
 Cell 1::
 

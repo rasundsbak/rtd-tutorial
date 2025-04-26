@@ -41,9 +41,8 @@ Run this Cell::
 
   Task 3.5: How do we change the content of a cell from markdown to code, and back again? What is the point with this?
 
-
-Use only the three largest machines on Fox for this lesson: A100 og RTX
-------------------------------------------------------------------------
+How much machine power do I need?
+----------------------------------
 Some of these processes, like installing or simply punching code in Jupyter Lab, without executing it, can be done on any machine on Fox. When it comes to operations like Rag or Chatbot, it is better performed on a stronger machine with GPU.
 
 Downloading packages

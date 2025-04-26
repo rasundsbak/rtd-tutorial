@@ -47,9 +47,9 @@ After lunch
 If we get time, upload your own material, and you may try to use the methods on what you have. The instructors will assist you.
 
 Welcome, this will be fun!
-From Pål, Erik and Ragnhild
+From Erik, Pål and Ragnhild
 
 Evaluation form
 ----------------
-We are inviting you to continue using Educloud ec443 until Desember 2025. Kindly `log in to Nettskjema <https://nettskjema.no/a/llm-course>`_ in order to answer this and the evaluation questions.
+We are inviting you to continue using Educloud ec443 until Desember 2025. Please use the red and green sticky notes that you were given. Write what we can do better on the red one, and what you appreciated, on the green one.
 

@@ -52,6 +52,12 @@ The `FAISS <https://faiss.ai/>`_ package is used in the :doc:`10_rag` chapter fo
 
   pip install --upgrade faiss-cpu
 
+The language models
+--------------------
+
+..todo::
+   Introduce!
+
 Model location
 -----------------
 We tell the system where the model is located. If you run on ec443, the models from Huggingface are already downloaded for you::

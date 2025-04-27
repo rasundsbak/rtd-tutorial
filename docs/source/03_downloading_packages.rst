@@ -3,7 +3,7 @@
 03 Installing software
 ========================
 
-We’ll use `LangChain <https://www.langchain.com/>_`, an open-source library for making applications with LLMs. We’ll use models from `HuggingFace <https://huggingface.co/>_`, a website that has tools and models for machine learning.
+We’ll use `LangChain <https://www.langchain.com/>`_, an open-source library for making applications with LLMs. We’ll use models from `HuggingFace <https://huggingface.co/>`_, a website that has tools and models for machine learning.
 
 .. admonition:: Exercise: Create a new notebook
    :collapsible: closed

@@ -98,7 +98,13 @@ Venv is a module in Python that supports creating independent `virtual environme
 Creating a virtual environment
 --------------------------------
 
-!python -m venv /path/to/new/virtual/environment
+Now we are using the bash. The command below will create a venv in the working directory. Note that because of the way the command is written, the folder containing the venv will be made as a dotfile. There is a tick box in the Educloud interface, allowing you to "Show dotfiles".
+
+python -m venv .venv
+
+To activate: source .venv/bin/activate
+
+EW suggestion: !python -m venv .venv
 
 Activating the environment
 ----------------------------

@@ -55,7 +55,8 @@ The `FAISS <https://faiss.ai/>`_ package is used in the :doc:`10_rag` chapter fo
 The language models
 --------------------
 
-..todo::
+.. todo::
+
    Introduce!
 
 Model location

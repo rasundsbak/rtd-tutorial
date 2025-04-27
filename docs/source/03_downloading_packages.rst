@@ -76,6 +76,11 @@ We tell the system where the model is located. If you run on ec443, the models f
    Keyword: slurm functionality
 
 
+.. todo::
+
+   Consider reintroducing requirements.txt, and clean out old packages. Make in simplest possible way. Stress the ned to have one requirements for each venv?
+
+
 .. admonition:: Optional
    :collapsible: closed
 
@@ -88,13 +93,12 @@ Cell for entering your HF token::
 
 Virtual Environments
 ---------------------
-`virtual environments <https://docs.python.org/3/library/venv.html>`_
-
+Venv is a module in Python that supports creating independent `virtual environments <https://docs.python.org/3/library/venv.html>`_ (venv). The venv has its base in the existing python installation.
 
 Creating a virtual environment
 --------------------------------
 
-!python -m venv .venv
+!python -m venv /path/to/new/virtual/environment
 
 Activating the environment
 ----------------------------

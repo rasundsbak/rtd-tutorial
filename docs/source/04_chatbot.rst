@@ -1,6 +1,6 @@
-.. _05_chatbot
+.. _04_chatbot
 
-05 Querying LLMs (Chatbots)
+04 Querying LLMs (Chatbots)
 ===========================
 
 .. index:: chatbot, pipeline, pipeline initialization, kwargs

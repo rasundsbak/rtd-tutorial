@@ -65,6 +65,17 @@ We tell the system where the model is located. If you run on ec443, the models f
 
   %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
 
+
+.. todo::
+
+   Test difference::
+
+   import os
+   os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'
+
+   Keyword: slurm functionality
+
+
 .. admonition:: Optional
    :collapsible: closed
 
@@ -74,3 +85,21 @@ Cell for entering your HF token::
 
   from huggingface_hub import login
   login()
+
+Virtual Environments
+---------------------
+
+Creating a virtual environment
+--------------------------------
+
+!python -m venv .venv
+
+Activating the environment
+----------------------------
+
+source .venv/bin/activate
+
+JupyterLab kernel for the environment
+---------------------------------------
+
+! .venv/bin/python -m ipykernel install --user --name LLM --display-name "Python (LLM)"

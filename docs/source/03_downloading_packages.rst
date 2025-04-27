@@ -12,7 +12,32 @@ We’ll use `LangChain <https://www.langchain.com/>`_, an open-source library fo
 
 .. warning::
 
-  If you usually work with virtual environments, you should setup and activate a virtual environment before you continue, see `Virtual Environments`_. If you haven’t heard of virtual environments, you can continue without using virtual environments.
+  If you usually work with virtual environments, you should setup and activate a virtual environment before you continue, see `Virtual Environments`_. If you haven’t heard of virtual environments, you can continue without using virtual environments. In that case, jump to `Python packages`_.
+
+Virtual Environments
+---------------------
+Venv is a module in Python that supports creating independent `virtual environments <https://docs.python.org/3/library/venv.html>`_ (venv). The venv has its base in the existing python installation.
+
+Creating a virtual environment
+--------------------------------
+
+Now we are using the bash. The command below will create a venv in the working directory. Note that because of the way the command is written, the folder containing the venv will be made as a dotfile. There is a tick box in the Educloud interface, allowing you to "Show dotfiles".
+
+python -m venv .venv
+
+To activate: source .venv/bin/activate
+
+EW suggestion: !python -m venv .venv
+
+Activating the environment
+---------------------------
+
+source .venv/bin/activate
+
+JupyterLab kernel for the environment
+---------------------------------------
+
+! .venv/bin/python -m ipykernel install --user --name LLM --display-name "Python (LLM)"
 
 Python packages
 ----------------
@@ -90,28 +115,3 @@ Cell for entering your HF token::
 
   from huggingface_hub import login
   login()
-
-Virtual Environments
----------------------
-Venv is a module in Python that supports creating independent `virtual environments <https://docs.python.org/3/library/venv.html>`_ (venv). The venv has its base in the existing python installation.
-
-Creating a virtual environment
---------------------------------
-
-Now we are using the bash. The command below will create a venv in the working directory. Note that because of the way the command is written, the folder containing the venv will be made as a dotfile. There is a tick box in the Educloud interface, allowing you to "Show dotfiles".
-
-python -m venv .venv
-
-To activate: source .venv/bin/activate
-
-EW suggestion: !python -m venv .venv
-
-Activating the environment
-----------------------------
-
-source .venv/bin/activate
-
-JupyterLab kernel for the environment
----------------------------------------
-
-! .venv/bin/python -m ipykernel install --user --name LLM --display-name "Python (LLM)"

@@ -17,9 +17,7 @@ We’ll use `LangChain <https://www.langchain.com/>`_, an open-source library fo
 Python packages
 ----------------
 
-We will use the python package manager ``pip`` for installing software. ``pip`` installs software from the `Python Package Index <https://pypi.org/>`_. First, we update pip to the newest version:
-
-Cell 1::
+We will use the python package manager ``pip`` for installing software. ``pip`` installs software from the `Python Package Index <https://pypi.org/>`_. First, we update pip to the newest version::
 
   pip install --upgrade pip
 
@@ -50,7 +48,7 @@ Software for Reading Text Documents
 
 Search index
 -------------
-For the RAG chapter we will use `FAISS <https://faiss.ai/>`_ to search for documents. This package is about searching, clustering and parameter tuning::
+The `FAISS <https://faiss.ai/>`_ package is used in the :doc:`10_rag` chapter for searching for documents. This package is about searching, clustering and parameter tuning::
 
   pip install --upgrade faiss-cpu
 

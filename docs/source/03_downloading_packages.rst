@@ -10,9 +10,9 @@ We’ll use `LangChain <https://www.langchain.com/>`_, an open-source library fo
 
   Create a new Jupyter Notebook called ``installing`` by clicking the File-menu in JupyterLab, and then New and Notebook. If you are asked to select a kernel, choose “Python 3”. Give the new notebook a name by clicking the File-menu in JupyterLab and then clicking Rename Notebook. Use the name ``installing``.
 
-.. warning ::
+.. warning::
 
-  If you usually work with virtual environments, you should setup and activate a virtual environment before you continue, see `Virtual Environments`. If you haven’t heard of virtual environments, you can continue without using virtual environments.
+  If you usually work with virtual environments, you should setup and activate a virtual environment before you continue, see `Virtual Environments`_. If you haven’t heard of virtual environments, you can continue without using virtual environments.
 
 Python packages
 ----------------

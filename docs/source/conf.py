@@ -20,6 +20,7 @@ extensions = [
     'sphinx_copybutton',
     'sphinx.ext.viewcode',
     'sphinx.ext.todo',
+    'sphinx_panels',
 ]
 
 intersphinx_mapping = {

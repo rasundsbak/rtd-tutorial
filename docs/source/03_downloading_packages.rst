@@ -88,6 +88,8 @@ Cell for entering your HF token::
 
 Virtual Environments
 ---------------------
+`virtual environments <https://docs.python.org/3/library/venv.html>`_
+
 
 Creating a virtual environment
 --------------------------------

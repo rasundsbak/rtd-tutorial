@@ -78,7 +78,7 @@ We tell the system where the model is located. If you run on ec443, the models f
 
 .. todo::
 
-   Consider reintroducing requirements.txt, and clean out old packages. Make in simplest possible way. Stress the ned to have one requirements for each venv?
+   Consider reintroducing requirements.txt, and clean out old packages. Make in simplest possible way. Stress the ned to have one requirements for each venv. Test the setup.
 
 
 .. admonition:: Optional

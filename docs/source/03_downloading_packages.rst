@@ -12,7 +12,7 @@ We’ll use `LangChain <https://www.langchain.com/>`_, an open-source library fo
 
 .. warning ::
 
-  If you usually work with `virtual environments <https://docs.python.org/3/library/venv.html>`_ on Fox, you should setup and activate a virtual environment before you continue, see Bonus: Virtual Environments. If you haven’t heard of virtual environments, you can continue without using virtual environments.
+  If you usually work with virtual environments, you should setup and activate a virtual environment before you continue, see `Virtual Environments`. If you haven’t heard of virtual environments, you can continue without using virtual environments.
 
 Python packages
 ----------------

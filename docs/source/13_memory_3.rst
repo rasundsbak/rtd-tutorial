@@ -1,7 +1,7 @@
 .. _13 memory 3:
 
-13 Long term memory and Sql
-=============================
+13 Memory with Sql and structured data
+=======================================
 .. index::
 
 

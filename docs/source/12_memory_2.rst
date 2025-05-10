@@ -1,4 +1,4 @@
-.. _12 memory_2:
+.. _12 memory 2:
 
 11 Long term memory in Json format
 ===================================

@@ -37,6 +37,7 @@ Learning objectives
    10_rag
    11_memory 1
    12_memory 2
+   13_memory 3
    27_preparations
    28_problem_solving
    29_references

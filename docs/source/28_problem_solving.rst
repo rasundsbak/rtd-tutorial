@@ -1,6 +1,6 @@
 .. _28 problem solving:
 
-12 Problem solving
+28 Problem solving
 =====================
 .. index::
 

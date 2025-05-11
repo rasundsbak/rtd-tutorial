@@ -90,9 +90,10 @@ Tool calling and use of chat history may complicate the process. I have therefor
      }
  )
 
-::
 
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+Bla og bla::
+
+ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
 ::
 

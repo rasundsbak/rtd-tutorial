@@ -26,6 +26,14 @@ code view 4::
 
 code view 5::
 
+  # Where are my kernels?
+  $ jupyter kernelspec list
+
+  Available kernels:
+    llm        /fp/homes01/u01/[your username]/.local/share/jupyter/kernels/llm
+    python3    /cluster/software/EL9/easybuild/software/jupyter-server/2.14.0-GCCcore-13.2.0/share/jupyter/kernels/python3
+
+
 code view 6::
 
 code view 7::

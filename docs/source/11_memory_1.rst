@@ -1,12 +1,12 @@
 .. _11 memory 1:
 
-11 Conversational memory - work in progress
-============================================
+11 Setting up the memory
+=========================
 .. index:: conversational memory
 
 Short term memory with LangGraph
 -----------------------------------
-The memory of the LLM depends on the context window. In our first experiment, we will just make a test using hte short term memory of Mistral. Mistral-7B-Instruct-v0.3 is the smallest and latest Large Language Model (LLM) from Mistral AI, providing a 32k context window and support for function calling. This is what sets the limit when we want to implement a simple form of memory/ chat history.
+Without adjustments, the memory of the LLM depends on the context window. In our first experiment, we will make a test using the short term memory of Mistral. Mistral-7B-Instruct-v0.3 is the smallest and latest Large Language Model (LLM) from Mistral AI, providing a 32k context window and support for function calling. This is what sets the limit when we want to implement a simple form of memory/ chat history.
 https://langchain-ai.github.io/langgraph/concepts/memory/#managing-long-conversation-history
 
 Trim messages

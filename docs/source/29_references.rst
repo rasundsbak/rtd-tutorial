@@ -5,6 +5,10 @@
 .. index:: pipeline initialization, kwargs, transformers, LLM,
 
 
+.. todo::
+
+  Dytt inn `BetterBibtex <https://pypi.org/project/sphinxcontrib-bibtex/>`_
+
 Join our `Zotero group library here <https://www.zotero.org/groups/5856400/llm-course/library>`_
 
 Cho, C., 2023. Answer to “What is a beam?” Artificial Intelligence Stack Exchange.

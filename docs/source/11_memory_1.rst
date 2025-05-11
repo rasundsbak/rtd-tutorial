@@ -76,8 +76,6 @@ Skip this? (test it)::
 
 Tool calling and use of chat history may complicate the process. I have therefore decided to use the Recommended parameters for Mistral 7B Instruct v0.3 Median values from users on OpenRouter, ref: https://openrouter.ai/mistralai/mistral-7b-instruct-v0.3/parameters::
 
-::
-
  llm = HuggingFacePipeline.from_model_id(
      model_id,
      task,

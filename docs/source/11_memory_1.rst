@@ -19,19 +19,19 @@ More on this
 https://python.langchain.com/docs/integrations/memory/redis_chat_message_history/
 https://python.langchain.com/docs/concepts/chat_history/
 
-code view 2::
+::
  
-# Celle 1
+ # Celle 1
   %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
 
-code view 3::
+::
 
   # Celle 3
   from transformers import AutoModelForCausalLM, AutoTokenizer  
   model_id = 'mistralai/Mistral-7B-Instruct-v0.3'
   task = 'text-generation'
 
-code view 4::
+::
 
   # Initialize the pipeline with additional parameters
   # Recommended parameters for Mistral 7B Instruct v0.3 Median values from users on OpenRouter
@@ -52,7 +52,7 @@ code view 4::
       }
   )
 
-code view 5::
+::
 
   from typing import List
   from pydantic import BaseModel, Field
@@ -72,7 +72,7 @@ code view 5::
           self.messages.clear()  # Consistently use clear()
 
 
-code view 6::
+::
 
   # Store for managing memory by thread ID
   thread_memory_store = {}
@@ -96,7 +96,7 @@ code view 6::
       ]
 
 
-code view 7::
+::
 
   # Using thread-1 for a human message
   thread_id1 = "thread-1"
@@ -106,25 +106,25 @@ code view 7::
                  from 1587 to 1592. He raided many Spanish towns and ships."""
   ))
 
-code view 8::
+::
 
   # Using thread-2 for a human message
   thread_id2 = "thread-2"
   memory2 = get_memory_by_thread_id(thread_id2)
   memory2.add_message(HumanMessage(content="Thomas Cavendish was a cat."))
 
-code view 9::
+::
   
   # Print the memory for thread-1, excluding system messages
   print(f"Memory for {thread_id1}: {get_non_system_messages(thread_id1)}")
 
 
-code view 10::
+::
   
   # Print the memory for thread-2, excluding system messages
   print(f"Memory for {thread_id2}: {get_non_system_messages(thread_id2)}")
 
-code view 11::
+::
 
   # Define function to clear memories for specific thread IDs
   def clear_memory_by_thread_id(thread_ids: List[str]) -> None:
@@ -139,17 +139,7 @@ code view 11::
   thread_ids_to_clear = ["thread-1", "thread-2"]
   clear_memory_by_thread_id(thread_ids_to_clear)
 
-code view 12::
+::
  
  # Print the memory for thread-2, excluding system messages
  print(f"Memory for {thread_id2}: {get_non_system_messages(thread_id2)}")
-
-code view 9::
-code view 9::
-code view 9::
-code view 9::
-code view 9::
-code view 9::
-code view 9::
-code view 9::
-code view 9::

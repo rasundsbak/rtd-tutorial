@@ -21,41 +21,24 @@ Venv is a module in Python that supports creating independent `virtual environme
 Creating a virtual environment
 --------------------------------
 
-The command below will create a venv on the project directory. We are doing this from Jupyter lab.
+The command below will create a venv on the project directory. We are doing this from Jupyter lab::
 
-1::
-
-   !python -m venv /fp/projects01/ec443/ragnhsu/venv
+   !python -m venv /fp/projects01/ec443/[your username]/venv
 
 
-Activating the environment from bash
--------------------------------------
-2::
+Activating the environment from the commandline
+-------------------------------------------------
+::
 
-   source /fp/projects01/ec443/ragnhsu/venv/bin/activate
-
+   # Terminal from jupyter lab:
+   source /fp/projects01/ec443/[your username]/venv/bin/activate
 
 JupyterLab kernel for the environment
 ---------------------------------------
 
 3::
 
-   !/fp/projects01/ec443/ragnhsu/venv/bin/python -m ipykernel install --user --name LLM --display-name "Python (LLM)"
-
-
-
-
-
-To activate: source .venv/bin/activate
-
-EW suggestion: !python -m venv .venv
-
-
-
-source .venv/bin/activate
-
-
-! .venv/bin/python -m ipykernel install --user --name LLM --display-name "Python (LLM)"
+   !/fp/projects01/ec443/[your username]/venv/bin/python -m ipykernel install --user --name LLM --display-name "Python (LLM)"
 
 Python packages
 ----------------
@@ -121,7 +104,7 @@ We tell the system where the model is located. If you run on ec443, the models f
 
 .. todo::
 
-   Consider reintroducing requirements.txt, and clean out old packages. Make in simplest possible way. Stress the ned to have one requirements for each venv. Test the setup.
+   Reintroduce introducing requirements.txt, and clean out old packages. Make in simplest possible way. Stress the need to have one          requirements for each venv. Test the setup.
 
 
 .. admonition:: Optional

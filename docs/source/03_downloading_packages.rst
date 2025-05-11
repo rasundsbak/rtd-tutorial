@@ -21,21 +21,39 @@ Venv is a module in Python that supports creating independent `virtual environme
 Creating a virtual environment
 --------------------------------
 
-Now we are using the bash. The command below will create a venv in the working directory. Note that because of the way the command is written, the folder containing the venv will be made as a dotfile. There is a tick box in the Educloud interface, allowing you to "Show dotfiles".
+The command below will create a venv on the project directory. We are doing this from Jupyter lab.
 
-python -m venv .venv
+1::
+
+   !python -m venv /fp/projects01/ec443/ragnhsu/venv
+
+
+Activating the environment from bash
+-------------------------------------
+2::
+
+   source /fp/projects01/ec443/ragnhsu/venv/bin/activate
+
+
+JupyterLab kernel for the environment
+---------------------------------------
+
+3::
+
+   !/fp/projects01/ec443/ragnhsu/venv/bin/python -m ipykernel install --user --name LLM --display-name "Python (LLM)"
+
+
+
+
 
 To activate: source .venv/bin/activate
 
 EW suggestion: !python -m venv .venv
 
-Activating the environment
----------------------------
+
 
 source .venv/bin/activate
 
-JupyterLab kernel for the environment
----------------------------------------
 
 ! .venv/bin/python -m ipykernel install --user --name LLM --display-name "Python (LLM)"
 

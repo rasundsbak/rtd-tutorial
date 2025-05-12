@@ -21,17 +21,14 @@ https://python.langchain.com/docs/concepts/chat_history/
 
 ::
  
- # Celle 1
-  %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
+ %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
 
 ::
 
- # Celle 2
- # pip install --upgrade --quiet langchain langchain-openai langgraph
+ pip install --upgrade --quiet langchain langchain-openai langgraph
 
 ::
 
-  # Celle 3
   from transformers import AutoModelForCausalLM, AutoTokenizer  
   model_id = 'mistralai/Mistral-7B-Instruct-v0.3'
   task = 'text-generation'
@@ -67,9 +64,6 @@ Skip this? (test it)::
 ::
 
  from langchain_huggingface.llms import HuggingFacePipeline
-
-::
-
  from transformers import AutoModelForCausalLM, AutoTokenizer
  model_id = 'mistralai/Mistral-7B-Instruct-v0.3'
  task = 'text-generation'

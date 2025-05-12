@@ -12,12 +12,12 @@ This is a continuation from the previous setup, where the short term memory is p
 
 ::
  
- # Celle 7: Importere nødvendige biblioteker
+ # Import the necessary libraries
  import json
  from typing import List, Dict, Any
  from pydantic import BaseModel, Field
  
- # Definere datamodellen for langtidsminne
+ # Define the datamodel for the long term memory
  class LongTermMemory(BaseModel):
      """Class representing long-term memory for a project."""
      project_name: str = Field(..., description="Name of the research project")
@@ -43,7 +43,7 @@ code view 10::
 
 code view 9::
 
- # Celle 4: In-memory lagring av meldinger
+ # Celle 4: In-memory storing of messages
  thread_memory_store = {}
  
  def get_memory_by_thread_id(thread_id: str) -> List[Dict[str, Any]]:
@@ -60,7 +60,7 @@ code view 9::
  from typing import List
  from pydantic import BaseModel, Field
 
-code view 9::
+In the next step, we are taking up treads and adding names to them, so that they may become easier to find in the future.
 
  thread_id1 = "Cavendish"
  thread_id2 = "Circumnavigation"

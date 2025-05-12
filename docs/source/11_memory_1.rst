@@ -128,6 +128,14 @@ Bla og bla::
 
 ::
 
+ # Function to get AI response
+ def get_ai_response(human_message: str) -> str:
+     """Generate a response from the AI for the given human message."""
+     response = llm.predict(human_message)  # Model call to generate response
+     return response
+
+::
+
  # Using thread-1 for a human message
  thread_id1 = "thread-1"
  memory1 = get_memory_by_thread_id(thread_id1)

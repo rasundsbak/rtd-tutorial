@@ -27,11 +27,6 @@ https://python.langchain.com/docs/concepts/chat_history/
 
  pip install --upgrade --quiet langchain langchain-openai langgraph
 
-::
-
-  from transformers import AutoModelForCausalLM, AutoTokenizer  
-  model_id = 'mistralai/Mistral-7B-Instruct-v0.3'
-  task = 'text-generation'
 
 # Adding Short term memory with LangGraph:
 https://langchain-ai.github.io/langgraph/concepts/memory/#managing-long-conversation-history

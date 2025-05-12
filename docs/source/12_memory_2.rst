@@ -54,9 +54,49 @@ code view 9::
 
 
 code view 9::
+
+ from langchain_core.chat_history import BaseChatMessageHistory
+ from langchain_core.messages import HumanMessage
+ from typing import List
+ from pydantic import BaseModel, Field
+
 code view 9::
+
+ thread_id1 = "Cavendish"
+ thread_id2 = "Circumnavigation"
+ thread_id3 = "Cat"
+ 
+ # Storing messages
+ thread_memory_store[thread_id1] = InMemoryHistory()
+ thread_memory_store[thread_id1].add_message(HumanMessage(content="Thomas Cavendish was the first man to intentionally circumnavigate the globe."))
+ thread_memory_store[thread_id2] = InMemoryHistory()
+ thread_memory_store[thread_id2].add_message(HumanMessage(content="Circumnavigation of the globe took from 1587 to 1592."))
+ thread_memory_store[thread_id3] = InMemoryHistory()
+ thread_memory_store[thread_id3].add_message(HumanMessage(content="Thomas Cavendish was a cat."))
+ 
+ # Kombiner meldinger i ett enkelt LongTermMemory objekt
+ combined_memory = LongTermMemory(
+     project_name="Exploration of Thomas Cavendish",
+     tags=["historical", "exploration", "Cavendish"],
+     memory_id="cavendish_exploration",
+     messages=[{"content": message.content, "timestamp": "2023-10-25T12:00:00Z"} for thread in [thread_memory_store[thread_id1], thread_memory_store[thread_id2], thread_memory_store[thread_id3]] for message in thread.messages],
+     timestamp="2023-10-25T12:00:00Z"
+ )
+
 code view 9::
+
+ # Store the combined memory in one Json file. 
+ save_memory_to_json("cavendish_exploration.json", [combined_memory])  
+
 code view 9::
+
+ # Load and show the long term memory
+ loaded_memories = load_memory_from_json("cavendish_exploration.json")
+ for memory in loaded_memories:
+     print(f"Project: {memory.project_name}, ID: {memory.memory_id}, Messages: {memory.messages}")
+
 code view 9::
+
+
 code view 9::
 

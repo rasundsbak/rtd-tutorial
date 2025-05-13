@@ -28,7 +28,7 @@ This is a continuation from the previous setup, where the short term memory is p
 
 code view 10::
 
-  # Functions to store and download from Json
+  # Functions to store and upload from Json
   def save_memory_to_json(file_path: str, memories: List[LongTermMemory]) -> None:
       """Saves messages to a JSON file."""
       with open(file_path, 'w') as json_file:

@@ -20,11 +20,13 @@ https://python.langchain.com/docs/integrations/memory/redis_chat_message_history
 https://python.langchain.com/docs/concepts/chat_history/
 
 ::
- 
+
+ # Cell 1
  %env HF_HOME=/fp/projects01/ec443/huggingface/cache/
 
 ::
 
+ Cell 2
  pip install --upgrade --quiet langchain langchain-openai langgraph
 
 
@@ -54,6 +56,7 @@ Skip this? (test it)::
 
 ::
 
+ # Cell 3
  from langchain_huggingface.llms import HuggingFacePipeline
  from transformers import AutoModelForCausalLM, AutoTokenizer
  
@@ -62,6 +65,7 @@ Skip this? (test it)::
 
 Tool calling and use of chat history may complicate the process. I have therefore decided to use the Recommended parameters for Mistral 7B Instruct v0.3 Median values from users on OpenRouter, ref: https://openrouter.ai/mistralai/mistral-7b-instruct-v0.3/parameters::
 
+ # Cell 4
  llm = HuggingFacePipeline.from_model_id(
      model_id,
      task,
@@ -78,6 +82,7 @@ Tool calling and use of chat history may complicate the process. I have therefor
 
 ::
 
+ # Cell 5
  from typing import List
  from pydantic import BaseModel, Field
  from langchain_core.chat_history import BaseChatMessageHistory
@@ -97,6 +102,7 @@ Tool calling and use of chat history may complicate the process. I have therefor
 
 ::
 
+ # cell 6
  # Store for managing memory by thread ID
  thread_memory_store = {}
 

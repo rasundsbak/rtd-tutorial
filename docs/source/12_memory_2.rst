@@ -75,13 +75,28 @@ In the next step, we are taking up treads and adding names to them, so that they
  thread_memory_store[thread_id3].add_message(HumanMessage(content="Cavendish was a chemist and physicist."))
  
  # Kombiner meldinger i ett enkelt LongTermMemory objekt
+# combined_memory = LongTermMemory(
+ #    project_name="Exploration of Thomas Cavendish",
+  #   tags=["historical", "exploration", "Cavendish"],
+   #  memory_id="cavendish_exploration",
+    # messages=[{"content": message.content, "timestamp": "2023-10-25T12:00:00Z"} for thread in [thread_memory_store[thread_id1], #thread_memory_store[thread_id2], thread_memory_store[thread_id3]] for message in thread.messages],
+ #    timestamp="2023-10-25T12:00:00Z"
+ #)
+
+ # Combining messages into a single LongTermMemory object
  combined_memory = LongTermMemory(
      project_name="Exploration of Thomas Cavendish",
      tags=["historical", "exploration", "Cavendish"],
      memory_id="cavendish_exploration",
-     messages=[{"content": message.content, "timestamp": "2023-10-25T12:00:00Z"} for thread in [thread_memory_store[thread_id1], thread_memory_store[thread_id2], thread_memory_store[thread_id3]] for message in thread.messages],
+     # Use the appropriate thread IDs
+     messages=[
+         {"content": message.content, "timestamp": "2023-10-25T12:00:00Z"}
+         for thread_id in ["thread-1", "thread-2"]  # Ensure these contain the relevant messages
+         for message in get_memory_by_thread_id(thread_id).messages
+     ],
      timestamp="2023-10-25T12:00:00Z"
- )
+ ) 
+
 
 code view 9::
 

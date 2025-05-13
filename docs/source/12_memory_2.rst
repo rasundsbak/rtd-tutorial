@@ -60,7 +60,7 @@ code view 9::
  from typing import List
  from pydantic import BaseModel, Field
 
-In the next step, we are taking up treads and adding names to them, so that they may become easier to find in the future.
+In the next step, we are taking up treads and adding names to them, so that they may become easier to find in the future::
 
  thread_id1 = "Cavendish"
  thread_id2 = "Circumnavigation"
@@ -72,7 +72,7 @@ In the next step, we are taking up treads and adding names to them, so that they
  thread_memory_store[thread_id2] = InMemoryHistory()
  thread_memory_store[thread_id2].add_message(HumanMessage(content="Circumnavigation of the globe took from 1587 to 1592."))
  thread_memory_store[thread_id3] = InMemoryHistory()
- thread_memory_store[thread_id3].add_message(HumanMessage(content="Thomas Cavendish was a cat."))
+ thread_memory_store[thread_id3].add_message(HumanMessage(content="Cavendish was a chemist and physicist."))
  
  # Kombiner meldinger i ett enkelt LongTermMemory objekt
  combined_memory = LongTermMemory(

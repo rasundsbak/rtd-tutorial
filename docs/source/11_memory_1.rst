@@ -165,7 +165,13 @@ Tool calling and use of chat history may complicate the process. I have therefor
  # Print the memory for thread-2, excluding system messages
  print(f"Memory for {thread_id2}: {get_non_system_messages(thread_id2)}")
 
-::
+
+
+
+
+Clearing the short term memory
+-------------------------------
+In the next chapter, we are going to move the HumanMessage threads and the corresponding AIanswer from the short term to the long term memory. If you choose to test the clearing of the short term memory, as shown below, you will have to run the workbook over again, and without clearing the memory of the thread IDs. Here is how to clear the memory::
 
  # Define function to clear memories for specific thread IDs
  def clear_memory_by_thread_id(thread_ids: List[str]) -> None:

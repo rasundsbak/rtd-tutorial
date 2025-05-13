@@ -153,6 +153,18 @@ Bla og bla::
 
 ::
 
+ # Generate AI response
+ ai_response = get_ai_response(human_message)
+ 
+ # Add AI message to the thread
+ memory1.add_message(AIMessage(content=ai_response))
+ 
+ # Optional: Print stored messages for verification
+ for message in memory1.messages:
+     print(f"{message.__class__.__name__}: {message.content}")
+
+::
+
  # Print the memory for thread-1, excluding system messages
  print(f"Memory for {thread_id1}: {get_non_system_messages(thread_id1)}")
 

@@ -147,7 +147,7 @@ Tool calling and use of chat history may complicate the process. I have therefor
  # Using thread-2 for a human message
  thread_id2 = "thread-2"
  memory2 = get_memory_by_thread_id(thread_id2)
- memory2.add_message(HumanMessage(content="Thomas Cavendish was a cat."))
+ memory2.add_message(HumanMessage(content="Cavendish's voyages significantly impacted Spanish towns and trade routes."))
 
 ::
 

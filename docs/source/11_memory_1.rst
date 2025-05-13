@@ -35,16 +35,12 @@ I denne sammenhengen er hukommelse = modellens kontekstvindu.
 Av denne grunn kan det senere gi mulighet å benytte seg av funksjonen trim_messages, der man redigerer meldingslister for å passe innenfor denne grensen.
 https://python.langchain.com/docs/how_to/trim_messages/
 
-og blabla
-
-## Read more
 # Long term and short term
 https://langchain-ai.github.io/langgraph/concepts/agentic_concepts/#tool-calling
 
 ## Chat history
 https://python.langchain.com/docs/concepts/chat_history/
 
-## Capacity og bla
 ## Capacity
 Mistral-7B-Instruct-v0. 3 is the smallest and latest Large Language Model (LLM) from Mistral AI, providing a 32k context window and support for function calling. This is what sets the limit when we want to implement a simple form of memory/ chat history.
 
@@ -60,6 +56,7 @@ Skip this? (test it)::
 
  from langchain_huggingface.llms import HuggingFacePipeline
  from transformers import AutoModelForCausalLM, AutoTokenizer
+ 
  model_id = 'mistralai/Mistral-7B-Instruct-v0.3'
  task = 'text-generation'
 
@@ -78,11 +75,6 @@ Tool calling and use of chat history may complicate the process. I have therefor
          'repetition_penalty': 1.4,
      }
  )
-
-
-Bla og bla::
-
- from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
 ::
 

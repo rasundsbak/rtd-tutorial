@@ -50,23 +50,23 @@ https://python.langchain.com/api_reference/core/runnables/langchain_core.runnabl
 
 ::
 
-# Celle 3
-from typing import List
-from pydantic import BaseModel, Field
-from langchain_core.chat_history import BaseChatMessageHistory
-from langchain_core.messages import BaseMessage, AIMessage, HumanMessage, SystemMessage
-
-class InMemoryHistory(BaseChatMessageHistory, BaseModel):
-    """In-memory implementation of chat message history for a specific thread."""
-    messages: List[BaseMessage] = Field(default_factory=list)
-
-    def add_message(self, message: BaseMessage) -> None:
-        """Add a single message to the history."""
-        self.messages.append(message)
-
-    def clear(self) -> None:
-        """Clear the message history."""
-        self.messages.clear()  # Consistently use clear()
+ # Celle 3
+ from typing import List
+ from pydantic import BaseModel, Field
+ from langchain_core.chat_history import BaseChatMessageHistory
+ from langchain_core.messages import BaseMessage, AIMessage, HumanMessage, SystemMessage
+ 
+ class InMemoryHistory(BaseChatMessageHistory, BaseModel):
+     """In-memory implementation of chat message history for a specific thread."""
+     messages: List[BaseMessage] = Field(default_factory=list)
+ 
+     def add_message(self, message: BaseMessage) -> None:
+         """Add a single message to the history."""
+         self.messages.append(message)
+ 
+     def clear(self) -> None:
+         """Clear the message history."""
+         self.messages.clear()  # Consistently use clear()
 
 ::
 

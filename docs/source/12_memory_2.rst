@@ -160,14 +160,6 @@ code view 11::
      project_name="Exploration of Thomas Cavendish",
      memory_id="cavendish_exploration"
  )
- 
- # Optional output for verification
- for thread_id in threads:
-     messages = get_memory_by_thread_id(thread_id[0]).messages  # Access messages for the current thread
-     if messages:  # Ensure there are messages to display
-         latest_message = messages[-1]  # Get the latest message (assumed to be the AI message)
-         # Display thread information with content
-         print(f"{thread_id[0]}: {latest_message.content}")
 
 ::
 

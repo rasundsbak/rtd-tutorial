@@ -107,31 +107,31 @@ code view 9::
 
 code view 10::
 
-# Cell 10
-from typing import List
-import json  # Ensure you've imported json
-
-# Function to save long-term memory to a JSON file
-def save_memory_to_json(file_path: str, memories: List[LongTermMemory]) -> None:
-    """Saves a list of LongTermMemory instances to a JSON file."""
-    with open(file_path, 'w') as json_file:
-        # Serialize the memories using Pydantic's dict() method to avoid deprecation warnings
-        json.dump([memory.dict() for memory in memories], json_file, indent=4)
-
-# Function to load memory from a JSON file
-def load_memory_from_json(file_path: str) -> List[LongTermMemory]:
-    """Loads a list of LongTermMemory instances from a JSON file."""
-    try:
-        with open(file_path, 'r') as json_file:
-            data = json.load(json_file)
-            # Return a list of LongTermMemory instances from the loaded data
-            return [LongTermMemory(**item) for item in data]
-    except FileNotFoundError:
-        print(f"Error: The specified file '{file_path}' was not found.")
-        return []  # Return an empty list if the file does not exist
-    except json.JSONDecodeError:
-        print(f"Error: The file '{file_path}' could not be decoded.")
-        return []  # Return an empty list if decoding fails
+ # Cell 10
+ from typing import List
+ import json  # Ensure you've imported json
+ 
+ # Function to save long-term memory to a JSON file
+ def save_memory_to_json(file_path: str, memories: List[LongTermMemory]) -> None:
+     """Saves a list of LongTermMemory instances to a JSON file."""
+     with open(file_path, 'w') as json_file:
+         # Serialize the memories using Pydantic's dict() method to avoid deprecation warnings
+         json.dump([memory.dict() for memory in memories], json_file, indent=4)
+ 
+ # Function to load memory from a JSON file
+ def load_memory_from_json(file_path: str) -> List[LongTermMemory]:
+     """Loads a list of LongTermMemory instances from a JSON file."""
+     try:
+         with open(file_path, 'r') as json_file:
+             data = json.load(json_file)
+             # Return a list of LongTermMemory instances from the loaded data
+             return [LongTermMemory(**item) for item in data]
+     except FileNotFoundError:
+         print(f"Error: The specified file '{file_path}' was not found.")
+         return []  # Return an empty list if the file does not exist
+     except json.JSONDecodeError:
+         print(f"Error: The file '{file_path}' could not be decoded.")
+         return []  # Return an empty list if decoding fails
 
 
 code view 11::

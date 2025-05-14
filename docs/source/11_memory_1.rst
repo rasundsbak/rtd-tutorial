@@ -27,8 +27,7 @@ https://python.langchain.com/docs/concepts/chat_history/
 ::
 
  # Cell 2
- !pip install --upgrade --quiet langchain langchain-openai langgraph
-
+ !pip install --upgrade --quiet langchain
 
 # Adding Short term memory with LangGraph:
 https://langchain-ai.github.io/langgraph/concepts/memory/#managing-long-conversation-history
@@ -46,78 +45,32 @@ https://python.langchain.com/docs/concepts/chat_history/
 ## Capacity
 Mistral-7B-Instruct-v0. 3 is the smallest and latest Large Language Model (LLM) from Mistral AI, providing a 32k context window and support for function calling. This is what sets the limit when we want to implement a simple form of memory/ chat history.
 
-We are using this:
+We are using this. No we are not:
 https://python.langchain.com/api_reference/core/runnables/langchain_core.runnables.history.RunnableWithMessageHistory.html
-
-Skip this? (test it)::
-
- import transformers
- print(transformers.__version__)
 
 ::
 
- # Celle 2
- from typing import List
- from pydantic import BaseModel, Field
- from langchain_core.chat_history import BaseChatMessageHistory
- from langchain_core.messages import BaseMessage, AIMessage, HumanMessage, SystemMessage
- 
- class InMemoryHistory(BaseChatMessageHistory, BaseModel):
-     """In-memory implementation of chat message history for a specific thread."""
-     messages: List[BaseMessage] = Field(default_factory=list)
- 
-     def add_message(self, message: BaseMessage) -> None:
-         """Add a single message to the history."""
-         self.messages.append(message)
-     
-     def clear(self) -> None:
-         """Clear the message history."""
-         self.messages.clear()  # Consistently use clear()
+# Celle 3
+from typing import List
+from pydantic import BaseModel, Field
+from langchain_core.chat_history import BaseChatMessageHistory
+from langchain_core.messages import BaseMessage, AIMessage, HumanMessage, SystemMessage
 
+class InMemoryHistory(BaseChatMessageHistory, BaseModel):
+    """In-memory implementation of chat message history for a specific thread."""
+    messages: List[BaseMessage] = Field(default_factory=list)
 
-Tool calling and use of chat history may complicate the process. I have therefore decided to use the Recommended parameters for Mistral 7B Instruct v0.3 Median values from users on OpenRouter, ref: https://openrouter.ai/mistralai/mistral-7b-instruct-v0.3/parameters::
+    def add_message(self, message: BaseMessage) -> None:
+        """Add a single message to the history."""
+        self.messages.append(message)
 
- # Celle 3
- from langchain_core.messages import AIMessage
- 
- class InMemoryHistory(BaseChatMessageHistory, BaseModel):
-     """In-memory implementation of chat message history for a specific thread."""
-     messages: List[BaseMessage] = Field(default_factory=list)
- 
-     def add_message(self, message: BaseMessage) -> None:
-         """Add a single message to the history."""
-         self.messages.append(message)
- 
-     def clear(self) -> None:
-         """Clear the message history."""
-         self.messages.clear()
- 
- # Modify the thread message storing logic
- thread_memory_store = {}
+    def clear(self) -> None:
+        """Clear the message history."""
+        self.messages.clear()  # Consistently use clear()
 
 ::
 
  # Celle 4
- from typing import List
- from pydantic import BaseModel, Field
- from langchain_core.chat_history import BaseChatMessageHistory
- from langchain_core.messages import BaseMessage, AIMessage, HumanMessage, SystemMessage
- 
- class InMemoryHistory(BaseChatMessageHistory, BaseModel):
-     """In-memory implementation of chat message history for a specific thread."""
-     messages: List[BaseMessage] = Field(default_factory=list)
- 
-     def add_message(self, message: BaseMessage) -> None:
-         """Add a single message to the history."""
-         self.messages.append(message)
-     
-     def clear(self) -> None:
-         """Clear the message history."""
-         self.messages.clear()  # Consistently use clear()
-
-::
-
- # Celle 5
  # Store for managing memory by thread ID
  thread_memory_store = {}
  
@@ -139,9 +92,9 @@ Tool calling and use of chat history may complicate the process. I have therefor
          if not isinstance(message, SystemMessage)
      ]
 
-::
+Tool calling and use of chat history may complicate the process. I have therefore decided to use the Recommended parameters for Mistral 7B Instruct v0.3 Median values from users on OpenRouter, ref: https://openrouter.ai/mistralai/mistral-7b-instruct-v0.3/parameters::
 
- # Celle 6
+ # Celle 5
  from langchain_huggingface.llms import HuggingFacePipeline
  
  # Initialize the model
@@ -161,7 +114,7 @@ Tool calling and use of chat history may complicate the process. I have therefor
          'repetition_penalty': 1.4,
      }
  )
-
+ 
  # Function to get AI response
  def get_ai_response(human_message: str) -> str:
      """Generate a response from the AI for the given human message."""
@@ -170,13 +123,16 @@ Tool calling and use of chat history may complicate the process. I have therefor
 
 ::
 
- # Celle 7
+
+::
+
+ # Celle 6
  # Example usage for thread-1
  thread_id1 = "thread-1"
  memory1 = get_memory_by_thread_id(thread_id1)
  
  # Human message
- human_message = """Thomas Cavendish was the first man to intentionally circumnavigate the globe, 
+ human_message = """Thomas Cavendish was the first man to intentionally circumnavigate the globe,
              from 1587 to 1592. He raided many Spanish towns and ships."""
  memory1.add_message(HumanMessage(content=human_message))
  
@@ -190,9 +146,30 @@ Tool calling and use of chat history may complicate the process. I have therefor
  for message in memory1.messages:
      print(f"{message.__class__.__name__}: {message.content}")
 
+::
+ 
+ # celle 7
+ # Example usage for thread-2
+ thread_id2 = "thread-2"
+ memory2 = get_memory_by_thread_id(thread_id2)
+ 
+ # Human message
+ human_message = """Cavendish was a chemist and physicist."""
+ memory2.add_message(HumanMessage(content=human_message))
+ 
+ # Generate AI response
+ ai_response = get_ai_response(human_message)
+ 
+ # Add AI message to the thread
+ memory2.add_message(AIMessage(content=ai_response))
+ 
+ # Optional: Print stored messages for verification
+ for message in memory2.messages:
+     print(f"{message.__class__.__name__}: {message.content}")
 
-Test this: Clearing the short term memory
--------------------------------------------
+
+Test this: Clearing the short term memory (aim: trimming messages)
+--------------------------------------------------------------------
 In the next chapter, we are going to move the HumanMessage threads and the corresponding AIanswer from the short term to the long term memory. If you choose to test the clearing of the short term memory, as shown below, you will have to run the workbook over again, and without clearing the memory of the thread IDs. Here is how to clear the memory::
 
  # Define function to clear memories for specific thread IDs

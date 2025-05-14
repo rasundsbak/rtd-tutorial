@@ -123,9 +123,6 @@ Tool calling and use of chat history may complicate the process. I have therefor
 
 ::
 
-
-::
-
  # Celle 6
  # Example usage for thread-1
  thread_id1 = "thread-1"

@@ -26,7 +26,7 @@ https://python.langchain.com/docs/concepts/chat_history/
 
 ::
 
- Cell 2
+ # Cell 2
  !pip install --upgrade --quiet langchain langchain-openai langgraph
 
 

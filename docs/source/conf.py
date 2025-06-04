@@ -21,6 +21,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.todo',
     'sphinx_panels',
+    "nbsphinx",
 ]
 
 intersphinx_mapping = {

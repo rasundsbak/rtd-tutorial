@@ -27,6 +27,7 @@ Learning objectives
    :hidden:
 
    notebooks/Example 1
+   notebooks/005_timetable
 
    003_timetable
    01_preparations

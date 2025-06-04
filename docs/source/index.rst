@@ -26,6 +26,8 @@ Learning objectives
    :caption: Table of Contents
    :hidden:
 
+   notebooks/Example 1
+
    003_timetable
    01_preparations
    02_easy_login

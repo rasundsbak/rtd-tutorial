@@ -42,6 +42,10 @@ code view 6::
 
 code view 7::
 
+  # fetch the latest changes from the remote
+  git fetch origin
+
+
 code view 8::
 
 code view 9::

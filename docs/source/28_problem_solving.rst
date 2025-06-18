@@ -11,8 +11,10 @@ code view 1::
 code view 2::
 
   # reset the main to match the main
-  # local changes will be removed
-  git reset --hard
+  # local changes will be removed 
+  # use only if you have backup on the changes you want to keep
+  git reset --hard origin/main
+
 
 code view 3::
 
@@ -42,10 +44,14 @@ code view 6::
 
 code view 7::
 
-  # fetch the latest changes from the remote
+  # fetch and merge updates
   git fetch origin
+  git merge origin/main
 
 
 code view 8::
+
+  # alternative to above
+  git pull origin main
 
 code view 9::

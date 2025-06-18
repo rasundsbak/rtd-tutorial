@@ -36,6 +36,10 @@ code view 5::
 
 code view 6::
 
+  # Setting up the remote again (use if it does not respind to the reset for instance):
+  git remote add origin https://github.com/uio-library/LLM-course.git
+
+
 code view 7::
 
 code view 8::

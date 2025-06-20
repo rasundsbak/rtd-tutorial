@@ -57,7 +57,7 @@ Til :doc:`05_rag` kapittelet vil vi bruke `FAISS <https://faiss.ai/>`_ til å s�
 Språkmodellen
 ---------------
 
-Vi kommer til å bruke modeller fra `HuggingFace <https://huggingface.co>`_, en nettside som har verktøy og modeller som brukes til maskinlæring. Vi kan bruke åpen- vektmodellen `mistralai/Ministral-8B-Instruct-2410 <https://huggingface.co/mistralai/Ministral-8B-Instruct-2410>` eller `meta-llama/Llama-3.2-3B-Instruct <https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct>`_ til våre oppgaver. 
+Vi kommer til å bruke modeller fra `HuggingFace <https://huggingface.co>`_, en nettside som har verktøy og modeller som brukes til maskinlæring. Vi kan bruke åpen- vektmodellen `mistralai/Ministral-8B-Instruct-2410 <https://huggingface.co/mistralai/Ministral-8B-Instruct-2410>`_ eller `meta-llama/Llama-3.2-3B-Instruct <https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct>`_ til våre oppgaver. 
 
 Ministral-8B-Instruct-2410 har 8 milliarder parametere. Til sammenligning har en av de største språkmodellene når dette skrives, Llama 3.1, 405 milliarder parametere. Ministral-8B-Instruct-2410 har rundt 16 GB, noe som fortsatt gjør den til en ganske stor modell. For å kjøre den, må vi ha en GPU med minst 20 GB minne. Vi må også ha minne til programvare og datahåndtering. Dette er grunnen til at man i praksis må ha 40 GB minne.
 

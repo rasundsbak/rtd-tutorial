@@ -30,7 +30,7 @@ Vi installerer programvaren til LangChain og HuggingFace først. Vi bruker ``hug
 
 Vi trenger flere pakker til å jobbe med LangChain og HuggingFace::
 
-   pip install --upgrade langchain langchain-community langchain-huggingface
+   pip install --upgrade langchain langchain-community langchain-huggingface langgraph
 
 Transformers er den grunnleggende teknologien som brukes i store språkmodeller. Derfor installerer vi biblioteket ``sentence-transformers``::
 
@@ -43,7 +43,7 @@ Noen modeller bruker ``sentencepiece biblioteket`. Derfor installerer vi dette o
 Programvare til å lese tekstdokumenter
 ---------------------------------------
 
-Vi kommer til å bruke “unstructured” til å lese dokumenter. Unstructured støtter ulike dokumentformater, som PDFer, Word filer og rene tekstdokumenter::
+Vi kommer til å bruke `unstructured <https://python.langchain.com/docs/integrations/providers/unstructured/>`_ til å lese dokumenter. Unstructured støtter ulike dokumentformater, som PDFer, Word filer og rene tekstdokumenter::
 
    pip install --upgrade unstructured[all-docs] langchain-unstructured
 
@@ -57,7 +57,11 @@ Til :doc:`05_rag` kapittelet vil vi bruke `FAISS <https://faiss.ai/>`_ til å s�
 Språkmodellen
 ---------------
 
-Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy og modeller som brukes til maskinlæring. Vi vil bruke åpen- vektmodellen mistralai/Ministral-8B-Instruct-2410 til de fleste av våre oppgaver. Modellen har 8 milliarder parametere. Til sammenligning har en av de største språkmodellene når dette skrives, Llama 3.1, 405 milliarder parametere. Ministral-8B-Instruct-2410 har rundt 16 GB, noe som fortsatt gjør den til en ganske stor modell. For å kjøre den, må vi ha en GPU med minst 20 GB minne. Den kan også kjøres uten GPU, men da vil det ta lenger tid.
+Vi kommer til å bruke modeller fra `HuggingFace <https://huggingface.co>`, en nettside som har verktøy og modeller som brukes til maskinlæring. Vi kan bruke åpen- vektmodellen `mistralai/Ministral-8B-Instruct-2410 <https://huggingface.co/mistralai/Ministral-8B-Instruct-2410>` eller `meta-llama/Llama-3.2-3B-Instruct <https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct>` til våre oppgaver. 
+
+Ministral-8B-Instruct-2410 har 8 milliarder parametere. Til sammenligning har en av de største språkmodellene når dette skrives, Llama 3.1, 405 milliarder parametere. Ministral-8B-Instruct-2410 har rundt 16 GB, noe som fortsatt gjør den til en ganske stor modell. For å kjøre den, må vi ha en GPU med minst 20 GB minne. Vi må også ha minne til programvare og datahåndtering. Dette er grunnen til at man i praksis må ha 40 GB minne.
+
+Modellen kan også kjøre på CPU, men da vil det gå tregere.
 
 Modellens plassering
 ------------------------
@@ -75,7 +79,7 @@ Vi bør fortelle HuggingFace biblioteket hvor det skal lagre dataene sine. Hvis 
 
    Du trenger "User Access Token" fra HuggingFace. Hvis du ikke har en konto på HuggingFace, må du først registrere deg. Klikk på knappen “Sign Up” i øvre høyre hjørne på HuggingFace' nettside.
 
-   Når du har logget inn med din krukerkonto, kan du lage et "User Access Token" som gir lesetilgang ved å følge denne guiden::
+   Når du har logget inn med din brukerkonto, kan du lage et `User Access Token <https://huggingface.co/settings/tokens>`, som gir lesetilgang ved å følge denne `guiden <https://huggingface.co/docs/hub/en/security-tokens>`::
 
       from huggingface_hub import login
       login()

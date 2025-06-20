@@ -29,6 +29,8 @@ Etter du har logget inn, kan du se `Educlouds instrumentpanel <https://ondemand.
 
    * I feltet “Choose resources:”, bør du velge “GPU (1x Nvidia A100, 40GB, 24 CPU cores, 250GB RAM)”.
 
+   * eventuelt også “GPU (1x Nvidia MIG 20G VRAM, 24 CPU cores, 100GB RAM)”.
+
    * I feltet “Runtime (in hours)” kan du velge 1 t av gangen. Prøv å unngå å reservere en GPU lenger enn nødvendig, fordi GPUer er begrensede, delte ressurser.
 
    * I feltet “Choose Jupyter module (required)” bør du velge “4.2.0-GCCcore-13.2.0”.

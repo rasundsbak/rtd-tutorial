@@ -18,5 +18,5 @@ I :doc:`03_chatbot` lærer vi om opplasting og grunnleggende spørring av LLMer.
 
 I :doc:`04_summarization` bruker vi LLMer til å lage korte oppsummeringer av dokumenter.
 
-I :doc:`05_rag`, bygger vi et program som har hentingsforsterket tekstgenerering fra dokumenter som vi prøver prosessen på.
+I :doc:`05_rag`, bygger vi et program som har hentingsforsterket tekstgenerering med noen dokumenter som vi har.
 

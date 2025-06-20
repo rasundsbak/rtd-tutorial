@@ -26,7 +26,7 @@ Learning objectives
    :caption: Table of Contents
    :hidden:
 
-   005_timetable
+   003_timetable
    01_preparations
    02_easy_login
    03_downloading_packages

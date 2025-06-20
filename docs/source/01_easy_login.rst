@@ -59,9 +59,9 @@ Oppgaver
    Du trenger en mappe til å lagre dokumentene dine på Educloud. Når du åpner JupyterLab, vil du få filmenyen til venstre. Den peker til ditt hjemmeområde/ home directory som du finner igjen på Educloud. Her kan du lagre filene dine. Hvis du ikke allerede har en mappe som kalles “documents”, lag en. For å lage en ny mappe, klikk den grå , “New Folder” knappen i toppmenyen. Nå dukker det en ny mappe opp på listen, med forslag til navn “Untitled Folder”. Skriv “documents” istedenfor “Untitled Folder” og trykk enter på tastaturet for å lagre.
 
 
-.. admonition:: Frivillig oppgave: Laste opp filer med Educloud grensesnitt
+.. admonition:: Oppgave: Laste opp filer med Educloud grensesnitt
    :collapsible: closed
 
    Du kan laste opp dokumenter som du ønsker å jobbe med på Fox. Prøv å unngå dokumenter som inneholder sensitive data. Vi anbefaler å teste med offentlig tilgjengelige dokumenter som kun inneholder `grønne data <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_.
 
-   Velg folderen "dokumenter" som du etablerte på ditt hjemmeområde i forrige oppgave. Velg den blå opplastingsknappen fra toppmenyen. Deretter velger du “browse files” og velger etpar filer til opplasting. Til slutt velger du den grønne "Upload x files" knappen i nedre venstre hjørne.
+   Velg folderen "dokuments" som du etablerte på ditt hjemmeområde i forrige oppgave. Velg den blå opplastingsknappen fra toppmenyen. Deretter velger du “browse files” og laster opp det du skal ha. Til slutt velger du den grønne "Upload x files" knappen i nedre venstre hjørne.

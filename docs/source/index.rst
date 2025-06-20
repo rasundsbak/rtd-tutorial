@@ -17,13 +17,13 @@ Påmelding
 ----------
 Her legges lenke til påmelding når dette er aktuelt
 
-Læringsmål
-----------
+Hva vil du lære her?
+---------------------
 - lær deg hvordan store språkmodeller brukes
-- lær hvordan UiOs tungregningsklynge kan brukes på ulike språkmodeller
-- lær hvordan du kan bygge en instruks og tilpasse parameterne
+- lær hvordan du kan bruke forskjellige språkmodeller på UiOs tungregningsklynge
+- lær hvordan du bygger en instruks og tilpasser parameterne
 - koble modellen til egne data som eksempelvis Pdfer
-- bli flytende i hvordan du setter opp din egen modell i Jupyter Lab, og bruk prosessen selv til å videreutvikle forskningsprosesser eller oppdag andre KI-modeller
+- bli flytende i hvordan du setter opp din egen modell i Jupyter Lab, og bruk prosessen som du laget til å kjøre i batch.
 
 .. toctree::
    :maxdepth: 2

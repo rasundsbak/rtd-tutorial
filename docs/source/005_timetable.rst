@@ -30,7 +30,7 @@ Før lunsj
 :doc:`03_chatbot`
 
 **11:15-11:45**
-`Summarization <https://uio-library.github.io/LLM-course/3_summarizing.html#summarization>`_
+:doc:`04_summarization`
 
 **11:45-12:15** 
 Lunch
@@ -38,9 +38,9 @@ Lunch
 Etter lunsj
 -------------
 **12:15-13:00**
-`Retrieval Augmented Generation (RAG) <https://uio-library.github.io/LLM-course/4_RAG.html>`_ og til slutt `Evaluering <https://nettskjema.no/a/llm-course>`_
+:doc:`05_rag`
 
 Hvis vi får tid, last opp eget materiale, og du kan prøve å bruke metodene som du har lært på eget materiale. Vi hjelper hverandre.
 
 Velkommen!
-Hilsen Pål, Erik and Ragnhild
+Hilsen Pål, Erik og Ragnhild

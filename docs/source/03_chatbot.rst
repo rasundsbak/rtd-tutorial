@@ -5,7 +5,7 @@ Instruks til Store Språkmodeller (Chatboter)
 
 .. index:: chatbot, språkmodeller, prompt, instruks
 
-I denne første delen av kurset skal vi sende en instruks til en språkmodell.  Vi vil få et output. Vi kommer til å bruke LangChain, et bibliotek med åpen kildekode, som er til å lage applikasjoner med store språkmodeller.
+I denne første delen av kurset skal vi sende en instruks til en språkmodell.  Vi vil få et output. Vi kommer til å bruke `LangChain <https://www.langchain.com>`_, et bibliotek med åpen kildekode, som er til å lage applikasjoner med store språkmodeller.
 
 .. admonition:: Oppgave: Lag en ny notebook
    :collapsible: closed
@@ -15,17 +15,17 @@ I denne første delen av kurset skal vi sende en instruks til en språkmodell.  
 .. admonition:: Oppgave: Stopp gamle kjerner
    :collapsible: closed
 
-   JupyterLab bruker en Python kjerne til å kjøre koden i hver notebook. For å frigjøre GPU minne som ble brukt i forrige kapittel, bør du stoppe kjernen for den notebooken. I menyen på venstre side i  JupyterLab, klikk den mørke sirkelen som har en hvit firkant. Klikk så KERNELS og Shut Down All.
+   JupyterLab bruker en Python kjerne til å kjøre koden i hver notebook. For å frigjøre GPU minne som ble brukt i forrige kapittel, bør du stoppe kjernen for den notebooken. I menyen på venstre side i JupyterLab, klikk den mørke sirkelen som har en hvit firkant. Klikk så KERNELS og Shut Down All.
 
 Språkmodellen
 --------------
 
-Vi kommer til å bruke modeller fra HuggingFace, en nettside som har verktøy og modeller til maskinlæring. Vi vil bruke LLM meta-llama/Llama-3.2-1B, som er en modell som har åpne vekter og parametere. Dette er en liten modell med bare 1 milliard parametere. Den bør være mulig å bruke på de fleste bærbare maskiner.
+Vi kommer til å bruke modeller fra `HuggingFace <https://huggingface.co>`_, en nettside som har verktøy og modeller til maskinlæring. I denne oppgaven vil vi bruke LLM `meta-llama/Llama-3.2-1B <https://huggingface.co/meta-llama/Llama-3.2-1B>`_, som er en modell som har åpne vekter og parametere. Dette er en liten modell med bare 1 milliard parametere. Det bør være mulig å bruke den på de fleste bærbare maskiner.
 
 
 .. note:: **Typer av modeller:**
    
-   ``meta-llama/Llama-3.2-1B`` er en basismodell. Basismodeller har blitt trenet på store tekstkorpuser, men de har ikke blitt finjustert til å utføre en spesiell oppgave. Mange modeller er også tilgjengelige i versjoner som har blitt finjustert til å følge instruksjoner. Disse kalles instruct eller chat modeller. Instruct og Chat modeller passer bedre til å lage chatbots med.
+   ``meta-llama/Llama-3.2-1B`` er en basismodell. Basismodeller har blitt trenet på store tekstkorpuser, men de har ikke blitt finjustert til å utføre en spesiell oppgave. Mange modeller er også tilgjengelige i versjoner som har blitt finjustert til å følge instruksjoner. Disse kalles instruct eller chat modeller. Instruct og chat modeller passer bedre til å lage chatbots med.
 
 Modellens plassering
 ------------------------
@@ -57,6 +57,10 @@ Hvis maskinen din har GPU, vil det gå mye fortere å bruke denne enn å bruke b
 
    import torch
    torch.cuda.is_available()
+
+.. code-block:: unset
+
+   True
 
 Vi aktiverer GPU ved hjelp av argumentet ``device=0``::
 
@@ -95,7 +99,7 @@ Det fins mange flere argumenter som vi kan bruke til å finjustere med. Disse er
        }
    )
 
-Her kommer en oppsummering av pipelinens/ rørledningens argumenter:
+Her kommer en oppsummering av "pipelinens" argumenter:
 
     * ``model_id``: modellens navn fra HuggingFace
 
@@ -130,7 +134,7 @@ Deretter, lager vi en systeminstruks som blir samtalens kontekst. Systeminstruks
        MessagesPlaceholder(variable_name="messages")
    ]
 
-Listen av beskjeder som brukes til å lage den egentlige instruksen/ prompt::
+Listen av beskjeder som brukes til å lage den egentlige instruksen::
 
    prompt = ChatPromptTemplate.from_messages(messages)
 
@@ -158,7 +162,7 @@ Chatbotten er ferdig, og vi kan teste den ved å påkalle den (invoke)::
 
 .. note:: Repeterende output
 
-   Språkmodeller kan noen ganger repetere seg selv. Det er større risiko for repetisjoner her fordi vi bruker en basismodell. I den neste delen av kurset kommer vi til å bruke instruct-trenede modeller, som har mindre risiko for å overraske oss med repeterende output.
+   Språkmodeller kan noen ganger repetere seg selv. Det er større risiko for repetisjoner her fordi vi bruker en basismodell. I den neste delen av kurset kommer vi til å bruke instruct-trenede modeller, som har mindre risiko for å gi repeterende output.
 
 Hver gang vi påkaller (invoke), chatboten, starter den på nytt. Den kan ikke huske våre tidligere samtaler. Det er mulig å legge til minne, men da må vi programmere mer::
 

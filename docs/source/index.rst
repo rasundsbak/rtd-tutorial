@@ -21,27 +21,26 @@ Learning objectives
 - Connect the model to your own data in the form of PDFs or text data.
 - Be fluent in how to set up your own model in Jupyter Lab, so that you may use the process independently for interaction with other open LLMs
 
+
 .. toctree::
    :maxdepth: 2
    :caption: Table of Contents
    :hidden:
 
-   notebooks/Example 1
    notebooks/005_timetable
+   notebooks/01_preparations
+   notebooks/02_easy_login
+   notebooks/03_downloading_packages
+   notebooks/04_chatbot
+   notebooks/05_summarization
+   notebooks/09_parameters
+   notebooks/10_rag
+   notebooks/11_memory_1
+   notebooks/12_memory_2
+   notebooks/13_memory_3
+   notebooks/27_preparations
+   notebooks/28_problem_solving
+   notebooks/29_references
+   notebooks/30_todo
+   notebooks/Example_1
 
-   003_timetable
-   01_preparations
-   02_easy_login
-   03_downloading_packages
-   04_chatbot
-   05_prompting
-   06_summarization
-   09_parameters
-   10_rag
-   11_memory_1
-   12_memory_2
-   13_memory_3
-   27_preparations
-   28_problem_solving
-   29_references
-   30_todo

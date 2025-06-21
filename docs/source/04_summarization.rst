@@ -5,19 +5,19 @@ Oppsummeringer
 
 .. index:: oppsummeringer, dokumenter, PDFer
 
-I denne delen av kurset, skal vi forsøke å bruke språkmodellen på noen artikler. Oppsummeringer av dokumenter har betegnes ogte med sommarizing eller summarization, i koden. Det fins dedikert programvare for å lage oppsummeringer. Imidlertid har store språkmideller også begynt å beherske oppgaven ganske bra.
+I denne delen av kurset, skal vi forsøke å bruke språkmodellen på noen artikler. Oppsummeringer av dokumenter kalles gjerne summarizing eller summarization, i koden. Det fins dedikert programvare for å lage oppsummeringer. Imidlertid har store språkmodeller også begynt å beherske oppgaven ganske bra.
 
-Nok en gang, skal vi bruke LangChain. Dette er et bibliotek som har åpen kildekode, og som brukes til å lage applikasjoner med store språkmodeller.
+Enda en gang bruker vi LangChain, et bibliotek som med åpen kildekode, som brukes til å lage programvare med store språkmodeller.
 
 .. admonition:: Oppgave: Lage en ny notebook
    :collapsible: closed
 
-   Lag en ny Jupyter Notebook som du kaller "summarizing" ved å klikke i JupyterLabs filmeny, deretter "New" og "Notebook". Hvis du blir spurt om å velge en kjerne, velg “Python 3”. Gi den nye notebooken et navn ved å klikke JupyterLabs filmeny og så "Rename Notebook". Bruk navnet "summarizing".
+   Lag en ny Jupyter Notebook som du kaller ``summarizing`` ved å klikke i JupyterLabs filmeny, deretter "New" og "Notebook". Hvis du blir spurt om å velge en kjerne, velg “Python 3”. Gi den nye notebooken et navn ved å klikke JupyterLabs filmeny og så "Rename Notebook". Bruk navnet ``summarizing``.
 
 .. admonition:: Oppgave: Stoppe gamle kjerner
    :collapsible: closed
 
-   JupyterLab bruker en Python kjerne til å kjøre kode i hver notebook. For å frigjøre GPU minne som ble brukt i forrige kapittel, bør du stoppe kjernen fra den notebooken. I menyen på venstre side i JupyterLab, klikk den børke sirkelen som har en hvit firkant inni. Klikk så KERNELS og Shut Down All.
+   JupyterLab bruker en Python kjerne til å kjøre kode i hver notebook. For å frigjøre GPU minne som ble brukt i forrige kapittel, bør du stoppe kjernen fra den notebooken. I menyen på venstre side i JupyterLab, klikk den børke sirkelen som har en hvit firkant inni. Klikk så *KERNELS* og *Shut Down All*.
 
 Dokumentenes plassering
 ------------------------
@@ -29,19 +29,23 @@ Vi har samlet noen forskningsartikler som har Creative Commons lisens.  Vi skal 
 Språkmodellen
 ---------------
 
-Vi skal bruke modeller fra HuggingFace, en nettside som har verktøy og modeller til maskinlæring. Vi vil bruke språkmodellen meta-llama/Llama-3.2-3B-Instruct, som har åpne vekter og parametere. Modellen har et stort kontekstvindu, som betyr at vi kan bruke den til å behandle ganske store dokumenter. Likevel er den liten nok til at vi kan bruke den med den minste GPUen på Fox. Hvis du ønsker bedre resultater kan du bruke en av de litt større modellene på
-rundt 7B eller 8B parameters, eksempelvis mistralai/Ministral-8B-Instruct-2410.
+Vi skal bruke modeller fra `HuggingFace <https://huggingface.co/>`_, en nettside som har verktøy og modeller til maskinlæring. Vi vil bruke språkmodellen `meta-llama/Llama-3.2-3B-Instruct <https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct>`_, som har åpne vekter og parametere. Modellen har et stort kontekstvindu, som betyr at vi kan bruke den til å behandle ganske store dokumenter. Likevel er den liten nok til at vi kan bruke den med den minste GPUen på Fox. Hvis du ønsker bedre resultater kan du bruke en av de litt større modellene på rundt 7B eller 8B parameters, eksempelvis `mistralai/Ministral-8B-Instruct-2410 <https://huggingface.co/mistralai/Ministral-8B-Instruct-2410>`_.
 
 Tokens kontra ord
 ------------------
 
-Korte ord kan være ett enkelt token, men lengre ord består vanligvis av flere tokens. Maksimum dokumentstørrelse med denne modellen er derfor mindre enn 128k ord. Akkurat hvor mange ord man skal beregne per token kommer an på tokenizeren. Store språkmodeller har vanligvis egne tokenizere. Vi kommer til å bruke standard tokenizeren som 
+Korte ord kan være ett enkelt token, men lengre ord består vanligvis av flere tokens. Maksimum dokumentstørrelse med denne modellen er derfor mindre enn 128k ord. Akkurat hvor mange ord man skal beregne per token kommer an på *tokenizeren*. Store språkmodeller har vanligvis egne tokenizere. Vi kommer til å bruke standard tokenizeren som 
 hører til den store språkmodellen vi til enhver tid bruker::
    
    import os
    os.environ['HF_HOME'] = '/fp/projects01/ec443/huggingface/cache/'
 
-For å fruke modellen, lager vi en pipeline. En pipeline ckan bestå av flere steg, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden HuggingFacePipeline.from_model_id(), som automatisk laster ned den spesifiserte modellen fra HuggingFace::
+For å bruke modellen, lager vi en *pipeline*. En pipeline kan bestå av flere steg, men i dette tilfellet trenger vi bare ett steg. Vi kan bruke metoden ``HuggingFacePipeline.from_model_id()``, som automatisk laster ned den spesifiserte modellen fra HuggingFace
+
+Som vi har gjort før, skal vi sjekke om vi har GPU::
+
+   import torch
+   device = 0 if torch.cuda.is_available() else -1::
 
    from langchain_community.llms import HuggingFacePipeline
    

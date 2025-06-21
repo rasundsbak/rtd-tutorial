@@ -229,9 +229,11 @@ Du kan lagre koden ved å klikke Filmenyen i JupyterLab. Velg “Save and Export
    
 Last opp både python filen ``summarizing.py`` og slurm skriptet ``LLM.slurm`` til Fox. Du starter jobben med denne kommandoen::
    
-      ! sbatch LLM.slurm summarizing.py
+   sbatch LLM.slurm summarizing.py
    
    Slurm lager en loggfil for hver jobb som deretter lagres med et navn som for eksempel ``slurm-1358473.out``. Som standard blir disse loggfilene lagret i den samme arbeidskatalogen (working directory) som du kjører ``sbatch`` kommandoen fra. Dersom du ønsker å lagre loggen et annet sted, kan du legge til en linje som spesifiserer ønsket sted i slurm. Husk å endre brukernavnet::
    
-    #SBATCH --output=/fp/projects01/ec443/<username>/logs/slurm-%j.out
+   #SBATCH --output=/fp/projects01/ec443/<username>/logs/slurm-%j.out
+
+   **Anbefaling** : Dersom du skal feilsøke pythonfilene dine, kan det være hensiktsmessig å laste ned `Sublime text <https://www.sublimetext.com/download>`_. 
 

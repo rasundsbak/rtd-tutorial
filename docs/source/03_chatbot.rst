@@ -177,6 +177,50 @@ Hver gang vi påkaller (invoke), chatboten, starter den på nytt. Den kan ikke h
    Human: What’s your favorite weapon? What do you like about it? What do you hate about it?
    Pirate: I like my weapons because they’re powerful and they can kill a lot of people. I
 
+Bonusmateriale
+---------------
+
+.. admonition:: Chathistorie: Lag en ny notebook
+   :collapsible: closed
+
+   Vår nåværende chatbot holder ikke oversikt over chathistorikken. Dette betyr at hvert spørsmål besvares uten kontekst.Vi kan legge til chathistorie slik at chatboten har en viss oversikt over samtalen::
+
+   from langgraph.checkpoint.memory import MemorySaver
+   from langgraph.graph import START, MessagesState, StateGraph
+   
+   # Define a new workflow
+   workflow = StateGraph(state_schema=MessagesState)
+   
+   # Define the function that calls the model
+   def call_model(state: MessagesState):
+       prompt = prompt_template.invoke(state)
+       response = llm.invoke(prompt)
+       return {"messages": response}
+   
+   # Define the (single) node in the graph
+   workflow.add_edge(START, "model")
+   workflow.add_node("model", call_model)
+   
+   # Add memory
+   memory = MemorySaver()
+   app = workflow.compile(checkpointer=memory)
+   
+   # We can have multiple conversations, called threads
+   config = {"configurable": {"thread_id": "abc123"}}
+   
+   # Function to interact with the chatbot using memory
+   def chatbot_with_memory(user_message):
+       input_messages = [HumanMessage(user_message)]
+       output = app.invoke({"messages": input_messages}, config)
+       print(output["messages"][-1].content)
+       print()
+   
+   # Example usage
+   chatbot_with_memory("Who are you?")
+   chatbot_with_memory("Tell me about your ideal boat?")
+   chatbot_with_memory("Tell me about your favorite mermaid?")
+
+
 Oppgaver
 --------
 

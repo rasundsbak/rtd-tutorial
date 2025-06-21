@@ -45,7 +45,9 @@ For å bruke modellen, lager vi en *pipeline*. En pipeline kan bestå av flere s
 Som vi har gjort før, skal vi sjekke om vi har GPU::
 
    import torch
-   device = 0 if torch.cuda.is_available() else -1::
+   device = 0 if torch.cuda.is_available() else -1
+
+::
 
    from langchain_community.llms import HuggingFacePipeline
    

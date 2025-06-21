@@ -63,7 +63,7 @@ Som vi har gjort før, skal vi sjekke om vi har GPU::
        }
    )
 
-Vi kan gi noen argumenter til pipelinen:
+Vi kan gi noen argumenter til "pipelinen":
 
     ``model_id``: modellens navn fra HuggingFace
 
@@ -84,7 +84,7 @@ Vi kan gi noen argumenter til pipelinen:
 Å lage instruks
 -----------------
 
-Vi kan bruke en instruks til å fortelle språkmodellen hvordan vi ønsker at den skal svare. Instruksen bør være kort og konstruktiv. Vi lager også plassholdere til konteksten. LangChain bytter disse ut med de aktuelle dokumentene når vi kjører en instruks::
+Vi kan bruke en instruks/ "prompt" til å fortelle språkmodellen hvordan vi ønsker at den skal svare. Instruksen bør være kort og konstruktiv. Vi lager også plassholdere til konteksten. LangChain bytter disse ut med de aktuelle dokumentene når vi kjører en instruks::
 
    from langchain.chains.combine_documents import create_stuff_documents_chain
    from langchain.chains.llm import LLMChain
@@ -103,7 +103,7 @@ Vi kan bruke en instruks til å fortelle språkmodellen hvordan vi ønsker at de
 Skille oppsummeringen fra inputten
 -------------------------------------
 
-LangChain returnerer både input instruksen og svaret som genereres i en lang tekst. For å få bare oppsummeringen, må vi splitte oppsummeringen fra dokumentet som vi sendte som input. Til dette kan vi bruke LangChain output parseren som lyder navnet RegexParser::
+LangChain returnerer både input instruksen og svaret som genereres i en lang tekst. For å få bare oppsummeringen, må vi splitte oppsummeringen fra dokumentet som vi sendte som input. Til dette kan vi bruke LangChain output parseren som lyder navnet `RegexParser <https://api.python.langchain.com/en/latest/langchain/output_parsers/langchain.output_parsers.regex.RegexParser.html>`_::
 
    from langchain.output_parsers import RegexParser
    import re
@@ -116,7 +116,7 @@ LangChain returnerer både input instruksen og svaret som genereres i en lang te
 Å lage kjede (chain)
 ---------------------
 
-Dokument innlasteren laster hver PDF side som et separat ‘document’. Dette er delvis av tekniske grunner og på grunn av måten PDFer er organisert. Av denne grunn bruker vi en kjede som kalles ``create_stuff_documents_chain`` som (gjen)forener flere dokumenter til ett enkelt stort dokument::
+Dokument innlasteren laster hver PDF side som et separat ‘document’. Dette er delvis av tekniske årsaker og på grunn av måten PDFer er organisert. Av denne grunn bruker vi en kjede som kalles ``create_stuff_documents_chain`` som (gjen)forener flere dokumenter til ett enkelt stort dokument::
    
    chain = create_stuff_documents_chain(
            llm, prompt, output_parser=output_parser)
@@ -124,7 +124,7 @@ Dokument innlasteren laster hver PDF side som et separat ‘document’. Dette e
 Laste inn dokumentene
 ------------------------
 
-Vi bruker LangChain sin ``DirectoryLoader`` til å laste alle inn filer fra ``document_folder``. ``document_folder`` er definert i starten av denne Notebooken::
+Vi bruker LangChain sin ``DirectoryLoader`` til å laste alle inn filer fra ``document_folder``. ``document_folder`` defineres i starten av denne Notebooken::
 
    from langchain_community.document_loaders import DirectoryLoader
    
@@ -135,7 +135,7 @@ Vi bruker LangChain sin ``DirectoryLoader`` til å laste alle inn filer fra ``do
 Lage oppsummeringene
 ----------------------
 
-Nå kan vi iterere over disse dokumentene med en for-loop::
+Nå kan vi iterere over disse dokumentene med en ``for``-loop::
 
    summaries = {}
    
@@ -151,7 +151,7 @@ Nå kan vi iterere over disse dokumentene med en for-loop::
 Lagre oppsummeringene til tekstfiler
 ---------------------------------------
 
-Endelig, lagrer vi oppsummeringene for at vi senere skal kunne se dem. Vi lagrer oppsummeringene i filen summaries.txt. Hvis du vil, kan du lagre hver oppsummering i en egen fil::
+Til slutt lagrer vi oppsummeringene for at vi senere skal kunne se dem. Vi lagrer oppsummeringene i filen ``summaries.txt``. Hvis du vil, kan du lagre hver oppsummering i en egen fil::
 
    with open('summaries.txt', 'w') as outfile:
        for filename in summaries:
@@ -161,7 +161,6 @@ Endelig, lagrer vi oppsummeringene for at vi senere skal kunne se dem. Vi lagrer
 
 Bonusmateriale
 -----------------
-
 
 .. admonition:: Oppgave: Lage en metaoppsumemring
    :collapsible: closed

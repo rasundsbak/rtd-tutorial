@@ -277,9 +277,7 @@ Oppgaver
 .. admonition:: Oppgave: Lagre dokumentindeksen
    :collapsible: closed
 
-   Dokumentindeksen som vi lagde med FAISS er bare lagret i minnet. For å unngå at vi må reindeksere dokumentene hver gang vi laster notebooken, kan vi lagre indeksen. Prøv å bruke funksjonen 
-
-Prøv å bruke funksjonen ``vectorstore.save_local()`` til å lagre indeksen. Du kan dermed laste indeksen fra en fil ved å bruke funksjonen ``FAISS.load_local()``. Se dokumentasjon på `FAISS modulen i LangChain <https://python.langchain.com/docs/integrations/vectorstores/faiss/#saving-and-loading>`_ dersom du vil ha flere detaljer.
+   Dokumentindeksen som vi lagde med FAISS er bare lagret i minnet. For å unngå at vi må reindeksere dokumentene hver gang vi laster notebooken, kan vi lagre indeksen. Prøv å bruke funksjonen ``vectorstore.save_local()`` til å lagre indeksen. Du kan dermed laste indeksen fra en fil ved å bruke funksjonen ``FAISS.load_local()``. Se dokumentasjon på `FAISS modulen i LangChain <https://python.langchain.com/docs/integrations/vectorstores/faiss/#saving-and-loading>`_ dersom du vil ha flere detaljer.
 
 .. admonition:: Oppgave: Slurm jobber
    :collapsible: closed

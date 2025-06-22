@@ -7,7 +7,7 @@ Kjør store språkmodeller på UiO Educloud
 
 Hvem passer kurset for?
 -------------------------
-Dette er dokumentasjonen for et kurs som avholdes ved Universitetsbiblioteket i Oslo. Kurset er for ansatte ved UiO, og egner seg for de som har noe erfaring med Jupyter. Vi ønsker å invitere forskere, PhD og postdoc. Vi har hatt uformelle nettverksmøter på UB, Humsambiblioteket ni Georg Sverdrups hus hver tordag. Vi takker nettverket for støtte og entusiasme!
+Dette er dokumentasjonen for et kurs som avholdes ved Universitetsbiblioteket i Oslo. Kurset er for ansatte ved UiO, og egner seg for de som har noe erfaring med Jupyter. Vi ønsker å invitere forskere, PhD og postdoc. Vi har nettverksmøter på UB, Humsambiblioteket kursrom ni Georg Sverdrups hus hver tordag. Her kan du få støtte til koden du utvikler, etter at du har vært på kurs. Ønsker du å stikke innom for å vise ny kode som du har utviklet? Ta kontakt med `Ragnhild Sundsbak <https://www.ub.uio.no/om/ansatte/humsam/ragnhsu/>`_, for nærmere avtale.
 
 Forkunnskaper
 --------------

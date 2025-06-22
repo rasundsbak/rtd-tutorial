@@ -296,4 +296,4 @@ Oppgaver
 
 .. tip::
 
-   Får du feilmeldinger? Lant ned `Sublime text <https://www.sublimetext.com/download>`_ slik at du lettere får oversikt over koden din. Output filen gir et linjenommer for der feilen ligger. Da kan du lese av rette linjenummeret i Sublime editoren.
+   Får du feilmeldinger? Lant ned `Sublime text <https://www.sublimetext.com/download>`_ slik at du lettere får oversikt over koden din. Output filen gir et linjenummer for der feilen ligger. Da kan du lese av rette linjenummeret i Sublime editoren.

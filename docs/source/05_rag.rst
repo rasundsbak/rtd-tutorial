@@ -293,3 +293,7 @@ Oppgaver
    Slurm lager en loggfil for hver jobb som lagres med et navn som for eksempel ``slurm-1358473.out``. Som standard, blir disse loggfilene lagret i den aktuelle arbeidskatalogen der du kjører sbatch kommandoen fra. Dersom du ønsker å lagre loggfilen et annet sted, kan du legge til en linje som vises under, i ditt slurm skript. Husk å endre brukernavnet::
 
    #SBATCH --output=/fp/projects01/ec443/<username>/logs/slurm-%j.out
+
+.. tip::
+
+   Får du feilmeldinger? Lant ned `Sublime text <https://www.sublimetext.com/download>`_ slik at du lettere får oversikt over koden din. Output filen gir et linjenommer for der feilen ligger. Da kan du lese av rette linjenummeret i Sublime editoren.

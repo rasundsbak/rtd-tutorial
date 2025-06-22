@@ -20,7 +20,7 @@ Vi vil bruke `LangChain <https://www.langchain.com/>`_, et bibliotek med åpen k
 .. admonition:: Oppgave: Lage en ny notebook
    :collapsible: closed
 
-    Lag en ny Jupyter Notebook som du kaller RAG ved å velge Filmenyen i JupyterLab, deretter "New" og "Notebook". Hvis du blir spurt om å velge en kjerne, velg “Python 3”. Gi den nye notebooken et navn ved å velge Filmenyen i JupyterLab og deretter "Rename Notebook". Bruk navnet RAG.
+    Lag en ny Jupyter Notebook som du kaller ``RAG`` ved å velge Filmenyen i JupyterLab, deretter "New" og "Notebook". Hvis du blir spurt om å velge en kjerne, velg “Python 3”. Gi den nye notebooken et navn ved å velge Filmenyen i JupyterLab og deretter "Rename Notebook". Bruk navnet ``RAG``.
 
 .. admonition:: Oppgave: Stopp gamle kjerner
    :collapsible: closed

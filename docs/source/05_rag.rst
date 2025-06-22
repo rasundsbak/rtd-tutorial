@@ -27,17 +27,11 @@ Vi vil bruke `LangChain <https://www.langchain.com/>`_, et bibliotek med åpen k
 
     JupyterLab bruker en Python kjerne til å kjøre koden i hver notebook. For å frigjøre GPU minne som ble brukt i forrige kapittel, bør du stoppe kjernen for den notebooken. I menyen på venstre side av JupyterLab, velg den mørke sirkelen med en hvit firkant i. Deretter velger du KERNELS og "Shut Down All".
 
-Dokumentets plassering
-------------------------
-
-Vi har samlet noen artikler som har Creative Commons lisens. Vi skal forsøke å laste opp alle dokumentene fra mappen som det vises til under. Hvis du vil, kan du endre stien til din egen mappe på hjemmeområdet::
-
-   document_folder = '/fp/projects01/ec443/documents'
-
 Språkmodellen
 ---------------
 
 Vi skal bruke modeller fra `HuggingFace <https://huggingface.co/>`_, en nettside som har verktøy og modeller til maskinlæring. Vi kommer til å bruke språkmodellen med åpne vekter og parametere, `meta-llama/Llama-3.2-3B-Instruct <https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct>`_, fordi den er liten nok til at vi kan bruke den med de minste GPUene på Fox. Hvis du kjører på en GPU med mer minne, kan du få bedre resultater med en større modell, som for eksempel `mistralai/Ministral-8B-Instruct-2410 <https://huggingface.co/mistralai/Ministral-8B-Instruct-2410>`_.
+
 
 Modellens plassering
 ---------------------
@@ -50,6 +44,8 @@ Vi må laste ned modellen som vi skal bruke. Vi kjører programmet på tungregni
 .. note::
 
    Hvis du kjører programmene lokalt på din egen datamaskin, trenger du kanskje ikke sette ``HF_HOME``.
+
+
 
 Modellen
 ---------
@@ -136,6 +132,15 @@ Tekst må vektoriseres før den kan bli bearbeidet. Vår HuggingFace pipeline vi
    
        * ``normalize_embeddings``: embeddinger kan ha forskjellige størrelser. Når embeddingen normaliseres betyr det at man gjør størrelsen lik for alle.
 
+
+Dokumentets plassering
+------------------------
+
+Vi har samlet noen artikler som har Creative Commons lisens. Vi skal forsøke å laste opp alle dokumentene fra mappen som det vises til under. Hvis du vil, kan du endre stien til din egen mappe på hjemmeområdet::
+
+   document_folder = '/fp/projects01/ec443/documents'
+
+
 Lasting av dokumentene
 ------------------------
 
@@ -146,7 +151,7 @@ Vi bruker  ``DirectoryLoader`` fra LangChain til å laste alle filene fra ``docu
    loader = DirectoryLoader(document_folder)
    documents = loader.load()
 
-"Document loader" laster hver fil i et eget dokument. Vi kan undersøke størrelsen på dokumentene våre. Vi kan for eksempel bruke funksjonen max() for å finne lengden på det lengste dokumentet::
+"Document loader" laster hver fil i et eget dokument. Vi kan undersøke størrelsen på dokumentene våre. Vi kan for eksempel bruke funksjonen ``max()`` for å finne lengden på det lengste dokumentet::
 
    print(f'Number of documents:', len(documents))
    print('Maximum document length: ', max([len(doc.page_content) for doc in documents]))
@@ -187,8 +192,7 @@ Vi kan se etter om maks dokumentlengde har endret seg::
 Dokument indeksen
 ------------------
 
-Neste skritt er å lage en søkeindeks til dokumentene våre. 
-Denne indeksen kommer vi til å bruke til gjenfinningsdelen i "Gjenfinningsforsterket tekstgenerering". Vi bruker det åpne biblioteket FAISS (Facebook AI Similarity Search) gjennom LangChain::
+Neste skritt er å lage en søkeindeks til dokumentene våre. Denne indeksen kommer vi til å bruke til gjenfinningsdelen i "Gjenfinningsforsterket tekstgenerering". Vi bruker det åpne biblioteket `FAISS <https://github.com/facebookresearch/faiss>`_ (Facebook AI Similarity Search) gjennom LangChain::
 
    from langchain_community.vectorstores import FAISS
    vectorstore = FAISS.from_documents(documents, huggingface_embeddings
@@ -215,8 +219,7 @@ Til RAG programmet vårt trenger vi tilgang til en søkemotor fra et grensesnitt
 Lage en instruks
 ------------------
 
-Vi kan bruke en instruks til å fortelle språkmodellen hvordan den skal svare. instruksen bør være
-korte og nyttig. I tillegg, skal vi ha plassbeholdere til spørsmålets kontekst. LangChain erstatter disse med den faktiske konteksten og spørsmålet når vi legger inn instruksen::
+Vi kan bruke en instruks til å fortelle språkmodellen hvordan den skal svare. instruksen bør være kort og nyttig. I tillegg, skal vi ha plassbeholdere til spørsmålets kontekst. LangChain erstatter disse med den faktiske konteksten og spørsmålet når vi legger inn instruksen::
    
    from langchain.prompts import PromptTemplate
    
@@ -232,10 +235,10 @@ korte og nyttig. I tillegg, skal vi ha plassbeholdere til spørsmålets kontekst
    prompt = PromptTemplate(template=prompt_template,
                            input_variables=['context', 'input'])
 
-Vi lager «Chatboten»
------------------------
+Vi lager Chatboten
+--------------------
 
-Nå kan vi bruke modulen ``create_retrieval_chain`` fra from LangChain til å lage en agent som besvarer spørsmål, en «chatbot»::
+Nå kan vi bruke modulen ``create_retrieval_chain`` fra LangChain til å lage en agent som besvarer spørsmål, en «chatbot»::
 
    from langchain.chains import create_retrieval_chain
    from langchain.chains.combine_documents import create_stuff_documents_chain
@@ -254,7 +257,15 @@ Nå kan vi sende instruksen til chatbotten::
 
    print(result['answer'])
 
-Forhåpentligvis vil svaret inneholde informasjon fra konteksten som ikke var en del av det forrige svaret, da vi kjørte instruksen uten uten RAG. 
+Forhåpentligvis vil svaret inneholde informasjon fra konteksten som ikke var en del av det forrige svaret, da vi kjørte instruksen uten RAG. 
+
+Bonus Materiale
+----------------
+
+Adding Citations
+==================
+
+Teksten som ble generert over har ikke sitater eller referanser. All tekst som bygger på kilder bør inkludere henvisninger til disse. Henvisninger gjør det mulig å finne kilden, og faktasjekke opplysningene. LangChain støtter siteringer i teksten når man bruker modeller som kan prosusere referanser. Se LangChain tutorial om `hvordan man kan få en RAG applikasjon til å legge til sitater <https://python.langchain.com/docs/how_to/qa_citations/>`_. 
 
 Oppgaver
 ---------

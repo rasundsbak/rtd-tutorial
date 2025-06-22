@@ -261,9 +261,8 @@ Forhåpentligvis vil svaret inneholde informasjon fra konteksten som ikke var en
 
 Bonus Materiale
 ----------------
-
-Adding Citations
-==================
+Legge til siteringer
+=====================
 
 Teksten som ble generert over har ikke sitater eller referanser. All tekst som bygger på kilder bør inkludere henvisninger til disse. Henvisninger gjør det mulig å finne kilden, og faktasjekke opplysningene. LangChain støtter siteringer i teksten når man bruker modeller som kan prosusere referanser. Se LangChain tutorial om `hvordan man kan få en RAG applikasjon til å legge til sitater <https://python.langchain.com/docs/how_to/qa_citations/>`_. 
 

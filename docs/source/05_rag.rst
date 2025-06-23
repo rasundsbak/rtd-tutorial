@@ -195,7 +195,7 @@ Dokument indeksen
 Neste skritt er å lage en søkeindeks til dokumentene våre. Denne indeksen kommer vi til å bruke til gjenfinningsdelen i "Gjenfinningsforsterket tekstgenerering". Vi bruker det åpne biblioteket `FAISS <https://github.com/facebookresearch/faiss>`_ (Facebook AI Similarity Search) gjennom LangChain::
 
    from langchain_community.vectorstores import FAISS
-   vectorstore = FAISS.from_documents(documents, huggingface_embeddings
+   vectorstore = FAISS.from_documents(documents, huggingface_embeddings)
 
 FAISS kan finne dokumenter som samsvarer med et søk::
 

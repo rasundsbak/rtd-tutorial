@@ -37,7 +37,7 @@ Lunch
 
 Etter lunsj
 -------------
-**12:15-13:00**
+**12:15-14:00**
 :doc:`05_rag`
 
 Hvis vi får tid, last opp eget materiale, og du kan prøve å bruke metodene som du har lært på eget materiale. Vi hjelper hverandre.

@@ -24,7 +24,7 @@ extensions = [
     'nbsphinx',
 ]
 
-nbsphinx_execute = 'none'  # Unngå å kjøre celler
+nbsphinx_execute = 'never'  # Unngå å kjøre celler
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),

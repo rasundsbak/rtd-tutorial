@@ -10,6 +10,3 @@ readthedocs-sphinx-search
 sphinx_copybutton
 sphinx-panels
 nbsphinx
-ipykernel
-nbclient
-nbconvert

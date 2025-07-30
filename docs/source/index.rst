@@ -42,5 +42,4 @@ Learning objectives
    notebooks/28_problem_solving
    notebooks/29_references
    notebooks/30_todo
-   notebooks/Example_1
 

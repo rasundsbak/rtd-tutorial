@@ -34,6 +34,7 @@ Learning objectives
    notebooks/04_chatbot
    notebooks/05_summarization
    notebooks/10_rag
+   notebooks/11_memory_1
    notebooks/28_problem_solving
    notebooks/29_references
    notebooks/30_todo

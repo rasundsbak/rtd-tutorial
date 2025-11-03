@@ -33,12 +33,7 @@ Learning objectives
    notebooks/03_downloading_packages
    notebooks/04_chatbot
    notebooks/05_summarization
-   notebooks/09_parameters
    notebooks/10_rag
-   notebooks/11_memory_1
-   notebooks/12_memory_2
-   notebooks/13_memory_3
-   notebooks/27_preparations
    notebooks/28_problem_solving
    notebooks/29_references
    notebooks/30_todo

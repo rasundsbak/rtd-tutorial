@@ -1,4 +1,4 @@
-Are you a team member? `Edit this page  <https://github.com/rasundsbak/rtd-tutorial>`_. This is a cooperative project. See also `LLM Course <https://uio-library.github.io/LLM-course/index.html>`_. See also `Norwegian version <https://rtd-2-tutorial.readthedocs.io/no/latest/>`_.
+Are you a team member? `Edit this page  <https://github.com/rasundsbak/rtd-tutorial>`_. This is a cooperative project. See also `LLM Course <https://github.com/uio-library/LLM-course>`_. See also `Norwegian version <https://rtd-2-tutorial.readthedocs.io/no/latest/>`_.
 
 Run large language models (LLM) through Educloud UiO
 ======================================================
@@ -27,15 +27,13 @@ Learning objectives
    :caption: Table of Contents
    :hidden:
 
-   notebooks/005_timetable
+   notebooks/006_timetable
    notebooks/01_preparations
    notebooks/02_easy_login
-   notebooks/03_downloading_packages
+   notebooks/03_installing
    notebooks/04_chatbot
    notebooks/05_summarization
-   notebooks/10_rag
-   notebooks/11_memory_1
+   notebooks/06_rag
    notebooks/28_problem_solving
    notebooks/29_references
-   notebooks/30_todo
 

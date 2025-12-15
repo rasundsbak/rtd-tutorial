@@ -3,7 +3,7 @@
 # -- Project information --
 
 project = 'AI on Cluster'
-copyright = '2025 Ragnhild Sundsbak in collaboration wigh Erik Winge and Pål Lykkja'
+copyright = '2025 Ragnhild Sundsbak in collaboration with Erik Winge and Pål Lykkja'
 author = 'Ragnhild Sundsbak'
 
 release = '4.7'
@@ -24,7 +24,7 @@ extensions = [
     'myst_nb',
 ]
 
-    # 'nbsphinx',
+# 'nbsphinx',
 
 nbsphinx_execute = 'never'  # Unngå å kjøre celler
 

@@ -21,8 +21,10 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.todo',
     'sphinx_panels',
-    'nbsphinx',
+    'myst_nb',
 ]
+
+    # 'nbsphinx',
 
 nbsphinx_execute = 'never'  # Unngå å kjøre celler
 

@@ -21,9 +21,12 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.todo',
     'sphinx_panels',
-    'nbsphinx',
+    'myst_nb',
 ]
 
+source_suffix = {
+    '.ipynb': 'myst-nb',
+}
 nbsphinx_execute = 'never'  # Unngå å kjøre celler
 
 intersphinx_mapping = {

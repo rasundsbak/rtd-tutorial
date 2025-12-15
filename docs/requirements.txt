@@ -11,4 +11,3 @@ sphinx-panels
 nbsphinx
 ipykernel
 nbconvert
-myst-nb

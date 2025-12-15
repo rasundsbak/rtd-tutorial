@@ -25,8 +25,10 @@ extensions = [
 ]
 
 source_suffix = {
+    '.rst': 'restructuredtext',
     '.ipynb': 'myst-nb',
 }
+
 nbsphinx_execute = 'never'  # Unngå å kjøre celler
 
 intersphinx_mapping = {

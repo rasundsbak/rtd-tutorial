@@ -27,6 +27,8 @@ Learning objectives
    :caption: Table of Contents
    :hidden:
 
+   .. _detailed-preparations:
+
    notebooks/006_timetable
    notebooks/julenissen
    notebooks/01_preparations

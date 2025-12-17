@@ -27,6 +27,7 @@ Learning objectives
    :caption: Table of Contents
    :hidden:
 
+   .. _tidtabell:
    .. _detailed-preparations:
    .. _easy login:
 

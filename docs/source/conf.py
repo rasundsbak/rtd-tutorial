@@ -21,19 +21,18 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.todo',
     'sphinx_panels',
-    'nbsphinx',
+    "myst_nb",
 ]
 
-nbsphinx_execute = 'never'
+# Denne er til nbsphinx nbsphinx_execute = 'never'
 
-# Droppet inntil videre:'myst_nb',
-#source_suffix = {
-#    '.rst': 'restructuredtext',
-#    '.ipynb': 'myst-nb',
-#    '.myst': 'myst-nb',
-#}
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.ipynb': 'myst-nb',
+    '.myst': 'myst-nb',
+}
 
-# nb_execution_mode = "off"
+nb_execution_mode = "off"
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),

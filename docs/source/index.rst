@@ -28,7 +28,6 @@ Learning objectives
    :hidden:
 
    notebooks/006_timetable
-   notebooks/julenissen
    notebooks/01_preparations
    notebooks/02_easy_login
    notebooks/03_installing

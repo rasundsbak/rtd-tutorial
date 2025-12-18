@@ -21,7 +21,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.todo',
     'sphinx_panels',
-    "myst_nb",
+    'myst_nb',
 ]
 
 # Denne er til nbsphinx nbsphinx_execute = 'never'

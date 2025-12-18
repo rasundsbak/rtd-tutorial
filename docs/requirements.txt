@@ -10,4 +10,4 @@ sphinx_copybutton
 sphinx-panels
 ipykernel
 nbconvert
-nbsphinx
+myst-nb

@@ -11,6 +11,6 @@ sphinx-panels
 ipykernel
 nbconvert
 nbsphinx
-myst-parser
+# myst-parser
 
 # myst-nb # dropp nbsphinx ved innføring av myst-nb

@@ -22,7 +22,7 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx_panels',
     'nbsphinx',
-    "myst_parser"
+    "myst_parser",
 ]
 
 nbsphinx_execute = 'never'

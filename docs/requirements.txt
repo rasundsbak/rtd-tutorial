@@ -10,7 +10,4 @@ sphinx_copybutton
 sphinx-panels
 ipykernel
 nbconvert
-nbsphinx
-myst-parser
-
-# myst-nb # dropp nbsphinx ved gjeninnføring av myst-nb
+myst-nb

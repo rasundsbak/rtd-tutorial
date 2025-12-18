@@ -27,15 +27,6 @@ Learning objectives
    :caption: Table of Contents
    :hidden:
 
-   .. _tidtabell:
-   .. _detailed-preparations:
-   .. _easy login:
-   .. _installing:
-   .. _chatbot:
-   .. _summarizing:
-   .. _rag:
-   
-
    notebooks/006_timetable
    notebooks/julenissen
    notebooks/01_preparations

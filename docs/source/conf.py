@@ -24,6 +24,8 @@ extensions = [
     'nbsphinx',
 ]
 
+# extensions = ["myst_parser"]
+
 nbsphinx_execute = 'never'
 
 # Droppet inntil videre:'myst_nb',

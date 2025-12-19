@@ -30,10 +30,9 @@ Learning objectives
    notebooks/006_timetable
    notebooks/01_preparations
    notebooks/02_easy_login
-   notebooks/03_installing
-   notebooks/04_chatbot
-   notebooks/05_summarization
-   notebooks/06_rag
-   notebooks/28_problem_solving
-   notebooks/29_references
-
+   #notebooks/03_installing
+   #notebooks/04_chatbot
+   #notebooks/05_summarization
+   #notebooks/06_rag
+   #notebooks/28_problem_solving
+   #notebooks/29_references

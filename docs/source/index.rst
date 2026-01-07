@@ -7,7 +7,7 @@ Run large language models (LLM) through Educloud UiO
 
 Who are we inviting
 ----------------------
-This course is held at the Oslo Univsersity Library. We recommend that those who attend has some experience with Jupyter. We invite students, Researchers, PhDs and Postdocs.
+This course is held at the Oslo Univsersity Library. We recommend that those who attend has some experience with `Jupyter <https://jupyter.org/>`_. We invite students, Researchers, PhDs and Postdocs.
 
 Prior Knowledge
 -----------------

@@ -31,5 +31,7 @@ Learning objectives
    notebooks/006_timetable
    notebooks/01_preparations
    notebooks/02_easy_login
+   notebooks/03_installing
+   notebooks/04_chatbot
    notebooks/07_message
    notebooks/30_todo

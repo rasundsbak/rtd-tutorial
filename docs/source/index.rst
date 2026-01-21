@@ -32,4 +32,4 @@ Learning objectives
    notebooks/01_preparations
    notebooks/02_easy_login
    notebooks/07_message
-   #notebooks/29_references
+   notebooks/30_todo

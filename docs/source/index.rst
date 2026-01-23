@@ -23,6 +23,15 @@ Learning objectives
 - Be fluent in how to set up your own model in Jupyter Lab, so that you may use the process independently for interaction with other open LLMs
 
 
+Testing the todo function
+--------------------------
+
+..todo::
+   Here is blabla
+   Endless work
+   Remember to set ``todo_include_todos`` to ``True``
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Table of Contents

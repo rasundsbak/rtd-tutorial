@@ -32,6 +32,7 @@ source_suffix = {
 }
 
 # new suggestion by chat GPT January 2026
+# not enabled: "linkify",
 
 myst_enable_extensions = [
     "colon_fence",  # enables ```{note} and other directive fences
@@ -40,8 +41,6 @@ myst_enable_extensions = [
     "substitution",
     "tasklist",
 ]
-
-# "linkify",
 
 nb_execution_mode = "off"
 

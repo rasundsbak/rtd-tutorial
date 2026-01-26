@@ -20,7 +20,7 @@ extensions = [
     'sphinx_copybutton',
     'sphinx.ext.viewcode',
     'sphinx.ext.todo',
-    "sphinx_design",
+    "sphinx-design",
     'myst_nb',
 ]
 

@@ -22,6 +22,7 @@ extensions = [
     'sphinx.ext.todo',
     "sphinx_design",
     'myst_nb',
+    'sphinx_togglebutton',
 ]
 
 # Denne er til nbsphinx nbsphinx_execute = 'never'

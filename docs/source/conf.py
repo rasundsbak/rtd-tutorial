@@ -25,6 +25,7 @@ extensions = [
     'sphinx_togglebutton',
 ]
 
+togglebutton_selector = '.admonition.dropdown, .toggle, .sd-dropdown'
 # Denne er til nbsphinx nbsphinx_execute = 'never'
 
 source_suffix = {

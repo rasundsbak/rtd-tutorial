@@ -26,11 +26,27 @@ extensions = [
 
 # Denne er til nbsphinx nbsphinx_execute = 'never'
 
+#source_suffix = {
+#    '.rst': 'restructuredtext',
+#    '.ipynb': 'myst-nb',
+#    '.myst': 'myst-nb',
+#}
+
 source_suffix = {
     '.rst': 'restructuredtext',
     '.ipynb': 'myst-nb',
-    '.myst': 'myst-nb',
 }
+
+# new suggestion by chat GPT January 2026
+
+myst_enable_extensions = [
+    "colon_fence",  # enables ```{note} and other directive fences
+    "attrs_block",  # allows :class: dropdown on blocks
+    "deflist",
+    "linkify",
+    "substitution",
+    "tasklist",
+]
 
 nb_execution_mode = "off"
 

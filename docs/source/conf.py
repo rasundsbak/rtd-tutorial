@@ -37,10 +37,11 @@ myst_enable_extensions = [
     "colon_fence",  # enables ```{note} and other directive fences
     "attrs_block",  # allows :class: dropdown on blocks
     "deflist",
-    "linkify",
     "substitution",
     "tasklist",
 ]
+
+# "linkify",
 
 nb_execution_mode = "off"
 

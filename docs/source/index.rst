@@ -40,6 +40,7 @@ Testing the todo function
    notebooks/02_easy_login
    notebooks/03_installing
    notebooks/04_chatbot
+   notebooks/05_summarization
    notebooks/07_message
    notebooks/30_testpage
    notebooks/31_todo

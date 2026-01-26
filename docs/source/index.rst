@@ -27,10 +27,8 @@ Testing the todo function
 --------------------------
 
 ..todo::
-   Here is blabla
-   Endless work
-   Remember to set ``todo_include_todos`` to ``True``
-
+   
+      Here is blabla Endless work. Remember to set ``todo_include_todos`` to ``True``
 
 .. toctree::
    :maxdepth: 2
@@ -43,4 +41,6 @@ Testing the todo function
    notebooks/03_installing
    notebooks/04_chatbot
    notebooks/07_message
-   notebooks/30_todo
+   notebooks/30_testpage
+   notebooks/31_todo
+

@@ -26,7 +26,7 @@ Learning objectives
 Testing the todo function
 --------------------------
 
-..todo::
+.. todo::
    
       Here is blabla Endless work. Remember to set ``todo_include_todos`` to ``True``
 

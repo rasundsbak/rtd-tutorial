@@ -7,7 +7,7 @@ Run large language models (LLM) through Educloud UiO
 
 Who are we inviting
 ----------------------
-This course is held at the Oslo Univsersity Library. We recommend that those who attend has some experience with `Jupyter <https://jupyter.org/>`_. We invite students, Researchers, PhDs and Postdocs.
+This course is held at the Oslo Univsersity Library. We recommend that those who attend has some experience with `Jupyter <https://jupyter.org/>`_. We invite students, researchers, PhDs and postdocs.
 
 Prior Knowledge
 -----------------
@@ -20,7 +20,8 @@ Learning objectives
 - learn how to use UiOs infrastructure for computational power to use various open LLMs
 - Learn how to create effective prompts and adjust relevant parameters
 - Connect the model to your own data in the form of PDFs or text data.
-- Be fluent in how to set up your own model in Jupyter Lab, so that you may use the process independently for interaction with other open LLMs
+- Be fluent in how to set up your own model in JupyterLab, so that you may use the process independently for interaction with other open LLMs
+- Learn how to use JupyterLab to develop your own python programs, and run them as SLURM.
 
 
 Testing the todo function
@@ -35,7 +36,7 @@ Testing the todo function
    :caption: Table of Contents
    :hidden:
 
-   notebooks/006_timetable
+   notebooks/007_timetable
    notebooks/01_preparations
    notebooks/02_easy_login
    notebooks/03_installing

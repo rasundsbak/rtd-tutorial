@@ -6,8 +6,8 @@ project = 'AI on Cluster'
 copyright = '2025 Ragnhild Sundsbak in collaboration with Erik Winge and Pål Lykkja'
 author = 'Ragnhild Sundsbak'
 
-release = '4.7'
-version = '4.7.en'
+release = '5.0'
+version = '5.0.en'
 
 # -- General configuration --
 
@@ -20,17 +20,11 @@ extensions = [
     'sphinx_copybutton',
     'sphinx.ext.viewcode',
     'sphinx.ext.todo',
-    'sphinx_panels',
+    "sphinx_design",
     'myst_nb',
 ]
 
 # Denne er til nbsphinx nbsphinx_execute = 'never'
-
-#source_suffix = {
-#    '.rst': 'restructuredtext',
-#    '.ipynb': 'myst-nb',
-#    '.myst': 'myst-nb',
-#}
 
 source_suffix = {
     '.rst': 'restructuredtext',

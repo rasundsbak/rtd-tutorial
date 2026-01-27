@@ -37,7 +37,7 @@ source_suffix = {
 # not enabled: "linkify",
 
 myst_enable_extensions = [
-    "colon_fence",
+    # "colon_fence",
     "attrs_block",  # allows :class: dropdown on blocks
     "deflist",
     "substitution",

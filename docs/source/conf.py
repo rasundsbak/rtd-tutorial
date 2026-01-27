@@ -22,7 +22,7 @@ extensions = [
     'sphinx.ext.todo',
     "sphinx_design",
     'myst_nb',
-    # 'sphinx_togglebutton',
+    'sphinx_togglebutton',
 ]
 
 togglebutton_selector = '.admonition.dropdown, .toggle, .sd-dropdown'

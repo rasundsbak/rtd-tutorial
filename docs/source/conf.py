@@ -34,10 +34,9 @@ source_suffix = {
 }
 
 # new suggestion by chat GPT January 2026
-# not enabled: "linkify",
+# not enabled: "linkify", "colon_fence",
 
 myst_enable_extensions = [
-    # "colon_fence",
     "attrs_block",  # allows :class: dropdown on blocks
     "deflist",
     "substitution",

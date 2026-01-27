@@ -43,7 +43,7 @@ myst_enable_extensions = [
     "substitution",
     "tasklist",
 ]
-myst_admonition_enable = True
+
 nb_execution_mode = "off"
 
 intersphinx_mapping = {

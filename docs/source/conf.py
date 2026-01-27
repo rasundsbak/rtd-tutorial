@@ -6,8 +6,8 @@ project = 'AI on Cluster'
 copyright = '2025 Ragnhild Sundsbak in collaboration with Erik Winge and Pål Lykkja'
 author = 'Ragnhild Sundsbak'
 
-release = '5.0'
-version = '5.0.en'
+release = '4.7'
+version = '4.7.en'
 
 # -- General configuration --
 

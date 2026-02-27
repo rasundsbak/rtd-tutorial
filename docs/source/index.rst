@@ -7,7 +7,7 @@ Run large language models (LLM) through Educloud UiO
 
 Who are we inviting
 ----------------------
-This course is held at the Oslo Univsersity Library. We recommend that those who attend has some experience with `Jupyter <https://jupyter.org/>`_. We invite students, researchers, PhDs and postdocs.
+This course is arranged by the Oslo Univsersity Library. We recommend that those who attend has some experience with `Jupyter <https://jupyter.org/>`_. We invite students, researchers, PhDs and postdocs.
 
 Prior Knowledge
 -----------------
@@ -29,14 +29,12 @@ Testing the todo function
 
 .. todo::
    
-      Here is blabla Endless work. Remember to set ``todo_include_todos`` to ``True``
-
 .. toctree::
    :maxdepth: 2
    :caption: Table of Contents
    :hidden:
 
-   notebooks/007_timetable
+   notebooks/008_timetable
    notebooks/01_preparations
    notebooks/02_easy_login
    notebooks/03_installing

@@ -43,6 +43,3 @@ Testing the todo function
    notebooks/06_rag
    notebooks/07_message
    notebooks/29_references
-   notebooks/30_testpage
-   notebooks/31_todo
-

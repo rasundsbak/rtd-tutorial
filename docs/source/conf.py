@@ -65,7 +65,7 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for TODO extension --
 
-todo_include_todos = True
+todo_include_todos = False
 
 # -- Options for EPUB output --
 epub_show_urls = 'footnote'

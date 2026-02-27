@@ -23,10 +23,6 @@ Learning objectives
 - Be fluent in how to set up your own model in JupyterLab, so that you may use the process independently for interaction with other open LLMs
 - Learn how to use JupyterLab to develop your own python programs, and run them as SLURM.
 
-
-Testing the todo function
---------------------------
-
 .. todo::
    
 .. toctree::

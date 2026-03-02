@@ -40,8 +40,3 @@ Hva vil du lære her?
    notebooks/05_rag
    notebooks/07_message
    notebooks/29_references
-
-Indeks
-=================
-* :ref:`genindex`
-

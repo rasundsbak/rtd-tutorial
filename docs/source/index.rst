@@ -7,7 +7,7 @@ Kjør store språkmodeller på UiO Educloud
 
 Hvem passer kurset for?
 -------------------------
-Dette er dokumentasjonen for et kurs som avholdes ved Universitetsbiblioteket i Oslo. Kurset er for ansatte ved UiO, og egner seg for de som har noe erfaring med Jupyter. Vi ønsker å invitere forskere, PhD og postdoc. Vi har nettverksmøter på UB, Humsambiblioteket kursrom ni Georg Sverdrups hus hver tordag. Her kan du få støtte til koden du utvikler, etter at du har vært på kurs. Ønsker du å stikke innom for å vise ny kode som du har utviklet? Ta kontakt med `Ragnhild Sundsbak <https://www.ub.uio.no/om/ansatte/humsam/ragnhsu/>`_, for nærmere avtale.
+Dette er dokumentasjonen for et kurs som avholdes i regi av Universitetsbiblioteket i Oslo. Kurset egner seg for de som har noe erfaring med Jupyter. Vi ønsker å invitere studenter, forskere, PhD og postdoc. Etter gjennomført kurs kan vi tilby støtte til koden du utvikler, etter at du har vært på kurs. Ta kontakt med `Ragnhild Sundsbak <https://www.ub.uio.no/om/ansatte/humsam/ragnhsu/>`_, for nærmere avtale.
 
 Forkunnskaper
 --------------
@@ -25,21 +25,21 @@ Hva vil du lære her?
 - koble modellen til egne data som eksempelvis Pdfer
 - bli flytende i hvordan du setter opp din egen modell i Jupyter Lab, og bruk prosessen som du laget til å kjøre i batch.
 
+.. todo::
+   
 .. toctree::
    :maxdepth: 2
    :caption: Table of Contents
    :hidden:
 
-   005_timetable
-   00_introduction
-   01_easy_login
-   02_downloading_packages
-   03_chatbot
-   04_summarization
-   05_rag
-   28_problem_solving
-   29_references
-   26_preparations
+   notebooks/007_timetable
+   notebooks/01_easy_login
+   notebooks/02_downloading_packages
+   notebooks/03_chatbot
+   notebooks/04_summarization
+   notebooks/05_rag
+   notebooks/07_message
+   notebooks/29_references
 
 Indeks
 =================

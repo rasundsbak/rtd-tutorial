@@ -49,3 +49,15 @@ epub_show_urls = 'footnote'
 
 # changing layout: https://sphinx-rtd-trial.readthedocs.io/en/1.1.3/theming.html
 # css colours: https://www.w3schools.com/cssref/css_colors.php
+
+# Konvertering .rst til .ipynb
+# Skru av når konvertering er utført
+# Konvertering med extension = 'sphinxcontrib.jupyter',
+# Konfigurasjon for sphinxcontrib-jupyter:
+#jupyter_kernels = {
+#    "python3": {
+#        "name": "python3",
+#        "display_name": "Python 3",
+#        "language": "python",
+#    }
+#}

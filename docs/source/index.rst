@@ -29,7 +29,7 @@ Hva vil du lære her?
    
 .. toctree::
    :maxdepth: 2
-   :caption: Table of Contents
+   :caption: Innhold
    :hidden:
 
    notebooks/007_timetable

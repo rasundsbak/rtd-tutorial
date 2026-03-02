@@ -32,7 +32,7 @@ Hva vil du lære her?
    :caption: Innhold
    :hidden:
 
-   notebooks/007_timetable
+   notebooks/008_timetable
    notebooks/01_easy_login
    notebooks/02_downloading_packages
    notebooks/03_chatbot

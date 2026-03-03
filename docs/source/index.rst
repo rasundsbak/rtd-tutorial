@@ -33,7 +33,8 @@ Hva vil du lære her?
    :hidden:
 
    notebooks/008_timetable
-   notebooks/26_preparations
-   notebooks/01_easy_login
-   notebooks/07_message
+   notebooks/01_preparations
+   notebooks/02_easy_login
+   notebooks/03_downloading_packages
+   notebooks/26_message
    notebooks/29_references

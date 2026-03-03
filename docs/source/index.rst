@@ -38,3 +38,4 @@ Hva vil du lære her?
    notebooks/03_downloading_packages
    notebooks/26_message
    notebooks/29_references
+   notebooks/30_testpage

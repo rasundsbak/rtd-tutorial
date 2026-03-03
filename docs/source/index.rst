@@ -39,3 +39,4 @@ Learning objectives
    notebooks/06_rag
    notebooks/07_message
    notebooks/29_references
+   notebooks/30_testpage

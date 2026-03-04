@@ -6,9 +6,9 @@ Kjør store språkmodeller på UiO Educloud
 .. image:: hpc.png
 
 .. warning::
-   # Dette er en byggeplass.
    
-   Hvis du ønsker å se dokumentasjonen, kan du heller besøke `noen av url:ene i toppmenyen! <https://uio-library.github.io/LLM-course/index.html>`
+   # Dette er en byggeplass.
+   Hvis du ønsker å se dokumentasjonen, kan du heller besøke `noen av url:ene i toppmenyen! <https://uio-library.github.io/LLM-course/index.html>`_
 
 Hvem passer kurset for?
 -------------------------
@@ -41,6 +41,7 @@ Hva vil du lære her?
    notebooks/01_preparations
    notebooks/02_easy_login
    notebooks/03_downloading_packages
+   notebooks/04_chatbot
    notebooks/26_message
    notebooks/29_references
    notebooks/30_testpage

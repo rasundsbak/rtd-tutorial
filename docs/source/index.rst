@@ -7,8 +7,7 @@ Kjør store språkmodeller på UiO Educloud
 
 .. warning::
    
-   # Dette er en byggeplass.
-   Hvis du ønsker å se dokumentasjonen, kan du heller besøke `noen av url:ene i toppmenyen! <https://uio-library.github.io/LLM-course/index.html>`_
+   Dette er en byggeplass. Hvis du ønsker å se dokumentasjonen, kan du heller besøke `noen av url:ene i toppmenyen! <https://github.com/rasundsbak/rtd-tutorial>`_
 
 Hvem passer kurset for?
 -------------------------

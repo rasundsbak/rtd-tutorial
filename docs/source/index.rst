@@ -41,6 +41,7 @@ Hva vil du lære her?
    notebooks/02_easy_login
    notebooks/03_downloading_packages
    notebooks/04_chatbot
+   notebooks/05_summarization
    notebooks/26_message
    notebooks/29_references
    notebooks/30_testpage

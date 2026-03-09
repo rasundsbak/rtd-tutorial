@@ -5,10 +5,6 @@ Kjør store språkmodeller på UiO Educloud
 
 .. image:: hpc.png
 
-.. warning::
-   
-   Dette er en byggeplass. Hvis du ønsker å se dokumentasjonen, kan du heller besøke `noen av url:ene i toppmenyen! <https://rtd-2-tutorial.readthedocs.io/no/latest/>`_
-
 Hvem passer kurset for?
 -------------------------
 Dette er dokumentasjonen for et kurs som avholdes i regi av Universitetsbiblioteket i Oslo. Kurset egner seg for de som har noe erfaring med Jupyter. Vi ønsker å invitere studenter, forskere, PhD og postdoc. Etter gjennomført kurs kan vi tilby støtte til koden du utvikler, etter at du har vært på kurs. Ta kontakt med `Ragnhild Sundsbak <https://www.ub.uio.no/om/ansatte/humsam/ragnhsu/>`_, for nærmere avtale.

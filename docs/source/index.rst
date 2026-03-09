@@ -41,4 +41,3 @@ Hva vil du lære her?
    notebooks/06_rag
    notebooks/26_message
    notebooks/29_references
-   notebooks/30_testpage

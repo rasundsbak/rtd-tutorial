@@ -6,7 +6,7 @@ project = 'KI på Klynge'
 copyright = '2026, KI gruppen på UB'
 author = 'Ragnhild Sundsbak, Erik Winge'
 
-release = '5.0'
+release = 'main'
 version = '5.0.no'
 
 # -- General configuration --

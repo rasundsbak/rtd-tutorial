@@ -12,7 +12,6 @@ Klone notebookene
 git clone -b notebooks-only --single-branch https://github.com/rasundsbak/rtd-tutorial.git rtd-notebooks
 cd rtd-notebooks
 
-
 Mer om prosjektet
 =================
 Vi bruker Sphinx til å formulere ideene våre:

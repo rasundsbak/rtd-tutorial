@@ -28,9 +28,9 @@ Hva vil du lære her?
 Kloning av notebooks
 ---------------------
 
-```{code} python
-git clone -b notebooks-only --single-branch https://github.com/rasundsbak/rtd-tutorial.git rtd-notebooks
-```
+Copy this:
+
+   git clone -b notebooks-only --single-branch https://github.com/rasundsbak/rtd-tutorial.git rtd-notebooks
 
 .. todo::
    

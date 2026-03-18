@@ -25,13 +25,6 @@ Hva vil du lære her?
 - koble modellen til egne data som eksempelvis Pdfer
 - bli flytende i hvordan du setter opp din egen modell i Jupyter Lab, og bruk prosessen som du laget til å kjøre i SLURS jobber batch.
 
-Kloning av notebooks
----------------------
-
-Copy this:
-
-   git clone -b notebooks-only --single-branch https://github.com/rasundsbak/rtd-tutorial.git rtd-notebooks
-
 .. todo::
    
 .. toctree::

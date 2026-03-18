@@ -7,7 +7,7 @@ Kjør store språkmodeller på UiO Educloud
 
 Hvem passer kurset for?
 -------------------------
-Dette er dokumentasjonen for et kurs som avholdes ved Universitetsbiblioteket i Oslo. Kurset er for ansatte ved UiO, og egner seg for de som har noe erfaring med Jupyter. Vi ønsker å invitere forskere, PhD og postdoc. Vi har hatt uformelle nettverksmøter på UB, Humsambiblioteket ni Georg Sverdrups hus hver tordag. Vi takker nettverket for støtte og entusiasme!
+Dette er dokumentasjonen for et kurs som avholdes i regi av Universitetsbiblioteket i Oslo. Kurset egner seg for de som har noe erfaring med Jupyter. Vi ønsker å invitere studenter, forskere, PhD og postdoc. Etter gjennomført kurs kan vi tilby støtte til koden du utvikler, etter at du har vært på kurs. Ta kontakt med `Ragnhild Sundsbak <https://www.ub.uio.no/om/ansatte/humsam/ragnhsu/>`_, for nærmere avtale.
 
 Forkunnskaper
 --------------
@@ -17,31 +17,27 @@ Påmelding
 ----------
 Her legges lenke til påmelding når dette er aktuelt
 
-Læringsmål
-----------
+Hva vil du lære her?
+---------------------
 - lær deg hvordan store språkmodeller brukes
-- lær hvordan UiOs tungregningsklynge kan brukes på ulike språkmodeller
-- lær hvordan du kan bygge en instruks og tilpasse parameterne
+- lær hvordan du kan bruke forskjellige språkmodeller på UiOs tungregningsklynge
+- lær hvordan du bygger en instruks og tilpasser parameterne
 - koble modellen til egne data som eksempelvis Pdfer
-- bli flytende i hvordan du setter opp din egen modell i Jupyter Lab, og bruk prosessen selv til å videreutvikle forskningsprosesser eller oppdag andre KI-modeller
+- bli flytende i hvordan du setter opp din egen modell i Jupyter Lab, og bruk prosessen som du laget til å kjøre i batch.
 
+.. todo::
+   
 .. toctree::
    :maxdepth: 2
-   :caption: Table of Contents
+   :caption: Innhold
    :hidden:
 
-   003_timetable
-   00_introduction
-   01_easy_login
-   02_downloading_packages
-   03_chatbot
-   04_summarization
-   05_rag
-   28_problem_solving
-   29_references
-   26_preparations
-
-Indeks
-=================
-* :ref:`genindex`
-
+   notebooks/008_timetable
+   notebooks/01_preparations
+   notebooks/02_easy_login
+   notebooks/03_downloading_packages
+   notebooks/04_chatbot
+   notebooks/05_summarization
+   notebooks/06_rag
+   notebooks/26_message
+   notebooks/29_references

@@ -23,3 +23,5 @@ sphinx:
   configuration: docs/source/conf.py
 
 # Korrigert 20. januar 2025 RS
+# If not working, try os: ubuntu-24.04
+#    python: "3.13"

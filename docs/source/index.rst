@@ -23,7 +23,7 @@ Hva vil du lære her?
 - lær hvordan du kan bruke forskjellige språkmodeller på UiOs tungregningsklynge
 - lær hvordan du bygger en instruks og tilpasser parameterne
 - koble modellen til egne data som eksempelvis Pdfer
-- bli flytende i hvordan du setter opp din egen modell i Jupyter Lab, og bruk prosessen som du laget til å kjøre i batch.
+- bli flytende i hvordan du setter opp din egen modell i Jupyter Lab, og bruk prosessen som du laget til å kjøre i SLURS jobber batch.
 
 .. todo::
    

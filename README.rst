@@ -1,30 +1,26 @@
-AI fra Huggingface, på organisasjonens kluster
-================================================
+AI from Ollama on your local computer
+======================================
 
-Dette GitHub depotet handler om en prosess som kan kjøres i Jupyter Lab
+This GitHub repo is on how to run AI with python, on your local computer.
 
-En KI fra Huggingface kjøres fra klusteret på UiO.
+We started up in 2026 with a process where the AI was run at an institutional GPU. This branch translates the process to ollama models on your local computer. Other branches are for the cloud solutions.
 
-Kurset avholdes første gang 31. mars 2025 kl 9 - 13. Vi håper det slår an!
-
-Klone notebookene
-=================
+Cloning the notebooks
+======================
 git clone -b notebooks-only --single-branch https://github.com/rasundsbak/rtd-tutorial.git rtd-notebooks
 cd rtd-notebooks
 
-Mer om prosjektet
-=================
-Vi bruker Sphinx til å formulere ideene våre:
-https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+More on the project
+====================
 
-Etherpad kan brukes for samarbeid i klasserommet:
+Etherpad can be used for communication in the classroom.
 https://hackmd.okfn.de/
 
-Dagens notater:
+Todays notes:
 https://hackmd.okfn.de/g1yXOHdmRIuxnVydrq0vIA?both
 
-Anbefalt forarbeid
-===================
+Recommended knowledge
+======================
 Plotting and Programming in Python
 https://swcarpentry.github.io/python-novice-gapminder/
 

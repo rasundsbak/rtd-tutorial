@@ -2,12 +2,12 @@
 
 # -- Project information --
 
-project = 'KI på Klynge'
-copyright = '2026, KI gruppen på UB'
-author = 'Ragnhild Sundsbak, Erik Winge'
+project = 'KI på egen maskin'
+copyright = '2027, Ragnhild Sundsbak'
+author = 'Ragnhild Sundsbak'
 
 release = 'main'
-version = '5.0.no'
+version = 'localmodels'
 
 # -- General configuration --
 

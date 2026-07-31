@@ -1,4 +1,4 @@
-`Redigering  <https://github.com/rasundsbak/rtd-tutorial>`_. Dette er et samarbeidsprosjekt. Se også `LLM Course <https://uio-library.github.io/LLM-course/index.html>`_. Se også `engelsk versjon <https://llm-course-eng.readthedocs.io/en/latest/>`_.
+`Redigering  <https://github.com/rasundsbak/rtd-tutorial>`_. Dette er et prosjekt som bygger på vårt `tidligere kurs <https://rtd-2-tutorial.readthedocs.io/no/latest/>`_. Se også `engelsk versjon <https://llm-course-eng.readthedocs.io/en/latest/>`_.
 
 Kjør store språkmodeller på UiO Educloud
 =========================================

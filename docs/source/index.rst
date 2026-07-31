@@ -32,12 +32,13 @@ Hva vil du lære her?
    :caption: Innhold
    :hidden:
 
-   notebooks/008_timetable
-   notebooks/01_preparations
-   notebooks/02_easy_login
-   notebooks/03_downloading_packages
-   notebooks/04_chatbot
+   notebooks/005_timetable
+   notebooks/01_easy_login
+   notebooks/02_downloading_packages
+   notebooks/03_chatbot
+   notebooks/04_summari
    notebooks/05_summarization
    notebooks/06_rag
+   notebooks/08_slurm
    notebooks/26_message
    notebooks/29_references

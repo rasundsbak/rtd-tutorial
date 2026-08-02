@@ -42,6 +42,6 @@ Hva vil du lære her?
    notebooks/26_message
    notebooks/29_references
 
-   Image
-   ======
-   `Photo by <https://unsplash.com/@cookiethepom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText>`_ Cookie the Pom `on Unsplash <https://unsplash.com/photos/brown-and-white-long-coated-small-dog-wearing-eyeglasses-on-black-laptop-computer-gySMaocSdqs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText>`_.
+Image
+-----
+`Photo by <https://unsplash.com/@cookiethepom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText>`_ Cookie the Pom `on Unsplash <https://unsplash.com/photos/brown-and-white-long-coated-small-dog-wearing-eyeglasses-on-black-laptop-computer-gySMaocSdqs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText>`_ .

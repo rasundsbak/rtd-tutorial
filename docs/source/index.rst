@@ -1,7 +1,7 @@
 `Redigering  <https://github.com/rasundsbak/rtd-tutorial>`_. Dette er et prosjekt som bygger på vårt `tidligere kurs <https://rtd-2-tutorial.readthedocs.io/no/latest/>`_. Se også `engelsk versjon <https://llm-course-eng.readthedocs.io/en/latest/>`_.
 
-Kjør store språkmodeller på UiO Educloud
-=========================================
+Kjør språkmodeller på egen maskin med Ollama
+=============================================
 
 .. image:: hpc.png
 
@@ -32,13 +32,12 @@ Hva vil du lære her?
    :caption: Innhold
    :hidden:
 
-   notebooks/005_timetable
+   notebooks/00_timetable
    notebooks/01_easy_login
    notebooks/02_downloading_packages
    notebooks/03_chatbot
-   notebooks/04_summari
-   notebooks/05_summarization
-   notebooks/06_rag
-   notebooks/08_slurm
+   notebooks/04_summarization
+   notebooks/05_rag
+   notebooks/06_slurm
    notebooks/26_message
    notebooks/29_references

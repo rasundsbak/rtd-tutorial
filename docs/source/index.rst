@@ -1,9 +1,9 @@
-`Redigering  <https://github.com/rasundsbak/rtd-tutorial>`_. Dette er et prosjekt som bygger på vårt `tidligere kurs <https://rtd-2-tutorial.readthedocs.io/no/latest/>`_. Se også `engelsk versjon <https://llm-course-eng.readthedocs.io/en/latest/>`_.
+`Redigering <https://github.com/rasundsbak/rtd-tutorial>`_. Dette er et prosjekt som bygger på vårt `tidligere kurs <https://rtd-2-tutorial.readthedocs.io/no/latest/>`_. Se også `engelsk versjon <https://llm-course-eng.readthedocs.io/en/latest/>`_.
 
 Kjør språkmodeller på egen maskin med Ollama
 =============================================
 
-.. image:: hpc.png
+.. image:: pomeranian.jpg
 
 Hvem passer kurset for?
 -------------------------
@@ -41,3 +41,7 @@ Hva vil du lære her?
    notebooks/06_slurm
    notebooks/26_message
    notebooks/29_references
+
+   Image
+   ======
+   `Photo by <https://unsplash.com/@cookiethepom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText>`_ Cookie the Pom `on Unsplash <https://unsplash.com/photos/brown-and-white-long-coated-small-dog-wearing-eyeglasses-on-black-laptop-computer-gySMaocSdqs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText>`_.

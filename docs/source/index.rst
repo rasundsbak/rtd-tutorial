@@ -3,7 +3,7 @@
 Kjør språkmodeller på egen maskin med Ollama
 =============================================
 
-.. image:: pomeranian.jpg
+.. figure:: pomeranian.jpg
    :alt: The image shows a small dog wearing glasses, sitting in front of a laptop.
 
 Hvem passer kurset for?
